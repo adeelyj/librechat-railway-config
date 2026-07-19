@@ -1,0 +1,7 @@
+.railway/
+.env
+.env.*
+tmp/
+output/
+*.log
+
