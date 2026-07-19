@@ -33,6 +33,13 @@ registration:
   socialLogins: []
 
 endpoints:
+  agents:
+    disableBuilder: false
+    allowedProviders:
+      - "RapidDraft Local AI"
+    capabilities:
+      - "file_search"
+      - "tools"
   custom:
     - name: "RapidDraft Local AI"
       apiKey: "${LOCALAI_CHAT_API_KEY}"
