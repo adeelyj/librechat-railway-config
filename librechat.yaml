@@ -18,8 +18,8 @@ interface:
   multiConvo: true
   agents:
     use: true
-    create: false
-    share: false
+    create: true
+    share: true
     public: false
   peoplePicker:
     users: true
