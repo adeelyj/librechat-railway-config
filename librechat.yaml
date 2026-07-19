@@ -2,10 +2,7 @@ version: 1.3.13
 
 cache: true
 
-fileStrategy:
-  avatar: "s3"
-  image: "s3"
-  document: "s3"
+fileStrategy: "s3"
 
 interface:
   endpointsMenu: true
