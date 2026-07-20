@@ -17,6 +17,9 @@ flowchart LR
     LC --> AI["RapidDraft Local AI / LiteLLM"]
     LC --> RAG["LibreChat RAG API"]
     RAG --> PG["PostgreSQL + pgvector"]
+    LC --> Twin["Bauer Twin MCP API"]
+    Twin --> TwinDB["Isolated bauer_twin PostgreSQL database"]
+    Twin --> AI
     LC --> Mongo["MongoDB"]
     LC --> Meili["Meilisearch"]
     LC --> S3["Railway S3 bucket"]
@@ -32,6 +35,8 @@ Each knowledge base is a private LibreChat Agent with its own files and access-c
 | --- | --- | ---: | --- |
 | `Test Archive` | `KB - Test Archive` | 41 | Existing indexed Local AI archive (610 preserved chunks) |
 | `Bauer Kompressoren` | `KB - Bauer Kompressoren` | 373 | 550 PDF/HTML inputs, reduced to 373 exact unique sources; 35 PDFs required OCR |
+
+The Bauer Agent also has an authenticated structured tool for the first demo scope: similar historical-project search plus document/part search. Its vertical slice contains 12 synthetic projects, 75 synthetic parts, and 8 public evidence links. Synthetic identifiers begin with `SYN-` and must never be represented as confirmed Bauer internal data.
 
 The Agents are not public. Each is granted `agent_viewer` access only through its matching group, and their file-ID sets are disjoint. The administrator is a member of both groups.
 
@@ -81,6 +86,8 @@ $credential = Import-Clixml 'D:\02_Code\auth\auth\librechat\testing-admin.creden
 - `scripts/prepare-bauer-corpus.py` hashes and deduplicates PDF/HTML sources, extracts text, runs OCR for image-only PDFs, and writes a manifest.
 - `scripts/provision-knowledge-bases.ps1` idempotently creates/synchronizes groups and Agents, resumes uploads by checksum, repairs committed-upload interruptions, rejects duplicates, verifies embedding and isolation, and optionally runs real grounded chat tests.
 - `scripts/test-localai-tool-calling.ps1` forces a direct OpenAI-compatible tool call against the scoped Local AI endpoint.
+- `services/bauer-twin-api` is the authenticated MCP/HTTP service for structured project, part, and document search. It uses a dedicated `bauer_twin` PostgreSQL database and login on the existing Railway pgvector service.
+- `scripts/run-bauer-benchmark.py` runs the 15-query exact-hit, similarity, hard-filter, bilingual, and latency regression set locally or against Railway.
 
 Generated corpora, manifests, dependencies, and resume state live under `tmp/` and are intentionally ignored by Git.
 
@@ -97,6 +104,23 @@ Full resume-safe provisioning and verification:
 ```
 
 The resume state is bound to the canonical Railway hostname to prevent accidentally applying file IDs to a different LibreChat instance. The public custom hostname points to the same verified service.
+
+## Bauer Technical Twin demo
+
+The live structured service is <https://bauer-twin-api-testing.up.railway.app>; `/health` is public and search/MCP routes require a bearer token. LibreChat connects to `/mcp` through `mcpServers.bauer-twin` and exposes the tool to only the Bauer Agent. The Test Archive Agent retains only `file_search`.
+
+The six structured actions are `search_similar_projects`, `compare_projects`, `search_parts`, `search_documents`, `get_project_details`, and `get_part_details`. Medium, insufficient pressure, explicit compressor family, and explicit topology are hard exclusions before ranking. Exact `SYN-`/`DOC-` identifiers bypass fuzzy ranking.
+
+Run the live regression without printing its encrypted token:
+
+```powershell
+$credential = Import-Clixml 'D:\02_Code\auth\auth\librechat\bauer-twin-api-testing.credential.xml'
+$token = $credential.GetNetworkCredential().Password
+.\.venv\Scripts\python.exe .\scripts\run-bauer-benchmark.py `
+  --url 'https://bauer-twin-api-testing.up.railway.app' --token $token
+```
+
+See [the demo runbook](docs/bauer-demo-runbook.md) for the audience script, expected results, and disclosure language.
 
 ## Acceptance checks
 

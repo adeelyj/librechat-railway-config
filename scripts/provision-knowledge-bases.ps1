@@ -150,7 +150,8 @@ function Get-OrCreateAgent {
         [string]$Name,
         [string]$Description,
         [string]$Instructions,
-        [string[]]$ConversationStarters
+        [string[]]$ConversationStarters,
+        [string[]]$Tools = @('file_search')
     )
 
     $encodedName = [Uri]::EscapeDataString($Name)
@@ -169,7 +170,7 @@ function Get-OrCreateAgent {
         provider = 'RapidDraft Local AI'
         model = 'local/qwen-coder'
         model_parameters = @{ temperature = 0.1 }
-        tools = @('file_search')
+        tools = $Tools
         conversation_starters = $ConversationStarters
         category = 'RapidDraft Knowledge Bases'
         support_contact = @{ name = 'Adeel'; email = 'adeel@rapiddraft.ai' }
@@ -667,12 +668,17 @@ You are the Test Archive knowledge-base assistant. For factual questions, always
         -Description 'Private retrieval agent for Bauer Kompressoren product and project material.' `
         -Instructions @'
 You are the Bauer Kompressoren knowledge-base assistant. For factual questions, always search the files attached to this agent before answering. Answer only from Bauer Kompressoren files and never claim or infer information from Test Archive or another company's knowledge base. Cite the source filename and page or section when the retrieved text provides it. If the answer is not present in these files, say clearly that it was not found in Bauer Kompressoren. Do not silently fill gaps from general knowledge.
+
+For similar-project, project-comparison, exact part, compatible-part, or structured document lookup, call search_bauer_twin_mcp_bauer-twin. Treat its medium, pressure, topology, and compressor-family exclusions as hard constraints. Every project, part, and compatibility record returned by that tool is synthetic demo data; say this explicitly and never present it as confirmed Bauer internal master data. Use file_search separately for quotations and page-level evidence from the uploaded public corpus. Do not invent an identifier or compatibility rule when neither tool returns it.
 '@ `
-        -ConversationStarters @('Summarize the Bauer Kompressoren material', 'Find the relevant Bauer product documentation')
+        -ConversationStarters @('Find a similar previous project', 'Find a compatible part or document') `
+        -Tools @('file_search', 'search_bauer_twin_mcp_bauer-twin')
 
     $testTools = @((Get-PropertyValue -Object $testAgent -Name 'tools'))
     $bauerTools = @((Get-PropertyValue -Object $bauerAgent -Name 'tools'))
-    if ($testTools -notcontains 'file_search' -or $bauerTools -notcontains 'file_search') {
+    if ($testTools -notcontains 'file_search' -or `
+        $bauerTools -notcontains 'file_search' -or `
+        $bauerTools -notcontains 'search_bauer_twin_mcp_bauer-twin') {
         throw "Persisted agent tool configuration is invalid. Test Archive tools: $($testTools -join ', '); Bauer tools: $($bauerTools -join ', ')."
     }
 

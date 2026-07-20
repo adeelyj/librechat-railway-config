@@ -32,6 +32,18 @@ interface:
 registration:
   socialLogins: []
 
+mcpServers:
+  bauer-twin:
+    type: streamable-http
+    url: "${BAUER_TWIN_MCP_URL}"
+    headers:
+      Authorization: "Bearer ${BAUER_TWIN_API_KEY}"
+    requiresOAuth: false
+    serverInstructions: true
+    startup: true
+    chatMenu: false
+    timeout: 60000
+
 endpoints:
   agents:
     disableBuilder: false
