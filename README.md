@@ -89,6 +89,8 @@ $credential = Import-Clixml 'D:\02_Code\auth\auth\librechat\testing-admin.creden
 - `services/bauer-twin-api` is the authenticated MCP/HTTP service for structured project, part, and document search. It uses a dedicated `bauer_twin` PostgreSQL database and login on the existing Railway pgvector service.
 - `scripts/run-bauer-benchmark.py` runs the 15-query exact-hit, similarity, hard-filter, bilingual, and latency regression set locally or against Railway.
 
+The root `Dockerfile` and `railway.json` are thin deployment wrappers for Railway GitHub auto-deploy; the service implementation remains under `services/bauer-twin-api`.
+
 Generated corpora, manifests, dependencies, and resume state live under `tmp/` and are intentionally ignored by Git.
 
 Typical validation after the initial import:
