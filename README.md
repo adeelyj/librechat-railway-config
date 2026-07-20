@@ -113,6 +113,8 @@ The live structured service is <https://bauer-twin-api-testing.up.railway.app>; 
 
 The six structured actions are `search_similar_projects`, `compare_projects`, `search_parts`, `search_documents`, `get_project_details`, and `get_part_details`. Medium, insufficient pressure, explicit compressor family, and explicit topology are hard exclusions before ranking. Exact `SYN-`/`DOC-` identifiers bypass fuzzy ranking.
 
+The Local AI model has a 32,768-token physical context window. Agents are configured with a 24,000-token working context and 2,048-token output allowance, while individual tool results are capped at 6,000 characters. This leaves safety headroom for instructions, conversation history, and multiple retrieval calls.
+
 Run the live regression without printing its encrypted token:
 
 ```powershell

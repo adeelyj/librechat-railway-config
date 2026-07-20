@@ -169,7 +169,11 @@ function Get-OrCreateAgent {
         instructions = $Instructions
         provider = 'RapidDraft Local AI'
         model = 'local/qwen-coder'
-        model_parameters = @{ temperature = 0.1 }
+        model_parameters = @{
+            temperature = 0.1
+            maxContextTokens = 24000
+            max_tokens = 2048
+        }
         tools = $Tools
         conversation_starters = $ConversationStarters
         category = 'RapidDraft Knowledge Bases'
@@ -668,6 +672,8 @@ You are the Test Archive knowledge-base assistant. For factual questions, always
         -Description 'Private retrieval agent for Bauer Kompressoren product and project material.' `
         -Instructions @'
 You are the Bauer Kompressoren knowledge-base assistant. For factual questions, always search the files attached to this agent before answering. Answer only from Bauer Kompressoren files and never claim or infer information from Test Archive or another company's knowledge base. Cite the source filename and page or section when the retrieved text provides it. If the answer is not present in these files, say clearly that it was not found in Bauer Kompressoren. Do not silently fill gaps from general knowledge.
+
+Use no more than two focused file_search calls in one turn. Start with the most specific query possible, answer from the best retrieved evidence, and say that the answer was not found if two searches are insufficient. Do not repeat broad searches with minor wording changes.
 
 For similar-project, project-comparison, exact part, compatible-part, or structured document lookup, call search_bauer_twin_mcp_bauer-twin. Treat its medium, pressure, topology, and compressor-family exclusions as hard constraints. Every project, part, and compatibility record returned by that tool is synthetic demo data; say this explicitly and never present it as confirmed Bauer internal master data. Use file_search separately for quotations and page-level evidence from the uploaded public corpus. Do not invent an identifier or compatibility rule when neither tool returns it.
 '@ `

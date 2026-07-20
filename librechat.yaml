@@ -56,6 +56,7 @@ endpoints:
     - name: "RapidDraft Local AI"
       apiKey: "${LOCALAI_CHAT_API_KEY}"
       baseURL: "${LOCALAI_CHAT_BASE_URL}"
+      maxToolResultChars: 6000
       models:
         default:
           - "local/qwen-coder"
