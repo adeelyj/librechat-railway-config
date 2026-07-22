@@ -16,6 +16,9 @@ SERVER_INSTRUCTIONS = """
 This server exposes a synthetic Bauer Technical Twin demo. Use search_bauer_twin for
 historical-project similarity, exact/semantic part lookup, document lookup, project
 comparison, and details. Treat medium and pressure exclusions as hard constraints.
+Pass mandatory business constraints explicitly. Medium, topology, family, and category
+accept open text and are normalized by the service. A no_compatible_match or
+unknown_constraint result is final; do not retry by removing a mandatory constraint.
 Always preserve the returned synthetic-data disclaimer. Use LibreChat file_search
 separately when a user needs quotations or page-level evidence from the uploaded corpus.
 """.strip()
@@ -46,7 +49,7 @@ def search_bauer_twin(
     project_id: str = "",
     compare_project_id: str = "",
     part_id: str = "",
-    medium: Literal["nitrogen", "air", "breathing air"] | None = None,
+    medium: str | None = None,
     target_pressure_bar: float | None = None,
     capacity_l_min: float | None = None,
     compressor_family: str | None = None,
@@ -57,9 +60,13 @@ def search_bauer_twin(
     """Search the synthetic Bauer Technical Twin demo.
 
     Choose one action. For similar projects or parts, provide a natural-language
-    query and any known technical filters. Medium, target pressure, and topology
-    are hard compatibility constraints; a part/project below the required pressure
-    is excluded. Exact SYN project/part IDs bypass fuzzy ranking. To compare two
+    query and any known technical filters. Business vocabulary accepts open text;
+    known English, German, abbreviation, and chemical-symbol aliases are normalized
+    deterministically. Unknown values return unknown_constraint instead of a schema
+    error. Medium, target pressure, and topology are hard compatibility constraints;
+    a part/project below the required pressure is excluded. A no_compatible_match or
+    unknown_constraint result is final and must not be retried with weaker constraints.
+    Exact SYN project/part IDs bypass fuzzy ranking when compatible. To compare two
     projects, provide project_id and compare_project_id. Detail actions require the
     corresponding ID. Returned public URLs are evidence links, while all project,
     part, and compatibility records remain explicitly synthetic demo data.

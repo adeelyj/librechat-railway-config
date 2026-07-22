@@ -4,9 +4,11 @@ import os
 from typing import Any
 
 from psycopg import connect
+from psycopg.errors import UndefinedTable
 from psycopg.rows import dict_row
 
 from .catalog import build_catalog
+from .terminology import terminology_rows
 
 
 class CatalogRepository:
@@ -44,6 +46,24 @@ class CatalogRepository:
             "documents": [dict(item) for item in documents],
         }
 
+    def load_terminology(self) -> list[dict[str, Any]]:
+        if not self.database_url:
+            return terminology_rows()
+
+        try:
+            with connect(self.database_url, row_factory=dict_row) as connection:
+                rows = connection.execute(
+                    """
+                    SELECT domain, canonical_value, alias, language, query_safe
+                    FROM bauer_twin.terminology_aliases
+                    ORDER BY domain, alias
+                    """
+                ).fetchall()
+        except UndefinedTable:
+            # Supports a safe rolling deployment before the additive seed migration runs.
+            return terminology_rows()
+        return [dict(item) for item in rows] or terminology_rows()
+
     def health(self) -> dict[str, Any]:
         catalog = self.load()
         return {
@@ -51,5 +71,6 @@ class CatalogRepository:
             "projects": len(catalog["projects"]),
             "parts": len(catalog["parts"]),
             "documents": len(catalog["documents"]),
+            "terminology_aliases": len(self.load_terminology()),
         }
 

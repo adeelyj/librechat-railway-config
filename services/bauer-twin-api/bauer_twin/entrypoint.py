@@ -11,6 +11,11 @@ def main() -> None:
 
         result = seed()
         print(f"Bauer Twin database synchronized: {result}")
+    elif os.getenv("DATABASE_URL"):
+        from .seed import seed_terminology
+
+        count = seed_terminology()
+        print(f"Bauer Twin terminology synchronized: aliases={count}")
     port = int(os.getenv("PORT", "8000"))
     uvicorn.run("app:app", host="0.0.0.0", port=port, log_level="info")
 

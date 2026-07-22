@@ -19,6 +19,10 @@ async def run(url: str, token: str) -> None:
                 names = [tool.name for tool in tools.tools]
                 if "search_bauer_twin" not in names:
                     raise RuntimeError(f"search_bauer_twin was not advertised; got {names}")
+                tool = next(item for item in tools.tools if item.name == "search_bauer_twin")
+                medium_schema = ((tool.inputSchema or {}).get("properties") or {}).get("medium") or {}
+                if '"enum"' in json.dumps(medium_schema):
+                    raise RuntimeError(f"MCP medium schema is still closed: {medium_schema}")
                 result = await session.call_tool(
                     "search_bauer_twin",
                     {
@@ -35,9 +39,29 @@ async def run(url: str, token: str) -> None:
                 top_id = ((structured.get("result") or structured).get("results") or [{}])[0].get("project_id")
                 if top_id != "SYN-BK-N2-420-500":
                     raise RuntimeError(f"Unexpected MCP top result: {top_id}; payload={structured}")
+                helium_result = await session.call_tool(
+                    "search_bauer_twin",
+                    {
+                        "action": "search_similar_projects",
+                        "query": "helium booster 420 bar 500 l/min",
+                        "medium": "helium",
+                        "target_pressure_bar": 420,
+                        "capacity_l_min": 500,
+                        "topology": "booster",
+                        "limit": 3,
+                    },
+                )
+                if helium_result.isError:
+                    raise RuntimeError(f"MCP rejected flexible medium input: {helium_result.content}")
+                helium_payload = helium_result.structuredContent or {}
+                if not helium_payload and helium_result.content and hasattr(helium_result.content[0], "text"):
+                    helium_payload = json.loads(helium_result.content[0].text)
+                helium_payload = helium_payload.get("result") or helium_payload
+                if helium_payload.get("status") != "no_compatible_match" or helium_payload.get("results"):
+                    raise RuntimeError(f"Unexpected helium result: {helium_payload}")
                 print(
                     f"MCP round trip passed: server={initialized.serverInfo.name}, "
-                    f"tool=search_bauer_twin, top_result={top_id}"
+                    f"tool=search_bauer_twin, top_result={top_id}, helium_status=no_compatible_match"
                 )
 
 

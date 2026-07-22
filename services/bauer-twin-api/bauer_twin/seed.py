@@ -9,6 +9,41 @@ from psycopg.types.json import Jsonb
 
 from .catalog import build_catalog, searchable_text
 from .embeddings import EmbeddingClient
+from .terminology import terminology_rows
+
+
+def _upsert_terminology(connection) -> int:
+    terms = terminology_rows()
+    for term in terms:
+        connection.execute(
+            """
+            INSERT INTO bauer_twin.terminology_aliases
+                (domain, canonical_value, alias, language, query_safe)
+            VALUES (%s, %s, %s, %s, %s)
+            ON CONFLICT (domain, alias) DO UPDATE SET
+                canonical_value=EXCLUDED.canonical_value,
+                language=EXCLUDED.language,
+                query_safe=EXCLUDED.query_safe,
+                updated_at=now()
+            """,
+            (
+                term["domain"],
+                term["canonical_value"],
+                term["alias"],
+                term["language"],
+                term["query_safe"],
+            ),
+        )
+    return len(terms)
+
+
+def seed_terminology() -> int:
+    """Apply the additive vocabulary schema without rebuilding catalog embeddings."""
+    database_url = os.environ["DATABASE_URL"]
+    schema = Path(__file__).with_name("terminology_schema.sql").read_text(encoding="utf-8")
+    with connect(database_url) as connection:
+        connection.execute(schema)
+        return _upsert_terminology(connection)
 
 
 def seed() -> dict[str, int]:
@@ -63,7 +98,8 @@ def seed() -> dict[str, int]:
                 f"INSERT INTO bauer_twin.documents ({', '.join(columns)}) VALUES ({placeholders}) ON CONFLICT (document_id) DO UPDATE SET {updates}, updated_at=now()",
                 list(values.values()),
             )
-    return {key: len(value) for key, value in catalog.items()}
+        terminology_count = _upsert_terminology(connection)
+    return {**{key: len(value) for key, value in catalog.items()}, "terminology_aliases": terminology_count}
 
 
 if __name__ == "__main__":

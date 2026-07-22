@@ -9,6 +9,7 @@ from typing import Any
 from .catalog import DISCLAIMER, searchable_text
 from .embeddings import EmbeddingClient, deterministic_embedding
 from .repository import CatalogRepository
+from .terminology import TerminologyResolver
 
 PROJECT_DIFFERENCE_FIELDS = [
     "application_sector",
@@ -26,6 +27,8 @@ PROJECT_DIFFERENCE_FIELDS = [
     "environment",
     "standards",
 ]
+
+TERMINOLOGY_FIELDS = ("medium", "topology", "compressor_family", "category")
 
 
 def _tokens(value: str) -> set[str]:
@@ -85,6 +88,7 @@ class SearchEngine:
     ) -> None:
         self.repository = repository or CatalogRepository()
         self.embedding_client = embedding_client or EmbeddingClient()
+        self.terminology = TerminologyResolver(self.repository.load_terminology())
 
     def _catalog(self) -> dict[str, list[dict[str, Any]]]:
         catalog = self.repository.load()
@@ -94,39 +98,48 @@ class SearchEngine:
                 record.setdefault("embedding", deterministic_embedding(record["search_text"]))
         return catalog
 
-    @staticmethod
-    def infer_filters(query: str, supplied: dict[str, Any]) -> dict[str, Any]:
-        result = {key: value for key, value in supplied.items() if value is not None}
+    def _interpret_filters(
+        self, query: str, supplied: dict[str, Any]
+    ) -> tuple[dict[str, Any], dict[str, dict[str, Any]], list[dict[str, Any]]]:
+        result = {
+            key: value
+            for key, value in supplied.items()
+            if value is not None and key not in TERMINOLOGY_FIELDS
+        }
+        interpretation: dict[str, dict[str, Any]] = {}
+        unknown_constraints: list[dict[str, Any]] = []
+
+        for field in TERMINOLOGY_FIELDS:
+            supplied_value = supplied.get(field)
+            if supplied_value is not None and str(supplied_value).strip():
+                resolution = self.terminology.resolve(field, str(supplied_value))
+            else:
+                resolution = self.terminology.infer(field, query)
+            if resolution is None:
+                continue
+            interpretation[field] = resolution.as_dict()
+            if resolution.status == "recognized":
+                result[field] = resolution.normalized
+            else:
+                unknown_constraints.append({"field": field, **resolution.as_dict()})
+
         lower = query.lower()
-        if "medium" not in result:
-            if re.search(r"\b(nitrogen|stickstoff|n2)\b", lower):
-                result["medium"] = "nitrogen"
-            elif "breathing air" in lower or "atemluft" in lower:
-                result["medium"] = "breathing air"
-            elif re.search(r"\b(air|luft)\b", lower):
-                result["medium"] = "air"
         if "target_pressure_bar" not in result:
-            match = re.search(r"(\d{2,3})\s*bar\b", lower)
+            match = re.search(r"(\d+(?:[.,]\d+)?)\s*bar(?:g|a)?\b", lower)
             if match:
-                result["target_pressure_bar"] = float(match.group(1))
+                result["target_pressure_bar"] = float(match.group(1).replace(",", "."))
         if "capacity_l_min" not in result:
-            match = re.search(r"(\d{2,4})\s*(?:l\s*/\s*min|lpm|lit(?:er|re)s?\s*(?:per|/)\s*min)", lower)
+            match = re.search(
+                r"(\d+(?:[.,]\d+)?)\s*(?:l\s*/\s*min|lpm|lit(?:er|re)s?\s*(?:per|/)\s*min)",
+                lower,
+            )
             if match:
-                result["capacity_l_min"] = float(match.group(1))
-        if "compressor_family" not in result:
-            match = re.search(r"\bbm\s*(40|100)\b", lower)
-            if match:
-                result["compressor_family"] = f"BM {match.group(1)}"
-        if "topology" not in result and "booster" in lower:
-            result["topology"] = "booster"
-        if "category" not in result:
-            if re.search(r"\b(sensor|transmitter|drucksensor|temperatursensor|taupunktsensor)\b", lower):
-                result["category"] = "SNS"
-            elif re.search(r"\b(filter|cartridge|filterpatrone|purification)\b", lower):
-                result["category"] = "PUR"
-            elif re.search(r"\b(valve|ventil)\b", lower):
-                result["category"] = "VLV"
-        return result
+                result["capacity_l_min"] = float(match.group(1).replace(",", "."))
+        return result, interpretation, unknown_constraints
+
+    def infer_filters(self, query: str, supplied: dict[str, Any]) -> dict[str, Any]:
+        filters, _, _ = self._interpret_filters(query, supplied)
+        return filters
 
     def _base(self, action: str, started: float) -> dict[str, Any]:
         return {
@@ -136,41 +149,132 @@ class SearchEngine:
             "elapsed_ms": round((time.perf_counter() - started) * 1000, 2),
         }
 
+    def _unknown_constraint_result(
+        self,
+        action: str,
+        started: float,
+        filters: dict[str, Any],
+        interpretation: dict[str, dict[str, Any]],
+        unknown_constraints: list[dict[str, Any]],
+    ) -> dict[str, Any]:
+        result = self._base(action, started)
+        result.update(
+            {
+                "status": "unknown_constraint",
+                "message": "One or more mandatory constraints could not be normalized safely.",
+                "filters": filters,
+                "interpretation": interpretation,
+                "unknown_constraints": unknown_constraints,
+                "hard_exclusions": [],
+                "results": [],
+            }
+        )
+        return result
+
+    @staticmethod
+    def _project_exclusion_reasons(project: dict[str, Any], filters: dict[str, Any]) -> list[str]:
+        reasons: list[str] = []
+        medium = filters.get("medium")
+        pressure = filters.get("target_pressure_bar")
+        topology = filters.get("topology")
+        family = filters.get("compressor_family")
+        if medium and project["medium"].lower() != str(medium).lower():
+            reasons.append(f"medium mismatch: requires {medium}, project uses {project['medium']}")
+        if pressure is not None and float(project["pressure_bar"]) < float(pressure):
+            reasons.append(
+                f"insufficient pressure: requires {pressure:g} bar, project is {project['pressure_bar']} bar"
+            )
+        if topology and project["topology"].lower() != str(topology).lower():
+            reasons.append(f"topology mismatch: requires {topology}, project is {project['topology']}")
+        if family and project["compressor_family"].lower() != str(family).lower():
+            reasons.append(
+                f"compressor family mismatch: requires {family}, project uses {project['compressor_family']}"
+            )
+        return reasons
+
+    @staticmethod
+    def _part_exclusion_reasons(part: dict[str, Any], filters: dict[str, Any]) -> list[str]:
+        reasons: list[str] = []
+        medium = filters.get("medium")
+        pressure = filters.get("target_pressure_bar")
+        category = filters.get("category")
+        compatible_media = {str(item).lower() for item in part["compatible_media"]}
+        if medium and str(medium).lower() not in compatible_media:
+            reasons.append(f"medium mismatch: requires {medium}")
+        if pressure is not None and float(part["max_pressure_bar"]) < float(pressure):
+            reasons.append(
+                f"insufficient pressure rating: requires {pressure:g} bar, part max is {part['max_pressure_bar']} bar"
+            )
+        if category and part["category"].lower() != str(category).lower():
+            reasons.append(f"category mismatch: requires {category}")
+        return reasons
+
     def search_similar_projects(self, query: str, limit: int = 5, **filters: Any) -> dict[str, Any]:
         started = time.perf_counter()
         catalog = self._catalog()
-        inferred = self.infer_filters(query, filters)
+        inferred, interpretation, unknown_constraints = self._interpret_filters(query, filters)
+        if unknown_constraints:
+            return self._unknown_constraint_result(
+                "search_similar_projects",
+                started,
+                inferred,
+                interpretation,
+                unknown_constraints,
+            )
         query_upper = query.strip().upper()
         exact = [p for p in catalog["projects"] if query_upper in {str(p["project_id"]).upper(), str(p["compressor_model"]).upper()}]
         if exact:
+            reasons = self._project_exclusion_reasons(exact[0], inferred)
             result = self._base("search_similar_projects", started)
-            result.update({"filters": inferred, "hard_exclusions": [], "results": [{**_public(exact[0]), "score": 1.0, "match_reasons": ["exact identifier match"]}]})
+            result.update(
+                {
+                    "status": "no_compatible_match" if reasons else "matches_found",
+                    "filters": inferred,
+                    "interpretation": interpretation,
+                    "unknown_constraints": [],
+                    "hard_exclusions": (
+                        [{"project_id": exact[0]["project_id"], "reasons": reasons}] if reasons else []
+                    ),
+                    "results": (
+                        []
+                        if reasons
+                        else [{**_public(exact[0]), "score": 1.0, "match_reasons": ["exact identifier match"]}]
+                    ),
+                }
+            )
+            return result
+
+        eligible: list[dict[str, Any]] = []
+        exclusions: list[dict[str, Any]] = []
+        for project in catalog["projects"]:
+            reasons = self._project_exclusion_reasons(project, inferred)
+            if reasons:
+                exclusions.append({"project_id": project["project_id"], "reasons": reasons})
+            else:
+                eligible.append(project)
+
+        if not eligible:
+            result = self._base("search_similar_projects", started)
+            result.update(
+                {
+                    "status": "no_compatible_match",
+                    "filters": inferred,
+                    "interpretation": interpretation,
+                    "unknown_constraints": [],
+                    "hard_exclusions": exclusions,
+                    "results": [],
+                }
+            )
             return result
 
         query_vector = self.embedding_client.embed(query)
         query_tokens = _tokens(query)
         included: list[dict[str, Any]] = []
-        exclusions: list[dict[str, Any]] = []
-        for project in catalog["projects"]:
-            reasons: list[str] = []
-            medium = inferred.get("medium")
-            pressure = inferred.get("target_pressure_bar")
-            topology = inferred.get("topology")
-            family = inferred.get("compressor_family")
-            if medium and project["medium"].lower() != str(medium).lower():
-                reasons.append(f"medium mismatch: requires {medium}, project uses {project['medium']}")
-            if pressure is not None and float(project["pressure_bar"]) < float(pressure):
-                reasons.append(f"insufficient pressure: requires {pressure:g} bar, project is {project['pressure_bar']} bar")
-            if topology and project["topology"].lower() != str(topology).lower():
-                reasons.append(f"topology mismatch: requires {topology}, project is {project['topology']}")
-            if family and project["compressor_family"].lower() != str(family).lower():
-                reasons.append(
-                    f"compressor family mismatch: requires {family}, project uses {project['compressor_family']}"
-                )
-            if reasons:
-                exclusions.append({"project_id": project["project_id"], "reasons": reasons})
-                continue
-
+        medium = inferred.get("medium")
+        pressure = inferred.get("target_pressure_bar")
+        topology = inferred.get("topology")
+        family = inferred.get("compressor_family")
+        for project in eligible:
             score = 0.0
             match_reasons: list[str] = []
             if medium:
@@ -199,7 +303,17 @@ class SearchEngine:
 
         included.sort(key=lambda item: (-item["score"], item["project_id"]))
         result = self._base("search_similar_projects", started)
-        result.update({"filters": inferred, "hard_exclusions": exclusions, "results": included[: max(1, min(limit, 10))]})
+        limited = included[: max(1, min(limit, 10))]
+        result.update(
+            {
+                "status": "matches_found" if limited else "no_compatible_match",
+                "filters": inferred,
+                "interpretation": interpretation,
+                "unknown_constraints": [],
+                "hard_exclusions": exclusions,
+                "results": limited,
+            }
+        )
         return result
 
     def compare_projects(self, project_id: str, compare_project_id: str) -> dict[str, Any]:
@@ -209,7 +323,7 @@ class SearchEngine:
         right = projects.get(compare_project_id.upper())
         result = self._base("compare_projects", started)
         if not left or not right:
-            result.update({"found": False, "missing_ids": [identifier for identifier, item in ((project_id, left), (compare_project_id, right)) if item is None], "differences": []})
+            result.update({"status": "no_compatible_match", "found": False, "missing_ids": [identifier for identifier, item in ((project_id, left), (compare_project_id, right)) if item is None], "differences": []})
             return result
         differences = []
         matches = []
@@ -218,37 +332,72 @@ class SearchEngine:
                 matches.append({"field": field, "value": left.get(field)})
             else:
                 differences.append({"field": field, project_id: left.get(field), compare_project_id: right.get(field)})
-        result.update({"found": True, "projects": [_public(left), _public(right)], "matches": matches, "differences": differences})
+        result.update({"status": "matches_found", "found": True, "projects": [_public(left), _public(right)], "matches": matches, "differences": differences})
         return result
 
     def search_parts(self, query: str, limit: int = 10, **filters: Any) -> dict[str, Any]:
         started = time.perf_counter()
         catalog = self._catalog()
-        inferred = self.infer_filters(query, filters)
+        inferred, interpretation, unknown_constraints = self._interpret_filters(query, filters)
+        if unknown_constraints:
+            return self._unknown_constraint_result(
+                "search_parts",
+                started,
+                inferred,
+                interpretation,
+                unknown_constraints,
+            )
         query_upper = query.strip().upper()
         exact = [p for p in catalog["parts"] if query_upper == str(p["part_id"]).upper()]
         if exact:
+            reasons = self._part_exclusion_reasons(exact[0], inferred)
             result = self._base("search_parts", started)
-            result.update({"filters": inferred, "hard_exclusions": [], "results": [{**_public(exact[0]), "score": 1.0, "match_reasons": ["exact part identifier match"]}]})
+            result.update(
+                {
+                    "status": "no_compatible_match" if reasons else "matches_found",
+                    "filters": inferred,
+                    "interpretation": interpretation,
+                    "unknown_constraints": [],
+                    "hard_exclusions": (
+                        [{"part_id": exact[0]["part_id"], "reasons": reasons}] if reasons else []
+                    ),
+                    "results": (
+                        []
+                        if reasons
+                        else [{**_public(exact[0]), "score": 1.0, "match_reasons": ["exact part identifier match"]}]
+                    ),
+                }
+            )
             return result
+        eligible = []
+        exclusions = []
+        for part in catalog["parts"]:
+            reasons = self._part_exclusion_reasons(part, inferred)
+            if reasons:
+                exclusions.append({"part_id": part["part_id"], "reasons": reasons})
+            else:
+                eligible.append(part)
+
+        if not eligible:
+            result = self._base("search_parts", started)
+            result.update(
+                {
+                    "status": "no_compatible_match",
+                    "filters": inferred,
+                    "interpretation": interpretation,
+                    "unknown_constraints": [],
+                    "hard_exclusions": exclusions,
+                    "results": [],
+                }
+            )
+            return result
+
         query_vector = self.embedding_client.embed(query)
         query_tokens = _tokens(query)
         included = []
-        exclusions = []
-        for part in catalog["parts"]:
-            reasons = []
-            medium = inferred.get("medium")
-            pressure = inferred.get("target_pressure_bar")
-            if medium and medium not in part["compatible_media"]:
-                reasons.append(f"medium mismatch: requires {medium}")
-            if pressure is not None and float(part["max_pressure_bar"]) < float(pressure):
-                reasons.append(f"insufficient pressure rating: requires {pressure:g} bar, part max is {part['max_pressure_bar']} bar")
-            category = inferred.get("category")
-            if category and part["category"].lower() != str(category).lower():
-                reasons.append(f"category mismatch: requires {category}")
-            if reasons:
-                exclusions.append({"part_id": part["part_id"], "reasons": reasons})
-                continue
+        medium = inferred.get("medium")
+        pressure = inferred.get("target_pressure_bar")
+        for part in eligible:
             overlap = len(query_tokens & _tokens(part["search_text"])) / max(len(query_tokens), 1)
             semantic = max(0.0, _cosine(query_vector, part["embedding"]))
             score = 0.60 * overlap + 0.25 * semantic
@@ -259,7 +408,17 @@ class SearchEngine:
             included.append({**_public(part), "score": round(score, 4), "match_reasons": ["keyword/semantic description match", "passed compatibility filters"]})
         included.sort(key=lambda item: (-item["score"], item["part_id"]))
         result = self._base("search_parts", started)
-        result.update({"filters": inferred, "hard_exclusions": exclusions, "results": included[: max(1, min(limit, 20))]})
+        limited = included[: max(1, min(limit, 20))]
+        result.update(
+            {
+                "status": "matches_found" if limited else "no_compatible_match",
+                "filters": inferred,
+                "interpretation": interpretation,
+                "unknown_constraints": [],
+                "hard_exclusions": exclusions,
+                "results": limited,
+            }
+        )
         return result
 
     def search_documents(self, query: str, limit: int = 10) -> dict[str, Any]:
@@ -277,7 +436,8 @@ class SearchEngine:
                 results.append({**_public(document), "score": round(score, 4), "match_reasons": ["exact identifier match" if exact else "keyword/semantic match"]})
         results.sort(key=lambda item: (-item["score"], item["document_id"]))
         result = self._base("search_documents", started)
-        result.update({"results": results[: max(1, min(limit, 20))]})
+        limited = results[: max(1, min(limit, 20))]
+        result.update({"status": "matches_found" if limited else "no_compatible_match", "results": limited})
         return result
 
     def get_details(self, kind: str, identifier: str) -> dict[str, Any]:
@@ -288,11 +448,11 @@ class SearchEngine:
         record = next((item for item in collection if str(item[key]).upper() == identifier.upper()), None)
         result = self._base(f"get_{kind}_details", started)
         if record is None:
-            result.update({"found": False, key: identifier, "message": "No matching synthetic demo record was found."})
+            result.update({"status": "no_compatible_match", "found": False, key: identifier, "message": "No matching synthetic demo record was found."})
             return result
         document_ids = set(record.get("document_ids") or [])
         documents = [_public(item) for item in catalog["documents"] if item["document_id"] in document_ids]
-        result.update({"found": True, kind: _public(record), "documents": documents})
+        result.update({"status": "matches_found", "found": True, kind: _public(record), "documents": documents})
         if kind == "project":
             result["parts"] = [_public(item) for item in catalog["parts"] if identifier in (item.get("project_ids") or [])]
         return result

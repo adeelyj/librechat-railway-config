@@ -61,6 +61,16 @@ CREATE TABLE IF NOT EXISTS bauer_twin.documents (
     updated_at timestamptz NOT NULL DEFAULT now()
 );
 
+CREATE TABLE IF NOT EXISTS bauer_twin.terminology_aliases (
+    domain text NOT NULL,
+    canonical_value text NOT NULL,
+    alias text NOT NULL,
+    language text NOT NULL,
+    query_safe boolean NOT NULL DEFAULT true,
+    updated_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (domain, alias)
+);
+
 CREATE INDEX IF NOT EXISTS projects_search_fts_idx ON bauer_twin.projects USING gin (to_tsvector('simple', search_text));
 CREATE INDEX IF NOT EXISTS projects_search_trgm_idx ON bauer_twin.projects USING gin (search_text gin_trgm_ops);
 CREATE INDEX IF NOT EXISTS projects_embedding_hnsw_idx ON bauer_twin.projects USING hnsw (embedding vector_cosine_ops);
@@ -69,4 +79,5 @@ CREATE INDEX IF NOT EXISTS parts_search_trgm_idx ON bauer_twin.parts USING gin (
 CREATE INDEX IF NOT EXISTS parts_embedding_hnsw_idx ON bauer_twin.parts USING hnsw (embedding vector_cosine_ops);
 CREATE INDEX IF NOT EXISTS documents_search_fts_idx ON bauer_twin.documents USING gin (to_tsvector('simple', search_text));
 CREATE INDEX IF NOT EXISTS documents_embedding_hnsw_idx ON bauer_twin.documents USING hnsw (embedding vector_cosine_ops);
+CREATE INDEX IF NOT EXISTS terminology_canonical_idx ON bauer_twin.terminology_aliases (domain, canonical_value);
 

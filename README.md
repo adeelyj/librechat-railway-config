@@ -87,7 +87,7 @@ $credential = Import-Clixml 'D:\02_Code\auth\auth\librechat\testing-admin.creden
 - `scripts/provision-knowledge-bases.ps1` idempotently creates/synchronizes groups and Agents, resumes uploads by checksum, repairs committed-upload interruptions, rejects duplicates, verifies embedding and isolation, and optionally runs real grounded chat tests.
 - `scripts/test-localai-tool-calling.ps1` forces a direct OpenAI-compatible tool call against the scoped Local AI endpoint.
 - `services/bauer-twin-api` is the authenticated MCP/HTTP service for structured project, part, and document search. It uses a dedicated `bauer_twin` PostgreSQL database and login on the existing Railway pgvector service.
-- `scripts/run-bauer-benchmark.py` runs the 15-query exact-hit, similarity, hard-filter, bilingual, and latency regression set locally or against Railway.
+- `scripts/run-bauer-benchmark.py` runs the 18-query exact-hit, similarity, hard-filter, bilingual, unknown-term, safe-no-match, and latency regression set locally or against Railway.
 
 The root `Dockerfile` and `railway.json` are thin deployment wrappers for Railway GitHub auto-deploy; the service implementation remains under `services/bauer-twin-api`.
 
@@ -112,6 +112,8 @@ The resume state is bound to the canonical Railway hostname to prevent accidenta
 The live structured service is <https://bauer-twin-api-testing.up.railway.app>; `/health` is public and search/MCP routes require a bearer token. LibreChat connects to `/mcp` through `mcpServers.bauer-twin` and exposes the tool to only the Bauer Agent. The Test Archive Agent retains only `file_search`.
 
 The six structured actions are `search_similar_projects`, `compare_projects`, `search_parts`, `search_documents`, `get_project_details`, and `get_part_details`. Medium, insufficient pressure, explicit compressor family, and explicit topology are hard exclusions before ranking. Exact `SYN-`/`DOC-` identifiers bypass fuzzy ranking.
+
+Business vocabulary is open at the MCP boundary. The Bauer Twin service normalizes recognized English, German, abbreviation, and chemical-symbol aliases through the `bauer_twin.terminology_aliases` catalogue while keeping actions and numeric parameters strictly typed. Search results use the explicit statuses `matches_found`, `no_compatible_match`, and `unknown_constraint`. An unknown term is preserved and never silently converted into a known medium, family, topology, or category. A recognized medium with no compatible project, such as helium in the synthetic demo dataset, returns `no_compatible_match` with deterministic rejection reasons instead of a tool-schema error.
 
 The Local AI model has a 32,768-token physical context window. Agents are configured with a 24,000-token working context and 2,048-token output allowance, while individual tool results are capped at 6,000 characters. This leaves safety headroom for instructions, conversation history, and multiple retrieval calls.
 
