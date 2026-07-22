@@ -1,7 +1,11 @@
 .railway/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
 .env
 .env.*
 tmp/
 output/
 *.log
-
+benchmark-results/

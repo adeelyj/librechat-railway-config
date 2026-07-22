@@ -1,0 +1,70 @@
+version: 1.3.13
+
+cache: true
+
+fileStrategy: "s3"
+
+interface:
+  endpointsMenu: true
+  modelSelect: true
+  parameters: true
+  presets: false
+  prompts:
+    use: false
+    create: false
+    share: false
+    public: false
+  bookmarks: true
+  multiConvo: true
+  agents:
+    use: true
+    create: true
+    share: true
+    public: false
+  peoplePicker:
+    users: true
+    groups: true
+    roles: true
+  marketplace:
+    use: false
+  fileCitations: true
+
+registration:
+  socialLogins: []
+
+mcpServers:
+  bauer-twin:
+    type: streamable-http
+    url: "${BAUER_TWIN_MCP_URL}"
+    headers:
+      Authorization: "Bearer ${BAUER_TWIN_API_KEY}"
+    requiresOAuth: false
+    serverInstructions: true
+    startup: true
+    chatMenu: false
+    timeout: 60000
+
+endpoints:
+  agents:
+    disableBuilder: false
+    allowedProviders:
+      - "RapidDraft Local AI"
+    capabilities:
+      - "file_search"
+      - "tools"
+  custom:
+    - name: "RapidDraft Local AI"
+      apiKey: "${LOCALAI_CHAT_API_KEY}"
+      baseURL: "${LOCALAI_CHAT_BASE_URL}"
+      maxToolResultChars: 6000
+      models:
+        default:
+          - "local/qwen-coder"
+          - "local/qwen-vision-fast"
+        fetch: false
+      titleConvo: true
+      titleMethod: "completion"
+      titleModel: "local/qwen-coder"
+      summarize: false
+      summaryModel: "local/qwen-coder"
+      modelDisplayLabel: "RapidDraft Local AI"
