@@ -87,7 +87,7 @@ $credential = Import-Clixml 'D:\02_Code\auth\auth\librechat\testing-admin.creden
 - `scripts/provision-knowledge-bases.ps1` idempotently creates/synchronizes groups and Agents, resumes uploads by checksum, repairs committed-upload interruptions, rejects duplicates, verifies embedding and isolation, and optionally runs real grounded chat tests.
 - `scripts/test-localai-tool-calling.ps1` forces a direct OpenAI-compatible tool call against the scoped Local AI endpoint.
 - `services/bauer-twin-api` is the authenticated MCP/HTTP service for structured project, part, and document search. It uses a dedicated `bauer_twin` PostgreSQL database and login on the existing Railway pgvector service.
-- `scripts/run-bauer-benchmark.py` runs the 18-query exact-hit, similarity, hard-filter, bilingual, unknown-term, safe-no-match, and latency regression set locally or against Railway.
+- `scripts/run-bauer-benchmark.py` runs the 19-query exact-hit, similarity, hard-filter, bilingual, qualified-term, unknown-term, safe-no-match, and latency regression set locally or against Railway.
 
 The root `Dockerfile` and `railway.json` are thin deployment wrappers for Railway GitHub auto-deploy; the service implementation remains under `services/bauer-twin-api`.
 

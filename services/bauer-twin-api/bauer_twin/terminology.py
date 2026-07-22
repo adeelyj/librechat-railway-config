@@ -163,6 +163,24 @@ _TERMS: dict[str, tuple[dict[str, Any], ...]] = {
 }
 
 
+# These words describe the demo record or value type, not the engineering medium.
+# They may surround one unambiguous alias in an explicitly supplied medium value.
+_SAFE_EXPLICIT_QUALIFIERS: dict[str, frozenset[str]] = {
+    "medium": frozenset(
+        {
+            "demo",
+            "gas",
+            "medium",
+            "synthetic",
+            "synthetisch",
+            "synthetische",
+            "synthetischer",
+            "synthetisches",
+        }
+    ),
+}
+
+
 def terminology_rows() -> list[dict[str, Any]]:
     """Return version-controlled seed rows for local and PostgreSQL-backed use."""
     rows: list[dict[str, Any]] = []
@@ -234,6 +252,32 @@ class TerminologyResolver:
                 normalized=str(match["canonical_value"]),
                 status="recognized",
                 matched_alias=normalized_raw,
+            )
+
+        allowed_qualifiers = _SAFE_EXPLICIT_QUALIFIERS.get(domain, frozenset())
+        qualified_matches: list[tuple[str, dict[str, Any]]] = []
+        if allowed_qualifiers:
+            for alias, details in self._aliases.get(domain, {}).items():
+                pattern = rf"(?<![a-z0-9]){re.escape(alias)}(?![a-z0-9])"
+                if not re.search(pattern, normalized_raw):
+                    continue
+                remainder = re.sub(pattern, " ", normalized_raw, count=1)
+                remainder_tokens = set(re.findall(r"[a-z0-9]+", remainder))
+                if remainder_tokens and remainder_tokens <= allowed_qualifiers:
+                    qualified_matches.append((alias, details))
+
+        qualified_canonicals = {
+            str(details["canonical_value"])
+            for _, details in qualified_matches
+        }
+        if len(qualified_canonicals) == 1:
+            alias, details = max(qualified_matches, key=lambda item: len(item[0]))
+            return Resolution(
+                domain=domain,
+                raw=str(raw),
+                normalized=str(details["canonical_value"]),
+                status="recognized",
+                matched_alias=alias,
             )
 
         aliases = list(self._aliases.get(domain, {}))

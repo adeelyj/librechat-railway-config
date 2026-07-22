@@ -36,6 +36,16 @@ class TerminologyResolverTests(unittest.TestCase):
         self.assertEqual("SpecialGas-X", result.raw)
         self.assertIsNone(result.normalized)
 
+    def test_safe_record_qualifier_does_not_change_the_medium(self) -> None:
+        english = self.resolver.resolve("medium", "synthetic nitrogen")
+        german = self.resolver.resolve("medium", "synthetischer Stickstoff")
+        self.assertEqual("nitrogen", english.normalized)
+        self.assertEqual(english.normalized, german.normalized)
+
+    def test_negation_and_mixed_media_are_not_silently_normalized(self) -> None:
+        self.assertEqual("unknown", self.resolver.resolve("medium", "not nitrogen").status)
+        self.assertEqual("unknown", self.resolver.resolve("medium", "nitrogen or helium").status)
+
 
 if __name__ == "__main__":
     unittest.main()

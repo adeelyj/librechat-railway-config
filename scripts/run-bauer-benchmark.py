@@ -34,6 +34,7 @@ CASES: list[dict[str, Any]] = [
     {"name": "helium-no-match-en", "action": "search_similar_projects", "query": "helium booster 420 bar 500 l/min", "expected": None, "expected_status": "no_compatible_match", "expected_filter_medium": "helium"},
     {"name": "helium-no-match-de", "action": "search_similar_projects", "query": "Heliumgas-Nachverdichter 420 bar 500 l/min", "expected": None, "expected_status": "no_compatible_match", "expected_filter_medium": "helium"},
     {"name": "unknown-medium", "action": "search_similar_projects", "query": "SpecialGas-X booster 420 bar 500 l/min", "parameters": {"medium": "SpecialGas-X"}, "expected": None, "expected_status": "unknown_constraint"},
+    {"name": "qualified-n2-medium", "action": "search_similar_projects", "query": "synthetic nitrogen booster 420 bar 500 l/min", "parameters": {"medium": "synthetic nitrogen"}, "expected": "SYN-BK-N2-420-500", "medium": "nitrogen", "minimum_pressure": 420},
     {"name": "n2-filter", "action": "search_parts", "query": "Filterpatrone fuer Stickstoff 420 bar", "expected_prefix": "SYN-P-PUR-N2-420", "medium": "nitrogen", "minimum_pressure": 420},
     {"name": "pressure-sensor", "action": "search_parts", "query": "pressure sensor suitable for nitrogen at 420 bar", "expected": "SYN-P-SNS-PRESSURE-500", "medium": "nitrogen", "minimum_pressure": 420},
     {"name": "bm40-document", "action": "search_documents", "query": "BM 40 product information", "expected": "DOC-BM-40"},

@@ -87,6 +87,15 @@ class BauerTwinEngineTests(unittest.TestCase):
         self.assertNotIn("medium", result["filters"])
         self.assertEqual("SpecialGas-X", result["unknown_constraints"][0]["raw"])
 
+    def test_synthetic_record_qualifier_is_not_treated_as_part_of_medium(self) -> None:
+        result = self.engine.search_similar_projects(
+            "synthetic nitrogen booster 420 bar 500 l/min",
+            medium="synthetic nitrogen",
+        )
+        self.assertEqual("matches_found", result["status"])
+        self.assertEqual("nitrogen", result["filters"]["medium"])
+        self.assertEqual("SYN-BK-N2-420-500", result["results"][0]["project_id"])
+
     def test_exact_identifier_cannot_bypass_a_hard_medium_constraint(self) -> None:
         result = self.engine.search_similar_projects(
             "SYN-BK-N2-420-500",
