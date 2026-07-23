@@ -1,0 +1,727 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1065.18,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nraper\nType\nSize\nSet\npiece\nOrder number\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 153\n152 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN\n## Page 78\n\nTOOL RECOMMENDATIONS\nUniversal knife\nType\nSize\nSet\npiece\nOrder number\nPipe bending tool\nType\nSize\nSet\npiece\nOrder number\nBlock hook\nType\nSize\nSet\npiece\nOrder number\nMeasuring wheel\nType\nSize\nSet\npiece\nOrder number\nCaliper gauge\nType\nSize\nSet\npiece\nOrder number\nScriber\nType\nSize\nSet\npiece\nOrder number\nWire brush\nType\nSize\nSet\npiece\nOrder number\nPipe plilers\nType\nSize\nSet\npiece\nOrder number\nLED torch\nType\nSize\nSet\npiece\nOrder number\nMagnet attachment\nType\nSize\nSet\npiece\nOrder number\nStrap wrench\nType\nSize\nSet\npiece\nOrder number\nOil spray can\nType\nSize\nSet\npiece\nOrder number\nRoll-up tool case\nType\nSize\nSet\npiece\nOrder number\nTool case\nType\nSize\nSet\npiece\nOrder number\nCompressed air impact wrench\nType\nSize\nSet\npiece\nOrder number\nPry bar\nType\nSize\nSet\npiece\nOrder number\nMulitmeter pliers\nType\nSize\nSet\npiece\nOrder number\nInstallation pliers\nType\nSize\nSet\npiece\nOrder number\nFilling valve tool\nType\nSize\nSet\npiece\nOrder number\nSW 36\n1\n124999\nFor mounting valves to CEODEUX storage bottles\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 155\n154 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+      "page": 77,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 77"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.15389344,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nlong\nType\nSize\nSet\nPieces\nOrder number\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 151\n150 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN\n## Page 77\n\nTOOL RECOMMENDATIONS\nAngled hex key set\nType\nSize\nSet\nPieces\nOrder number\nHex\nscrewdriver\nType\nSize\nSet\npiece\nOrder number\nScrewdriver set\nType\nSize\nSet\npiece\nOrder number\nPhillips\n1+2\nPozidriv\n1+2\nSlotted screwdriver\nType\nSize\nSet\npiece\nOrder number\nPliers range\nType\nSize\nSet\npiece\nOrder number\nUniversal pliers\nAngled long nose pliers\nPipe wrench\nSide cutter\nPliers wrench\nType\nSize\nSet\npiece\nOrder number\nAdjustable wrench\nType\nSize\nSet\npiece\nOrder number\nCirclip pliers\nType\nSize\nSet\npiece\nOrder number\nTips 1.3∅\nTorque wrench\nType\nSize\nSet\npiece\nOrder number\nPin punch\nType\nSize\nSet\npiece\nOrder number\nCentre punch\nType\nSize\nSet\npiece\nOrder number\nMachinist's hammer\nType\nSize\nSet\npiece\nOrder number\nPlastic hammer\nType\nSize\nSet\npiece\nOrder number\nMetal saw\nType\nSize\nSet\npiece\nOrder number\nMetal file\nType\nSize\nSet\npiece\nOrder number\nNon-woven abrasive\nType\nSize\nSet\npiece\nOrder number\nManual deburring tool\nType\nSize\nSet\npiece\nOrder number\nTriangular scraper\nType\nSize\nSet\npiece\nOrder number\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 153\n152 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+      "page": 76,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 76"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.15362903,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "c9aa9be9-9228-4dc2-a757-b3ce23c4957b",
+      "filename": "0137-BKRO-General-Terms-and-Conditions-of-Purchase-4d26290811.md",
+      "title": "BKRO-General-Terms-and-Conditions-of-Purchase",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "pe zi"
+      ],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: BKRO-General-Terms-and-Conditions-of-Purchase\nîntârzierii în prestarea serviciului, Clientul are dreptul de a solicita o\npenalitate contractuală în valoare de 0,2 % din prețul total de achiziție convenit al\nserviciilor si bunurilor, cu a căror livrare Furnizorul este în întârziere, pe zi\nlucrătoare în total însă nu mai mult de 10 %. Clientul are dreptul de a aplica\npenalitatea contractuală separate fata de solicitarea indeplinirii obligatiei de\nlivrare. În cazul în care Clientul acceptă fără rezerve prestația întârziată a\nFurnizorului, acest lucru nu va fi considerat o renunțare la pretențiile Clientului\njustificate de această prestație întârziată. Clientul are dreptul și, de asemenea,\nobligația de a declara rezerva penalizării contractuale față de Furnizor în termen\nde 10 zile lucrătoare, începând de la acceptarea serviciilor si bunurilor întârziate.\nClientul rămâne îndreptățit să își exercite alte pretenții și drepturi legale, în special\nsă solicite daune-interese care depășesc penalitatea contractuală.\n\n§ 8 Delivery terms and conditions, transfer of risk\n\n(1)\nPartial deliveries are not permitted.\n\n(2)\nEach delivery has to be carried out with the hand-over of a delivery note,\nwhich in addition to the exact designation of type and quantity of the\ndelivered services and goods also has to contain the order number of the\nCustomer and the product number of the Customer.\n\n(3)",
+      "page": 3,
+      "section": [
+        "BKRO-General-Terms-and-Conditions-of-Purchase",
+        "Page 3"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10806011,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "92fd3bc4-b60b-401d-82c7-83003a8a6069",
+      "filename": "0140-Cartuchos_Filtrantes_ES-b18e79ee71.md",
+      "title": "Cartuchos_Filtrantes_ES",
+      "language": "es",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: Cartuchos_Filtrantes_ES\n246cdbf67c55c7d99bf6d0efe4faa9afec0505413e2f4258b2`\n## Page 1\n\nCARTUCHOS FILTRANTES\nLOS ORIGINALES. PARA SU PROTECCIÓN Y SU SEGURIDAD.\nAIRE RESPIRABLE INDUSTRIA\n## Page 2\n\nRAZONES PARA DECIDIRSE POR LOS\nCARTUCHOS FILTRANTES BAUER\nCOMPONENTES VERIFICADOS\nprotegen la vida, la salud y los equipos.\nMÁXIMA CALIDAD\npara un funcionamiento fiable en todo momento.\nMATERIALES DE EMBALAJE DE ALTA CALI-\nDAD\ngarantizan la protección durante el transporte y el almacena-\nmiento.\nRÁPIDA DISPONIBILIDAD\na través de la red de distribución global.",
+      "page": 1,
+      "section": [
+        "Cartuchos Filtrantes ES",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10705128,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "7c91f7c0-700f-47ea-857e-77c583a7c8e5",
+      "filename": "0171-0005_automotive-industry-component-supplier-en_3e7b92aba0-90b8db7fc8.md",
+      "title": "Automotive industry & component supplier EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: Automotive industry & component supplier EN\n\\raw_html\\0005_automotive-industry-component-supplier-en_3e7b92aba0.html`\n- Original SHA-256: `90b8db7fc8806676cea905c75afc4484040995a3ce0c786849ac0d35b8162b84`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nHigh-Pressure Solutions for Air, Gases, and Gas Mixtures in the Automotive Sector\nStaying Up with Speed – BAUER for Automotive Applications\nThe automobile has become one of the most influential industrial products of modern times.\nIn addition to enhanced mobility, the automotive industry plays a central role in the economy of many countries—characterized by intricate supply networks and uncompromising quality standards\nDue to specialization in development and final assembly, a highly sophisticated supplier network has evolved around vehicle manufacturing—featuring tightly coordinated modules and systems.",
+      "page": null,
+      "section": [
+        "Automotive industry & component supplier EN"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10637255,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "ef04a54b-afe8-4a73-9897-8f932d871c56",
+      "filename": "0026-2019-03_Werbemittelkatalog_EN_N43826_sc_1-6c5f7b3cd4.md",
+      "title": "2019-03_Werbemittelkatalog_EN_N43826_sc_1",
+      "language": "en",
+      "publication_date": "2019-03-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2019-03_Werbemittelkatalog_EN_N43826_sc_1\nwear\nBranding:\nBAUER Logo and Block Logo\n\nas ‘watermark’\nDimensions:\nW 250 x L 390 mm\nMinimum Order Volume: 10 tube scarfs\nOrder-No:\nblue\nN40386\n\norange N43857\n## Page 8\n\n8 | BAUER ACCESSORIES\nBAUER KOMPRESSOREN\nDIVERSES\nOFFICE AND ORGANISATION\nBAUER USB STICK\nFast foldable USB 3.0 thumb drive with 8 GB memory.\nSupplied in cardbord box with silver print.\n\nColour:\nBlack/Silver\nMaterial:\nRubber/metal\nBranding:\nBAUER logo on stick\nDimensions:\nW 55 x L 18 mm (folded)\nMinimum order volume: 10 drives\nOrder-No:\nN36305\nBAUER STICKY NOTE SET\nPractical set of sticky notes in book-style hard cover,\nincluding sticky notes in two sizes and writeable\ntransparent page markers in 5 colours.\nColour:\nBlue/Silver (cover)\nMaterial:\nCard/paper\nBranding:\nBAUER logo and and block logo\nDimensions:\nW 105 x L 78 mm\nMinimum order volume: 10 note sets\nOrder-No:\nN43855\nBAUER PROMO CLIP\nQuality document clip with logo print –\na striking and effective way to present documents.\nColour:\n\nWhite-blue on silver\nMaterial:\n\nStainless spring steel\nBranding:\n\nBAUER GROUP logo and URL\nDimensions:\nW 14 x L 29 mm\nMinimum order volume: 25 clips\nOrder-No:\n\nN43856",
+      "page": 7,
+      "section": [
+        "2019-03 Werbemittelkatalog EN N43826 sc 1",
+        "Page 7"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.10615942,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "05ea5dd3-b827-44cf-9c9f-13c08cf907f5",
+      "filename": "0069-agb_autstria_en-62d7f7c81a.md",
+      "title": "agb_autstria_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: agb_autstria_en\nthe defect;\ngiven orally or over the phone.\ntheroxheContraclingPartyhalbeented torescindIheconiraclbyregted\notherwise anyclamshlbexcluded.fnoiceofdctisnogien it\n3Business corespondence printed by Bauer-Poseidon via electronic cata\ntimelygiven，therendered services aha be demad ccmpledIn devialion from\nprocesngorenlbmasuchasckwdmelorderinvicrdi\nfourteen days.\nSectlon B24 Austrian General Civil Code Ihe Ccntracting Parly shailprove hat the\nnoles, staterments of accounl and payment reminders shall be valid and legaliy\nVll.Acceptance test:\ndelecl had exialed aiready at the time of delivery of Ihe service rendered.\nbinding alse if not signed,\n4.Tho werranty obligalion of Bauer-Poeidon ahail at ita dlacrelion be limited lo\nCoet eetimates:\nimprovementrelanlfthdefectivepartsorpiceredctionInonection\nIL\nagreod withBaumr-Possidoninwrilinguponconclusionof the contract.Urless\n1.Coslstimles frconiraclstorwcrkshalbe subject oachargeCharges pid\nwithimprovemn/replacmlBeuer-Poidonshalbenliled lohavethedeeclive\ndifernlreulatonshavebeenagreedtheacceptancelestshalcrouty\nlor a cosl estimale shall be credited if an order is placed on the basis of such cost\nBauer-Poseldon duringnomal workinghoura at the place ofmanulaclure crata\ngoods or the defective parls sent back for subsequenl mprovemenl. In Ihe ebaenca\nof anagreement to the contrery he Contracting Pary shal in Ihia caa bar the col\nesllmate.",
+      "page": 1,
+      "section": [
+        "agb autstria en",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10595238,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "ef04a54b-afe8-4a73-9897-8f932d871c56",
+      "filename": "0026-2019-03_Werbemittelkatalog_EN_N43826_sc_1-6c5f7b3cd4.md",
+      "title": "2019-03_Werbemittelkatalog_EN_N43826_sc_1",
+      "language": "en",
+      "publication_date": "2019-03-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2019-03_Werbemittelkatalog_EN_N43826_sc_1\ner that withstands even strong\nwinds.\nColour:\nSilver/Black\nMaterial:\nPlastic/metal\nBranding:\nBAUER logo\nDimensions:\nW 40 x L 65 mm\nOrder-No:\nN43853rder No:\nNxxx\n## Page 12\n\n12 | BAUER ACCESSORIES\nBAUER KOMPRESSOREN\nCUP, MUGS & MORE\nBAUER EVENT CUP\nIn frosted finish and 300 ml capacity, the classic choice for\nserving beverages at trade shows and events.\n\nColour:\nMatte transparent\nMaterial:\nPolypropylene\nBranding:\nBAUER block logo, and URL\nDimensions:\nW 70 x L 115 mm/0,3 Litres\nMinimum order volume: 25 cups\nOrder-No:\nN43850\nBAUER GLASS COASTER\nStylish coaster in satinized glass with non-slip\nsilicone feet. Looks good on any table.\n\nColour:\nMatte white\nMaterial:\nImprinted Glass\nBranding:\nBAUER GROUP logo, block logo,\n\nscrew logo\nDimensions:\nW 100 x L 100 mm\nMinimum order volume: 5 coasters\nOrder-No:\nN43851\nBAUER PEPPERMINT TIN\nPeppermint sweets in a practical tin\nColour:\nCyan\nMaterial:\nMetallbox/Hard peppermint\n\nflavour sweets\nBranding:\nBAUER GROUP Logo/BAUER Logo\nDimensions:\nB 50 x L 60 mm\nMinimum order volume: 10 tins\nOrder-No:\nN43852",
+      "page": 11,
+      "section": [
+        "2019-03 Werbemittelkatalog EN N43826 sc 1",
+        "Page 11"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.10575117,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "0f867a7b-a022-410d-9419-9f5d6d600ba6",
+      "filename": "0349-0183_professional-diving_8f84535210-bfe75cb87a.md",
+      "title": "Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN\nl source: `bauer_index\\raw_html\\0183_professional-diving_8f84535210.html`\n- Original SHA-256: `bfe75cb87af5c9aa795a8565476b11977ad832dcbcfd5323ed92e41ed2b8592b`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nHigh-Pressure Breathing Air Systems for Professional Divers\nSafe Breathing Air – Powered by BAUER Technology\nBreathing air is the most vital component of any dive— especially during professional operations under extreme conditions.\nThat’s why at BAUER KOMPRESSOREN, delivering clean, safe, and reliable breathing air is our top priority — worldwide and in every scenario.\nFrom portable compressors for private diving excursions to complete professional systems for dive centres, BAUER offers everything from a single source.",
+      "page": null,
+      "section": [
+        "Professional Diving Equipment and Solutions / BAUER KOMPRESSOREN"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.1053653,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nraper\nType\nSize\nSet\npiece\nOrder number\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 153\n152 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN\n## Page 78\n\nTOOL RECOMMENDATIONS\nUniversal knife\nType\nSize\nSet\npiece\nOrder number\nPipe bending tool\nType\nSize\nSet\npiece\nOrder number\nBlock hook\nType\nSize\nSet\npiece\nOrder number\nMeasuring wheel\nType\nSize\nSet\npiece\nOrder number\nCaliper gauge\nType\nSize\nSet\npiece\nOrder number\nScriber\nType\nSize\nSet\npiece\nOrder number\nWire brush\nType\nSize\nSet\npiece\nOrder number\nPipe plilers\nType\nSize\nSet\npiece\nOrder number\nLED torch\nType\nSize\nSet\npiece\nOrder number\nMagnet attachment\nType\nSize\nSet\npiece\nOrder number\nStrap wrench\nType\nSize\nSet\npiece\nOrder number\nOil spray can\nType\nSize\nSet\npiece\nOrder number\nRoll-up tool case\nType\nSize\nSet\npiece\nOrder number\nTool case\nType\nSize\nSet\npiece\nOrder number\nCompressed air impact wrench\nType\nSize\nSet\npiece\nOrder number\nPry bar\nType\nSize\nSet\npiece\nOrder number\nMulitmeter pliers\nType\nSize\nSet\npiece\nOrder number\nInstallation pliers\nType\nSize\nSet\npiece\nOrder number\nFilling valve tool\nType\nSize\nSet\npiece\nOrder number\nSW 36\n1\n124999\nFor mounting valves to CEODEUX storage bottles\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 155\n154 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+        "page": 77,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 77"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.15389344,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nlong\nType\nSize\nSet\nPieces\nOrder number\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 151\n150 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN\n## Page 77\n\nTOOL RECOMMENDATIONS\nAngled hex key set\nType\nSize\nSet\nPieces\nOrder number\nHex\nscrewdriver\nType\nSize\nSet\npiece\nOrder number\nScrewdriver set\nType\nSize\nSet\npiece\nOrder number\nPhillips\n1+2\nPozidriv\n1+2\nSlotted screwdriver\nType\nSize\nSet\npiece\nOrder number\nPliers range\nType\nSize\nSet\npiece\nOrder number\nUniversal pliers\nAngled long nose pliers\nPipe wrench\nSide cutter\nPliers wrench\nType\nSize\nSet\npiece\nOrder number\nAdjustable wrench\nType\nSize\nSet\npiece\nOrder number\nCirclip pliers\nType\nSize\nSet\npiece\nOrder number\nTips 1.3∅\nTorque wrench\nType\nSize\nSet\npiece\nOrder number\nPin punch\nType\nSize\nSet\npiece\nOrder number\nCentre punch\nType\nSize\nSet\npiece\nOrder number\nMachinist's hammer\nType\nSize\nSet\npiece\nOrder number\nPlastic hammer\nType\nSize\nSet\npiece\nOrder number\nMetal saw\nType\nSize\nSet\npiece\nOrder number\nMetal file\nType\nSize\nSet\npiece\nOrder number\nNon-woven abrasive\nType\nSize\nSet\npiece\nOrder number\nManual deburring tool\nType\nSize\nSet\npiece\nOrder number\nTriangular scraper\nType\nSize\nSet\npiece\nOrder number\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 153\n152 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+        "page": 76,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 76"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.15362903,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "c9aa9be9-9228-4dc2-a757-b3ce23c4957b",
+        "filename": "0137-BKRO-General-Terms-and-Conditions-of-Purchase-4d26290811.md",
+        "title": "BKRO-General-Terms-and-Conditions-of-Purchase",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "pe zi"
+        ],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: BKRO-General-Terms-and-Conditions-of-Purchase\nîntârzierii în prestarea serviciului, Clientul are dreptul de a solicita o\npenalitate contractuală în valoare de 0,2 % din prețul total de achiziție convenit al\nserviciilor si bunurilor, cu a căror livrare Furnizorul este în întârziere, pe zi\nlucrătoare în total însă nu mai mult de 10 %. Clientul are dreptul de a aplica\npenalitatea contractuală separate fata de solicitarea indeplinirii obligatiei de\nlivrare. În cazul în care Clientul acceptă fără rezerve prestația întârziată a\nFurnizorului, acest lucru nu va fi considerat o renunțare la pretențiile Clientului\njustificate de această prestație întârziată. Clientul are dreptul și, de asemenea,\nobligația de a declara rezerva penalizării contractuale față de Furnizor în termen\nde 10 zile lucrătoare, începând de la acceptarea serviciilor si bunurilor întârziate.\nClientul rămâne îndreptățit să își exercite alte pretenții și drepturi legale, în special\nsă solicite daune-interese care depășesc penalitatea contractuală.\n\n§ 8 Delivery terms and conditions, transfer of risk\n\n(1)\nPartial deliveries are not permitted.\n\n(2)\nEach delivery has to be carried out with the hand-over of a delivery note,\nwhich in addition to the exact designation of type and quantity of the\ndelivered services and goods also has to contain the order number of the\nCustomer and the product number of the Customer.\n\n(3)",
+        "page": 3,
+        "section": [
+          "BKRO-General-Terms-and-Conditions-of-Purchase",
+          "Page 3"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10806011,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "92fd3bc4-b60b-401d-82c7-83003a8a6069",
+        "filename": "0140-Cartuchos_Filtrantes_ES-b18e79ee71.md",
+        "title": "Cartuchos_Filtrantes_ES",
+        "language": "es",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: Cartuchos_Filtrantes_ES\n246cdbf67c55c7d99bf6d0efe4faa9afec0505413e2f4258b2`\n## Page 1\n\nCARTUCHOS FILTRANTES\nLOS ORIGINALES. PARA SU PROTECCIÓN Y SU SEGURIDAD.\nAIRE RESPIRABLE INDUSTRIA\n## Page 2\n\nRAZONES PARA DECIDIRSE POR LOS\nCARTUCHOS FILTRANTES BAUER\nCOMPONENTES VERIFICADOS\nprotegen la vida, la salud y los equipos.\nMÁXIMA CALIDAD\npara un funcionamiento fiable en todo momento.\nMATERIALES DE EMBALAJE DE ALTA CALI-\nDAD\ngarantizan la protección durante el transporte y el almacena-\nmiento.\nRÁPIDA DISPONIBILIDAD\na través de la red de distribución global.",
+        "page": 1,
+        "section": [
+          "Cartuchos Filtrantes ES",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10705128,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "7c91f7c0-700f-47ea-857e-77c583a7c8e5",
+        "filename": "0171-0005_automotive-industry-component-supplier-en_3e7b92aba0-90b8db7fc8.md",
+        "title": "Automotive industry & component supplier EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: Automotive industry & component supplier EN\n\\raw_html\\0005_automotive-industry-component-supplier-en_3e7b92aba0.html`\n- Original SHA-256: `90b8db7fc8806676cea905c75afc4484040995a3ce0c786849ac0d35b8162b84`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nHigh-Pressure Solutions for Air, Gases, and Gas Mixtures in the Automotive Sector\nStaying Up with Speed – BAUER for Automotive Applications\nThe automobile has become one of the most influential industrial products of modern times.\nIn addition to enhanced mobility, the automotive industry plays a central role in the economy of many countries—characterized by intricate supply networks and uncompromising quality standards\nDue to specialization in development and final assembly, a highly sophisticated supplier network has evolved around vehicle manufacturing—featuring tightly coordinated modules and systems.",
+        "page": null,
+        "section": [
+          "Automotive industry & component supplier EN"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10637255,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "ef04a54b-afe8-4a73-9897-8f932d871c56",
+        "filename": "0026-2019-03_Werbemittelkatalog_EN_N43826_sc_1-6c5f7b3cd4.md",
+        "title": "2019-03_Werbemittelkatalog_EN_N43826_sc_1",
+        "language": "en",
+        "publication_date": "2019-03-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2019-03_Werbemittelkatalog_EN_N43826_sc_1\nwear\nBranding:\nBAUER Logo and Block Logo\n\nas ‘watermark’\nDimensions:\nW 250 x L 390 mm\nMinimum Order Volume: 10 tube scarfs\nOrder-No:\nblue\nN40386\n\norange N43857\n## Page 8\n\n8 | BAUER ACCESSORIES\nBAUER KOMPRESSOREN\nDIVERSES\nOFFICE AND ORGANISATION\nBAUER USB STICK\nFast foldable USB 3.0 thumb drive with 8 GB memory.\nSupplied in cardbord box with silver print.\n\nColour:\nBlack/Silver\nMaterial:\nRubber/metal\nBranding:\nBAUER logo on stick\nDimensions:\nW 55 x L 18 mm (folded)\nMinimum order volume: 10 drives\nOrder-No:\nN36305\nBAUER STICKY NOTE SET\nPractical set of sticky notes in book-style hard cover,\nincluding sticky notes in two sizes and writeable\ntransparent page markers in 5 colours.\nColour:\nBlue/Silver (cover)\nMaterial:\nCard/paper\nBranding:\nBAUER logo and and block logo\nDimensions:\nW 105 x L 78 mm\nMinimum order volume: 10 note sets\nOrder-No:\nN43855\nBAUER PROMO CLIP\nQuality document clip with logo print –\na striking and effective way to present documents.\nColour:\n\nWhite-blue on silver\nMaterial:\n\nStainless spring steel\nBranding:\n\nBAUER GROUP logo and URL\nDimensions:\nW 14 x L 29 mm\nMinimum order volume: 25 clips\nOrder-No:\n\nN43856",
+        "page": 7,
+        "section": [
+          "2019-03 Werbemittelkatalog EN N43826 sc 1",
+          "Page 7"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.10615942,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "05ea5dd3-b827-44cf-9c9f-13c08cf907f5",
+        "filename": "0069-agb_autstria_en-62d7f7c81a.md",
+        "title": "agb_autstria_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: agb_autstria_en\nthe defect;\ngiven orally or over the phone.\ntheroxheContraclingPartyhalbeented torescindIheconiraclbyregted\notherwise anyclamshlbexcluded.fnoiceofdctisnogien it\n3Business corespondence printed by Bauer-Poseidon via electronic cata\ntimelygiven，therendered services aha be demad ccmpledIn devialion from\nprocesngorenlbmasuchasckwdmelorderinvicrdi\nfourteen days.\nSectlon B24 Austrian General Civil Code Ihe Ccntracting Parly shailprove hat the\nnoles, staterments of accounl and payment reminders shall be valid and legaliy\nVll.Acceptance test:\ndelecl had exialed aiready at the time of delivery of Ihe service rendered.\nbinding alse if not signed,\n4.Tho werranty obligalion of Bauer-Poeidon ahail at ita dlacrelion be limited lo\nCoet eetimates:\nimprovementrelanlfthdefectivepartsorpiceredctionInonection\nIL\nagreod withBaumr-Possidoninwrilinguponconclusionof the contract.Urless\n1.Coslstimles frconiraclstorwcrkshalbe subject oachargeCharges pid\nwithimprovemn/replacmlBeuer-Poidonshalbenliled lohavethedeeclive\ndifernlreulatonshavebeenagreedtheacceptancelestshalcrouty\nlor a cosl estimale shall be credited if an order is placed on the basis of such cost\nBauer-Poseldon duringnomal workinghoura at the place ofmanulaclure crata\ngoods or the defective parls sent back for subsequenl mprovemenl. In Ihe ebaenca\nof anagreement to the contrery he Contracting Pary shal in Ihia caa bar the col\nesllmate.",
+        "page": 1,
+        "section": [
+          "agb autstria en",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10595238,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "ef04a54b-afe8-4a73-9897-8f932d871c56",
+        "filename": "0026-2019-03_Werbemittelkatalog_EN_N43826_sc_1-6c5f7b3cd4.md",
+        "title": "2019-03_Werbemittelkatalog_EN_N43826_sc_1",
+        "language": "en",
+        "publication_date": "2019-03-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2019-03_Werbemittelkatalog_EN_N43826_sc_1\ner that withstands even strong\nwinds.\nColour:\nSilver/Black\nMaterial:\nPlastic/metal\nBranding:\nBAUER logo\nDimensions:\nW 40 x L 65 mm\nOrder-No:\nN43853rder No:\nNxxx\n## Page 12\n\n12 | BAUER ACCESSORIES\nBAUER KOMPRESSOREN\nCUP, MUGS & MORE\nBAUER EVENT CUP\nIn frosted finish and 300 ml capacity, the classic choice for\nserving beverages at trade shows and events.\n\nColour:\nMatte transparent\nMaterial:\nPolypropylene\nBranding:\nBAUER block logo, and URL\nDimensions:\nW 70 x L 115 mm/0,3 Litres\nMinimum order volume: 25 cups\nOrder-No:\nN43850\nBAUER GLASS COASTER\nStylish coaster in satinized glass with non-slip\nsilicone feet. Looks good on any table.\n\nColour:\nMatte white\nMaterial:\nImprinted Glass\nBranding:\nBAUER GROUP logo, block logo,\n\nscrew logo\nDimensions:\nW 100 x L 100 mm\nMinimum order volume: 5 coasters\nOrder-No:\nN43851\nBAUER PEPPERMINT TIN\nPeppermint sweets in a practical tin\nColour:\nCyan\nMaterial:\nMetallbox/Hard peppermint\n\nflavour sweets\nBranding:\nBAUER GROUP Logo/BAUER Logo\nDimensions:\nB 50 x L 60 mm\nMinimum order volume: 10 tins\nOrder-No:\nN43852",
+        "page": 11,
+        "section": [
+          "2019-03 Werbemittelkatalog EN N43826 sc 1",
+          "Page 11"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.10575117,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "0f867a7b-a022-410d-9419-9f5d6d600ba6",
+        "filename": "0349-0183_professional-diving_8f84535210-bfe75cb87a.md",
+        "title": "Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN\nl source: `bauer_index\\raw_html\\0183_professional-diving_8f84535210.html`\n- Original SHA-256: `bfe75cb87af5c9aa795a8565476b11977ad832dcbcfd5323ed92e41ed2b8592b`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nHigh-Pressure Breathing Air Systems for Professional Divers\nSafe Breathing Air – Powered by BAUER Technology\nBreathing air is the most vital component of any dive— especially during professional operations under extreme conditions.\nThat’s why at BAUER KOMPRESSOREN, delivering clean, safe, and reliable breathing air is our top priority — worldwide and in every scenario.\nFrom portable compressors for private diving excursions to complete professional systems for dive centres, BAUER offers everything from a single source.",
+        "page": null,
+        "section": [
+          "Professional Diving Equipment and Solutions / BAUER KOMPRESSOREN"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.1053653,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "n99999999"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 0,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 12,
+      "elapsed_ms": 807.93
+    }
+  },
+  "completed_at": "2026-07-23T15:02:41.028471+00:00",
+  "case_id": "B27",
+  "split": "development",
+  "category": "safe_no_answer",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

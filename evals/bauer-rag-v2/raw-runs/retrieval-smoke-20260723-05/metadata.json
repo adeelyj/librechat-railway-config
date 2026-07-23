@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "kind": "retrieval",
+  "run_id": "retrieval-smoke-20260723-05",
+  "started_at": "2026-07-23T15:01:58.963176+00:00",
+  "git_commit": "bf3c3cb0a96f054ad064824623baf25b4785005b",
+  "corpus_manifest_sha256": "2934bb3bf75514a4ae4d340cb68c023831ca20a5e89e194fd20774b1e561b0d8",
+  "split": "development",
+  "repetitions": 1,
+  "serial_execution": true,
+  "alternating_order": true,
+  "v2_debug": true,
+  "base_url": "https://rag-api-testing.up.railway.app",
+  "systems": {
+    "v1": {
+      "entity_id": "agent_Z8A2LtQWLeP4KuUDbvqZL",
+      "path": "/query_multiple"
+    },
+    "v2": {
+      "entity_id": "agent_pmPMcA25UXS7vznUaz-DU",
+      "path": "/query_v2"
+    }
+  },
+  "file_count": 373
+}

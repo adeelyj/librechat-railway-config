@@ -1,0 +1,251 @@
+{
+  "system": "v1",
+  "path": "/query_multiple",
+  "http_status": 200,
+  "elapsed_ms": 308.97,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709_97e454d24fc34f648c8e3d464e850ec8.md",
+      "content": "monitoring system (depending on model) › B-DRAIN automatic condensate drain system including automatic shut off when final pressure is reached › Trolley › Nitrox model available MARINER 250 with electric motor and 2 filling hoses (standard) 1 \u0007Based on due maintenance and installation of the system in accordance with the operating manual and on use of B-AEROGUARD where CO2 concentrations in intake air exceed the predefined standard values. Local TLVs are ignored.",
+      "page": null,
+      "section": [],
+      "score": 0.7204072094084985,
+      "route": "v1"
+    },
+    {
+      "file_id": "a8b2f676-6851-4947-98d8-99d897f0eae3",
+      "filename": "0042-2023-01_B-NEWS_EN_sc-361222d525_63f6328d0cf24f8189f587c6a8670b02.md",
+      "content": "ranges from 45 m³/h to 402 m³/h at final pressures from 25 to 420 bar. The series is suitable for applications involving air, nitrogen, helium, heliox, argon, natural gas and biomethane.",
+      "page": null,
+      "section": [],
+      "score": 0.7130626652557456,
+      "route": "v1"
+    },
+    {
+      "file_id": "4431b1ad-b9cd-4a10-a247-58dfd0bb3e00",
+      "filename": "0163-zubehoer_oel_de-00beb0624b_1b50d82eb45547ebaa28906d6f23e36d.md",
+      "content": "Page 4\n\nBAUER KOMPRESSOREN GmbH Systemwerk, Postfach 71 02 60, 81452 München, Deutschland Tel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de www.bauer-kompressoren.de KONTAKT-FORMULAR BITTE INFORMIEREN SIE UNS ÜBER FOLGENDE DIENSTLEISTUNGEN IHR ANSPRECHPARTNER Herr / Frau:\n\nTelefon:\n\nFax: IHRE ADRESSE Firma:\n\nStraße:\n\nPLZ, Ort: Bitte senden Sie das ausgefüllte Formular per Post oder Fax an den oben genannten Händler. Unser Service- Team wird Ihre Anfrage schnellstmöglich bearbeiten und mit Ihnen in Kontakt treten.",
+      "page": null,
+      "section": [],
+      "score": 0.7123060438724177,
+      "route": "v1"
+    },
+    {
+      "file_id": "4669d300-488e-49ea-8528-ee508ed4e4e5",
+      "filename": "0161-zubehoer_fuellventile_de-456e7ead6f_bc4c09031f844bcf9b9f0e3aaaa4dda8.md",
+      "content": "Page 4\n\nBAUER KOMPRESSOREN GmbH Systemwerk, D-81452 München, Postfach 71 02 60, Tel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de www.bauer-kompressoren.de KONTAKT-FORMULAR BITTE INFORMIEREN SIE UNS ÜBER FOLGENDE DIENSTLEISTUNGEN IHR ANSPRECHPARTNER Herr / Frau:\n\nTelefon:\n\nFax: IHRE ADRESSE Firma:\n\nStraße:\n\nPLZ, Ort: Bitte senden Sie das ausgefüllte Formular per Post oder Fax an den oben genannten Händler. Unser Service- Team wird Ihre Anfrage schnellstmöglich bearbeiten und mit Ihnen in Kontakt treten.",
+      "page": null,
+      "section": [],
+      "score": 0.7118703339061244,
+      "route": "v1"
+    },
+    {
+      "file_id": "cc8fd2e3-63dc-43af-919f-5c6cfcc82275",
+      "filename": "0165-zubehoer_p-filter_de-482a15acce_91dfce6800a74055875665e798340941.md",
+      "content": "Page 6\n\nBAUER KOMPRESSOREN GmbH Systemwerk, D-81452 München, Postfach 71 02 60, Tel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de www.bauer-kompressoren.de KONTAKT-FORMULAR BITTE INFORMIEREN SIE UNS ÜBER FOLGENDE DIENSTLEISTUNGEN IHR ANSPRECHPARTNER Herr / Frau:\n\nTelefon:\n\nFax: IHRE ADRESSE Firma:\n\nStraße:\n\nPLZ, Ort: Bitte senden Sie das ausgefüllte Formular per Post oder Fax an den oben genannten Händler. Unser Service- Team wird Ihre Anfrage schnellstmöglich bearbeiten und mit Ihnen in Kontakt treten.",
+      "page": null,
+      "section": [],
+      "score": 0.7110350343893482,
+      "route": "v1"
+    },
+    {
+      "file_id": "b1007965-fd23-4f79-94b0-6eb1f0c3c77a",
+      "filename": "0037-2021-10_Fuel_Gas_Systems_EN_N38837_sc-3c2f53a8c0_9eb56c2b3dc441639a87349adab64431.md",
+      "content": "from the installation and operation startup of the com¬≠ pressor/storage unit and fill post technology to coordination of deadlines. The station can generally be put into operation after only a few days. After assembly of the station is completed, the installation is inspected by an expert. This on-site procedure is likewise conducted by our service team and the relevant inspection authority. And BAUER‚Äôs outstanding service also includes in-depth induction of the customer‚Äôs authorised staff into the technology and electrics of the system, enabling the operator to complete basic settings and simple maintenance tasks independently.",
+      "page": null,
+      "section": [],
+      "score": 0.7046231241411904,
+      "route": "v1"
+    },
+    {
+      "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+      "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947_959f9009bfdf4ce7946bd5bfcdf1de63.md",
+      "content": "standard with every BAUER breathing air compressor. Depending on the cartridge type, P-Purification Systems adsorb residual moisture, oil vapour, traces of hydro- carbon gases and carbon monoxide from the compressed air. BAUER P-Purification Systems not only meet, but actually exceed all requirements of the DIN EN 12021:2014 Breathing Air Standard1. P 61 Purification System BAUER KOMPRESSOREN IS CERTIFIED FOR THE MANUFACTURE OF PRESSURE EQUIPMENT UP TO CATEGORY 4 UNDER THE EU PRESSURE EQUIPMENT DIRECTIVE PED2014/23/EC. 1 Based on due maintenance and installation of the system in accordance with the operating manual and on use of BAUER AERO -GUARD-OX where CO2 concentrations in intake air exceed the predefined standard values. Local TLVs are ignored.",
+      "page": null,
+      "section": [],
+      "score": 0.7017252654351376,
+      "route": "v1"
+    },
+    {
+      "file_id": "5447e78f-159a-41d1-91e6-6c5f4db80973",
+      "filename": "0039-2022-01_B-NEWS_EN_sc-53814cbeae_7f05433f7024455d9a533e7177675e17.md",
+      "content": "quality is monitored, the data collec- ted can be saved securely in the cloud on a highly secure server located within Europe, in compliance with data protection regulations and 100 BAUER KOMPRESSOREN INTERSCHUTZ B-CLOUD, the new COMPACT-LINE, the \"Ideal Filling Room\" and the UNICUS attracted the most attention at BAUER’s stand. All power to women on one of the toughest obstacle courses in the world! Philipp Bayat, Dr. Monika Bayat, Heinz Bauer (l.to r.). BAUER’s high-purity breathing air is essential to complete these physical challenges in full face mask.",
+      "page": null,
+      "section": [],
+      "score": 0.6987220465375212,
+      "route": "v1"
+    },
+    {
+      "file_id": "6823330c-20f2-4c38-8c78-c79148e910e4",
+      "filename": "0018-2018-01_B-NEWS_EN_sc-7105ffda88_e1ac0212ab0a44eeabcd8ece5a9ea146.md",
+      "content": "monitored the composition of the ambient air. ISSUE 1/2018 Even under Arctic conditions of snow and freezing temperatures, BAUER systems continue to operate reliably. The reason why global giant Gasprom chooses technology from the market leader in high-press┬¡ ure compression. A CNG-operated truck refuels at the new fuel station at Petropavlovsk.",
+      "page": null,
+      "section": [],
+      "score": 0.6969033687383943,
+      "route": "v1"
+    },
+    {
+      "file_id": "e56864d5-2bd2-4f45-b1d2-d5a98daad68b",
+      "filename": "0231-0065_g22-series-he_9611e8a1c5-55462f5b5d_4daca021176744d2b3c0e6769247d2cb.md",
+      "content": "without the need for custom designs. Most comprehensive air and gas treatment portfolio: From separators and regenerative and adsorption dryers to refrigerated dryers, BAUER covers all air and gas purity requirements in accordance with DIN ISO 8573-1. Global market leadership & service expertise: BAUER is the global market standard in high- and medium-pressure applications across nearly all segments – with a 70% market share in breathing air systems and an undisputed leading position in industrial applications, supported by a global service network. What is the G22 series used for in helium applications? The G22 series comprises air-cooled high-pressure compressors for industrial helium compression. It is used wherever helium needs to be reliably compressed from atmospheric pressure to high final pressures or reprocessed within recovery systems, for example in industrial processes, research facilities, test benches and gas recovery plants. What performance ranges does the G22 series cover for helium? Depending on the configuration, the high-pressure versions of the G22 series achieve final pressures of up to 350 bar. The effective delivery rates range from approximately 620 to 1,500 litres per minute, depending on the model. This makes the series suitable for both compact helium applications and high-capacity recovery and supply systems. How are the G22 high-pressure compressors controlled and monitored? The compressors are equipped with the B-CONTROL MICRO control system.",
+      "page": null,
+      "section": [],
+      "score": 0.6952002462864069,
+      "route": "v1"
+    }
+  ],
+  "raw_response": [
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "e81b2da0f7f7074802ee61c9abf4892f",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0122-bauer_amfile_5-01e0b02709_97e454d24fc34f648c8e3d464e850ec8.md",
+          "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "monitoring system (depending on model) › B-DRAIN automatic condensate drain system including automatic shut off when final pressure is reached › Trolley › Nitrox model available MARINER 250 with electric motor and 2 filling hoses (standard) 1 \u0007Based on due maintenance and installation of the system in accordance with the operating manual and on use of B-AEROGUARD where CO2 concentrations in intake air exceed the predefined standard values. Local TLVs are ignored.",
+        "type": "Document"
+      },
+      0.27959279059150155
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "24c047c875c4985ca3ed9a77e6f15aaf",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0042-2023-01_B-NEWS_EN_sc-361222d525_63f6328d0cf24f8189f587c6a8670b02.md",
+          "file_id": "a8b2f676-6851-4947-98d8-99d897f0eae3",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "ranges from 45 m³/h to 402 m³/h at final pressures from 25 to 420 bar. The series is suitable for applications involving air, nitrogen, helium, heliox, argon, natural gas and biomethane.",
+        "type": "Document"
+      },
+      0.2869373347442544
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "5a2659aa4cc8de3b3f2bbfd4713c75d8",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0163-zubehoer_oel_de-00beb0624b_1b50d82eb45547ebaa28906d6f23e36d.md",
+          "file_id": "4431b1ad-b9cd-4a10-a247-58dfd0bb3e00",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "Page 4\n\nBAUER KOMPRESSOREN GmbH Systemwerk, Postfach 71 02 60, 81452 München, Deutschland Tel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de www.bauer-kompressoren.de KONTAKT-FORMULAR BITTE INFORMIEREN SIE UNS ÜBER FOLGENDE DIENSTLEISTUNGEN IHR ANSPRECHPARTNER Herr / Frau:\n\nTelefon:\n\nFax: IHRE ADRESSE Firma:\n\nStraße:\n\nPLZ, Ort: Bitte senden Sie das ausgefüllte Formular per Post oder Fax an den oben genannten Händler. Unser Service- Team wird Ihre Anfrage schnellstmöglich bearbeiten und mit Ihnen in Kontakt treten.",
+        "type": "Document"
+      },
+      0.2876939561275823
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "9fe4f91ee7e5ea914f9f8d82c145bcca",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0161-zubehoer_fuellventile_de-456e7ead6f_bc4c09031f844bcf9b9f0e3aaaa4dda8.md",
+          "file_id": "4669d300-488e-49ea-8528-ee508ed4e4e5",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "Page 4\n\nBAUER KOMPRESSOREN GmbH Systemwerk, D-81452 München, Postfach 71 02 60, Tel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de www.bauer-kompressoren.de KONTAKT-FORMULAR BITTE INFORMIEREN SIE UNS ÜBER FOLGENDE DIENSTLEISTUNGEN IHR ANSPRECHPARTNER Herr / Frau:\n\nTelefon:\n\nFax: IHRE ADRESSE Firma:\n\nStraße:\n\nPLZ, Ort: Bitte senden Sie das ausgefüllte Formular per Post oder Fax an den oben genannten Händler. Unser Service- Team wird Ihre Anfrage schnellstmöglich bearbeiten und mit Ihnen in Kontakt treten.",
+        "type": "Document"
+      },
+      0.2881296660938756
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "b56a6af4ea71d6d879b1e541d84763d0",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0165-zubehoer_p-filter_de-482a15acce_91dfce6800a74055875665e798340941.md",
+          "file_id": "cc8fd2e3-63dc-43af-919f-5c6cfcc82275",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "Page 6\n\nBAUER KOMPRESSOREN GmbH Systemwerk, D-81452 München, Postfach 71 02 60, Tel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de www.bauer-kompressoren.de KONTAKT-FORMULAR BITTE INFORMIEREN SIE UNS ÜBER FOLGENDE DIENSTLEISTUNGEN IHR ANSPRECHPARTNER Herr / Frau:\n\nTelefon:\n\nFax: IHRE ADRESSE Firma:\n\nStraße:\n\nPLZ, Ort: Bitte senden Sie das ausgefüllte Formular per Post oder Fax an den oben genannten Händler. Unser Service- Team wird Ihre Anfrage schnellstmöglich bearbeiten und mit Ihnen in Kontakt treten.",
+        "type": "Document"
+      },
+      0.28896496561065177
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "88560a738d83c2b2dcbc0920ce64102c",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0037-2021-10_Fuel_Gas_Systems_EN_N38837_sc-3c2f53a8c0_9eb56c2b3dc441639a87349adab64431.md",
+          "file_id": "b1007965-fd23-4f79-94b0-6eb1f0c3c77a",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "from the installation and operation startup of the com¬≠ pressor/storage unit and fill post technology to coordination of deadlines. The station can generally be put into operation after only a few days. After assembly of the station is completed, the installation is inspected by an expert. This on-site procedure is likewise conducted by our service team and the relevant inspection authority. And BAUER‚Äôs outstanding service also includes in-depth induction of the customer‚Äôs authorised staff into the technology and electrics of the system, enabling the operator to complete basic settings and simple maintenance tasks independently.",
+        "type": "Document"
+      },
+      0.29537687585880956
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "28ee5902ae51980de5d1d7e1126c1b99",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947_959f9009bfdf4ce7946bd5bfcdf1de63.md",
+          "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "standard with every BAUER breathing air compressor. Depending on the cartridge type, P-Purification Systems adsorb residual moisture, oil vapour, traces of hydro- carbon gases and carbon monoxide from the compressed air. BAUER P-Purification Systems not only meet, but actually exceed all requirements of the DIN EN 12021:2014 Breathing Air Standard1. P 61 Purification System BAUER KOMPRESSOREN IS CERTIFIED FOR THE MANUFACTURE OF PRESSURE EQUIPMENT UP TO CATEGORY 4 UNDER THE EU PRESSURE EQUIPMENT DIRECTIVE PED2014/23/EC. 1 Based on due maintenance and installation of the system in accordance with the operating manual and on use of BAUER AERO -GUARD-OX where CO2 concentrations in intake air exceed the predefined standard values. Local TLVs are ignored.",
+        "type": "Document"
+      },
+      0.2982747345648624
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "c577e54903d494b0d098c4de5c5dc3d6",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0039-2022-01_B-NEWS_EN_sc-53814cbeae_7f05433f7024455d9a533e7177675e17.md",
+          "file_id": "5447e78f-159a-41d1-91e6-6c5f4db80973",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "quality is monitored, the data collec- ted can be saved securely in the cloud on a highly secure server located within Europe, in compliance with data protection regulations and 100 BAUER KOMPRESSOREN INTERSCHUTZ B-CLOUD, the new COMPACT-LINE, the \"Ideal Filling Room\" and the UNICUS attracted the most attention at BAUER’s stand. All power to women on one of the toughest obstacle courses in the world! Philipp Bayat, Dr. Monika Bayat, Heinz Bauer (l.to r.). BAUER’s high-purity breathing air is essential to complete these physical challenges in full face mask.",
+        "type": "Document"
+      },
+      0.30127795346247876
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "9daeec2b007f103d69cc6314bd627fc4",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0018-2018-01_B-NEWS_EN_sc-7105ffda88_e1ac0212ab0a44eeabcd8ece5a9ea146.md",
+          "file_id": "6823330c-20f2-4c38-8c78-c79148e910e4",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "monitored the composition of the ambient air. ISSUE 1/2018 Even under Arctic conditions of snow and freezing temperatures, BAUER systems continue to operate reliably. The reason why global giant Gasprom chooses technology from the market leader in high-press┬¡ ure compression. A CNG-operated truck refuels at the new fuel station at Petropavlovsk.",
+        "type": "Document"
+      },
+      0.3030966312616057
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "edb80f60b24a4d8edcb47868eed8fdd6",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0231-0065_g22-series-he_9611e8a1c5-55462f5b5d_4daca021176744d2b3c0e6769247d2cb.md",
+          "file_id": "e56864d5-2bd2-4f45-b1d2-d5a98daad68b",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "without the need for custom designs. Most comprehensive air and gas treatment portfolio: From separators and regenerative and adsorption dryers to refrigerated dryers, BAUER covers all air and gas purity requirements in accordance with DIN ISO 8573-1. Global market leadership & service expertise: BAUER is the global market standard in high- and medium-pressure applications across nearly all segments – with a 70% market share in breathing air systems and an undisputed leading position in industrial applications, supported by a global service network. What is the G22 series used for in helium applications? The G22 series comprises air-cooled high-pressure compressors for industrial helium compression. It is used wherever helium needs to be reliably compressed from atmospheric pressure to high final pressures or reprocessed within recovery systems, for example in industrial processes, research facilities, test benches and gas recovery plants. What performance ranges does the G22 series cover for helium? Depending on the configuration, the high-pressure versions of the G22 series achieve final pressures of up to 350 bar. The effective delivery rates range from approximately 620 to 1,500 litres per minute, depending on the model. This makes the series suitable for both compact helium applications and high-capacity recovery and supply systems. How are the G22 high-pressure compressors controlled and monitored? The compressors are equipped with the B-CONTROL MICRO control system.",
+        "type": "Document"
+      },
+      0.30479975371359314
+    ]
+  ],
+  "completed_at": "2026-07-23T15:02:28.885520+00:00",
+  "case_id": "B19",
+  "split": "development",
+  "category": "exact_product_limit",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

@@ -1,0 +1,1005 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1636.96,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "eecfe0e5-ee45-43f8-95b5-28013f2068c2",
+      "filename": "0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994.md",
+      "title": "2025-03_B-DETECTION_PLUS_EN_N42078_sc",
+      "language": "en",
+      "publication_date": "2025-03-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "valve",
+        "sensor"
+      ],
+      "standards": [
+        "DIN EN 12021:2014",
+        "DIN EN 12021",
+        "EN 12021"
+      ],
+      "content": "Document: 2025-03_B-DETECTION_PLUS_EN_N42078_sc\noid).\nGas sampling unit with optional\ndew point sensor\nDisplay showing limit values in compliance with\nDIN EN 12021:2014\nBAUER KOMPRESSOREN\nB-DETECTION PLUS | 9\n## Page 10\n\n10 | B-DETECTION PLUS\nBAUER KOMPRESSOREN\nB-DETECTION PLUS – THE NEXT GENERATION\nNew!\nB-DETECTION AIRBOX with 450 bar purge valve\nSmart improvements for greater safety, easier operation, additional applications and significant cost\nsavings make the B-DETECTION PLUS gas detection systems even more attractive.\nEXPANDED APPLICATIONS\nThe new generation of B-DETECTION PLUS Gas\nMeasurement Systems enables operation with\noptions up to 450 bar final pressure. The newly-\navailable purge valve in the B-DETECTION PLUS\ni and B-DETECTION PLUS s versions has been\nadapted for the larger pressure range.\nB-DETECTION PLUS m/s/i bottle measurement system\nFLEXIBLE MEASUREMENTS\nUntil now, measuring the air quality of breathing air cylinders was reserved for the mobile B-DETECTION\nPLUS m model. With the new versions, the stationary models B-DETECTION PLUS i and s can also be\nequipped with the cylinder measurement option.\nIt is now also possible to measure intake and ambient air with all models.",
+      "page": 9,
+      "section": [
+        "2025-03 B-DETECTION PLUS EN N42078 sc",
+        "Page 9"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.4697882,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION",
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\nr cylinders\n› FSC Filling Speed Control unit – reduces filling speed to\n20 up to maximum 50 bar/min for safe filling, particularly\nof composite cylinders\nB-SAFE\n## Page 41\n\nBAUER KOMPRESSOREN\nBAUER PREMIUM LINE | ACCESSORIES | 41\nGAS MEASUREMENT TECHNOLOGY\n› AERO-TEST – portable breathing air tester\n› B-DETECTION PLUS m – mobile online gas measurement\n­system for rapid on-the-spot measurement of O2, CO, CO2\nand optional measurement of absolute moisture and ­residual\noil (VOC)1 in breathing air cylinders or at high-pressure ports.\n› B-DETECTION PLUS i and s – fixed online gas measurement\nsystems for continuously measuring O2, CO and CO2 with\noptional functions for absolute humidity and total oil value\n(VOC)1. Measuring values can be logged at any time and are\nsaved in Excel format on an SD card for easy access and use.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible\n› NEW! Measurement directly in the intake hose to analyse the\nair actually absorbed\n› NEW! Possibility to measure breathing air cylinders with\nB-DETECTION PLUS i, s and m\n› NEW! The B-DETECTION PLUS is now also B-APP and\nB-CLOUD compatible ²\nB-DETECTION PLUS m\nFor further accessories and more details, see our\nbrochures “BAUER Accessories” and “B-DETECTION PLUS-\nthe next generation online gas measurement systems“ and\nvisit www.bauer-kompressoren.de.",
+      "page": 40,
+      "section": [
+        "bauer amfile 5",
+        "Page 40"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.40903326,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+      "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+      "title": "2025-06_Product_overview_EN_N37488_sc",
+      "language": "en",
+      "publication_date": "2025-06-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-CONTROL",
+        "B-DETECTION"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [
+        "ISO 8573"
+      ],
+      "content": "Document: 2025-06_Product_overview_EN_N37488_sc\ncustomers have increasingly\nspecific requirements relating to the purity of air and gases, such\nas those described in DIN ISO 8573-1. Depending on requirements,\nmeasurements can be performed on a random basis or during the\noperational phase.\nB-DETECTION Series online measurement systems can be directly\nintegrated into the B-CONTROL system, which allows the measuring\nvalues to be read and monitored on the compressor display.\nThe B-DETECTION PLUS is B-CLOUD compatible.\n› NEW! Shorter response time during humidity measurement\n› NEW! Lower running costs through optimised calibration\n› Pressure range: 100 – 350/550 bar\n› Charging rate: 200 – 700 l/min\n› Pressure range: 120 – 420 bar\n› Charging rate: 30 – 1,500 l/min\nGAS MEASURING SYSTEMS",
+      "page": 37,
+      "section": [
+        "2025-06 Product overview EN N37488 sc",
+        "Page 37"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.39517723,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+      "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+      "title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\ncantly extends filter cartridge life by drying the air prior to filtration - thus\nslashing compressor running costs while helping to conserve the environ-\nment.\n## Page 25\n\nGAS MEASUREMENT TECHNOLOGY\n› AEROTEST – Temporary measurement of breathing air purity\n› B-DETECTION PLUS m – for rapid on-the-spot measurement\nof O2, CO, CO2 and optional measurement of absolute humidity\nand total oil value (VOC)1 in breathing air cylinders or at high-­\npressure ports.\n› B-DETECTION PLUS i and s – Fixed gas measurement systems\nfor measuring O2, CO and CO2 with optional functions for abso-\nlute humidity and total oil value (VOC)1. Measuring values can\nbe logged at any time and are saved in Excel format on an SD\ncard for easy access and use.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible\n› NEW! Measurement directly in the intake hose to analyse the\nair actually absorbed\n› NEW! Possibility to measure breathing air cylinders with B-DE-\nTECTION PLUS i, s and m\n› NEW! The B-DETECTION PLUS gas detection system is compa-\ntible with the B-CLOUD.\nB-DETECTION PLUS m\nFor further accessories and more details, see our\nbrochures “BAUER Accessories” and “B-DETECTION PLUS-\nThe next generation online gas measurement systems” and\nvisit www.bauer-kompressoren.de.\nBAUER KOMPRESSOREN\nB-NITROX SYSTEMS | ACCESSORIES | 25\nB-DETECTION PLUS s",
+      "page": 24,
+      "section": [
+        "2026-04 B-Nitrox EN N34460 sc",
+        "Page 24"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3922973,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "sensor",
+        "control"
+      ],
+      "standards": [
+        "EN 12021",
+        "DIN EN 12021"
+      ],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nrated\nstand-alone\n› Medium\nAir; Nitrox² (max. 40 % O2)\n› Permitted operating pressure\n(AIRBOX input)\n24 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN\n## Page 14\n\nB-DETECTION PLUS m\nTHE MOBILE SOLUTION FOR RELIABLE BREATHING AIR MEASUREMENT\nAs a compact, mobile case solution,\nB-DETECTION PLUS m gives you the\nfreedom to perform reliable breathing air\nmeasurements, whenever and wherever\nyou want.\nAs with the stationary variants, observation of\nthe limit values in DIN EN 12021 for CO, CO2,\nO2 as well as optionally for absolute humidity\nand residual oil (VOC)1 can be verified reliably\nand with high precision.\nB-DETECTION PLUS m offers a wide range\nof measurement options: The standard gas\nremoval unit can be used to measure the air\nquality in the breathing air cylinder. As an\noption, the measurement can also be carried\nout directly on the compressor. It is also\npossible to measure the intake air before\nintroduction into the compressor.\nThe control system permits the selection\nof tailor-made measurement profile for\nthe corresponding measurement on the\ncompressor or cylinder.\nFor challenging ambient conditions, the\ntransport case is designed to be dust and\nspraywater resistant in accordance with\nthe IP 65 Standard. The optimum ease of\nmaintenance, the access to the sensors is unfastened especially quickly and easily.",
+      "page": 13,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 13"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.37300627,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nDocument section: High-pressure-accessories-catalogue_EN / Page 15\nTable: Silencer, e.g. for draining cylinder pressure | N44211 | GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M | ADAPTER GAS SAMPLING PLUS M OVERVIEW OF | VARIANTS OF MEASUREMENTS AT COMPRESSOR | Application | Gas | Parts | Order number\nRow identifier: N44186\nValues: Filling hose with set | Breathing air | up to 300 bar | 1× T-connector breathing air 300 bar | N44186\nFootnotes: 28 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+      "page": 15,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 15"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Silencer, e.g. for draining cylinder pressure / N44211 / GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M / ADAPTER GAS SAMPLING PLUS M OVERVIEW OF / VARIANTS OF MEASUREMENTS AT COMPRESSOR / Application / Gas / Parts / Order number",
+      "row_label": "N44186",
+      "headers": [
+        "Silencer, e.g. for draining cylinder pressure",
+        "N44211",
+        "GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M",
+        "ADAPTER GAS SAMPLING PLUS M OVERVIEW OF",
+        "VARIANTS OF MEASUREMENTS AT COMPRESSOR",
+        "Application",
+        "Gas",
+        "Parts",
+        "Order number"
+      ],
+      "row_values": [
+        "Filling hose with set",
+        "Breathing air",
+        "up to 300 bar",
+        "1× T-connector breathing air 300 bar",
+        "N44186"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "28 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3605732,
+      "metadata": {
+        "parser": "identifier_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "sensor"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_7\nonly the ambient air can be measured, but also the\nintake air and the air in the cylinder.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible\n› NEW! The B-DETECTION PLUS gas measuring system is compatible\nwith the B-CLOUD.\nFor further accessories and more details, see our brochures\n“BAUER Accessories” and “B-DETECTION PLUS -The next\ngeneration online gas measurement systems” and visit\nwww.bauer-kompressoren.de\nB-DETECTION PLUS m\n1 Total oil measurement based only on volatile organic compounds (VOCs). Sensor calibration based on isobutene.",
+      "page": 29,
+      "section": [
+        "bauer amfile 7",
+        "Page 29"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.34911456,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "cd314476-aea2-4459-a5e9-843876168e3d",
+      "filename": "0022-2019-01_B-NEWS_EN_sc-e0ebbb5f8b.md",
+      "title": "2019-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2019-01-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION",
+        "B-DETECTION PLUS",
+        "PE 200"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2019-01_B-NEWS_EN_sc\neration anywhere in the world. The PE\n200 TB can be ordered after the trade\nshow. Price to be announced.\nB-DETECTION PLUS m\n“m” is for mobile: BAUER’s state-of-\nthe-art stationary breathing air mea­\nsurement system is now joined by a\nconvenient, compact carry case version\nfor mobile use. The new mobile system\nallows all users to reliably measure\n­breathing air wherever and whenever\nthey want.\nB-DETECTION PLUS m offers an array\nof measurement options. The gas\nsampling unit supplied as standard is\nused to measure air quality in breathing\nair cylinders. Optionally, measurement\ncan also be performed directly at the\ncompressor. As a further option, intake\nair can be measured before it enters the\ncompressor. The optional rechargeable\nbattery offers complete freedom, allow­\ning the system to be used anywhere; no\nneed for external mains power when\nmeasuring the quality of breathing air.\nISSUE 1/2019\nBAUER partners from all over the world met up in Munich at the now-traditional A Partners’ Meeting, took\npart in training courses and exchanged information and experienced.\nThe new powerful PE-TB range provides\nmaximum mobility.",
+      "page": 3,
+      "section": [
+        "2019-01 B-NEWS EN sc",
+        "Page 3"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3446568,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "eecfe0e5-ee45-43f8-95b5-28013f2068c2",
+      "filename": "0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994.md",
+      "title": "2025-03_B-DETECTION_PLUS_EN_N42078_sc",
+      "language": "en",
+      "publication_date": "2025-03-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION",
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "sensor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2025-03_B-DETECTION_PLUS_EN_N42078_sc\nf all sensors\nbefore powering up. These safeguards ensure\nthat breathing air cylinders are filled with nothing\nbut pure, clean air at all times. All measurement\nvalues can be logged using the B-CONTROL\nMICRO and exported to an SD card as Excel\nfiles. As the system operator, this provides you\nwith a high level of legal certainty.\nUNCOMPROMISING SAFETY WITH\nEND-TO-END CONTROL\n1 Only available on stationary B-DETECTION i and s models with suitable system configuration.\n4 | B-DETECTION PLUS\nBAUER KOMPRESSOREN\nB-CLOUD REMOTE ACCESS\nThe B-CLOUD provides a real-time overview of\nall operating data of your BAUER systems with\nthe B-CONTROL MICRO Management System.\nIn the event of warnings or malfunctions,\nthe system sends push notifications to your\nsmartphone",
+      "page": 4,
+      "section": [
+        "2025-03 B-DETECTION PLUS EN N42078 sc",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.34286829,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "695dbb91-1b9b-49b5-b482-187a4ca784f6",
+      "filename": "0300-0134_pe-ve1_e787cb4716-b68fbc7d6e.md",
+      "title": "PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-DETECTION PLUS"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nfilter monitoring system can only be used in conjunction with the P 41, P 61, or P 81\nPurification\nsystems, as well as the external BAUER\nPurification\nsystems.\nFilling device 4 × 200 bar / 4 × 300 bar\nThe filling device consists of four flexible high-pressure filling hoses, each with a filling valve for 200 or 300 bar. An integrated final pressure gauge allows easy reading of the final pressure.\nB-CLOUD & B-APP\nWith BAUER B-CLOUD and the B-APP, users can keep an eye on their compressor system at all times, even remotely. Operating data, maintenance instructions, and status messages are transmitted and visualized in real time. This increases transparency, simplifies monitoring, and supports optimized maintenance planning. In addition, the stored operating data in the B-CLOUD is available for later analysis and system performance optimization.\nB-LINK\nWi-Fi and 4G routers enable the wireless communication of the B-CONTROL MICRO with the B-CLOUD. They establish a reliable Wi-Fi or mobile network connection, allowing secure remote access to the compressor system.\nIntegrated gas measurement system B-DETECTION PLUS i",
+      "page": null,
+      "section": [
+        "PE-VE (350 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.34211712,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "eecfe0e5-ee45-43f8-95b5-28013f2068c2",
+        "filename": "0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994.md",
+        "title": "2025-03_B-DETECTION_PLUS_EN_N42078_sc",
+        "language": "en",
+        "publication_date": "2025-03-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "valve",
+          "sensor"
+        ],
+        "standards": [
+          "DIN EN 12021:2014",
+          "DIN EN 12021",
+          "EN 12021"
+        ],
+        "content": "Document: 2025-03_B-DETECTION_PLUS_EN_N42078_sc\noid).\nGas sampling unit with optional\ndew point sensor\nDisplay showing limit values in compliance with\nDIN EN 12021:2014\nBAUER KOMPRESSOREN\nB-DETECTION PLUS | 9\n## Page 10\n\n10 | B-DETECTION PLUS\nBAUER KOMPRESSOREN\nB-DETECTION PLUS – THE NEXT GENERATION\nNew!\nB-DETECTION AIRBOX with 450 bar purge valve\nSmart improvements for greater safety, easier operation, additional applications and significant cost\nsavings make the B-DETECTION PLUS gas detection systems even more attractive.\nEXPANDED APPLICATIONS\nThe new generation of B-DETECTION PLUS Gas\nMeasurement Systems enables operation with\noptions up to 450 bar final pressure. The newly-\navailable purge valve in the B-DETECTION PLUS\ni and B-DETECTION PLUS s versions has been\nadapted for the larger pressure range.\nB-DETECTION PLUS m/s/i bottle measurement system\nFLEXIBLE MEASUREMENTS\nUntil now, measuring the air quality of breathing air cylinders was reserved for the mobile B-DETECTION\nPLUS m model. With the new versions, the stationary models B-DETECTION PLUS i and s can also be\nequipped with the cylinder measurement option.\nIt is now also possible to measure intake and ambient air with all models.",
+        "page": 9,
+        "section": [
+          "2025-03 B-DETECTION PLUS EN N42078 sc",
+          "Page 9"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.4697882,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION",
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\nr cylinders\n› FSC Filling Speed Control unit – reduces filling speed to\n20 up to maximum 50 bar/min for safe filling, particularly\nof composite cylinders\nB-SAFE\n## Page 41\n\nBAUER KOMPRESSOREN\nBAUER PREMIUM LINE | ACCESSORIES | 41\nGAS MEASUREMENT TECHNOLOGY\n› AERO-TEST – portable breathing air tester\n› B-DETECTION PLUS m – mobile online gas measurement\n­system for rapid on-the-spot measurement of O2, CO, CO2\nand optional measurement of absolute moisture and ­residual\noil (VOC)1 in breathing air cylinders or at high-pressure ports.\n› B-DETECTION PLUS i and s – fixed online gas measurement\nsystems for continuously measuring O2, CO and CO2 with\noptional functions for absolute humidity and total oil value\n(VOC)1. Measuring values can be logged at any time and are\nsaved in Excel format on an SD card for easy access and use.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible\n› NEW! Measurement directly in the intake hose to analyse the\nair actually absorbed\n› NEW! Possibility to measure breathing air cylinders with\nB-DETECTION PLUS i, s and m\n› NEW! The B-DETECTION PLUS is now also B-APP and\nB-CLOUD compatible ²\nB-DETECTION PLUS m\nFor further accessories and more details, see our\nbrochures “BAUER Accessories” and “B-DETECTION PLUS-\nthe next generation online gas measurement systems“ and\nvisit www.bauer-kompressoren.de.",
+        "page": 40,
+        "section": [
+          "bauer amfile 5",
+          "Page 40"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.40903326,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+        "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+        "title": "2025-06_Product_overview_EN_N37488_sc",
+        "language": "en",
+        "publication_date": "2025-06-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-CONTROL",
+          "B-DETECTION"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [
+          "ISO 8573"
+        ],
+        "content": "Document: 2025-06_Product_overview_EN_N37488_sc\ncustomers have increasingly\nspecific requirements relating to the purity of air and gases, such\nas those described in DIN ISO 8573-1. Depending on requirements,\nmeasurements can be performed on a random basis or during the\noperational phase.\nB-DETECTION Series online measurement systems can be directly\nintegrated into the B-CONTROL system, which allows the measuring\nvalues to be read and monitored on the compressor display.\nThe B-DETECTION PLUS is B-CLOUD compatible.\n› NEW! Shorter response time during humidity measurement\n› NEW! Lower running costs through optimised calibration\n› Pressure range: 100 – 350/550 bar\n› Charging rate: 200 – 700 l/min\n› Pressure range: 120 – 420 bar\n› Charging rate: 30 – 1,500 l/min\nGAS MEASURING SYSTEMS",
+        "page": 37,
+        "section": [
+          "2025-06 Product overview EN N37488 sc",
+          "Page 37"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.39517723,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+        "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+        "title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\ncantly extends filter cartridge life by drying the air prior to filtration - thus\nslashing compressor running costs while helping to conserve the environ-\nment.\n## Page 25\n\nGAS MEASUREMENT TECHNOLOGY\n› AEROTEST – Temporary measurement of breathing air purity\n› B-DETECTION PLUS m – for rapid on-the-spot measurement\nof O2, CO, CO2 and optional measurement of absolute humidity\nand total oil value (VOC)1 in breathing air cylinders or at high-­\npressure ports.\n› B-DETECTION PLUS i and s – Fixed gas measurement systems\nfor measuring O2, CO and CO2 with optional functions for abso-\nlute humidity and total oil value (VOC)1. Measuring values can\nbe logged at any time and are saved in Excel format on an SD\ncard for easy access and use.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible\n› NEW! Measurement directly in the intake hose to analyse the\nair actually absorbed\n› NEW! Possibility to measure breathing air cylinders with B-DE-\nTECTION PLUS i, s and m\n› NEW! The B-DETECTION PLUS gas detection system is compa-\ntible with the B-CLOUD.\nB-DETECTION PLUS m\nFor further accessories and more details, see our\nbrochures “BAUER Accessories” and “B-DETECTION PLUS-\nThe next generation online gas measurement systems” and\nvisit www.bauer-kompressoren.de.\nBAUER KOMPRESSOREN\nB-NITROX SYSTEMS | ACCESSORIES | 25\nB-DETECTION PLUS s",
+        "page": 24,
+        "section": [
+          "2026-04 B-Nitrox EN N34460 sc",
+          "Page 24"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3922973,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "sensor",
+          "control"
+        ],
+        "standards": [
+          "EN 12021",
+          "DIN EN 12021"
+        ],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nrated\nstand-alone\n› Medium\nAir; Nitrox² (max. 40 % O2)\n› Permitted operating pressure\n(AIRBOX input)\n24 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN\n## Page 14\n\nB-DETECTION PLUS m\nTHE MOBILE SOLUTION FOR RELIABLE BREATHING AIR MEASUREMENT\nAs a compact, mobile case solution,\nB-DETECTION PLUS m gives you the\nfreedom to perform reliable breathing air\nmeasurements, whenever and wherever\nyou want.\nAs with the stationary variants, observation of\nthe limit values in DIN EN 12021 for CO, CO2,\nO2 as well as optionally for absolute humidity\nand residual oil (VOC)1 can be verified reliably\nand with high precision.\nB-DETECTION PLUS m offers a wide range\nof measurement options: The standard gas\nremoval unit can be used to measure the air\nquality in the breathing air cylinder. As an\noption, the measurement can also be carried\nout directly on the compressor. It is also\npossible to measure the intake air before\nintroduction into the compressor.\nThe control system permits the selection\nof tailor-made measurement profile for\nthe corresponding measurement on the\ncompressor or cylinder.\nFor challenging ambient conditions, the\ntransport case is designed to be dust and\nspraywater resistant in accordance with\nthe IP 65 Standard. The optimum ease of\nmaintenance, the access to the sensors is unfastened especially quickly and easily.",
+        "page": 13,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 13"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.37300627,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nDocument section: High-pressure-accessories-catalogue_EN / Page 15\nTable: Silencer, e.g. for draining cylinder pressure | N44211 | GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M | ADAPTER GAS SAMPLING PLUS M OVERVIEW OF | VARIANTS OF MEASUREMENTS AT COMPRESSOR | Application | Gas | Parts | Order number\nRow identifier: N44186\nValues: Filling hose with set | Breathing air | up to 300 bar | 1× T-connector breathing air 300 bar | N44186\nFootnotes: 28 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+        "page": 15,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 15"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Silencer, e.g. for draining cylinder pressure / N44211 / GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M / ADAPTER GAS SAMPLING PLUS M OVERVIEW OF / VARIANTS OF MEASUREMENTS AT COMPRESSOR / Application / Gas / Parts / Order number",
+        "row_label": "N44186",
+        "headers": [
+          "Silencer, e.g. for draining cylinder pressure",
+          "N44211",
+          "GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M",
+          "ADAPTER GAS SAMPLING PLUS M OVERVIEW OF",
+          "VARIANTS OF MEASUREMENTS AT COMPRESSOR",
+          "Application",
+          "Gas",
+          "Parts",
+          "Order number"
+        ],
+        "row_values": [
+          "Filling hose with set",
+          "Breathing air",
+          "up to 300 bar",
+          "1× T-connector breathing air 300 bar",
+          "N44186"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "28 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3605732,
+        "metadata": {
+          "parser": "identifier_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "sensor"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_7\nonly the ambient air can be measured, but also the\nintake air and the air in the cylinder.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible\n› NEW! The B-DETECTION PLUS gas measuring system is compatible\nwith the B-CLOUD.\nFor further accessories and more details, see our brochures\n“BAUER Accessories” and “B-DETECTION PLUS -The next\ngeneration online gas measurement systems” and visit\nwww.bauer-kompressoren.de\nB-DETECTION PLUS m\n1 Total oil measurement based only on volatile organic compounds (VOCs). Sensor calibration based on isobutene.",
+        "page": 29,
+        "section": [
+          "bauer amfile 7",
+          "Page 29"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.34911456,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "cd314476-aea2-4459-a5e9-843876168e3d",
+        "filename": "0022-2019-01_B-NEWS_EN_sc-e0ebbb5f8b.md",
+        "title": "2019-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2019-01-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION",
+          "B-DETECTION PLUS",
+          "PE 200"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2019-01_B-NEWS_EN_sc\neration anywhere in the world. The PE\n200 TB can be ordered after the trade\nshow. Price to be announced.\nB-DETECTION PLUS m\n“m” is for mobile: BAUER’s state-of-\nthe-art stationary breathing air mea­\nsurement system is now joined by a\nconvenient, compact carry case version\nfor mobile use. The new mobile system\nallows all users to reliably measure\n­breathing air wherever and whenever\nthey want.\nB-DETECTION PLUS m offers an array\nof measurement options. The gas\nsampling unit supplied as standard is\nused to measure air quality in breathing\nair cylinders. Optionally, measurement\ncan also be performed directly at the\ncompressor. As a further option, intake\nair can be measured before it enters the\ncompressor. The optional rechargeable\nbattery offers complete freedom, allow­\ning the system to be used anywhere; no\nneed for external mains power when\nmeasuring the quality of breathing air.\nISSUE 1/2019\nBAUER partners from all over the world met up in Munich at the now-traditional A Partners’ Meeting, took\npart in training courses and exchanged information and experienced.\nThe new powerful PE-TB range provides\nmaximum mobility.",
+        "page": 3,
+        "section": [
+          "2019-01 B-NEWS EN sc",
+          "Page 3"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3446568,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "eecfe0e5-ee45-43f8-95b5-28013f2068c2",
+        "filename": "0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994.md",
+        "title": "2025-03_B-DETECTION_PLUS_EN_N42078_sc",
+        "language": "en",
+        "publication_date": "2025-03-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION",
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "sensor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2025-03_B-DETECTION_PLUS_EN_N42078_sc\nf all sensors\nbefore powering up. These safeguards ensure\nthat breathing air cylinders are filled with nothing\nbut pure, clean air at all times. All measurement\nvalues can be logged using the B-CONTROL\nMICRO and exported to an SD card as Excel\nfiles. As the system operator, this provides you\nwith a high level of legal certainty.\nUNCOMPROMISING SAFETY WITH\nEND-TO-END CONTROL\n1 Only available on stationary B-DETECTION i and s models with suitable system configuration.\n4 | B-DETECTION PLUS\nBAUER KOMPRESSOREN\nB-CLOUD REMOTE ACCESS\nThe B-CLOUD provides a real-time overview of\nall operating data of your BAUER systems with\nthe B-CONTROL MICRO Management System.\nIn the event of warnings or malfunctions,\nthe system sends push notifications to your\nsmartphone",
+        "page": 4,
+        "section": [
+          "2025-03 B-DETECTION PLUS EN N42078 sc",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.34286829,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "695dbb91-1b9b-49b5-b482-187a4ca784f6",
+        "filename": "0300-0134_pe-ve1_e787cb4716-b68fbc7d6e.md",
+        "title": "PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-DETECTION PLUS"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nfilter monitoring system can only be used in conjunction with the P 41, P 61, or P 81\nPurification\nsystems, as well as the external BAUER\nPurification\nsystems.\nFilling device 4 × 200 bar / 4 × 300 bar\nThe filling device consists of four flexible high-pressure filling hoses, each with a filling valve for 200 or 300 bar. An integrated final pressure gauge allows easy reading of the final pressure.\nB-CLOUD & B-APP\nWith BAUER B-CLOUD and the B-APP, users can keep an eye on their compressor system at all times, even remotely. Operating data, maintenance instructions, and status messages are transmitted and visualized in real time. This increases transparency, simplifies monitoring, and supports optimized maintenance planning. In addition, the stored operating data in the B-CLOUD is available for later analysis and system performance optimization.\nB-LINK\nWi-Fi and 4G routers enable the wireless communication of the B-CONTROL MICRO with the B-CLOUD. They establish a reliable Wi-Fi or mobile network connection, allowing secure remote access to the compressor system.\nIntegrated gas measurement system B-DETECTION PLUS i",
+        "page": null,
+        "section": [
+          "PE-VE (350 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.34211712,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "b detection plus"
+        ],
+        "standards": [],
+        "number_units": [
+          "420 bar",
+          "450 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 2,
+      "elapsed_ms": 1232.93
+    }
+  },
+  "completed_at": "2026-07-23T15:02:15.542442+00:00",
+  "case_id": "B10",
+  "split": "development",
+  "category": "contradiction",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

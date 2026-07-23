@@ -12,6 +12,8 @@ Agent, or change the normal Bauer Agent's route.
 
 The implementation worktree was created from
 `2815a8f2ba1b7db04d40a80934544f092e54518b` on `codex/bauer-rag-v2`.
+The final reproducible development smoke records evaluated source commit
+`bf3c3cb0a96f054ad064824623baf25b4785005b`.
 
 ## Live deployment
 
@@ -75,14 +77,14 @@ not an unreported service failure.
 ## Retrieval smoke
 
 The final development smoke is
-`../evals/bauer-rag-v2/reports/retrieval-smoke-20260723-04-score.json`. It contains 30 development
+`../evals/bauer-rag-v2/reports/retrieval-smoke-20260723-05-score.json`. It contains 30 development
 cases with one serial V1/V2 repetition, 60 successful HTTP calls, and no authorization violations.
 Twenty cases have exact evidence-location gold and contribute to the reported retrieval metrics.
 
 Artifact SHA-256:
 
-- Score report: `55286f611ee6872f999a9b39f9bf9cdab7a3994d90939cd7a76393266e0802a9`
-- Raw run: `832144d2bf3b4981eccb3430468ff721db38ba1a7a0919578aad23168c8b6353`
+- Score report: `b929e17c24a7955cd8ec0457898d22a6121e5cf6420aa877df24281e62330a5b`
+- Raw run: `fdaf707c0ddf5000712ef176b583b07ae2030fc110e4a0cbe2579177ac534d4a`
 
 | Measure | V1 | V2 |
 | --- | ---: | ---: |
@@ -93,15 +95,15 @@ Artifact SHA-256:
 | Exact metadata success | 0.0000 | 0.6667 |
 | Table integrity | 0.0000 | 0.3125 |
 | Duplicate rate | 0.0000 | 0.0521 |
-| p50 latency | 443.83 ms | 1219.51 ms |
-| p95 latency | 643.47 ms | 1501.26 ms |
+| p50 latency | 277.84 ms | 1193.24 ms |
+| p95 latency | 379.30 ms | 1519.11 ms |
 
 Measured retrieval gates:
 
 | Gate | Result |
 | --- | --- |
 | Exact identifier/document lookup >= 95% | Fail: 66.67% against provisional locations |
-| Retrieval p95 < 2 seconds | Pass: 1.50126 seconds |
+| Retrieval p95 < 2 seconds | Pass: 1.51911 seconds |
 | Authorization violations = 0 | Pass |
 | Recall@5 improvement >= 0.05 | Pass: +0.6167 |
 | Worst category regression >= -0.05 | Pass: 0.0 |

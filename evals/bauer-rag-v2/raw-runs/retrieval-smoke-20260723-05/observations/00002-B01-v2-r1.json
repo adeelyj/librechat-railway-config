@@ -1,0 +1,1020 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1356.19,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "035fd144-e74c-496a-a4cd-8a1845ac1d7b",
+      "filename": "0364-0198_sports-diving_69982e99a3-5200921fe6.md",
+      "title": "Sports Diving Equipment and Solutions | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "DIN EN 12021:2014"
+      ],
+      "content": "Document: Sports Diving Equipment and Solutions | BAUER KOMPRESSOREN\nnd in-house PureAir certification also stand for uncompromising safety and tested air quality – worldwide.\nTypical Applications with BAUER Breathing Air Systems\nFilling breathing air cylinders (200 / 300 bar)\nCompressing Nitrox – TÜV certified\nBreathing air treatment according to internationally recognized standards (e.g., DIN EN 12021:2014)\nAir quality testing & monitoring\nBreathing air storage up to 420 / 500 bar\nOur Customers\nSport divers & dive clubs\nDive centre operators & training centres\nSafari and expedition boats\nHotel chains & resorts with diving operations\nYour Benefits with BAUER KOMPRESSOREN\nComplete systems – from compression to distribution\nHighest machine availability – even during peak season\nLong-term spare parts supply – at least 25 years, worldwide\nMaximum operator safety – even in critical situations\nDurability & longevity of compressor systems\nProven technology & worldwide application\nPureAir certification – for certified pure breathing air\nFor Absolute Safety Underwater – Rely on BAUER\nOur systems provide exactly what matters when diving: reliability, purity, and trust – with every breath.\nGet advice now and find the perfect solution for your diving environment.\nGet advice now\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore",
+      "page": null,
+      "section": [
+        "Sports Diving Equipment and Solutions / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.55204119,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "b6c55548-ddc1-490b-baf1-f96e9b5b851d",
+      "filename": "0372-0206_verticus-ox_d11cede327-b10a90a8bc.md",
+      "title": "VERTICUS-OX · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-DETECTION PLUS",
+        "B-CONTROL"
+      ],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: VERTICUS-OX · PREMIUM LINE | BAUER KOMPRESSOREN\nuct\nSelected product:\nVERTICUS-OX\nArt. Nr.: VERTICUS-OX\nSKU\nVERTICUS-OX\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nQuality & Innovation\nNitrox Capable up to 300 bar\nThe unit is designed for Nitrox up to 300 bar and features a TÜV-certified OX configuration, ensuring maximum safety as well as high-performance, nitrox-optimized technology for professional applications.\nB-CLOUD with B-CONTROL MICRO\nIn combination with the multilingual B-CONTROL MICRO HMI, B-CLOUD enables market-leading online monitoring with real-time transparency of system status, operating parameters, and maintenance data, ensuring maximum control and operational safety.\nB-DETECTION PLUS i (optional)\nB-DETECTION PLUS i continuously monitors and documents all gases relevant under DIN EN 12021:2014 and automatically shuts down the system in case of deviations. Together with legally-compliant cloud documentation, B-DETECTION PLUS i provides maximum safety and full regulatory traceability.\nMaximum operational safety for critical industrial environments\nBAUER units are engineered for maximum operational safety and feature comprehensive monitoring and protection functions. They ensure safe operation in demanding industrial environments while protecting personnel, equipment, and compliance with critical process requirements.\nPremium Quality",
+      "page": null,
+      "section": [
+        "VERTICUS-OX · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.50678571,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "76e8fe74-5763-45b3-9caa-d577ec8644a8",
+      "filename": "0224-0058_firefighting_4f1e58cd40-f7b9057fbf.md",
+      "title": "Firefighting Solutions for Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [
+        "DIN EN 12021"
+      ],
+      "content": "Document: Firefighting Solutions for Safety | BAUER KOMPRESSOREN\nechnology ensures maximum safety – around the clock, 365 days a year.\nTypical Applications in Fire Service\nFilling breathing air cylinders (200 / 300 / 420 bar)\nBreathing air treatment according to international standards (e.g., DIN EN 12021)\nPermanent air quality monitoring and testing\nStorage solutions up to 420 / 500 bar\nVehicle-integrated compressor systems for mobile rescue units\nOur Customers\nProfessional fire departments\nVolunteer fire brigades\nIndustrial fire services\nDisaster relief organizations\nVehicle outfitters for emergency vehicles\nMunicipalities and local authorities\nAdvantages with BAUER KOMPRESSOREN\nComplete systems from a single source – from compression to distribution\nLong-term spare parts supply – worldwide, guaranteed for 25+ years\nMaximum operator safety through intuitive system controls\nDurable systems with proven, value-retaining technology\nPureAir certification – tested breathing air quality\nSafety That Saves Lives – with System Technology from BAUER\nOur solutions are rugged, powerful, and tailored to the real demands of emergency operations.\nGet personalized advice for maximum operational safety.\nGet personalized advice\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions",
+      "page": null,
+      "section": [
+        "Firefighting Solutions for Safety / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.42929284,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 250-HE",
+        "PE 300-HE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "control"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: bauer_amfile_7\ns have features optimised for users’ needs, with BAUER’s\nhallmark ­quality and reliability for the utmost safety in stationary operation.\nSTATIONARY COMPRESSORS\n## Page 21\n\nPE-HE\nAMONG THE MOST COMPACT STATIONARY COMPRESSOR SYSTEMS\nIN ITS PERFORMANCE CLASS\nThe POSEIDON EDITION PE 250-HE and PE 300-HE horizontal compressors from BAUER KOMPRESSOREN are\namong the most compact stationary systems in their class.\nThe integrated P 31 Purification System provides reliable breathing air purification in compliance with\nDIN EN 12021:20141.\nThanks to the space-saving arrangement of compressor block and drive, the rugged and durable units in the HE\nseries take up next to no floor space.\nThey are also supplied with an automatic condensate drain system and the user-friendly BHW-CONTROL control\nunit as standard.\n› 250 - 300 l/min\n› 225 or 330 bar\n› 5.5 - 7.5 kW\nOPTIONAL FEATURES\n› 2-way filling device with hose coupling / 4-way filling device with hose coupling or direct coupling\n› Two pressure ranges 225 and 330 bar (pressure reducer)\n› Large-scale P 41 Purification System for longer cartridge life\n› B-TIMER filter cartridge lifetime monitoring system\n› B-SECURUS filter cartridge saturation monitoring system\n› B-AEROGUARD CO2 reduction system\n› External BAUER filling panels\n› BAUER high pressure storage system\nFEATURES\n› With rugged compressor block and piston rings of",
+      "page": 20,
+      "section": [
+        "bauer amfile 7",
+        "Page 20"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.39252024,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+      "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+      "title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nDocument section: 2026-04_B-Nitrox_EN_N34460_sc / Page 7\nTable: 2026-04_B-Nitrox_EN_N34460_sc\nHeaders and units: OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR | NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure | breathing or compressed air for all applications, in strict compliance with international air quality standards | such as DIN EN12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex- | tensive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their | sophisticated technology, combined with our decades of experience, ensure high reliability in continuous | operation and extremely long service life. | NITROX COMPRESSORS | 330 BAR | VERTICUS-OX | 300 bar | MINI-VERTICUS-OX | 300 bar | MARINER 320-OX\nRow: 300 bar\nValues: 200 | 250 | 300 | 350 | 400 | 450 | 500",
+      "page": 7,
+      "section": [
+        "2026-04 B-Nitrox EN N34460 sc",
+        "Page 7"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "2026-04 B-Nitrox EN N34460 sc",
+      "row_label": "300 bar",
+      "headers": [
+        "OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR",
+        "NEEDS",
+        "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure",
+        "breathing or compressed air for all applications, in strict compliance with international air quality standards",
+        "such as DIN EN12021:2014 (Breathing Air Standard).",
+        "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+        "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex-",
+        "tensive expertise in the fields of development, production and application.",
+        "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their",
+        "sophisticated technology, combined with our decades of experience, ensure high reliability in continuous",
+        "operation and extremely long service life.",
+        "NITROX COMPRESSORS | 330 BAR",
+        "VERTICUS-OX",
+        "300 bar",
+        "MINI-VERTICUS-OX",
+        "300 bar",
+        "MARINER 320-OX"
+      ],
+      "row_values": [
+        "200",
+        "250",
+        "300",
+        "350",
+        "400",
+        "450",
+        "500"
+      ],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.37181011,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "1854bf38-6186-499f-a7f8-f1cacbc298d1",
+      "filename": "0199-0033_capitano_05efc8859b-8c493b052e.md",
+      "title": "CAPITANO · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: CAPITANO · PREMIUM LINE | BAUER KOMPRESSOREN\nmore.\nTrolley set\nThe trolley set enables easy and effortless transport of mobile compressor units. Equipped with pneumatic wheels, it ensures maximum mobility.\nFirst-stage separator\nFor operation in humid ambient air, such as in tropical regions or when handling moist gases, a separator is recommended after the first compression stage. It reliably discharges the increased amount of condensate and minimizes its entry into the compressor oil.\nAdditional filling device PN 200 or PN 300 bar\nAn existing filling connection can optionally be expanded by one or more additional connections with filling hoses of variable length.\nDownloads\nProduct Brochure Premium Line Compressors EN\n(7.74 MB)\nProduct brochure PROFI LINE EN\n(667.44 kB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nMARINER and CAPITANO – Mobile All-Round Compressors\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.",
+      "page": null,
+      "section": [
+        "CAPITANO · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.37034204,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "MINI-VERTICUS and",
+        "VERTICUS AND",
+        "B-KOOL",
+        "B-CONTROL",
+        "B-CONTROL III",
+        "VERTICUS SERIES",
+        "VERTICUS breathing"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter",
+        "control"
+      ],
+      "standards": [
+        "ISO 8573"
+      ],
+      "content": "Document: bauer_amfile_5\nng for remotely monitoring\nthe compressor.\nThe MINI-VERTICUS and VERTICUS breathing air compressors are available in versions for 225 and/or 330/350 bar as well\nas in a version for up to 420 bar. The high modularity of the MINI-VERTICUS and VERTICUS series means that the units can\neasily be adapted to provide the best possible solution to your requirements and wishes.\nOPTIONAL FEATURES (SELECTION)\n› Integrated gas measurement system for compliance with DIN EN12021:20141\n› Remote control and monitoring with the B-CLOUD and B-APP\n› Oil level monitoring for safely switching off the compressor unit when the oil level is low\n› Particle filter conforming to ISO 8573 class 2\n› Super Silent noise insulation housing\n› Purification System P 81 (for VERTICUS) or P 61 (for MINI-VERTICUS) for extended filter cartridge life\n› B-SECURUS filter cartridge saturation monitoring system\n› 4 front-mounted filling devices, optionally for one or two pressure ranges (225/300 bar)\n› B-CONTROL III compressor control unit – e.g. for interconnected operation etc.\n› Intermediate separator after first stage – recommended in conditions of high humidity\n› Extended base frame to take up to 2 storage cylinders\n› B-KOOL refrigeration dryer for extending the filter service life\n› Nitrox version available2",
+      "page": 29,
+      "section": [
+        "bauer amfile 5",
+        "Page 29"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.36990942,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "5cfdd9d3-186a-4fbd-a599-eaf7b89d4efa",
+      "filename": "0288-0122_oceanus_78da0f1fad-99f79553bd.md",
+      "title": "OCEANUS · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: OCEANUS · PREMIUM LINE | BAUER KOMPRESSOREN\nsign provides optimal protection against corrosion and is ideal for use in tropical climates as well as on ships.\nAdditional filling device PN 200 or PN 300 bar\nAn existing filling connection can optionally be expanded by one or more additional connections with filling hoses of variable length.\nTrolley set\nThe trolley set enables safe transport of the compressor over various terrains. Large pneumatic wheels and a stable mount ensure secure positioning. The compressor can be operated directly on the trolley or removed as needed – locked or released easily by turning the handle. The drawbar is length-adjustable for ergonomic handling and can be detached for space-saving transport in a car.\nDownloads\nProduct Brochure Premium Line Compressors EN\n(7.74 MB)\nProduct Brochure COMPACT LINE EN\n(1.31 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nBAUER JUNIOR II & OCEANUS – mobile performance\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is\nBAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.",
+      "page": null,
+      "section": [
+        "OCEANUS · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.36840368,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "15ac77b6-7a41-4f8a-9447-789ad0d725be",
+      "filename": "0274-0108_mariner-ox_d64bf7e7b0-787c37d738.md",
+      "title": "MARINER-OX · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: MARINER-OX · PREMIUM LINE | BAUER KOMPRESSOREN\nroduct\nSelected product:\nMARINER-OX\nArt. Nr.: MARINER-OX\nSKU\nMARINER-OX\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nQuality & Innovation\nNitrox Capable up to 300 bar\nThe unit is designed for Nitrox up to 300 bar and features a TÜV-certified OX configuration, ensuring maximum safety as well as high-performance, nitrox-optimized technology for professional applications.\nB-CLOUD with B-CONTROL MICRO\nIn combination with the multilingual B-CONTROL MICRO HMI, B-CLOUD enables market-leading online monitoring with real-time transparency of system status, operating parameters, and maintenance data, ensuring maximum control and operational safety.\nBenchmark in Design and Performance\nFor decades, the MARINER-OX has set the benchmark for design, performance and durable technology, and stands worldwide for professional breathing air systems that prove their reliability, quality and long-term operational safety in continuous daily use.\nMaximum operational safety for critical industrial environments\nBAUER systems are engineered for maximum operational safety and feature comprehensive monitoring and protection functions. They ensure safe operation in demanding industrial environments while protecting personnel, equipment, and compliance with critical process requirements.\nPremium Quality",
+      "page": null,
+      "section": [
+        "MARINER-OX · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.35958333,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "d1a82a82-c977-4b54-b433-d837a1e006f7",
+      "filename": "0080-bauer_amfile_11-395dc528f8.md",
+      "title": "bauer_amfile_11",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-DETECTION PLUS"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: bauer_amfile_11\nll countries.\nFurther information on the B-CLOUD can be found on our website: bauer-kompressoren.de/b-cloud\nB-APP\nStay informed anytime, anywhere with the B-APP\n## Page 5\n\nPERMANENTLY MONITORS THE QUALITY OF YOUR BREATHING AIR\nThe optional fully integrated gas measurement system, B-DETECTION\nPLUS i, monitors the quality of the breathing air produced by the system. Auto-\nmatic, continuous and outstandingly reliable. The ­optional humidity monitoring\nfunction takes over the function of B-SECURUS and allows lower-cost standard\ncartridges to be used.\nThe display of the B-CONTROL MICRO compressor control unit allows you to\nmonitor compliance with the limit values of the ­\nDIN EN 12021:20141 Breathing Air Standard at all times. If limit values are excee-\nded, the control unit displays a visual warning and shuts down the system before\ncontaminated air can pass into the cylinders being filled.\nIn cases where limit values are briefly exceeded, an automatic flush valve dischar-\nges contaminated air to the outside without interrupting operation of the system.\nBAUER’s B-DETECTION PLUS i provides operators with the ­maximum security\nconcerning health and legal liability issues.\n› NEW! Measurement of gases and breathing air up to 420 bar possible\n› NEW! Measurement directly in the intake hose to analyse the air actually absor-\nbed",
+      "page": 4,
+      "section": [
+        "bauer amfile 11",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.35866422,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "035fd144-e74c-496a-a4cd-8a1845ac1d7b",
+        "filename": "0364-0198_sports-diving_69982e99a3-5200921fe6.md",
+        "title": "Sports Diving Equipment and Solutions | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "DIN EN 12021:2014"
+        ],
+        "content": "Document: Sports Diving Equipment and Solutions | BAUER KOMPRESSOREN\nnd in-house PureAir certification also stand for uncompromising safety and tested air quality – worldwide.\nTypical Applications with BAUER Breathing Air Systems\nFilling breathing air cylinders (200 / 300 bar)\nCompressing Nitrox – TÜV certified\nBreathing air treatment according to internationally recognized standards (e.g., DIN EN 12021:2014)\nAir quality testing & monitoring\nBreathing air storage up to 420 / 500 bar\nOur Customers\nSport divers & dive clubs\nDive centre operators & training centres\nSafari and expedition boats\nHotel chains & resorts with diving operations\nYour Benefits with BAUER KOMPRESSOREN\nComplete systems – from compression to distribution\nHighest machine availability – even during peak season\nLong-term spare parts supply – at least 25 years, worldwide\nMaximum operator safety – even in critical situations\nDurability & longevity of compressor systems\nProven technology & worldwide application\nPureAir certification – for certified pure breathing air\nFor Absolute Safety Underwater – Rely on BAUER\nOur systems provide exactly what matters when diving: reliability, purity, and trust – with every breath.\nGet advice now and find the perfect solution for your diving environment.\nGet advice now\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore",
+        "page": null,
+        "section": [
+          "Sports Diving Equipment and Solutions / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.55204119,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "b6c55548-ddc1-490b-baf1-f96e9b5b851d",
+        "filename": "0372-0206_verticus-ox_d11cede327-b10a90a8bc.md",
+        "title": "VERTICUS-OX · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-DETECTION PLUS",
+          "B-CONTROL"
+        ],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: VERTICUS-OX · PREMIUM LINE | BAUER KOMPRESSOREN\nuct\nSelected product:\nVERTICUS-OX\nArt. Nr.: VERTICUS-OX\nSKU\nVERTICUS-OX\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nQuality & Innovation\nNitrox Capable up to 300 bar\nThe unit is designed for Nitrox up to 300 bar and features a TÜV-certified OX configuration, ensuring maximum safety as well as high-performance, nitrox-optimized technology for professional applications.\nB-CLOUD with B-CONTROL MICRO\nIn combination with the multilingual B-CONTROL MICRO HMI, B-CLOUD enables market-leading online monitoring with real-time transparency of system status, operating parameters, and maintenance data, ensuring maximum control and operational safety.\nB-DETECTION PLUS i (optional)\nB-DETECTION PLUS i continuously monitors and documents all gases relevant under DIN EN 12021:2014 and automatically shuts down the system in case of deviations. Together with legally-compliant cloud documentation, B-DETECTION PLUS i provides maximum safety and full regulatory traceability.\nMaximum operational safety for critical industrial environments\nBAUER units are engineered for maximum operational safety and feature comprehensive monitoring and protection functions. They ensure safe operation in demanding industrial environments while protecting personnel, equipment, and compliance with critical process requirements.\nPremium Quality",
+        "page": null,
+        "section": [
+          "VERTICUS-OX · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.50678571,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "76e8fe74-5763-45b3-9caa-d577ec8644a8",
+        "filename": "0224-0058_firefighting_4f1e58cd40-f7b9057fbf.md",
+        "title": "Firefighting Solutions for Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [
+          "DIN EN 12021"
+        ],
+        "content": "Document: Firefighting Solutions for Safety | BAUER KOMPRESSOREN\nechnology ensures maximum safety – around the clock, 365 days a year.\nTypical Applications in Fire Service\nFilling breathing air cylinders (200 / 300 / 420 bar)\nBreathing air treatment according to international standards (e.g., DIN EN 12021)\nPermanent air quality monitoring and testing\nStorage solutions up to 420 / 500 bar\nVehicle-integrated compressor systems for mobile rescue units\nOur Customers\nProfessional fire departments\nVolunteer fire brigades\nIndustrial fire services\nDisaster relief organizations\nVehicle outfitters for emergency vehicles\nMunicipalities and local authorities\nAdvantages with BAUER KOMPRESSOREN\nComplete systems from a single source – from compression to distribution\nLong-term spare parts supply – worldwide, guaranteed for 25+ years\nMaximum operator safety through intuitive system controls\nDurable systems with proven, value-retaining technology\nPureAir certification – tested breathing air quality\nSafety That Saves Lives – with System Technology from BAUER\nOur solutions are rugged, powerful, and tailored to the real demands of emergency operations.\nGet personalized advice for maximum operational safety.\nGet personalized advice\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions",
+        "page": null,
+        "section": [
+          "Firefighting Solutions for Safety / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.42929284,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 250-HE",
+          "PE 300-HE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "control"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: bauer_amfile_7\ns have features optimised for users’ needs, with BAUER’s\nhallmark ­quality and reliability for the utmost safety in stationary operation.\nSTATIONARY COMPRESSORS\n## Page 21\n\nPE-HE\nAMONG THE MOST COMPACT STATIONARY COMPRESSOR SYSTEMS\nIN ITS PERFORMANCE CLASS\nThe POSEIDON EDITION PE 250-HE and PE 300-HE horizontal compressors from BAUER KOMPRESSOREN are\namong the most compact stationary systems in their class.\nThe integrated P 31 Purification System provides reliable breathing air purification in compliance with\nDIN EN 12021:20141.\nThanks to the space-saving arrangement of compressor block and drive, the rugged and durable units in the HE\nseries take up next to no floor space.\nThey are also supplied with an automatic condensate drain system and the user-friendly BHW-CONTROL control\nunit as standard.\n› 250 - 300 l/min\n› 225 or 330 bar\n› 5.5 - 7.5 kW\nOPTIONAL FEATURES\n› 2-way filling device with hose coupling / 4-way filling device with hose coupling or direct coupling\n› Two pressure ranges 225 and 330 bar (pressure reducer)\n› Large-scale P 41 Purification System for longer cartridge life\n› B-TIMER filter cartridge lifetime monitoring system\n› B-SECURUS filter cartridge saturation monitoring system\n› B-AEROGUARD CO2 reduction system\n› External BAUER filling panels\n› BAUER high pressure storage system\nFEATURES\n› With rugged compressor block and piston rings of",
+        "page": 20,
+        "section": [
+          "bauer amfile 7",
+          "Page 20"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.39252024,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+        "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+        "title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nDocument section: 2026-04_B-Nitrox_EN_N34460_sc / Page 7\nTable: 2026-04_B-Nitrox_EN_N34460_sc\nHeaders and units: OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR | NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure | breathing or compressed air for all applications, in strict compliance with international air quality standards | such as DIN EN12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex- | tensive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their | sophisticated technology, combined with our decades of experience, ensure high reliability in continuous | operation and extremely long service life. | NITROX COMPRESSORS | 330 BAR | VERTICUS-OX | 300 bar | MINI-VERTICUS-OX | 300 bar | MARINER 320-OX\nRow: 300 bar\nValues: 200 | 250 | 300 | 350 | 400 | 450 | 500",
+        "page": 7,
+        "section": [
+          "2026-04 B-Nitrox EN N34460 sc",
+          "Page 7"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "2026-04 B-Nitrox EN N34460 sc",
+        "row_label": "300 bar",
+        "headers": [
+          "OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR",
+          "NEEDS",
+          "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure",
+          "breathing or compressed air for all applications, in strict compliance with international air quality standards",
+          "such as DIN EN12021:2014 (Breathing Air Standard).",
+          "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+          "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex-",
+          "tensive expertise in the fields of development, production and application.",
+          "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their",
+          "sophisticated technology, combined with our decades of experience, ensure high reliability in continuous",
+          "operation and extremely long service life.",
+          "NITROX COMPRESSORS | 330 BAR",
+          "VERTICUS-OX",
+          "300 bar",
+          "MINI-VERTICUS-OX",
+          "300 bar",
+          "MARINER 320-OX"
+        ],
+        "row_values": [
+          "200",
+          "250",
+          "300",
+          "350",
+          "400",
+          "450",
+          "500"
+        ],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.37181011,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "1854bf38-6186-499f-a7f8-f1cacbc298d1",
+        "filename": "0199-0033_capitano_05efc8859b-8c493b052e.md",
+        "title": "CAPITANO · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: CAPITANO · PREMIUM LINE | BAUER KOMPRESSOREN\nmore.\nTrolley set\nThe trolley set enables easy and effortless transport of mobile compressor units. Equipped with pneumatic wheels, it ensures maximum mobility.\nFirst-stage separator\nFor operation in humid ambient air, such as in tropical regions or when handling moist gases, a separator is recommended after the first compression stage. It reliably discharges the increased amount of condensate and minimizes its entry into the compressor oil.\nAdditional filling device PN 200 or PN 300 bar\nAn existing filling connection can optionally be expanded by one or more additional connections with filling hoses of variable length.\nDownloads\nProduct Brochure Premium Line Compressors EN\n(7.74 MB)\nProduct brochure PROFI LINE EN\n(667.44 kB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nMARINER and CAPITANO – Mobile All-Round Compressors\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.",
+        "page": null,
+        "section": [
+          "CAPITANO · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.37034204,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "MINI-VERTICUS and",
+          "VERTICUS AND",
+          "B-KOOL",
+          "B-CONTROL",
+          "B-CONTROL III",
+          "VERTICUS SERIES",
+          "VERTICUS breathing"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter",
+          "control"
+        ],
+        "standards": [
+          "ISO 8573"
+        ],
+        "content": "Document: bauer_amfile_5\nng for remotely monitoring\nthe compressor.\nThe MINI-VERTICUS and VERTICUS breathing air compressors are available in versions for 225 and/or 330/350 bar as well\nas in a version for up to 420 bar. The high modularity of the MINI-VERTICUS and VERTICUS series means that the units can\neasily be adapted to provide the best possible solution to your requirements and wishes.\nOPTIONAL FEATURES (SELECTION)\n› Integrated gas measurement system for compliance with DIN EN12021:20141\n› Remote control and monitoring with the B-CLOUD and B-APP\n› Oil level monitoring for safely switching off the compressor unit when the oil level is low\n› Particle filter conforming to ISO 8573 class 2\n› Super Silent noise insulation housing\n› Purification System P 81 (for VERTICUS) or P 61 (for MINI-VERTICUS) for extended filter cartridge life\n› B-SECURUS filter cartridge saturation monitoring system\n› 4 front-mounted filling devices, optionally for one or two pressure ranges (225/300 bar)\n› B-CONTROL III compressor control unit – e.g. for interconnected operation etc.\n› Intermediate separator after first stage – recommended in conditions of high humidity\n› Extended base frame to take up to 2 storage cylinders\n› B-KOOL refrigeration dryer for extending the filter service life\n› Nitrox version available2",
+        "page": 29,
+        "section": [
+          "bauer amfile 5",
+          "Page 29"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.36990942,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "5cfdd9d3-186a-4fbd-a599-eaf7b89d4efa",
+        "filename": "0288-0122_oceanus_78da0f1fad-99f79553bd.md",
+        "title": "OCEANUS · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: OCEANUS · PREMIUM LINE | BAUER KOMPRESSOREN\nsign provides optimal protection against corrosion and is ideal for use in tropical climates as well as on ships.\nAdditional filling device PN 200 or PN 300 bar\nAn existing filling connection can optionally be expanded by one or more additional connections with filling hoses of variable length.\nTrolley set\nThe trolley set enables safe transport of the compressor over various terrains. Large pneumatic wheels and a stable mount ensure secure positioning. The compressor can be operated directly on the trolley or removed as needed – locked or released easily by turning the handle. The drawbar is length-adjustable for ergonomic handling and can be detached for space-saving transport in a car.\nDownloads\nProduct Brochure Premium Line Compressors EN\n(7.74 MB)\nProduct Brochure COMPACT LINE EN\n(1.31 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nBAUER JUNIOR II & OCEANUS – mobile performance\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is\nBAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.",
+        "page": null,
+        "section": [
+          "OCEANUS · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.36840368,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "15ac77b6-7a41-4f8a-9447-789ad0d725be",
+        "filename": "0274-0108_mariner-ox_d64bf7e7b0-787c37d738.md",
+        "title": "MARINER-OX · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: MARINER-OX · PREMIUM LINE | BAUER KOMPRESSOREN\nroduct\nSelected product:\nMARINER-OX\nArt. Nr.: MARINER-OX\nSKU\nMARINER-OX\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nQuality & Innovation\nNitrox Capable up to 300 bar\nThe unit is designed for Nitrox up to 300 bar and features a TÜV-certified OX configuration, ensuring maximum safety as well as high-performance, nitrox-optimized technology for professional applications.\nB-CLOUD with B-CONTROL MICRO\nIn combination with the multilingual B-CONTROL MICRO HMI, B-CLOUD enables market-leading online monitoring with real-time transparency of system status, operating parameters, and maintenance data, ensuring maximum control and operational safety.\nBenchmark in Design and Performance\nFor decades, the MARINER-OX has set the benchmark for design, performance and durable technology, and stands worldwide for professional breathing air systems that prove their reliability, quality and long-term operational safety in continuous daily use.\nMaximum operational safety for critical industrial environments\nBAUER systems are engineered for maximum operational safety and feature comprehensive monitoring and protection functions. They ensure safe operation in demanding industrial environments while protecting personnel, equipment, and compliance with critical process requirements.\nPremium Quality",
+        "page": null,
+        "section": [
+          "MARINER-OX · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.35958333,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "d1a82a82-c977-4b54-b433-d837a1e006f7",
+        "filename": "0080-bauer_amfile_11-395dc528f8.md",
+        "title": "bauer_amfile_11",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-DETECTION PLUS"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: bauer_amfile_11\nll countries.\nFurther information on the B-CLOUD can be found on our website: bauer-kompressoren.de/b-cloud\nB-APP\nStay informed anytime, anywhere with the B-APP\n## Page 5\n\nPERMANENTLY MONITORS THE QUALITY OF YOUR BREATHING AIR\nThe optional fully integrated gas measurement system, B-DETECTION\nPLUS i, monitors the quality of the breathing air produced by the system. Auto-\nmatic, continuous and outstandingly reliable. The ­optional humidity monitoring\nfunction takes over the function of B-SECURUS and allows lower-cost standard\ncartridges to be used.\nThe display of the B-CONTROL MICRO compressor control unit allows you to\nmonitor compliance with the limit values of the ­\nDIN EN 12021:20141 Breathing Air Standard at all times. If limit values are excee-\nded, the control unit displays a visual warning and shuts down the system before\ncontaminated air can pass into the cylinders being filled.\nIn cases where limit values are briefly exceeded, an automatic flush valve dischar-\nges contaminated air to the outside without interrupting operation of the system.\nBAUER’s B-DETECTION PLUS i provides operators with the ­maximum security\nconcerning health and legal liability issues.\n› NEW! Measurement of gases and breathing air up to 420 bar possible\n› NEW! Measurement directly in the intake hose to analyse the air actually absor-\nbed",
+        "page": 4,
+        "section": [
+          "bauer amfile 11",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.35866422,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "300 bar"
+        ],
+        "standards": [
+          "din en 12021"
+        ],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 2,
+      "elapsed_ms": 1107.08
+    }
+  },
+  "completed_at": "2026-07-23T15:02:00.702202+00:00",
+  "case_id": "B01",
+  "split": "development",
+  "category": "combined_evidence",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

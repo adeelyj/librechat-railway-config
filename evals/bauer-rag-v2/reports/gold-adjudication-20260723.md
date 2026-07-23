@@ -5,7 +5,7 @@ Date: 2026-07-23
 Status: human review required before holdout or promotion evaluation.
 
 Source run:
-`../raw-runs/retrieval-smoke-20260723-04/run.json`
+`../raw-runs/retrieval-smoke-20260723-05/run.json`
 
 The final development smoke reached 66.67% exact metadata success against the provisional gold.
 Three exact cases fail because the expected section/table labels are not represented by the

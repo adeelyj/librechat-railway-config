@@ -1,0 +1,601 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 956.53,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+      "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+      "title": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+      "language": "en",
+      "publication_date": "2024-01-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION"
+      ],
+      "media": [],
+      "component_categories": [
+        "sensor"
+      ],
+      "standards": [],
+      "content": "Document: 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\n# 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\n\n- Original source: `bauer_index\\raw_docs\\2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc.pdf`\n- Original SHA-256: `496bbb4b6fdf63d11f91be7e298dacd33149d3a10e7320aa0c999845aaf6eda9`",
+      "page": null,
+      "section": [
+        "2024-01 B-DETECTION Sensor calibration EN N47183 sc"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.45458788,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+      "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+      "title": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+      "language": "en",
+      "publication_date": "2024-01-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION"
+      ],
+      "media": [],
+      "component_categories": [
+        "sensor"
+      ],
+      "standards": [],
+      "content": "Document: 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\nr_index\\raw_docs\\2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc.pdf`\n- Original SHA-256: `496bbb4b6fdf63d11f91be7e298dacd33149d3a10e7320aa0c999845aaf6eda9`\n## Page 1\n\nSPORTS & SAFETY\nBAUER B-DETECTION\nTHE NEXT GENERATION\nSENSOR CALIBRATION\n1946 – 2026\n8 0",
+      "page": null,
+      "section": [
+        "2024-01 B-DETECTION Sensor calibration EN N47183 sc"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.44181818,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "2a708665-89d5-415b-8942-384cfd9d3c05",
+      "filename": "0132-beschaffungswesen_RC_kurz_EN-de7f8c7cee.md",
+      "title": "beschaffungswesen_RC_kurz_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: beschaffungswesen_RC_kurz_EN\nrvices.\n(2)\nIf the Supplier provides a shortfall in services then, irrespective of its\nfurther claims, the Customer is entitled to request the still outstanding\ncontractual service, unless it is not possible for the Supplier to provide\nthis still outstanding service.\n(3)\nIf the Supplier provides a surplus of services then the Customer is not\nobliged to remunerate this surplus of services even in the case of the\nacceptance of the surplus of services without reservation unless there is\na statutory claim for payment of the Supplier, for example owing to\nunjustified enrichment and/or management without an order.\n§ 7 Type and time of the service, delay in the\nservice, contractual penalty\n(1)\nThe Supplier undertakes to provide its contractual services free of\ndefects of quality and title. With regard to the defects of title the Supplier\nis aware that the Customer uses the contractual services of the Supplier\nworldwide.\n(2)\nChanges to the object of delivery require the prior consent of the\nCustomer.\n(3)\nThe agreed service times are binding.\n(4)\nThe receipt of the service by the Customer is decisive for the adherence\nto the service time and/or the service deadline. If the Supplier is not\nobliged to transport the service to the Customer to the agreed place of\nuse at its own costs and if no other place of performance was agreed",
+      "page": 1,
+      "section": [
+        "beschaffungswesen RC kurz EN",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.19946237,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "5885314a-34a9-47d8-8664-d2e147a469f8",
+      "filename": "0077-BAUER-Group-Code-Human-Rights-b64d713632.md",
+      "title": "BAUER-Group-Code-Human-Rights",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: BAUER-Group-Code-Human-Rights\nst others, the mutual respect of agreed\ncommitments.\nCODE ON HUMAN RIGHTS AND WORKING CONDITIONS\nFREEDOM OF ASSOCIATION AND THE RIGHT TO COLLECTIVE\nBARGAINING\n7\n## Page 8\n\nCODE ON HUMAN RIGHTS AND WORKING CONDITIONS\nHEALTH AND SAFETY AT WORK\n8\nThe BAUER Group does not compromise on a safe and healthy working environment for all employees and is committed to offering\nsafe and healthy workplaces in accordance with national legislation.\nBAUER consistently complies with applicable environmental, safety and health (ESH) regulations as well as customer, community\nand other requirements. The BAUER Group furthermore commits to continual improvement of its operations, progressively reducing\nthe potential ESH impact of its activities, by focusing on: the health, safety and productivity of employees and processes; efficient use\nof natural resources; and prevention of pollution. The BAUER Group sets and reviews relevant ESH objectives and targets for its\noperations worldwide and on a regular basis.\nIn line with applicable legislation, the managers responsible take their duties very seriously. They ensure that all employees\nconcerned are regularly instructed on the relevant aspects of occupational health and safety. In addition, the BAUER Group actively\npromotes the physical and psychological wellbeing of its employees through health management initiatives.",
+      "page": 7,
+      "section": [
+        "BAUER-Group-Code-Human-Rights",
+        "Page 7"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical",
+        "vector"
+      ],
+      "score": 0.11543601,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "0f867a7b-a022-410d-9419-9f5d6d600ba6",
+      "filename": "0349-0183_professional-diving_8f84535210-bfe75cb87a.md",
+      "title": "Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN\nl source: `bauer_index\\raw_html\\0183_professional-diving_8f84535210.html`\n- Original SHA-256: `bfe75cb87af5c9aa795a8565476b11977ad832dcbcfd5323ed92e41ed2b8592b`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nHigh-Pressure Breathing Air Systems for Professional Divers\nSafe Breathing Air – Powered by BAUER Technology\nBreathing air is the most vital component of any dive— especially during professional operations under extreme conditions.\nThat’s why at BAUER KOMPRESSOREN, delivering clean, safe, and reliable breathing air is our top priority — worldwide and in every scenario.\nFrom portable compressors for private diving excursions to complete professional systems for dive centres, BAUER offers everything from a single source.",
+      "page": null,
+      "section": [
+        "Professional Diving Equipment and Solutions / BAUER KOMPRESSOREN"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10806011,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "2d3cdedc-3f71-49fb-b268-0ada37cb996f",
+      "filename": "0049-2024-01_B-NEWS_EN_sc-003e1e19ad.md",
+      "title": "2024-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2024-01-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2024-01_B-NEWS_EN_sc\nII took over.\nEquipped with the identical, proven\ncompressor block and sophisticated\nTRIPLEX filter system, it was given a\ncompletely new look with its rounded\nplastic cover. This not only improved\nits handling, but also helped to save\nweight. The B-TIMER, developed in\n2004 specifically for the TRIPLEX filter\nsystem, brought additional utility. Its\ndisplay now showed necessary filter\nchanges and maintenance at a glance.\nThe bestseller entered the next stage\nof evolution in 2022. All cover parts\nwere completely re-engineered. The\nnew development of the fan guard in\ncollaboration with the Technical Uni-\nversity of Munich focused this time on\nan optimized flow around the cylinder\nstages for even more perfect cooling.\nWith these improvements, the JUNIOR\nII in its new “state-of-the-art” design\nwill continue its unprecedented suc-\ncess story well beyond its anniversary\nyear in 2024 and supply countless\nfuture divers with safe and pure BAUER\nbreathing air.\nThe JUNIOR 1995 as a special\nedition for the company's 50th\nanniversary, one year after its\nmarket launch in the petrol-driven\nversion\nIn 1997, the JUNIOR, here in the AC\nversion, received a new fan wheel and\nbelt guard made of special impact-­\nresistant plastic.\nThe third generation from 2022\nwill continue to shine with, among\nother things, further optimized\ncooling air flow and state-of-the-\nart design.",
+      "page": 2,
+      "section": [
+        "2024-01 B-NEWS EN sc",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.10806011,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+      "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+      "title": "2025-06_Product_overview_EN_N37488_sc",
+      "language": "en",
+      "publication_date": "2025-06-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nme are especially\nsuited for indoor installation in production halls or compressor rooms\nwhere a small footprint is essential. All skid-mounted solutions can be\ndelivered as turnkey, pre-tested units with the desired approvals and\nput into operation on site without problems.\nCOMPLETE SYSTEMS\nA great strength of BAUER KOMPRESSOREN is the company‘s expertise in the construction and manufacturing of\ncomplete systems that have to withstand particular climatic conditions and often operate auto­nomously in the world‘s\nmost remote places. The climatic con­ditions may vary from extremely low temperatures in winter ­and salty, moist air\nto high desert temperatures and sand drifts.",
+      "page": 39,
+      "section": [
+        "2025-06 Product overview EN N37488 sc",
+        "Page 39"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.1077957,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+        "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+        "title": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+        "language": "en",
+        "publication_date": "2024-01-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION"
+        ],
+        "media": [],
+        "component_categories": [
+          "sensor"
+        ],
+        "standards": [],
+        "content": "Document: 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\n# 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\n\n- Original source: `bauer_index\\raw_docs\\2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc.pdf`\n- Original SHA-256: `496bbb4b6fdf63d11f91be7e298dacd33149d3a10e7320aa0c999845aaf6eda9`",
+        "page": null,
+        "section": [
+          "2024-01 B-DETECTION Sensor calibration EN N47183 sc"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.45458788,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+        "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+        "title": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+        "language": "en",
+        "publication_date": "2024-01-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION"
+        ],
+        "media": [],
+        "component_categories": [
+          "sensor"
+        ],
+        "standards": [],
+        "content": "Document: 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\nr_index\\raw_docs\\2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc.pdf`\n- Original SHA-256: `496bbb4b6fdf63d11f91be7e298dacd33149d3a10e7320aa0c999845aaf6eda9`\n## Page 1\n\nSPORTS & SAFETY\nBAUER B-DETECTION\nTHE NEXT GENERATION\nSENSOR CALIBRATION\n1946 – 2026\n8 0",
+        "page": null,
+        "section": [
+          "2024-01 B-DETECTION Sensor calibration EN N47183 sc"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.44181818,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "2a708665-89d5-415b-8942-384cfd9d3c05",
+        "filename": "0132-beschaffungswesen_RC_kurz_EN-de7f8c7cee.md",
+        "title": "beschaffungswesen_RC_kurz_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: beschaffungswesen_RC_kurz_EN\nrvices.\n(2)\nIf the Supplier provides a shortfall in services then, irrespective of its\nfurther claims, the Customer is entitled to request the still outstanding\ncontractual service, unless it is not possible for the Supplier to provide\nthis still outstanding service.\n(3)\nIf the Supplier provides a surplus of services then the Customer is not\nobliged to remunerate this surplus of services even in the case of the\nacceptance of the surplus of services without reservation unless there is\na statutory claim for payment of the Supplier, for example owing to\nunjustified enrichment and/or management without an order.\n§ 7 Type and time of the service, delay in the\nservice, contractual penalty\n(1)\nThe Supplier undertakes to provide its contractual services free of\ndefects of quality and title. With regard to the defects of title the Supplier\nis aware that the Customer uses the contractual services of the Supplier\nworldwide.\n(2)\nChanges to the object of delivery require the prior consent of the\nCustomer.\n(3)\nThe agreed service times are binding.\n(4)\nThe receipt of the service by the Customer is decisive for the adherence\nto the service time and/or the service deadline. If the Supplier is not\nobliged to transport the service to the Customer to the agreed place of\nuse at its own costs and if no other place of performance was agreed",
+        "page": 1,
+        "section": [
+          "beschaffungswesen RC kurz EN",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.19946237,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "5885314a-34a9-47d8-8664-d2e147a469f8",
+        "filename": "0077-BAUER-Group-Code-Human-Rights-b64d713632.md",
+        "title": "BAUER-Group-Code-Human-Rights",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: BAUER-Group-Code-Human-Rights\nst others, the mutual respect of agreed\ncommitments.\nCODE ON HUMAN RIGHTS AND WORKING CONDITIONS\nFREEDOM OF ASSOCIATION AND THE RIGHT TO COLLECTIVE\nBARGAINING\n7\n## Page 8\n\nCODE ON HUMAN RIGHTS AND WORKING CONDITIONS\nHEALTH AND SAFETY AT WORK\n8\nThe BAUER Group does not compromise on a safe and healthy working environment for all employees and is committed to offering\nsafe and healthy workplaces in accordance with national legislation.\nBAUER consistently complies with applicable environmental, safety and health (ESH) regulations as well as customer, community\nand other requirements. The BAUER Group furthermore commits to continual improvement of its operations, progressively reducing\nthe potential ESH impact of its activities, by focusing on: the health, safety and productivity of employees and processes; efficient use\nof natural resources; and prevention of pollution. The BAUER Group sets and reviews relevant ESH objectives and targets for its\noperations worldwide and on a regular basis.\nIn line with applicable legislation, the managers responsible take their duties very seriously. They ensure that all employees\nconcerned are regularly instructed on the relevant aspects of occupational health and safety. In addition, the BAUER Group actively\npromotes the physical and psychological wellbeing of its employees through health management initiatives.",
+        "page": 7,
+        "section": [
+          "BAUER-Group-Code-Human-Rights",
+          "Page 7"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical",
+          "vector"
+        ],
+        "score": 0.11543601,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "0f867a7b-a022-410d-9419-9f5d6d600ba6",
+        "filename": "0349-0183_professional-diving_8f84535210-bfe75cb87a.md",
+        "title": "Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN\nl source: `bauer_index\\raw_html\\0183_professional-diving_8f84535210.html`\n- Original SHA-256: `bfe75cb87af5c9aa795a8565476b11977ad832dcbcfd5323ed92e41ed2b8592b`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nHigh-Pressure Breathing Air Systems for Professional Divers\nSafe Breathing Air – Powered by BAUER Technology\nBreathing air is the most vital component of any dive— especially during professional operations under extreme conditions.\nThat’s why at BAUER KOMPRESSOREN, delivering clean, safe, and reliable breathing air is our top priority — worldwide and in every scenario.\nFrom portable compressors for private diving excursions to complete professional systems for dive centres, BAUER offers everything from a single source.",
+        "page": null,
+        "section": [
+          "Professional Diving Equipment and Solutions / BAUER KOMPRESSOREN"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10806011,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "2d3cdedc-3f71-49fb-b268-0ada37cb996f",
+        "filename": "0049-2024-01_B-NEWS_EN_sc-003e1e19ad.md",
+        "title": "2024-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2024-01-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2024-01_B-NEWS_EN_sc\nII took over.\nEquipped with the identical, proven\ncompressor block and sophisticated\nTRIPLEX filter system, it was given a\ncompletely new look with its rounded\nplastic cover. This not only improved\nits handling, but also helped to save\nweight. The B-TIMER, developed in\n2004 specifically for the TRIPLEX filter\nsystem, brought additional utility. Its\ndisplay now showed necessary filter\nchanges and maintenance at a glance.\nThe bestseller entered the next stage\nof evolution in 2022. All cover parts\nwere completely re-engineered. The\nnew development of the fan guard in\ncollaboration with the Technical Uni-\nversity of Munich focused this time on\nan optimized flow around the cylinder\nstages for even more perfect cooling.\nWith these improvements, the JUNIOR\nII in its new “state-of-the-art” design\nwill continue its unprecedented suc-\ncess story well beyond its anniversary\nyear in 2024 and supply countless\nfuture divers with safe and pure BAUER\nbreathing air.\nThe JUNIOR 1995 as a special\nedition for the company's 50th\nanniversary, one year after its\nmarket launch in the petrol-driven\nversion\nIn 1997, the JUNIOR, here in the AC\nversion, received a new fan wheel and\nbelt guard made of special impact-­\nresistant plastic.\nThe third generation from 2022\nwill continue to shine with, among\nother things, further optimized\ncooling air flow and state-of-the-\nart design.",
+        "page": 2,
+        "section": [
+          "2024-01 B-NEWS EN sc",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.10806011,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+        "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+        "title": "2025-06_Product_overview_EN_N37488_sc",
+        "language": "en",
+        "publication_date": "2025-06-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nme are especially\nsuited for indoor installation in production halls or compressor rooms\nwhere a small footprint is essential. All skid-mounted solutions can be\ndelivered as turnkey, pre-tested units with the desired approvals and\nput into operation on site without problems.\nCOMPLETE SYSTEMS\nA great strength of BAUER KOMPRESSOREN is the company‘s expertise in the construction and manufacturing of\ncomplete systems that have to withstand particular climatic conditions and often operate auto­nomously in the world‘s\nmost remote places. The climatic con­ditions may vary from extremely low temperatures in winter ­and salty, moist air\nto high desert temperatures and sand drifts.",
+        "page": 39,
+        "section": [
+          "2025-06 Product overview EN N37488 sc",
+          "Page 39"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.1077957,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "n47183"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": true,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 0,
+      "elapsed_ms": 730.08
+    }
+  },
+  "completed_at": "2026-07-23T15:02:35.719826+00:00",
+  "case_id": "B23",
+  "split": "development",
+  "category": "exact_document_number",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

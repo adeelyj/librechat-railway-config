@@ -1,0 +1,904 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1193.9,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+      "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "Certificate",
+        "ISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH",
+        "EN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE",
+        "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 9001",
+        "ISO 14001:2015",
+        "EN ISO 3834-2",
+        "EN 13445",
+        "EN 13480",
+        "AD 2000-Merkblatt HP 0",
+        "AD 2000-Information",
+        "ISO 14001"
+      ],
+      "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\n5 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH\n(586.94 kB)\nEN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(235.09 kB)\nEN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(231.71 kB)\nZertifikat AD 2000-Merkblatt HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(226.88 kB)\nCertificate AD 2000-Information Sheet HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(224.02 kB)\nISO 9001: Bauer Compresseurs S.A.S\nISO 9001 Zertifikat-BAUER-COMPRESSEURS DE\n(333.82 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS EN\n(328.99 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS FR\n(330.89 kB)\nISO 9001: BAUER COMPRESSORI S.R.L\nISO9001 Zertifikat-BAUER-COMPRESSORI DE\n(318.90 kB)\nISO9001 Certificate-BAUER-COMPRESSORI EN\n(315.87 kB)\nISO9001 Certificato-BAUER-COMPRESSORI IT\n(335.31 kB)\nISO 9001: BAUER COMPRESSORS Asia Pte. Ltd.\nISO 9001 Certficate BAUER COMPRESSORS Asia Pte. Ltd. EN\n(55.45 kB)\nISO 9001: BAUER KOMPRESSOREN Australia Pty. Ltd\nISO 9001 Certficate BAUER KOMPRESSOREN Australia Pty. Ltd. EN\n(77.19 kB)\nISO 9001: BAUER KOMPRESSOREN GCC FZE\nISO 9001 Certficate: BAUER KOMPRESSOREN GCC FZE EN\n(357.34 kB)",
+      "page": null,
+      "section": [
+        "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.63752247,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+      "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "Certificate",
+        "ISO 9001-Zertifikat: BAUER COMP Holding GmbH DE",
+        "ISO 9001 Certificate: BAUER COMP Holding GmbH EN",
+        "ISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 9001",
+        "ISO 14001:2015",
+        "EN ISO 3834-2",
+        "EN 13445",
+        "EN 13480",
+        "ISO 14001"
+      ],
+      "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\nsource: `bauer_index\\raw_html\\0035_certificate-download_e42c3f318d.html`\n- Original SHA-256: `d4cc35ee9f6af76832ecdd6632abc84e6a92c95aeeabb57ec980e1aa8c30313a`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nCertificate\nISO 9001: BAUER GROUP\nISO 9001-Zertifikat: BAUER COMP Holding GmbH DE\n(797.61 kB)\nISO 9001 Certificate: BAUER COMP Holding GmbH EN\n(771.39 kB)\nISO 9001, ISO 14001:2015, EN ISO 3834-2, EN 13445-4, EN 13480-4: BAUER KOMPRESSOREN GmbH\nISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE\n(329.27 kB)\nISO9001 Certificate-BAUER-KOMPRESSOREN-Werk-I EN\n(325.80 kB)\nISO9001_Zertifikat-BAUER-Stäbli DE\n(319.85 kB)\nISO9001 Certificate-BAUER-Stäbli EN\n(316.54 kB)\nISO 14001:2015 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH",
+      "page": null,
+      "section": [
+        "Download Certificates from BAUER KOMPRESSOREN Easily"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.56102453,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "1eaee366-55e5-401b-811b-cc08b17c67d3",
+      "filename": "0086-bauer_amfile_215-5855c13f42.md",
+      "title": "bauer_amfile_215",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "ZERTIFIKAT"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "EN ISO 3834-2"
+      ],
+      "content": "Document: bauer_amfile_215\nmfile_215\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_215.pdf`\n- Original SHA-256: `5855c13f42908e5429e4532b12ab6d607fdaa96b1979261a315748b98c7171be`\n## Page 1\n\n_____________________\nHenrik Bohl\n\nZERTIFIKAT\nTÜV SÜD-MUC-WD-3112378.2015.005\nHersteller:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nFertigungsstätte(n):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nDer oben genannte Hersteller erfüllt die\numfassenden Qualitätsanforderungen für das\nSchmelzschweißen von metallischen Werkstoffen\nnach\nEN ISO 3834-2\nAuftragsnummer:\n4243762\ngültig bis:\n15. Dezember 2026\nMünchen, 29. Oktober 2025",
+      "page": null,
+      "section": [
+        "bauer amfile 215"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.46112903,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "f94c501e-cefc-4be6-8527-6762af9f4c22",
+      "filename": "0147-Filterpatronen_DE_sc-7414ae54f4.md",
+      "title": "Filterpatronen_DE_sc",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [
+        "ISO 9001"
+      ],
+      "content": "Document: Filterpatronen_DE_sc\niebsanleitung bzw. Betreiberhandbuch und sofern die\nCO2-Konzentration in der Ansaugluft die in der gelieferten Atemluftnorm vorgegebenen Werte nicht übersteigt.\n## Page 5\n\nBAUER KOMPRESSOREN\b\nFILTERPATRONEN | 5\nHÖCHSTE QUALITÄT\nSORGT FÜR ZUVERLÄSSIGES FUNKTIONIEREN – JEDERZEIT.\nHOCHWERTIGE MATERIALIEN\nDie Qualität ist ausschlaggebend, wenn es um die Leistungs­fähigkeit und Sicherheit eines\n­Produkts geht. Aus diesem Grund werden alle BAUER Filterpatronen unter anderem mit hoch­\nwertigstem Kunststoff unter Ausschluss jedweder Art von Klebstoffen und Lösungsmitteln\ngefertigt.\nLANGE LEBENSDAUER\nDurch die gleichbleibend hohe Fertigungsqualität und kürzeste Verarbeitungszeiten für Inhalts­\nstoffe verfügen unsere Filterpatronen über verlängerte und klar definierte Standzeiten – auf\ndie Sie sich verlassen können! Zusätzliche Kontrollen werden in unserem Erprobungszentrum\nregelmäßig durchgeführt. Entsprechend des BAUER Qualitätsmanagementsystems ISO 9001\nwurden alle Herstellschritte der Patronen zertifiziert. BAUER KOMPRESSOREN empfiehlt\n­mindestens einen jährlichen Wechsel der eingesetzten Atemluftpatrone oder bei einem\nAnlagen­stillstand nach drei Monaten. Bitte beachten Sie auch evtl. bestehende länderspezi­\nfische kürzere Wechselintervalle.\nKURZE VERARBEITUNGSZEIT DER ­MARKEN-TROCKNERMITTEL\nDa die Öffnungszeit des Trocknermittelbehälters maßgeblich die Laufzeit der Patrone",
+      "page": 4,
+      "section": [
+        "Filterpatronen DE sc",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.45970588,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "50a078af-39d0-4244-bc9d-b10e3671dcfc",
+      "filename": "0087-bauer_amfile_216-1d4691de14.md",
+      "title": "bauer_amfile_216",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "CERTIFICATE"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "EN ISO 3834-2"
+      ],
+      "content": "Document: bauer_amfile_216\nmfile_216\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_216.pdf`\n- Original SHA-256: `1d4691de1400363b8fd8a624b3345aa1913069e18e0a400b0c136cfdc2479001`\n## Page 1\n\n_____________________\nHenrik Bohl\n\nCERTIFICATE\nTÜV SÜD-MUC-WD-3112378.2015.005\nManufacturer:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nPlant(s):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nThe above mentioned company fulfills the\ncomprehensive quality requirements for fusion\nwelding of metallic materials\naccording to\nEN ISO 3834-2\nContract:\n4243762\nValid until:\nDecember 15, 2026\nMunich, October 29, 2025",
+      "page": null,
+      "section": [
+        "bauer amfile 216"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.435625,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "70644844-d946-4162-ab22-ed1f07f05232",
+      "filename": "0033-2021-02_B-NEWS_DE_sc-d5e9364c8c.md",
+      "title": "2021-02_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2021-02-01",
+      "certificates": [
+        "ZERTIFIKAT"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 14001"
+      ],
+      "content": "Document: 2021-02_B-NEWS_DE_sc\nR KOMPRESSOREN\nAUSGABE 2/2021\nPhilipp Bayat, Dr. Monika Bayat, Heinz Bauer\n(v. l. n. r.)\nBAUER KOMPRESSOREN\nBAUERs INTERNET OF THINGS\nDank B-CLOUD immer im Bild\n## Page 2\n\n2\ndaten kann er im Falle anstehender\nWartungen Termine vorschlagen oder\nkomplette Wartungspläne erstellen. Im\nBedarfsfall ist schnelle Hilfe möglich\nund über Remote-Unterstützung lassen\nsich durch den Wegfall von Anfahrtswe-\ngen Zeit und Kosten sparen.\nDie gesamte Datenübertragung, die\nim Rahmen der B-CLOUD stattﬁ ndet, un-\nterliegt einer starken End-to-End-Ver-\nschlüsselung. Denn in einer Zeit, in der\ndie Gefahr von Cyberangriﬀ en zuneh-\nmend Thema wird, ist für BAUER die\nDatensicherheit und DSGVO-Konformi-\ntät obers te Prämisse.\nBAUER\nKOMPRESSOREN\nUMWELT-\nZERTIFIKAT\nDie Urkundenüberreichung an die Ei-\ngentümerin und geschäftsführende Ge-\nsellschafterin Dr. Monika Bayat durch\nPeter Mühlbauer, Managing Director\nder TÜV SÜD Management GmbH, per-\nsönlich dokumentiert den erfolgreichen\nAbschluss der BAUER Umweltmanage-\nmentzertiﬁ zierung nach ISO 14001.\nBereits seit vielen Jahren treibt BAUER\ndie Entwicklung zu mehr Nachhaltigkeit\nkonsequent voran. Schon 1995 eröff-\nnete BAUER auf dem damaligen Fir-\nmengelände eine Tankstelle zur öﬀ ent-\nlichen Betankung von Fahrzeugen mit\numweltschonendem CNG. Angesichts\nder Herausforderungen, die der Klima-\nwandel stellt, ist eine konsequente Redu-",
+      "page": 1,
+      "section": [
+        "2021-02 B-NEWS DE sc",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.43492537,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "004888e2-c6f0-438d-96c1-0a2daccfadb2",
+      "filename": "0131-beschaffungswesen_RC_kurz_DE-3fbd240780.md",
+      "title": "beschaffungswesen_RC_kurz_DE",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 9001"
+      ],
+      "content": "Document: beschaffungswesen_RC_kurz_DE\nSachen haben dem\nallgemeinen Stand der Technik zu entsprechen.\nExistiert für eine Sache ein allgemeiner Stand der\nTechnik nicht, haben die Sachen den allgemein\nanerkannten Normen zu entsprechen. Ist der AN bei\nAbschluss des Vertrages einem Qualitätsstandard\nverpflichtet (wie z.B. ISO 9001), so ist er\nverpflichtet, während der Geschäftsbeziehung mit\ndem AG diesen Qualitätsstandard aufrecht zu halten\nund die nach diesem Standard erforderlichen\nZertifizierungen vorzunehmen. Dies gilt auch, sofern\nsich\ndie\nAnforderungen\ndes\njeweiligen\nQualitätsstandards während des Bestehens des\nVertrages ändern. Der AN ist verpflichtet, den\nAG unverzüglich unter Angabe der Gründe darauf\nhinzuweisen, sofern ihm eine Zertifizierung verweigert\nwird.\n§ 9 Mängel, Verjährungsfrist\n(1)\nHat die vom AN zu erbringende Leistung einen\nMangel, so stehen dem AG alle gesetzlichen\nAnsprüche in vollem Umfang zu. Dies gilt auch,\nsofern\ndem\nAG\nnach\nden\ngesetzlichen\nBestimmungen\nein\nWahlrecht\nhinsichtlich\nder\nAusübung der Mängelansprüche zusteht.\n(2)\nDie Verjährungsfrist für Mängelansprüche des AG\nbeträgt 36 Monate ab Gefahrübergang.\n(3)\nWird die vom AN zu liefernde Sache vom\nAN oder vom AG bestimmungsgemäß untrennbar\nmit anderen Sachen verbunden und ist die gelieferte\nSache mit einem Fehler behaftet, der nicht (mehr)\nbeseitigt werden kann und der vom AG im Rahmen\neiner\ngemäß\n§\n377\nHGB\nzwingend",
+      "page": 2,
+      "section": [
+        "beschaffungswesen RC kurz DE",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.38449275,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "a2b628dc-2943-4c8b-803c-3165136b4862",
+      "filename": "0129-beschaffungswesen_BKM_kurz-DE-92653da268.md",
+      "title": "beschaffungswesen_BKM_kurz-DE",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 9001"
+      ],
+      "content": "Document: beschaffungswesen_BKM_kurz-DE\nSachen haben dem\nallgemeinen Stand der Technik zu entsprechen.\nExistiert für eine Sache ein allgemeiner Stand der\nTechnik nicht, haben die Sachen den allgemein\nanerkannten Normen zu entsprechen. Ist der AN bei\nAbschluss des Vertrages einem Qualitätsstandard\nverpflichtet (wie z.B. ISO 9001), so ist er\nverpflichtet, während der Geschäftsbeziehung mit\ndem AG diesen Qualitätsstandard aufrecht zu halten\nund die nach diesem Standard erforderlichen\nZertifizierungen vorzunehmen. Dies gilt auch, sofern\nsich\ndie\nAnforderungen\ndes\njeweiligen\nQualitätsstandards während des Bestehens des\nVertrages ändern. Der AN ist verpflichtet, den\nAG unverzüglich unter Angabe der Gründe darauf\nhinzuweisen, sofern ihm eine Zertifizierung verweigert\nwird.\n§ 9 Mängel, Verjährungsfrist\n(1)\nHat die vom AN zu erbringende Leistung einen\nMangel, so stehen dem AG alle gesetzlichen\nAnsprüche in vollem Umfang zu. Dies gilt auch,\nsofern\ndem\nAG\nnach\nden\ngesetzlichen\nBestimmungen\nein\nWahlrecht\nhinsichtlich\nder\nAusübung der Mängelansprüche zusteht.\n(2)\nDie Verjährungsfrist für Mängelansprüche des AG\nbeträgt 36 Monate ab Gefahrübergang.\n(3)\nWird die vom AN zu liefernde Sache vom\nAN oder vom AG bestimmungsgemäß untrennbar\nmit anderen Sachen verbunden und ist die gelieferte\nSache mit einem Fehler behaftet, der nicht (mehr)\nbeseitigt werden kann und der vom AG im Rahmen\neiner\ngemäß\n§\n377\nHGB\nzwingend",
+      "page": 2,
+      "section": [
+        "beschaffungswesen BKM kurz-DE",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.38428571,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "3fedd554-9a65-4e01-805d-54dcccfabcef",
+      "filename": "0067-2026_04_PE_NITROX_EN_N44686_sc-54b6138ac8.md",
+      "title": "2026_04_PE_NITROX_EN_N44686_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "PE NITROX"
+      ],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [
+        "ISO 9001",
+        "DIN EN ISO 9001"
+      ],
+      "content": "Document: 2026_04_PE_NITROX_EN_N44686_sc\nht nur mit unseren Produkten, sondern auch im Service eine Klasse für sich zu sein.\n› Serviceverträge\n› Modernisierung\n› Fernwartung\n› Ersatzteile\n› Mietanlagen\n## Page 15\n\nMANUFACTURING IS ONLY PART OF WHAT WE DO:\nISO 9001 CERTIFICATION\n› BAUER assures consistent maximum product quality by applying extensive quality control measures during and after\nproduction in line with DIN EN ISO 9001\nACCEPTANCE TESTING\n› A factory acceptance test (FAT) or site acceptance test (SAT) in the presence of the customer or independent\ncertifying body can be performed in addition to the standard BAUER final test. Many BAUER compressors can\nalso be produced in compliance with other standards, e.g. ASME, KHK etc.\nPACKING AND PRESERVATION\n› Our compressors are packed ex works for transport by truck or air freight. We offer appropriate packing designs\ntailored for shipping, transport to tropical regions or long storage periods as well as short or long-term storage.\nINSTALLATION\n› Professional installation is a vital basic factor for safe operation of high-pressure systems. Our global network of\nbranches and qualified partners provides smooth, trouble-free support in planning and implementation, wherever\nyou are.\nPLACING INTO SERVICE\n› When installation is completed, BAUER’s specialist staff check the compressor functions to ensure everything works",
+      "page": 14,
+      "section": [
+        "2026 04 PE NITROX EN N44686 sc",
+        "Page 14"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.38388889,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "70644844-d946-4162-ab22-ed1f07f05232",
+      "filename": "0033-2021-02_B-NEWS_DE_sc-d5e9364c8c.md",
+      "title": "2021-02_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2021-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 14001"
+      ],
+      "content": "Document: 2021-02_B-NEWS_DE_sc\nzur öﬀ ent-\nlichen Betankung von Fahrzeugen mit\numweltschonendem CNG. Angesichts\nder Herausforderungen, die der Klima-\nwandel stellt, ist eine konsequente Redu-\nzierung des ökologischen Fußabdrucks\nein persönliches Anliegen von Frau Dr.\nBayat. Gelebte Nachhaltigkeit ist heute\nper Deﬁ nition unverzichtbarer Teil der\nPhilosophie als technologieführender\nMaschinenbaukonzern. Aus dieser Ver-\nantwortung heraus startete BAUER 2020\nden ISO 14001-Zertifizierungsprozess\nmit dem Ziel, die spezifischen Umwelt-\nauswirkungen sowie die relevanten\nRechts vorschriften zu erfassen, zu be-\nwerten und kontinuierlich zu verbes-\nsern. Abteilungsübergreifende Schu-\nlungen unterstützen Mitarbeiter bei der\nUmsetzung des Ziels eines konsequent\nnachhaltigen Wirtschaftens innerhalb\nder gesamten Firma. Denn die wich-\ntigsten Kunden dieses Management-\nsystems sind die Mitarbeiterinnen und\nMitarbeiter. Sie müssen dessen Anfor-\nderungen verstehen und leben, denn\nohne ihre aktive Einbeziehung funktio-\nniert keine Abfalltrennung, keine Ener-\ngieeffizienz oder optimale Wassernut-\nzung. Das breite Bündel von bereits er-\ngriffenen oder für die unmittelbare\nZu kunft geplanten Maßnahmen sichert\neinen kontinuierlichen Verbesserungs-\nprozess ab. Dazu gehören unter ande-\nrem die Steigerung der Energieeﬃ zienz\nbei Gebäuden und der Produktion, die\nVermeidung umweltschädlicher Stoﬀ e,",
+      "page": 2,
+      "section": [
+        "2021-02 B-NEWS DE sc",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.38333333,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "Certificate",
+          "ISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH",
+          "EN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE",
+          "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 9001",
+          "ISO 14001:2015",
+          "EN ISO 3834-2",
+          "EN 13445",
+          "EN 13480",
+          "AD 2000-Merkblatt HP 0",
+          "AD 2000-Information",
+          "ISO 14001"
+        ],
+        "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\n5 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH\n(586.94 kB)\nEN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(235.09 kB)\nEN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(231.71 kB)\nZertifikat AD 2000-Merkblatt HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(226.88 kB)\nCertificate AD 2000-Information Sheet HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(224.02 kB)\nISO 9001: Bauer Compresseurs S.A.S\nISO 9001 Zertifikat-BAUER-COMPRESSEURS DE\n(333.82 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS EN\n(328.99 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS FR\n(330.89 kB)\nISO 9001: BAUER COMPRESSORI S.R.L\nISO9001 Zertifikat-BAUER-COMPRESSORI DE\n(318.90 kB)\nISO9001 Certificate-BAUER-COMPRESSORI EN\n(315.87 kB)\nISO9001 Certificato-BAUER-COMPRESSORI IT\n(335.31 kB)\nISO 9001: BAUER COMPRESSORS Asia Pte. Ltd.\nISO 9001 Certficate BAUER COMPRESSORS Asia Pte. Ltd. EN\n(55.45 kB)\nISO 9001: BAUER KOMPRESSOREN Australia Pty. Ltd\nISO 9001 Certficate BAUER KOMPRESSOREN Australia Pty. Ltd. EN\n(77.19 kB)\nISO 9001: BAUER KOMPRESSOREN GCC FZE\nISO 9001 Certficate: BAUER KOMPRESSOREN GCC FZE EN\n(357.34 kB)",
+        "page": null,
+        "section": [
+          "Download Certificates from BAUER KOMPRESSOREN Easily",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.63752247,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "Certificate",
+          "ISO 9001-Zertifikat: BAUER COMP Holding GmbH DE",
+          "ISO 9001 Certificate: BAUER COMP Holding GmbH EN",
+          "ISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 9001",
+          "ISO 14001:2015",
+          "EN ISO 3834-2",
+          "EN 13445",
+          "EN 13480",
+          "ISO 14001"
+        ],
+        "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\nsource: `bauer_index\\raw_html\\0035_certificate-download_e42c3f318d.html`\n- Original SHA-256: `d4cc35ee9f6af76832ecdd6632abc84e6a92c95aeeabb57ec980e1aa8c30313a`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nCertificate\nISO 9001: BAUER GROUP\nISO 9001-Zertifikat: BAUER COMP Holding GmbH DE\n(797.61 kB)\nISO 9001 Certificate: BAUER COMP Holding GmbH EN\n(771.39 kB)\nISO 9001, ISO 14001:2015, EN ISO 3834-2, EN 13445-4, EN 13480-4: BAUER KOMPRESSOREN GmbH\nISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE\n(329.27 kB)\nISO9001 Certificate-BAUER-KOMPRESSOREN-Werk-I EN\n(325.80 kB)\nISO9001_Zertifikat-BAUER-Stäbli DE\n(319.85 kB)\nISO9001 Certificate-BAUER-Stäbli EN\n(316.54 kB)\nISO 14001:2015 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH",
+        "page": null,
+        "section": [
+          "Download Certificates from BAUER KOMPRESSOREN Easily"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.56102453,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "1eaee366-55e5-401b-811b-cc08b17c67d3",
+        "filename": "0086-bauer_amfile_215-5855c13f42.md",
+        "title": "bauer_amfile_215",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "ZERTIFIKAT"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "EN ISO 3834-2"
+        ],
+        "content": "Document: bauer_amfile_215\nmfile_215\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_215.pdf`\n- Original SHA-256: `5855c13f42908e5429e4532b12ab6d607fdaa96b1979261a315748b98c7171be`\n## Page 1\n\n_____________________\nHenrik Bohl\n\nZERTIFIKAT\nTÜV SÜD-MUC-WD-3112378.2015.005\nHersteller:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nFertigungsstätte(n):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nDer oben genannte Hersteller erfüllt die\numfassenden Qualitätsanforderungen für das\nSchmelzschweißen von metallischen Werkstoffen\nnach\nEN ISO 3834-2\nAuftragsnummer:\n4243762\ngültig bis:\n15. Dezember 2026\nMünchen, 29. Oktober 2025",
+        "page": null,
+        "section": [
+          "bauer amfile 215"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.46112903,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "f94c501e-cefc-4be6-8527-6762af9f4c22",
+        "filename": "0147-Filterpatronen_DE_sc-7414ae54f4.md",
+        "title": "Filterpatronen_DE_sc",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [
+          "ISO 9001"
+        ],
+        "content": "Document: Filterpatronen_DE_sc\niebsanleitung bzw. Betreiberhandbuch und sofern die\nCO2-Konzentration in der Ansaugluft die in der gelieferten Atemluftnorm vorgegebenen Werte nicht übersteigt.\n## Page 5\n\nBAUER KOMPRESSOREN\b\nFILTERPATRONEN | 5\nHÖCHSTE QUALITÄT\nSORGT FÜR ZUVERLÄSSIGES FUNKTIONIEREN – JEDERZEIT.\nHOCHWERTIGE MATERIALIEN\nDie Qualität ist ausschlaggebend, wenn es um die Leistungs­fähigkeit und Sicherheit eines\n­Produkts geht. Aus diesem Grund werden alle BAUER Filterpatronen unter anderem mit hoch­\nwertigstem Kunststoff unter Ausschluss jedweder Art von Klebstoffen und Lösungsmitteln\ngefertigt.\nLANGE LEBENSDAUER\nDurch die gleichbleibend hohe Fertigungsqualität und kürzeste Verarbeitungszeiten für Inhalts­\nstoffe verfügen unsere Filterpatronen über verlängerte und klar definierte Standzeiten – auf\ndie Sie sich verlassen können! Zusätzliche Kontrollen werden in unserem Erprobungszentrum\nregelmäßig durchgeführt. Entsprechend des BAUER Qualitätsmanagementsystems ISO 9001\nwurden alle Herstellschritte der Patronen zertifiziert. BAUER KOMPRESSOREN empfiehlt\n­mindestens einen jährlichen Wechsel der eingesetzten Atemluftpatrone oder bei einem\nAnlagen­stillstand nach drei Monaten. Bitte beachten Sie auch evtl. bestehende länderspezi­\nfische kürzere Wechselintervalle.\nKURZE VERARBEITUNGSZEIT DER ­MARKEN-TROCKNERMITTEL\nDa die Öffnungszeit des Trocknermittelbehälters maßgeblich die Laufzeit der Patrone",
+        "page": 4,
+        "section": [
+          "Filterpatronen DE sc",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.45970588,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "50a078af-39d0-4244-bc9d-b10e3671dcfc",
+        "filename": "0087-bauer_amfile_216-1d4691de14.md",
+        "title": "bauer_amfile_216",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "CERTIFICATE"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "EN ISO 3834-2"
+        ],
+        "content": "Document: bauer_amfile_216\nmfile_216\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_216.pdf`\n- Original SHA-256: `1d4691de1400363b8fd8a624b3345aa1913069e18e0a400b0c136cfdc2479001`\n## Page 1\n\n_____________________\nHenrik Bohl\n\nCERTIFICATE\nTÜV SÜD-MUC-WD-3112378.2015.005\nManufacturer:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nPlant(s):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nThe above mentioned company fulfills the\ncomprehensive quality requirements for fusion\nwelding of metallic materials\naccording to\nEN ISO 3834-2\nContract:\n4243762\nValid until:\nDecember 15, 2026\nMunich, October 29, 2025",
+        "page": null,
+        "section": [
+          "bauer amfile 216"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.435625,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "70644844-d946-4162-ab22-ed1f07f05232",
+        "filename": "0033-2021-02_B-NEWS_DE_sc-d5e9364c8c.md",
+        "title": "2021-02_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2021-02-01",
+        "certificates": [
+          "ZERTIFIKAT"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 14001"
+        ],
+        "content": "Document: 2021-02_B-NEWS_DE_sc\nR KOMPRESSOREN\nAUSGABE 2/2021\nPhilipp Bayat, Dr. Monika Bayat, Heinz Bauer\n(v. l. n. r.)\nBAUER KOMPRESSOREN\nBAUERs INTERNET OF THINGS\nDank B-CLOUD immer im Bild\n## Page 2\n\n2\ndaten kann er im Falle anstehender\nWartungen Termine vorschlagen oder\nkomplette Wartungspläne erstellen. Im\nBedarfsfall ist schnelle Hilfe möglich\nund über Remote-Unterstützung lassen\nsich durch den Wegfall von Anfahrtswe-\ngen Zeit und Kosten sparen.\nDie gesamte Datenübertragung, die\nim Rahmen der B-CLOUD stattﬁ ndet, un-\nterliegt einer starken End-to-End-Ver-\nschlüsselung. Denn in einer Zeit, in der\ndie Gefahr von Cyberangriﬀ en zuneh-\nmend Thema wird, ist für BAUER die\nDatensicherheit und DSGVO-Konformi-\ntät obers te Prämisse.\nBAUER\nKOMPRESSOREN\nUMWELT-\nZERTIFIKAT\nDie Urkundenüberreichung an die Ei-\ngentümerin und geschäftsführende Ge-\nsellschafterin Dr. Monika Bayat durch\nPeter Mühlbauer, Managing Director\nder TÜV SÜD Management GmbH, per-\nsönlich dokumentiert den erfolgreichen\nAbschluss der BAUER Umweltmanage-\nmentzertiﬁ zierung nach ISO 14001.\nBereits seit vielen Jahren treibt BAUER\ndie Entwicklung zu mehr Nachhaltigkeit\nkonsequent voran. Schon 1995 eröff-\nnete BAUER auf dem damaligen Fir-\nmengelände eine Tankstelle zur öﬀ ent-\nlichen Betankung von Fahrzeugen mit\numweltschonendem CNG. Angesichts\nder Herausforderungen, die der Klima-\nwandel stellt, ist eine konsequente Redu-",
+        "page": 1,
+        "section": [
+          "2021-02 B-NEWS DE sc",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.43492537,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "004888e2-c6f0-438d-96c1-0a2daccfadb2",
+        "filename": "0131-beschaffungswesen_RC_kurz_DE-3fbd240780.md",
+        "title": "beschaffungswesen_RC_kurz_DE",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 9001"
+        ],
+        "content": "Document: beschaffungswesen_RC_kurz_DE\nSachen haben dem\nallgemeinen Stand der Technik zu entsprechen.\nExistiert für eine Sache ein allgemeiner Stand der\nTechnik nicht, haben die Sachen den allgemein\nanerkannten Normen zu entsprechen. Ist der AN bei\nAbschluss des Vertrages einem Qualitätsstandard\nverpflichtet (wie z.B. ISO 9001), so ist er\nverpflichtet, während der Geschäftsbeziehung mit\ndem AG diesen Qualitätsstandard aufrecht zu halten\nund die nach diesem Standard erforderlichen\nZertifizierungen vorzunehmen. Dies gilt auch, sofern\nsich\ndie\nAnforderungen\ndes\njeweiligen\nQualitätsstandards während des Bestehens des\nVertrages ändern. Der AN ist verpflichtet, den\nAG unverzüglich unter Angabe der Gründe darauf\nhinzuweisen, sofern ihm eine Zertifizierung verweigert\nwird.\n§ 9 Mängel, Verjährungsfrist\n(1)\nHat die vom AN zu erbringende Leistung einen\nMangel, so stehen dem AG alle gesetzlichen\nAnsprüche in vollem Umfang zu. Dies gilt auch,\nsofern\ndem\nAG\nnach\nden\ngesetzlichen\nBestimmungen\nein\nWahlrecht\nhinsichtlich\nder\nAusübung der Mängelansprüche zusteht.\n(2)\nDie Verjährungsfrist für Mängelansprüche des AG\nbeträgt 36 Monate ab Gefahrübergang.\n(3)\nWird die vom AN zu liefernde Sache vom\nAN oder vom AG bestimmungsgemäß untrennbar\nmit anderen Sachen verbunden und ist die gelieferte\nSache mit einem Fehler behaftet, der nicht (mehr)\nbeseitigt werden kann und der vom AG im Rahmen\neiner\ngemäß\n§\n377\nHGB\nzwingend",
+        "page": 2,
+        "section": [
+          "beschaffungswesen RC kurz DE",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.38449275,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "a2b628dc-2943-4c8b-803c-3165136b4862",
+        "filename": "0129-beschaffungswesen_BKM_kurz-DE-92653da268.md",
+        "title": "beschaffungswesen_BKM_kurz-DE",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 9001"
+        ],
+        "content": "Document: beschaffungswesen_BKM_kurz-DE\nSachen haben dem\nallgemeinen Stand der Technik zu entsprechen.\nExistiert für eine Sache ein allgemeiner Stand der\nTechnik nicht, haben die Sachen den allgemein\nanerkannten Normen zu entsprechen. Ist der AN bei\nAbschluss des Vertrages einem Qualitätsstandard\nverpflichtet (wie z.B. ISO 9001), so ist er\nverpflichtet, während der Geschäftsbeziehung mit\ndem AG diesen Qualitätsstandard aufrecht zu halten\nund die nach diesem Standard erforderlichen\nZertifizierungen vorzunehmen. Dies gilt auch, sofern\nsich\ndie\nAnforderungen\ndes\njeweiligen\nQualitätsstandards während des Bestehens des\nVertrages ändern. Der AN ist verpflichtet, den\nAG unverzüglich unter Angabe der Gründe darauf\nhinzuweisen, sofern ihm eine Zertifizierung verweigert\nwird.\n§ 9 Mängel, Verjährungsfrist\n(1)\nHat die vom AN zu erbringende Leistung einen\nMangel, so stehen dem AG alle gesetzlichen\nAnsprüche in vollem Umfang zu. Dies gilt auch,\nsofern\ndem\nAG\nnach\nden\ngesetzlichen\nBestimmungen\nein\nWahlrecht\nhinsichtlich\nder\nAusübung der Mängelansprüche zusteht.\n(2)\nDie Verjährungsfrist für Mängelansprüche des AG\nbeträgt 36 Monate ab Gefahrübergang.\n(3)\nWird die vom AN zu liefernde Sache vom\nAN oder vom AG bestimmungsgemäß untrennbar\nmit anderen Sachen verbunden und ist die gelieferte\nSache mit einem Fehler behaftet, der nicht (mehr)\nbeseitigt werden kann und der vom AG im Rahmen\neiner\ngemäß\n§\n377\nHGB\nzwingend",
+        "page": 2,
+        "section": [
+          "beschaffungswesen BKM kurz-DE",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.38428571,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "3fedd554-9a65-4e01-805d-54dcccfabcef",
+        "filename": "0067-2026_04_PE_NITROX_EN_N44686_sc-54b6138ac8.md",
+        "title": "2026_04_PE_NITROX_EN_N44686_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "PE NITROX"
+        ],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [
+          "ISO 9001",
+          "DIN EN ISO 9001"
+        ],
+        "content": "Document: 2026_04_PE_NITROX_EN_N44686_sc\nht nur mit unseren Produkten, sondern auch im Service eine Klasse für sich zu sein.\n› Serviceverträge\n› Modernisierung\n› Fernwartung\n› Ersatzteile\n› Mietanlagen\n## Page 15\n\nMANUFACTURING IS ONLY PART OF WHAT WE DO:\nISO 9001 CERTIFICATION\n› BAUER assures consistent maximum product quality by applying extensive quality control measures during and after\nproduction in line with DIN EN ISO 9001\nACCEPTANCE TESTING\n› A factory acceptance test (FAT) or site acceptance test (SAT) in the presence of the customer or independent\ncertifying body can be performed in addition to the standard BAUER final test. Many BAUER compressors can\nalso be produced in compliance with other standards, e.g. ASME, KHK etc.\nPACKING AND PRESERVATION\n› Our compressors are packed ex works for transport by truck or air freight. We offer appropriate packing designs\ntailored for shipping, transport to tropical regions or long storage periods as well as short or long-term storage.\nINSTALLATION\n› Professional installation is a vital basic factor for safe operation of high-pressure systems. Our global network of\nbranches and qualified partners provides smooth, trouble-free support in planning and implementation, wherever\nyou are.\nPLACING INTO SERVICE\n› When installation is completed, BAUER’s specialist staff check the compressor functions to ensure everything works",
+        "page": 14,
+        "section": [
+          "2026 04 PE NITROX EN N44686 sc",
+          "Page 14"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.38388889,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "70644844-d946-4162-ab22-ed1f07f05232",
+        "filename": "0033-2021-02_B-NEWS_DE_sc-d5e9364c8c.md",
+        "title": "2021-02_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2021-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 14001"
+        ],
+        "content": "Document: 2021-02_B-NEWS_DE_sc\nzur öﬀ ent-\nlichen Betankung von Fahrzeugen mit\numweltschonendem CNG. Angesichts\nder Herausforderungen, die der Klima-\nwandel stellt, ist eine konsequente Redu-\nzierung des ökologischen Fußabdrucks\nein persönliches Anliegen von Frau Dr.\nBayat. Gelebte Nachhaltigkeit ist heute\nper Deﬁ nition unverzichtbarer Teil der\nPhilosophie als technologieführender\nMaschinenbaukonzern. Aus dieser Ver-\nantwortung heraus startete BAUER 2020\nden ISO 14001-Zertifizierungsprozess\nmit dem Ziel, die spezifischen Umwelt-\nauswirkungen sowie die relevanten\nRechts vorschriften zu erfassen, zu be-\nwerten und kontinuierlich zu verbes-\nsern. Abteilungsübergreifende Schu-\nlungen unterstützen Mitarbeiter bei der\nUmsetzung des Ziels eines konsequent\nnachhaltigen Wirtschaftens innerhalb\nder gesamten Firma. Denn die wich-\ntigsten Kunden dieses Management-\nsystems sind die Mitarbeiterinnen und\nMitarbeiter. Sie müssen dessen Anfor-\nderungen verstehen und leben, denn\nohne ihre aktive Einbeziehung funktio-\nniert keine Abfalltrennung, keine Ener-\ngieeffizienz oder optimale Wassernut-\nzung. Das breite Bündel von bereits er-\ngriffenen oder für die unmittelbare\nZu kunft geplanten Maßnahmen sichert\neinen kontinuierlichen Verbesserungs-\nprozess ab. Dazu gehören unter ande-\nrem die Steigerung der Energieeﬃ zienz\nbei Gebäuden und der Produktion, die\nVermeidung umweltschädlicher Stoﬀ e,",
+        "page": 2,
+        "section": [
+          "2021-02 B-NEWS DE sc",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.38333333,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "standards": [
+          "en iso 3834 2",
+          "iso 9001",
+          "iso 14001"
+        ],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 2,
+      "elapsed_ms": 938.96
+    }
+  },
+  "completed_at": "2026-07-23T15:02:34.230919+00:00",
+  "case_id": "B22",
+  "split": "development",
+  "category": "bilingual_exact",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}
