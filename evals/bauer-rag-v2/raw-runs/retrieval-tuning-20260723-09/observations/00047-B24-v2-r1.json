@@ -1,0 +1,421 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 2300.94,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nDocument section: High-pressure-accessories-catalogue_EN / Page 4\nTable: ## Page 4 | Use | Order number\nRow identifier: N7698\nValues: Large blocks/medium pressure | (K28.3, 21.0, 25.0, 23.1, 25.4, K28.0, K28.2) | N7698\nFootnotes: 6 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+      "page": 4,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 4"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Page 4 / Use / Order number",
+      "row_label": "N7698",
+      "headers": [
+        "## Page 4",
+        "Use",
+        "Order number"
+      ],
+      "row_values": [
+        "Large blocks/medium pressure",
+        "(K28.3, 21.0, 25.0, 23.1, 25.4, K28.0, K28.2)",
+        "N7698"
+      ],
+      "units": [],
+      "footnotes": "6 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.516949,
+      "metadata": {
+        "parser": "identifier_table",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nDocument section: High-pressure-accessories-catalogue_EN / Page 4\nTable: N7698 | New large blocks from 2008 onwards (K23.0, K24.4) | N29569 | Function: Cleaning the intake air | \u0007Dimensions: Diameter: 67 mm to 124 mm, | length: 72 mm to 320 mm | \u0007Change frequency: According to local conditions | Designation | Order number\nRow identifier: N4823\nValues: Intake manifold complete with intake hose and intake filter | 181618 | Scope of delivery | comprising intake manifold with o-ring | 183627 | Hose with intake filter, hose length 3 m | 82946 | INTAKE FILTER INSERTS | INLET ADAPTER | N4823\nFootnotes: 6 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+      "page": 4,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 4"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "N7698 / New large blocks from 2008 onwards (K23.0, K24.4) / N29569 / Function: Cleaning the intake air / \u0007Dimensions: Diameter: 67 mm to 124 mm, / length: 72 mm to 320 mm / \u0007Change frequency: According to local conditions / Designation / Order number",
+      "row_label": "N4823",
+      "headers": [
+        "N7698",
+        "New large blocks from 2008 onwards (K23.0, K24.4)",
+        "N29569",
+        "Function: Cleaning the intake air",
+        "\u0007Dimensions: Diameter: 67 mm to 124 mm,",
+        "length: 72 mm to 320 mm",
+        "\u0007Change frequency: According to local conditions",
+        "Designation",
+        "Order number"
+      ],
+      "row_values": [
+        "Intake manifold complete with intake hose and intake filter",
+        "181618",
+        "Scope of delivery",
+        "comprising intake manifold with o-ring",
+        "183627",
+        "Hose with intake filter, hose length 3 m",
+        "82946",
+        "INTAKE FILTER INSERTS",
+        "INLET ADAPTER",
+        "N4823"
+      ],
+      "units": [],
+      "footnotes": "6 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.51668459,
+      "metadata": {
+        "parser": "identifier_table",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+      "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+      "title": "Hochdruck-Zubehoerkatalog_DE",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: Hochdruck-Zubehoerkatalog_DE\n## Page 4\n\nBAUER KOMPRESSOREN\nHOCHDRUCK-ZUBEHÖRKATALOG | 7\n6 | HOCHDRUCK-ZUBEHÖRKATALOG\nBAUER KOMPRESSOREN\nVerwendung\nBestellnummer\nKleinanlagen (JUNIOR, OCEANUS, S30)\nN4823\nIK100 – IK12.14 bis 6.2004\nN70\nIK100 – IK12.14 ab 6.2004\nN25950\nIK150- IK22.0 bis 2001\nN3029\nK23.0 vor 2009\nN18906\nIK150- IK18.1 ab 2001 IK150- IK23 bis 2001\nN25886\nGroßblöcke/Mitteldruck\n(K28.3, 21.0, 25.0, 23.1, 25.4, K28.0, K28.2)\nN7698\nNeue Großblöcke ab 2008 (K23.0, K24.4)\nN29569\nFunktion: Reinigung der Ansaugluft\nDimensionen: Durchmesser: 67 mm bis 124 mm,\n\nLänge: 72 mm bis 320 mm\nWechselhäufigkeit: entsprechend den örtlichen\n\nGegebenheiten\nBezeichnung\nBestellnummer\nAnsaugstutzen komplett mit Ansaugschlauch und Ansaugfilter\n181618\nLieferumfang\nbestehend aus Ansaugstutzen m. O-Ring\n183627\nSchlauch m. Ansaugfilter, Schlauchlänge 3 m\n82946\nANSAUGFILTEREINSÄTZE\nEINLASSADAPTER\nN4823\nN25950\nAnsaugung von reiner Atemluft ohne Belastung von Abgasen\nund vor allem CO: Optional ist bei JUNIOR, OCEANUS und\nPE100 Kompressoren ab sofort ein Ansaugstutzen mit Ansaug-\nschlauch verfügbar, um gerade bei Anlagen mit Benzinmotor\ndie Ansaugung an einen geeigneten Ort zu verlegen.\nBezeichnung\nBestellnummer\nAnsaug-Vorfilter komplett mit Schlauch und Klemme\n014539-KD\nLieferumfang\nVorfilter\n057691\nAnsaugschlauch 3 m Länge, Innendurchmesser 25 mm\nN1005\nSchlauchklemme\nN2011\nBezeichnung\nBestellnummer",
+      "page": 4,
+      "section": [
+        "Hochdruck-Zubehoerkatalog DE",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.27198413,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\nathing air compressors, it\ncombines a small footprint and advanced technology and is the\nideal solution for applications in sports diving, shipping, respiratory\nprotection and paintball and shooting sports.\nIn other words, for anyone that wants to rely on pure, safe breathing\nair in mobile applications.\nThe light, compact system can be transported by one or two people\nand fits into virtually every vehicle boot.",
+      "page": 20,
+      "section": [
+        "bauer amfile 5",
+        "Page 20"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.13835125,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07-r2",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nDocument section: High-pressure-accessories-catalogue_EN / Page 4\nTable: ## Page 4 | Use | Order number\nRow identifier: N7698\nValues: Large blocks/medium pressure | (K28.3, 21.0, 25.0, 23.1, 25.4, K28.0, K28.2) | N7698\nFootnotes: 6 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+        "page": 4,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 4"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Page 4 / Use / Order number",
+        "row_label": "N7698",
+        "headers": [
+          "## Page 4",
+          "Use",
+          "Order number"
+        ],
+        "row_values": [
+          "Large blocks/medium pressure",
+          "(K28.3, 21.0, 25.0, 23.1, 25.4, K28.0, K28.2)",
+          "N7698"
+        ],
+        "units": [],
+        "footnotes": "6 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.516949,
+        "metadata": {
+          "parser": "identifier_table",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nDocument section: High-pressure-accessories-catalogue_EN / Page 4\nTable: N7698 | New large blocks from 2008 onwards (K23.0, K24.4) | N29569 | Function: Cleaning the intake air | \u0007Dimensions: Diameter: 67 mm to 124 mm, | length: 72 mm to 320 mm | \u0007Change frequency: According to local conditions | Designation | Order number\nRow identifier: N4823\nValues: Intake manifold complete with intake hose and intake filter | 181618 | Scope of delivery | comprising intake manifold with o-ring | 183627 | Hose with intake filter, hose length 3 m | 82946 | INTAKE FILTER INSERTS | INLET ADAPTER | N4823\nFootnotes: 6 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+        "page": 4,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 4"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "N7698 / New large blocks from 2008 onwards (K23.0, K24.4) / N29569 / Function: Cleaning the intake air / \u0007Dimensions: Diameter: 67 mm to 124 mm, / length: 72 mm to 320 mm / \u0007Change frequency: According to local conditions / Designation / Order number",
+        "row_label": "N4823",
+        "headers": [
+          "N7698",
+          "New large blocks from 2008 onwards (K23.0, K24.4)",
+          "N29569",
+          "Function: Cleaning the intake air",
+          "\u0007Dimensions: Diameter: 67 mm to 124 mm,",
+          "length: 72 mm to 320 mm",
+          "\u0007Change frequency: According to local conditions",
+          "Designation",
+          "Order number"
+        ],
+        "row_values": [
+          "Intake manifold complete with intake hose and intake filter",
+          "181618",
+          "Scope of delivery",
+          "comprising intake manifold with o-ring",
+          "183627",
+          "Hose with intake filter, hose length 3 m",
+          "82946",
+          "INTAKE FILTER INSERTS",
+          "INLET ADAPTER",
+          "N4823"
+        ],
+        "units": [],
+        "footnotes": "6 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.51668459,
+        "metadata": {
+          "parser": "identifier_table",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+        "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+        "title": "Hochdruck-Zubehoerkatalog_DE",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: Hochdruck-Zubehoerkatalog_DE\n## Page 4\n\nBAUER KOMPRESSOREN\nHOCHDRUCK-ZUBEHÖRKATALOG | 7\n6 | HOCHDRUCK-ZUBEHÖRKATALOG\nBAUER KOMPRESSOREN\nVerwendung\nBestellnummer\nKleinanlagen (JUNIOR, OCEANUS, S30)\nN4823\nIK100 – IK12.14 bis 6.2004\nN70\nIK100 – IK12.14 ab 6.2004\nN25950\nIK150- IK22.0 bis 2001\nN3029\nK23.0 vor 2009\nN18906\nIK150- IK18.1 ab 2001 IK150- IK23 bis 2001\nN25886\nGroßblöcke/Mitteldruck\n(K28.3, 21.0, 25.0, 23.1, 25.4, K28.0, K28.2)\nN7698\nNeue Großblöcke ab 2008 (K23.0, K24.4)\nN29569\nFunktion: Reinigung der Ansaugluft\nDimensionen: Durchmesser: 67 mm bis 124 mm,\n\nLänge: 72 mm bis 320 mm\nWechselhäufigkeit: entsprechend den örtlichen\n\nGegebenheiten\nBezeichnung\nBestellnummer\nAnsaugstutzen komplett mit Ansaugschlauch und Ansaugfilter\n181618\nLieferumfang\nbestehend aus Ansaugstutzen m. O-Ring\n183627\nSchlauch m. Ansaugfilter, Schlauchlänge 3 m\n82946\nANSAUGFILTEREINSÄTZE\nEINLASSADAPTER\nN4823\nN25950\nAnsaugung von reiner Atemluft ohne Belastung von Abgasen\nund vor allem CO: Optional ist bei JUNIOR, OCEANUS und\nPE100 Kompressoren ab sofort ein Ansaugstutzen mit Ansaug-\nschlauch verfügbar, um gerade bei Anlagen mit Benzinmotor\ndie Ansaugung an einen geeigneten Ort zu verlegen.\nBezeichnung\nBestellnummer\nAnsaug-Vorfilter komplett mit Schlauch und Klemme\n014539-KD\nLieferumfang\nVorfilter\n057691\nAnsaugschlauch 3 m Länge, Innendurchmesser 25 mm\nN1005\nSchlauchklemme\nN2011\nBezeichnung\nBestellnummer",
+        "page": 4,
+        "section": [
+          "Hochdruck-Zubehoerkatalog DE",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.27198413,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\nathing air compressors, it\ncombines a small footprint and advanced technology and is the\nideal solution for applications in sports diving, shipping, respiratory\nprotection and paintball and shooting sports.\nIn other words, for anyone that wants to rely on pure, safe breathing\nair in mobile applications.\nThe light, compact system can be transported by one or two people\nand fits into virtually every vehicle boot.",
+        "page": 20,
+        "section": [
+          "bauer amfile 5",
+          "Page 20"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.13835125,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "n7698"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false,
+        "citation_intent": true
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 2,
+      "elapsed_ms": 2045.84
+    }
+  },
+  "completed_at": "2026-07-23T20:02:07.276200+00:00",
+  "case_id": "B24",
+  "split": "development",
+  "category": "exact_part_number",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

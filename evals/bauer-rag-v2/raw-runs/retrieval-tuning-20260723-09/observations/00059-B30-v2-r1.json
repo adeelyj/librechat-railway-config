@@ -1,0 +1,634 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1832.49,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+      "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "BM series",
+        "BM 6.1/40-11"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz\nRow: BM 6.1/40-11\nValues: 660 | 39.6 | 23.3 | 40 | 580 | 3 | 1470 | 11 | 425 | 935\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "page": null,
+      "section": [
+        "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "BM 6.1/40-11",
+      "headers": [
+        "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Shutdown pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "BM series 40 bar – 50 Hz"
+      ],
+      "row_values": [
+        "660",
+        "39.6",
+        "23.3",
+        "40",
+        "580",
+        "3",
+        "1470",
+        "11",
+        "425",
+        "935"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.30139344,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+      "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "BM series",
+        "BM 6.1/40-11",
+        "BM 10.1/40-15"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz | BM 6.1/40-11\nRow: BM 10.1/40-15\nValues: 1080 | 64.8 | 38.1 | 40 | 580 | 3 | 1480 | 15 | 475 | 1045\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "page": null,
+      "section": [
+        "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "BM 10.1/40-15",
+      "headers": [
+        "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Shutdown pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "BM series 40 bar – 50 Hz",
+        "BM 6.1/40-11"
+      ],
+      "row_values": [
+        "1080",
+        "64.8",
+        "38.1",
+        "40",
+        "580",
+        "3",
+        "1480",
+        "15",
+        "475",
+        "1045"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.30112903,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "075da428-8faa-4327-bcd0-1367fda62bd1",
+      "filename": "0005-2016-01_B-NEWS_DE_sc-20166a4d06.md",
+      "title": "2016-01_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2016-01-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION",
+        "PE 400-VE"
+      ],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [],
+      "standards": [
+        "DIN EN 12021:2014",
+        "DIN EN 12012:2014"
+      ],
+      "content": "Document: 2016-01_B-NEWS_DE_sc\n## Page 6\n\n6\nfenden Kompressorbetriebs ununter­\nbrochen die Einhaltung der Grenzwerte\nvon Kohlenmonoxid (CO), Kohlendioxid\n(CO2) und Sauerstoff (O2) entsprechend\nder Atemluftnorm DIN EN 12012:2014.\nDas Spitzenmodell B-DETECTION PRO\nbietet darüber hinaus neben einigen an­\nderen Features eine Drucktaupunkt­\nmessung zur Kontrolle des Feuchtege­\nhalts der verdichteten Atemluft.\nEbenfalls ein echter Magnet am\n­BAUER Stand war das neue B-BLENDING\nSystem. Es mischt mit höchster Präzisi­\non NITROX-Gemische bis zu 40 Prozent\nSauerstoffanteil, die dann mit einem\nBAUER NITROX-Kompressor (auf der\nboot eine mobile Anlage des Typs\n­MARINER 320) dank TÜV-Zertifizierung\nsicher bis auf 220 bar verdichtet und in\ndie Nitrox-Zylinder abgefüllt werden.\nBAUER versorgte den Tauchturm mit si­\ncherer Atemluft.\nWenn Besucher auf der boot am\nTauchturm zum ersten Mal abtauchen\nund Luft aus einer Tauchflasche atmen,\nist das ein aufregendes Ereignis. Da\nmuss alles hundertprozentig stimmen,\ninsbesondere die Qualität der Atemluft!\nUm das sicherzustellen, hatte die Mes­\nseleitung wieder BAUER, Marktführer\nbei Atemluftkompressoren, mit der Luft­\nversorgung beauftragt. Durch Bullaugen\nkonnten Besucher das Füllpersonal\nbeim Flaschenfüllen am BAUER Atem­\nluftkompressor PE 400-VE beobachten.\nEine große Infowand klärte sie über die\nNotwendigkeit qualitativ einwandfreier\nAtemluft nach DIN EN 12021:2014 auf.",
+      "page": 6,
+      "section": [
+        "2016-01 B-NEWS DE sc",
+        "Page 6"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical",
+        "vector"
+      ],
+      "score": 0.16523029,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "bdcceaab-ae2e-43e6-88c4-4326b08a1f14",
+      "filename": "0015-2017-02_B-NEWS_DE_sc-0e547d6a87.md",
+      "title": "2017-02_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2017-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2017-02_B-NEWS_DE_sc\n## Page 7\n\n7\nAUSGABE 2/2017\ndungsleiter. Die Lean-Management-Me­\nthode 5S ist ein weiterer Baustein\nunserer modernen Ausbildung. Eric\nSchilwat, Ausbildungsmeister, hat zu­\nsammen mit seinen Auszubildenden die\n5S-Methode eingeführt. „Die 5S-Metho­\nde hat definitiv viel in der Ausbildung\nbewirkt.“\nWas ist wertschöpfend, was nicht?\nDurch gezieltes Analysieren der Ausbil­\ndung nach den sieben Verschwen­\ndungsarten konnten Verschwendungen\nidentifiziert und anschließend wertvolle\nVerbesserungen umgesetzt werden.\nDie systematische Aufteilung der Lehr­\nwerkstatt in Themenbereiche, das kon­\nsequente Visualisieren ist uns dabei\nwichtig, ebenso auch die Arbeitssicher­\nheit, die immer Thema während der\n5S-Audits ist.\n5S steht dabei für: sortieren, systema­\ntisieren,\nsäubern,\nstandardisieren,\nSelbst­disziplin und ständige Verbesse­\nrung. Ralph Dischl, Industriemechani­\nker im 4. Lehrjahr, hat dabei maßgeb­\nlich mitgewirkt. „Das systematische\n5S-Audit hat uns Struktur und Orientie­\nrung gegeben. 5S leben heißt ständig\nbesser zu werden. Njomza Miftari,\n­Industriemechanikerin im 3. Lehrjahr,\n­verantwortete das Teilprojekt Gefahr­\nstoffe, Oláh Bence, Zerspanungsme­\nchaniker im 3. Lehrjahr, das Teilprojekt\nWerkzeugschränke.\nBAUER\nKOMPRESSOREN\nBAUER UND\n­ENVITEC\nAn der Anlage wird letzte Hand an­\ngelegt, die Werksabnahme erfolgreich\nabsolviert, das Gebäude auf einen",
+      "page": 7,
+      "section": [
+        "2017-02 B-NEWS DE sc",
+        "Page 7"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.10806011,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "df0ac390-6e5c-4b24-9cc5-6837d966ff00",
+      "filename": "0153-RC_AGB_DE-605067066b.md",
+      "title": "RC_AGB_DE",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: RC_AGB_DE\nilprozeßordnung (ZPO) zu erheben. Soweit der Dritte nicht in der Lage\nist, ROTORCOMP die gerichtlichen und außergerichtlichen Kosten der Klage nach § 771 ZPO zu\nerstatten, haftet der Kunde ROTORCOMP für den entstandenen Ausfall.\n8.7. Wird das Sicherungsgut entsprechend der obigen Ermächtigung veräußert, so tritt der Kunde schon\njetzt sämtliche daraus resultierende Forderungen gegen seinen Vertragspartner zur Sicherung sämt-\nlicher bestehender und künftiger Forderungen aus der Geschäftsverbindung mit ROTORCOMP an\nROTORCOMP ab. ROTORCOMP nimmt diese Abtretung an. Soweit ROTORCOMP nur Teilei-\ngentum an dem Sicherungsgut hat, tritt der Kunde zur Sicherung eine Teilforderung in der Höhe an\nROTORCOMP ab, die dem Verhältnis des Eigentumsanteils an der Gesamtsache entspricht.\n8.8. Besteht zwischen dem Kunden und dessen Vertragspartner ein Abtretungsverbot, so ist der Kunde\nzur Weiterveräußerung des Sicherungsgutes nicht ermächtigt, es sei denn, die Forderung aus dem\nWeiterverkauf des Sicherungsgutes wird in ein Kontokorrentverhältnis eingestellt. In diesem Fall\ntritt der Kunde die Kontokorrentforderung (kausaler Saldo) gegen den Dritten entsprechend der\nRegelung in Ziffer 8.7. an ROTORCOMP ab. Nach erfolgter Saldierung tritt an ihre Stelle der an-\nerkannte Saldo, der bis zur Höhe des Betrages als abgetreten gilt, den die ursprüngliche Kontokor-\nrentforderung ausmachte.",
+      "page": 2,
+      "section": [
+        "RC AGB DE",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10806011,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07-r2",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "BM series",
+          "BM 6.1/40-11"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz\nRow: BM 6.1/40-11\nValues: 660 | 39.6 | 23.3 | 40 | 580 | 3 | 1470 | 11 | 425 | 935\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "page": null,
+        "section": [
+          "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "BM 6.1/40-11",
+        "headers": [
+          "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Shutdown pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "BM series 40 bar – 50 Hz"
+        ],
+        "row_values": [
+          "660",
+          "39.6",
+          "23.3",
+          "40",
+          "580",
+          "3",
+          "1470",
+          "11",
+          "425",
+          "935"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.30139344,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "BM series",
+          "BM 6.1/40-11",
+          "BM 10.1/40-15"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz | BM 6.1/40-11\nRow: BM 10.1/40-15\nValues: 1080 | 64.8 | 38.1 | 40 | 580 | 3 | 1480 | 15 | 475 | 1045\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "page": null,
+        "section": [
+          "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "BM 10.1/40-15",
+        "headers": [
+          "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Shutdown pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "BM series 40 bar – 50 Hz",
+          "BM 6.1/40-11"
+        ],
+        "row_values": [
+          "1080",
+          "64.8",
+          "38.1",
+          "40",
+          "580",
+          "3",
+          "1480",
+          "15",
+          "475",
+          "1045"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.30112903,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "075da428-8faa-4327-bcd0-1367fda62bd1",
+        "filename": "0005-2016-01_B-NEWS_DE_sc-20166a4d06.md",
+        "title": "2016-01_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2016-01-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION",
+          "PE 400-VE"
+        ],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [],
+        "standards": [
+          "DIN EN 12021:2014",
+          "DIN EN 12012:2014"
+        ],
+        "content": "Document: 2016-01_B-NEWS_DE_sc\n## Page 6\n\n6\nfenden Kompressorbetriebs ununter­\nbrochen die Einhaltung der Grenzwerte\nvon Kohlenmonoxid (CO), Kohlendioxid\n(CO2) und Sauerstoff (O2) entsprechend\nder Atemluftnorm DIN EN 12012:2014.\nDas Spitzenmodell B-DETECTION PRO\nbietet darüber hinaus neben einigen an­\nderen Features eine Drucktaupunkt­\nmessung zur Kontrolle des Feuchtege­\nhalts der verdichteten Atemluft.\nEbenfalls ein echter Magnet am\n­BAUER Stand war das neue B-BLENDING\nSystem. Es mischt mit höchster Präzisi­\non NITROX-Gemische bis zu 40 Prozent\nSauerstoffanteil, die dann mit einem\nBAUER NITROX-Kompressor (auf der\nboot eine mobile Anlage des Typs\n­MARINER 320) dank TÜV-Zertifizierung\nsicher bis auf 220 bar verdichtet und in\ndie Nitrox-Zylinder abgefüllt werden.\nBAUER versorgte den Tauchturm mit si­\ncherer Atemluft.\nWenn Besucher auf der boot am\nTauchturm zum ersten Mal abtauchen\nund Luft aus einer Tauchflasche atmen,\nist das ein aufregendes Ereignis. Da\nmuss alles hundertprozentig stimmen,\ninsbesondere die Qualität der Atemluft!\nUm das sicherzustellen, hatte die Mes­\nseleitung wieder BAUER, Marktführer\nbei Atemluftkompressoren, mit der Luft­\nversorgung beauftragt. Durch Bullaugen\nkonnten Besucher das Füllpersonal\nbeim Flaschenfüllen am BAUER Atem­\nluftkompressor PE 400-VE beobachten.\nEine große Infowand klärte sie über die\nNotwendigkeit qualitativ einwandfreier\nAtemluft nach DIN EN 12021:2014 auf.",
+        "page": 6,
+        "section": [
+          "2016-01 B-NEWS DE sc",
+          "Page 6"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical",
+          "vector"
+        ],
+        "score": 0.16523029,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "bdcceaab-ae2e-43e6-88c4-4326b08a1f14",
+        "filename": "0015-2017-02_B-NEWS_DE_sc-0e547d6a87.md",
+        "title": "2017-02_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2017-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2017-02_B-NEWS_DE_sc\n## Page 7\n\n7\nAUSGABE 2/2017\ndungsleiter. Die Lean-Management-Me­\nthode 5S ist ein weiterer Baustein\nunserer modernen Ausbildung. Eric\nSchilwat, Ausbildungsmeister, hat zu­\nsammen mit seinen Auszubildenden die\n5S-Methode eingeführt. „Die 5S-Metho­\nde hat definitiv viel in der Ausbildung\nbewirkt.“\nWas ist wertschöpfend, was nicht?\nDurch gezieltes Analysieren der Ausbil­\ndung nach den sieben Verschwen­\ndungsarten konnten Verschwendungen\nidentifiziert und anschließend wertvolle\nVerbesserungen umgesetzt werden.\nDie systematische Aufteilung der Lehr­\nwerkstatt in Themenbereiche, das kon­\nsequente Visualisieren ist uns dabei\nwichtig, ebenso auch die Arbeitssicher­\nheit, die immer Thema während der\n5S-Audits ist.\n5S steht dabei für: sortieren, systema­\ntisieren,\nsäubern,\nstandardisieren,\nSelbst­disziplin und ständige Verbesse­\nrung. Ralph Dischl, Industriemechani­\nker im 4. Lehrjahr, hat dabei maßgeb­\nlich mitgewirkt. „Das systematische\n5S-Audit hat uns Struktur und Orientie­\nrung gegeben. 5S leben heißt ständig\nbesser zu werden. Njomza Miftari,\n­Industriemechanikerin im 3. Lehrjahr,\n­verantwortete das Teilprojekt Gefahr­\nstoffe, Oláh Bence, Zerspanungsme­\nchaniker im 3. Lehrjahr, das Teilprojekt\nWerkzeugschränke.\nBAUER\nKOMPRESSOREN\nBAUER UND\n­ENVITEC\nAn der Anlage wird letzte Hand an­\ngelegt, die Werksabnahme erfolgreich\nabsolviert, das Gebäude auf einen",
+        "page": 7,
+        "section": [
+          "2017-02 B-NEWS DE sc",
+          "Page 7"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.10806011,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "df0ac390-6e5c-4b24-9cc5-6837d966ff00",
+        "filename": "0153-RC_AGB_DE-605067066b.md",
+        "title": "RC_AGB_DE",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: RC_AGB_DE\nilprozeßordnung (ZPO) zu erheben. Soweit der Dritte nicht in der Lage\nist, ROTORCOMP die gerichtlichen und außergerichtlichen Kosten der Klage nach § 771 ZPO zu\nerstatten, haftet der Kunde ROTORCOMP für den entstandenen Ausfall.\n8.7. Wird das Sicherungsgut entsprechend der obigen Ermächtigung veräußert, so tritt der Kunde schon\njetzt sämtliche daraus resultierende Forderungen gegen seinen Vertragspartner zur Sicherung sämt-\nlicher bestehender und künftiger Forderungen aus der Geschäftsverbindung mit ROTORCOMP an\nROTORCOMP ab. ROTORCOMP nimmt diese Abtretung an. Soweit ROTORCOMP nur Teilei-\ngentum an dem Sicherungsgut hat, tritt der Kunde zur Sicherung eine Teilforderung in der Höhe an\nROTORCOMP ab, die dem Verhältnis des Eigentumsanteils an der Gesamtsache entspricht.\n8.8. Besteht zwischen dem Kunden und dessen Vertragspartner ein Abtretungsverbot, so ist der Kunde\nzur Weiterveräußerung des Sicherungsgutes nicht ermächtigt, es sei denn, die Forderung aus dem\nWeiterverkauf des Sicherungsgutes wird in ein Kontokorrentverhältnis eingestellt. In diesem Fall\ntritt der Kunde die Kontokorrentforderung (kausaler Saldo) gegen den Dritten entsprechend der\nRegelung in Ziffer 8.7. an ROTORCOMP ab. Nach erfolgter Saldierung tritt an ihre Stelle der an-\nerkannte Saldo, der bis zur Höhe des Betrages als abgetreten gilt, den die ursprüngliche Kontokor-\nrentforderung ausmachte.",
+        "page": 2,
+        "section": [
+          "RC AGB DE",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10806011,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "bm 6 1 40 11"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": true,
+        "document_lookup": false,
+        "pressure_extremum": false,
+        "citation_intent": true
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 7,
+      "elapsed_ms": 1453.78
+    }
+  },
+  "completed_at": "2026-07-23T20:02:20.119384+00:00",
+  "case_id": "B30",
+  "split": "development",
+  "category": "bilingual_table",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

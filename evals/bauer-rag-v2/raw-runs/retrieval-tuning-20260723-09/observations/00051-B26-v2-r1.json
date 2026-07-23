@@ -1,0 +1,887 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1662.73,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+      "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "Certificate",
+        "ISO 9001-Zertifikat: BAUER COMP Holding GmbH DE",
+        "ISO 9001 Certificate: BAUER COMP Holding GmbH EN",
+        "ISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 9001",
+        "ISO 14001:2015",
+        "EN ISO 3834-2",
+        "EN 13445",
+        "EN 13480",
+        "ISO 14001"
+      ],
+      "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nCertificate\nISO 9001: BAUER GROUP\nISO 9001-Zertifikat: BAUER COMP Holding GmbH DE\n(797.61 kB)\nISO 9001 Certificate: BAUER COMP Holding GmbH EN\n(771.39 kB)\nISO 9001, ISO 14001:2015, EN ISO 3834-2, EN 13445-4, EN 13480-4: BAUER KOMPRESSOREN GmbH\nISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE\n(329.27 kB)\nISO9001 Certificate-BAUER-KOMPRESSOREN-Werk-I EN\n(325.80 kB)\nISO9001_Zertifikat-BAUER-Stäbli DE\n(319.85 kB)\nISO9001 Certificate-BAUER-Stäbli EN\n(316.54 kB)\nISO 14001:2015 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH\n(586.94 kB)\nEN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(235.09 kB)",
+      "page": null,
+      "section": [
+        "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.41587302,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+      "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "Certificate",
+        "ISO9001-Zertifikat-BAUER-KOMPRESSOREN-Österreich DE",
+        "ISO9001-Certificate-BAUER-KOMPRESSOREN-Österreich EN",
+        "ISO 9001 Certificate: BAUER KOMPRESSOREN UK Ltd. EN"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 9001",
+        "ISO 14001",
+        "ISO 45001"
+      ],
+      "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\n01 Certficate: BAUER KOMPRESSOREN GCC FZE EN\n(357.34 kB)\nISO 9001: BAUER KOMPRESSOREN Ges.m.b.H.\nISO9001-Zertifikat-BAUER-KOMPRESSOREN-Österreich DE\n(321.78 kB)\nISO9001-Certificate-BAUER-KOMPRESSOREN-Österreich EN\n(317.90 kB)\nISO 9001: BAUER KOMPRESSOREN India Pvt. Ltd.\nISO 9001: BAUER KOMPRESSOREN India Pvt. Ltd. EN\n(218.79 kB)\nISO 9001 BAUER KOMPRESSOREN S.R.L Romania\nISO 9001 BAUER KOMPRESSOREN S.R.L Rumänien DE\n(322.75 kB)\nISO 9001 BAUER KOMPRESSOREN S.R.L Rumänien EN\n(320.56 kB)\nISO 9001: BAUER KOMPRESSOREN Shanghai Ltd.\nISO 9001 BAUER KOMPRESSOREN Shanghai Ltd. EN\n(386.79 kB)\nISO 9001 BAUER KOMPRESSOREN Shanghai Ltd. CN\n(339.13 kB)\nISO 9001, ISO 14001, ISO 45001: BAUER KOMPRESSOREN UK Ltd.\nISO 9001 Certificate: BAUER KOMPRESSOREN UK Ltd. EN\n(351.43 kB)\nISO 14001 Certificate: BAUER KOMPRESSOREN UK Ltd. EN\n(350.39 kB)\nISO 45001 Certificate: BAUER KOMPRESSOREN UK Ltd. EN\n(354.24 kB)\nISO 9001: ROTORCOMP VERDICHTER GmbH\nISO 9001-Zertifikat ROTORCOMP VERDICHTER GmbH DE\n(658.97 kB)\nISO 9001 Certificate ROTORCOMP VERDICHTER GmbH EN\n(325.70 kB)\nISO 9001: UNICCOMP GmbH\nISO 9001-Zertifikat: UNICCOMP GmbH DE\n(306.13 kB)\nISO 9001-Certificate: UNICCOMP GmbH EN\n(308.08 kB)\nCertificate\nZertifikat Druckgeräterichtlinie H DE\n(551.34 kB)\nCertificate pressure equipment directive H EN\n(304.62 kB)\nZertifikat Druckgeräterichtlinie H1 DE\n(546.72 kB)\nCertificate pressure equipment directive H1",
+      "page": null,
+      "section": [
+        "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.36639344,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "92fd3bc4-b60b-401d-82c7-83003a8a6069",
+      "filename": "0140-Cartuchos_Filtrantes_ES-b18e79ee71.md",
+      "title": "Cartuchos_Filtrantes_ES",
+      "language": "es",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [
+        "ISO 9001"
+      ],
+      "content": "Document: Cartuchos_Filtrantes_ES\n## Page 5\n\nBAUER KOMPRESSOREN\b\nCARTUCHOS FILTRANTES | 5\nMÁXIMA CALIDAD\nPARA UN FUNCIONAMIENTO FIABLE EN TODO MOMENTO.\nMATERIALES DE ALTA CALIDAD\nLa calidad es un factor decisivo cuando están en juego las prestaciones y la seguridad de un\nproducto. Por este motivo, todos los cartuchos filtrantes BAUER se fabrican, entre otros mate-\nriales, con plástico de alta calidad y prescindiendo de todo tipo de colas o disolventes.\nLARGA VIDA ÚTIL\nGracias a una elevada calidad de producción sostenida y a tiempos muy cortos de procesamien-\nto de las sustancias contenidas, nuestros cartuchos filtrantes ofrecen aplicaciones duraderas y\nclaramente definidas en las que confiar. En nuestro centro de ensayos se realizan regularmente\ncontroles adicionales. Todas las etapas de fabricación de los cartuchos se han certificado\nconforme al sistema de gestión de calidad ISO 9001 de BAUER. BAUER KOMPRESSOREN\nrecomienda cambiar los cartuchos de aire respirable usados al menos una vez al año o, en caso\nde no haberse utilizado la instalación, al cabo de tres meses. Tenga en cuenta también los\nposibles intervalos de sustitución más cortos específicos de cada país.\nTIEMPO DE PROCESAMIENTO CORTO DE LOS AGENTES SECADO-\nRES DE LAS MARCAS\nDado que el tiempo en que esté abierto el recipiente de los agentes secadores afecta en gran\nmedida al tiempo de funcionamiento del cartucho, lo mantenemos al mínimo.",
+      "page": 5,
+      "section": [
+        "Cartuchos Filtrantes ES",
+        "Page 5"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.21408451,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "601eca9f-6555-4db5-9355-f5c7efce18db",
+      "filename": "0176-0010_b-cloud-download-en_c298b57535-d18feef8f7.md",
+      "title": "B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nBAUER B-CLOUD\nB-CLOUD – Remote-Überwachung & Support Ihrer BAUER Anlagen\n(610.81 kB)\nB-CLOUD – Remote monitoring & support for your BAUER systems\n(601.59 kB)\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches\nBAUER factories\nBAUER Holding\nTitle 4\nDealer locator\nJobs & careers\nNews & events\nContact\nCopyright © 2026 BAUER COMP Holding GmbH. All rights reserved.\nBAUER COMP Holding GmbH, Wolfratshauser Strasse 80, 81379 Munich, Germany\nTerms and conditions\n|\nPrivacy\n|\nCookie settings\n|",
+      "page": null,
+      "section": [
+        "B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.21369863,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "52ce41bb-05e8-45c5-bf81-2ed953cfe0b8",
+      "filename": "0303-0137_pe-ve-gib-series_bd7924e614-73784893e4.md",
+      "title": "PE-VE series · Air-cooled boosters | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE-VE series",
+        "GIB SKU",
+        "GIB In"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE series · Air-cooled boosters | BAUER KOMPRESSOREN\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\ncalcActive())\">\nPE-VE series\nAir-cooled boosters for air and nitrogen up to 365 bar\nThe PE-VE series from BAUER is a robust all-rounder for industrial applications – powerful, compact and flexible for use with air and nitrogen.\n200-1300 l/min\n90-365 bar\n5,5-15 kW\nContact us\nRequest product\nSelected product:\nPE-VE series\nArt. Nr.: PE-VE-GIB\nSKU\nPE-VE-GIB\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nQuality & Innovation\nPremium Industrial\nQuality for Demanding Applications\nBAUER industrial compressors are manufactured to state-of-the-art production standards using precisely matched components. High-quality materials, precision manufacturing, and rigorous quality control ensure long service life, high reliability, and consistent performance under demanding industrial operating conditions.",
+      "page": null,
+      "section": [
+        "PE-VE series · Air-cooled boosters / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.16639344,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "51ccfebf-3991-42ca-9fd0-d8c16c3ca916",
+      "filename": "0291-0125_paintball-en_077560a1f8-9c07fac0f7.md",
+      "title": "Paintball Equipment and Accessories | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: Paintball Equipment and Accessories | BAUER KOMPRESSOREN\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nHigh-Pressure Compressed Air Systems for Paintball Facilities & Tournaments\nPrecision, Safety, and Pure Playing Enjoyment – with BAUER Compressed Air Technology for Paintball Sport\nThe sport of paintball places high demands on equipment – it must be precise, safe, comfortable, and above all, absolutely reliable.\nThat’s why BAUER KOMPRESSOREN works closely with manufacturers, distributors, and active teams to develop custom-tailored compressed air solutions for this dynamic sport.\nOur systems deliver clean, dry compressed air – precisely metered and reliably available – both for permanent indoor installations and mobile use at tournaments.\nThanks to our specialized filling systems, cartridges can be filled quickly, easily, and safely – ensuring maximum efficiency during gameplay.",
+      "page": null,
+      "section": [
+        "Paintball Equipment and Accessories / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.16587302,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "4a24c66c-b6df-416e-b9e9-25a3a4e919c3",
+      "filename": "0194-0028_b-news-the-newsletter-of-bauer-kompressoren_c002994295-2868f6eb36.md",
+      "title": "B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter\n969.37 kB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/18\n(966.37 kB)\nB-NEWS 2017\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 2/17\n(1.06 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 2/17\n(1.04 MB)\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/17\n(1.81 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/17\n(1.89 MB)\nB-NEWS 2016\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 3/16\n(1.76 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 3/16\n(1.83 MB)\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 2/16\n(2.14 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 2/16\n(2.16 MB)\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/16\n(1.82 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/16\n(1.84 MB)\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches\nBAUER factories\nBAUER Holding\nTitle 4\nDealer locator\nJobs & careers\nNews & events\nContact\nCopyright © 2026 BAUER COMP Holding GmbH. All rights reserved.\nBAUER COMP Holding GmbH, Wolfratshauser Strasse 80, 81379 Munich, Germany\nTerms and conditions\n|\nPrivacy\n|",
+      "page": null,
+      "section": [
+        "B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.16538462,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "4a24c66c-b6df-416e-b9e9-25a3a4e919c3",
+      "filename": "0194-0028_b-news-the-newsletter-of-bauer-kompressoren_c002994295-2868f6eb36.md",
+      "title": "B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nB-NEWS\nB-NEWS – the BAUER KOMPRESSOREN Newsletter\nB-NEWS 2025\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/25\n(4.21 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/25\n(4.25 MB)\nB-NEWS 2024\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/24\n(4.33 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/24\n(4.39 MB)\nB-NEWS 2023\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 2/23\n(2.80 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 2/23\n(2.84 MB)\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/23\n(5.70 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/23\n(5.70 MB)\nB-NEWS 2022\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/22\n(6.80 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/22\n(5.23 MB)\nB-NEWS 2021",
+      "page": null,
+      "section": [
+        "B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.16515152,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "5cfdd9d3-186a-4fbd-a599-eaf7b89d4efa",
+      "filename": "0288-0122_oceanus_78da0f1fad-99f79553bd.md",
+      "title": "OCEANUS · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "EN 12021:2014"
+      ],
+      "content": "Document: OCEANUS · PREMIUM LINE | BAUER KOMPRESSOREN\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\ncalcActive())\">\nOCEANUS\nMobile 140 l/min unit for breathing air applications up to 330 bar\nThe world’s best-selling portable compressor: lightweight, robust, and perfectly suited for divers, fire departments, and sport shooters. High performance with minimal space requirements.\n140 l/min\n90–330 bar\nSingle-phase, three-phase, or gasoline engine\nContact us\nRequest product\nSelected product:\nOCEANUS\nArt. Nr.: OCEANUS\nSKU\nOCEANUS\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nQuality & Innovation\nCertified Breathing Air Quality\nThe BAUER OCEANUS delivers independently tested and accredited breathing air quality that not only meets but exceeds international standards such as EN 12021:2014, CGA/ANSI Grade E, and other relevant norms – ensuring maximum safety for every application.",
+      "page": null,
+      "section": [
+        "OCEANUS · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.16492537,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "7bc0df29-31a6-443c-87d4-eec62ed44a0f",
+      "filename": "0239-0073_general-terms-conditions-download_6dfc2d1244-f3a833c976.md",
+      "title": "Download General Terms & Conditions | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: Download General Terms & Conditions | BAUER KOMPRESSOREN\nhaffungswesen\n(63.44 kB)\nGeneral terms and conditions of purchase\n(54.09 kB)\nUNICCOMP GmbH\nAllgemeine Geschäftsbedingungen für das Beschaffungswesen\n(191.59 kB)\nGeneral terms and conditions of purchase\n(54.08 kB)\nAGB für die Herstellung und Lieferung von Maschinenteilen\n(191.59 kB)\nGeneral Terms and Conditions for the Manufacture and Delivery of Machine Parts\n(54.08 kB)\nBAUER KOMPRESSOREN Ges.m.b.H.\nAllgemeine Geschäftsbedingungen\n(44.24 kB)\nGeneral terms and conditions\n(235.65 kB)\nBAUER COMPRESSORS ASIA PTE Ltd.\nGeneral terms and conditions\n(90.98 kB)\nBAUER KOMPRESSOREN IBERICA, S.L.\nCondiciones generales de contratación de BAUER KOMPRESSOREN IBERICA, S.L.\n(241.58 kB)\nBAUER KOMPRESSOREN India Pvt. Ltd.\nGeneral terms and conditions of sale of goods and of erection and commissionig of goods\n(112.84 kB)\nQuality policy\n(391.50 kB)\nBAUER KOMPRESSOREN S.R.L.\nGeneral terms and conditions of purchase\n(420.68 kB)\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches\nBAUER factories\nBAUER Holding\nTitle 4\nDealer locator\nJobs & careers\nNews & events\nContact",
+      "page": null,
+      "section": [
+        "Download General Terms & Conditions / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.16492537,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07-r2",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "Certificate",
+          "ISO 9001-Zertifikat: BAUER COMP Holding GmbH DE",
+          "ISO 9001 Certificate: BAUER COMP Holding GmbH EN",
+          "ISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 9001",
+          "ISO 14001:2015",
+          "EN ISO 3834-2",
+          "EN 13445",
+          "EN 13480",
+          "ISO 14001"
+        ],
+        "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nCertificate\nISO 9001: BAUER GROUP\nISO 9001-Zertifikat: BAUER COMP Holding GmbH DE\n(797.61 kB)\nISO 9001 Certificate: BAUER COMP Holding GmbH EN\n(771.39 kB)\nISO 9001, ISO 14001:2015, EN ISO 3834-2, EN 13445-4, EN 13480-4: BAUER KOMPRESSOREN GmbH\nISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE\n(329.27 kB)\nISO9001 Certificate-BAUER-KOMPRESSOREN-Werk-I EN\n(325.80 kB)\nISO9001_Zertifikat-BAUER-Stäbli DE\n(319.85 kB)\nISO9001 Certificate-BAUER-Stäbli EN\n(316.54 kB)\nISO 14001:2015 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH\n(586.94 kB)\nEN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(235.09 kB)",
+        "page": null,
+        "section": [
+          "Download Certificates from BAUER KOMPRESSOREN Easily",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.41587302,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "Certificate",
+          "ISO9001-Zertifikat-BAUER-KOMPRESSOREN-Österreich DE",
+          "ISO9001-Certificate-BAUER-KOMPRESSOREN-Österreich EN",
+          "ISO 9001 Certificate: BAUER KOMPRESSOREN UK Ltd. EN"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 9001",
+          "ISO 14001",
+          "ISO 45001"
+        ],
+        "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\n01 Certficate: BAUER KOMPRESSOREN GCC FZE EN\n(357.34 kB)\nISO 9001: BAUER KOMPRESSOREN Ges.m.b.H.\nISO9001-Zertifikat-BAUER-KOMPRESSOREN-Österreich DE\n(321.78 kB)\nISO9001-Certificate-BAUER-KOMPRESSOREN-Österreich EN\n(317.90 kB)\nISO 9001: BAUER KOMPRESSOREN India Pvt. Ltd.\nISO 9001: BAUER KOMPRESSOREN India Pvt. Ltd. EN\n(218.79 kB)\nISO 9001 BAUER KOMPRESSOREN S.R.L Romania\nISO 9001 BAUER KOMPRESSOREN S.R.L Rumänien DE\n(322.75 kB)\nISO 9001 BAUER KOMPRESSOREN S.R.L Rumänien EN\n(320.56 kB)\nISO 9001: BAUER KOMPRESSOREN Shanghai Ltd.\nISO 9001 BAUER KOMPRESSOREN Shanghai Ltd. EN\n(386.79 kB)\nISO 9001 BAUER KOMPRESSOREN Shanghai Ltd. CN\n(339.13 kB)\nISO 9001, ISO 14001, ISO 45001: BAUER KOMPRESSOREN UK Ltd.\nISO 9001 Certificate: BAUER KOMPRESSOREN UK Ltd. EN\n(351.43 kB)\nISO 14001 Certificate: BAUER KOMPRESSOREN UK Ltd. EN\n(350.39 kB)\nISO 45001 Certificate: BAUER KOMPRESSOREN UK Ltd. EN\n(354.24 kB)\nISO 9001: ROTORCOMP VERDICHTER GmbH\nISO 9001-Zertifikat ROTORCOMP VERDICHTER GmbH DE\n(658.97 kB)\nISO 9001 Certificate ROTORCOMP VERDICHTER GmbH EN\n(325.70 kB)\nISO 9001: UNICCOMP GmbH\nISO 9001-Zertifikat: UNICCOMP GmbH DE\n(306.13 kB)\nISO 9001-Certificate: UNICCOMP GmbH EN\n(308.08 kB)\nCertificate\nZertifikat Druckgeräterichtlinie H DE\n(551.34 kB)\nCertificate pressure equipment directive H EN\n(304.62 kB)\nZertifikat Druckgeräterichtlinie H1 DE\n(546.72 kB)\nCertificate pressure equipment directive H1",
+        "page": null,
+        "section": [
+          "Download Certificates from BAUER KOMPRESSOREN Easily",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.36639344,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "92fd3bc4-b60b-401d-82c7-83003a8a6069",
+        "filename": "0140-Cartuchos_Filtrantes_ES-b18e79ee71.md",
+        "title": "Cartuchos_Filtrantes_ES",
+        "language": "es",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [
+          "ISO 9001"
+        ],
+        "content": "Document: Cartuchos_Filtrantes_ES\n## Page 5\n\nBAUER KOMPRESSOREN\b\nCARTUCHOS FILTRANTES | 5\nMÁXIMA CALIDAD\nPARA UN FUNCIONAMIENTO FIABLE EN TODO MOMENTO.\nMATERIALES DE ALTA CALIDAD\nLa calidad es un factor decisivo cuando están en juego las prestaciones y la seguridad de un\nproducto. Por este motivo, todos los cartuchos filtrantes BAUER se fabrican, entre otros mate-\nriales, con plástico de alta calidad y prescindiendo de todo tipo de colas o disolventes.\nLARGA VIDA ÚTIL\nGracias a una elevada calidad de producción sostenida y a tiempos muy cortos de procesamien-\nto de las sustancias contenidas, nuestros cartuchos filtrantes ofrecen aplicaciones duraderas y\nclaramente definidas en las que confiar. En nuestro centro de ensayos se realizan regularmente\ncontroles adicionales. Todas las etapas de fabricación de los cartuchos se han certificado\nconforme al sistema de gestión de calidad ISO 9001 de BAUER. BAUER KOMPRESSOREN\nrecomienda cambiar los cartuchos de aire respirable usados al menos una vez al año o, en caso\nde no haberse utilizado la instalación, al cabo de tres meses. Tenga en cuenta también los\nposibles intervalos de sustitución más cortos específicos de cada país.\nTIEMPO DE PROCESAMIENTO CORTO DE LOS AGENTES SECADO-\nRES DE LAS MARCAS\nDado que el tiempo en que esté abierto el recipiente de los agentes secadores afecta en gran\nmedida al tiempo de funcionamiento del cartucho, lo mantenemos al mínimo.",
+        "page": 5,
+        "section": [
+          "Cartuchos Filtrantes ES",
+          "Page 5"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.21408451,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "601eca9f-6555-4db5-9355-f5c7efce18db",
+        "filename": "0176-0010_b-cloud-download-en_c298b57535-d18feef8f7.md",
+        "title": "B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nBAUER B-CLOUD\nB-CLOUD – Remote-Überwachung & Support Ihrer BAUER Anlagen\n(610.81 kB)\nB-CLOUD – Remote monitoring & support for your BAUER systems\n(601.59 kB)\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches\nBAUER factories\nBAUER Holding\nTitle 4\nDealer locator\nJobs & careers\nNews & events\nContact\nCopyright © 2026 BAUER COMP Holding GmbH. All rights reserved.\nBAUER COMP Holding GmbH, Wolfratshauser Strasse 80, 81379 Munich, Germany\nTerms and conditions\n|\nPrivacy\n|\nCookie settings\n|",
+        "page": null,
+        "section": [
+          "B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.21369863,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "52ce41bb-05e8-45c5-bf81-2ed953cfe0b8",
+        "filename": "0303-0137_pe-ve-gib-series_bd7924e614-73784893e4.md",
+        "title": "PE-VE series · Air-cooled boosters | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE-VE series",
+          "GIB SKU",
+          "GIB In"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE series · Air-cooled boosters | BAUER KOMPRESSOREN\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\ncalcActive())\">\nPE-VE series\nAir-cooled boosters for air and nitrogen up to 365 bar\nThe PE-VE series from BAUER is a robust all-rounder for industrial applications – powerful, compact and flexible for use with air and nitrogen.\n200-1300 l/min\n90-365 bar\n5,5-15 kW\nContact us\nRequest product\nSelected product:\nPE-VE series\nArt. Nr.: PE-VE-GIB\nSKU\nPE-VE-GIB\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nQuality & Innovation\nPremium Industrial\nQuality for Demanding Applications\nBAUER industrial compressors are manufactured to state-of-the-art production standards using precisely matched components. High-quality materials, precision manufacturing, and rigorous quality control ensure long service life, high reliability, and consistent performance under demanding industrial operating conditions.",
+        "page": null,
+        "section": [
+          "PE-VE series · Air-cooled boosters / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.16639344,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "51ccfebf-3991-42ca-9fd0-d8c16c3ca916",
+        "filename": "0291-0125_paintball-en_077560a1f8-9c07fac0f7.md",
+        "title": "Paintball Equipment and Accessories | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: Paintball Equipment and Accessories | BAUER KOMPRESSOREN\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nHigh-Pressure Compressed Air Systems for Paintball Facilities & Tournaments\nPrecision, Safety, and Pure Playing Enjoyment – with BAUER Compressed Air Technology for Paintball Sport\nThe sport of paintball places high demands on equipment – it must be precise, safe, comfortable, and above all, absolutely reliable.\nThat’s why BAUER KOMPRESSOREN works closely with manufacturers, distributors, and active teams to develop custom-tailored compressed air solutions for this dynamic sport.\nOur systems deliver clean, dry compressed air – precisely metered and reliably available – both for permanent indoor installations and mobile use at tournaments.\nThanks to our specialized filling systems, cartridges can be filled quickly, easily, and safely – ensuring maximum efficiency during gameplay.",
+        "page": null,
+        "section": [
+          "Paintball Equipment and Accessories / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.16587302,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "4a24c66c-b6df-416e-b9e9-25a3a4e919c3",
+        "filename": "0194-0028_b-news-the-newsletter-of-bauer-kompressoren_c002994295-2868f6eb36.md",
+        "title": "B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter\n969.37 kB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/18\n(966.37 kB)\nB-NEWS 2017\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 2/17\n(1.06 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 2/17\n(1.04 MB)\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/17\n(1.81 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/17\n(1.89 MB)\nB-NEWS 2016\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 3/16\n(1.76 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 3/16\n(1.83 MB)\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 2/16\n(2.14 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 2/16\n(2.16 MB)\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/16\n(1.82 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/16\n(1.84 MB)\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches\nBAUER factories\nBAUER Holding\nTitle 4\nDealer locator\nJobs & careers\nNews & events\nContact\nCopyright © 2026 BAUER COMP Holding GmbH. All rights reserved.\nBAUER COMP Holding GmbH, Wolfratshauser Strasse 80, 81379 Munich, Germany\nTerms and conditions\n|\nPrivacy\n|",
+        "page": null,
+        "section": [
+          "B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.16538462,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "4a24c66c-b6df-416e-b9e9-25a3a4e919c3",
+        "filename": "0194-0028_b-news-the-newsletter-of-bauer-kompressoren_c002994295-2868f6eb36.md",
+        "title": "B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nB-NEWS\nB-NEWS – the BAUER KOMPRESSOREN Newsletter\nB-NEWS 2025\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/25\n(4.21 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/25\n(4.25 MB)\nB-NEWS 2024\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/24\n(4.33 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/24\n(4.39 MB)\nB-NEWS 2023\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 2/23\n(2.80 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 2/23\n(2.84 MB)\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/23\n(5.70 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/23\n(5.70 MB)\nB-NEWS 2022\nB-NEWS – der Newsletter von BAUER KOMPRESSOREN: Ausgabe 1/22\n(6.80 MB)\nB-NEWS – the BAUER KOMPRESSOREN Newsletter: Issue 1/22\n(5.23 MB)\nB-NEWS 2021",
+        "page": null,
+        "section": [
+          "B-NEWS: Latest Updates from BAUER KOMPRESSOREN Newsletter",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.16515152,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "5cfdd9d3-186a-4fbd-a599-eaf7b89d4efa",
+        "filename": "0288-0122_oceanus_78da0f1fad-99f79553bd.md",
+        "title": "OCEANUS · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "EN 12021:2014"
+        ],
+        "content": "Document: OCEANUS · PREMIUM LINE | BAUER KOMPRESSOREN\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\ncalcActive())\">\nOCEANUS\nMobile 140 l/min unit for breathing air applications up to 330 bar\nThe world’s best-selling portable compressor: lightweight, robust, and perfectly suited for divers, fire departments, and sport shooters. High performance with minimal space requirements.\n140 l/min\n90–330 bar\nSingle-phase, three-phase, or gasoline engine\nContact us\nRequest product\nSelected product:\nOCEANUS\nArt. Nr.: OCEANUS\nSKU\nOCEANUS\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nQuality & Innovation\nCertified Breathing Air Quality\nThe BAUER OCEANUS delivers independently tested and accredited breathing air quality that not only meets but exceeds international standards such as EN 12021:2014, CGA/ANSI Grade E, and other relevant norms – ensuring maximum safety for every application.",
+        "page": null,
+        "section": [
+          "OCEANUS · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.16492537,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "7bc0df29-31a6-443c-87d4-eec62ed44a0f",
+        "filename": "0239-0073_general-terms-conditions-download_6dfc2d1244-f3a833c976.md",
+        "title": "Download General Terms & Conditions | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: Download General Terms & Conditions | BAUER KOMPRESSOREN\nhaffungswesen\n(63.44 kB)\nGeneral terms and conditions of purchase\n(54.09 kB)\nUNICCOMP GmbH\nAllgemeine Geschäftsbedingungen für das Beschaffungswesen\n(191.59 kB)\nGeneral terms and conditions of purchase\n(54.08 kB)\nAGB für die Herstellung und Lieferung von Maschinenteilen\n(191.59 kB)\nGeneral Terms and Conditions for the Manufacture and Delivery of Machine Parts\n(54.08 kB)\nBAUER KOMPRESSOREN Ges.m.b.H.\nAllgemeine Geschäftsbedingungen\n(44.24 kB)\nGeneral terms and conditions\n(235.65 kB)\nBAUER COMPRESSORS ASIA PTE Ltd.\nGeneral terms and conditions\n(90.98 kB)\nBAUER KOMPRESSOREN IBERICA, S.L.\nCondiciones generales de contratación de BAUER KOMPRESSOREN IBERICA, S.L.\n(241.58 kB)\nBAUER KOMPRESSOREN India Pvt. Ltd.\nGeneral terms and conditions of sale of goods and of erection and commissionig of goods\n(112.84 kB)\nQuality policy\n(391.50 kB)\nBAUER KOMPRESSOREN S.R.L.\nGeneral terms and conditions of purchase\n(420.68 kB)\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches\nBAUER factories\nBAUER Holding\nTitle 4\nDealer locator\nJobs & careers\nNews & events\nContact",
+        "page": null,
+        "section": [
+          "Download General Terms & Conditions / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.16492537,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "standards": [
+          "iso 27001"
+        ],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false,
+        "citation_intent": false
+      },
+      "channel_counts": {
+        "exact": 0,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 5,
+      "elapsed_ms": 1337.03
+    }
+  },
+  "completed_at": "2026-07-23T20:02:10.941637+00:00",
+  "case_id": "B26",
+  "split": "development",
+  "category": "safe_no_answer",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}
