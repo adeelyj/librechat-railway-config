@@ -1,0 +1,46 @@
+﻿{
+    "schema_version":  1,
+    "captured_at":  "2026-07-23T10:11:02.7147083Z",
+    "capture_source":  "verified_provision_state_and_versioned_contract",
+    "provision_state_verified_at":  "2026-07-22T11:29:43.6301247Z",
+    "bauer_v1":  {
+                     "id":  "agent_Z8A2LtQWLeP4KuUDbvqZL",
+                     "resource_id":  "6a5d42a2e91810a68ecbf8fd",
+                     "name":  "Bauer Kompressoren",
+                     "provider":  "RapidDraft Local AI",
+                     "model":  "local/qwen-coder",
+                     "model_parameters":  {
+                                              "temperature":  0.1,
+                                              "maxContextTokens":  24000,
+                                              "max_tokens":  2048
+                                          },
+                     "tools":  [
+                                   "file_search",
+                                   "search_bauer_twin_mcp_bauer-twin"
+                               ],
+                     "file_count":  373,
+                     "file_ids_sha256":  "486c740e10458ee7f80e2803aac4e4da13e75751329a50f97d1e0644cafee33d",
+                     "access_group_id":  "6a5d4277e91810a68ecbf8be",
+                     "public":  false
+                 },
+    "test_archive_v1":  {
+                            "id":  "agent_QnRNYPGlShuSnY0CYgQnm",
+                            "resource_id":  "6a5d42a2e91810a68ecbf8ef",
+                            "name":  "Test Archive",
+                            "provider":  "RapidDraft Local AI",
+                            "model":  "local/qwen-coder",
+                            "model_parameters":  {
+                                                     "temperature":  0.1,
+                                                     "maxContextTokens":  24000,
+                                                     "max_tokens":  2048
+                                                 },
+                            "tools":  [
+                                          "file_search"
+                                      ],
+                            "file_count":  41,
+                            "file_ids_sha256":  "50e8e29eb020c529e074d1a9ef4ed940378131b070950e6d165ef0174c5927d0",
+                            "access_group_id":  "6a5d4277e91810a68ecbf8b2",
+                            "public":  false
+                        },
+    "shared_file_ids":  0
+}

@@ -1,0 +1,100 @@
+﻿{
+    "schema_version":  1,
+    "captured_at":  "2026-07-23T10:11:02.6975409Z",
+    "project":  {
+                    "name":  "bk-RAG-test",
+                    "id":  "45bb0e8d-9eca-4973-8026-a3eddbd092b6",
+                    "environment":  "testing",
+                    "environment_id":  "6c80a4d1-c8e3-4410-b712-a27f89012046"
+                },
+    "required_source_baseline":  "2815a8f2ba1b7db04d40a80934544f092e54518b",
+    "rollback_source_commit":  "65504fefc524ab6878d30a6c9d86fc9b35ae3ac1",
+    "services":  [
+                     {
+                         "name":  "Bauer Twin API",
+                         "service_id":  "175f852a-ab23-4424-b7af-f0e5eabd3f65",
+                         "deployment_id":  "b753b52e-c0c4-41f1-b824-f01a1940347f",
+                         "status":  "SUCCESS",
+                         "source_repo":  "adeelyj/librechat-railway-config",
+                         "source_image":  null,
+                         "url":  "https://bauer-twin-api-testing.up.railway.app"
+                     },
+                     {
+                         "name":  "LibreChat",
+                         "service_id":  "c7f709a4-ec29-4ead-b21f-34439cdfb9e3",
+                         "deployment_id":  "154edb4c-54f1-496f-ab4d-60aac87caef8",
+                         "status":  "SUCCESS",
+                         "source_repo":  null,
+                         "source_image":  "ghcr.io/danny-avila/librechat-dev:latest",
+                         "url":  "https://chat.rapiddraft.ai"
+                     },
+                     {
+                         "name":  "Meilisearch",
+                         "service_id":  "1323706f-b246-41c9-a7ee-a247de046944",
+                         "deployment_id":  "4b749a4a-19ce-43b2-bbb6-fa6e431c774e",
+                         "status":  "SUCCESS",
+                         "source_repo":  null,
+                         "source_image":  "getmeili/meilisearch:v1.11.3",
+                         "url":  null
+                     },
+                     {
+                         "name":  "MongoDB",
+                         "service_id":  "3ebb3f3e-07b4-4c55-9cb2-78ce5537f745",
+                         "deployment_id":  "b1c794f4-77e6-4a46-bf00-3bcd7e641af4",
+                         "status":  "SUCCESS",
+                         "source_repo":  null,
+                         "source_image":  "mongo",
+                         "url":  null
+                     },
+                     {
+                         "name":  "RAG API",
+                         "service_id":  "b8069ba5-2c06-4f90-9a72-f854a596ba42",
+                         "deployment_id":  "5d434f9f-1111-4c64-85d6-4cb0f0ae8d1b",
+                         "status":  "SUCCESS",
+                         "source_repo":  null,
+                         "source_image":  "ghcr.io/danny-avila/librechat-rag-api-dev-lite:latest",
+                         "url":  "https://rag-api-testing.up.railway.app"
+                     },
+                     {
+                         "name":  "VectorDB",
+                         "service_id":  "6e4063a0-6919-417a-8aa2-6374617ac8e8",
+                         "deployment_id":  "8614d3dd-157b-4345-9260-00d4d765a1d0",
+                         "status":  "SUCCESS",
+                         "source_repo":  null,
+                         "source_image":  "pgvector/pgvector:pg16",
+                         "url":  null
+                     }
+                 ],
+    "deployments":  {
+                        "RAG API":  {
+                                        "deployment_id":  "5d434f9f-1111-4c64-85d6-4cb0f0ae8d1b",
+                                        "status":  "SUCCESS",
+                                        "created_at":  "2026-07-21T14:41:16.664Z",
+                                        "branch":  null,
+                                        "commit":  null,
+                                        "image_digest":  "sha256:fbd680a0172211b9889ddebb6d5970f01a1ecca7676d420f93ede3db4e139a5d",
+                                        "reason":  "deploy",
+                                        "message":  "Pin RAG API and secure multi-file batch search v2"
+                                    },
+                        "Bauer Twin API":  {
+                                               "deployment_id":  "b753b52e-c0c4-41f1-b824-f01a1940347f",
+                                               "status":  "SUCCESS",
+                                               "created_at":  "2026-07-22T11:38:11.400Z",
+                                               "branch":  "agent/configure-librechat-railway",
+                                               "commit":  "2815a8f2ba1b7db04d40a80934544f092e54518b",
+                                               "image_digest":  "sha256:5dad62267f16693d6eb7e940b3795e63f214dac52361ec3c5be72afeda25572c",
+                                               "reason":  "deploy",
+                                               "message":  null
+                                           },
+                        "LibreChat":  {
+                                          "deployment_id":  "154edb4c-54f1-496f-ab4d-60aac87caef8",
+                                          "status":  "SUCCESS",
+                                          "created_at":  "2026-07-22T11:30:34.680Z",
+                                          "branch":  null,
+                                          "commit":  null,
+                                          "image_digest":  "sha256:c8559c0947caf9e099f037ac4abd0cde7080c468bcaeb34498bedc82932572dc",
+                                          "reason":  "redeploy",
+                                          "message":  "Batch authorized LibreChat file search"
+                                      }
+                    }
+}

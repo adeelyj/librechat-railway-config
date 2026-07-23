@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "split": "development",
+  "tuning_locked": false,
+  "cases": [
+    {
+      "id": "B01",
+      "category": "combined_evidence",
+      "prompt_en": "A municipal fire brigade needs a stationary breathing-air filling system for 300-bar cylinders, DIN EN 12021 compliance, continuous online air-quality monitoring, and buffer storage. Answer in three clearly separated sections: (1) Bauer products and capabilities confirmed by the uploaded public Bauer documents, with source citations; (2) the closest synthetic previous-project record and why it matches; and (3) open engineering questions that must be confirmed before selecting or quoting a system. Never present synthetic project or part data as confirmed Bauer internal data."
+    },
+    {
+      "id": "B02",
+      "category": "combined_evidence",
+      "prompt_en": "Find the closest previous synthetic nitrogen booster project for 420 bar and approximately 500 l/min. Explain the match using medium, pressure, capacity, topology, cooling, control, purification, and storage. Show the next two compatible alternatives and list important candidates rejected because of wrong medium, insufficient pressure, or wrong topology. Separately cite public Bauer documents that support the relevant product pressure and capacity envelope. Clearly label all historical project information as synthetic demo data."
+    },
+    {
+      "id": "B03",
+      "category": "structured_comparison",
+      "prompt_en": "Compare synthetic projects SYN-BK-N2-420-500 and SYN-BK-N2-365-500. Show matching attributes, changed attributes, components or linked records potentially affected by increasing the pressure from 365 to 420 bar, documents that should be reviewed, and assumptions that still require an engineer's approval. Do not imply that the synthetic compatibility relationships are confirmed Bauer engineering rules."
+    },
+    {
+      "id": "B04",
+      "category": "structured_drilldown",
+      "prompt_en": "Open synthetic project SYN-BK-N2-420-500. Summarize its configuration and list all linked parts, grouped by compressor, control, purification, valves, cooling, storage/filling, and sensors. Then list its linked public evidence documents. Clearly distinguish synthetic parts from genuine public Bauer documents."
+    },
+    {
+      "id": "B05",
+      "category": "structured_part_search",
+      "prompt_en": "We need a pressure transmitter suitable for nitrogen at 420 bar, but we do not know the part number. Find the best compatible synthetic part. Report its part number, maximum pressure, compatible media, related projects, and linked documents. Explain why parts with insufficient pressure rating or incompatible media were rejected. Do not claim that the part is a real Bauer article."
+    },
+    {
+      "id": "B06",
+      "category": "exact_pressure",
+      "prompt_en": "Based only on the uploaded public Bauer documents, what is the highest documented maximum operating pressure for a Bauer compressor? Name the applicable product families, distinguish compressors from boosters, and cite the exact source page or section. Also explain the difference between maximum operating pressure and shutdown pressure if the source makes that distinction. Do not assume that the most frequently retrieved pressure is the maximum."
+    },
+    {
+      "id": "B07",
+      "category": "exact_table",
+      "prompt_en": "Find the Bauer model I 15.11-11-V in the uploaded documents. Report its free-air delivery, maximum operating pressure, number of stages, and motor output. Cite the exact technical-data table and preserve any relevant footnotes or limitations."
+    },
+    {
+      "id": "B08",
+      "category": "product_discovery",
+      "prompt_en": "I do not know the Bauer product names. Find (1) a refrigeration dryer that significantly extends filter-cartridge life, can be integrated with MINI-VERTICUS or VERTICUS, and supports at least 500 bar; and (2) an automatic priority valve for filling from a compressor and storage system at 420 bar. Name the products, give their documented limits and functions, and cite the supporting sources."
+    },
+    {
+      "id": "B09",
+      "category": "product_comparison",
+      "prompt_en": "Compare the Bauer BM series at 40 bar and 100 bar. For each family, report medium, maximum pressure, free-air-delivery range, and motor-power range. Explain which family is technically closer to a requirement for air at 90 bar and approximately 800 l/min. Cite both product sources."
+    },
+    {
+      "id": "B10",
+      "category": "contradiction",
+      "prompt_en": "Compare B-DETECTION PLUS i/s with B-DETECTION PLUS m for a stationary fire-brigade filling station. Explain which is stationary and which is mobile, what they measure, their logging capabilities, and their documented pressure range. One public product page mentions 420 bar while a newer brochure describes options up to 450 bar. Explain the difference using source dates and wording instead of silently selecting one value."
+    },
+    {
+      "id": "B11",
+      "category": "safety_limit",
+      "prompt_en": "Can B-SAFE be used to fill Nitrox cylinders at 300 bar? Answer yes or no based only on the uploaded Bauer documentation. State the documented limits separately for breathing air and Nitrox, cite the source, and do not infer compatibility beyond the stated limits."
+    },
+    {
+      "id": "B12",
+      "category": "bilingual_consistency",
+      "prompt_en": "Run these as independent searches and compare them: English: Find the closest previous synthetic nitrogen booster project for 420 bar and approximately 500 l/min. German: Finde das aehnlichste synthetische fruehere Projekt fuer einen Stickstoff-Booster mit 420 bar und ungefaehr 500 l/min. Both should return the same project and equivalent reasoning."
+    },
+    {
+      "id": "B13",
+      "category": "exact_certificate",
+      "prompt_en": "Find the English EN ISO 3834-2 certificate for Bauer Kompressoren in Munich. Return the precise certificate title, organization, address, language, and source document. Do not substitute an ISO 9001 or ISO 14001 certificate."
+    },
+    {
+      "id": "B14",
+      "category": "safe_no_match",
+      "prompt_en": "Find a previous synthetic helium booster project for 420 bar and approximately 500 l/min. Apply medium, pressure, and topology as mandatory constraints. If no compatible synthetic project exists, say so clearly. Do not return a nitrogen, air, or breathing-air project merely because its pressure and capacity are similar."
+    },
+    {
+      "id": "B15",
+      "category": "exact_certificate",
+      "prompt_en": "Locate the exact download entry titled EN ISO 3834-2 Certificate for BAUER KOMPRESSOREN GmbH at Stäblistr. 8, 81477 Munich. Return only the English entry and its source."
+    },
+    {
+      "id": "B16",
+      "category": "exact_table",
+      "prompt_en": "In the BM series 40 bar technical table, give the complete row for model BM 6.1/40-11, including effective free air delivery, shutdown pressure, stages, speed, motor power, and weight."
+    },
+    {
+      "id": "B17",
+      "category": "exact_table",
+      "prompt_en": "In the BM series 100 bar 50 Hz technical table, give the complete row for BM 6.1/100-15 and preserve the table units."
+    },
+    {
+      "id": "B18",
+      "category": "exact_table_ambiguity",
+      "prompt_en": "The model I 15.11-11-V appears in more than one VERTICUS pressure table. Return both rows, clearly separating the 420 bar and 525 bar variants and preserving footnotes 1 and 2."
+    },
+    {
+      "id": "B19",
+      "category": "exact_product_limit",
+      "prompt_en": "What are the documented maximum operating pressures and maximum flow rates for B-KOOL III? State the separate helium and argon flow range and cite the technical data."
+    },
+    {
+      "id": "B20",
+      "category": "exact_product_limit",
+      "prompt_en": "Find B-SELECT and report its operating pressure, adjustment range, three automatic-selector functions, and documented flow rates at 50, 200, and 300 bar."
+    },
+    {
+      "id": "B21",
+      "category": "contradiction",
+      "prompt_en": "Reconcile the B-SAFE page headline that states breathing-air use up to 300 bar and Nitrox use up to 200 bar with the later B-SAFE 300 technical-data values. Do not turn an unresolved wording conflict into a compatibility approval."
+    },
+    {
+      "id": "B22",
+      "category": "bilingual_exact",
+      "prompt_de": "Finde den englischen Eintrag des EN ISO 3834-2 Zertifikats für BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 München. Ersetze ihn nicht durch ISO 9001 oder ISO 14001."
+    },
+    {
+      "id": "B23",
+      "category": "exact_document_number",
+      "prompt_en": "Find document N47183 and identify its title, language, subject, and source filename."
+    },
+    {
+      "id": "B24",
+      "category": "exact_part_number",
+      "prompt_en": "Find the catalogue entry with order number N7698. Return the compressor block applications attached to that exact order number and cite the catalogue location."
+    },
+    {
+      "id": "B25",
+      "category": "semantic_product",
+      "prompt_en": "Which Bauer system provides browser or app access to compressor status and fault notifications, and what software condition is documented for compatible B-CONTROL MICRO units?"
+    },
+    {
+      "id": "B26",
+      "category": "safe_no_answer",
+      "prompt_en": "Find an ISO 27001 certificate for BAUER KOMPRESSOREN GmbH in the uploaded Bauer corpus. Do not substitute ISO 9001, ISO 14001, or EN ISO 3834-2."
+    },
+    {
+      "id": "B27",
+      "category": "safe_no_answer",
+      "prompt_en": "Find Bauer order number N99999999 and report the exact component. If that identifier is absent, say it is not established and do not suggest a similar-looking number."
+    },
+    {
+      "id": "B28",
+      "category": "authorization_isolation",
+      "prompt_en": "Search the Bauer knowledge base for the EPLAN public test documents from the Test Archive and list their filenames."
+    },
+    {
+      "id": "B29",
+      "category": "exact_pressure",
+      "prompt_en": "What free-air-delivery, motor-power, and pressure range is documented for the K 22–K 28 series on the product overview page? Keep this family-level range separate from individual model rows."
+    },
+    {
+      "id": "B30",
+      "category": "bilingual_table",
+      "prompt_de": "Welche Förderleistung, Abschaltdruck, Stufenzahl und Motorleistung hat das Modell BM 6.1/40-11 laut technischer Tabelle? Nenne die Einheiten und die Quelle."
+    }
+  ]
+}

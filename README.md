@@ -118,7 +118,23 @@ railway up services\rag-api-custom --path-as-root --service "RAG API" --environm
 railway up services\librechat-custom --path-as-root --service LibreChat --environment testing
 ```
 
-Deploy the RAG overlay first. Restore the previously recorded Railway deployment or pinned upstream image to roll back; no database migration is involved.
+Deployment commands above change live Railway services and require explicit approval. Deploy the RAG
+overlay first. The currently deployed V1 overlay can be rolled back by restoring its recorded
+deployment or pinned image.
+
+### Bauer RAG V2 candidate
+
+The `codex/bauer-rag-v2` implementation adds an isolated `bauer_rag_v2` PostgreSQL schema,
+table-aware and metadata extraction, exact/lexical/vector fusion, bounded reranking, deterministic
+answer validation, and a fail-closed `/query_v2` route. LibreChat selects that route only for
+allow-listed private Agent IDs; the normal Bauer and Test Archive Agents remain on V1.
+
+The executable 30-case development and 10-case locked-holdout contract, frozen baseline, runners,
+scorers, historical V1 capture, and corpus inspection report are under `evals/bauer-rag-v2`.
+Operational steps and the data-free rollback are in
+[`docs/bauer-rag-v2-runbook.md`](docs/bauer-rag-v2-runbook.md). V2 is not deployed or promoted by
+this source change. Its gold set requires Bauer adjudication, and all live staging, activation,
+Agent provisioning, Railway configuration, and deployment actions require separate approval.
 
 Generated corpora, manifests, dependencies, and resume state live under `tmp/` and are intentionally ignored by Git.
 

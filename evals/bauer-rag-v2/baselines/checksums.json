@@ -1,0 +1,18 @@
+﻿{
+    "schema_version":  1,
+    "generated_at":  "2026-07-23T10:11:02.9602444Z",
+    "artifacts":  [
+                      {
+                          "file":  "deployment.json",
+                          "sha256":  "f15e731372c3ed1a86e0138b0b7dc505d48123886815ae7d8e38a3cbba7c4913"
+                      },
+                      {
+                          "file":  "agents.json",
+                          "sha256":  "973dd15510bac9b5202118a59f1569233fabf0729af62b92e4ab4f6ffc8dcd83"
+                      },
+                      {
+                          "file":  "corpus-manifest.json",
+                          "sha256":  "68fdf35b9adcce6b92631c83b2be55ae3b8b2593c121fb70bc81148b21e09cff"
+                      }
+                  ]
+}

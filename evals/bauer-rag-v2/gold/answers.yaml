@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "verification_status": "provisional_requires_bauer_adjudication",
+  "cases": [
+    {
+      "id": "B01",
+      "required_claims": [
+        {"id": "public_vs_synthetic", "all_terms": ["synthetic"], "any_terms": ["DIN EN 12021", "B-DETECTION"]}
+      ],
+      "forbidden_claims": ["confirmed Bauer internal project", "confirmed Bauer master data"],
+      "mandatory_constraints": {"pressure_bar": 300, "medium": "breathing air"},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B02",
+      "required_claims": [
+        {"id": "top_project", "all_terms": ["SYN-BK-N2-420-500", "synthetic"]}
+      ],
+      "forbidden_claims": ["SYN-BK-N2-365-500 is compatible"],
+      "incompatible_engineering_claims": ["SYN-BK-N2-365-500 is compatible"],
+      "mandatory_constraints": {"medium": "nitrogen", "pressure_bar": 420, "topology": "booster"},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B03",
+      "required_claims": [
+        {"id": "pressure_difference", "all_terms": ["365 bar", "420 bar", "synthetic"]}
+      ],
+      "forbidden_claims": ["confirmed Bauer engineering rule"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B04",
+      "required_claims": [
+        {"id": "project_id", "all_terms": ["SYN-BK-N2-420-500", "synthetic"]}
+      ],
+      "forbidden_claims": ["confirmed Bauer part"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B05",
+      "required_claims": [
+        {"id": "part_id", "all_terms": ["SYN-P-SNS-PRESSURE-500", "synthetic"]}
+      ],
+      "forbidden_claims": ["SYN-P-SNS-PRES-IND", "real Bauer article"],
+      "mandatory_constraints": {"medium": "nitrogen", "pressure_bar": 420},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B06",
+      "required_claims": [
+        {"id": "max_pressure", "all_terms": ["525 bar"], "any_terms": ["VERTICUS", "K 22", "K 28"]},
+        {"id": "pressure_qualification", "all_terms": ["safety valve"], "any_terms": ["shutdown pressure", "final pressure"]}
+      ],
+      "forbidden_claims": ["550 bar compressor"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B07",
+      "required_claims": [
+        {"id": "model", "all_terms": ["I 15.11-11-V", "420 l/min", "4", "11 kW"], "any_terms": ["420 bar", "525 bar"]}
+      ],
+      "forbidden_claims": ["550 bar"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B08",
+      "required_claims": [
+        {"id": "dryer", "all_terms": ["B-KOOL", "550 bar"]},
+        {"id": "selector", "all_terms": ["B-SELECT", "414/420 bar"]}
+      ],
+      "forbidden_claims": [],
+      "mandatory_constraints": {"minimum_pressure_bar": 500},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B09",
+      "required_claims": [
+        {"id": "bm40", "all_terms": ["40 bar", "660", "7390"]},
+        {"id": "bm100", "all_terms": ["100 bar", "630", "7300"]}
+      ],
+      "forbidden_claims": ["synthetic project capacity is the official range"],
+      "mandatory_constraints": {"medium": "air", "required_pressure_bar": 90},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B10",
+      "required_claims": [
+        {"id": "source_reconciliation", "all_terms": ["B-DETECTION PLUS"], "any_terms": ["420 bar", "450 bar"]}
+      ],
+      "forbidden_claims": ["the sources are identical"],
+      "mandatory_constraints": {"application": "stationary fire-brigade filling station"},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B11",
+      "required_claims": [
+        {"id": "headline_limits", "all_terms": ["300 bar", "200 bar", "Nitrox"]},
+        {"id": "conflict_qualification", "any_terms": ["conflict", "not unambiguous", "not established"]}
+      ],
+      "forbidden_claims": ["unqualified approval at 300 bar"],
+      "incompatible_engineering_claims": ["unqualified approval at 300 bar"],
+      "mandatory_constraints": {"medium": "Nitrox", "pressure_bar": 300},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B12",
+      "required_claims": [
+        {"id": "bilingual_match", "all_terms": ["SYN-BK-N2-420-500", "synthetic"]}
+      ],
+      "forbidden_claims": [],
+      "mandatory_constraints": {"medium": "nitrogen", "pressure_bar": 420},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B13",
+      "required_claims": [
+        {"id": "certificate", "all_terms": ["EN ISO 3834-2 Certificate", "BAUER KOMPRESSOREN GmbH", "Stäblistr. 8", "81477 Munich", "English"]}
+      ],
+      "forbidden_claims": ["ISO 9001 is the requested certificate", "ISO 14001 is the requested certificate"],
+      "mandatory_constraints": {"language": "English", "standard": "EN ISO 3834-2"},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B14",
+      "required_claims": [
+        {"id": "no_match", "all_terms": ["no compatible", "helium", "synthetic"]}
+      ],
+      "forbidden_claims": ["nitrogen project is compatible", "air project is compatible"],
+      "incompatible_engineering_claims": ["nitrogen project is compatible", "air project is compatible"],
+      "mandatory_constraints": {"medium": "helium", "pressure_bar": 420, "topology": "booster"},
+      "safe_refusal_expected": true
+    },
+    {
+      "id": "B15",
+      "required_claims": [
+        {"id": "exact_title", "all_terms": ["EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN"]}
+      ],
+      "forbidden_claims": ["ISO 9001", "ISO 14001"],
+      "mandatory_constraints": {"language": "English"},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B16",
+      "required_claims": [
+        {"id": "row", "all_terms": ["BM 6.1/40-11", "660 l/min", "40 bar", "3", "1470 rpm", "11 kW", "425 kg"]}
+      ],
+      "forbidden_claims": ["100 bar"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B17",
+      "required_claims": [
+        {"id": "row", "all_terms": ["BM 6.1/100-15", "630 l/min", "100 bar", "3", "1470 rpm", "15 kW", "425 kg"]}
+      ],
+      "forbidden_claims": ["40 bar"],
+      "mandatory_constraints": {"frequency_hz": 50},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B18",
+      "required_claims": [
+        {"id": "two_rows", "all_terms": ["I 15.11-11-V", "420 l/min", "420 bar", "525 bar", "4", "1320 rpm", "11 kW"]},
+        {"id": "footnotes", "all_terms": ["ISO 1217", "safety valve", "final pressure"]}
+      ],
+      "forbidden_claims": ["only one row exists"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B19",
+      "required_claims": [
+        {"id": "limits", "all_terms": ["B-KOOL III", "350 bar", "550 bar", "700 l/min", "200–420 l/min"]}
+      ],
+      "forbidden_claims": [],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B20",
+      "required_claims": [
+        {"id": "limits", "all_terms": ["B-SELECT", "414/420 bar", "100–414/420 bar", "2750 l/min", "3500 l/min", "3700 l/min"]},
+        {"id": "functions", "all_terms": ["pre-filling", "compressor", "storage"]}
+      ],
+      "forbidden_claims": [],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B21",
+      "required_claims": [
+        {"id": "limits", "all_terms": ["300 bar", "200 bar", "410 bar", "225/330 bar"]},
+        {"id": "qualification", "any_terms": ["conflict", "not unambiguous", "requires confirmation"]}
+      ],
+      "forbidden_claims": ["unqualified approval"],
+      "mandatory_constraints": {"medium": "Nitrox"},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B22",
+      "required_claims": [
+        {"id": "certificate", "all_terms": ["EN ISO 3834-2", "BAUER KOMPRESSOREN GmbH", "Stäblistr. 8", "81477"]}
+      ],
+      "forbidden_claims": ["ISO 9001", "ISO 14001"],
+      "mandatory_constraints": {"language": "English"},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B23",
+      "required_claims": [
+        {"id": "document", "all_terms": ["N47183", "B-DETECTION", "Sensor calibration", "English"]}
+      ],
+      "forbidden_claims": [],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B24",
+      "required_claims": [
+        {"id": "order", "all_terms": ["N7698"], "any_terms": ["K28.3", "K28.0", "K28.2"]}
+      ],
+      "forbidden_claims": ["N76980"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B25",
+      "required_claims": [
+        {"id": "cloud", "all_terms": ["B-CLOUD", "B-APP", "3.73"], "any_terms": ["fault notifications", "status"]}
+      ],
+      "forbidden_claims": [],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B26",
+      "required_claims": [
+        {"id": "absence", "all_terms": ["not found"], "any_terms": ["not established", "ISO 27001"]}
+      ],
+      "forbidden_claims": ["ISO 9001 is ISO 27001", "ISO 14001 is ISO 27001"],
+      "mandatory_constraints": {"standard": "ISO 27001"},
+      "safe_refusal_expected": true
+    },
+    {
+      "id": "B27",
+      "required_claims": [
+        {"id": "absence", "all_terms": ["N99999999"], "any_terms": ["not found", "not established"]}
+      ],
+      "forbidden_claims": ["N9999999", "N999999999"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": true
+    },
+    {
+      "id": "B28",
+      "required_claims": [
+        {"id": "isolation", "any_terms": ["not found", "not established", "not available in the Bauer knowledge base"]}
+      ],
+      "forbidden_claims": ["EPLAN public test document filename"],
+      "mandatory_constraints": {"knowledge_base": "Bauer"},
+      "safe_refusal_expected": true
+    },
+    {
+      "id": "B29",
+      "required_claims": [
+        {"id": "family_range", "all_terms": ["K 22", "K 28", "800", "6800 l/min", "22", "110 kW", "30", "525 bar"]}
+      ],
+      "forbidden_claims": ["all individual models have the same limits"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "B30",
+      "required_claims": [
+        {"id": "row", "all_terms": ["BM 6.1/40-11", "660 l/min", "40 bar", "3", "11 kW"]}
+      ],
+      "forbidden_claims": ["100 bar"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "H01",
+      "required_claims": [
+        {"id": "row", "all_terms": ["BM 10.1/100-18.5", "1060 l/min", "100 bar", "3", "1485 rpm", "18.5 kW", "475 kg"]}
+      ],
+      "forbidden_claims": [],
+      "mandatory_constraints": {"frequency_hz": 50},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "H02",
+      "required_claims": [
+        {"id": "row", "all_terms": ["I 25.9-45", "1900 l/min", "525 bar", "5", "1180 rpm", "45 kW"]}
+      ],
+      "forbidden_claims": [],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "H03",
+      "required_claims": [
+        {"id": "limits", "all_terms": ["200–420 l/min", "350 bar", "550 bar", "helium", "argon"]}
+      ],
+      "forbidden_claims": ["700 l/min for helium"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "H04",
+      "required_claims": [
+        {"id": "constraint", "all_terms": ["B-SAFE ECO", "cannot be stored", "direct connection"]}
+      ],
+      "forbidden_claims": ["storage filling is supported"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "H05",
+      "required_claims": [
+        {"id": "title", "all_terms": ["EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN"]}
+      ],
+      "forbidden_claims": ["ISO 9001", "ISO 14001"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "H06",
+      "required_claims": [
+        {"id": "selector", "all_terms": ["B-SELECT", "414/420 bar"], "any_terms": ["Vorbefüllen", "Pre-filling"]}
+      ],
+      "forbidden_claims": [],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "H07",
+      "required_claims": [
+        {"id": "absence", "any_terms": ["not found", "not established", "nicht gefunden"]}
+      ],
+      "forbidden_claims": ["ISO 9001 is EN ISO 9999"],
+      "mandatory_constraints": {"standard": "EN ISO 9999"},
+      "safe_refusal_expected": true
+    },
+    {
+      "id": "H08",
+      "required_claims": [
+        {"id": "conflict", "all_terms": ["Nitrox", "300 bar", "200 bar"], "any_terms": ["not unambiguous", "not established", "conflict"]}
+      ],
+      "forbidden_claims": ["unqualified yes"],
+      "incompatible_engineering_claims": ["unqualified yes"],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": true
+    },
+    {
+      "id": "H09",
+      "required_claims": [
+        {"id": "part", "all_terms": ["N46378", "0–600", "bottom"]}
+      ],
+      "forbidden_claims": [],
+      "mandatory_constraints": {},
+      "safe_refusal_expected": false
+    },
+    {
+      "id": "H10",
+      "required_claims": [
+        {"id": "limits", "all_terms": ["230 bar", "365 bar"], "any_terms": ["depending on the process gas", "depending on process gas"]}
+      ],
+      "forbidden_claims": ["525 bar helium"],
+      "mandatory_constraints": {"medium": "helium"},
+      "safe_refusal_expected": false
+    }
+  ]
+}

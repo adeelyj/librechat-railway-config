@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "split": "holdout",
+  "tuning_locked": true,
+  "cases": [
+    {
+      "id": "H01",
+      "category": "exact_table",
+      "prompt_en": "Return the complete 50 Hz technical-data row for BM 10.1/100-18.5, with all units and the exact source."
+    },
+    {
+      "id": "H02",
+      "category": "exact_table",
+      "prompt_en": "Find model I 25.9-45 in the K 22 series 420–525 bar table. Report F.A.D., maximum operating pressure, stages, speed, and motor power."
+    },
+    {
+      "id": "H03",
+      "category": "exact_product_limit",
+      "prompt_en": "For B-KOOL III, what maximum flow range is stated specifically for helium and argon, and what maximum operating pressures are listed?"
+    },
+    {
+      "id": "H04",
+      "category": "exact_constraint",
+      "prompt_en": "Can the B-SAFE ECO be filled from storage? Answer from the documented scope and preserve the stated direct-connection limitation."
+    },
+    {
+      "id": "H05",
+      "category": "exact_certificate",
+      "prompt_en": "Which English certificate download entry combines EN ISO 3834-2 with the Munich address Stäblistr. 8, 81477? Return the exact title."
+    },
+    {
+      "id": "H06",
+      "category": "bilingual_exact",
+      "prompt_de": "Welche drei Hauptfunktionen erfüllt die automatische B-SELECT Auswahleinheit, und welcher Betriebsdruck ist dokumentiert?"
+    },
+    {
+      "id": "H07",
+      "category": "safe_no_answer",
+      "prompt_en": "Find an EN ISO 9999 certificate for BAUER KOMPRESSOREN GmbH. Do not substitute any other certificate or standard."
+    },
+    {
+      "id": "H08",
+      "category": "contradiction",
+      "prompt_en": "Does the B-SAFE source unambiguously approve Nitrox filling at 300 bar? Reconcile all retrieved limit statements and refuse to infer approval if they conflict."
+    },
+    {
+      "id": "H09",
+      "category": "exact_part_number",
+      "prompt_en": "Find order number N46378 and report its pressure-gauge range and connection orientation from the catalogue row."
+    },
+    {
+      "id": "H10",
+      "category": "semantic_product_limit",
+      "prompt_en": "What final-pressure limits are stated for the helium and rare-gas MINI-VERTICUS and VERTICUS configurations, and what qualification follows those limits?"
+    }
+  ]
+}

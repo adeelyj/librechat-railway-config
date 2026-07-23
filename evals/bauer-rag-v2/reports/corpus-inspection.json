@@ -1,0 +1,787 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-23T10:51:21.302142+00:00",
+  "corpus": "D:\\02_Code\\LibreChat_Setup\\tmp\\corpora\\bauer-kompressoren",
+  "manifest_file_count": 373,
+  "authorization_namespace": "agent_Z8A2LtQWLeP4KuUDbvqZL",
+  "totals": {
+    "documents": 373,
+    "chunks": 6111,
+    "entities": 30899,
+    "documents_with_publication_date": 84,
+    "documents_with_media": 290,
+    "documents_with_component_categories": 365,
+    "documents_with_document_number": 28,
+    "documents_with_certificate": 57,
+    "prose_chunks": 4468,
+    "table_row_chunks": 1643,
+    "table_rows_with_footnotes": 1258
+  },
+  "languages": {
+    "de": 50,
+    "en": 296,
+    "es": 3,
+    "fr": 2,
+    "it": 2,
+    "und": 20
+  },
+  "source_types": {
+    "public_document": 373
+  },
+  "entity_kinds": {
+    "document_number": 5048,
+    "address": 639,
+    "component_category": 8801,
+    "standard": 1340,
+    "model": 4659,
+    "pressure": 4329,
+    "capacity": 1116,
+    "revision": 950,
+    "medium": 3278,
+    "certificate": 381,
+    "part_number": 358
+  },
+  "table_parsers": {
+    "identifier_table": 453,
+    "flattened_technical_table": 1062,
+    "key_value_technical_table": 128
+  },
+  "checksum_mismatches": [],
+  "namespace_mismatches": [],
+  "parse_errors": [],
+  "gold_evidence_checks": [
+    {
+      "case_id": "B06",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "expected_location": {
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "page": 23,
+        "section": "Technical Data – Air Cooled Compressor Units",
+        "table": "VERTICUS SERIES, 310 - 510 l/min, 420 - 525 bar",
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B07",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "expected_location": {
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "page": 23,
+        "section": "Technical Data – Air Cooled Compressor Units",
+        "table": "VERTICUS SERIES",
+        "row": "I 15.11-11-V",
+        "requires_footnotes": true
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B08",
+      "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+      "expected_location": {
+        "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+        "filename": "0187-0021_b-kool_c5e62182b0-d01c99958a.md",
+        "page": null,
+        "section": "Technical Data",
+        "table": "B-KOOL Refrigeration dryer",
+        "row": "B-KOOL III"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B08",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "expected_location": {
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "page": 41,
+        "section": "Automatic selector unit",
+        "table": "B-SELECT",
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B09",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "expected_location": {
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "page": null,
+        "section": "Technical Data",
+        "table": "BM series 40 bar",
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B09",
+      "file_id": "a286ab71-15a3-488d-9405-dba4a07e291f",
+      "expected_location": {
+        "file_id": "a286ab71-15a3-488d-9405-dba4a07e291f",
+        "filename": "0191-0025_bm-series-100_7acdece303-2f5ad06e14.md",
+        "page": null,
+        "section": "Technical Data",
+        "table": "BM series 100 bar",
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B10",
+      "file_id": "7eccb956-89db-4e65-a04c-05acc583b8b4",
+      "expected_location": {
+        "file_id": "7eccb956-89db-4e65-a04c-05acc583b8b4",
+        "filename": "0181-0015_b-detection-plus-i-und-s_7c1fd56ba6-f837abe7a0.md",
+        "page": null,
+        "section": "B-DETECTION PLUS i and s",
+        "table": null,
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B10",
+      "file_id": "07c90a45-f903-4edd-8e86-bec705c24113",
+      "expected_location": {
+        "file_id": "07c90a45-f903-4edd-8e86-bec705c24113",
+        "filename": "0182-0016_b-detection-plus-m_b749dac8cd-85146b9d04.md",
+        "page": null,
+        "section": "B-DETECTION PLUS m",
+        "table": null,
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B10",
+      "file_id": "eecfe0e5-ee45-43f8-95b5-28013f2068c2",
+      "expected_location": {
+        "file_id": "eecfe0e5-ee45-43f8-95b5-28013f2068c2",
+        "filename": "0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994.md",
+        "page": null,
+        "section": "B-DETECTION PLUS",
+        "table": null,
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B11",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "expected_location": {
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "page": null,
+        "section": "Technical data",
+        "table": "B-SAFE 300",
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B13",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "expected_location": {
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "page": null,
+        "section": "Certificate",
+        "table": null,
+        "row": "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B15",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "expected_location": {
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "page": null,
+        "section": "Certificate",
+        "table": null,
+        "row": "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B16",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "expected_location": {
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "page": null,
+        "section": "Technical Data",
+        "table": "BM series 40 bar – 50 Hz",
+        "row": "BM 6.1/40-11"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B17",
+      "file_id": "a286ab71-15a3-488d-9405-dba4a07e291f",
+      "expected_location": {
+        "file_id": "a286ab71-15a3-488d-9405-dba4a07e291f",
+        "filename": "0191-0025_bm-series-100_7acdece303-2f5ad06e14.md",
+        "page": null,
+        "section": "Technical Data",
+        "table": "BM series 100 bar – 50 Hz",
+        "row": "BM 6.1/100-15"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B18",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "expected_location": {
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "page": 23,
+        "section": "Technical Data – Air Cooled Compressor Units",
+        "table": "VERTICUS SERIES",
+        "row": "I 15.11-11-V",
+        "requires_footnotes": true
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B19",
+      "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+      "expected_location": {
+        "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+        "filename": "0187-0021_b-kool_c5e62182b0-d01c99958a.md",
+        "page": null,
+        "section": "Technical Data",
+        "table": "B-KOOL Refrigeration dryer",
+        "row": "B-KOOL III"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B20",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "expected_location": {
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "page": 41,
+        "section": "Automatic selector unit",
+        "table": "B-SELECT",
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B21",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "expected_location": {
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "page": null,
+        "section": "Technical data",
+        "table": "B-SAFE 300",
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B22",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "expected_location": {
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "page": null,
+        "section": "Certificate",
+        "table": null,
+        "row": "EN ISO 3834-2 Certificate"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B23",
+      "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+      "expected_location": {
+        "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+        "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+        "page": 1,
+        "section": "B-DETECTION Sensor calibration",
+        "table": null,
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B24",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "expected_location": {
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "page": 4,
+        "section": "Intake pre-filter",
+        "table": "Use / Order number",
+        "row": "N7698"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B25",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "expected_location": {
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "page": 11,
+        "section": "B-CLOUD",
+        "table": null,
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B29",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "expected_location": {
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "page": 20,
+        "section": "K 22 – K 28 Series",
+        "table": null,
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B30",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "expected_location": {
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "page": null,
+        "section": "Technical Data",
+        "table": "BM series 40 bar – 50 Hz",
+        "row": "BM 6.1/40-11"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "H01",
+      "file_id": "a286ab71-15a3-488d-9405-dba4a07e291f",
+      "expected_location": {
+        "file_id": "a286ab71-15a3-488d-9405-dba4a07e291f",
+        "filename": "0191-0025_bm-series-100_7acdece303-2f5ad06e14.md",
+        "page": null,
+        "section": "Technical Data",
+        "table": "BM series 100 bar – 50 Hz",
+        "row": "BM 10.1/100-18.5"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "H02",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "expected_location": {
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "page": 23,
+        "section": "Technical Data – Air Cooled Compressor Units",
+        "table": "K 22 SERIES, 1300 - 2300 l/min, 420 - 525 bar",
+        "row": "I 25.9-45",
+        "requires_footnotes": true
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "H03",
+      "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+      "expected_location": {
+        "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+        "filename": "0187-0021_b-kool_c5e62182b0-d01c99958a.md",
+        "page": null,
+        "section": "Technical Data",
+        "table": "B-KOOL Refrigeration dryer",
+        "row": "B-KOOL III"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "H04",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "expected_location": {
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "page": null,
+        "section": "B-SAFE ECO scope of delivery",
+        "table": null,
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "H05",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "expected_location": {
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "page": null,
+        "section": "Certificate",
+        "table": null,
+        "row": "EN ISO 3834-2 Certificate"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "H06",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "expected_location": {
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "page": 41,
+        "section": "Automatic selector unit",
+        "table": "B-SELECT",
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "H08",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "expected_location": {
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "page": null,
+        "section": "Technical data",
+        "table": "B-SAFE 300",
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "H09",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "expected_location": {
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "page": 42,
+        "section": "PRESSURE GAUGE SELECTION",
+        "table": "Pressure range",
+        "row": "N46378"
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "H10",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "expected_location": {
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "page": 15,
+        "section": "Helium and Argon Configuration",
+        "table": null,
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    }
+  ],
+  "gold_evidence_passed": 33,
+  "gold_evidence_total": 33,
+  "critical_failures": [],
+  "passed": true
+}

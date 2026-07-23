@@ -9,7 +9,9 @@ const {
   buildFileSearchContext,
   createBatchGroups,
   createBatchQueryBody,
+  createV2QueryBody,
   normalizeBatchResults,
+  selectFileSearchRoute,
 } = require('./fileSearchBatch');
 
 const fileSearchJsonSchema = {
@@ -95,15 +97,19 @@ const createFileSearchTool = async ({ userId, files, entity_id, fileCitations = 
       }
 
       const queryPromises = groups.map(async (group) => {
-        const body = createBatchQueryBody(group, query);
-        logger.debug(`[${Tools.file_search}] RAG API /query_multiple`, {
+        const route = selectFileSearchRoute(group.entity_id);
+        const path = route === 'v2' ? '/query_v2' : '/query_multiple';
+        const body =
+          route === 'v2' ? createV2QueryBody(group, query) : createBatchQueryBody(group, query);
+        logger.debug(`[${Tools.file_search}] RAG API ${path}`, {
+          retrievalRoute: route,
           fileCount: body.file_ids.length,
           entity_id: body.entity_id,
           k: body.k,
         });
 
         try {
-          return await axios.post(`${process.env.RAG_API_URL}/query_multiple`, body, {
+          return await axios.post(`${process.env.RAG_API_URL}${path}`, body, {
             headers: {
               Authorization: `Bearer ${jwtToken}`,
               'Content-Type': 'application/json',
@@ -114,7 +120,7 @@ const createFileSearchTool = async ({ userId, files, entity_id, fileCitations = 
             return { data: [] };
           }
           logAxiosError({
-            message: 'Error encountered in `file_search` while querying a file batch',
+            message: `Error encountered in \`file_search\` while querying ${path}`,
             error,
           });
           return null;
@@ -148,6 +154,14 @@ const createFileSearchTool = async ({ userId, files, entity_id, fileCitations = 
           (result, index) =>
             `File: ${result.filename}${
               fileCitations ? `\nAnchor: \\ue202turn0file${index} (${result.filename})` : ''
+            }${
+              result.route === 'v2'
+                ? `\nEvidence ID: [${result.citation_id}]` +
+                  `\nRetrieval: Bauer RAG V2 (${result.index_version})` +
+                  `\nSource type: ${result.source_type}` +
+                  (result.location ? `\nLocation: ${result.location}` : '') +
+                  (result.page ? `\nPage: ${result.page}` : '')
+                : '\nRetrieval: V1 semantic'
             }\nRelevance: ${(1.0 - result.distance).toFixed(4)}\nContent: ${result.content}\n`,
         )
         .join('\n---\n');
@@ -160,6 +174,25 @@ const createFileSearchTool = async ({ userId, files, entity_id, fileCitations = 
         relevance: 1.0 - result.distance,
         pages: result.page ? [result.page] : [],
         pageRelevance: result.page ? { [result.page]: 1.0 - result.distance } : {},
+        metadata: {
+          retrievalRoute: result.route,
+          indexVersion: result.index_version,
+          citationId: result.citation_id,
+          location: result.location,
+          sourceType: result.source_type,
+          channels: result.channels,
+          language: result.language,
+          publicationDate: result.publication_date,
+          certificates: result.certificates,
+          productFamilies: result.product_families,
+          media: result.media,
+          componentCategories: result.component_categories,
+          standards: result.standards,
+          tableHeaders: result.headers,
+          tableRowValues: result.row_values,
+          units: result.units,
+          footnotes: result.footnotes,
+        },
       }));
 
       return [formattedString, { [Tools.file_search]: { sources, fileCitations } }];
@@ -178,7 +211,7 @@ Use the EXACT anchor markers shown below (copy them verbatim) immediately after 
 - Multi-file: "Multiple sources confirm... \\ue200\\ue202turn0file0\\ue202turn0file1\\ue201"
 
 **CRITICAL:** Output these escape sequences EXACTLY as shown (e.g., \\ue202turn0file0). DO NOT substitute with other characters like † or similar symbols.
-**ALWAYS mention the filename in your text before the citation marker. NEVER use markdown links or footnotes.**`
+**ALWAYS mention the filename in your text before the citation marker. For Bauer RAG V2 results, also copy the adjacent [V2-N] Evidence ID so the exact passage remains auditable. NEVER use markdown links or footnotes.**`
           : ''
       }`,
       schema: fileSearchJsonSchema,
