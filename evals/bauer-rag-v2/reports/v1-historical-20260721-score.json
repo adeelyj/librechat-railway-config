@@ -1,0 +1,855 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-23T11:00:20.073159+00:00",
+  "source_runs": [
+    "D:\\02_Code\\LibreChat_Setup-rag-v2\\evals\\bauer-rag-v2\\raw-runs\\v1-historical-20260721\\run.json"
+  ],
+  "source_run_id": "v1-historical-20260721",
+  "source_run_kind": "end_to_end",
+  "gold_status": "provisional_requires_bauer_adjudication",
+  "retrieval": null,
+  "answers": {
+    "by_system": {
+      "v1": {
+        "observations": 14,
+        "exact_answer_accuracy": 0.0714,
+        "claim_level_correctness": 0.3333,
+        "grounded_claim_rate": 0.4444,
+        "citation_correctness": 1.0,
+        "citation_completeness": 1.0,
+        "source_type_discipline": 1.0,
+        "constraint_compliance": 0.8571,
+        "safe_refusal_accuracy": 0.0,
+        "fabrication_count": 22,
+        "hard_failure_count": 16,
+        "latency_p50_ms": 33180.0,
+        "latency_p95_ms": 298415.0
+      }
+    },
+    "category_exact_accuracy": {
+      "bilingual_consistency": {
+        "v1": 1.0
+      },
+      "combined_evidence": {
+        "v1": 0.0
+      },
+      "contradiction": {
+        "v1": 0.0
+      },
+      "exact_certificate": {
+        "v1": 0.0
+      },
+      "exact_pressure": {
+        "v1": 0.0
+      },
+      "exact_table": {
+        "v1": 0.0
+      },
+      "product_comparison": {
+        "v1": 0.0
+      },
+      "product_discovery": {
+        "v1": 0.0
+      },
+      "safe_no_match": {
+        "v1": 0.0
+      },
+      "safety_limit": {
+        "v1": 0.0
+      },
+      "structured_comparison": {
+        "v1": 0.0
+      },
+      "structured_drilldown": {
+        "v1": 0.0
+      },
+      "structured_part_search": {
+        "v1": 0.0
+      }
+    },
+    "observations": [
+      {
+        "case_id": "B14",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "no_match",
+            "passed": false,
+            "grounded": false
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": false,
+        "unsupported_identifiers": [],
+        "unsupported_numbers": [],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "required_safe_refusal_missing",
+              "severity": "high",
+              "message": "The gold case requires a qualified no-answer or safe refusal.",
+              "value": null
+            },
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": [
+          "incorrect_safe_refusal"
+        ]
+      },
+      {
+        "case_id": "B01",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "public_vs_synthetic",
+            "passed": true,
+            "grounded": true
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [
+          "4G/Wi-Fi",
+          "0243-0077_gib22-series-md_87728d914b-1649e22110_c0221e631a4f4790b14297327bc1f8c9.md"
+        ],
+        "unsupported_numbers": [
+          "320–500 l/min"
+        ],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "320–500 l/min"
+            },
+            {
+              "code": "unsupported_identifier",
+              "severity": "high",
+              "message": "Identifier is not present in retrieved evidence.",
+              "value": "4G/Wi-Fi"
+            },
+            {
+              "code": "unsupported_identifier",
+              "severity": "high",
+              "message": "Identifier is not present in retrieved evidence.",
+              "value": "0243-0077_gib22-series-md_87728d914b-1649e22110_c0221e631a4f4790b14297327bc1f8c9.md"
+            },
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": [
+          "fabricated_identifier",
+          "unsupported_high_severity_number"
+        ]
+      },
+      {
+        "case_id": "B02",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "top_project",
+            "passed": true,
+            "grounded": true
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [],
+        "unsupported_numbers": [],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "qualify",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "quotation_not_in_evidence",
+              "severity": "high",
+              "message": "Quoted text is not present in the retrieved evidence.",
+              "value": "BAUER high-pressure compressors are the solution of choice… for inerting, compressed air transport, or emergency valve actuation… with decades of experience… for demanding nitrogen and air applications."
+            },
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": []
+      },
+      {
+        "case_id": "B03",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "pressure_difference",
+            "passed": true,
+            "grounded": true
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [],
+        "unsupported_numbers": [
+          "5–40 °C",
+          "462 bar"
+        ],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "5–40 °C"
+            },
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "462 bar"
+            },
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": [
+          "unsupported_high_severity_number"
+        ]
+      },
+      {
+        "case_id": "B04",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "project_id",
+            "passed": true,
+            "grounded": true
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [
+          "SYN-P-CTL-N2-420-500",
+          "SYN-P-PUR-N2-420-500",
+          "SYN-P-SEN-N2-420-500",
+          "SYN-P-SEN-COMM-N2-500"
+        ],
+        "unsupported_numbers": [
+          "5–40 °C"
+        ],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "5–40 °C"
+            },
+            {
+              "code": "unsupported_identifier",
+              "severity": "high",
+              "message": "Identifier is not present in retrieved evidence.",
+              "value": "SYN-P-CTL-N2-420-500"
+            },
+            {
+              "code": "unsupported_identifier",
+              "severity": "high",
+              "message": "Identifier is not present in retrieved evidence.",
+              "value": "SYN-P-PUR-N2-420-500"
+            },
+            {
+              "code": "unsupported_identifier",
+              "severity": "high",
+              "message": "Identifier is not present in retrieved evidence.",
+              "value": "SYN-P-SEN-N2-420-500"
+            },
+            {
+              "code": "unsupported_identifier",
+              "severity": "high",
+              "message": "Identifier is not present in retrieved evidence.",
+              "value": "SYN-P-SEN-COMM-N2-500"
+            },
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": [
+          "fabricated_identifier",
+          "unsupported_high_severity_number"
+        ]
+      },
+      {
+        "case_id": "B05",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "part_id",
+            "passed": false,
+            "grounded": false
+          }
+        ],
+        "forbidden_claims_found": [
+          "SYN-P-SNS-PRES-IND"
+        ],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [
+          "SYN-P-SNS-PRES-IND"
+        ],
+        "unsupported_numbers": [
+          "500 bar"
+        ],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "500 bar"
+            },
+            {
+              "code": "unsupported_identifier",
+              "severity": "high",
+              "message": "Identifier is not present in retrieved evidence.",
+              "value": "SYN-P-SNS-PRES-IND"
+            },
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": [
+          "fabricated_identifier",
+          "unsupported_high_severity_number"
+        ]
+      },
+      {
+        "case_id": "B06",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "max_pressure",
+            "passed": false,
+            "grounded": false
+          },
+          {
+            "id": "pressure_qualification",
+            "passed": true,
+            "grounded": true
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [],
+        "unsupported_numbers": [
+          "90 – 350 bar",
+          "30–100 bar"
+        ],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "quotation_not_in_evidence",
+              "severity": "high",
+              "message": "Quoted text is not present in the retrieved evidence.",
+              "value": "90 – 350 bar/420 bar/550 bar"
+            },
+            {
+              "code": "quotation_not_in_evidence",
+              "severity": "high",
+              "message": "Quoted text is not present in the retrieved evidence.",
+              "value": "In an emergency, safety valves on the inter-stage separators and a final pressure safety valve automatically open to release the pressure build-up."
+            },
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "90 – 350 bar"
+            },
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "30–100 bar"
+            },
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": [
+          "unsupported_high_severity_number"
+        ]
+      },
+      {
+        "case_id": "B07",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "model",
+            "passed": false,
+            "grounded": false
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [
+          "15.11-11-V"
+        ],
+        "unsupported_numbers": [],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": true,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "unsupported_identifier",
+              "severity": "high",
+              "message": "Identifier is not present in retrieved evidence.",
+              "value": "15.11-11-V"
+            }
+          ]
+        },
+        "hard_failures": [
+          "fabricated_identifier"
+        ]
+      },
+      {
+        "case_id": "B08",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "dryer",
+            "passed": false,
+            "grounded": false
+          },
+          {
+            "id": "selector",
+            "passed": false,
+            "grounded": false
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [
+          "P61/P81"
+        ],
+        "unsupported_numbers": [
+          "500 bar"
+        ],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "500 bar"
+            },
+            {
+              "code": "unsupported_identifier",
+              "severity": "high",
+              "message": "Identifier is not present in retrieved evidence.",
+              "value": "P61/P81"
+            },
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": [
+          "fabricated_identifier",
+          "unsupported_high_severity_number"
+        ]
+      },
+      {
+        "case_id": "B09",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "bm40",
+            "passed": false,
+            "grounded": false
+          },
+          {
+            "id": "bm100",
+            "passed": false,
+            "grounded": false
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [
+          "BM family"
+        ],
+        "unsupported_numbers": [
+          "500–800 l/min",
+          "90 bar",
+          "10 bar",
+          "50 bar"
+        ],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "500–800 l/min"
+            },
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "90 bar"
+            },
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "10 bar"
+            },
+            {
+              "code": "unsupported_number",
+              "severity": "high",
+              "message": "Important number and unit are not present in retrieved evidence.",
+              "value": "50 bar"
+            },
+            {
+              "code": "unsupported_identifier",
+              "severity": "high",
+              "message": "Identifier is not present in retrieved evidence.",
+              "value": "BM family"
+            },
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": [
+          "fabricated_identifier",
+          "unsupported_high_severity_number"
+        ]
+      },
+      {
+        "case_id": "B10",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "source_reconciliation",
+            "passed": false,
+            "grounded": true
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": false,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [],
+        "unsupported_numbers": [],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "mandatory_constraint_missing",
+              "severity": "high",
+              "message": "Mandatory constraint 'application' is absent from the answer.",
+              "value": "stationary fire-brigade filling station"
+            }
+          ]
+        },
+        "hard_failures": [
+          "weakened_mandatory_constraint"
+        ]
+      },
+      {
+        "case_id": "B11",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "headline_limits",
+            "passed": false,
+            "grounded": false
+          },
+          {
+            "id": "conflict_qualification",
+            "passed": false,
+            "grounded": true
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": false,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [],
+        "unsupported_numbers": [],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "refuse",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "mandatory_constraint_missing",
+              "severity": "high",
+              "message": "Mandatory constraint 'pressure_bar' is absent from the answer.",
+              "value": "300"
+            },
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": [
+          "weakened_mandatory_constraint"
+        ]
+      },
+      {
+        "case_id": "B13",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": false,
+        "claim_results": [
+          {
+            "id": "certificate",
+            "passed": false,
+            "grounded": false
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [],
+        "unsupported_numbers": [],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "qualify",
+          "valid": false,
+          "safe_refusal_detected": true,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "quotation_not_in_evidence",
+              "severity": "high",
+              "message": "Quoted text is not present in the retrieved evidence.",
+              "value": "welding\" or"
+            }
+          ]
+        },
+        "hard_failures": []
+      },
+      {
+        "case_id": "B12",
+        "system": "v1",
+        "repetition": 1,
+        "exact_answer_passed": true,
+        "claim_results": [
+          {
+            "id": "bilingual_match",
+            "passed": true,
+            "grounded": true
+          }
+        ],
+        "forbidden_claims_found": [],
+        "incompatible_engineering_claims_found": [],
+        "citation_correct": true,
+        "citation_complete": true,
+        "source_type_passed": true,
+        "constraint_passed": true,
+        "safe_refusal_passed": true,
+        "unsupported_identifiers": [],
+        "unsupported_numbers": [],
+        "cross_knowledge_base_file_ids": [],
+        "validator": {
+          "status": "qualify",
+          "valid": false,
+          "safe_refusal_detected": false,
+          "citation_count": 0,
+          "violations": [
+            {
+              "code": "important_claim_without_citation",
+              "severity": "medium",
+              "message": "An important numerical or identifier claim has no V2 evidence citation.",
+              "value": null
+            }
+          ]
+        },
+        "hard_failures": []
+      }
+    ]
+  },
+  "promotion": {
+    "checks": {},
+    "all_available_checks_pass": false,
+    "gold_verified": false,
+    "promotion_allowed": false,
+    "blocking_reasons": [
+      "Gold is provisional and requires Bauer adjudication.",
+      "A combined retrieval and end-to-end report is required for promotion."
+    ]
+  }
+}
