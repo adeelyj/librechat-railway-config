@@ -1,0 +1,877 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1159.15,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "50a078af-39d0-4244-bc9d-b10e3671dcfc",
+      "filename": "0087-bauer_amfile_216-1d4691de14.md",
+      "title": "bauer_amfile_216",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "CERTIFICATE"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "EN ISO 3834-2"
+      ],
+      "content": "Document: bauer_amfile_216\n## Page 1\n\n_____________________\nHenrik Bohl\n\nCERTIFICATE\nTÜV SÜD-MUC-WD-3112378.2015.005\nManufacturer:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nPlant(s):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nThe above mentioned company fulfills the\ncomprehensive quality requirements for fusion\nwelding of metallic materials\naccording to\nEN ISO 3834-2\nContract:\n4243762\nValid until:\nDecember 15, 2026\nMunich, October 29, 2025",
+      "page": 1,
+      "section": [
+        "bauer amfile 216",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.68496487,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+      "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "Certificate",
+        "EN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE",
+        "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN",
+        "Zertifikat AD 2000-Merkblatt HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 9001",
+        "EN ISO 3834-2",
+        "EN 13445",
+        "EN 13480",
+        "AD 2000-Merkblatt HP 0",
+        "AD 2000-Information"
+      ],
+      "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\nonmental Management System – BAUER KOMPRESSOREN GmbH\n(586.94 kB)\nEN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(235.09 kB)\nEN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(231.71 kB)\nZertifikat AD 2000-Merkblatt HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(226.88 kB)\nCertificate AD 2000-Information Sheet HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(224.02 kB)\nISO 9001: Bauer Compresseurs S.A.S\nISO 9001 Zertifikat-BAUER-COMPRESSEURS DE\n(333.82 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS EN\n(328.99 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS FR\n(330.89 kB)\nISO 9001: BAUER COMPRESSORI S.R.L\nISO9001 Zertifikat-BAUER-COMPRESSORI DE\n(318.90 kB)\nISO9001 Certificate-BAUER-COMPRESSORI EN\n(315.87 kB)\nISO9001 Certificato-BAUER-COMPRESSORI IT\n(335.31 kB)\nISO 9001: BAUER COMPRESSORS Asia Pte. Ltd.\nISO 9001 Certficate BAUER COMPRESSORS Asia Pte. Ltd. EN\n(55.45 kB)\nISO 9001: BAUER KOMPRESSOREN Australia Pty. Ltd\nISO 9001 Certficate BAUER KOMPRESSOREN Australia Pty. Ltd. EN\n(77.19 kB)\nISO 9001: BAUER KOMPRESSOREN GCC FZE\nISO 9001 Certficate: BAUER KOMPRESSOREN GCC FZE EN\n(357.34 kB)\nISO 9001: BAUER KOMPRESSOREN Ges.m.b.H.\nISO9001-Zertifikat-BAUER-KOMPRESSOREN-Österreich DE\n(321.78 kB)",
+      "page": null,
+      "section": [
+        "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.62011521,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "1eaee366-55e5-401b-811b-cc08b17c67d3",
+      "filename": "0086-bauer_amfile_215-5855c13f42.md",
+      "title": "bauer_amfile_215",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "ZERTIFIKAT"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "EN ISO 3834-2"
+      ],
+      "content": "Document: bauer_amfile_215\n## Page 1\n\n_____________________\nHenrik Bohl\n\nZERTIFIKAT\nTÜV SÜD-MUC-WD-3112378.2015.005\nHersteller:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nFertigungsstätte(n):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nDer oben genannte Hersteller erfüllt die\numfassenden Qualitätsanforderungen für das\nSchmelzschweißen von metallischen Werkstoffen\nnach\nEN ISO 3834-2\nAuftragsnummer:\n4243762\ngültig bis:\n15. Dezember 2026\nMünchen, 29. Oktober 2025",
+      "page": 1,
+      "section": [
+        "bauer amfile 215",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.605625,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+      "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "Certificate",
+        "ISO 9001-Zertifikat: BAUER COMP Holding GmbH DE",
+        "ISO 9001 Certificate: BAUER COMP Holding GmbH EN",
+        "ISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 9001",
+        "ISO 14001:2015",
+        "EN ISO 3834-2",
+        "EN 13445",
+        "EN 13480",
+        "ISO 14001"
+      ],
+      "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nCertificate\nISO 9001: BAUER GROUP\nISO 9001-Zertifikat: BAUER COMP Holding GmbH DE\n(797.61 kB)\nISO 9001 Certificate: BAUER COMP Holding GmbH EN\n(771.39 kB)\nISO 9001, ISO 14001:2015, EN ISO 3834-2, EN 13445-4, EN 13480-4: BAUER KOMPRESSOREN GmbH\nISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE\n(329.27 kB)\nISO9001 Certificate-BAUER-KOMPRESSOREN-Werk-I EN\n(325.80 kB)\nISO9001_Zertifikat-BAUER-Stäbli DE\n(319.85 kB)\nISO9001 Certificate-BAUER-Stäbli EN\n(316.54 kB)\nISO 14001:2015 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH\n(586.94 kB)\nEN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(235.09 kB)",
+      "page": null,
+      "section": [
+        "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.58031746,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "ec97b52a-f336-47dd-93fb-5b88c53463f4",
+      "filename": "0008-2016-02_B-NEWS_EN_sc-af0bb80789.md",
+      "title": "2016-02_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2016-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2016-02_B-NEWS_EN_sc\nGerman compa­\nnies have setup base here.\nBAUER India’s new facility consisting\nof large office spaces & manufacturing\nfacility is located in one of the oldest &\nmost developed industrial zone of\nMIDC-Bhosari.\nThe facility has empowered BAUER\nIndia to build & test specialised equip­\nment like mobile / stationary containa­\nrised compression solutions for their\nmarket e.g. CNG and provide global en­\ngineering & IT services within the\nGROUP.\nBKI has grown from two persons in\n2008 to 30 permanent staff today with\nplans of adding another 20 more this\nyear. The previous premises had beco­\nme too small, and to accommodate the\ngrowing needs for more engineering, IT\n(SAP) and manufacturing capability, we\nbuilt this new premise more than a year\nago and it was completed at the end of\n2015.\nIt was finally officiated by Philipp\n­Bayat, BAUER GROUP’s Chairman of\nthe Executive Board and Stefan\nHacker, ­Managing Director of BAUER\nKOMPRESSOREN Munich this year.\n7\nISSUE 2/2016\nPUBLISHING CREDITS\nPublished by\nBAUER KOMPRESSOREN GmbH\nStäblistr. 8\n81477 München\nwww.bauer-kompressoren.de\nEditorial Team\nAnnette Adam, Ralf Deichelmann\nTexts\nRalf Deichelmann, Richard Schmidt,\nBAUER India, BAUER Asia\nLayout\nAnnette Adam\nPhotos\nPage 1, 2: fotolia, L’Aquarium Barcelona\nPage 2, 3: \u0007BAUER KOMPRESSOREN Archive,\nBAUER KOMPRESSOREN India\nPage 4, 5: \u0007BAUER KOMPRESSOREN,\nBAUER COMPRESSORS Asia",
+      "page": 7,
+      "section": [
+        "2016-02 B-NEWS EN sc",
+        "Page 7"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.48877847,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "98ae4492-ec4e-4014-b665-e0b2dbb3a98e",
+      "filename": "0007-2016-02_B-NEWS_DE_sc-deb24daba4.md",
+      "title": "2016-02_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2016-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2016-02_B-NEWS_DE_sc\nemlösungen für\nden lokalen Markt gewonnen. Zum Bei­\nspiel von mobilen Anlagen und stationä­\nren Containersystemen im Bereich\nCNG. Daneben entwickelt BAUER India\nglobale Engineering- und IT-Lösungen\nfür den Einsatz in der GROUP.\nIMPRESSUM\nHerausgeber\nBAUER KOMPRESSOREN GmbH\nStäblistr. 8\n81477 München\nwww.bauer-kompressoren.de\nRedaktion\nAnnette Adam, Ralf Deichelmann\nTexte\nRalf Deichelmann, Richard Schmidt,\nBAUER India, BAUER Asia\nLayout\nAnnette Adam\nFotos\nSeite 1, 2: fotolia, „L’Aquàrium“ Barcelona\nSeite 2, 3: \u0007BAUER KOMPRESSOREN Archiv,\nBAUER KOMPRESSOREN India\nSeite 4, 5: \u0007BAUER KOMPRESSOREN,\nBAUER COMPRESSORS Asia\nSeite 6, 7: Richard Schmidt, BAUER India\nAnand Pradhan (Managing Director BAUER KOMPRESSOREN India) und sein Team feiern mit\nPhilipp Bayat (Vorsitzender der Geschäftsführung BAUER GROUP) und Stefan Hacker (Geschäftsführer\nBAUER KOMPRESSOREN) die Eröffnung des neuen Firmensitzes in Pune.",
+      "page": 7,
+      "section": [
+        "2016-02 B-NEWS DE sc",
+        "Page 7"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.37113445,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "5608c03c-c66b-4cfa-a827-7112a44d4884",
+      "filename": "0051-2025-01_B-NEWS_EN_sc-49f4f8d5c7.md",
+      "title": "2025-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2025-01-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2025-01_B-NEWS_EN_sc\n## Page 6\n\n6\nThe TUfast Racing Team from the\nTechnical University of Munich (TUM)\ncan proudly point to an outstanding\nseason in the Formula Student\nengineering design competition.\nDeploying autonomous racing cars\nand driver-controlled vehicles in\nparallel, the students achieved a\nstring of top results in the internatio­\nnal arena. An early highlight was the\nrace in Barcelona, held at the Circuit\nde Barcelona-Catalunya F1 track,\nwhere the team scooped several top\npodium places. TUfast came top in\nthe overall ranking in both the\n“Driverless” and the conventional\n“Driver” categories. This extraordi­\nnary double success has further\nenhanced the team’s status on the\nEuropean Formula Student scene.\n\nMost impressive of all were the\nteam’s consistently stellar performan-\nce in the “Driverless” categories,\nwhere TUfast competed in almost\nevery event and notched up strong\nresults throughout. A major role in\nthese successes was played by the\nreliable supply of clean compressed\nair to the hydraulic brake systems.\nWhen a previously installed filling\nBAUER KOMPRESSOREN\nTUfast Racing Team is a winner –\nwith BAUER’s help\nTension mounts! The vehicle leaves the pit for a technical\ncheck before hitting the track.",
+      "page": 6,
+      "section": [
+        "2025-01 B-NEWS EN sc",
+        "Page 6"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.2923499,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "15a18734-c8ea-474e-aebd-6ccb54ae08e1",
+      "filename": "0162-zubehoer_fuellventile_en-0fdb67669b.md",
+      "title": "zubehoer_fuellventile_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: zubehoer_fuellventile_en\n## Page 4\n\nBAUER KOMPRESSOREN GmbH Systemwerk, D-81452 München, Postfach 71 02 60,\nTel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de\nwww.bauer-kompressoren.de\nCONTACT FORM\nPLEASE INFORM US ABOUT THE FOLLOWING SERVICES\nPERSON TO CONTACT\nMr / Mrs / Ms:\n\nPhone:\n\nFax:\nYOUR ADDRESS\nCompany:\n\nStreet:\n\nZip Code, Town:\nPlease send the completed form by mail or fax to the a.m. agent. Our Service-Team will answer your request\nand will contact you as soon as possible.",
+      "page": 4,
+      "section": [
+        "zubehoer fuellventile en",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.25425059,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "bdcceaab-ae2e-43e6-88c4-4326b08a1f14",
+      "filename": "0015-2017-02_B-NEWS_DE_sc-0e547d6a87.md",
+      "title": "2017-02_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2017-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2017-02_B-NEWS_DE_sc\nreier\nSeite 4: Daniel Gautschi\nSeite 5: Martin Bolle\nSeite 6: BAUER KOMPRESSOREN CHINA\nSeite 7: Olav Weidemann\nBiomethanstation für Frankreich bei der Verladung\nMarkus Kraus präsentiert stolz sein über BENZ\nCAD-CAM hergestelltes Bauteil.",
+      "page": 7,
+      "section": [
+        "2017-02 B-NEWS DE sc",
+        "Page 7"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.25327731,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "601eca9f-6555-4db5-9355-f5c7efce18db",
+      "filename": "0176-0010_b-cloud-download-en_c298b57535-d18feef8f7.md",
+      "title": "B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nBAUER B-CLOUD\nB-CLOUD – Remote-Überwachung & Support Ihrer BAUER Anlagen\n(610.81 kB)\nB-CLOUD – Remote monitoring & support for your BAUER systems\n(601.59 kB)\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches\nBAUER factories\nBAUER Holding\nTitle 4\nDealer locator\nJobs & careers\nNews & events\nContact\nCopyright © 2026 BAUER COMP Holding GmbH. All rights reserved.\nBAUER COMP Holding GmbH, Wolfratshauser Strasse 80, 81379 Munich, Germany\nTerms and conditions\n|\nPrivacy\n|\nCookie settings\n|",
+      "page": null,
+      "section": [
+        "B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.25,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07-r2",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "50a078af-39d0-4244-bc9d-b10e3671dcfc",
+        "filename": "0087-bauer_amfile_216-1d4691de14.md",
+        "title": "bauer_amfile_216",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "CERTIFICATE"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "EN ISO 3834-2"
+        ],
+        "content": "Document: bauer_amfile_216\n## Page 1\n\n_____________________\nHenrik Bohl\n\nCERTIFICATE\nTÜV SÜD-MUC-WD-3112378.2015.005\nManufacturer:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nPlant(s):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nThe above mentioned company fulfills the\ncomprehensive quality requirements for fusion\nwelding of metallic materials\naccording to\nEN ISO 3834-2\nContract:\n4243762\nValid until:\nDecember 15, 2026\nMunich, October 29, 2025",
+        "page": 1,
+        "section": [
+          "bauer amfile 216",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.68496487,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "Certificate",
+          "EN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE",
+          "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN",
+          "Zertifikat AD 2000-Merkblatt HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 9001",
+          "EN ISO 3834-2",
+          "EN 13445",
+          "EN 13480",
+          "AD 2000-Merkblatt HP 0",
+          "AD 2000-Information"
+        ],
+        "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\nonmental Management System – BAUER KOMPRESSOREN GmbH\n(586.94 kB)\nEN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(235.09 kB)\nEN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(231.71 kB)\nZertifikat AD 2000-Merkblatt HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(226.88 kB)\nCertificate AD 2000-Information Sheet HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(224.02 kB)\nISO 9001: Bauer Compresseurs S.A.S\nISO 9001 Zertifikat-BAUER-COMPRESSEURS DE\n(333.82 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS EN\n(328.99 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS FR\n(330.89 kB)\nISO 9001: BAUER COMPRESSORI S.R.L\nISO9001 Zertifikat-BAUER-COMPRESSORI DE\n(318.90 kB)\nISO9001 Certificate-BAUER-COMPRESSORI EN\n(315.87 kB)\nISO9001 Certificato-BAUER-COMPRESSORI IT\n(335.31 kB)\nISO 9001: BAUER COMPRESSORS Asia Pte. Ltd.\nISO 9001 Certficate BAUER COMPRESSORS Asia Pte. Ltd. EN\n(55.45 kB)\nISO 9001: BAUER KOMPRESSOREN Australia Pty. Ltd\nISO 9001 Certficate BAUER KOMPRESSOREN Australia Pty. Ltd. EN\n(77.19 kB)\nISO 9001: BAUER KOMPRESSOREN GCC FZE\nISO 9001 Certficate: BAUER KOMPRESSOREN GCC FZE EN\n(357.34 kB)\nISO 9001: BAUER KOMPRESSOREN Ges.m.b.H.\nISO9001-Zertifikat-BAUER-KOMPRESSOREN-Österreich DE\n(321.78 kB)",
+        "page": null,
+        "section": [
+          "Download Certificates from BAUER KOMPRESSOREN Easily",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.62011521,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "1eaee366-55e5-401b-811b-cc08b17c67d3",
+        "filename": "0086-bauer_amfile_215-5855c13f42.md",
+        "title": "bauer_amfile_215",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "ZERTIFIKAT"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "EN ISO 3834-2"
+        ],
+        "content": "Document: bauer_amfile_215\n## Page 1\n\n_____________________\nHenrik Bohl\n\nZERTIFIKAT\nTÜV SÜD-MUC-WD-3112378.2015.005\nHersteller:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nFertigungsstätte(n):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nDer oben genannte Hersteller erfüllt die\numfassenden Qualitätsanforderungen für das\nSchmelzschweißen von metallischen Werkstoffen\nnach\nEN ISO 3834-2\nAuftragsnummer:\n4243762\ngültig bis:\n15. Dezember 2026\nMünchen, 29. Oktober 2025",
+        "page": 1,
+        "section": [
+          "bauer amfile 215",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.605625,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "Certificate",
+          "ISO 9001-Zertifikat: BAUER COMP Holding GmbH DE",
+          "ISO 9001 Certificate: BAUER COMP Holding GmbH EN",
+          "ISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 9001",
+          "ISO 14001:2015",
+          "EN ISO 3834-2",
+          "EN 13445",
+          "EN 13480",
+          "ISO 14001"
+        ],
+        "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nCertificate\nISO 9001: BAUER GROUP\nISO 9001-Zertifikat: BAUER COMP Holding GmbH DE\n(797.61 kB)\nISO 9001 Certificate: BAUER COMP Holding GmbH EN\n(771.39 kB)\nISO 9001, ISO 14001:2015, EN ISO 3834-2, EN 13445-4, EN 13480-4: BAUER KOMPRESSOREN GmbH\nISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE\n(329.27 kB)\nISO9001 Certificate-BAUER-KOMPRESSOREN-Werk-I EN\n(325.80 kB)\nISO9001_Zertifikat-BAUER-Stäbli DE\n(319.85 kB)\nISO9001 Certificate-BAUER-Stäbli EN\n(316.54 kB)\nISO 14001:2015 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH\n(586.94 kB)\nEN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(235.09 kB)",
+        "page": null,
+        "section": [
+          "Download Certificates from BAUER KOMPRESSOREN Easily",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.58031746,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "ec97b52a-f336-47dd-93fb-5b88c53463f4",
+        "filename": "0008-2016-02_B-NEWS_EN_sc-af0bb80789.md",
+        "title": "2016-02_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2016-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2016-02_B-NEWS_EN_sc\nGerman compa­\nnies have setup base here.\nBAUER India’s new facility consisting\nof large office spaces & manufacturing\nfacility is located in one of the oldest &\nmost developed industrial zone of\nMIDC-Bhosari.\nThe facility has empowered BAUER\nIndia to build & test specialised equip­\nment like mobile / stationary containa­\nrised compression solutions for their\nmarket e.g. CNG and provide global en­\ngineering & IT services within the\nGROUP.\nBKI has grown from two persons in\n2008 to 30 permanent staff today with\nplans of adding another 20 more this\nyear. The previous premises had beco­\nme too small, and to accommodate the\ngrowing needs for more engineering, IT\n(SAP) and manufacturing capability, we\nbuilt this new premise more than a year\nago and it was completed at the end of\n2015.\nIt was finally officiated by Philipp\n­Bayat, BAUER GROUP’s Chairman of\nthe Executive Board and Stefan\nHacker, ­Managing Director of BAUER\nKOMPRESSOREN Munich this year.\n7\nISSUE 2/2016\nPUBLISHING CREDITS\nPublished by\nBAUER KOMPRESSOREN GmbH\nStäblistr. 8\n81477 München\nwww.bauer-kompressoren.de\nEditorial Team\nAnnette Adam, Ralf Deichelmann\nTexts\nRalf Deichelmann, Richard Schmidt,\nBAUER India, BAUER Asia\nLayout\nAnnette Adam\nPhotos\nPage 1, 2: fotolia, L’Aquarium Barcelona\nPage 2, 3: \u0007BAUER KOMPRESSOREN Archive,\nBAUER KOMPRESSOREN India\nPage 4, 5: \u0007BAUER KOMPRESSOREN,\nBAUER COMPRESSORS Asia",
+        "page": 7,
+        "section": [
+          "2016-02 B-NEWS EN sc",
+          "Page 7"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.48877847,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "98ae4492-ec4e-4014-b665-e0b2dbb3a98e",
+        "filename": "0007-2016-02_B-NEWS_DE_sc-deb24daba4.md",
+        "title": "2016-02_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2016-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2016-02_B-NEWS_DE_sc\nemlösungen für\nden lokalen Markt gewonnen. Zum Bei­\nspiel von mobilen Anlagen und stationä­\nren Containersystemen im Bereich\nCNG. Daneben entwickelt BAUER India\nglobale Engineering- und IT-Lösungen\nfür den Einsatz in der GROUP.\nIMPRESSUM\nHerausgeber\nBAUER KOMPRESSOREN GmbH\nStäblistr. 8\n81477 München\nwww.bauer-kompressoren.de\nRedaktion\nAnnette Adam, Ralf Deichelmann\nTexte\nRalf Deichelmann, Richard Schmidt,\nBAUER India, BAUER Asia\nLayout\nAnnette Adam\nFotos\nSeite 1, 2: fotolia, „L’Aquàrium“ Barcelona\nSeite 2, 3: \u0007BAUER KOMPRESSOREN Archiv,\nBAUER KOMPRESSOREN India\nSeite 4, 5: \u0007BAUER KOMPRESSOREN,\nBAUER COMPRESSORS Asia\nSeite 6, 7: Richard Schmidt, BAUER India\nAnand Pradhan (Managing Director BAUER KOMPRESSOREN India) und sein Team feiern mit\nPhilipp Bayat (Vorsitzender der Geschäftsführung BAUER GROUP) und Stefan Hacker (Geschäftsführer\nBAUER KOMPRESSOREN) die Eröffnung des neuen Firmensitzes in Pune.",
+        "page": 7,
+        "section": [
+          "2016-02 B-NEWS DE sc",
+          "Page 7"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.37113445,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "5608c03c-c66b-4cfa-a827-7112a44d4884",
+        "filename": "0051-2025-01_B-NEWS_EN_sc-49f4f8d5c7.md",
+        "title": "2025-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2025-01-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2025-01_B-NEWS_EN_sc\n## Page 6\n\n6\nThe TUfast Racing Team from the\nTechnical University of Munich (TUM)\ncan proudly point to an outstanding\nseason in the Formula Student\nengineering design competition.\nDeploying autonomous racing cars\nand driver-controlled vehicles in\nparallel, the students achieved a\nstring of top results in the internatio­\nnal arena. An early highlight was the\nrace in Barcelona, held at the Circuit\nde Barcelona-Catalunya F1 track,\nwhere the team scooped several top\npodium places. TUfast came top in\nthe overall ranking in both the\n“Driverless” and the conventional\n“Driver” categories. This extraordi­\nnary double success has further\nenhanced the team’s status on the\nEuropean Formula Student scene.\n\nMost impressive of all were the\nteam’s consistently stellar performan-\nce in the “Driverless” categories,\nwhere TUfast competed in almost\nevery event and notched up strong\nresults throughout. A major role in\nthese successes was played by the\nreliable supply of clean compressed\nair to the hydraulic brake systems.\nWhen a previously installed filling\nBAUER KOMPRESSOREN\nTUfast Racing Team is a winner –\nwith BAUER’s help\nTension mounts! The vehicle leaves the pit for a technical\ncheck before hitting the track.",
+        "page": 6,
+        "section": [
+          "2025-01 B-NEWS EN sc",
+          "Page 6"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.2923499,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "15a18734-c8ea-474e-aebd-6ccb54ae08e1",
+        "filename": "0162-zubehoer_fuellventile_en-0fdb67669b.md",
+        "title": "zubehoer_fuellventile_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: zubehoer_fuellventile_en\n## Page 4\n\nBAUER KOMPRESSOREN GmbH Systemwerk, D-81452 München, Postfach 71 02 60,\nTel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de\nwww.bauer-kompressoren.de\nCONTACT FORM\nPLEASE INFORM US ABOUT THE FOLLOWING SERVICES\nPERSON TO CONTACT\nMr / Mrs / Ms:\n\nPhone:\n\nFax:\nYOUR ADDRESS\nCompany:\n\nStreet:\n\nZip Code, Town:\nPlease send the completed form by mail or fax to the a.m. agent. Our Service-Team will answer your request\nand will contact you as soon as possible.",
+        "page": 4,
+        "section": [
+          "zubehoer fuellventile en",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.25425059,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "bdcceaab-ae2e-43e6-88c4-4326b08a1f14",
+        "filename": "0015-2017-02_B-NEWS_DE_sc-0e547d6a87.md",
+        "title": "2017-02_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2017-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2017-02_B-NEWS_DE_sc\nreier\nSeite 4: Daniel Gautschi\nSeite 5: Martin Bolle\nSeite 6: BAUER KOMPRESSOREN CHINA\nSeite 7: Olav Weidemann\nBiomethanstation für Frankreich bei der Verladung\nMarkus Kraus präsentiert stolz sein über BENZ\nCAD-CAM hergestelltes Bauteil.",
+        "page": 7,
+        "section": [
+          "2017-02 B-NEWS DE sc",
+          "Page 7"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.25327731,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "601eca9f-6555-4db5-9355-f5c7efce18db",
+        "filename": "0176-0010_b-cloud-download-en_c298b57535-d18feef8f7.md",
+        "title": "B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nBAUER B-CLOUD\nB-CLOUD – Remote-Überwachung & Support Ihrer BAUER Anlagen\n(610.81 kB)\nB-CLOUD – Remote monitoring & support for your BAUER systems\n(601.59 kB)\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches\nBAUER factories\nBAUER Holding\nTitle 4\nDealer locator\nJobs & careers\nNews & events\nContact\nCopyright © 2026 BAUER COMP Holding GmbH. All rights reserved.\nBAUER COMP Holding GmbH, Wolfratshauser Strasse 80, 81379 Munich, Germany\nTerms and conditions\n|\nPrivacy\n|\nCookie settings\n|",
+        "page": null,
+        "section": [
+          "B-CLOuD Download: Access BAUER KOMPRESSOREN Software Now",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.25,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "standards": [
+          "en iso 3834 2"
+        ],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false,
+        "citation_intent": true
+      },
+      "channel_counts": {
+        "exact": 9,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 0,
+      "elapsed_ms": 852.62
+    }
+  },
+  "completed_at": "2026-07-23T19:46:44.646878+00:00",
+  "case_id": "B15",
+  "split": "development",
+  "category": "exact_certificate",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

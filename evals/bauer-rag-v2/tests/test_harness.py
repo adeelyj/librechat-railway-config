@@ -172,6 +172,34 @@ class EvaluationHarnessTests(unittest.TestCase):
         report = score.retrieval_metrics(observations, gold, {"gold"})
         self.assertEqual(report["observations"][0]["table_integrity"], 1)
 
+    def test_prose_row_locator_is_not_scored_as_a_structured_table(self):
+        observations = [
+            {
+                "case_id": "X",
+                "system": "v2",
+                "repetition": 1,
+                "elapsed_ms": 10,
+                "results": [
+                    {
+                        "file_id": "gold",
+                        "content": "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN",
+                    }
+                ],
+            }
+        ]
+        gold = {
+            "X": {
+                "required_evidence": [
+                    {
+                        "file_id": "gold",
+                        "row": "EN ISO 3834-2 Certificate",
+                    }
+                ]
+            }
+        }
+        report = score.retrieval_metrics(observations, gold, {"gold"})
+        self.assertIsNone(report["observations"][0]["table_integrity"])
+
     def test_answer_metrics_detect_unsupported_identifier_and_number(self):
         observations = [
             {

@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-23T19:52:25.069731+00:00",
+  "source_run": "D:\\02_Code\\LibreChat_Setup-rag-v2\\evals\\bauer-rag-v2\\raw-runs\\retrieval-smoke-20260723-05\\run.json",
+  "source_run_id": "retrieval-smoke-20260723-05",
+  "candidate_source_commit": "bf3c3cb0a96f054ad064824623baf25b4785005b",
+  "benchmark_code_commit": null,
+  "split": "development",
+  "candidate_set": "frozen_v2_top_10",
+  "model": "gpustack/bge-reranker-v2-m3-GGUF:Q5_0",
+  "model_artifact": "gpustack/bge-reranker-v2-m3-GGUF:bge-reranker-v2-m3-Q5_0.gguf",
+  "model_sha256": "e232e93920b96cb144370deac915e00b8f2377ced7c40ee3ac7f6881a0f9f987",
+  "endpoint_recorded_without_credentials": "http://127.0.0.1:18104/v1/rerank",
+  "deterministic_fallback": {
+    "observations": 20,
+    "recall_at_1": 0.5417,
+    "recall_at_3": 0.7667,
+    "recall_at_5": 0.8167,
+    "recall_at_10": 0.8333,
+    "mean_reciprocal_rank": 0.69,
+    "exact_metadata_success": 0.8889
+  },
+  "cross_encoder": {
+    "observations": 20,
+    "recall_at_1": 0.4917,
+    "recall_at_3": 0.7667,
+    "recall_at_5": 0.8167,
+    "recall_at_10": 0.8333,
+    "mean_reciprocal_rank": 0.6592,
+    "exact_metadata_success": 0.6667
+  },
+  "cross_encoder_latency_ms": {
+    "p50": 333.09,
+    "p95": 415.24
+  },
+  "cross_encoder_regression_case_ids": [
+    "B06",
+    "B08",
+    "B10",
+    "B15",
+    "B17",
+    "B29"
+  ],
+  "recommendation": "retain_deterministic_fallback",
+  "observations": [
+    {
+      "case_id": "B06",
+      "category": "exact_pressure",
+      "repetition": 1,
+      "deterministic_ranks": [
+        null,
+        null,
+        10
+      ],
+      "cross_encoder_ranks": [
+        null,
+        null,
+        10
+      ],
+      "rerank_elapsed_ms": 395.68
+    },
+    {
+      "case_id": "B07",
+      "category": "exact_table",
+      "repetition": 1,
+      "deterministic_ranks": [
+        3
+      ],
+      "cross_encoder_ranks": [
+        3
+      ],
+      "rerank_elapsed_ms": 265.46
+    },
+    {
+      "case_id": "B08",
+      "category": "product_discovery",
+      "repetition": 1,
+      "deterministic_ranks": [
+        null,
+        null
+      ],
+      "cross_encoder_ranks": [
+        null,
+        null
+      ],
+      "rerank_elapsed_ms": 372.81
+    },
+    {
+      "case_id": "B09",
+      "category": "product_comparison",
+      "repetition": 1,
+      "deterministic_ranks": [
+        3,
+        1
+      ],
+      "cross_encoder_ranks": [
+        3,
+        1
+      ],
+      "rerank_elapsed_ms": 269.85
+    },
+    {
+      "case_id": "B10",
+      "category": "contradiction",
+      "repetition": 1,
+      "deterministic_ranks": [
+        null,
+        null,
+        1
+      ],
+      "cross_encoder_ranks": [
+        null,
+        null,
+        1
+      ],
+      "rerank_elapsed_ms": 386.95
+    },
+    {
+      "case_id": "B11",
+      "category": "safety_limit",
+      "repetition": 1,
+      "deterministic_ranks": [
+        3
+      ],
+      "cross_encoder_ranks": [
+        3
+      ],
+      "rerank_elapsed_ms": 446.27
+    },
+    {
+      "case_id": "B13",
+      "category": "exact_certificate",
+      "repetition": 1,
+      "deterministic_ranks": [
+        1
+      ],
+      "cross_encoder_ranks": [
+        1
+      ],
+      "rerank_elapsed_ms": 324.89
+    },
+    {
+      "case_id": "B15",
+      "category": "exact_certificate",
+      "repetition": 1,
+      "deterministic_ranks": [
+        1
+      ],
+      "cross_encoder_ranks": [
+        2
+      ],
+      "rerank_elapsed_ms": 345.0
+    },
+    {
+      "case_id": "B16",
+      "category": "exact_table",
+      "repetition": 1,
+      "deterministic_ranks": [
+        1
+      ],
+      "cross_encoder_ranks": [
+        1
+      ],
+      "rerank_elapsed_ms": 181.18
+    },
+    {
+      "case_id": "B17",
+      "category": "exact_table",
+      "repetition": 1,
+      "deterministic_ranks": [
+        1
+      ],
+      "cross_encoder_ranks": [
+        3
+      ],
+      "rerank_elapsed_ms": 157.62
+    },
+    {
+      "case_id": "B18",
+      "category": "exact_table_ambiguity",
+      "repetition": 1,
+      "deterministic_ranks": [
+        1
+      ],
+      "cross_encoder_ranks": [
+        1
+      ],
+      "rerank_elapsed_ms": 197.69
+    },
+    {
+      "case_id": "B19",
+      "category": "exact_product_limit",
+      "repetition": 1,
+      "deterministic_ranks": [
+        3
+      ],
+      "cross_encoder_ranks": [
+        3
+      ],
+      "rerank_elapsed_ms": 333.09
+    },
+    {
+      "case_id": "B20",
+      "category": "exact_product_limit",
+      "repetition": 1,
+      "deterministic_ranks": [
+        1
+      ],
+      "cross_encoder_ranks": [
+        1
+      ],
+      "rerank_elapsed_ms": 345.74
+    },
+    {
+      "case_id": "B21",
+      "category": "contradiction",
+      "repetition": 1,
+      "deterministic_ranks": [
+        2
+      ],
+      "cross_encoder_ranks": [
+        1
+      ],
+      "rerank_elapsed_ms": 415.24
+    },
+    {
+      "case_id": "B22",
+      "category": "bilingual_exact",
+      "repetition": 1,
+      "deterministic_ranks": [
+        1
+      ],
+      "cross_encoder_ranks": [
+        1
+      ],
+      "rerank_elapsed_ms": 382.01
+    },
+    {
+      "case_id": "B23",
+      "category": "exact_document_number",
+      "repetition": 1,
+      "deterministic_ranks": [
+        1
+      ],
+      "cross_encoder_ranks": [
+        1
+      ],
+      "rerank_elapsed_ms": 190.11
+    },
+    {
+      "case_id": "B24",
+      "category": "exact_part_number",
+      "repetition": 1,
+      "deterministic_ranks": [
+        1
+      ],
+      "cross_encoder_ranks": [
+        1
+      ],
+      "rerank_elapsed_ms": 106.13
+    },
+    {
+      "case_id": "B25",
+      "category": "semantic_product",
+      "repetition": 1,
+      "deterministic_ranks": [
+        5
+      ],
+      "cross_encoder_ranks": [
+        4
+      ],
+      "rerank_elapsed_ms": 320.41
+    },
+    {
+      "case_id": "B29",
+      "category": "exact_pressure",
+      "repetition": 1,
+      "deterministic_ranks": [
+        null
+      ],
+      "cross_encoder_ranks": [
+        null
+      ],
+      "rerank_elapsed_ms": 348.14
+    },
+    {
+      "case_id": "B30",
+      "category": "bilingual_table",
+      "repetition": 1,
+      "deterministic_ranks": [
+        1
+      ],
+      "cross_encoder_ranks": [
+        1
+      ],
+      "rerank_elapsed_ms": 83.12
+    }
+  ]
+}

@@ -111,13 +111,26 @@ DOCUMENT_LOOKUP_RE = re.compile(
     re.IGNORECASE,
 )
 PRESSURE_EXTREMUM_RE = re.compile(
-    r"\b(?:highest|maximum|maximal(?:e[nrms]?)?|h(?:ö|oe)chste[nrms]?)\b"
-    r".{0,80}\b(?:operating pressure|working pressure|pressure|betriebsdruck|druck)\b",
+    r"\b(?:highest|greatest|h(?:ö|oe)chste[nrms]?)\b"
+    r".{0,120}\b(?:operating pressure|working pressure|pressure|betriebsdruck|druck)\b",
     re.IGNORECASE | re.DOTALL,
 )
 CITATION_INTENT_RE = re.compile(
     r"\b(?:cite|citation|source(?:\s+page|\s+section)?|exact\s+(?:page|section)|"
     r"beleg|quelle|quellenangabe|seite|abschnitt)\b",
+    re.IGNORECASE,
+)
+EXCLUSION_CLAUSE_RE = re.compile(
+    r"\b(?:do\s+not\s+(?:substitute|replace)|"
+    r"exclude|excluding|"
+    r"ersetze\b.{0,40}\bnicht\b|"
+    r"nicht\s+durch)\b",
+    re.IGNORECASE | re.DOTALL,
+)
+ENGLISH_INTENT_RE = re.compile(r"\b(?:english|englisch\w*)\b", re.IGNORECASE)
+GERMAN_INTENT_RE = re.compile(r"\b(?:german|deutsch\w*)\b", re.IGNORECASE)
+CERTIFICATE_INTENT_RE = re.compile(
+    r"\b(?:certificate|certification|zertifikat\w*)\b",
     re.IGNORECASE,
 )
 
@@ -223,8 +236,13 @@ def analyze_query(query: str) -> QueryAnalysis:
     identifiers = tuple(
         dict.fromkeys(normalize_for_search(match.group(0)) for match in IDENTIFIER_RE.finditer(query))
     )
+    exclusion_clause = EXCLUSION_CLAUSE_RE.search(query)
+    positive_query = query[: exclusion_clause.start()] if exclusion_clause else query
     standards = tuple(
-        dict.fromkeys(normalize_for_search(match.group(0)) for match in STANDARD_RE.finditer(query))
+        dict.fromkeys(
+            normalize_for_search(match.group(0))
+            for match in STANDARD_RE.finditer(positive_query)
+        )
     )
     number_units = tuple(
         dict.fromkeys(normalize_for_search(match.group(0)) for match in NUMBER_UNIT_RE.finditer(query))
@@ -356,16 +374,34 @@ def deterministic_rerank(
         )
         citation_location_bonus = (
             0.12
-            if analysis.citation_intent and candidate.page is not None
+            if analysis.citation_intent
+            and analysis.table_intent
+            and candidate.page is not None
+            and candidate.table_title
             else 0.0
         )
         versioned_source_bonus = (
             0.04
             if analysis.citation_intent
+            and analysis.table_intent
             and candidate.page is not None
+            and candidate.table_title
             and candidate.publication_date
             else 0.0
         )
+        normalized_content = normalize_for_search(candidate.content)
+        certificate_title_bonus = 0.0
+        if analysis.standards and CERTIFICATE_INTENT_RE.search(analysis.original):
+            certificate_label = None
+            if ENGLISH_INTENT_RE.search(analysis.original):
+                certificate_label = "certificate"
+            elif GERMAN_INTENT_RE.search(analysis.original):
+                certificate_label = "zertifikat"
+            if certificate_label and any(
+                f"{standard} {certificate_label}" in normalized_content
+                for standard in analysis.standards
+            ):
+                certificate_title_bonus = 0.20
         candidate.rerank_score = (
             overlap * 0.55
             + min(identifier_hits, 2) * 0.16
@@ -374,6 +410,7 @@ def deterministic_rerank(
             + document_bonus
             + citation_location_bonus
             + versioned_source_bonus
+            + certificate_title_bonus
         )
         candidate.final_score = candidate.fusion_score + candidate.rerank_score
         candidate.metadata["reranker"] = "deterministic-multilingual-fallback-v2"

@@ -153,7 +153,11 @@ def retrieval_metrics(
             )
             for item in results
         ]
-        table_items = [item for item in required if item.get("table") or item.get("row")]
+        table_items = [
+            item
+            for item in required
+            if item.get("table") or item.get("requires_structured_row")
+        ]
         table_integrity = []
         for item in table_items:
             match = next((result for result in results if location_match(result, item)), None)

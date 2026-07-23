@@ -1,0 +1,594 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1543.47,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\n## Page 78\n\nTOOL RECOMMENDATIONS\nUniversal knife\nType\nSize\nSet\npiece\nOrder number\nPipe bending tool\nType\nSize\nSet\npiece\nOrder number\nBlock hook\nType\nSize\nSet\npiece\nOrder number\nMeasuring wheel\nType\nSize\nSet\npiece\nOrder number\nCaliper gauge\nType\nSize\nSet\npiece\nOrder number\nScriber\nType\nSize\nSet\npiece\nOrder number\nWire brush\nType\nSize\nSet\npiece\nOrder number\nPipe plilers\nType\nSize\nSet\npiece\nOrder number\nLED torch\nType\nSize\nSet\npiece\nOrder number\nMagnet attachment\nType\nSize\nSet\npiece\nOrder number\nStrap wrench\nType\nSize\nSet\npiece\nOrder number\nOil spray can\nType\nSize\nSet\npiece\nOrder number\nRoll-up tool case\nType\nSize\nSet\npiece\nOrder number\nTool case\nType\nSize\nSet\npiece\nOrder number\nCompressed air impact wrench\nType\nSize\nSet\npiece\nOrder number\nPry bar\nType\nSize\nSet\npiece\nOrder number\nMulitmeter pliers\nType\nSize\nSet\npiece\nOrder number\nInstallation pliers\nType\nSize\nSet\npiece\nOrder number\nFilling valve tool\nType\nSize\nSet\npiece\nOrder number\nSW 36\n1\n124999\nFor mounting valves to CEODEUX storage bottles\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 155\n154 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+      "page": 78,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 78"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.15389344,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\n## Page 77\n\nTOOL RECOMMENDATIONS\nAngled hex key set\nType\nSize\nSet\nPieces\nOrder number\nHex\nscrewdriver\nType\nSize\nSet\npiece\nOrder number\nScrewdriver set\nType\nSize\nSet\npiece\nOrder number\nPhillips\n1+2\nPozidriv\n1+2\nSlotted screwdriver\nType\nSize\nSet\npiece\nOrder number\nPliers range\nType\nSize\nSet\npiece\nOrder number\nUniversal pliers\nAngled long nose pliers\nPipe wrench\nSide cutter\nPliers wrench\nType\nSize\nSet\npiece\nOrder number\nAdjustable wrench\nType\nSize\nSet\npiece\nOrder number\nCirclip pliers\nType\nSize\nSet\npiece\nOrder number\nTips 1.3∅\nTorque wrench\nType\nSize\nSet\npiece\nOrder number\nPin punch\nType\nSize\nSet\npiece\nOrder number\nCentre punch\nType\nSize\nSet\npiece\nOrder number\nMachinist's hammer\nType\nSize\nSet\npiece\nOrder number\nPlastic hammer\nType\nSize\nSet\npiece\nOrder number\nMetal saw\nType\nSize\nSet\npiece\nOrder number\nMetal file\nType\nSize\nSet\npiece\nOrder number\nNon-woven abrasive\nType\nSize\nSet\npiece\nOrder number\nManual deburring tool\nType\nSize\nSet\npiece\nOrder number\nTriangular scraper\nType\nSize\nSet\npiece\nOrder number\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 153\n152 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+      "page": 77,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 77"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.15362903,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "bc8f6ea3-c404-41e2-9fdc-577c8541244d",
+      "filename": "0030-2020-02_B-NEWS_EN_sc-acefaf6ea1.md",
+      "title": "2020-02_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2020-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2020-02_B-NEWS_EN_sc\n## Page 1\n\n1\nUnderwater photographer Thomas\nFriedrich and his partner, Patricia Guar-\ndiola Rico, have a dream that is probab-\nly shared by many other divers – with\nthe difference that they are making\ntheirs come true. The couple is embar-\nking on a motorhome tour and exploring\nthe best underwater diving spots along\nthe way in the company of well-known\nlocals. They’ll meet free diver Phil Sima\nto visit the Verzasca granite labyrinth\nand join shark expert Isaias Cruz in Bil-\nbao to encounter Atlantic blue and mako\nsharks. Further destinations along their\nroute will be the caves and caverns at\nAlicante, the colourful gorgonian forests\noff the Costa Brava, and Second World\nWar submarine wrecks at Marseilles.\nTheir journey will be a celebration of\nfreedom and independence. Many of\nthe dives will be in remote areas. Here\nthey naturally need an onboard supply\nof pure breathing air which is safe, relia-\nble and – most important of all – inde-\npendent of a mains power source. The\nsolution is a petrol-driven mobile BAUER\ncompressor. The brand-new PE200-TB\nfrom the POSEIDON EDITION series,\nwith its sleek new fan protector, is\ngood-looking and much more besides;\nthe iconic design also optimizes the\ncooling air flow, making the compressor\nOver the past six months, the co-\nronavirus pandemic has plunged\nus into an exceptional situation\nthat is a huge challenge for us all.",
+      "page": 1,
+      "section": [
+        "2020-02 B-NEWS EN sc",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10806011,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "92fd3bc4-b60b-401d-82c7-83003a8a6069",
+      "filename": "0140-Cartuchos_Filtrantes_ES-b18e79ee71.md",
+      "title": "Cartuchos_Filtrantes_ES",
+      "language": "es",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: Cartuchos_Filtrantes_ES\n## Page 2\n\nRAZONES PARA DECIDIRSE POR LOS\nCARTUCHOS FILTRANTES BAUER\nCOMPONENTES VERIFICADOS\nprotegen la vida, la salud y los equipos.\nMÁXIMA CALIDAD\npara un funcionamiento fiable en todo momento.\nMATERIALES DE EMBALAJE DE ALTA CALI-\nDAD\ngarantizan la protección durante el transporte y el almacena-\nmiento.\nRÁPIDA DISPONIBILIDAD\na través de la red de distribución global.",
+      "page": 2,
+      "section": [
+        "Cartuchos Filtrantes ES",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10729167,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "92fd3bc4-b60b-401d-82c7-83003a8a6069",
+      "filename": "0140-Cartuchos_Filtrantes_ES-b18e79ee71.md",
+      "title": "Cartuchos_Filtrantes_ES",
+      "language": "es",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [
+        "ISO 9001"
+      ],
+      "content": "Document: Cartuchos_Filtrantes_ES\n## Page 5\n\nBAUER KOMPRESSOREN\b\nCARTUCHOS FILTRANTES | 5\nMÁXIMA CALIDAD\nPARA UN FUNCIONAMIENTO FIABLE EN TODO MOMENTO.\nMATERIALES DE ALTA CALIDAD\nLa calidad es un factor decisivo cuando están en juego las prestaciones y la seguridad de un\nproducto. Por este motivo, todos los cartuchos filtrantes BAUER se fabrican, entre otros mate-\nriales, con plástico de alta calidad y prescindiendo de todo tipo de colas o disolventes.\nLARGA VIDA ÚTIL\nGracias a una elevada calidad de producción sostenida y a tiempos muy cortos de procesamien-\nto de las sustancias contenidas, nuestros cartuchos filtrantes ofrecen aplicaciones duraderas y\nclaramente definidas en las que confiar. En nuestro centro de ensayos se realizan regularmente\ncontroles adicionales. Todas las etapas de fabricación de los cartuchos se han certificado\nconforme al sistema de gestión de calidad ISO 9001 de BAUER. BAUER KOMPRESSOREN\nrecomienda cambiar los cartuchos de aire respirable usados al menos una vez al año o, en caso\nde no haberse utilizado la instalación, al cabo de tres meses. Tenga en cuenta también los\nposibles intervalos de sustitución más cortos específicos de cada país.\nTIEMPO DE PROCESAMIENTO CORTO DE LOS AGENTES SECADO-\nRES DE LAS MARCAS\nDado que el tiempo en que esté abierto el recipiente de los agentes secadores afecta en gran\nmedida al tiempo de funcionamiento del cartucho, lo mantenemos al mínimo.",
+      "page": 5,
+      "section": [
+        "Cartuchos Filtrantes ES",
+        "Page 5"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10637255,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "98205020-4196-4daa-a1bb-7a61092c304c",
+      "filename": "0251-0085_hochdruck-speicherflaschenbatterie_3e3206d19b-42d3ddda1f.md",
+      "title": "High-pressure storage cylinder battery · Storage systems | B",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage cylinder battery · Storage systems | B\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\ncalcActive())\">\nHigh-pressure storage cylinder battery\nStorage cylinder battery in horizontal arrangement for large gas volumes up to 330 bar\nBAUER KOMPRESSOREN offers stationary high-pressure storage solutions for air and gases in various volume sizes and configurations.\nUp to 330 bar\n10 – 42 storage cylinders\nHorizontal arrangement\nContact us\nRequest product\nSelected product:\nHigh-pressure storage cylinder battery\nArt. Nr.: Speicherbatterie_330\nSKU\nSpeicherbatterie_330\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nTechnical Data\nHigh-pressure storage systems – for air and gases\nStorage system\nNumber of bottles\nTotal geometric volume\nPermissible working pressure ¹\nLiter\nbar\n¹ The pressures specified apply to the maximum setting of the safety valve. The actual usable pressure is lower.",
+      "page": null,
+      "section": [
+        "High-pressure storage cylinder battery · Storage systems / B",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10615942,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "454bf3de-1304-4550-adb2-6bd1a2f95508",
+      "filename": "0121-bauer_amfile_271-f0a5714bc6.md",
+      "title": "bauer_amfile_271",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_271\nmplates or other information\nof the customer, the customer shall indemnify and hold BAUER\nharmless in regard to any and all claims of the holder of the property\nright (including any legal costs).\n6. Subject to a statutory right of withdrawal, a contract concluded be-\ntween the customer and BAUER can only be cancelled by the cus-\ntomer with BAUER's consent. If BAUER agrees to a cancellation, this\nshall take place against reimbursement of the production and mate-\nrial costs already incurred for the execution of the order as well as\ncompensation for the profit lost by BAUER due to the cancellation of\nthe order. This cancellation-related reimbursement and compensa-\ntion claim shall amount to at least a lump sum of 10% of the gross\norder amount, but may in individual cases, for example in the case\nof non-standard systems to be produced according to the customer's\nindividual specifications and depending on the time of the desired\ncancellation, amount to 70% or more of the net order amount. In the\nevent of a desired cancellation, BAUER shall inform the customer of\nthe amount of the cancellation-related reimbursement and compen-\nsation claim in the respective individual case and BAUER's consent\nto a cancellation desired by the customer is always subject to the\ncustomer's consent to payment of the cancellation-related reim-\nbursement and compensation claim as specified by BAUER in the",
+      "page": 1,
+      "section": [
+        "bauer amfile 271",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.1053653,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07-r2",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\n## Page 78\n\nTOOL RECOMMENDATIONS\nUniversal knife\nType\nSize\nSet\npiece\nOrder number\nPipe bending tool\nType\nSize\nSet\npiece\nOrder number\nBlock hook\nType\nSize\nSet\npiece\nOrder number\nMeasuring wheel\nType\nSize\nSet\npiece\nOrder number\nCaliper gauge\nType\nSize\nSet\npiece\nOrder number\nScriber\nType\nSize\nSet\npiece\nOrder number\nWire brush\nType\nSize\nSet\npiece\nOrder number\nPipe plilers\nType\nSize\nSet\npiece\nOrder number\nLED torch\nType\nSize\nSet\npiece\nOrder number\nMagnet attachment\nType\nSize\nSet\npiece\nOrder number\nStrap wrench\nType\nSize\nSet\npiece\nOrder number\nOil spray can\nType\nSize\nSet\npiece\nOrder number\nRoll-up tool case\nType\nSize\nSet\npiece\nOrder number\nTool case\nType\nSize\nSet\npiece\nOrder number\nCompressed air impact wrench\nType\nSize\nSet\npiece\nOrder number\nPry bar\nType\nSize\nSet\npiece\nOrder number\nMulitmeter pliers\nType\nSize\nSet\npiece\nOrder number\nInstallation pliers\nType\nSize\nSet\npiece\nOrder number\nFilling valve tool\nType\nSize\nSet\npiece\nOrder number\nSW 36\n1\n124999\nFor mounting valves to CEODEUX storage bottles\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 155\n154 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+        "page": 78,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 78"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.15389344,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\n## Page 77\n\nTOOL RECOMMENDATIONS\nAngled hex key set\nType\nSize\nSet\nPieces\nOrder number\nHex\nscrewdriver\nType\nSize\nSet\npiece\nOrder number\nScrewdriver set\nType\nSize\nSet\npiece\nOrder number\nPhillips\n1+2\nPozidriv\n1+2\nSlotted screwdriver\nType\nSize\nSet\npiece\nOrder number\nPliers range\nType\nSize\nSet\npiece\nOrder number\nUniversal pliers\nAngled long nose pliers\nPipe wrench\nSide cutter\nPliers wrench\nType\nSize\nSet\npiece\nOrder number\nAdjustable wrench\nType\nSize\nSet\npiece\nOrder number\nCirclip pliers\nType\nSize\nSet\npiece\nOrder number\nTips 1.3∅\nTorque wrench\nType\nSize\nSet\npiece\nOrder number\nPin punch\nType\nSize\nSet\npiece\nOrder number\nCentre punch\nType\nSize\nSet\npiece\nOrder number\nMachinist's hammer\nType\nSize\nSet\npiece\nOrder number\nPlastic hammer\nType\nSize\nSet\npiece\nOrder number\nMetal saw\nType\nSize\nSet\npiece\nOrder number\nMetal file\nType\nSize\nSet\npiece\nOrder number\nNon-woven abrasive\nType\nSize\nSet\npiece\nOrder number\nManual deburring tool\nType\nSize\nSet\npiece\nOrder number\nTriangular scraper\nType\nSize\nSet\npiece\nOrder number\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 153\n152 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+        "page": 77,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 77"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.15362903,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "bc8f6ea3-c404-41e2-9fdc-577c8541244d",
+        "filename": "0030-2020-02_B-NEWS_EN_sc-acefaf6ea1.md",
+        "title": "2020-02_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2020-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2020-02_B-NEWS_EN_sc\n## Page 1\n\n1\nUnderwater photographer Thomas\nFriedrich and his partner, Patricia Guar-\ndiola Rico, have a dream that is probab-\nly shared by many other divers – with\nthe difference that they are making\ntheirs come true. The couple is embar-\nking on a motorhome tour and exploring\nthe best underwater diving spots along\nthe way in the company of well-known\nlocals. They’ll meet free diver Phil Sima\nto visit the Verzasca granite labyrinth\nand join shark expert Isaias Cruz in Bil-\nbao to encounter Atlantic blue and mako\nsharks. Further destinations along their\nroute will be the caves and caverns at\nAlicante, the colourful gorgonian forests\noff the Costa Brava, and Second World\nWar submarine wrecks at Marseilles.\nTheir journey will be a celebration of\nfreedom and independence. Many of\nthe dives will be in remote areas. Here\nthey naturally need an onboard supply\nof pure breathing air which is safe, relia-\nble and – most important of all – inde-\npendent of a mains power source. The\nsolution is a petrol-driven mobile BAUER\ncompressor. The brand-new PE200-TB\nfrom the POSEIDON EDITION series,\nwith its sleek new fan protector, is\ngood-looking and much more besides;\nthe iconic design also optimizes the\ncooling air flow, making the compressor\nOver the past six months, the co-\nronavirus pandemic has plunged\nus into an exceptional situation\nthat is a huge challenge for us all.",
+        "page": 1,
+        "section": [
+          "2020-02 B-NEWS EN sc",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10806011,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "92fd3bc4-b60b-401d-82c7-83003a8a6069",
+        "filename": "0140-Cartuchos_Filtrantes_ES-b18e79ee71.md",
+        "title": "Cartuchos_Filtrantes_ES",
+        "language": "es",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: Cartuchos_Filtrantes_ES\n## Page 2\n\nRAZONES PARA DECIDIRSE POR LOS\nCARTUCHOS FILTRANTES BAUER\nCOMPONENTES VERIFICADOS\nprotegen la vida, la salud y los equipos.\nMÁXIMA CALIDAD\npara un funcionamiento fiable en todo momento.\nMATERIALES DE EMBALAJE DE ALTA CALI-\nDAD\ngarantizan la protección durante el transporte y el almacena-\nmiento.\nRÁPIDA DISPONIBILIDAD\na través de la red de distribución global.",
+        "page": 2,
+        "section": [
+          "Cartuchos Filtrantes ES",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10729167,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "92fd3bc4-b60b-401d-82c7-83003a8a6069",
+        "filename": "0140-Cartuchos_Filtrantes_ES-b18e79ee71.md",
+        "title": "Cartuchos_Filtrantes_ES",
+        "language": "es",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [
+          "ISO 9001"
+        ],
+        "content": "Document: Cartuchos_Filtrantes_ES\n## Page 5\n\nBAUER KOMPRESSOREN\b\nCARTUCHOS FILTRANTES | 5\nMÁXIMA CALIDAD\nPARA UN FUNCIONAMIENTO FIABLE EN TODO MOMENTO.\nMATERIALES DE ALTA CALIDAD\nLa calidad es un factor decisivo cuando están en juego las prestaciones y la seguridad de un\nproducto. Por este motivo, todos los cartuchos filtrantes BAUER se fabrican, entre otros mate-\nriales, con plástico de alta calidad y prescindiendo de todo tipo de colas o disolventes.\nLARGA VIDA ÚTIL\nGracias a una elevada calidad de producción sostenida y a tiempos muy cortos de procesamien-\nto de las sustancias contenidas, nuestros cartuchos filtrantes ofrecen aplicaciones duraderas y\nclaramente definidas en las que confiar. En nuestro centro de ensayos se realizan regularmente\ncontroles adicionales. Todas las etapas de fabricación de los cartuchos se han certificado\nconforme al sistema de gestión de calidad ISO 9001 de BAUER. BAUER KOMPRESSOREN\nrecomienda cambiar los cartuchos de aire respirable usados al menos una vez al año o, en caso\nde no haberse utilizado la instalación, al cabo de tres meses. Tenga en cuenta también los\nposibles intervalos de sustitución más cortos específicos de cada país.\nTIEMPO DE PROCESAMIENTO CORTO DE LOS AGENTES SECADO-\nRES DE LAS MARCAS\nDado que el tiempo en que esté abierto el recipiente de los agentes secadores afecta en gran\nmedida al tiempo de funcionamiento del cartucho, lo mantenemos al mínimo.",
+        "page": 5,
+        "section": [
+          "Cartuchos Filtrantes ES",
+          "Page 5"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10637255,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "98205020-4196-4daa-a1bb-7a61092c304c",
+        "filename": "0251-0085_hochdruck-speicherflaschenbatterie_3e3206d19b-42d3ddda1f.md",
+        "title": "High-pressure storage cylinder battery · Storage systems | B",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage cylinder battery · Storage systems | B\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\ncalcActive())\">\nHigh-pressure storage cylinder battery\nStorage cylinder battery in horizontal arrangement for large gas volumes up to 330 bar\nBAUER KOMPRESSOREN offers stationary high-pressure storage solutions for air and gases in various volume sizes and configurations.\nUp to 330 bar\n10 – 42 storage cylinders\nHorizontal arrangement\nContact us\nRequest product\nSelected product:\nHigh-pressure storage cylinder battery\nArt. Nr.: Speicherbatterie_330\nSKU\nSpeicherbatterie_330\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nTechnical Data\nHigh-pressure storage systems – for air and gases\nStorage system\nNumber of bottles\nTotal geometric volume\nPermissible working pressure ¹\nLiter\nbar\n¹ The pressures specified apply to the maximum setting of the safety valve. The actual usable pressure is lower.",
+        "page": null,
+        "section": [
+          "High-pressure storage cylinder battery · Storage systems / B",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10615942,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "454bf3de-1304-4550-adb2-6bd1a2f95508",
+        "filename": "0121-bauer_amfile_271-f0a5714bc6.md",
+        "title": "bauer_amfile_271",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_271\nmplates or other information\nof the customer, the customer shall indemnify and hold BAUER\nharmless in regard to any and all claims of the holder of the property\nright (including any legal costs).\n6. Subject to a statutory right of withdrawal, a contract concluded be-\ntween the customer and BAUER can only be cancelled by the cus-\ntomer with BAUER's consent. If BAUER agrees to a cancellation, this\nshall take place against reimbursement of the production and mate-\nrial costs already incurred for the execution of the order as well as\ncompensation for the profit lost by BAUER due to the cancellation of\nthe order. This cancellation-related reimbursement and compensa-\ntion claim shall amount to at least a lump sum of 10% of the gross\norder amount, but may in individual cases, for example in the case\nof non-standard systems to be produced according to the customer's\nindividual specifications and depending on the time of the desired\ncancellation, amount to 70% or more of the net order amount. In the\nevent of a desired cancellation, BAUER shall inform the customer of\nthe amount of the cancellation-related reimbursement and compen-\nsation claim in the respective individual case and BAUER's consent\nto a cancellation desired by the customer is always subject to the\ncustomer's consent to payment of the cancellation-related reim-\nbursement and compensation claim as specified by BAUER in the",
+        "page": 1,
+        "section": [
+          "bauer amfile 271",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.1053653,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "n99999999"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false,
+        "citation_intent": false
+      },
+      "channel_counts": {
+        "exact": 0,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 15,
+      "elapsed_ms": 1302.5
+    }
+  },
+  "completed_at": "2026-07-23T19:47:15.125455+00:00",
+  "case_id": "B27",
+  "split": "development",
+  "category": "safe_no_answer",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

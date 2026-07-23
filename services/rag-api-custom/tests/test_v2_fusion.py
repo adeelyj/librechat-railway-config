@@ -55,6 +55,25 @@ class V2FusionTests(unittest.TestCase):
         )
         self.assertTrue(analysis.citation_intent)
 
+    def test_query_analysis_excludes_standards_in_negative_substitution_clause(self):
+        analysis = analyze_query(
+            "Find the English EN ISO 3834-2 certificate. "
+            "Do not substitute ISO 9001 or ISO 14001."
+        )
+        self.assertEqual(analysis.standards, ("en iso 3834 2",))
+
+    def test_pressure_extremum_requires_a_superlative_not_a_model_property(self):
+        self.assertTrue(
+            analyze_query(
+                "What is the highest documented maximum operating pressure?"
+            ).pressure_extremum
+        )
+        self.assertFalse(
+            analyze_query(
+                "Report this model's maximum operating pressure."
+            ).pressure_extremum
+        )
+
     def test_query_analysis_extracts_standard_without_broad_exact_tokens(self):
         analysis = analyze_query(
             "Find the English EN ISO 3834-2 certificate for Bauer Kompressoren"
@@ -131,11 +150,30 @@ class V2FusionTests(unittest.TestCase):
             kind="table_row",
             page=23,
         )
+        brochure.table_title = "Technical Data"
         brochure.publication_date = "2026-04-01"
         web.fusion_score = 0.16
         brochure.fusion_score = 0.04
         ranked = deterministic_rerank(analysis, [web, brochure])
         self.assertEqual(ranked[0].chunk_id, "brochure")
+
+    def test_english_certificate_intent_prefers_the_exact_download_title(self):
+        analysis = analyze_query(
+            "Find the English EN ISO 3834-2 certificate. "
+            "Do not substitute ISO 9001."
+        )
+        generic = candidate(
+            "generic",
+            "Certificate downloads include EN ISO 3834-2 and other standards.",
+        )
+        exact = candidate(
+            "exact",
+            "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH EN",
+        )
+        generic.fusion_score = 0.20
+        exact.fusion_score = 0.04
+        ranked = deterministic_rerank(analysis, [generic, exact])
+        self.assertEqual(ranked[0].chunk_id, "exact")
 
     def test_evidence_cap_limits_each_file_and_fills_from_others(self):
         candidates = [candidate(name, name) for name in ("a-1", "a-2", "a-3", "b-1", "c-1")]

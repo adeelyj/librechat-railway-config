@@ -43,6 +43,8 @@ incorrect refusal, source-type error, or weakened mandatory constraint.
 ## Runners
 
 - `retrieval.py`: direct V1/V2 retrieval, five serial repetitions, alternating order.
+- `reranker_benchmark.py`: offline comparison of a cross-encoder with the deterministic order on
+  an immutable V2 development candidate set.
 - `end_to_end.py`: fresh LibreChat V1/V2 Agent conversations, serial and alternating.
 - `frozen_evidence.py`: the same V2 evidence through an OpenAI-compatible answer endpoint, or
   immutable export-only packages.
@@ -57,3 +59,8 @@ Credentials are environment-only and are not serialized. The holdout requires
 `raw-runs/v1-historical-20260721` preserves the one-run B01-B14 V1 capture that predates this
 implementation. Its limitations are embedded in the artifact. It anchors the historical findings
 but does not replace the required five-run V1 baseline once live authentication is available.
+
+The 2026-07-23 `bge-reranker-v2-m3` Q5_0 comparison is recorded in
+`reports/reranker-benchmark-20260723.json`. It retains the deterministic fallback because the
+cross-encoder reduced exact lookup on the frozen development candidates without improving
+Recall@5.
