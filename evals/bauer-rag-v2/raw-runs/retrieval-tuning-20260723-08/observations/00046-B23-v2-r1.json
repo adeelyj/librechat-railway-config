@@ -1,0 +1,383 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 2153.08,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+      "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+      "title": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+      "language": "en",
+      "publication_date": "2024-01-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION"
+      ],
+      "media": [],
+      "component_categories": [
+        "sensor"
+      ],
+      "standards": [],
+      "content": "Document: 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\n# 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\n\n- Original source: `bauer_index\\raw_docs\\2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc.pdf`\n- Original SHA-256: `496bbb4b6fdf63d11f91be7e298dacd33149d3a10e7320aa0c999845aaf6eda9`",
+      "page": null,
+      "section": [
+        "2024-01 B-DETECTION Sensor calibration EN N47183 sc"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.4553602,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+      "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+      "title": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+      "language": "en",
+      "publication_date": "2024-01-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION"
+      ],
+      "media": [],
+      "component_categories": [
+        "sensor"
+      ],
+      "standards": [],
+      "content": "Document: 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\n## Page 1\n\nSPORTS & SAFETY\nBAUER B-DETECTION\nTHE NEXT GENERATION\nSENSOR CALIBRATION\n1946 – 2026\n8 0",
+      "page": 1,
+      "section": [
+        "2024-01 B-DETECTION Sensor calibration EN N47183 sc",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.4427957,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "2d3cdedc-3f71-49fb-b268-0ada37cb996f",
+      "filename": "0049-2024-01_B-NEWS_EN_sc-003e1e19ad.md",
+      "title": "2024-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2024-01-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2024-01_B-NEWS_EN_sc\nt was given a\ncompletely new look with its rounded\nplastic cover. This not only improved\nits handling, but also helped to save\nweight. The B-TIMER, developed in\n2004 specifically for the TRIPLEX filter\nsystem, brought additional utility. Its\ndisplay now showed necessary filter\nchanges and maintenance at a glance.\nThe bestseller entered the next stage\nof evolution in 2022. All cover parts\nwere completely re-engineered. The\nnew development of the fan guard in\ncollaboration with the Technical Uni-\nversity of Munich focused this time on\nan optimized flow around the cylinder\nstages for even more perfect cooling.\nWith these improvements, the JUNIOR\nII in its new “state-of-the-art” design\nwill continue its unprecedented suc-\ncess story well beyond its anniversary\nyear in 2024 and supply countless\nfuture divers with safe and pure BAUER\nbreathing air.\nThe JUNIOR 1995 as a special\nedition for the company's 50th\nanniversary, one year after its\nmarket launch in the petrol-driven\nversion\nIn 1997, the JUNIOR, here in the AC\nversion, received a new fan wheel and\nbelt guard made of special impact-­\nresistant plastic.\nThe third generation from 2022\nwill continue to shine with, among\nother things, further optimized\ncooling air flow and state-of-the-\nart design.",
+      "page": 2,
+      "section": [
+        "2024-01 B-NEWS EN sc",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.10806011,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "5608c03c-c66b-4cfa-a827-7112a44d4884",
+      "filename": "0051-2025-01_B-NEWS_EN_sc-49f4f8d5c7.md",
+      "title": "2025-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2025-01-01",
+      "certificates": [],
+      "product_families": [
+        "BM series"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2025-01_B-NEWS_EN_sc\n## Page 3\n\n3\nthe trade show’s motto of “Green­\nland”. The centre of attention was the\nJUNIOR diving compressor, with a\ncelebration of its 30-year anniversary\nand its deployment in Greenland by\nthe Submaris research team. A further\nhighlight was the boot dive award,\npresented by the exhibition organizer\nwith extensive support from BAUER as\nits main sponsor. In the CLIMATE\ncategory, the Better Oceans organiza­\ntion received an Anniversary Edition\nJUNIOR II in addition to its main\naward, setting a powerful signal for\nprotection of the oceans.\nAt ComVac in Hanover in April, the\nBAUER Group quite literally turned the\nspotlight on the new high- and medi­\num-pressure compressor series and\non ROTORCOMP’s innovative water-\ninjected screw compressors, with a\nstunning lighting concept for its pro-\nduct presentation. The focus of\nattention was on the digital B-CLOUD\nsystem/ concept and the K22, BK23\nand BM series. These compact direct-\ncoupled models are engineered for\nhigh performance; the BM series\ncovers a pressure range of 30 to 100\nbar, while the K22 series is the ideal\nsolution for nitrogen and noble gas\napplications, and the BK23 offers a\nlow-vibration pressure-tight design. At\nthe Blech trade show in Stuttgart at\nthe start of October, BAUER featured\nprominently at several stands; its new\n22 series block compressor gave an\nimpressive showing in laser cutting",
+      "page": 3,
+      "section": [
+        "2025-01 B-NEWS EN sc",
+        "Page 3"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.1077957,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07-r2",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+        "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+        "title": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+        "language": "en",
+        "publication_date": "2024-01-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION"
+        ],
+        "media": [],
+        "component_categories": [
+          "sensor"
+        ],
+        "standards": [],
+        "content": "Document: 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\n# 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\n\n- Original source: `bauer_index\\raw_docs\\2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc.pdf`\n- Original SHA-256: `496bbb4b6fdf63d11f91be7e298dacd33149d3a10e7320aa0c999845aaf6eda9`",
+        "page": null,
+        "section": [
+          "2024-01 B-DETECTION Sensor calibration EN N47183 sc"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.4553602,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+        "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+        "title": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+        "language": "en",
+        "publication_date": "2024-01-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION"
+        ],
+        "media": [],
+        "component_categories": [
+          "sensor"
+        ],
+        "standards": [],
+        "content": "Document: 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\n## Page 1\n\nSPORTS & SAFETY\nBAUER B-DETECTION\nTHE NEXT GENERATION\nSENSOR CALIBRATION\n1946 – 2026\n8 0",
+        "page": 1,
+        "section": [
+          "2024-01 B-DETECTION Sensor calibration EN N47183 sc",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.4427957,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "2d3cdedc-3f71-49fb-b268-0ada37cb996f",
+        "filename": "0049-2024-01_B-NEWS_EN_sc-003e1e19ad.md",
+        "title": "2024-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2024-01-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2024-01_B-NEWS_EN_sc\nt was given a\ncompletely new look with its rounded\nplastic cover. This not only improved\nits handling, but also helped to save\nweight. The B-TIMER, developed in\n2004 specifically for the TRIPLEX filter\nsystem, brought additional utility. Its\ndisplay now showed necessary filter\nchanges and maintenance at a glance.\nThe bestseller entered the next stage\nof evolution in 2022. All cover parts\nwere completely re-engineered. The\nnew development of the fan guard in\ncollaboration with the Technical Uni-\nversity of Munich focused this time on\nan optimized flow around the cylinder\nstages for even more perfect cooling.\nWith these improvements, the JUNIOR\nII in its new “state-of-the-art” design\nwill continue its unprecedented suc-\ncess story well beyond its anniversary\nyear in 2024 and supply countless\nfuture divers with safe and pure BAUER\nbreathing air.\nThe JUNIOR 1995 as a special\nedition for the company's 50th\nanniversary, one year after its\nmarket launch in the petrol-driven\nversion\nIn 1997, the JUNIOR, here in the AC\nversion, received a new fan wheel and\nbelt guard made of special impact-­\nresistant plastic.\nThe third generation from 2022\nwill continue to shine with, among\nother things, further optimized\ncooling air flow and state-of-the-\nart design.",
+        "page": 2,
+        "section": [
+          "2024-01 B-NEWS EN sc",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.10806011,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "5608c03c-c66b-4cfa-a827-7112a44d4884",
+        "filename": "0051-2025-01_B-NEWS_EN_sc-49f4f8d5c7.md",
+        "title": "2025-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2025-01-01",
+        "certificates": [],
+        "product_families": [
+          "BM series"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2025-01_B-NEWS_EN_sc\n## Page 3\n\n3\nthe trade show’s motto of “Green­\nland”. The centre of attention was the\nJUNIOR diving compressor, with a\ncelebration of its 30-year anniversary\nand its deployment in Greenland by\nthe Submaris research team. A further\nhighlight was the boot dive award,\npresented by the exhibition organizer\nwith extensive support from BAUER as\nits main sponsor. In the CLIMATE\ncategory, the Better Oceans organiza­\ntion received an Anniversary Edition\nJUNIOR II in addition to its main\naward, setting a powerful signal for\nprotection of the oceans.\nAt ComVac in Hanover in April, the\nBAUER Group quite literally turned the\nspotlight on the new high- and medi­\num-pressure compressor series and\non ROTORCOMP’s innovative water-\ninjected screw compressors, with a\nstunning lighting concept for its pro-\nduct presentation. The focus of\nattention was on the digital B-CLOUD\nsystem/ concept and the K22, BK23\nand BM series. These compact direct-\ncoupled models are engineered for\nhigh performance; the BM series\ncovers a pressure range of 30 to 100\nbar, while the K22 series is the ideal\nsolution for nitrogen and noble gas\napplications, and the BK23 offers a\nlow-vibration pressure-tight design. At\nthe Blech trade show in Stuttgart at\nthe start of October, BAUER featured\nprominently at several stands; its new\n22 series block compressor gave an\nimpressive showing in laser cutting",
+        "page": 3,
+        "section": [
+          "2025-01 B-NEWS EN sc",
+          "Page 3"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.1077957,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "n47183"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": true,
+        "pressure_extremum": false,
+        "citation_intent": true
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 3,
+      "elapsed_ms": 1906.2
+    }
+  },
+  "completed_at": "2026-07-23T19:57:55.085305+00:00",
+  "case_id": "B23",
+  "split": "development",
+  "category": "exact_document_number",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

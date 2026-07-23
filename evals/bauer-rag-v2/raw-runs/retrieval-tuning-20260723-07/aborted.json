@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "run_id": "retrieval-tuning-20260723-07",
+  "status": "aborted",
+  "completed_run_json_created": false,
+  "completed_observations": 1,
+  "reason": "Client-side response read timed out on the first V2 request.",
+  "server_observation": {
+    "deployment_id": "7cd5851d-70df-47f8-b540-977a44c9887c",
+    "path": "/query_v2",
+    "http_status": 200,
+    "server_duration_ms": 1352,
+    "service_elapsed_ms": 1291.73
+  },
+  "replacement_run_id": "retrieval-tuning-20260723-08"
+}

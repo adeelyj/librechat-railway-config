@@ -402,6 +402,14 @@ def deterministic_rerank(
                 for standard in analysis.standards
             ):
                 certificate_title_bonus = 0.20
+        pressure_priority = candidate.metadata.get("pressure_evidence_priority")
+        pressure_evidence_bonus = (
+            max(0.75 - int(pressure_priority) * 0.035, 0.0)
+            if analysis.pressure_extremum
+            and isinstance(pressure_priority, int)
+            and pressure_priority >= 0
+            else 0.0
+        )
         candidate.rerank_score = (
             overlap * 0.55
             + min(identifier_hits, 2) * 0.16
@@ -411,6 +419,7 @@ def deterministic_rerank(
             + citation_location_bonus
             + versioned_source_bonus
             + certificate_title_bonus
+            + pressure_evidence_bonus
         )
         candidate.final_score = candidate.fusion_score + candidate.rerank_score
         candidate.metadata["reranker"] = "deterministic-multilingual-fallback-v2"

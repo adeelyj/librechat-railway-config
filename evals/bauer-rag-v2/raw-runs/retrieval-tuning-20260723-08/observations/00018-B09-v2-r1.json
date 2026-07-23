@@ -1,0 +1,1357 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1824.9,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "a286ab71-15a3-488d-9405-dba4a07e291f",
+      "filename": "0191-0025_bm-series-100_7acdece303-2f5ad06e14.md",
+      "title": "BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "BM series",
+        "BM 6.1/100-15"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES\nDocument section: BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 100 bar – 50 Hz\nRow: BM 6.1/100-15\nValues: 630 | 37.8 | 22.2 | 100 | 1450 | 3 | 1470 | 15 | 425 | 935\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "page": null,
+      "section": [
+        "BM series (100 bar) · Air-cooled compressors / BAUER KOMPRES",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "BM 6.1/100-15",
+      "headers": [
+        "Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Shutdown pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "BM series 100 bar – 50 Hz"
+      ],
+      "row_values": [
+        "630",
+        "37.8",
+        "22.2",
+        "100",
+        "1450",
+        "3",
+        "1470",
+        "15",
+        "425",
+        "935"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.38817723,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "a286ab71-15a3-488d-9405-dba4a07e291f",
+      "filename": "0191-0025_bm-series-100_7acdece303-2f5ad06e14.md",
+      "title": "BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "BM series",
+        "BM 6.1/100-15",
+        "BM 10.1/100-18.5"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES\nDocument section: BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 100 bar – 50 Hz | BM 6.1/100-15\nRow: BM 10.1/100-18.5\nValues: 1060 | 63.6 | 37.4 | 100 | 1450 | 3 | 1485 | 18.5 | 475 | 1045\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "page": null,
+      "section": [
+        "BM series (100 bar) · Air-cooled compressors / BAUER KOMPRES",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "BM 10.1/100-18.5",
+      "headers": [
+        "Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Shutdown pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "BM series 100 bar – 50 Hz",
+        "BM 6.1/100-15"
+      ],
+      "row_values": [
+        "1060",
+        "63.6",
+        "37.4",
+        "100",
+        "1450",
+        "3",
+        "1485",
+        "18.5",
+        "475",
+        "1045"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.38728938,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+      "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "BM series",
+        "BM 6.1/40-11"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz\nRow: BM 6.1/40-11\nValues: 660 | 39.6 | 23.3 | 40 | 580 | 3 | 1470 | 11 | 425 | 935\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "page": null,
+      "section": [
+        "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "BM 6.1/40-11",
+      "headers": [
+        "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Shutdown pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "BM series 40 bar – 50 Hz"
+      ],
+      "row_values": [
+        "660",
+        "39.6",
+        "23.3",
+        "40",
+        "580",
+        "3",
+        "1470",
+        "11",
+        "425",
+        "935"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3552396,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+      "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "BM series",
+        "BM 6.1/40-11",
+        "BM 10.1/40-15"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz | BM 6.1/40-11\nRow: BM 10.1/40-15\nValues: 1080 | 64.8 | 38.1 | 40 | 580 | 3 | 1480 | 15 | 475 | 1045\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "page": null,
+      "section": [
+        "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "BM 10.1/40-15",
+      "headers": [
+        "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Shutdown pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "BM series 40 bar – 50 Hz",
+        "BM 6.1/40-11"
+      ],
+      "row_values": [
+        "1080",
+        "64.8",
+        "38.1",
+        "40",
+        "580",
+        "3",
+        "1480",
+        "15",
+        "475",
+        "1045"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.35471917,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "c93e4b01-ee3e-46df-9755-ed624ed6ae51",
+      "filename": "0281-0115_mini-verticus-b-series_24bc97ff10-472b9303f3.md",
+      "title": "MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "MINI-VERTICUS series",
+        "MINI-VERTICUS 30"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA\nDocument section: MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor MINI-VERTICUS, 170-215 l/min, 30 – 100 bar | Model designation | Effective free air delivery ¹ | Maximum operating pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | MINI-VERTICUS 30 – 68 bar\nRow: B 12.4-4-MV\nValues: 215 | 13 | 7.6 | 68 | 1000 | 3 | 1420 | 4 | 324 | 714\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS series (100 bar) · Air-cooled compressors / BA",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "B 12.4-4-MV",
+      "headers": [
+        "Medium-pressure compressor MINI-VERTICUS, 170-215 l/min, 30 – 100 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Maximum operating pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "MINI-VERTICUS 30 – 68 bar"
+      ],
+      "row_values": [
+        "215",
+        "13",
+        "7.6",
+        "68",
+        "1000",
+        "3",
+        "1420",
+        "4",
+        "324",
+        "714"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.35183317,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "c93e4b01-ee3e-46df-9755-ed624ed6ae51",
+      "filename": "0281-0115_mini-verticus-b-series_24bc97ff10-472b9303f3.md",
+      "title": "MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "MINI-VERTICUS series",
+        "MINI-VERTICUS 30",
+        "MINI-VERTICUS 60"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA\nDocument section: MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor MINI-VERTICUS, 170-215 l/min, 30 – 100 bar | Model designation | Effective free air delivery ¹ | Maximum operating pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | MINI-VERTICUS 30 – 68 bar | B 12.4-4-MV | MINI-VERTICUS 60 – 85 bar\nRow: E 12.4-3-MV\nValues: 170 | 10.2 | 6 | 85 | 1230 | 3 | 1150 | 3 | 316 | 697\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS series (100 bar) · Air-cooled compressors / BA",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "E 12.4-3-MV",
+      "headers": [
+        "Medium-pressure compressor MINI-VERTICUS, 170-215 l/min, 30 – 100 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Maximum operating pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "MINI-VERTICUS 30 – 68 bar",
+        "B 12.4-4-MV",
+        "MINI-VERTICUS 60 – 85 bar"
+      ],
+      "row_values": [
+        "170",
+        "10.2",
+        "6",
+        "85",
+        "1230",
+        "3",
+        "1150",
+        "3",
+        "316",
+        "697"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.35166667,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "8c108b6e-09a6-489b-b811-612490f1e52f",
+      "filename": "0243-0077_gib22-series-md_87728d914b-1649e11ebc.md",
+      "title": "GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "GIB 22"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "valve",
+        "sensor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE\ndition monitoring, and a global service network ensure maximum availability whenever it is required.\nEngineering\nfor efficiency, performance, and serviceability\nThe compressor system features a compact, ergonomic design engineered for high energy efficiency and reliable performance. An optimized layout ensures easy maintenance access and service-friendly operation, supporting low operating costs and long-term system availability.\nTechnical Data\nMedium-pressure booster GIB 22, 1750–4150 l/min, 25–120 bar\nModel designation\nEffective free air delivery ¹\nInlet pressure\nOperating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\nbar (min)\nbar (max)\nrpm\nkW\nkg\nlbs\nGIB 22 series | 55 to 120 bar | 50 Hz\n210\n123.6\n10\n55\n110\nModel designation\nEffective free air delivery ¹\nInlet pressure\nOperating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\nbar (min)\nbar (max)\nrpm\nkW\nkg\nlbs\nGIB 22 series | 55 to 120 bar | 60 Hz\n249\n146.5\n10\n55\n110\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for air and nitrogen.\n² Shutdown pressure (final pressure sensor). Safety valve set pressure max. 120 bar.\nDetails & Features",
+      "page": null,
+      "section": [
+        "GIB 22 series (120 bar) · Air-cooled boosters / BAUER KOMPRE",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.2702396,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "f79fc98a-704a-444e-9160-aef12683e801",
+      "filename": "0242-0076_gib22-series-hd_c7951ec7ed-426ce5a20c.md",
+      "title": "GIB 22 series · Air-cooled boosters | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "GIB 22"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "valve",
+        "sensor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: GIB 22 series · Air-cooled boosters | BAUER KOMPRESSOREN\ndition monitoring, and a global service network ensure maximum availability whenever it is required.\nEngineering\nfor efficiency, performance, and serviceability\nThe compressor system features a compact, ergonomic design engineered for high energy efficiency and reliable performance. An optimized layout ensures easy maintenance access and service-friendly operation, supporting low operating costs and long-term system availability.\nTechnical Data\nHigh-pressure booster GIB 22, 930–3000 l/min, 90–370 bar\nModel designation\nEffective free air delivery ¹\nInlet pressure\nOperating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\nbar (min)\nbar (max)\nrpm\nkW\nkg\nlbs\nGIB 22 series | 160 to 370 bar | 50 Hz\n102\n60\n4.5\n160\n350\n150\n88.3\n10\n230\n350\nModel designation\nEffective free air delivery ¹\nInlet pressure\nOperating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\nbar (min)\nbar (max)\nrpm\nkW\nkg\nlbs\nGIB 22 series | 160 to 370 bar | 60 Hz\n123\n72.4\n4.5\n160\n350\n180\n105.9\n10\n230\n350\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for air and nitrogen.\n² Shutdown pressure (final pressure sensor). Safety valve set pressure max. 370 bar.\nDetails & Features",
+      "page": null,
+      "section": [
+        "GIB 22 series · Air-cooled boosters / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.24882134,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "4e3cd61d-f8ef-46d6-9c60-c6995bdc70bd",
+      "filename": "0149-GTC_BCA_20160615_EN-6b0666569f.md",
+      "title": "GTC_BCA_20160615_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: GTC_BCA_20160615_EN\no be based on a\nbreach of the warranty, is notified to the company during the Warranty\nPeriod, the Company will (at the Company’s sole option) repair or replace\nthe Products, or (at the Company’s sole option) credit a sum to be agreed with\nthe Customer in lieu of the replacement of, any Product of part thereof.\n(d) The value of any claim under the Warranty cannot exceed the original value\npaid by the Customer for the Products\n(e) There are no third party beneficiaries of the Warranty granted by the\nCompany herein.\n(f) For warranty claim procedure information, please refer to Bauer Compressors\nAsia Pte Ltd or our respective distributors and agents.",
+      "page": 1,
+      "section": [
+        "GTC BCA 20160615 EN",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.1004884,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.2",
+        "reranker": "deterministic-multilingual-fallback-v2"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07-r2",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "a286ab71-15a3-488d-9405-dba4a07e291f",
+        "filename": "0191-0025_bm-series-100_7acdece303-2f5ad06e14.md",
+        "title": "BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "BM series",
+          "BM 6.1/100-15"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES\nDocument section: BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 100 bar – 50 Hz\nRow: BM 6.1/100-15\nValues: 630 | 37.8 | 22.2 | 100 | 1450 | 3 | 1470 | 15 | 425 | 935\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "page": null,
+        "section": [
+          "BM series (100 bar) · Air-cooled compressors / BAUER KOMPRES",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "BM 6.1/100-15",
+        "headers": [
+          "Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Shutdown pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "BM series 100 bar – 50 Hz"
+        ],
+        "row_values": [
+          "630",
+          "37.8",
+          "22.2",
+          "100",
+          "1450",
+          "3",
+          "1470",
+          "15",
+          "425",
+          "935"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.38817723,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "a286ab71-15a3-488d-9405-dba4a07e291f",
+        "filename": "0191-0025_bm-series-100_7acdece303-2f5ad06e14.md",
+        "title": "BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "BM series",
+          "BM 6.1/100-15",
+          "BM 10.1/100-18.5"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES\nDocument section: BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 100 bar – 50 Hz | BM 6.1/100-15\nRow: BM 10.1/100-18.5\nValues: 1060 | 63.6 | 37.4 | 100 | 1450 | 3 | 1485 | 18.5 | 475 | 1045\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "page": null,
+        "section": [
+          "BM series (100 bar) · Air-cooled compressors / BAUER KOMPRES",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "BM 10.1/100-18.5",
+        "headers": [
+          "Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Shutdown pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "BM series 100 bar – 50 Hz",
+          "BM 6.1/100-15"
+        ],
+        "row_values": [
+          "1060",
+          "63.6",
+          "37.4",
+          "100",
+          "1450",
+          "3",
+          "1485",
+          "18.5",
+          "475",
+          "1045"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.38728938,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "BM series",
+          "BM 6.1/40-11"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz\nRow: BM 6.1/40-11\nValues: 660 | 39.6 | 23.3 | 40 | 580 | 3 | 1470 | 11 | 425 | 935\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "page": null,
+        "section": [
+          "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "BM 6.1/40-11",
+        "headers": [
+          "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Shutdown pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "BM series 40 bar – 50 Hz"
+        ],
+        "row_values": [
+          "660",
+          "39.6",
+          "23.3",
+          "40",
+          "580",
+          "3",
+          "1470",
+          "11",
+          "425",
+          "935"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3552396,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "BM series",
+          "BM 6.1/40-11",
+          "BM 10.1/40-15"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz | BM 6.1/40-11\nRow: BM 10.1/40-15\nValues: 1080 | 64.8 | 38.1 | 40 | 580 | 3 | 1480 | 15 | 475 | 1045\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "page": null,
+        "section": [
+          "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "BM 10.1/40-15",
+        "headers": [
+          "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Shutdown pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "BM series 40 bar – 50 Hz",
+          "BM 6.1/40-11"
+        ],
+        "row_values": [
+          "1080",
+          "64.8",
+          "38.1",
+          "40",
+          "580",
+          "3",
+          "1480",
+          "15",
+          "475",
+          "1045"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.35471917,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "c93e4b01-ee3e-46df-9755-ed624ed6ae51",
+        "filename": "0281-0115_mini-verticus-b-series_24bc97ff10-472b9303f3.md",
+        "title": "MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "MINI-VERTICUS series",
+          "MINI-VERTICUS 30"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA\nDocument section: MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor MINI-VERTICUS, 170-215 l/min, 30 – 100 bar | Model designation | Effective free air delivery ¹ | Maximum operating pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | MINI-VERTICUS 30 – 68 bar\nRow: B 12.4-4-MV\nValues: 215 | 13 | 7.6 | 68 | 1000 | 3 | 1420 | 4 | 324 | 714\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS series (100 bar) · Air-cooled compressors / BA",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "B 12.4-4-MV",
+        "headers": [
+          "Medium-pressure compressor MINI-VERTICUS, 170-215 l/min, 30 – 100 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Maximum operating pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "MINI-VERTICUS 30 – 68 bar"
+        ],
+        "row_values": [
+          "215",
+          "13",
+          "7.6",
+          "68",
+          "1000",
+          "3",
+          "1420",
+          "4",
+          "324",
+          "714"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.35183317,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "c93e4b01-ee3e-46df-9755-ed624ed6ae51",
+        "filename": "0281-0115_mini-verticus-b-series_24bc97ff10-472b9303f3.md",
+        "title": "MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "MINI-VERTICUS series",
+          "MINI-VERTICUS 30",
+          "MINI-VERTICUS 60"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA\nDocument section: MINI-VERTICUS series (100 bar) · Air-cooled compressors | BA / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor MINI-VERTICUS, 170-215 l/min, 30 – 100 bar | Model designation | Effective free air delivery ¹ | Maximum operating pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | MINI-VERTICUS 30 – 68 bar | B 12.4-4-MV | MINI-VERTICUS 60 – 85 bar\nRow: E 12.4-3-MV\nValues: 170 | 10.2 | 6 | 85 | 1230 | 3 | 1150 | 3 | 316 | 697\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS series (100 bar) · Air-cooled compressors / BA",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "E 12.4-3-MV",
+        "headers": [
+          "Medium-pressure compressor MINI-VERTICUS, 170-215 l/min, 30 – 100 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Maximum operating pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "MINI-VERTICUS 30 – 68 bar",
+          "B 12.4-4-MV",
+          "MINI-VERTICUS 60 – 85 bar"
+        ],
+        "row_values": [
+          "170",
+          "10.2",
+          "6",
+          "85",
+          "1230",
+          "3",
+          "1150",
+          "3",
+          "316",
+          "697"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.35166667,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "8c108b6e-09a6-489b-b811-612490f1e52f",
+        "filename": "0243-0077_gib22-series-md_87728d914b-1649e11ebc.md",
+        "title": "GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "GIB 22"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "valve",
+          "sensor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE\ndition monitoring, and a global service network ensure maximum availability whenever it is required.\nEngineering\nfor efficiency, performance, and serviceability\nThe compressor system features a compact, ergonomic design engineered for high energy efficiency and reliable performance. An optimized layout ensures easy maintenance access and service-friendly operation, supporting low operating costs and long-term system availability.\nTechnical Data\nMedium-pressure booster GIB 22, 1750–4150 l/min, 25–120 bar\nModel designation\nEffective free air delivery ¹\nInlet pressure\nOperating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\nbar (min)\nbar (max)\nrpm\nkW\nkg\nlbs\nGIB 22 series | 55 to 120 bar | 50 Hz\n210\n123.6\n10\n55\n110\nModel designation\nEffective free air delivery ¹\nInlet pressure\nOperating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\nbar (min)\nbar (max)\nrpm\nkW\nkg\nlbs\nGIB 22 series | 55 to 120 bar | 60 Hz\n249\n146.5\n10\n55\n110\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for air and nitrogen.\n² Shutdown pressure (final pressure sensor). Safety valve set pressure max. 120 bar.\nDetails & Features",
+        "page": null,
+        "section": [
+          "GIB 22 series (120 bar) · Air-cooled boosters / BAUER KOMPRE",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.2702396,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "f79fc98a-704a-444e-9160-aef12683e801",
+        "filename": "0242-0076_gib22-series-hd_c7951ec7ed-426ce5a20c.md",
+        "title": "GIB 22 series · Air-cooled boosters | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "GIB 22"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "valve",
+          "sensor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: GIB 22 series · Air-cooled boosters | BAUER KOMPRESSOREN\ndition monitoring, and a global service network ensure maximum availability whenever it is required.\nEngineering\nfor efficiency, performance, and serviceability\nThe compressor system features a compact, ergonomic design engineered for high energy efficiency and reliable performance. An optimized layout ensures easy maintenance access and service-friendly operation, supporting low operating costs and long-term system availability.\nTechnical Data\nHigh-pressure booster GIB 22, 930–3000 l/min, 90–370 bar\nModel designation\nEffective free air delivery ¹\nInlet pressure\nOperating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\nbar (min)\nbar (max)\nrpm\nkW\nkg\nlbs\nGIB 22 series | 160 to 370 bar | 50 Hz\n102\n60\n4.5\n160\n350\n150\n88.3\n10\n230\n350\nModel designation\nEffective free air delivery ¹\nInlet pressure\nOperating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\nbar (min)\nbar (max)\nrpm\nkW\nkg\nlbs\nGIB 22 series | 160 to 370 bar | 60 Hz\n123\n72.4\n4.5\n160\n350\n180\n105.9\n10\n230\n350\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for air and nitrogen.\n² Shutdown pressure (final pressure sensor). Safety valve set pressure max. 370 bar.\nDetails & Features",
+        "page": null,
+        "section": [
+          "GIB 22 series · Air-cooled boosters / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.24882134,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "4e3cd61d-f8ef-46d6-9c60-c6995bdc70bd",
+        "filename": "0149-GTC_BCA_20160615_EN-6b0666569f.md",
+        "title": "GTC_BCA_20160615_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: GTC_BCA_20160615_EN\no be based on a\nbreach of the warranty, is notified to the company during the Warranty\nPeriod, the Company will (at the Company’s sole option) repair or replace\nthe Products, or (at the Company’s sole option) credit a sum to be agreed with\nthe Customer in lieu of the replacement of, any Product of part thereof.\n(d) The value of any claim under the Warranty cannot exceed the original value\npaid by the Customer for the Products\n(e) There are no third party beneficiaries of the Warranty granted by the\nCompany herein.\n(f) For warranty claim procedure information, please refer to Bauer Compressors\nAsia Pte Ltd or our respective distributors and agents.",
+        "page": 1,
+        "section": [
+          "GTC BCA 20160615 EN",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.1004884,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.2",
+          "reranker": "deterministic-multilingual-fallback-v2"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "standards": [],
+        "number_units": [
+          "40 bar",
+          "100 bar",
+          "90 bar",
+          "800 l min"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false,
+        "citation_intent": true
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 21
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 2,
+      "elapsed_ms": 1243.62
+    }
+  },
+  "completed_at": "2026-07-23T19:57:20.221533+00:00",
+  "case_id": "B09",
+  "split": "development",
+  "category": "product_comparison",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

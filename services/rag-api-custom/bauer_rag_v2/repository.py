@@ -700,6 +700,7 @@ def _select_pressure_evidence(
             if candidate.location_key in seen:
                 continue
             seen.add(candidate.location_key)
+            candidate.metadata["pressure_evidence_priority"] = len(selected)
             selected.append(candidate)
             if len(selected) == limit:
                 return selected

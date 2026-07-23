@@ -88,6 +88,10 @@ class V2RepositoryTests(unittest.TestCase):
         ids = {candidate.chunk_id for candidate in selected}
         self.assertIn("booster", ids)
         self.assertIn("qualification", ids)
+        self.assertEqual(
+            [candidate.metadata["pressure_evidence_priority"] for candidate in selected],
+            list(range(len(selected))),
+        )
 
     def test_pressure_evidence_rejects_non_compressor_accessory_limit(self):
         dryer = pressure_candidate(

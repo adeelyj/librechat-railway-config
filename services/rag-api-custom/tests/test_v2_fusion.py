@@ -175,6 +175,18 @@ class V2FusionTests(unittest.TestCase):
         ranked = deterministic_rerank(analysis, [generic, exact])
         self.assertEqual(ranked[0].chunk_id, "exact")
 
+    def test_pressure_extremum_preserves_reserved_evidence_roles(self):
+        analysis = analyze_query(
+            "What is the highest documented maximum operating pressure?"
+        )
+        reserved = candidate("reserved", "Compressor overview 525 bar")
+        reserved.metadata["pressure_evidence_priority"] = 4
+        general = candidate("general", "Maximum operating pressure is 525 bar")
+        reserved.fusion_score = 0.04
+        general.fusion_score = 0.20
+        ranked = deterministic_rerank(analysis, [general, reserved])
+        self.assertEqual(ranked[0].chunk_id, "reserved")
+
     def test_evidence_cap_limits_each_file_and_fills_from_others(self):
         candidates = [candidate(name, name) for name in ("a-1", "a-2", "a-3", "b-1", "c-1")]
         for item in candidates[:3]:
