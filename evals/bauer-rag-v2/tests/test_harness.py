@@ -273,6 +273,29 @@ class EvaluationHarnessTests(unittest.TestCase):
         self.assertFalse(result["gold_verified"])
         self.assertFalse(result["promotion_allowed"])
 
+    def test_interim_gold_requires_independent_bauer_signoff(self):
+        gates = {
+            "gold_status": "interim_codex_reviewed_requires_bauer_signoff",
+            "thresholds": {
+                "exact_identifier_document_lookup": 0.95,
+                "exact_answer_accuracy": 0.9,
+                "citation_correctness": 0.95,
+                "safe_refusal_repeated_runs": 1.0,
+                "v2_wins_or_ties_v1": 0.8,
+                "retrieval_recall_at_5_minimum_delta": 0.05,
+                "maximum_category_regression": 0.05,
+                "retrieval_p95_seconds": 2.0,
+                "end_to_end_p95_seconds": 45.0,
+            },
+        }
+        result = score.promotion("combined", None, None, gates)
+        self.assertFalse(result["gold_verified"])
+        self.assertFalse(result["promotion_allowed"])
+        self.assertIn(
+            "Gold has interim review only and requires independent Bauer sign-off.",
+            result["blocking_reasons"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

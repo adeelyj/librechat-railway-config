@@ -20,10 +20,15 @@ motivated V2.
 
 ## Gold status
 
-The checked-in gold is an engineering seed derived from inspected public corpus records and the
-historical benchmark. It is deliberately labelled `provisional_requires_bauer_adjudication`.
-Neither Codex nor the local answer model may change that status. A human adjudicator must sign the
-gold manifest before a blind holdout result can authorize promotion.
+The checked-in gold began as an engineering seed derived from inspected public corpus records and
+the historical benchmark. On 2026-07-23, Codex completed an authorized interim review of B06,
+B07, B18, B19, B24, and B29; the decision record is
+`reports/gold-interim-review-20260723.md`. The manifest is labelled
+`interim_codex_reviewed_requires_bauer_signoff`.
+
+Interim review permits development work to continue but cannot authorize promotion. An
+independent Bauer subject-matter expert must review the complete manifest and change
+`gold_status` to `verified` before the blind holdout can be opened for a promotion decision.
 
 ## Fair-run controls
 

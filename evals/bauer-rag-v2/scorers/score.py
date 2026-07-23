@@ -710,7 +710,18 @@ def promotion(
         and len(checks) >= 12
         and all(check["passed"] for check in checks.values())
     )
-    gold_verified = gates["gold_status"] == "verified"
+    gold_status = gates["gold_status"]
+    gold_verified = gold_status == "verified"
+    if gold_verified:
+        gold_blocking_reasons = []
+    elif str(gold_status).startswith("interim_"):
+        gold_blocking_reasons = [
+            "Gold has interim review only and requires independent Bauer sign-off."
+        ]
+    else:
+        gold_blocking_reasons = [
+            "Gold is provisional and requires Bauer adjudication."
+        ]
     return {
         "checks": checks,
         "all_available_checks_pass": bool(checks)
@@ -718,7 +729,7 @@ def promotion(
         "gold_verified": gold_verified,
         "promotion_allowed": complete_gate_set and gold_verified,
         "blocking_reasons": [
-            *([] if gold_verified else ["Gold is provisional and requires Bauer adjudication."]),
+            *gold_blocking_reasons,
             *(
                 []
                 if run_kind == "combined"

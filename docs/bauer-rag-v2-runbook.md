@@ -14,12 +14,15 @@ IDs, V1 Agent ID, Test Archive Agent ID, 373-file allow-list, filenames, checksu
 provenance, and capture source. The local parser report is
 `evals/bauer-rag-v2/reports/corpus-inspection.json`.
 
-The checked-in gold set is provisional. A Bauer reviewer must adjudicate it and change
-`gold_status` to `verified` before the scorer can permit promotion. The corpus inspection verifies
-all 33 currently specified evidence locations against the frozen sources, but that engineering
-check does not replace human review of answer claims, constraints, and source interpretation.
-The retrieval-smoke disputes that must be resolved first are recorded in
-`../evals/bauer-rag-v2/reports/gold-adjudication-20260723.md`.
+Codex completed an authorized interim review of the six retrieval-smoke disputes on 2026-07-23.
+The decisions and source rationale are recorded in
+`../evals/bauer-rag-v2/reports/gold-interim-review-20260723.md`; the original dispute audit remains
+at `../evals/bauer-rag-v2/reports/gold-adjudication-20260723.md`.
+
+The checked-in status is `interim_codex_reviewed_requires_bauer_signoff`. A Bauer subject-matter
+expert must independently review the complete manifest and change `gold_status` to `verified`
+before the scorer can permit promotion. The corpus inspection and interim engineering review do
+not replace that independent sign-off.
 
 ## Pre-deployment checks
 

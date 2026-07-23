@@ -111,6 +111,32 @@ Measured retrieval gates:
 | Recall@5 improvement >= 0.05 | Pass: +0.6167 |
 | Worst category regression >= -0.05 | Pass: 0.0 |
 
+## Interim gold review
+
+At the user's request, Codex acted as interim reviewer for the six disputes recorded after the
+smoke run. The source-by-source decisions are in
+`../evals/bauer-rag-v2/reports/gold-interim-review-20260723.md`. The resulting manifest status is
+`interim_codex_reviewed_requires_bauer_signoff`; it is deliberately not `verified`.
+
+The same immutable run was rescored without rerunning retrieval:
+`../evals/bauer-rag-v2/reports/retrieval-smoke-20260723-05-interim-gold-score.json`
+(SHA-256 `51ff7aa7b49fa57ad2e0edb48e07d198fb934f398bb48f9e5048da38fd88a78e`).
+
+| Measure | V1 | V2 after interim adjudication |
+| --- | ---: | ---: |
+| Recall@1 | 0.0000 | 0.5417 |
+| Recall@3 | 0.0000 | 0.7667 |
+| Recall@5 | 0.0000 | 0.8167 |
+| MRR | 0.0000 | 0.6850 |
+| Exact metadata success | 0.0000 | 0.8889 |
+| Table integrity | 0.0000 | 0.3750 |
+
+Exact lookup improved from 66.67% to 88.89% because unreachable provisional labels were corrected.
+It still fails the 95% gate because B07's canonical brochure row is rank 3 rather than rank 1
+(eight of nine exact-category cases pass). Separately, B06 remains a complete-evidence retrieval
+miss, and B29 correctly exposes a page-boundary defect: printed page 31 content is attributed to
+page 30 by the current prose chunk.
+
 The first smoke directory (`retrieval-smoke-20260723-01`) is intentionally preserved as an
 incomplete run: it stopped when the runner selected the wrong language field for a German prompt.
 The runner was fixed and covered by a harness test before complete runs 02 through 04.
@@ -139,13 +165,13 @@ Final verification after the live deployments:
 
 ## Promotion decision
 
-Promotion is blocked. The gold manifest is still
-`provisional_requires_bauer_adjudication`, the exact-location gate is below target, a remote
-reranker has not been selected or benchmarked, and the required five-run end-to-end and blind
-holdout comparisons have not been run. The normal Bauer Agent therefore remains on V1.
+Promotion is blocked. The gold manifest has only interim review and still requires independent
+Bauer sign-off, the exact-location gate is below target, a remote reranker has not been selected
+or benchmarked, and the required five-run end-to-end and blind holdout comparisons have not been
+run. The normal Bauer Agent therefore remains on V1.
 
-See `../evals/bauer-rag-v2/reports/gold-adjudication-20260723.md` for the disputed evidence
-locations that must be resolved before locking the formal evaluation.
+See `../evals/bauer-rag-v2/reports/gold-interim-review-20260723.md` for the interim decisions and
+remaining sign-off boundary.
 
 ## Rollback
 

@@ -1,6 +1,13 @@
 {
   "schema_version": 1,
-  "verification_status": "provisional_requires_bauer_adjudication",
+  "verification_status": "interim_codex_reviewed_requires_bauer_signoff",
+  "interim_review": {
+    "reviewer": "OpenAI Codex",
+    "reviewed_at": "2026-07-23",
+    "case_ids": ["B06", "B07", "B18", "B19", "B24", "B29"],
+    "final_bauer_signoff_required": true,
+    "record": "../reports/gold-interim-review-20260723.md"
+  },
   "cases": [
     {
       "id": "B01",
@@ -51,7 +58,8 @@
     {
       "id": "B06",
       "required_claims": [
-        {"id": "max_pressure", "all_terms": ["525 bar"], "any_terms": ["VERTICUS", "K 22", "K 28"]},
+        {"id": "max_pressure", "all_terms": ["525 bar", "VERTICUS", "K 22", "K 28"]},
+        {"id": "compressor_vs_booster", "all_terms": ["compressor", "booster", "420 bar", "520 bar"]},
         {"id": "pressure_qualification", "all_terms": ["safety valve"], "any_terms": ["shutdown pressure", "final pressure"]}
       ],
       "forbidden_claims": ["550 bar compressor"],
@@ -61,7 +69,8 @@
     {
       "id": "B07",
       "required_claims": [
-        {"id": "model", "all_terms": ["I 15.11-11-V", "420 l/min", "4", "11 kW"], "any_terms": ["420 bar", "525 bar"]}
+        {"id": "model", "all_terms": ["I 15.11-11-V", "420 l/min", "4", "11 kW"], "any_terms": ["420 bar", "525 bar"]},
+        {"id": "footnotes", "all_terms": ["ISO 1217", "safety valve"], "any_terms": ["shutdown pressure", "final pressure"]}
       ],
       "forbidden_claims": ["550 bar"],
       "mandatory_constraints": {},
@@ -175,7 +184,7 @@
     {
       "id": "B19",
       "required_claims": [
-        {"id": "limits", "all_terms": ["B-KOOL III", "350 bar", "550 bar", "700 l/min", "200–420 l/min"]}
+        {"id": "limits", "all_terms": ["B-KOOL III", "350 bar", "550 bar", "700 l/min", "650 l/min", "200", "420 l/min", "helium", "argon", "ISO 1217"]}
       ],
       "forbidden_claims": [],
       "mandatory_constraints": {},
@@ -222,7 +231,7 @@
     {
       "id": "B24",
       "required_claims": [
-        {"id": "order", "all_terms": ["N7698"], "any_terms": ["K28.3", "K28.0", "K28.2"]}
+        {"id": "order", "all_terms": ["N7698", "K28.3", "21.0", "25.0", "23.1", "25.4", "K28.0", "K28.2"]}
       ],
       "forbidden_claims": ["N76980"],
       "mandatory_constraints": {},
@@ -267,7 +276,10 @@
     {
       "id": "B29",
       "required_claims": [
-        {"id": "family_range", "all_terms": ["K 22", "K 28", "800", "6800 l/min", "22", "110 kW", "30", "525 bar"]}
+        {"id": "family", "all_terms": ["K 22", "K 28"]},
+        {"id": "free_air_delivery", "all_terms": ["600"], "any_terms": ["6,800 l/min", "6800 l/min"]},
+        {"id": "motor_power", "all_terms": ["22 kW", "110 kW"]},
+        {"id": "pressure_range", "all_terms": ["30 bar", "525 bar"]}
       ],
       "forbidden_claims": ["all individual models have the same limits"],
       "mandatory_constraints": {},
