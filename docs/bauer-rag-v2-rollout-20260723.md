@@ -27,6 +27,9 @@ The final reproducible development smoke records evaluated source commit
 | RAG rollback deployment | `5d434f9f-1111-4c64-85d6-4cb0f0ae8d1b` |
 | LibreChat rollback deployment | `154edb4c-54f1-496f-ab4d-60aac87caef8` |
 | Bauer Twin deployment | `b753b52e-c0c4-41f1-b824-f01a1940347f` |
+| Wiki source commit | `48c8edb` in `wiki-rapiddraft` |
+| Wiki production deploy | `6a622ede5870253a6411ed8f` |
+| Wiki URL | `https://wiki.rapiddraft.ai/librechat/` |
 
 An intermediate RAG candidate, `146b47dd-0fd8-444a-8266-acab0166b629`, was accidentally built
 from the repository root and failed its health check because it used the Bauer Twin image without
