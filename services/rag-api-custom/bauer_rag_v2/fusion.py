@@ -14,9 +14,18 @@ from .extraction import normalize_for_search
 
 
 IDENTIFIER_RE = re.compile(
-    r"\b(?:(?:BM|K|GIB|GI|PE)\s+[A-Z0-9][A-Z0-9./_-]*|"
+    r"\b(?:(?:BM|K|GIB|GI|PE|I)\s+(?=[A-Z0-9./_-]*\d)[A-Z0-9][A-Z0-9./_-]*|"
+    r"N\d{3,8}(?:[_-]\d+)?|"
+    r"B-(?:DETECTION(?:\s+PLUS)?|SAFE(?:\s+300)?|SELECT|KOOL(?:\s+(?:I|II|III))?|"
+    r"CONTROL(?:\s+(?:MICRO|SMART|II|III))?)|"
     r"(?=[A-Z0-9./_-]{2,40}\b)(?=[A-Z0-9./_-]*[A-Z])(?=[A-Z0-9./_-]*\d)"
     r"[A-Z0-9][A-Z0-9./_-]*)\b",
+    re.IGNORECASE,
+)
+STANDARD_RE = re.compile(
+    r"\b(?:(?:DIN\s+)?EN\s+ISO\s+\d{3,5}(?:-\d+)?|ISO\s+\d{3,5}(?::\d{4})?|"
+    r"DIN\s+EN\s+\d{3,5}(?::\d{4})?|EN\s+\d{3,5}(?::\d{4})?|"
+    r"AD\s+2000(?:-[A-Za-z]+)?(?:\s+[A-Z]{1,3}\s*\d+)?)\b",
     re.IGNORECASE,
 )
 NUMBER_UNIT_RE = re.compile(
@@ -25,8 +34,8 @@ NUMBER_UNIT_RE = re.compile(
 )
 QUOTED_RE = re.compile(r'["“„](.+?)["”]', re.DOTALL)
 TABLE_INTENT_RE = re.compile(
-    r"\b(?:table|technical data|model|row|maximum|minimum|pressure|capacity|"
-    r"tabelle|technische daten|modell|zeile|maximal|mindestens|druck|leistung)\b",
+    r"\b(?:table|technical data|model row|row for|"
+    r"tabelle|technische daten|modellzeile|zeile f(?:ü|ue)r)\b",
     re.IGNORECASE,
 )
 QUERY_ALIASES = {
@@ -39,6 +48,73 @@ QUERY_ALIASES = {
     "ventil": "valve",
     "steuerung": "control",
 }
+QUERY_STOPWORDS = {
+    "about",
+    "according",
+    "also",
+    "and",
+    "answer",
+    "applicable",
+    "auf",
+    "aus",
+    "based",
+    "bei",
+    "cite",
+    "cited",
+    "clearly",
+    "der",
+    "die",
+    "document",
+    "documents",
+    "ein",
+    "eine",
+    "einen",
+    "entry",
+    "exact",
+    "find",
+    "for",
+    "from",
+    "give",
+    "has",
+    "have",
+    "how",
+    "identify",
+    "ist",
+    "laut",
+    "mit",
+    "name",
+    "nenne",
+    "not",
+    "only",
+    "page",
+    "preserve",
+    "public",
+    "report",
+    "return",
+    "source",
+    "state",
+    "table",
+    "that",
+    "the",
+    "these",
+    "this",
+    "und",
+    "uploaded",
+    "values",
+    "was",
+    "what",
+    "which",
+    "with",
+}
+DOCUMENT_LOOKUP_RE = re.compile(
+    r"\b(?:document(?:\s+number)?|dokument(?:nummer)?)\b",
+    re.IGNORECASE,
+)
+PRESSURE_EXTREMUM_RE = re.compile(
+    r"\b(?:highest|maximum|maximal(?:e[nrms]?)?|h(?:ö|oe)chste[nrms]?)\b"
+    r".{0,80}\b(?:operating pressure|working pressure|pressure|betriebsdruck|druck)\b",
+    re.IGNORECASE | re.DOTALL,
+)
 
 
 @dataclass(frozen=True)
@@ -47,9 +123,37 @@ class QueryAnalysis:
     normalized: str
     tokens: tuple[str, ...]
     identifiers: tuple[str, ...]
+    standards: tuple[str, ...]
     number_units: tuple[str, ...]
     quoted_phrases: tuple[str, ...]
     table_intent: bool
+    document_lookup: bool
+    pressure_extremum: bool
+
+    @property
+    def exact_terms(self) -> tuple[str, ...]:
+        return tuple(
+            dict.fromkeys(
+                (
+                    *self.identifiers,
+                    *self.standards,
+                    *self.number_units,
+                    *self.quoted_phrases,
+                )
+            )
+        )
+
+    @property
+    def primary_exact_terms(self) -> tuple[str, ...]:
+        return tuple(
+            dict.fromkeys(
+                (
+                    *self.identifiers,
+                    *self.standards,
+                    *self.quoted_phrases,
+                )
+            )
+        )
 
 
 @dataclass
@@ -99,7 +203,11 @@ class Candidate:
 
 def analyze_query(query: str) -> QueryAnalysis:
     normalized = normalize_for_search(query)
-    base_tokens = [token for token in normalized.split() if len(token) > 1]
+    base_tokens = [
+        token
+        for token in normalized.split()
+        if len(token) >= 3 and token not in QUERY_STOPWORDS
+    ]
     aliased_tokens = [
         alias_token
         for token in base_tokens
@@ -108,6 +216,9 @@ def analyze_query(query: str) -> QueryAnalysis:
     tokens = tuple(dict.fromkeys([*base_tokens, *aliased_tokens]))
     identifiers = tuple(
         dict.fromkeys(normalize_for_search(match.group(0)) for match in IDENTIFIER_RE.finditer(query))
+    )
+    standards = tuple(
+        dict.fromkeys(normalize_for_search(match.group(0)) for match in STANDARD_RE.finditer(query))
     )
     number_units = tuple(
         dict.fromkeys(normalize_for_search(match.group(0)) for match in NUMBER_UNIT_RE.finditer(query))
@@ -120,9 +231,12 @@ def analyze_query(query: str) -> QueryAnalysis:
         normalized=normalized,
         tokens=tokens,
         identifiers=identifiers,
+        standards=standards,
         number_units=number_units,
         quoted_phrases=quoted,
         table_intent=bool(TABLE_INTENT_RE.search(query)),
+        document_lookup=bool(DOCUMENT_LOOKUP_RE.search(query)),
+        pressure_extremum=bool(PRESSURE_EXTREMUM_RE.search(query)),
     )
 
 
@@ -212,16 +326,24 @@ def deterministic_rerank(
             f"{candidate.filename}\n{candidate.title or ''}\n{candidate.content}"
         )
         overlap = _token_overlap(analysis, candidate)
-        identifier_hits = sum(1 for value in analysis.identifiers if value in searchable)
+        identifier_hits = sum(
+            1 for value in analysis.primary_exact_terms if value in searchable
+        )
         number_hits = sum(1 for value in analysis.number_units if value in searchable)
-        quoted_hits = sum(1 for value in analysis.quoted_phrases if value in searchable)
         table_bonus = 0.09 if analysis.table_intent and candidate.chunk_kind == "table_row" else 0.0
+        document_bonus = (
+            0.14
+            if analysis.document_lookup
+            and candidate.page in (None, 1)
+            and "exact" in candidate.channels
+            else 0.0
+        )
         candidate.rerank_score = (
             overlap * 0.55
-            + min(identifier_hits, 2) * 0.12
-            + min(number_hits, 2) * 0.08
-            + min(quoted_hits, 1) * 0.12
+            + min(identifier_hits, 2) * 0.16
+            + min(number_hits, 2) * 0.05
             + table_bonus
+            + document_bonus
         )
         candidate.final_score = candidate.fusion_score + candidate.rerank_score
         candidate.metadata["reranker"] = "deterministic-multilingual-fallback-v1"

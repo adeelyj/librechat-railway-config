@@ -7,6 +7,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (  # noqa: E402
+    case_prompt,
     create_run_directory,
     load_cases,
     load_manifest,
@@ -71,7 +72,7 @@ def main() -> None:
                 "category": case["category"],
                 "system": "codex-reference",
                 "repetition": repetition,
-                "prompt": case["prompt_en"],
+                "prompt": case_prompt(case),
                 "answer": None,
                 "evidence": [],
             }

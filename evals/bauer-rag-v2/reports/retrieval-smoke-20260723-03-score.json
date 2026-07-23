@@ -1,0 +1,908 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-23T14:30:36.157850+00:00",
+  "source_runs": [
+    "D:\\02_Code\\LibreChat_Setup-rag-v2\\evals\\bauer-rag-v2\\raw-runs\\retrieval-smoke-20260723-03\\run.json"
+  ],
+  "source_run_id": "retrieval-smoke-20260723-03",
+  "source_run_kind": "retrieval",
+  "gold_status": "provisional_requires_bauer_adjudication",
+  "retrieval": {
+    "by_system": {
+      "v1": {
+        "observations": 20,
+        "recall_at_1": 0.0,
+        "recall_at_3": 0.0,
+        "recall_at_5": 0.0,
+        "recall_at_10": 0.0,
+        "mean_reciprocal_rank": 0.0,
+        "exact_metadata_success": 0.0,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0,
+        "latency_p50_ms": 425.03,
+        "latency_p95_ms": 625.64
+      },
+      "v2": {
+        "observations": 20,
+        "recall_at_1": 0.3417,
+        "recall_at_3": 0.4333,
+        "recall_at_5": 0.5333,
+        "recall_at_10": 0.5333,
+        "mean_reciprocal_rank": 0.445,
+        "exact_metadata_success": 0.5556,
+        "table_integrity": 0.3125,
+        "duplicate_rate": 0.03,
+        "latency_p50_ms": 1163.37,
+        "latency_p95_ms": 1655.13
+      }
+    },
+    "category_recall_at_5": {
+      "bilingual_exact": {
+        "v1": 0.0,
+        "v2": 1.0
+      },
+      "bilingual_table": {
+        "v1": 0.0,
+        "v2": 1.0
+      },
+      "contradiction": {
+        "v1": 0.0,
+        "v2": 0.8333
+      },
+      "exact_certificate": {
+        "v1": 0.0,
+        "v2": 1.0
+      },
+      "exact_document_number": {
+        "v1": 0.0,
+        "v2": 0.0
+      },
+      "exact_part_number": {
+        "v1": 0.0,
+        "v2": 0.0
+      },
+      "exact_pressure": {
+        "v1": 0.0,
+        "v2": 0.0
+      },
+      "exact_product_limit": {
+        "v1": 0.0,
+        "v2": 0.5
+      },
+      "exact_table": {
+        "v1": 0.0,
+        "v2": 0.6667
+      },
+      "exact_table_ambiguity": {
+        "v1": 0.0,
+        "v2": 0.0
+      },
+      "product_comparison": {
+        "v1": 0.0,
+        "v2": 1.0
+      },
+      "product_discovery": {
+        "v1": 0.0,
+        "v2": 0.0
+      },
+      "safety_limit": {
+        "v1": 0.0,
+        "v2": 0.0
+      },
+      "semantic_product": {
+        "v1": 0.0,
+        "v2": 1.0
+      }
+    },
+    "authorization_violations": 0,
+    "errors": 0,
+    "observations": [
+      {
+        "case_id": "B06",
+        "category": "exact_pressure",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.1
+      },
+      {
+        "case_id": "B06",
+        "category": "exact_pressure",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B07",
+        "category": "exact_table",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B07",
+        "category": "exact_table",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.2
+      },
+      {
+        "case_id": "B08",
+        "category": "product_discovery",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          null,
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.1
+      },
+      {
+        "case_id": "B08",
+        "category": "product_discovery",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null,
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B09",
+        "category": "product_comparison",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null,
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B09",
+        "category": "product_comparison",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          3,
+          1
+        ],
+        "recall_at": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "exact_top1": false,
+        "table_integrity": 1.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B10",
+        "category": "contradiction",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          null,
+          2,
+          1
+        ],
+        "recall_at": {
+          "1": 0.3333333333333333,
+          "3": 0.6666666666666666,
+          "5": 0.6666666666666666,
+          "10": 0.6666666666666666
+        },
+        "reciprocal_rank": 1.0,
+        "exact_top1": false,
+        "table_integrity": null,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B10",
+        "category": "contradiction",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null,
+          null,
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": null,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B11",
+        "category": "safety_limit",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B11",
+        "category": "safety_limit",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B13",
+        "category": "exact_certificate",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B13",
+        "category": "exact_certificate",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          1
+        ],
+        "recall_at": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "exact_top1": true,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B15",
+        "category": "exact_certificate",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B15",
+        "category": "exact_certificate",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          1
+        ],
+        "recall_at": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "exact_top1": true,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B16",
+        "category": "exact_table",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          1
+        ],
+        "recall_at": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "exact_top1": true,
+        "table_integrity": 1.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B16",
+        "category": "exact_table",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B17",
+        "category": "exact_table",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B17",
+        "category": "exact_table",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          1
+        ],
+        "recall_at": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "exact_top1": true,
+        "table_integrity": 1.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B18",
+        "category": "exact_table_ambiguity",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.2
+      },
+      {
+        "case_id": "B18",
+        "category": "exact_table_ambiguity",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B19",
+        "category": "exact_product_limit",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B19",
+        "category": "exact_product_limit",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B20",
+        "category": "exact_product_limit",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          2
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "reciprocal_rank": 0.5,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B20",
+        "category": "exact_product_limit",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B21",
+        "category": "contradiction",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B21",
+        "category": "contradiction",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          5
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "reciprocal_rank": 0.2,
+        "exact_top1": false,
+        "table_integrity": 1.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B22",
+        "category": "bilingual_exact",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          1
+        ],
+        "recall_at": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "exact_top1": true,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B22",
+        "category": "bilingual_exact",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B23",
+        "category": "exact_document_number",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": null,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B23",
+        "category": "exact_document_number",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": null,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B24",
+        "category": "exact_part_number",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B24",
+        "category": "exact_part_number",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B25",
+        "category": "semantic_product",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": null,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B25",
+        "category": "semantic_product",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          5
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "reciprocal_rank": 0.2,
+        "exact_top1": false,
+        "table_integrity": null,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B29",
+        "category": "exact_pressure",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": null,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B29",
+        "category": "exact_pressure",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": null,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B30",
+        "category": "bilingual_table",
+        "system": "v2",
+        "repetition": 1,
+        "ranks": [
+          1
+        ],
+        "recall_at": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "exact_top1": true,
+        "table_integrity": 1.0,
+        "duplicate_rate": 0.0
+      },
+      {
+        "case_id": "B30",
+        "category": "bilingual_table",
+        "system": "v1",
+        "repetition": 1,
+        "ranks": [
+          null
+        ],
+        "recall_at": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "reciprocal_rank": 0,
+        "exact_top1": false,
+        "table_integrity": 0.0,
+        "duplicate_rate": 0.0
+      }
+    ]
+  },
+  "answers": null,
+  "promotion": {
+    "checks": {
+      "exact_identifier_document_lookup": {
+        "value": 0.5556,
+        "target": 0.95,
+        "passed": false
+      },
+      "retrieval_p95_seconds": {
+        "value": 1.6551300000000002,
+        "target": 2.0,
+        "passed": true
+      },
+      "authorization_violations": {
+        "value": 0,
+        "target": 0,
+        "passed": true
+      },
+      "retrieval_recall_at_5_delta": {
+        "value": 0.5333,
+        "target": 0.05,
+        "passed": true
+      },
+      "worst_category_recall_at_5_delta": {
+        "value": 0.0,
+        "target": -0.05,
+        "passed": true
+      }
+    },
+    "all_available_checks_pass": false,
+    "gold_verified": false,
+    "promotion_allowed": false,
+    "blocking_reasons": [
+      "Gold is provisional and requires Bauer adjudication.",
+      "A combined retrieval and end-to-end report is required for promotion.",
+      "One or more measured promotion gates failed."
+    ]
+  }
+}

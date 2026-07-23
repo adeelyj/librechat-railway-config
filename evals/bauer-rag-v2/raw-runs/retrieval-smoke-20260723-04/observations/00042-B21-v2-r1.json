@@ -1,0 +1,1052 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1166.28,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+      "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nEN\n\n- Original source: `bauer_index\\raw_html\\0030_b-safe_ae238602bf.html`\n- Original SHA-256: `9028a63e42a9c17ca30353e60fe9cb0e05b8486b565fcf544acc936593876f7f`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\ncalcActive())\">\nB-SAFE\nSafety filling cell for breathing air applications up to 300 bar and Nitrox applications up to 200 bar\nThe B-SAFE 300 and B-SAFE ECO safety filling enclosures reliably protect operating personnel when filling breathing air or Nitrox cylinders against the consequences of cylinder rupture or explosion. With their robust construction and sophisticated safety technology, they are the ideal solution for professional filling stations.\nBreathing air and Nitrox\nUp to 410 bar\n6 to 10 filling connections available\nContact us\nRequest product\nSelected product:\nB-SAFE\nArt. Nr.: B-SAFE\nSKU\nB-SAFE\nIn stock\nCHF 100.00",
+      "page": null,
+      "section": [
+        "B-SAFE · Filling and Safety / BAUER KOMPRESSOREN"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.69271519,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+      "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: B-SAFE 300\nMedium: Air, Nitrox\nMaximum operating pressure: 410 bar\nFilling pressures (up to 2): 225/330 bar\nVariable pressure increase: 20 – 50 bar/min\nWeight: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+      "page": null,
+      "section": [
+        "B-SAFE · Filling and Safety / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "B-SAFE 300",
+      "headers": [
+        "Medium",
+        "Maximum operating pressure",
+        "Filling pressures (up to 2)",
+        "Variable pressure increase",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Filling chamber dimensions",
+        "B-SAFE ECO",
+        "Atemluft",
+        "410 bar",
+        "225/330 bar",
+        "ca. 450 kg",
+        "6",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+        "Safety cell",
+        "Safety doors"
+      ],
+      "row_values": [
+        "Air, Nitrox",
+        "410 bar",
+        "225/330 bar",
+        "20 – 50 bar/min",
+        "ca. 450 kg",
+        "maximal 10",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "130 cm × 40 cm × 70 cm",
+        "Medium",
+        "Maximum operating pressure",
+        "Filling pressures (up to 2)",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Details & Features",
+        "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+        "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+        "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation."
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.64844972,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-SAFE",
+        "B-SELECT"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nted to the filling panel, the fully automatic filling\ncycle starts again from the beginning.\nAutomatic selector unit\nB-SELECT\nStorage system 2 x\nB80 for 330 bar\n## Page 19\n\nBAUER KOMPRESSOREN\nACCESSORY SYSTEMS | FILLING/DISTRIBUTION AND SAFETY | 19\nB-SAFE 300\nTAKING FILLING SAFETY\nTO A NEW LEVEL\nB-SAFE 300 – Uncompromising safety for\npersons and compressor rooms when filling\npressure cylinders.\nThe stationary safety filling station controls the\nfilling speed of the breathing air cylinders for\ndiving or respiratory applications1. The cylinders\nare placed in the B-SAFE 300 and attached\nto the fill valves. The integrated filling control\nsystem then begins the filling process, automati-\ncally locking the doors to eliminate the chance\nof operating errors.\nIf an incident occurs during filling – such as\nexplosion of a pressurised cylinder – the welded\nsteel safety chamber contains the metal frag-\nments and allows the pressure wave to dissipate\nthrough grilles on both sides and in the top\ncover.\nThe B-SAFE thus replaces costly protective\nmeasures for filling facilities and provides\n­operators with a high level of (legal) security.\nFEATURES\n› Explosion-proof filling chamber\n› 6 to 10 cylinders can be filled at the same\ntime\n› Operating pressure up to 410 bar\n› Optional: simultaneous filling of 225/330 bar\nB-SAFE 300 Safety filling system\nTECHNICAL DATA\nPARAMETERS\nDATA",
+      "page": 18,
+      "section": [
+        "2026 04 Accessory Systems EN N39608 sc",
+        "Page 18"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.55325871,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "3fedd554-9a65-4e01-805d-54dcccfabcef",
+      "filename": "0067-2026_04_PE_NITROX_EN_N44686_sc-54b6138ac8.md",
+      "title": "2026_04_PE_NITROX_EN_N44686_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "PE NITROX",
+        "B-CONTROL MICRO",
+        "B-KOOL",
+        "B-CONTROL",
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026_04_PE_NITROX_EN_N44686_sc\nchase\ncosts to be rapidly recouped.\nBy reducing cartridge consumption, B-KOOL also makes a\nmajor contribution to saving resources and avoiding waste.\nB-KOOL III\n## Page 13\n\nBAUER KOMPRESSOREN\nACCESSORIES | PE-NITROX SYSTEME | 13\nSAFE FILLING, MAXIMUM\nCONVENIENCE\nThe BAUER B-FILL external filling panel – now with a stylish\nnew design – allows you to quickly fill breathing air\ncylinders.\nThe B-FILL is now modularly expandable and can even be retro-\nfitted. Each module is equipped with two filling connectors, as\ndesired either with hoses or direct connections, both of which\ncan fill at up to 200 or 300 or 420 bar.\nFor optional control and monitoring of the system, a B-CONTROL\nMICRO can be installed in an additional B-FILL module. Any num-\nber of B-FILL modules can be combined, allowing you to create\nthe perfect filling panel for your requirements.\nPERFECT PROTECTION FROM\n­EXPLODING CYLINDERS\nThe B-SAFE-OX safety filling system offers enhanced\nprotection of individuals and the compressor environment\nduring filling.\nThe rugged steel safety module provides protection from severed\nor detached filling hose connections and cylinder explosions\nduring filling. The doors are automatically locked during filling.\nFor more information on air and gas purification by BAUER, see our brochure “BAUER Accessories“ and\nvisit bauer-kompressoren.de\nBAUER filling panel B-FILL\nB-SAFE 300 filling device",
+      "page": 12,
+      "section": [
+        "2026 04 PE NITROX EN N44686 sc",
+        "Page 12"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.55099156,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-SAFE"
+      ],
+      "media": [],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nressure up to 410 bar\n› Optional: simultaneous filling of 225/330 bar\nB-SAFE 300 Safety filling system\nTECHNICAL DATA\nPARAMETERS\nDATA\nMaximum operating pressure\n## Page 20\n\nHIGH-PRESSURE REDUCING STATION\nFOR OUTSTANDING QUALITY AND FUNCTION\nBAUER KOMPRESSOREN high-pressure reducing stations provide you with turnkey enhancements for your\nstorage system. Upstream pressure fluctuations in the storage system are adjusted to provide reduced and\nconsistent output pressure.\nEquipped with high-quality pressure reducers, pressure gauges, ball valves and safety valve, they are quick\nand easy to install and provide outstanding operational reliability.\n¹ The output pressure should only ever be set once (no scope for permanent changes) Other designs on request.\nFluctuations in primary pressure may result in minor fluctuations in secondary pressure for technical reasons.\nHigh-pressure reducing station\n20 | FILLING/DISTRIBUTION AND SAFETY | ACCESSORY SYSTEMS\nBAUER KOMPRESSOREN\nINLET PRESSURE, MAX.\nOUTLET PRESSURE, ADJUSTABLE ¹\nCOMMENT\nbar\n365 bar\n5 - 40 bar\n365 bar\n41 - 100 bar\n365 bar\n101 - 220 bar\n365 bar\n221 - 350 bar\n465 bar\n34 - 241 bar\nStainless steel design\n365 bar\n41 - 230 bar\nIncreased flow",
+      "page": 19,
+      "section": [
+        "2026 04 Accessory Systems EN N39608 sc",
+        "Page 19"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.53833333,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SAFE",
+        "VERTICUS O-ring"
+      ],
+      "media": [],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\n6 × 2 new VERTICUS\nO-ring to bottle\nN16057\nProduct reference\nDiverse filling connectors\nAppropriate accessory or\nreplacement part\nOrder\nnumber\n83974 (figure 10)\n200 bar cylinder connector\nM26 × 2 with M16 × 1.5 UNI-\nMAM hose intake, with pressure\nimpact protection, green hand\nwheel\nGreen hand wheel\nO-ring to bottle\nO-ring for UNIMAM\n83867\nN16057\nN16632\n193536\n300 bar cylinder connector\nM26 × 2 with M16 × 1.5\n(UNIMAM hose intake, with\npressure impact protection,\npearl-opal green hand wheel\nPearl green handwheel\nO-ring to bottle\nO-ring for UNIMAM\n193538\nN16057\nN16632\n125087 (figure 28)\n200 bar quick-venting,\nwith pressure impact protection\nand check valve, green hand\nwheel M26 × 2 B-SAFE\nLocking ring\nO-ring to bottle\nO-ring in valve 2×\nN38010\nN16057\nN25452\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 61\n60 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+      "page": 31,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 31"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.41309524,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+      "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+      "title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "MINI-VERTICUS and",
+        "VERTICUS NITROX",
+        "B-KOOL",
+        "B-CONTROL",
+        "B-CONTROL MICRO",
+        "VERTICUS series",
+        "B-SAFE"
+      ],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nappprox.\nDimensions\nL x W x H\nl/min\ncfm\nbar\npsig\nrpm\nMotor\nkW\nkg\ncm\nMARINER\nP 41\n4\n1450\nThree-phase\n400 V, 50 Hz\n7.5\n180\n131 x 65 x 72\nTECHNICAL SPECIFICATIONS\n## Page 15\n\nBAUER KOMPRESSOREN\nB-NITROX SYSTEMES | B-NITROX COMPRESSORS | 15\nMINI-VERTICUS AND VERTICUS NITROX\nEXTRA POWERFUL STATIONARY NITROX COMPRESSOR SYSTEMS\nThe successful (MINI-)VERTICUS series was developed and constructed to meet strict performance require-\nments for continuous operation in professional applications. The NITROX models of this series offer charging\nrates of up to 450 l/min. They combine a small footprint with high output and – in the SUPER SILENT version –\nwith extra-quiet operation.\nThe compressor blocks are powered by ultra-rugged drive units designed for continuous operation, which ma-\nximise cost-effectiveness and durability. The needs-oriented, electronic control system (B-CONTROL MICRO)\nalso offers the possibility of being integrated as a slave in an interconnected operation.\n› 260 - 450 l/min\n› 300 bar\n› 5.5 - 11 kW electric motor\nOPTIONAL FEATURES\n› Super Silent soundproof housing\n› Larger P 61 or P 81 Purification System for longer\ncartridge life\n› B-SECURUS filter cartridge monitoring unit\n› Four filling hoses with nitrox connectors mounted to\nthe compressor front\n› B-AEROGUARD-OX CO2 reduction system\n› B-KOOL refrigeration dryer\n› B-SAFE-OX Safety Filling System",
+      "page": 14,
+      "section": [
+        "2026-04 B-Nitrox EN N34460 sc",
+        "Page 14"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.38845238,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION",
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\nr cylinders\n› FSC Filling Speed Control unit – reduces filling speed to\n20 up to maximum 50 bar/min for safe filling, particularly\nof composite cylinders\nB-SAFE\n## Page 41\n\nBAUER KOMPRESSOREN\nBAUER PREMIUM LINE | ACCESSORIES | 41\nGAS MEASUREMENT TECHNOLOGY\n› AERO-TEST – portable breathing air tester\n› B-DETECTION PLUS m – mobile online gas measurement\n­system for rapid on-the-spot measurement of O2, CO, CO2\nand optional measurement of absolute moisture and ­residual\noil (VOC)1 in breathing air cylinders or at high-pressure ports.\n› B-DETECTION PLUS i and s – fixed online gas measurement\nsystems for continuously measuring O2, CO and CO2 with\noptional functions for absolute humidity and total oil value\n(VOC)1. Measuring values can be logged at any time and are\nsaved in Excel format on an SD card for easy access and use.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible\n› NEW! Measurement directly in the intake hose to analyse the\nair actually absorbed\n› NEW! Possibility to measure breathing air cylinders with\nB-DETECTION PLUS i, s and m\n› NEW! The B-DETECTION PLUS is now also B-APP and\nB-CLOUD compatible ²\nB-DETECTION PLUS m\nFor further accessories and more details, see our\nbrochures “BAUER Accessories” and “B-DETECTION PLUS-\nthe next generation online gas measurement systems“ and\nvisit www.bauer-kompressoren.de.",
+      "page": 40,
+      "section": [
+        "bauer amfile 5",
+        "Page 40"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3418254,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "e755f3ad-7b90-438a-92cc-89e5712044bf",
+      "filename": "0081-bauer_amfile_13-e7e9162a14.md",
+      "title": "bauer_amfile_13",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_13\n› Optional safety valve for maximum safety\n› Automatic selector unit – for fast, economical filling of stor-\nage cylinders\nAutomatic selector unit\nB-VIRUS FREE\n## Page 5\n\nB-DETECTION PLUS\nExternal filling panel B-FILL\nBAUER KOMPRESSOREN\nPOSEIDON EDITION | ACCESSORIES | 5\nFILLING AND SAFETY\n› B-FILL external filling panels – for wall mounting, with optional\nremote control unit\n› B-SAFE Filling System – for safe filling\nof breathing air cylinders\n› FSC Filling Speed Control unit – reduces filling speed\nto 20 up to 50 bar/min for safe filling, particularly of\ncomposite cylinders\nGAS MEASUREMENT TECHNOLOGY\n› AERO-TEST – portable breathing air tester\n› B-DETECTION PLUS m – mobile online gas measurement ­system\nfor rapid on-the-spot measurement of O2, CO, CO2 and ­optional\n­measurement of absolute moisture and ­residual oil (VOC)1 in\n­breathing air cylinders or at high-pressure ports.\n› B-DETECTION PLUS i and s – fixed online gas measurement systems\nfor continuously measuring O2, CO and CO2 with optional functions\nfor absolute humidity and total oil value (VOC)1. Measuring values\ncan be logged at any time and are saved in Excel format on an SD\ncard for easy access and use.\n› NEW! Now not only the ambient air can be measured, but also the\nintake air and the air in the cylinder.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible",
+      "page": 4,
+      "section": [
+        "bauer amfile 13",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.341337,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL",
+        "B-DETECTION PLUS",
+        "B-SELECT",
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_7\nders\n› Optional safety valve for maximum safety\n› Automatic selector unit – for fast, economical filling of stor-\nage cylinders\nB-SELECT\nB-VIRUS FREE\nB-KOOL III\n## Page 29\n\nB-DETECTION PLUS\nExternal filling panel B-FILL\nBAUER KOMPRESSOREN\nPOSEIDON EDITION | ACCESSORIES | 29\nFILLING AND SAFETY\n› B-FILL external filling panels – for wall mounting, with optional\nremote control unit\n› B-SAFE Filling System – for safe filling\nof breathing air cylinders\n› FSC Filling Speed Control unit – reduces filling speed\nto 20 up to 50 bar/min for safe filling, particularly of\ncomposite cylinders\nGAS MEASUREMENT TECHNOLOGY\n› AERO-TEST – portable breathing air tester\n› B-DETECTION PLUS m – mobile online gas measurement ­system\nfor rapid on-the-spot measurement of O2, CO, CO2 and ­optional\n­measurement of absolute moisture and ­residual oil (VOC)1 in\n­breathing air cylinders or at high-pressure ports.\n› B-DETECTION PLUS i and s – fixed online gas measurement systems\nfor continuously measuring O2, CO and CO2 with optional functions\nfor absolute humidity and total oil value (VOC)1. Measuring values\ncan be logged at any time and are saved in Excel format on an SD\ncard for easy access and use.\n› NEW! Now not only the ambient air can be measured, but also the\nintake air and the air in the cylinder.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible",
+      "page": 28,
+      "section": [
+        "bauer amfile 7",
+        "Page 28"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3411039,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nEN\n\n- Original source: `bauer_index\\raw_html\\0030_b-safe_ae238602bf.html`\n- Original SHA-256: `9028a63e42a9c17ca30353e60fe9cb0e05b8486b565fcf544acc936593876f7f`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\ncalcActive())\">\nB-SAFE\nSafety filling cell for breathing air applications up to 300 bar and Nitrox applications up to 200 bar\nThe B-SAFE 300 and B-SAFE ECO safety filling enclosures reliably protect operating personnel when filling breathing air or Nitrox cylinders against the consequences of cylinder rupture or explosion. With their robust construction and sophisticated safety technology, they are the ideal solution for professional filling stations.\nBreathing air and Nitrox\nUp to 410 bar\n6 to 10 filling connections available\nContact us\nRequest product\nSelected product:\nB-SAFE\nArt. Nr.: B-SAFE\nSKU\nB-SAFE\nIn stock\nCHF 100.00",
+        "page": null,
+        "section": [
+          "B-SAFE · Filling and Safety / BAUER KOMPRESSOREN"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.69271519,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: B-SAFE 300\nMedium: Air, Nitrox\nMaximum operating pressure: 410 bar\nFilling pressures (up to 2): 225/330 bar\nVariable pressure increase: 20 – 50 bar/min\nWeight: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+        "page": null,
+        "section": [
+          "B-SAFE · Filling and Safety / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "B-SAFE 300",
+        "headers": [
+          "Medium",
+          "Maximum operating pressure",
+          "Filling pressures (up to 2)",
+          "Variable pressure increase",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Filling chamber dimensions",
+          "B-SAFE ECO",
+          "Atemluft",
+          "410 bar",
+          "225/330 bar",
+          "ca. 450 kg",
+          "6",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+          "Safety cell",
+          "Safety doors"
+        ],
+        "row_values": [
+          "Air, Nitrox",
+          "410 bar",
+          "225/330 bar",
+          "20 – 50 bar/min",
+          "ca. 450 kg",
+          "maximal 10",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "130 cm × 40 cm × 70 cm",
+          "Medium",
+          "Maximum operating pressure",
+          "Filling pressures (up to 2)",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Details & Features",
+          "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+          "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+          "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation."
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.64844972,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-SAFE",
+          "B-SELECT"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nted to the filling panel, the fully automatic filling\ncycle starts again from the beginning.\nAutomatic selector unit\nB-SELECT\nStorage system 2 x\nB80 for 330 bar\n## Page 19\n\nBAUER KOMPRESSOREN\nACCESSORY SYSTEMS | FILLING/DISTRIBUTION AND SAFETY | 19\nB-SAFE 300\nTAKING FILLING SAFETY\nTO A NEW LEVEL\nB-SAFE 300 – Uncompromising safety for\npersons and compressor rooms when filling\npressure cylinders.\nThe stationary safety filling station controls the\nfilling speed of the breathing air cylinders for\ndiving or respiratory applications1. The cylinders\nare placed in the B-SAFE 300 and attached\nto the fill valves. The integrated filling control\nsystem then begins the filling process, automati-\ncally locking the doors to eliminate the chance\nof operating errors.\nIf an incident occurs during filling – such as\nexplosion of a pressurised cylinder – the welded\nsteel safety chamber contains the metal frag-\nments and allows the pressure wave to dissipate\nthrough grilles on both sides and in the top\ncover.\nThe B-SAFE thus replaces costly protective\nmeasures for filling facilities and provides\n­operators with a high level of (legal) security.\nFEATURES\n› Explosion-proof filling chamber\n› 6 to 10 cylinders can be filled at the same\ntime\n› Operating pressure up to 410 bar\n› Optional: simultaneous filling of 225/330 bar\nB-SAFE 300 Safety filling system\nTECHNICAL DATA\nPARAMETERS\nDATA",
+        "page": 18,
+        "section": [
+          "2026 04 Accessory Systems EN N39608 sc",
+          "Page 18"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.55325871,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "3fedd554-9a65-4e01-805d-54dcccfabcef",
+        "filename": "0067-2026_04_PE_NITROX_EN_N44686_sc-54b6138ac8.md",
+        "title": "2026_04_PE_NITROX_EN_N44686_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "PE NITROX",
+          "B-CONTROL MICRO",
+          "B-KOOL",
+          "B-CONTROL",
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026_04_PE_NITROX_EN_N44686_sc\nchase\ncosts to be rapidly recouped.\nBy reducing cartridge consumption, B-KOOL also makes a\nmajor contribution to saving resources and avoiding waste.\nB-KOOL III\n## Page 13\n\nBAUER KOMPRESSOREN\nACCESSORIES | PE-NITROX SYSTEME | 13\nSAFE FILLING, MAXIMUM\nCONVENIENCE\nThe BAUER B-FILL external filling panel – now with a stylish\nnew design – allows you to quickly fill breathing air\ncylinders.\nThe B-FILL is now modularly expandable and can even be retro-\nfitted. Each module is equipped with two filling connectors, as\ndesired either with hoses or direct connections, both of which\ncan fill at up to 200 or 300 or 420 bar.\nFor optional control and monitoring of the system, a B-CONTROL\nMICRO can be installed in an additional B-FILL module. Any num-\nber of B-FILL modules can be combined, allowing you to create\nthe perfect filling panel for your requirements.\nPERFECT PROTECTION FROM\n­EXPLODING CYLINDERS\nThe B-SAFE-OX safety filling system offers enhanced\nprotection of individuals and the compressor environment\nduring filling.\nThe rugged steel safety module provides protection from severed\nor detached filling hose connections and cylinder explosions\nduring filling. The doors are automatically locked during filling.\nFor more information on air and gas purification by BAUER, see our brochure “BAUER Accessories“ and\nvisit bauer-kompressoren.de\nBAUER filling panel B-FILL\nB-SAFE 300 filling device",
+        "page": 12,
+        "section": [
+          "2026 04 PE NITROX EN N44686 sc",
+          "Page 12"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.55099156,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-SAFE"
+        ],
+        "media": [],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nressure up to 410 bar\n› Optional: simultaneous filling of 225/330 bar\nB-SAFE 300 Safety filling system\nTECHNICAL DATA\nPARAMETERS\nDATA\nMaximum operating pressure\n## Page 20\n\nHIGH-PRESSURE REDUCING STATION\nFOR OUTSTANDING QUALITY AND FUNCTION\nBAUER KOMPRESSOREN high-pressure reducing stations provide you with turnkey enhancements for your\nstorage system. Upstream pressure fluctuations in the storage system are adjusted to provide reduced and\nconsistent output pressure.\nEquipped with high-quality pressure reducers, pressure gauges, ball valves and safety valve, they are quick\nand easy to install and provide outstanding operational reliability.\n¹ The output pressure should only ever be set once (no scope for permanent changes) Other designs on request.\nFluctuations in primary pressure may result in minor fluctuations in secondary pressure for technical reasons.\nHigh-pressure reducing station\n20 | FILLING/DISTRIBUTION AND SAFETY | ACCESSORY SYSTEMS\nBAUER KOMPRESSOREN\nINLET PRESSURE, MAX.\nOUTLET PRESSURE, ADJUSTABLE ¹\nCOMMENT\nbar\n365 bar\n5 - 40 bar\n365 bar\n41 - 100 bar\n365 bar\n101 - 220 bar\n365 bar\n221 - 350 bar\n465 bar\n34 - 241 bar\nStainless steel design\n365 bar\n41 - 230 bar\nIncreased flow",
+        "page": 19,
+        "section": [
+          "2026 04 Accessory Systems EN N39608 sc",
+          "Page 19"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.53833333,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SAFE",
+          "VERTICUS O-ring"
+        ],
+        "media": [],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\n6 × 2 new VERTICUS\nO-ring to bottle\nN16057\nProduct reference\nDiverse filling connectors\nAppropriate accessory or\nreplacement part\nOrder\nnumber\n83974 (figure 10)\n200 bar cylinder connector\nM26 × 2 with M16 × 1.5 UNI-\nMAM hose intake, with pressure\nimpact protection, green hand\nwheel\nGreen hand wheel\nO-ring to bottle\nO-ring for UNIMAM\n83867\nN16057\nN16632\n193536\n300 bar cylinder connector\nM26 × 2 with M16 × 1.5\n(UNIMAM hose intake, with\npressure impact protection,\npearl-opal green hand wheel\nPearl green handwheel\nO-ring to bottle\nO-ring for UNIMAM\n193538\nN16057\nN16632\n125087 (figure 28)\n200 bar quick-venting,\nwith pressure impact protection\nand check valve, green hand\nwheel M26 × 2 B-SAFE\nLocking ring\nO-ring to bottle\nO-ring in valve 2×\nN38010\nN16057\nN25452\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 61\n60 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+        "page": 31,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 31"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.41309524,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+        "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+        "title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "MINI-VERTICUS and",
+          "VERTICUS NITROX",
+          "B-KOOL",
+          "B-CONTROL",
+          "B-CONTROL MICRO",
+          "VERTICUS series",
+          "B-SAFE"
+        ],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nappprox.\nDimensions\nL x W x H\nl/min\ncfm\nbar\npsig\nrpm\nMotor\nkW\nkg\ncm\nMARINER\nP 41\n4\n1450\nThree-phase\n400 V, 50 Hz\n7.5\n180\n131 x 65 x 72\nTECHNICAL SPECIFICATIONS\n## Page 15\n\nBAUER KOMPRESSOREN\nB-NITROX SYSTEMES | B-NITROX COMPRESSORS | 15\nMINI-VERTICUS AND VERTICUS NITROX\nEXTRA POWERFUL STATIONARY NITROX COMPRESSOR SYSTEMS\nThe successful (MINI-)VERTICUS series was developed and constructed to meet strict performance require-\nments for continuous operation in professional applications. The NITROX models of this series offer charging\nrates of up to 450 l/min. They combine a small footprint with high output and – in the SUPER SILENT version –\nwith extra-quiet operation.\nThe compressor blocks are powered by ultra-rugged drive units designed for continuous operation, which ma-\nximise cost-effectiveness and durability. The needs-oriented, electronic control system (B-CONTROL MICRO)\nalso offers the possibility of being integrated as a slave in an interconnected operation.\n› 260 - 450 l/min\n› 300 bar\n› 5.5 - 11 kW electric motor\nOPTIONAL FEATURES\n› Super Silent soundproof housing\n› Larger P 61 or P 81 Purification System for longer\ncartridge life\n› B-SECURUS filter cartridge monitoring unit\n› Four filling hoses with nitrox connectors mounted to\nthe compressor front\n› B-AEROGUARD-OX CO2 reduction system\n› B-KOOL refrigeration dryer\n› B-SAFE-OX Safety Filling System",
+        "page": 14,
+        "section": [
+          "2026-04 B-Nitrox EN N34460 sc",
+          "Page 14"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.38845238,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION",
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\nr cylinders\n› FSC Filling Speed Control unit – reduces filling speed to\n20 up to maximum 50 bar/min for safe filling, particularly\nof composite cylinders\nB-SAFE\n## Page 41\n\nBAUER KOMPRESSOREN\nBAUER PREMIUM LINE | ACCESSORIES | 41\nGAS MEASUREMENT TECHNOLOGY\n› AERO-TEST – portable breathing air tester\n› B-DETECTION PLUS m – mobile online gas measurement\n­system for rapid on-the-spot measurement of O2, CO, CO2\nand optional measurement of absolute moisture and ­residual\noil (VOC)1 in breathing air cylinders or at high-pressure ports.\n› B-DETECTION PLUS i and s – fixed online gas measurement\nsystems for continuously measuring O2, CO and CO2 with\noptional functions for absolute humidity and total oil value\n(VOC)1. Measuring values can be logged at any time and are\nsaved in Excel format on an SD card for easy access and use.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible\n› NEW! Measurement directly in the intake hose to analyse the\nair actually absorbed\n› NEW! Possibility to measure breathing air cylinders with\nB-DETECTION PLUS i, s and m\n› NEW! The B-DETECTION PLUS is now also B-APP and\nB-CLOUD compatible ²\nB-DETECTION PLUS m\nFor further accessories and more details, see our\nbrochures “BAUER Accessories” and “B-DETECTION PLUS-\nthe next generation online gas measurement systems“ and\nvisit www.bauer-kompressoren.de.",
+        "page": 40,
+        "section": [
+          "bauer amfile 5",
+          "Page 40"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3418254,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "e755f3ad-7b90-438a-92cc-89e5712044bf",
+        "filename": "0081-bauer_amfile_13-e7e9162a14.md",
+        "title": "bauer_amfile_13",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_13\n› Optional safety valve for maximum safety\n› Automatic selector unit – for fast, economical filling of stor-\nage cylinders\nAutomatic selector unit\nB-VIRUS FREE\n## Page 5\n\nB-DETECTION PLUS\nExternal filling panel B-FILL\nBAUER KOMPRESSOREN\nPOSEIDON EDITION | ACCESSORIES | 5\nFILLING AND SAFETY\n› B-FILL external filling panels – for wall mounting, with optional\nremote control unit\n› B-SAFE Filling System – for safe filling\nof breathing air cylinders\n› FSC Filling Speed Control unit – reduces filling speed\nto 20 up to 50 bar/min for safe filling, particularly of\ncomposite cylinders\nGAS MEASUREMENT TECHNOLOGY\n› AERO-TEST – portable breathing air tester\n› B-DETECTION PLUS m – mobile online gas measurement ­system\nfor rapid on-the-spot measurement of O2, CO, CO2 and ­optional\n­measurement of absolute moisture and ­residual oil (VOC)1 in\n­breathing air cylinders or at high-pressure ports.\n› B-DETECTION PLUS i and s – fixed online gas measurement systems\nfor continuously measuring O2, CO and CO2 with optional functions\nfor absolute humidity and total oil value (VOC)1. Measuring values\ncan be logged at any time and are saved in Excel format on an SD\ncard for easy access and use.\n› NEW! Now not only the ambient air can be measured, but also the\nintake air and the air in the cylinder.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible",
+        "page": 4,
+        "section": [
+          "bauer amfile 13",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.341337,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL",
+          "B-DETECTION PLUS",
+          "B-SELECT",
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_7\nders\n› Optional safety valve for maximum safety\n› Automatic selector unit – for fast, economical filling of stor-\nage cylinders\nB-SELECT\nB-VIRUS FREE\nB-KOOL III\n## Page 29\n\nB-DETECTION PLUS\nExternal filling panel B-FILL\nBAUER KOMPRESSOREN\nPOSEIDON EDITION | ACCESSORIES | 29\nFILLING AND SAFETY\n› B-FILL external filling panels – for wall mounting, with optional\nremote control unit\n› B-SAFE Filling System – for safe filling\nof breathing air cylinders\n› FSC Filling Speed Control unit – reduces filling speed\nto 20 up to 50 bar/min for safe filling, particularly of\ncomposite cylinders\nGAS MEASUREMENT TECHNOLOGY\n› AERO-TEST – portable breathing air tester\n› B-DETECTION PLUS m – mobile online gas measurement ­system\nfor rapid on-the-spot measurement of O2, CO, CO2 and ­optional\n­measurement of absolute moisture and ­residual oil (VOC)1 in\n­breathing air cylinders or at high-pressure ports.\n› B-DETECTION PLUS i and s – fixed online gas measurement systems\nfor continuously measuring O2, CO and CO2 with optional functions\nfor absolute humidity and total oil value (VOC)1. Measuring values\ncan be logged at any time and are saved in Excel format on an SD\ncard for easy access and use.\n› NEW! Now not only the ambient air can be measured, but also the\nintake air and the air in the cylinder.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible",
+        "page": 28,
+        "section": [
+          "bauer amfile 7",
+          "Page 28"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3411039,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "b safe",
+          "b safe 300"
+        ],
+        "standards": [],
+        "number_units": [
+          "300 bar",
+          "200 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 0,
+      "elapsed_ms": 910.72
+    }
+  },
+  "completed_at": "2026-07-23T14:50:55.818422+00:00",
+  "case_id": "B21",
+  "split": "development",
+  "category": "contradiction",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

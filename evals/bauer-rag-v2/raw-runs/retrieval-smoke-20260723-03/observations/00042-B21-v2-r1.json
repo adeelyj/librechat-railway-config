@@ -1,0 +1,1601 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1178.7,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "d201896d-d6fc-4374-8b0c-045fe214966a",
+      "filename": "0304-0138_pe-ve-ox_96160014bb-35bfd067ed.md",
+      "title": "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 320-VE-OX"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Filtersystem | Net | weight | Dimensions (L x B x H) | l/min | bar | rpm | kW | approx. kg | cm\nRow: PE 320-VE-OX\nValues: 320 | 330 | 4 | 1450 | 7.5\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "page": null,
+      "section": [
+        "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "PE 320-VE-OX",
+      "headers": [
+        "POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min",
+        "Model",
+        "Charging rate ¹",
+        "Maximum operating pressure",
+        "Number of compressor stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Filtersystem",
+        "Net",
+        "weight",
+        "Dimensions (L x B x H)",
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "approx. kg",
+        "cm"
+      ],
+      "row_values": [
+        "320",
+        "330",
+        "4",
+        "1450",
+        "7.5"
+      ],
+      "units": [
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "cm"
+      ],
+      "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.68542017,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "d201896d-d6fc-4374-8b0c-045fe214966a",
+      "filename": "0304-0138_pe-ve-ox_96160014bb-35bfd067ed.md",
+      "title": "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 320-VE-OX",
+        "PE 550-VE-OX"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Filtersystem | Net | weight | Dimensions (L x B x H) | l/min | bar | rpm | kW | approx. kg | cm | PE 320-VE-OX | P41 | 114 x 83 x 152\nRow: PE 550-VE-OX\nValues: 550 | 330 | 4 | 1230 | 11\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "page": null,
+      "section": [
+        "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "PE 550-VE-OX",
+      "headers": [
+        "POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min",
+        "Model",
+        "Charging rate ¹",
+        "Maximum operating pressure",
+        "Number of compressor stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Filtersystem",
+        "Net",
+        "weight",
+        "Dimensions (L x B x H)",
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "approx. kg",
+        "cm",
+        "PE 320-VE-OX",
+        "P41",
+        "114 x 83 x 152"
+      ],
+      "row_values": [
+        "550",
+        "330",
+        "4",
+        "1230",
+        "11"
+      ],
+      "units": [
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "cm"
+      ],
+      "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.68404762,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+      "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+      "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 5145"
+      ],
+      "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: TECHNICAL DATA\nRow: 200 bar\n300 bar: Medium\nHelium: Connection / standard\nW21,8x1/14“: DIN 477 nr.6\nW30x2 15,9 / 20,1: RH\nISO 5145 No.30: Operating temperature\n-20°C…+65°C: Dimension\n1900 x 1000 x 770 mm: Weight\n790 kg: 1160 kg\nApproval: Certification according to 2010/35/EU-TPED\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "page": 1,
+      "section": [
+        "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "Page 1"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "200 bar",
+      "headers": [
+        "300 bar",
+        "Helium",
+        "W21,8x1/14“",
+        "W30x2 15,9 / 20,1",
+        "ISO 5145 No.30",
+        "-20°C…+65°C",
+        "1900 x 1000 x 770 mm",
+        "790 kg",
+        "Approval"
+      ],
+      "row_values": [
+        "Medium",
+        "Connection / standard",
+        "DIN 477 nr.6",
+        "RH",
+        "Operating temperature",
+        "Dimension",
+        "Weight",
+        "1160 kg",
+        "Certification according to 2010/35/EU-TPED"
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.63472678,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "05b118c5-d7c8-49f6-b16c-fcc2fbb74d72",
+      "filename": "0169-0003_aerotest-simultan_6a4b02a2b8-fb5f057ec3.md",
+      "title": "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS\nDocument section: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS / Web page content\nTable: Technical data\nRow: 300 bar\nPressure gauge: 0 - 400 bar\nOutlet: 9 mm quick connector for measuring device\nOverpressure valve: Set to 10⁺² bar\nAdapter 1: Inlet\nInternal thread G5/8–200 bar: Outlet\nInternal thread G5/8–300 bar for pressure reducer: Adapter 2\nInlet: Internal thread G5/8-200 bar\nOutlet: Internal thread G5/8-300 bar for pressure reducer\nMeasuring device: Length × Width (mm):\n100 × 38: Height including Dräger tube holder (mm):\n230: Connection for compressed air supply\n9 mm plug-in nipple: Inlet pressure\nFactory-set on delivery:: 8,5 bar\nVolume flow: CO and CO₂ tubes:\n0,2 l/min: Impactor and H₂O tubes:\n4 l/min: AEROTEST ALPHA\nCarrying case: Length × Width × Height (mm)\n350 × 300 × 85: Color\nBlack: Weight with contents\nCa. 3 kg: Pressure reducer\nFootnotes: 0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+      "page": null,
+      "section": [
+        "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "300 bar",
+      "headers": [
+        "Pressure gauge",
+        "Outlet",
+        "Overpressure valve",
+        "Adapter 1",
+        "Internal thread G5/8–200 bar",
+        "Internal thread G5/8–300 bar for pressure reducer",
+        "Inlet",
+        "Outlet",
+        "Measuring device",
+        "100 × 38",
+        "230",
+        "9 mm plug-in nipple",
+        "Factory-set on delivery:",
+        "Volume flow",
+        "0,2 l/min",
+        "4 l/min",
+        "Carrying case",
+        "350 × 300 × 85",
+        "Black",
+        "Ca. 3 kg"
+      ],
+      "row_values": [
+        "0 - 400 bar",
+        "9 mm quick connector for measuring device",
+        "Set to 10⁺² bar",
+        "Inlet",
+        "Outlet",
+        "Adapter 2",
+        "Internal thread G5/8-200 bar",
+        "Internal thread G5/8-300 bar for pressure reducer",
+        "Length × Width (mm):",
+        "Height including Dräger tube holder (mm):",
+        "Connection for compressed air supply",
+        "Inlet pressure",
+        "8,5 bar",
+        "CO and CO₂ tubes:",
+        "Impactor and H₂O tubes:",
+        "AEROTEST ALPHA",
+        "Length × Width × Height (mm)",
+        "Color",
+        "Weight with contents",
+        "Pressure reducer"
+      ],
+      "units": [
+        "bar",
+        "l/min",
+        "kg"
+      ],
+      "footnotes": "0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.60776786,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+      "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: B-SAFE 300\nMedium: Air, Nitrox\nMaximum operating pressure: 410 bar\nFilling pressures (up to 2): 225/330 bar\nVariable pressure increase: 20 – 50 bar/min\nWeight: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+      "page": null,
+      "section": [
+        "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "B-SAFE 300",
+      "headers": [
+        "Medium",
+        "Maximum operating pressure",
+        "Filling pressures (up to 2)",
+        "Variable pressure increase",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Filling chamber dimensions",
+        "B-SAFE ECO",
+        "Atemluft",
+        "410 bar",
+        "225/330 bar",
+        "ca. 450 kg",
+        "6",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+        "Safety cell",
+        "Safety doors"
+      ],
+      "row_values": [
+        "Air, Nitrox",
+        "410 bar",
+        "225/330 bar",
+        "20 – 50 bar/min",
+        "ca. 450 kg",
+        "maximal 10",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "130 cm × 40 cm × 70 cm",
+        "Medium",
+        "Maximum operating pressure",
+        "Filling pressures (up to 2)",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Details & Features",
+        "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+        "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+        "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation."
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.56744089,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+      "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+      "title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nDocument section: 2026-04_B-Nitrox_EN_N34460_sc / Page 7\nTable: 2026-04_B-Nitrox_EN_N34460_sc\nHeaders and units: OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR | NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure | breathing or compressed air for all applications, in strict compliance with international air quality standards | such as DIN EN12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex- | tensive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their | sophisticated technology, combined with our decades of experience, ensure high reliability in continuous | operation and extremely long service life. | NITROX COMPRESSORS | 330 BAR | VERTICUS-OX | 300 bar | MINI-VERTICUS-OX | 300 bar | MARINER 320-OX\nRow: 300 bar\nValues: 200 | 250 | 300 | 350 | 400 | 450 | 500",
+      "page": 7,
+      "section": [
+        "2026-04_B-Nitrox_EN_N34460_sc",
+        "Page 7"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "row_label": "300 bar",
+      "headers": [
+        "OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR",
+        "NEEDS",
+        "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure",
+        "breathing or compressed air for all applications, in strict compliance with international air quality standards",
+        "such as DIN EN12021:2014 (Breathing Air Standard).",
+        "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+        "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex-",
+        "tensive expertise in the fields of development, production and application.",
+        "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their",
+        "sophisticated technology, combined with our decades of experience, ensure high reliability in continuous",
+        "operation and extremely long service life.",
+        "NITROX COMPRESSORS | 330 BAR",
+        "VERTICUS-OX",
+        "300 bar",
+        "MINI-VERTICUS-OX",
+        "300 bar",
+        "MARINER 320-OX"
+      ],
+      "row_values": [
+        "200",
+        "250",
+        "300",
+        "350",
+        "400",
+        "450",
+        "500"
+      ],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.50129318,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+      "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nOptions: Proportional valve\nFor sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.: Scope of delivery\nScope of delivery B-SAFE 300 with filling hoses: Safety cell with explosion-proof, automatically locking doors\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+      "page": null,
+      "section": [
+        "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "ca. 450 kg",
+      "headers": [
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Filling chamber dimensions",
+        "B-SAFE ECO",
+        "Atemluft",
+        "410 bar",
+        "225/330 bar",
+        "ca. 450 kg",
+        "6",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+        "Safety cell",
+        "Safety doors",
+        "Filling control",
+        "Filling options",
+        "Options",
+        "For sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.",
+        "Scope of delivery B-SAFE 300 with filling hoses"
+      ],
+      "row_values": [
+        "maximal 10",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "130 cm × 40 cm × 70 cm",
+        "Medium",
+        "Maximum operating pressure",
+        "Filling pressures (up to 2)",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Details & Features",
+        "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+        "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+        "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "Proportional valve",
+        "Scope of delivery",
+        "Safety cell with explosion-proof, automatically locking doors"
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.49184332,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "695dbb91-1b9b-49b5-b482-187a4ca784f6",
+      "filename": "0300-0134_pe-ve1_e787cb4716-b68fbc7d6e.md",
+      "title": "PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE-VE breathing",
+        "PE 300-VE",
+        "PE 850"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: PE-VE breathing air compressor, up to 350 bar, 300 – 850 l/min, high-pressure compressor for compressing air and breathing air | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Dimensions (L x W x H) | l/min | bar | rpm | kW | cm\nRow: PE 300-VE\nValues: 300 | 350 | 3 | 1800 | 7.5\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm | 160 × 83 × 152 cm (PE 850)\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "page": null,
+      "section": [
+        "PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "PE 300-VE",
+      "headers": [
+        "PE-VE breathing air compressor, up to 350 bar, 300 – 850 l/min, high-pressure compressor for compressing air and breathing air",
+        "Model",
+        "Charging rate ¹",
+        "Maximum operating pressure",
+        "Number of compressor stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Dimensions (L x W x H)",
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "cm"
+      ],
+      "row_values": [
+        "300",
+        "350",
+        "3",
+        "1800",
+        "7.5"
+      ],
+      "units": [
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "cm"
+      ],
+      "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm | 160 × 83 × 152 cm (PE 850)\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.45901656,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "35585413-0269-4463-ba66-923b881f52fc",
+      "filename": "0301-0135_pe-ve2_d3e6c78319-d58ce3f9cb.md",
+      "title": "PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE-VE breathing"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: PE-VE breathing air compressor, up to 420 bar, 250 – 550 l/min, high-pressure compressor for compressing air and breathing air | Model | Charging rate ¹ | Maximum operating pressure | Rotational speed approx. | Motor power | Filter system | Dimensions (L x W x H) | l/min | bar | rpm | kW | cm\nRow: PE250/420-VE\nValues: 250 | 420 | 1470 | 5.5\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "page": null,
+      "section": [
+        "PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "PE250/420-VE",
+      "headers": [
+        "PE-VE breathing air compressor, up to 420 bar, 250 – 550 l/min, high-pressure compressor for compressing air and breathing air",
+        "Model",
+        "Charging rate ¹",
+        "Maximum operating pressure",
+        "Rotational speed approx.",
+        "Motor power",
+        "Filter system",
+        "Dimensions (L x W x H)",
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "cm"
+      ],
+      "row_values": [
+        "250",
+        "420",
+        "1470",
+        "5.5"
+      ],
+      "units": [
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "cm"
+      ],
+      "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.45880952,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "695dbb91-1b9b-49b5-b482-187a4ca784f6",
+      "filename": "0300-0134_pe-ve1_e787cb4716-b68fbc7d6e.md",
+      "title": "PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE-VE breathing",
+        "PE 300-VE",
+        "PE 400-VE",
+        "PE 850"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: PE-VE breathing air compressor, up to 350 bar, 300 – 850 l/min, high-pressure compressor for compressing air and breathing air | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Dimensions (L x W x H) | l/min | bar | rpm | kW | cm | PE 300-VE | 114 × 83 × 152\nRow: PE 400-VE\nValues: 400 | 350 | 4 | 1800 | 11\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm | 160 × 83 × 152 cm (PE 850)\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "page": null,
+      "section": [
+        "PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "PE 400-VE",
+      "headers": [
+        "PE-VE breathing air compressor, up to 350 bar, 300 – 850 l/min, high-pressure compressor for compressing air and breathing air",
+        "Model",
+        "Charging rate ¹",
+        "Maximum operating pressure",
+        "Number of compressor stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Dimensions (L x W x H)",
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "cm",
+        "PE 300-VE",
+        "114 × 83 × 152"
+      ],
+      "row_values": [
+        "400",
+        "350",
+        "4",
+        "1800",
+        "11"
+      ],
+      "units": [
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "cm"
+      ],
+      "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm | 160 × 83 × 152 cm (PE 850)\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.45860832,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "d201896d-d6fc-4374-8b0c-045fe214966a",
+        "filename": "0304-0138_pe-ve-ox_96160014bb-35bfd067ed.md",
+        "title": "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 320-VE-OX"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Filtersystem | Net | weight | Dimensions (L x B x H) | l/min | bar | rpm | kW | approx. kg | cm\nRow: PE 320-VE-OX\nValues: 320 | 330 | 4 | 1450 | 7.5\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "page": null,
+        "section": [
+          "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "PE 320-VE-OX",
+        "headers": [
+          "POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min",
+          "Model",
+          "Charging rate ¹",
+          "Maximum operating pressure",
+          "Number of compressor stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Filtersystem",
+          "Net",
+          "weight",
+          "Dimensions (L x B x H)",
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "approx. kg",
+          "cm"
+        ],
+        "row_values": [
+          "320",
+          "330",
+          "4",
+          "1450",
+          "7.5"
+        ],
+        "units": [
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "cm"
+        ],
+        "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.68542017,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "d201896d-d6fc-4374-8b0c-045fe214966a",
+        "filename": "0304-0138_pe-ve-ox_96160014bb-35bfd067ed.md",
+        "title": "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 320-VE-OX",
+          "PE 550-VE-OX"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Filtersystem | Net | weight | Dimensions (L x B x H) | l/min | bar | rpm | kW | approx. kg | cm | PE 320-VE-OX | P41 | 114 x 83 x 152\nRow: PE 550-VE-OX\nValues: 550 | 330 | 4 | 1230 | 11\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "page": null,
+        "section": [
+          "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "PE 550-VE-OX",
+        "headers": [
+          "POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min",
+          "Model",
+          "Charging rate ¹",
+          "Maximum operating pressure",
+          "Number of compressor stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Filtersystem",
+          "Net",
+          "weight",
+          "Dimensions (L x B x H)",
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "approx. kg",
+          "cm",
+          "PE 320-VE-OX",
+          "P41",
+          "114 x 83 x 152"
+        ],
+        "row_values": [
+          "550",
+          "330",
+          "4",
+          "1230",
+          "11"
+        ],
+        "units": [
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "cm"
+        ],
+        "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.68404762,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+        "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+        "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 5145"
+        ],
+        "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: TECHNICAL DATA\nRow: 200 bar\n300 bar: Medium\nHelium: Connection / standard\nW21,8x1/14“: DIN 477 nr.6\nW30x2 15,9 / 20,1: RH\nISO 5145 No.30: Operating temperature\n-20°C…+65°C: Dimension\n1900 x 1000 x 770 mm: Weight\n790 kg: 1160 kg\nApproval: Certification according to 2010/35/EU-TPED\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "page": 1,
+        "section": [
+          "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+          "Page 1"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "200 bar",
+        "headers": [
+          "300 bar",
+          "Helium",
+          "W21,8x1/14“",
+          "W30x2 15,9 / 20,1",
+          "ISO 5145 No.30",
+          "-20°C…+65°C",
+          "1900 x 1000 x 770 mm",
+          "790 kg",
+          "Approval"
+        ],
+        "row_values": [
+          "Medium",
+          "Connection / standard",
+          "DIN 477 nr.6",
+          "RH",
+          "Operating temperature",
+          "Dimension",
+          "Weight",
+          "1160 kg",
+          "Certification according to 2010/35/EU-TPED"
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.63472678,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "05b118c5-d7c8-49f6-b16c-fcc2fbb74d72",
+        "filename": "0169-0003_aerotest-simultan_6a4b02a2b8-fb5f057ec3.md",
+        "title": "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS\nDocument section: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS / Web page content\nTable: Technical data\nRow: 300 bar\nPressure gauge: 0 - 400 bar\nOutlet: 9 mm quick connector for measuring device\nOverpressure valve: Set to 10⁺² bar\nAdapter 1: Inlet\nInternal thread G5/8–200 bar: Outlet\nInternal thread G5/8–300 bar for pressure reducer: Adapter 2\nInlet: Internal thread G5/8-200 bar\nOutlet: Internal thread G5/8-300 bar for pressure reducer\nMeasuring device: Length × Width (mm):\n100 × 38: Height including Dräger tube holder (mm):\n230: Connection for compressed air supply\n9 mm plug-in nipple: Inlet pressure\nFactory-set on delivery:: 8,5 bar\nVolume flow: CO and CO₂ tubes:\n0,2 l/min: Impactor and H₂O tubes:\n4 l/min: AEROTEST ALPHA\nCarrying case: Length × Width × Height (mm)\n350 × 300 × 85: Color\nBlack: Weight with contents\nCa. 3 kg: Pressure reducer\nFootnotes: 0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+        "page": null,
+        "section": [
+          "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "300 bar",
+        "headers": [
+          "Pressure gauge",
+          "Outlet",
+          "Overpressure valve",
+          "Adapter 1",
+          "Internal thread G5/8–200 bar",
+          "Internal thread G5/8–300 bar for pressure reducer",
+          "Inlet",
+          "Outlet",
+          "Measuring device",
+          "100 × 38",
+          "230",
+          "9 mm plug-in nipple",
+          "Factory-set on delivery:",
+          "Volume flow",
+          "0,2 l/min",
+          "4 l/min",
+          "Carrying case",
+          "350 × 300 × 85",
+          "Black",
+          "Ca. 3 kg"
+        ],
+        "row_values": [
+          "0 - 400 bar",
+          "9 mm quick connector for measuring device",
+          "Set to 10⁺² bar",
+          "Inlet",
+          "Outlet",
+          "Adapter 2",
+          "Internal thread G5/8-200 bar",
+          "Internal thread G5/8-300 bar for pressure reducer",
+          "Length × Width (mm):",
+          "Height including Dräger tube holder (mm):",
+          "Connection for compressed air supply",
+          "Inlet pressure",
+          "8,5 bar",
+          "CO and CO₂ tubes:",
+          "Impactor and H₂O tubes:",
+          "AEROTEST ALPHA",
+          "Length × Width × Height (mm)",
+          "Color",
+          "Weight with contents",
+          "Pressure reducer"
+        ],
+        "units": [
+          "bar",
+          "l/min",
+          "kg"
+        ],
+        "footnotes": "0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.60776786,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: B-SAFE 300\nMedium: Air, Nitrox\nMaximum operating pressure: 410 bar\nFilling pressures (up to 2): 225/330 bar\nVariable pressure increase: 20 – 50 bar/min\nWeight: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+        "page": null,
+        "section": [
+          "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "B-SAFE 300",
+        "headers": [
+          "Medium",
+          "Maximum operating pressure",
+          "Filling pressures (up to 2)",
+          "Variable pressure increase",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Filling chamber dimensions",
+          "B-SAFE ECO",
+          "Atemluft",
+          "410 bar",
+          "225/330 bar",
+          "ca. 450 kg",
+          "6",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+          "Safety cell",
+          "Safety doors"
+        ],
+        "row_values": [
+          "Air, Nitrox",
+          "410 bar",
+          "225/330 bar",
+          "20 – 50 bar/min",
+          "ca. 450 kg",
+          "maximal 10",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "130 cm × 40 cm × 70 cm",
+          "Medium",
+          "Maximum operating pressure",
+          "Filling pressures (up to 2)",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Details & Features",
+          "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+          "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+          "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation."
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.56744089,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+        "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+        "title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nDocument section: 2026-04_B-Nitrox_EN_N34460_sc / Page 7\nTable: 2026-04_B-Nitrox_EN_N34460_sc\nHeaders and units: OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR | NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure | breathing or compressed air for all applications, in strict compliance with international air quality standards | such as DIN EN12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex- | tensive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their | sophisticated technology, combined with our decades of experience, ensure high reliability in continuous | operation and extremely long service life. | NITROX COMPRESSORS | 330 BAR | VERTICUS-OX | 300 bar | MINI-VERTICUS-OX | 300 bar | MARINER 320-OX\nRow: 300 bar\nValues: 200 | 250 | 300 | 350 | 400 | 450 | 500",
+        "page": 7,
+        "section": [
+          "2026-04_B-Nitrox_EN_N34460_sc",
+          "Page 7"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "row_label": "300 bar",
+        "headers": [
+          "OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR",
+          "NEEDS",
+          "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure",
+          "breathing or compressed air for all applications, in strict compliance with international air quality standards",
+          "such as DIN EN12021:2014 (Breathing Air Standard).",
+          "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+          "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex-",
+          "tensive expertise in the fields of development, production and application.",
+          "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their",
+          "sophisticated technology, combined with our decades of experience, ensure high reliability in continuous",
+          "operation and extremely long service life.",
+          "NITROX COMPRESSORS | 330 BAR",
+          "VERTICUS-OX",
+          "300 bar",
+          "MINI-VERTICUS-OX",
+          "300 bar",
+          "MARINER 320-OX"
+        ],
+        "row_values": [
+          "200",
+          "250",
+          "300",
+          "350",
+          "400",
+          "450",
+          "500"
+        ],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.50129318,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nOptions: Proportional valve\nFor sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.: Scope of delivery\nScope of delivery B-SAFE 300 with filling hoses: Safety cell with explosion-proof, automatically locking doors\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+        "page": null,
+        "section": [
+          "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "ca. 450 kg",
+        "headers": [
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Filling chamber dimensions",
+          "B-SAFE ECO",
+          "Atemluft",
+          "410 bar",
+          "225/330 bar",
+          "ca. 450 kg",
+          "6",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+          "Safety cell",
+          "Safety doors",
+          "Filling control",
+          "Filling options",
+          "Options",
+          "For sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.",
+          "Scope of delivery B-SAFE 300 with filling hoses"
+        ],
+        "row_values": [
+          "maximal 10",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "130 cm × 40 cm × 70 cm",
+          "Medium",
+          "Maximum operating pressure",
+          "Filling pressures (up to 2)",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Details & Features",
+          "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+          "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+          "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "Proportional valve",
+          "Scope of delivery",
+          "Safety cell with explosion-proof, automatically locking doors"
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.49184332,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "695dbb91-1b9b-49b5-b482-187a4ca784f6",
+        "filename": "0300-0134_pe-ve1_e787cb4716-b68fbc7d6e.md",
+        "title": "PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE-VE breathing",
+          "PE 300-VE",
+          "PE 850"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: PE-VE breathing air compressor, up to 350 bar, 300 – 850 l/min, high-pressure compressor for compressing air and breathing air | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Dimensions (L x W x H) | l/min | bar | rpm | kW | cm\nRow: PE 300-VE\nValues: 300 | 350 | 3 | 1800 | 7.5\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm | 160 × 83 × 152 cm (PE 850)\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "page": null,
+        "section": [
+          "PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "PE 300-VE",
+        "headers": [
+          "PE-VE breathing air compressor, up to 350 bar, 300 – 850 l/min, high-pressure compressor for compressing air and breathing air",
+          "Model",
+          "Charging rate ¹",
+          "Maximum operating pressure",
+          "Number of compressor stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Dimensions (L x W x H)",
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "cm"
+        ],
+        "row_values": [
+          "300",
+          "350",
+          "3",
+          "1800",
+          "7.5"
+        ],
+        "units": [
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "cm"
+        ],
+        "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm | 160 × 83 × 152 cm (PE 850)\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.45901656,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "35585413-0269-4463-ba66-923b881f52fc",
+        "filename": "0301-0135_pe-ve2_d3e6c78319-d58ce3f9cb.md",
+        "title": "PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE-VE breathing"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: PE-VE breathing air compressor, up to 420 bar, 250 – 550 l/min, high-pressure compressor for compressing air and breathing air | Model | Charging rate ¹ | Maximum operating pressure | Rotational speed approx. | Motor power | Filter system | Dimensions (L x W x H) | l/min | bar | rpm | kW | cm\nRow: PE250/420-VE\nValues: 250 | 420 | 1470 | 5.5\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "page": null,
+        "section": [
+          "PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "PE250/420-VE",
+        "headers": [
+          "PE-VE breathing air compressor, up to 420 bar, 250 – 550 l/min, high-pressure compressor for compressing air and breathing air",
+          "Model",
+          "Charging rate ¹",
+          "Maximum operating pressure",
+          "Rotational speed approx.",
+          "Motor power",
+          "Filter system",
+          "Dimensions (L x W x H)",
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "cm"
+        ],
+        "row_values": [
+          "250",
+          "420",
+          "1470",
+          "5.5"
+        ],
+        "units": [
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "cm"
+        ],
+        "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.45880952,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "695dbb91-1b9b-49b5-b482-187a4ca784f6",
+        "filename": "0300-0134_pe-ve1_e787cb4716-b68fbc7d6e.md",
+        "title": "PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE-VE breathing",
+          "PE 300-VE",
+          "PE 400-VE",
+          "PE 850"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: PE-VE breathing air compressor, up to 350 bar, 300 – 850 l/min, high-pressure compressor for compressing air and breathing air | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Dimensions (L x W x H) | l/min | bar | rpm | kW | cm | PE 300-VE | 114 × 83 × 152\nRow: PE 400-VE\nValues: 400 | 350 | 4 | 1800 | 11\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm | 160 × 83 × 152 cm (PE 850)\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "page": null,
+        "section": [
+          "PE-VE (350 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "PE 400-VE",
+        "headers": [
+          "PE-VE breathing air compressor, up to 350 bar, 300 – 850 l/min, high-pressure compressor for compressing air and breathing air",
+          "Model",
+          "Charging rate ¹",
+          "Maximum operating pressure",
+          "Number of compressor stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Dimensions (L x W x H)",
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "cm",
+          "PE 300-VE",
+          "114 × 83 × 152"
+        ],
+        "row_values": [
+          "400",
+          "350",
+          "4",
+          "1800",
+          "11"
+        ],
+        "units": [
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "cm"
+        ],
+        "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm | 160 × 83 × 152 cm (PE 850)\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.45860832,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "b safe",
+          "b safe 300"
+        ],
+        "standards": [],
+        "number_units": [
+          "300 bar",
+          "200 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 0,
+      "elapsed_ms": 883.61
+    }
+  },
+  "completed_at": "2026-07-23T14:29:43.869442+00:00",
+  "case_id": "B21",
+  "split": "development",
+  "category": "contradiction",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

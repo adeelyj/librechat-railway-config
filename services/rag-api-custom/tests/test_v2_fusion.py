@@ -44,6 +44,33 @@ class V2FusionTests(unittest.TestCase):
         self.assertIn("k 28", analysis.quoted_phrases)
         self.assertTrue(analysis.table_intent)
 
+    def test_query_analysis_preserves_single_letter_and_punctuated_model(self):
+        analysis = analyze_query("Find Bauer model I 15.11-11-V")
+        self.assertIn("i 15 11 11 v", analysis.identifiers)
+
+    def test_query_analysis_extracts_standard_without_broad_exact_tokens(self):
+        analysis = analyze_query(
+            "Find the English EN ISO 3834-2 certificate for Bauer Kompressoren"
+        )
+        self.assertIn("en iso 3834 2", analysis.standards)
+        self.assertEqual(analysis.exact_terms, ("en iso 3834 2",))
+        self.assertNotIn("certificate", analysis.exact_terms)
+
+    def test_query_analysis_marks_document_number_lookup(self):
+        analysis = analyze_query("Find document N47183")
+        self.assertIn("n47183", analysis.identifiers)
+        self.assertTrue(analysis.document_lookup)
+
+    def test_non_exact_pressure_question_has_no_exact_terms(self):
+        analysis = analyze_query("What is the highest documented maximum operating pressure?")
+        self.assertEqual(analysis.exact_terms, ())
+        self.assertFalse(analysis.table_intent)
+        self.assertTrue(analysis.pressure_extremum)
+
+    def test_first_person_words_are_not_model_identifiers(self):
+        analysis = analyze_query("I do not know the Bauer product names")
+        self.assertNotIn("i do", analysis.identifiers)
+
     def test_query_analysis_adds_controlled_german_metadata_aliases(self):
         analysis = analyze_query("Stickstoff-Nachverdichter mit 420 bar")
         self.assertIn("nitrogen", analysis.tokens)

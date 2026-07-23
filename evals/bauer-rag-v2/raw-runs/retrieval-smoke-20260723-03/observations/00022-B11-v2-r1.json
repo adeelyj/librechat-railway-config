@@ -1,0 +1,1177 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1226.37,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+      "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+      "title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "sensor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\noduces nitrox mixtures\nwith oxygen content of up to\n40 percent\nB-AEROGUARD-OX\nCO2 reduction\nVERTICUS-OX\nCompresses the nitrox mixture to\npressures up to 300 bar\n## Page 21\n\n4\n7\n5\n6\n5\n4\nTAILOR-MADE FOR NITROX\nFor your safety, BAUER B-NITROX compressors\nare equipped with temperature sensors for the\ncooling air and in the final separator. Thus, a fast\nresponse time with shutdown of the compressor\nin case of sudden temperature rise is integrated\nas standard. The temperature can be conveniently\nmonitored online. In addition, the final pressure\nsafety valve is also particularly suitable for the gas\nNitrox.\nFILLING PANEL\nFor filling breathing air cylinders\nwith nitrox\nB-DETECTION AIRBOX\nGas sampling unit\nB-DETECTION PLUS s\nContinuous monitoring of\nbreathing air quality\nB-CLOUD\n24/7 system monitoring and\ncontrol management\nHIGH PRESSURE MODULE\nThe high-pressure compressor, optimised for compression up to Nitrox\nEAN 40, delivers reliable and economical operation.\n› Charging rate from 260 to 450 l/min\n› Available as open-unit and Super Silent versions\n› The low thermal stress of the four-stage blocks ensures a high level of\nsafety during nitrox compression and maximises service life.\n› Online temperature monitoring on the cooling air and the final separator\nautomatically shuts down the system if temperatures exceed the pre-set\nlimits, ensuring maximum operating safety.\n6\n7",
+      "page": 20,
+      "section": [
+        "2026-04_B-Nitrox_EN_N34460_sc",
+        "Page 20"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.55065789,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "MINI-VERTICUS and",
+        "VERTICUS AND",
+        "B-KOOL",
+        "B-CONTROL",
+        "B-CONTROL III",
+        "VERTICUS SERIES",
+        "VERTICUS breathing"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter",
+        "control"
+      ],
+      "standards": [
+        "ISO 8573"
+      ],
+      "content": "Document: bauer_amfile_5\nng for remotely monitoring\nthe compressor.\nThe MINI-VERTICUS and VERTICUS breathing air compressors are available in versions for 225 and/or 330/350 bar as well\nas in a version for up to 420 bar. The high modularity of the MINI-VERTICUS and VERTICUS series means that the units can\neasily be adapted to provide the best possible solution to your requirements and wishes.\nOPTIONAL FEATURES (SELECTION)\n› Integrated gas measurement system for compliance with DIN EN12021:20141\n› Remote control and monitoring with the B-CLOUD and B-APP\n› Oil level monitoring for safely switching off the compressor unit when the oil level is low\n› Particle filter conforming to ISO 8573 class 2\n› Super Silent noise insulation housing\n› Purification System P 81 (for VERTICUS) or P 61 (for MINI-VERTICUS) for extended filter cartridge life\n› B-SECURUS filter cartridge saturation monitoring system\n› 4 front-mounted filling devices, optionally for one or two pressure ranges (225/300 bar)\n› B-CONTROL III compressor control unit – e.g. for interconnected operation etc.\n› Intermediate separator after first stage – recommended in conditions of high humidity\n› Extended base frame to take up to 2 storage cylinders\n› B-KOOL refrigeration dryer for extending the filter service life\n› Nitrox version available2",
+      "page": 29,
+      "section": [
+        "bauer_amfile_5",
+        "Page 29"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.52369863,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+      "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+      "title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nDocument section: 2026-04_B-Nitrox_EN_N34460_sc / Page 7\nTable: 2026-04_B-Nitrox_EN_N34460_sc\nHeaders and units: OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR | NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure | breathing or compressed air for all applications, in strict compliance with international air quality standards | such as DIN EN12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex- | tensive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their | sophisticated technology, combined with our decades of experience, ensure high reliability in continuous | operation and extremely long service life. | NITROX COMPRESSORS | 330 BAR | VERTICUS-OX | 300 bar | MINI-VERTICUS-OX | 300 bar | MARINER 320-OX\nRow: 300 bar\nValues: 200 | 250 | 300 | 350 | 400 | 450 | 500",
+      "page": 7,
+      "section": [
+        "2026-04_B-Nitrox_EN_N34460_sc",
+        "Page 7"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "row_label": "300 bar",
+      "headers": [
+        "OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR",
+        "NEEDS",
+        "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure",
+        "breathing or compressed air for all applications, in strict compliance with international air quality standards",
+        "such as DIN EN12021:2014 (Breathing Air Standard).",
+        "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+        "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex-",
+        "tensive expertise in the fields of development, production and application.",
+        "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their",
+        "sophisticated technology, combined with our decades of experience, ensure high reliability in continuous",
+        "operation and extremely long service life.",
+        "NITROX COMPRESSORS | 330 BAR",
+        "VERTICUS-OX",
+        "300 bar",
+        "MINI-VERTICUS-OX",
+        "300 bar",
+        "MARINER 320-OX"
+      ],
+      "row_values": [
+        "200",
+        "250",
+        "300",
+        "350",
+        "400",
+        "450",
+        "500"
+      ],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.47139344,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "d201896d-d6fc-4374-8b0c-045fe214966a",
+      "filename": "0304-0138_pe-ve-ox_96160014bb-35bfd067ed.md",
+      "title": "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 320-VE-OX"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Filtersystem | Net | weight | Dimensions (L x B x H) | l/min | bar | rpm | kW | approx. kg | cm\nRow: PE 320-VE-OX\nValues: 320 | 330 | 4 | 1450 | 7.5\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "page": null,
+      "section": [
+        "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "PE 320-VE-OX",
+      "headers": [
+        "POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min",
+        "Model",
+        "Charging rate ¹",
+        "Maximum operating pressure",
+        "Number of compressor stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Filtersystem",
+        "Net",
+        "weight",
+        "Dimensions (L x B x H)",
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "approx. kg",
+        "cm"
+      ],
+      "row_values": [
+        "320",
+        "330",
+        "4",
+        "1450",
+        "7.5"
+      ],
+      "units": [
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "cm"
+      ],
+      "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.46928571,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "d201896d-d6fc-4374-8b0c-045fe214966a",
+      "filename": "0304-0138_pe-ve-ox_96160014bb-35bfd067ed.md",
+      "title": "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 320-VE-OX",
+        "PE 550-VE-OX"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Filtersystem | Net | weight | Dimensions (L x B x H) | l/min | bar | rpm | kW | approx. kg | cm | PE 320-VE-OX | P41 | 114 x 83 x 152\nRow: PE 550-VE-OX\nValues: 550 | 330 | 4 | 1230 | 11\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "page": null,
+      "section": [
+        "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "PE 550-VE-OX",
+      "headers": [
+        "POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min",
+        "Model",
+        "Charging rate ¹",
+        "Maximum operating pressure",
+        "Number of compressor stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Filtersystem",
+        "Net",
+        "weight",
+        "Dimensions (L x B x H)",
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "approx. kg",
+        "cm",
+        "PE 320-VE-OX",
+        "P41",
+        "114 x 83 x 152"
+      ],
+      "row_values": [
+        "550",
+        "330",
+        "4",
+        "1230",
+        "11"
+      ],
+      "units": [
+        "l/min",
+        "bar",
+        "rpm",
+        "kW",
+        "cm"
+      ],
+      "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.46851351,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nThis\nsignificantly reduces the risk of accident!\nThere is no possibility of mixing up the 200 and 300 bar connectors, because: 200 bar connectors are marked in\nblack and do not have a pin on the pressure outlet! 300 bar connectors are marked in red and have a pin on the\npressure outlet!\nHAND WHEEL VERSION\nOpening and venting with one hand wheel (internal venting). Valve seat is protected against damage caused by\novertightening when closing. Particularly well-suited for mobile use. The complete valve is resistant to corrosion.\nLEVER VERSION\nSafety filling connection. Unparalleled quality, reliability and operating comfort. Recommended for stationary\nuse, above all on filling panels. Unambiguous lever position OPEN and CLOSED. Integrated silencer. Quieter\nventing of the valve when removing the compressed air cylinder. The complete valve is resistant to corrosion.\nROTARY WHEEL VERSION\nSafety filling connection. Filling valve with integrated check valve. This prevents the residual gas from flowing\nback into another connected compressed air cylinder. This is advantageous, particularly in precisely calculated\nNITROX mixtures. When the valve is removed after filling, it is vented automatically by opening the rotary wheel\n(internal venting). This ensures reliable decoupling from the connected compressed air cylinder. The ergonomic",
+      "page": 24,
+      "section": [
+        "High-pressure-accessories-catalogue_EN",
+        "Page 24"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.46798701,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nDocument section: High-pressure-accessories-catalogue_EN / Page 15\nTable: Silencer, e.g. for draining cylinder pressure | N44211 | GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M | ADAPTER GAS SAMPLING PLUS M OVERVIEW OF | VARIANTS OF MEASUREMENTS AT COMPRESSOR | Application | Gas | Parts | Order number\nRow identifier: N44186\nValues: During bottle filling operation | Breathing air | up to 300 bar | NOT available for | Nitrox cylinder | 1× T-connector breathing air | 300 bar | N44186\nFootnotes: 28 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+      "page": 15,
+      "section": [
+        "High-pressure-accessories-catalogue_EN",
+        "Page 15"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Silencer, e.g. for draining cylinder pressure | N44211 | GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M | ADAPTER GAS SAMPLING PLUS M OVERVIEW OF | VARIANTS OF MEASUREMENTS AT COMPRESSOR | Application | Gas | Parts | Order number",
+      "row_label": "N44186",
+      "headers": [
+        "Silencer, e.g. for draining cylinder pressure",
+        "N44211",
+        "GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M",
+        "ADAPTER GAS SAMPLING PLUS M OVERVIEW OF",
+        "VARIANTS OF MEASUREMENTS AT COMPRESSOR",
+        "Application",
+        "Gas",
+        "Parts",
+        "Order number"
+      ],
+      "row_values": [
+        "During bottle filling operation",
+        "Breathing air",
+        "up to 300 bar",
+        "NOT available for",
+        "Nitrox cylinder",
+        "1× T-connector breathing air",
+        "300 bar",
+        "N44186"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "28 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.46463126,
+      "metadata": {
+        "parser": "identifier_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "88397b98-3d56-4d98-82e3-5e1350de910b",
+      "filename": "0075-BAUER-Filter-Cardridges_EN-19d256fd65.md",
+      "title": "BAUER-Filter-Cardridges_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: BAUER-Filter-Cardridges_EN\nacuum-packed for long shelf life without loss of cartridge service life\n› Optional: B-SECURUS activates safe shutdown when the filter is saturated with moisture\n› Our B-TIMER can monitor the service life of many cartridge types\n› All cartridges are in stock for immediate delivery\n*\nProcessing capacity at 20 °C / 300 bar. Cartridge life time applicable to drying only.\n** Cartridge life time only applies for oil separation. Processing capacity for water separation might be lower than for oil separation.\n*** Assuming proper maintenance and installation of the BAUER compressor systems in accordance with operating instructions/operating manuals, in cases where intake\n\nair CO2 concentration does not exceed the levels required by the applicable breathing air standard",
+      "page": 4,
+      "section": [
+        "BAUER-Filter-Cardridges_EN",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.44288462,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "88397b98-3d56-4d98-82e3-5e1350de910b",
+      "filename": "0075-BAUER-Filter-Cardridges_EN-19d256fd65.md",
+      "title": "BAUER-Filter-Cardridges_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: BAUER-Filter-Cardridges_EN\ne\n› Removal of oil vapour and odours CxHy\nwith activated carbon\n› Safe conversion of carbon monoxide CO\ninto non-toxic carbon dioxide CO2\nBREATHING AIR INDUSTRY\n## Page 2\n\n2 | FILTER CARTRIDGES\nBAUER KOMPRESSOREN\nP 31\nApplication: for compressors with P 31 TRIPLEX Filter (e.g. MARINER 250)\nSpare part number\nProcessing capacity\nStandard\n80100\n620 Nm3 *\nWith SECURUS\n–\nWith CO-Converter\n80114\n460 Nm3 *\nIndustry\n–\nIndustry with SECURUS\n–\nP 41\nApplication: for compressors with P 41 (e.g. MARINER 320)\nSpare part number\nProcessing capacity\nStandard\n062565\n1600 Nm3 *\nWith SECURUS\n061686\n1590 Nm3 *\nWith CO-Converter\n061687\n1350 Nm3 *\nIndustry\n–\nIndustry with SECURUS\n–\nCARTRIDGES FOR AIR PROCESSING\n* Processing capacity at 20 °C / 300 bar. Cartridge life time applicable to drying only.\n** Cartridge life time only applies for oil separation. Processing capacity for water separation might be lower than for oil separation.\nP 21\nApplication: for compressors with P 21 TRIPLEX Filter (e.g. JUNIOR II)\nSpare part number\nProcessing capacity\nStandard\n057679\n130 Nm3 *\nWith SECURUS\n–\nWith CO-Converter\n059183\n110 Nm3 *\nIndustry\n–\nIndustry with SECURUS\n–",
+      "page": 1,
+      "section": [
+        "BAUER-Filter-Cardridges_EN",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.41449275,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "4ea22244-85ce-4777-9d0b-f6ac50f165cf",
+      "filename": "0124-bauer_amfile_8-fad9ac0f60.md",
+      "title": "bauer_amfile_8",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 100",
+        "PE 100-TE",
+        "PE 100-TB"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [],
+      "standards": [
+        "DIN EN 12021"
+      ],
+      "content": "Document: bauer_amfile_8\notor protection switch for PE 100-TE\n› Intake telescope (standard with PE 100-TB) or intake manifold for\nattaching a suction hose\nPE 100, 300 bar model\nFEATURES\n› Compact, low-weight system, easily transportable\n› The P 11 purification system designed especially for\nthe PE 100 supplies pure breathing air in compliance\nwith DIN EN 12021:20141\n› Many possible applications\nFOR ANYONE THAT WANTS TO RELY ON PURE, SAFE BREATHING AIR\nIN MOBILE APPLICATIONS.\n1 Based on due maintenance and installation of the system in accordance with the operating manual and only where CO2 concentrations in intake air do not exceed the predefined\nstandard values. Local TLVs are not considered.",
+      "page": 2,
+      "section": [
+        "bauer_amfile_8",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.41408451,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+        "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+        "title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "sensor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\noduces nitrox mixtures\nwith oxygen content of up to\n40 percent\nB-AEROGUARD-OX\nCO2 reduction\nVERTICUS-OX\nCompresses the nitrox mixture to\npressures up to 300 bar\n## Page 21\n\n4\n7\n5\n6\n5\n4\nTAILOR-MADE FOR NITROX\nFor your safety, BAUER B-NITROX compressors\nare equipped with temperature sensors for the\ncooling air and in the final separator. Thus, a fast\nresponse time with shutdown of the compressor\nin case of sudden temperature rise is integrated\nas standard. The temperature can be conveniently\nmonitored online. In addition, the final pressure\nsafety valve is also particularly suitable for the gas\nNitrox.\nFILLING PANEL\nFor filling breathing air cylinders\nwith nitrox\nB-DETECTION AIRBOX\nGas sampling unit\nB-DETECTION PLUS s\nContinuous monitoring of\nbreathing air quality\nB-CLOUD\n24/7 system monitoring and\ncontrol management\nHIGH PRESSURE MODULE\nThe high-pressure compressor, optimised for compression up to Nitrox\nEAN 40, delivers reliable and economical operation.\n› Charging rate from 260 to 450 l/min\n› Available as open-unit and Super Silent versions\n› The low thermal stress of the four-stage blocks ensures a high level of\nsafety during nitrox compression and maximises service life.\n› Online temperature monitoring on the cooling air and the final separator\nautomatically shuts down the system if temperatures exceed the pre-set\nlimits, ensuring maximum operating safety.\n6\n7",
+        "page": 20,
+        "section": [
+          "2026-04_B-Nitrox_EN_N34460_sc",
+          "Page 20"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.55065789,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "MINI-VERTICUS and",
+          "VERTICUS AND",
+          "B-KOOL",
+          "B-CONTROL",
+          "B-CONTROL III",
+          "VERTICUS SERIES",
+          "VERTICUS breathing"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter",
+          "control"
+        ],
+        "standards": [
+          "ISO 8573"
+        ],
+        "content": "Document: bauer_amfile_5\nng for remotely monitoring\nthe compressor.\nThe MINI-VERTICUS and VERTICUS breathing air compressors are available in versions for 225 and/or 330/350 bar as well\nas in a version for up to 420 bar. The high modularity of the MINI-VERTICUS and VERTICUS series means that the units can\neasily be adapted to provide the best possible solution to your requirements and wishes.\nOPTIONAL FEATURES (SELECTION)\n› Integrated gas measurement system for compliance with DIN EN12021:20141\n› Remote control and monitoring with the B-CLOUD and B-APP\n› Oil level monitoring for safely switching off the compressor unit when the oil level is low\n› Particle filter conforming to ISO 8573 class 2\n› Super Silent noise insulation housing\n› Purification System P 81 (for VERTICUS) or P 61 (for MINI-VERTICUS) for extended filter cartridge life\n› B-SECURUS filter cartridge saturation monitoring system\n› 4 front-mounted filling devices, optionally for one or two pressure ranges (225/300 bar)\n› B-CONTROL III compressor control unit – e.g. for interconnected operation etc.\n› Intermediate separator after first stage – recommended in conditions of high humidity\n› Extended base frame to take up to 2 storage cylinders\n› B-KOOL refrigeration dryer for extending the filter service life\n› Nitrox version available2",
+        "page": 29,
+        "section": [
+          "bauer_amfile_5",
+          "Page 29"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.52369863,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+        "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+        "title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nDocument section: 2026-04_B-Nitrox_EN_N34460_sc / Page 7\nTable: 2026-04_B-Nitrox_EN_N34460_sc\nHeaders and units: OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR | NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure | breathing or compressed air for all applications, in strict compliance with international air quality standards | such as DIN EN12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex- | tensive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their | sophisticated technology, combined with our decades of experience, ensure high reliability in continuous | operation and extremely long service life. | NITROX COMPRESSORS | 330 BAR | VERTICUS-OX | 300 bar | MINI-VERTICUS-OX | 300 bar | MARINER 320-OX\nRow: 300 bar\nValues: 200 | 250 | 300 | 350 | 400 | 450 | 500",
+        "page": 7,
+        "section": [
+          "2026-04_B-Nitrox_EN_N34460_sc",
+          "Page 7"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "row_label": "300 bar",
+        "headers": [
+          "OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR",
+          "NEEDS",
+          "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure",
+          "breathing or compressed air for all applications, in strict compliance with international air quality standards",
+          "such as DIN EN12021:2014 (Breathing Air Standard).",
+          "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+          "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex-",
+          "tensive expertise in the fields of development, production and application.",
+          "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their",
+          "sophisticated technology, combined with our decades of experience, ensure high reliability in continuous",
+          "operation and extremely long service life.",
+          "NITROX COMPRESSORS | 330 BAR",
+          "VERTICUS-OX",
+          "300 bar",
+          "MINI-VERTICUS-OX",
+          "300 bar",
+          "MARINER 320-OX"
+        ],
+        "row_values": [
+          "200",
+          "250",
+          "300",
+          "350",
+          "400",
+          "450",
+          "500"
+        ],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.47139344,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "d201896d-d6fc-4374-8b0c-045fe214966a",
+        "filename": "0304-0138_pe-ve-ox_96160014bb-35bfd067ed.md",
+        "title": "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 320-VE-OX"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Filtersystem | Net | weight | Dimensions (L x B x H) | l/min | bar | rpm | kW | approx. kg | cm\nRow: PE 320-VE-OX\nValues: 320 | 330 | 4 | 1450 | 7.5\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "page": null,
+        "section": [
+          "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "PE 320-VE-OX",
+        "headers": [
+          "POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min",
+          "Model",
+          "Charging rate ¹",
+          "Maximum operating pressure",
+          "Number of compressor stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Filtersystem",
+          "Net",
+          "weight",
+          "Dimensions (L x B x H)",
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "approx. kg",
+          "cm"
+        ],
+        "row_values": [
+          "320",
+          "330",
+          "4",
+          "1450",
+          "7.5"
+        ],
+        "units": [
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "cm"
+        ],
+        "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.46928571,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "d201896d-d6fc-4374-8b0c-045fe214966a",
+        "filename": "0304-0138_pe-ve-ox_96160014bb-35bfd067ed.md",
+        "title": "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 320-VE-OX",
+          "PE 550-VE-OX"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN\nDocument section: PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min | Model | Charging rate ¹ | Maximum operating pressure | Number of compressor stages | Rotational speed approx. | Motor power | Filtersystem | Net | weight | Dimensions (L x B x H) | l/min | bar | rpm | kW | approx. kg | cm | PE 320-VE-OX | P41 | 114 x 83 x 152\nRow: PE 550-VE-OX\nValues: 550 | 330 | 4 | 1230 | 11\nFootnotes: ¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "page": null,
+        "section": [
+          "PE-VE-OX · POSEIDON EDITION | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "PE 550-VE-OX",
+        "headers": [
+          "POSEIDON EDITION Nitrox high-pressure compressor, up to 300 bar, 250 – 700 l/min",
+          "Model",
+          "Charging rate ¹",
+          "Maximum operating pressure",
+          "Number of compressor stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Filtersystem",
+          "Net",
+          "weight",
+          "Dimensions (L x B x H)",
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "approx. kg",
+          "cm",
+          "PE 320-VE-OX",
+          "P41",
+          "114 x 83 x 152"
+        ],
+        "row_values": [
+          "550",
+          "330",
+          "4",
+          "1230",
+          "11"
+        ],
+        "units": [
+          "l/min",
+          "bar",
+          "rpm",
+          "kW",
+          "cm"
+        ],
+        "footnotes": "¹ Measured using cylinder fillings from 0 to 200 bar (from 0 to 3000 psi), ±5%\n² Dimensions for Super Silent version: 148 × 83 × 152 cm\n¹ Applies when the system is properly maintained and installed in accordance with the operating manual, and provided that the CO₂ concentration in the intake air does not exceed the limits defined in the applicable breathing air standard.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.46851351,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nThis\nsignificantly reduces the risk of accident!\nThere is no possibility of mixing up the 200 and 300 bar connectors, because: 200 bar connectors are marked in\nblack and do not have a pin on the pressure outlet! 300 bar connectors are marked in red and have a pin on the\npressure outlet!\nHAND WHEEL VERSION\nOpening and venting with one hand wheel (internal venting). Valve seat is protected against damage caused by\novertightening when closing. Particularly well-suited for mobile use. The complete valve is resistant to corrosion.\nLEVER VERSION\nSafety filling connection. Unparalleled quality, reliability and operating comfort. Recommended for stationary\nuse, above all on filling panels. Unambiguous lever position OPEN and CLOSED. Integrated silencer. Quieter\nventing of the valve when removing the compressed air cylinder. The complete valve is resistant to corrosion.\nROTARY WHEEL VERSION\nSafety filling connection. Filling valve with integrated check valve. This prevents the residual gas from flowing\nback into another connected compressed air cylinder. This is advantageous, particularly in precisely calculated\nNITROX mixtures. When the valve is removed after filling, it is vented automatically by opening the rotary wheel\n(internal venting). This ensures reliable decoupling from the connected compressed air cylinder. The ergonomic",
+        "page": 24,
+        "section": [
+          "High-pressure-accessories-catalogue_EN",
+          "Page 24"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.46798701,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nDocument section: High-pressure-accessories-catalogue_EN / Page 15\nTable: Silencer, e.g. for draining cylinder pressure | N44211 | GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M | ADAPTER GAS SAMPLING PLUS M OVERVIEW OF | VARIANTS OF MEASUREMENTS AT COMPRESSOR | Application | Gas | Parts | Order number\nRow identifier: N44186\nValues: During bottle filling operation | Breathing air | up to 300 bar | NOT available for | Nitrox cylinder | 1× T-connector breathing air | 300 bar | N44186\nFootnotes: 28 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+        "page": 15,
+        "section": [
+          "High-pressure-accessories-catalogue_EN",
+          "Page 15"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Silencer, e.g. for draining cylinder pressure | N44211 | GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M | ADAPTER GAS SAMPLING PLUS M OVERVIEW OF | VARIANTS OF MEASUREMENTS AT COMPRESSOR | Application | Gas | Parts | Order number",
+        "row_label": "N44186",
+        "headers": [
+          "Silencer, e.g. for draining cylinder pressure",
+          "N44211",
+          "GAS REMOVAL ADAPTER FOR B-DETECTION PLUS M",
+          "ADAPTER GAS SAMPLING PLUS M OVERVIEW OF",
+          "VARIANTS OF MEASUREMENTS AT COMPRESSOR",
+          "Application",
+          "Gas",
+          "Parts",
+          "Order number"
+        ],
+        "row_values": [
+          "During bottle filling operation",
+          "Breathing air",
+          "up to 300 bar",
+          "NOT available for",
+          "Nitrox cylinder",
+          "1× T-connector breathing air",
+          "300 bar",
+          "N44186"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "28 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.46463126,
+        "metadata": {
+          "parser": "identifier_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "88397b98-3d56-4d98-82e3-5e1350de910b",
+        "filename": "0075-BAUER-Filter-Cardridges_EN-19d256fd65.md",
+        "title": "BAUER-Filter-Cardridges_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: BAUER-Filter-Cardridges_EN\nacuum-packed for long shelf life without loss of cartridge service life\n› Optional: B-SECURUS activates safe shutdown when the filter is saturated with moisture\n› Our B-TIMER can monitor the service life of many cartridge types\n› All cartridges are in stock for immediate delivery\n*\nProcessing capacity at 20 °C / 300 bar. Cartridge life time applicable to drying only.\n** Cartridge life time only applies for oil separation. Processing capacity for water separation might be lower than for oil separation.\n*** Assuming proper maintenance and installation of the BAUER compressor systems in accordance with operating instructions/operating manuals, in cases where intake\n\nair CO2 concentration does not exceed the levels required by the applicable breathing air standard",
+        "page": 4,
+        "section": [
+          "BAUER-Filter-Cardridges_EN",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.44288462,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "88397b98-3d56-4d98-82e3-5e1350de910b",
+        "filename": "0075-BAUER-Filter-Cardridges_EN-19d256fd65.md",
+        "title": "BAUER-Filter-Cardridges_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: BAUER-Filter-Cardridges_EN\ne\n› Removal of oil vapour and odours CxHy\nwith activated carbon\n› Safe conversion of carbon monoxide CO\ninto non-toxic carbon dioxide CO2\nBREATHING AIR INDUSTRY\n## Page 2\n\n2 | FILTER CARTRIDGES\nBAUER KOMPRESSOREN\nP 31\nApplication: for compressors with P 31 TRIPLEX Filter (e.g. MARINER 250)\nSpare part number\nProcessing capacity\nStandard\n80100\n620 Nm3 *\nWith SECURUS\n–\nWith CO-Converter\n80114\n460 Nm3 *\nIndustry\n–\nIndustry with SECURUS\n–\nP 41\nApplication: for compressors with P 41 (e.g. MARINER 320)\nSpare part number\nProcessing capacity\nStandard\n062565\n1600 Nm3 *\nWith SECURUS\n061686\n1590 Nm3 *\nWith CO-Converter\n061687\n1350 Nm3 *\nIndustry\n–\nIndustry with SECURUS\n–\nCARTRIDGES FOR AIR PROCESSING\n* Processing capacity at 20 °C / 300 bar. Cartridge life time applicable to drying only.\n** Cartridge life time only applies for oil separation. Processing capacity for water separation might be lower than for oil separation.\nP 21\nApplication: for compressors with P 21 TRIPLEX Filter (e.g. JUNIOR II)\nSpare part number\nProcessing capacity\nStandard\n057679\n130 Nm3 *\nWith SECURUS\n–\nWith CO-Converter\n059183\n110 Nm3 *\nIndustry\n–\nIndustry with SECURUS\n–",
+        "page": 1,
+        "section": [
+          "BAUER-Filter-Cardridges_EN",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.41449275,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "4ea22244-85ce-4777-9d0b-f6ac50f165cf",
+        "filename": "0124-bauer_amfile_8-fad9ac0f60.md",
+        "title": "bauer_amfile_8",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 100",
+          "PE 100-TE",
+          "PE 100-TB"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [],
+        "standards": [
+          "DIN EN 12021"
+        ],
+        "content": "Document: bauer_amfile_8\notor protection switch for PE 100-TE\n› Intake telescope (standard with PE 100-TB) or intake manifold for\nattaching a suction hose\nPE 100, 300 bar model\nFEATURES\n› Compact, low-weight system, easily transportable\n› The P 11 purification system designed especially for\nthe PE 100 supplies pure breathing air in compliance\nwith DIN EN 12021:20141\n› Many possible applications\nFOR ANYONE THAT WANTS TO RELY ON PURE, SAFE BREATHING AIR\nIN MOBILE APPLICATIONS.\n1 Based on due maintenance and installation of the system in accordance with the operating manual and only where CO2 concentrations in intake air do not exceed the predefined\nstandard values. Local TLVs are not considered.",
+        "page": 2,
+        "section": [
+          "bauer_amfile_8",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.41408451,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "b safe"
+        ],
+        "standards": [],
+        "number_units": [
+          "300 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 1,
+      "elapsed_ms": 948.92
+    }
+  },
+  "completed_at": "2026-07-23T14:29:28.003645+00:00",
+  "case_id": "B11",
+  "split": "development",
+  "category": "safety_limit",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

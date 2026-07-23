@@ -1,0 +1,1361 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1296.72,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "6620ceb8-a048-4941-baea-0ecff97f4d3f",
+      "filename": "0215-0049_cta26-baureihe_23ceba8480-b547761147.md",
+      "title": "CTA26 series · Bio-CNG refuelling systems / filling stations",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: CTA26 series · Bio-CNG refuelling systems / filling stations\nd billing. They are primarily used at filling stations, in fleet operations, or at company-owned stations, enabling secure, cashless operation around the clock.\nThe terminals support various identification and payment methods such as chip cards, PIN codes, or contactless media, ensuring transparency and control during the refueling process. With their robust design, intuitive user interfaces, and flexible software solutions, fuel terminals provide an efficient solution for companies and operators looking to digitalize and optimize their fueling processes.\nFilter system\nThe high-pressure gas treatment system (high-pressure filter) is installed on the discharge side of the compressor and reliably removes excess moisture as well as potential oil residues from the natural gas.\nWith decades of experience in air and gas treatment, BAUER guarantees the highest quality – ensuring safe, optimally conditioned natural gas for the refueling process and on the road.\nTÜV approval\nDuring the factory technical partial inspection, TÜV performs comprehensive pressure and safety tests as well as an inspection of the electrical equipment.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nAccessories",
+      "page": null,
+      "section": [
+        "CTA26 series · Bio-CNG refuelling systems / filling stations",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.31431011,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "fa22d364-c63c-4537-a6a3-d0249a9e510a",
+      "filename": "0213-0047_cta23-baureihe_75cfb0e273-afd9b2b71c.md",
+      "title": "CTA23 series · Bio-CNG refuelling systems / filling stations",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: CTA23 series · Bio-CNG refuelling systems / filling stations\nd billing. They are primarily used at filling stations, in fleet operations, or at company-owned stations, enabling secure, cashless operation around the clock.\nThe terminals support various identification and payment methods such as chip cards, PIN codes, or contactless media, ensuring transparency and control during the refueling process. With their robust design, intuitive user interfaces, and flexible software solutions, fuel terminals provide an efficient solution for companies and operators looking to digitalize and optimize their fueling processes.\nFilter system\nThe high-pressure gas treatment system (high-pressure filter) is installed on the discharge side of the compressor and reliably removes excess moisture as well as potential oil residues from the natural gas.\nWith decades of experience in air and gas treatment, BAUER guarantees the highest quality – ensuring safe, optimally conditioned natural gas for the refueling process and on the road.\nTÜV approval\nDuring the factory technical partial inspection, TÜV performs comprehensive pressure and safety tests as well as an inspection of the electrical equipment.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nAccessories",
+      "page": null,
+      "section": [
+        "CTA23 series · Bio-CNG refuelling systems / filling stations",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.3140457,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "a80ac429-5ac9-4112-aa23-c543ad7ac758",
+      "filename": "0217-0051_cta52-baureihe_cb5d51751c-3f764f8692.md",
+      "title": "CTA52 series · Bio-CNG refuelling systems / filling stations",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: CTA52 series · Bio-CNG refuelling systems / filling stations\nd billing. They are primarily used at filling stations, in fleet operations, or at company-owned stations, enabling secure, cashless operation around the clock.\nThe terminals support various identification and payment methods such as chip cards, PIN codes, or contactless media, ensuring transparency and control during the refueling process. With their robust design, intuitive user interfaces, and flexible software solutions, fuel terminals provide an efficient solution for companies and operators looking to digitalize and optimize their fueling processes.\nFilter system\nThe high-pressure gas treatment system (high-pressure filter) is installed on the discharge side of the compressor and reliably removes excess moisture as well as potential oil residues from the natural gas.\nWith decades of experience in air and gas treatment, BAUER guarantees the highest quality – ensuring safe, optimally conditioned natural gas for the refueling process and on the road.\nTÜV approval\nDuring the factory technical partial inspection, TÜV performs comprehensive pressure and safety tests as well as an inspection of the electrical equipment.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nAccessories",
+      "page": null,
+      "section": [
+        "CTA52 series · Bio-CNG refuelling systems / filling stations",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.31378968,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\nDocument section: bauer_amfile_5 / Page 9\nTable: bauer_amfile_5\nHeaders and units: In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER PREMIUM LINE breathing air compressors excel through their robustness and outstanding quality. | Scores of options and the wide spectrum of different charging rates, constructions and drive variants mean that | all units are individual and can thus be aligned to almost any application. | Their sophisticated technology combined with our decades of experience stand for reliable operation with an | ultra-long service life. | In addition to air and breathing air compression, we supply special TÜV-certified nitrox compressors (see our | “B-NITROX Systems” brochure for details). | BAUER KOMPRESSOREN | BAUER PREMIUM LINE | PERFORMANCE OVERVIEW | 9 | PERFORMANCE OVERVIEW | MOBILE COMPRESSORS | 90 – 420 BAR | STATIONARY COMPRESSORS | 90 – 420 BAR | COMPACT LINE | 90 - 330 bar | PROFI LINE | 90 - 420 bar | PROFI LINE diesel units\nRow: 225 - 330 bar\nValues: 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350\nFootnotes: 90 - 330 bar\n90 - 420 bar",
+      "page": 9,
+      "section": [
+        "bauer_amfile_5",
+        "Page 9"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "bauer_amfile_5",
+      "row_label": "225 - 330 bar",
+      "headers": [
+        "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "BAUER PREMIUM LINE breathing air compressors excel through their robustness and outstanding quality.",
+        "Scores of options and the wide spectrum of different charging rates, constructions and drive variants mean that",
+        "all units are individual and can thus be aligned to almost any application.",
+        "Their sophisticated technology combined with our decades of experience stand for reliable operation with an",
+        "ultra-long service life.",
+        "In addition to air and breathing air compression, we supply special TÜV-certified nitrox compressors (see our",
+        "“B-NITROX Systems” brochure for details).",
+        "BAUER KOMPRESSOREN",
+        "BAUER PREMIUM LINE | PERFORMANCE OVERVIEW | 9",
+        "PERFORMANCE OVERVIEW",
+        "MOBILE COMPRESSORS | 90 – 420 BAR",
+        "STATIONARY COMPRESSORS | 90 – 420 BAR",
+        "COMPACT LINE",
+        "90 - 330 bar",
+        "PROFI LINE",
+        "90 - 420 bar",
+        "PROFI LINE diesel units"
+      ],
+      "row_values": [
+        "0",
+        "50",
+        "100",
+        "150",
+        "200",
+        "250",
+        "300",
+        "350"
+      ],
+      "units": [],
+      "footnotes": "90 - 330 bar\n90 - 420 bar",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.2775,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 100"
+      ],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: bauer_amfile_7\nDocument section: bauer_amfile_7 / Page 8\nTable: bauer_amfile_7\nHeaders and units: TO MEET ALL YOUR NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath- | ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN | 12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten- | sive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and | excellent quality. | The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER | core components with rugged, simple housing. | They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com- | pliance with international standards. | MOBILE COMPRESSORS | 225 – 330 BAR | PE 100 | 225 - 330 bar | PE-TE/TB\nRow: 225 - 330 bar\nValues: 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350\nFootnotes: 8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+      "page": 8,
+      "section": [
+        "bauer_amfile_7",
+        "Page 8"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "bauer_amfile_7",
+      "row_label": "225 - 330 bar",
+      "headers": [
+        "TO MEET ALL YOUR NEEDS",
+        "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath-",
+        "ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN",
+        "12021:2014 (Breathing Air Standard).",
+        "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+        "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten-",
+        "sive expertise in the fields of development, production and application.",
+        "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and",
+        "excellent quality.",
+        "The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER",
+        "core components with rugged, simple housing.",
+        "They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com-",
+        "pliance with international standards.",
+        "MOBILE COMPRESSORS | 225 – 330 BAR",
+        "PE 100",
+        "225 - 330 bar",
+        "PE-TE/TB"
+      ],
+      "row_values": [
+        "0",
+        "50",
+        "100",
+        "150",
+        "200",
+        "250",
+        "300",
+        "350"
+      ],
+      "units": [],
+      "footnotes": "8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.27732456,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+      "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+      "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "PE-VE INDUSTRY",
+        "B-CONTROL MICRO"
+      ],
+      "media": [],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\noperation.\nB-CLOUD REMOTE ACCESS\nB-CLOUD provides a real-time overview of\nall operational data for your BAUER systems\nequipped with the B-CONTROL MICRO control\nunit. In the event of warnings or faults, the\nsystem can send a push notification to your\nsmartphone upon request.",
+      "page": 3,
+      "section": [
+        "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "Page 3"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.24556011,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+      "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+      "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "PE-VE INDUSTRY",
+        "PE 180-18.5-VE",
+        "B-KOOL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\nDocument section: 2026-04_PE_VE_Industry_EN_N42434_sc / Page 6\nTable: TECHNICAL DATA\nRow: 1140 x 830 x 1520 mm\nPE 180-18.5-VE:: 1600 x 830 x 1520 mm\n› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system: while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a\nlater date if required.: › P 41/61 Purification Systems: Depending on the application or filter cartridge type, these\nsystems absorb, convert or extract moisture (H20) and oil. They are available as integrated: and external models.\n› Particulate filter: › B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.\n› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-: cantly extending filter cartridge life. Purchase costs are soon recouped.\n› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.: › Intake pressure reducer\n› 60-litre condensate vessel: › Base frame-mounted storage systems: The compressor and up to two storage cylinders,\neach with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to: form a ready-to-use system.\n› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or: operating rooms.\nModel: F.A.D. ¹\nMax. operating pres-: sure2\nNo. of: stages\nSpeed: approx.\nMotor: power\nNet weight approx.: l/min\nm³/h: cfm\nbar: psig\nrpm: kW\nkg: lbs\nFootnotes: 6 | PE-VE INDUSTRY",
+      "page": 6,
+      "section": [
+        "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "Page 6"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "1140 x 830 x 1520 mm",
+      "headers": [
+        "PE 180-18.5-VE:",
+        "› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system",
+        "later date if required.",
+        "systems absorb, convert or extract moisture (H20) and oil. They are available as integrated",
+        "› Particulate filter",
+        "› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-",
+        "› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.",
+        "› 60-litre condensate vessel",
+        "each with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to",
+        "› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or",
+        "Model",
+        "Max. operating pres-",
+        "No. of",
+        "Speed",
+        "Motor",
+        "Net weight approx.",
+        "m³/h",
+        "bar",
+        "rpm",
+        "kg"
+      ],
+      "row_values": [
+        "1600 x 830 x 1520 mm",
+        "while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a",
+        "› P 41/61 Purification Systems: Depending on the application or filter cartridge type, these",
+        "and external models.",
+        "› B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.",
+        "cantly extending filter cartridge life. Purchase costs are soon recouped.",
+        "› Intake pressure reducer",
+        "› Base frame-mounted storage systems: The compressor and up to two storage cylinders,",
+        "form a ready-to-use system.",
+        "operating rooms.",
+        "F.A.D. ¹",
+        "sure2",
+        "stages",
+        "approx.",
+        "power",
+        "l/min",
+        "cfm",
+        "psig",
+        "kW",
+        "lbs"
+      ],
+      "units": [
+        "m³/h",
+        "bar",
+        "rpm",
+        "kg",
+        "l/min",
+        "cfm",
+        "psig",
+        "kW"
+      ],
+      "footnotes": "6 | PE-VE INDUSTRY",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.23395833,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+      "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+      "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: Technical Data Sheet\nHeaders and units: High-pressure storage cylinder battery | Helium | Data Sheet Helium HP Storage 200_300 bar EN.docx | Page 1/1 | Stand: 10.02.2026 | High Pressure Storage Battery 200 / 300 bar | High pressure storage system for helium | Transportable in accordance with the TPED | Model | No. of | cylinders | Geometrical | total volume | Litre | Max. working | pressure 1 | bar | Version | N45579\nRow: 1-Bank\nValues: 420013294 | 12 | 600 | 300\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "page": 1,
+      "section": [
+        "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "Page 1"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data Sheet",
+      "row_label": "1-Bank",
+      "headers": [
+        "High-pressure storage cylinder battery",
+        "Helium",
+        "Data Sheet Helium HP Storage 200_300 bar EN.docx",
+        "Page 1/1",
+        "Stand: 10.02.2026",
+        "High Pressure Storage Battery 200 / 300 bar",
+        "High pressure storage system for helium",
+        "Transportable in accordance with the TPED",
+        "Model",
+        "No. of",
+        "cylinders",
+        "Geometrical",
+        "total volume",
+        "Litre",
+        "Max. working",
+        "pressure 1",
+        "bar",
+        "Version",
+        "N45579"
+      ],
+      "row_values": [
+        "420013294",
+        "12",
+        "600",
+        "300"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.23241784,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+      "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: 225/330 bar\nVariable pressure increase: 20 – 50 bar/min\nWeight: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nOptions: Proportional valve\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+      "page": null,
+      "section": [
+        "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "225/330 bar",
+      "headers": [
+        "Variable pressure increase",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Filling chamber dimensions",
+        "B-SAFE ECO",
+        "Atemluft",
+        "410 bar",
+        "225/330 bar",
+        "ca. 450 kg",
+        "6",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+        "Safety cell",
+        "Safety doors",
+        "Filling control",
+        "Filling options",
+        "Options"
+      ],
+      "row_values": [
+        "20 – 50 bar/min",
+        "ca. 450 kg",
+        "maximal 10",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "130 cm × 40 cm × 70 cm",
+        "Medium",
+        "Maximum operating pressure",
+        "Filling pressures (up to 2)",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Details & Features",
+        "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+        "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+        "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "Proportional valve"
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.23132035,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "breathing air",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\n0,0: Extended life time at continuous operating mode\nExtended life time at 30 min. intermittent operating mode: Extended life time at 15 min. intermittent operating mode\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "page": 12,
+      "section": [
+        "2026_04_Accessory_Systems_EN_N39608_sc",
+        "Page 12"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "100 bar",
+      "headers": [
+        "Permissible free air delivery, compressor",
+        "200 - 650 l/min (according to ISO 1217, air)",
+        "Power supply",
+        "200 - 240 VAC 60 Hz (single phase)",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "15",
+        "Ambient temperature [°C]",
+        "WITH B-KOOL III",
+        "30",
+        "40",
+        "50",
+        "12,0",
+        "8,0",
+        "4,0",
+        "0,0",
+        "Extended life time at 30 min. intermittent operating mode",
+        "12,0",
+        "8,0",
+        "4,0"
+      ],
+      "row_values": [
+        "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+        "200 - 420 l/min (helium and argon)",
+        "200 - 240 VAC 50 Hz (single phase)",
+        "Power consumption",
+        "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+        "20",
+        "EXTENDED LIFE TIME",
+        "25",
+        "35",
+        "45",
+        "55",
+        "10,0",
+        "6,0",
+        "2,0",
+        "Extended life time at continuous operating mode",
+        "Extended life time at 15 min. intermittent operating mode",
+        "10,0",
+        "6,0",
+        "2,0"
+      ],
+      "units": [
+        "l/min",
+        "bar"
+      ],
+      "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.2115457,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "6620ceb8-a048-4941-baea-0ecff97f4d3f",
+        "filename": "0215-0049_cta26-baureihe_23ceba8480-b547761147.md",
+        "title": "CTA26 series · Bio-CNG refuelling systems / filling stations",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: CTA26 series · Bio-CNG refuelling systems / filling stations\nd billing. They are primarily used at filling stations, in fleet operations, or at company-owned stations, enabling secure, cashless operation around the clock.\nThe terminals support various identification and payment methods such as chip cards, PIN codes, or contactless media, ensuring transparency and control during the refueling process. With their robust design, intuitive user interfaces, and flexible software solutions, fuel terminals provide an efficient solution for companies and operators looking to digitalize and optimize their fueling processes.\nFilter system\nThe high-pressure gas treatment system (high-pressure filter) is installed on the discharge side of the compressor and reliably removes excess moisture as well as potential oil residues from the natural gas.\nWith decades of experience in air and gas treatment, BAUER guarantees the highest quality – ensuring safe, optimally conditioned natural gas for the refueling process and on the road.\nTÜV approval\nDuring the factory technical partial inspection, TÜV performs comprehensive pressure and safety tests as well as an inspection of the electrical equipment.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nAccessories",
+        "page": null,
+        "section": [
+          "CTA26 series · Bio-CNG refuelling systems / filling stations",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.31431011,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "fa22d364-c63c-4537-a6a3-d0249a9e510a",
+        "filename": "0213-0047_cta23-baureihe_75cfb0e273-afd9b2b71c.md",
+        "title": "CTA23 series · Bio-CNG refuelling systems / filling stations",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: CTA23 series · Bio-CNG refuelling systems / filling stations\nd billing. They are primarily used at filling stations, in fleet operations, or at company-owned stations, enabling secure, cashless operation around the clock.\nThe terminals support various identification and payment methods such as chip cards, PIN codes, or contactless media, ensuring transparency and control during the refueling process. With their robust design, intuitive user interfaces, and flexible software solutions, fuel terminals provide an efficient solution for companies and operators looking to digitalize and optimize their fueling processes.\nFilter system\nThe high-pressure gas treatment system (high-pressure filter) is installed on the discharge side of the compressor and reliably removes excess moisture as well as potential oil residues from the natural gas.\nWith decades of experience in air and gas treatment, BAUER guarantees the highest quality – ensuring safe, optimally conditioned natural gas for the refueling process and on the road.\nTÜV approval\nDuring the factory technical partial inspection, TÜV performs comprehensive pressure and safety tests as well as an inspection of the electrical equipment.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nAccessories",
+        "page": null,
+        "section": [
+          "CTA23 series · Bio-CNG refuelling systems / filling stations",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.3140457,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "a80ac429-5ac9-4112-aa23-c543ad7ac758",
+        "filename": "0217-0051_cta52-baureihe_cb5d51751c-3f764f8692.md",
+        "title": "CTA52 series · Bio-CNG refuelling systems / filling stations",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: CTA52 series · Bio-CNG refuelling systems / filling stations\nd billing. They are primarily used at filling stations, in fleet operations, or at company-owned stations, enabling secure, cashless operation around the clock.\nThe terminals support various identification and payment methods such as chip cards, PIN codes, or contactless media, ensuring transparency and control during the refueling process. With their robust design, intuitive user interfaces, and flexible software solutions, fuel terminals provide an efficient solution for companies and operators looking to digitalize and optimize their fueling processes.\nFilter system\nThe high-pressure gas treatment system (high-pressure filter) is installed on the discharge side of the compressor and reliably removes excess moisture as well as potential oil residues from the natural gas.\nWith decades of experience in air and gas treatment, BAUER guarantees the highest quality – ensuring safe, optimally conditioned natural gas for the refueling process and on the road.\nTÜV approval\nDuring the factory technical partial inspection, TÜV performs comprehensive pressure and safety tests as well as an inspection of the electrical equipment.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nAccessories",
+        "page": null,
+        "section": [
+          "CTA52 series · Bio-CNG refuelling systems / filling stations",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.31378968,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\nDocument section: bauer_amfile_5 / Page 9\nTable: bauer_amfile_5\nHeaders and units: In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER PREMIUM LINE breathing air compressors excel through their robustness and outstanding quality. | Scores of options and the wide spectrum of different charging rates, constructions and drive variants mean that | all units are individual and can thus be aligned to almost any application. | Their sophisticated technology combined with our decades of experience stand for reliable operation with an | ultra-long service life. | In addition to air and breathing air compression, we supply special TÜV-certified nitrox compressors (see our | “B-NITROX Systems” brochure for details). | BAUER KOMPRESSOREN | BAUER PREMIUM LINE | PERFORMANCE OVERVIEW | 9 | PERFORMANCE OVERVIEW | MOBILE COMPRESSORS | 90 – 420 BAR | STATIONARY COMPRESSORS | 90 – 420 BAR | COMPACT LINE | 90 - 330 bar | PROFI LINE | 90 - 420 bar | PROFI LINE diesel units\nRow: 225 - 330 bar\nValues: 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350\nFootnotes: 90 - 330 bar\n90 - 420 bar",
+        "page": 9,
+        "section": [
+          "bauer_amfile_5",
+          "Page 9"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "bauer_amfile_5",
+        "row_label": "225 - 330 bar",
+        "headers": [
+          "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "BAUER PREMIUM LINE breathing air compressors excel through their robustness and outstanding quality.",
+          "Scores of options and the wide spectrum of different charging rates, constructions and drive variants mean that",
+          "all units are individual and can thus be aligned to almost any application.",
+          "Their sophisticated technology combined with our decades of experience stand for reliable operation with an",
+          "ultra-long service life.",
+          "In addition to air and breathing air compression, we supply special TÜV-certified nitrox compressors (see our",
+          "“B-NITROX Systems” brochure for details).",
+          "BAUER KOMPRESSOREN",
+          "BAUER PREMIUM LINE | PERFORMANCE OVERVIEW | 9",
+          "PERFORMANCE OVERVIEW",
+          "MOBILE COMPRESSORS | 90 – 420 BAR",
+          "STATIONARY COMPRESSORS | 90 – 420 BAR",
+          "COMPACT LINE",
+          "90 - 330 bar",
+          "PROFI LINE",
+          "90 - 420 bar",
+          "PROFI LINE diesel units"
+        ],
+        "row_values": [
+          "0",
+          "50",
+          "100",
+          "150",
+          "200",
+          "250",
+          "300",
+          "350"
+        ],
+        "units": [],
+        "footnotes": "90 - 330 bar\n90 - 420 bar",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.2775,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 100"
+        ],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: bauer_amfile_7\nDocument section: bauer_amfile_7 / Page 8\nTable: bauer_amfile_7\nHeaders and units: TO MEET ALL YOUR NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath- | ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN | 12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten- | sive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and | excellent quality. | The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER | core components with rugged, simple housing. | They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com- | pliance with international standards. | MOBILE COMPRESSORS | 225 – 330 BAR | PE 100 | 225 - 330 bar | PE-TE/TB\nRow: 225 - 330 bar\nValues: 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350\nFootnotes: 8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+        "page": 8,
+        "section": [
+          "bauer_amfile_7",
+          "Page 8"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "bauer_amfile_7",
+        "row_label": "225 - 330 bar",
+        "headers": [
+          "TO MEET ALL YOUR NEEDS",
+          "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath-",
+          "ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN",
+          "12021:2014 (Breathing Air Standard).",
+          "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+          "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten-",
+          "sive expertise in the fields of development, production and application.",
+          "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and",
+          "excellent quality.",
+          "The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER",
+          "core components with rugged, simple housing.",
+          "They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com-",
+          "pliance with international standards.",
+          "MOBILE COMPRESSORS | 225 – 330 BAR",
+          "PE 100",
+          "225 - 330 bar",
+          "PE-TE/TB"
+        ],
+        "row_values": [
+          "0",
+          "50",
+          "100",
+          "150",
+          "200",
+          "250",
+          "300",
+          "350"
+        ],
+        "units": [],
+        "footnotes": "8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.27732456,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+        "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+        "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "PE-VE INDUSTRY",
+          "B-CONTROL MICRO"
+        ],
+        "media": [],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\noperation.\nB-CLOUD REMOTE ACCESS\nB-CLOUD provides a real-time overview of\nall operational data for your BAUER systems\nequipped with the B-CONTROL MICRO control\nunit. In the event of warnings or faults, the\nsystem can send a push notification to your\nsmartphone upon request.",
+        "page": 3,
+        "section": [
+          "2026-04_PE_VE_Industry_EN_N42434_sc",
+          "Page 3"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.24556011,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+        "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+        "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "PE-VE INDUSTRY",
+          "PE 180-18.5-VE",
+          "B-KOOL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\nDocument section: 2026-04_PE_VE_Industry_EN_N42434_sc / Page 6\nTable: TECHNICAL DATA\nRow: 1140 x 830 x 1520 mm\nPE 180-18.5-VE:: 1600 x 830 x 1520 mm\n› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system: while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a\nlater date if required.: › P 41/61 Purification Systems: Depending on the application or filter cartridge type, these\nsystems absorb, convert or extract moisture (H20) and oil. They are available as integrated: and external models.\n› Particulate filter: › B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.\n› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-: cantly extending filter cartridge life. Purchase costs are soon recouped.\n› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.: › Intake pressure reducer\n› 60-litre condensate vessel: › Base frame-mounted storage systems: The compressor and up to two storage cylinders,\neach with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to: form a ready-to-use system.\n› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or: operating rooms.\nModel: F.A.D. ¹\nMax. operating pres-: sure2\nNo. of: stages\nSpeed: approx.\nMotor: power\nNet weight approx.: l/min\nm³/h: cfm\nbar: psig\nrpm: kW\nkg: lbs\nFootnotes: 6 | PE-VE INDUSTRY",
+        "page": 6,
+        "section": [
+          "2026-04_PE_VE_Industry_EN_N42434_sc",
+          "Page 6"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "1140 x 830 x 1520 mm",
+        "headers": [
+          "PE 180-18.5-VE:",
+          "› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system",
+          "later date if required.",
+          "systems absorb, convert or extract moisture (H20) and oil. They are available as integrated",
+          "› Particulate filter",
+          "› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-",
+          "› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.",
+          "› 60-litre condensate vessel",
+          "each with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to",
+          "› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or",
+          "Model",
+          "Max. operating pres-",
+          "No. of",
+          "Speed",
+          "Motor",
+          "Net weight approx.",
+          "m³/h",
+          "bar",
+          "rpm",
+          "kg"
+        ],
+        "row_values": [
+          "1600 x 830 x 1520 mm",
+          "while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a",
+          "› P 41/61 Purification Systems: Depending on the application or filter cartridge type, these",
+          "and external models.",
+          "› B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.",
+          "cantly extending filter cartridge life. Purchase costs are soon recouped.",
+          "› Intake pressure reducer",
+          "› Base frame-mounted storage systems: The compressor and up to two storage cylinders,",
+          "form a ready-to-use system.",
+          "operating rooms.",
+          "F.A.D. ¹",
+          "sure2",
+          "stages",
+          "approx.",
+          "power",
+          "l/min",
+          "cfm",
+          "psig",
+          "kW",
+          "lbs"
+        ],
+        "units": [
+          "m³/h",
+          "bar",
+          "rpm",
+          "kg",
+          "l/min",
+          "cfm",
+          "psig",
+          "kW"
+        ],
+        "footnotes": "6 | PE-VE INDUSTRY",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.23395833,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+        "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+        "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: Technical Data Sheet\nHeaders and units: High-pressure storage cylinder battery | Helium | Data Sheet Helium HP Storage 200_300 bar EN.docx | Page 1/1 | Stand: 10.02.2026 | High Pressure Storage Battery 200 / 300 bar | High pressure storage system for helium | Transportable in accordance with the TPED | Model | No. of | cylinders | Geometrical | total volume | Litre | Max. working | pressure 1 | bar | Version | N45579\nRow: 1-Bank\nValues: 420013294 | 12 | 600 | 300\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "page": 1,
+        "section": [
+          "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+          "Page 1"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data Sheet",
+        "row_label": "1-Bank",
+        "headers": [
+          "High-pressure storage cylinder battery",
+          "Helium",
+          "Data Sheet Helium HP Storage 200_300 bar EN.docx",
+          "Page 1/1",
+          "Stand: 10.02.2026",
+          "High Pressure Storage Battery 200 / 300 bar",
+          "High pressure storage system for helium",
+          "Transportable in accordance with the TPED",
+          "Model",
+          "No. of",
+          "cylinders",
+          "Geometrical",
+          "total volume",
+          "Litre",
+          "Max. working",
+          "pressure 1",
+          "bar",
+          "Version",
+          "N45579"
+        ],
+        "row_values": [
+          "420013294",
+          "12",
+          "600",
+          "300"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.23241784,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: 225/330 bar\nVariable pressure increase: 20 – 50 bar/min\nWeight: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nOptions: Proportional valve\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+        "page": null,
+        "section": [
+          "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "225/330 bar",
+        "headers": [
+          "Variable pressure increase",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Filling chamber dimensions",
+          "B-SAFE ECO",
+          "Atemluft",
+          "410 bar",
+          "225/330 bar",
+          "ca. 450 kg",
+          "6",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+          "Safety cell",
+          "Safety doors",
+          "Filling control",
+          "Filling options",
+          "Options"
+        ],
+        "row_values": [
+          "20 – 50 bar/min",
+          "ca. 450 kg",
+          "maximal 10",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "130 cm × 40 cm × 70 cm",
+          "Medium",
+          "Maximum operating pressure",
+          "Filling pressures (up to 2)",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Details & Features",
+          "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+          "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+          "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "Proportional valve"
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.23132035,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "breathing air",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\n0,0: Extended life time at continuous operating mode\nExtended life time at 30 min. intermittent operating mode: Extended life time at 15 min. intermittent operating mode\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "page": 12,
+        "section": [
+          "2026_04_Accessory_Systems_EN_N39608_sc",
+          "Page 12"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "100 bar",
+        "headers": [
+          "Permissible free air delivery, compressor",
+          "200 - 650 l/min (according to ISO 1217, air)",
+          "Power supply",
+          "200 - 240 VAC 60 Hz (single phase)",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz",
+          "15",
+          "Ambient temperature [°C]",
+          "WITH B-KOOL III",
+          "30",
+          "40",
+          "50",
+          "12,0",
+          "8,0",
+          "4,0",
+          "0,0",
+          "Extended life time at 30 min. intermittent operating mode",
+          "12,0",
+          "8,0",
+          "4,0"
+        ],
+        "row_values": [
+          "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+          "200 - 420 l/min (helium and argon)",
+          "200 - 240 VAC 50 Hz (single phase)",
+          "Power consumption",
+          "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+          "20",
+          "EXTENDED LIFE TIME",
+          "25",
+          "35",
+          "45",
+          "55",
+          "10,0",
+          "6,0",
+          "2,0",
+          "Extended life time at continuous operating mode",
+          "Extended life time at 15 min. intermittent operating mode",
+          "10,0",
+          "6,0",
+          "2,0"
+        ],
+        "units": [
+          "l/min",
+          "bar"
+        ],
+        "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.2115457,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 1,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 0,
+      "elapsed_ms": 1005.91
+    }
+  },
+  "completed_at": "2026-07-23T14:10:00.502373+00:00",
+  "case_id": "B25",
+  "split": "development",
+  "category": "semantic_product",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

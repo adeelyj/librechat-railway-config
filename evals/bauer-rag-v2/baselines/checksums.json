@@ -1,18 +1,18 @@
 ﻿{
     "schema_version":  1,
-    "generated_at":  "2026-07-23T10:11:02.9602444Z",
+    "generated_at":  "2026-07-23T13:43:17.9978379Z",
     "artifacts":  [
                       {
                           "file":  "deployment.json",
-                          "sha256":  "f15e731372c3ed1a86e0138b0b7dc505d48123886815ae7d8e38a3cbba7c4913"
+                          "sha256":  "e8c8ee9d38d4b69902605335e271ad83e2eec3543d6d5caa30fa0bf67e6c2cfd"
                       },
                       {
                           "file":  "agents.json",
-                          "sha256":  "973dd15510bac9b5202118a59f1569233fabf0729af62b92e4ab4f6ffc8dcd83"
+                          "sha256":  "1387acc9eac8edae9fff5269c31b1e09aca616174f1c3fcd84a1d558ad257bbb"
                       },
                       {
                           "file":  "corpus-manifest.json",
-                          "sha256":  "68fdf35b9adcce6b92631c83b2be55ae3b8b2593c121fb70bc81148b21e09cff"
+                          "sha256":  "2934bb3bf75514a4ae4d340cb68c023831ca20a5e89e194fd20774b1e561b0d8"
                       }
                   ]
 }

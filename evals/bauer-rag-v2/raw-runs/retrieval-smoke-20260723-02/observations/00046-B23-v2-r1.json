@@ -1,0 +1,903 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1135.29,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+      "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+      "title": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+      "language": "en",
+      "publication_date": "2024-01-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION"
+      ],
+      "media": [],
+      "component_categories": [
+        "sensor"
+      ],
+      "standards": [],
+      "content": "Document: 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\nhe preset tolerances for automatic bump\ntests are only recommendations and can\nbe adjusted as required depending on the\napplication.\nCase with calibration gases\n## Page 12\n\nBAUER KOMPRESSOREN GmbH\nStäblistr. 8\n81477 Munich, Germany\nTel. +49 (0) 89 78049-0\nFax +49 (0) 89 78049-167\ninfo@bauer-kompressoren.de\nbauer-kompressoren.de\n\b\nB-DETECTION Sensor calibration EN\n\b\nN47183\n\n01.2024\n\b Subject to technical change without notice\nARE YOU INTERESTED IN OUR\nPRODUCTS?\nCONTACT US – WE ARE HAPPY TO PROVIDE\nINFORMATION AND ASSISTANCE.",
+      "page": 11,
+      "section": [
+        "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+        "Page 11"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.37139344,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "454bf3de-1304-4550-adb2-6bd1a2f95508",
+      "filename": "0121-bauer_amfile_271-f0a5714bc6.md",
+      "title": "bauer_amfile_271",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_271\nry, service etc. knowing of the con-\ntradictory and/or supplementary conditions of the customer.\n2. The GTC shall only apply if the contractual partner of BAUER\nis a businessman (section 14 BGB [Bürgerliches Gesetzbuch,\nGerman Civil Code]), a legal person under public law or a spe-\ncial estate under public law.\n3. In an ongoing business relationship, these GTC shall apply in\ntheir respective version and – also without special indication or\nreference – also to all future transactions, especially also in\ncase of calls or (subsequent) orders placed orally or by phone.\n4. Any individual agreements concluded with customers shall\ntake precedence over these GTC. The basis for the content of\nsuch an individual agreement shall be, subject to proof to the\ncontrary, the contract the parties concluded in writing or the\nwritten order confirmation of BAUER.\n5. Any business communications BAUER prints using electronic\ndata processing or sends via e-mail, such as order confirma-\ntions, invoices, credit notifications, account statements and\npayment reminders, shall be valid and legally binding, also\nwithout signature.\n6. Where these GTC require legally relevant declarations by the\ncustomer (e.g. for setting time limits, notice of defects or with-\ndrawal) to be made in writing, the written form or text form shall\nbe sufficient (e.g. by letter, e-mail, fax). Formal requirements",
+      "page": 1,
+      "section": [
+        "bauer_amfile_271",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.25112903,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "0f867a7b-a022-410d-9419-9f5d6d600ba6",
+      "filename": "0349-0183_professional-diving_8f84535210-bfe75cb87a.md",
+      "title": "Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN\nl source: `bauer_index\\raw_html\\0183_professional-diving_8f84535210.html`\n- Original SHA-256: `bfe75cb87af5c9aa795a8565476b11977ad832dcbcfd5323ed92e41ed2b8592b`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nHigh-Pressure Breathing Air Systems for Professional Divers\nSafe Breathing Air – Powered by BAUER Technology\nBreathing air is the most vital component of any dive— especially during professional operations under extreme conditions.\nThat’s why at BAUER KOMPRESSOREN, delivering clean, safe, and reliable breathing air is our top priority — worldwide and in every scenario.\nFrom portable compressors for private diving excursions to complete professional systems for dive centres, BAUER offers everything from a single source.",
+      "page": null,
+      "section": [
+        "Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.21639344,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+      "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+      "title": "Hochdruck-Zubehoerkatalog_DE",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: Hochdruck-Zubehoerkatalog_DE\nDocument section: Hochdruck-Zubehoerkatalog_DE / Page 49\nTable: TECHNISCHE DATEN\nHeaders and units: schraube | M8×25 | N19548 | N4882 | O-Ring, auch | für 059410 | SIV | N19548 | Inbus- | schraube | M8×25 | Montage | Wichtig! | Die Montage | hat immer mit | 4 Schrauben | zu erfolgen. | SICHERHEITSVENTIL ADAPTER | 20 mm ist der untere | Zapfendurchmesser\nRow: vom 059410 Sicherheitsventil\nValues: 1 | 3 | 2 | 5 | 4\nFootnotes: 96 | HOCHDRUCK-ZUBEHÖRKATALOG\n2 × 8,5∅\n20 mm ∅\n4 × 8,5∅\n4 Schrauben\n20 mm ist der untere",
+      "page": 49,
+      "section": [
+        "Hochdruck-Zubehoerkatalog_DE",
+        "Page 49"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNISCHE DATEN",
+      "row_label": "vom 059410 Sicherheitsventil",
+      "headers": [
+        "schraube",
+        "M8×25",
+        "N19548",
+        "N4882",
+        "O-Ring, auch",
+        "für 059410",
+        "SIV",
+        "N19548",
+        "Inbus-",
+        "schraube",
+        "M8×25",
+        "Montage",
+        "Wichtig!",
+        "Die Montage",
+        "hat immer mit",
+        "4 Schrauben",
+        "zu erfolgen.",
+        "SICHERHEITSVENTIL ADAPTER",
+        "20 mm ist der untere",
+        "Zapfendurchmesser"
+      ],
+      "row_values": [
+        "1",
+        "3",
+        "2",
+        "5",
+        "4"
+      ],
+      "units": [],
+      "footnotes": "96 | HOCHDRUCK-ZUBEHÖRKATALOG\n2 × 8,5∅\n20 mm ∅\n4 × 8,5∅\n4 Schrauben\n20 mm ist der untere",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.20038462,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "d1ef8df5-d50b-4b5b-9a8a-0f21ce74b901",
+      "filename": "0143-Data_Sheet_B80_EN-fc7f586433.md",
+      "title": "Data_Sheet_B80_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "CERTIFICATE ACCORDING TO MODULE H1 (DIRECTIVE PED 2014/68/EU)",
+        "Our Storage systems B50 and B80 are supplied with certificate according to module H1 (directive"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: Data_Sheet_B80_EN\nDocument section: Data_Sheet_B80_EN / Page 3\nTable: Technical Data Sheet\nRow: Data Sheet B80 EN.docx\nPage 3/3: Stand: 10.02.2026\nCERTIFICATE ACCORDING TO MODULE H1 (DIRECTIVE PED 2014/68/EU): Our Storage systems B50 and B80 are supplied with certificate according to module H1 (directive\nPED 2014/68/EU), eliminating the need to obtain individual TÜV approval. The safety valve: setting does not require acceptance by TÜV. The storage units can be combined as required.",
+      "page": 3,
+      "section": [
+        "Data_Sheet_B80_EN",
+        "Page 3"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data Sheet",
+      "row_label": "Data Sheet B80 EN.docx",
+      "headers": [
+        "Page 3/3",
+        "CERTIFICATE ACCORDING TO MODULE H1 (DIRECTIVE PED 2014/68/EU)",
+        "PED 2014/68/EU), eliminating the need to obtain individual TÜV approval. The safety valve"
+      ],
+      "row_values": [
+        "Stand: 10.02.2026",
+        "Our Storage systems B50 and B80 are supplied with certificate according to module H1 (directive",
+        "setting does not require acceptance by TÜV. The storage units can be combined as required."
+      ],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.19949275,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "3bebd586-2bdb-454e-8a12-391c56042d36",
+      "filename": "0032-2021-01_B-NEWS_EN_sc-db939b048e.md",
+      "title": "2021-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2021-01-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2021-01_B-NEWS_EN_sc\ng our emplo-\nyees’ awareness of these concerns;\nour HR department will shortly intro-\nduce e-learning courses for this pur­\npose. “Our planned environmental au-\ndit will help us to improve further and\nidentify more areas of potential. Our\nobjective is to avoid or eliminate waste\nwherever possible. I also have the aim\nof consistently reducing our ecological\nfootprint in all areas, including our bu-\nsiness operations. The watchword is:\nevery little helps! Vague promises have\nturned into hands-on action. But we\nstill need everyone at our company to\nplay their part”, notes Birgitt Schäfer.\nMr. Hacker, for whom environmen-\ntal management has been a central is-\nsue for many years, sees the move to-\nwards greater awareness as the fulfil-\nment of a very personal vision. “My fa-\nmily and I aim to live our lives in a way\nthat is as environmentally friendly and\nsustainable as possible, by avoiding\nwaste, using green electricity and gas,\nreducing our meat consumption and\ncy­cling as our main means of transport\nto name just some of the steps we\nhave taken. Now I want to implant\nsome of this philosophy in the minds\nof each individual member of our com-\npany. We have to provide our children,\nour grandchildren and further genera-\ntions to come with the possibility of\nliving a positive, environmentally awa-\nre life.\nBAUER takes action because the en-\nvironment and a brighter future are",
+      "page": 9,
+      "section": [
+        "2021-01_B-NEWS_EN_sc",
+        "Page 9"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.19928571,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "2ab8d357-dc31-4dbf-8786-f439fc75b117",
+      "filename": "0142-Data_Sheet_B50_EN-27e6e26654.md",
+      "title": "Data_Sheet_B50_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "CERTIFICATE ACCORDING TO MODULE H1 (DIRECTIVE PED 2014/68/EU)",
+        "Our Storage systems B50 and B80 are supplied with certificate according to module H1 (directive"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: Data_Sheet_B50_EN\ndensate drain valve.\nOption: safety valve with pressure gauge\nOption from two storage cylinders: Connection tube (required for each additional storage cylinder)\n## Page 2\n\nTechnical Data Sheet\nHigh-pressure Storage System\nAir & Gas\n\nData Sheet B50 EN.docx\nPage 2/3\nStand: 10.02.2026\nCOLOUR\n\nConsole and storage cylinder: RAL 7024 (grey)\n\nDOCUMENTATION\n\nInstruction manual with spare parts-list in German, English or French, CE declaration of\nconformity, EU-pressure vessel certification\n\nB50 - flexible installation on console, modular extendable\n\nCERTIFICATE ACCORDING TO MODULE H1 (DIRECTIVE PED 2014/68/EU)\nOur Storage systems B50 and B80 are supplied with certificate according to module H1 (directive\nPED 2014/68/EU), eliminating the need to obtain individual TÜV approval. The safety valve\nsetting does not require acceptance by TÜV. The storage units can be combined as required.\n\nMultiple storage units without a safety valve do not constitute an assembly within the meaning of\nthe Pressure Equipment Directive and are supplied with a manufacturer’s declaration instead of\nCE declaration.",
+      "page": 1,
+      "section": [
+        "Data_Sheet_B50_EN",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.19869863,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "d1ef8df5-d50b-4b5b-9a8a-0f21ce74b901",
+      "filename": "0143-Data_Sheet_B80_EN-fc7f586433.md",
+      "title": "Data_Sheet_B80_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: Data_Sheet_B80_EN\nt_B80_EN\n\n- Original source: `bauer_index\\raw_docs\\Data_Sheet_B80_EN.pdf`\n- Original SHA-256: `fc7f586433296df0a0265049df3725a61715d6c26408cf1479e80158c5ff06f8`\n## Page 1\n\nTechnical Data Sheet\nHigh-pressure Storage System\nAir & Gas\n\nData Sheet B80 EN.docx\nPage 1/3\nStand: 10.02.2026\n\nHigh Pressure Storage System B80\n\nModular and easy to expansion high pressure storage system for storage of air and gases.\n\n2 × B80\n\nTECHNICAL SPECIFICATION\nTechnical Data\n\nSCOPE OF DELIVERY\n\nHP storage cylinder on console\nStorage cylinder(s) upright, mounted on console, connection at bottom, shut-off valve and\ncondensate drain valve.\nOption: safety valve with pressure gauge\nOption from two storage cylinders: Connection tube (required for each additional storage cylinder)",
+      "page": null,
+      "section": [
+        "Data_Sheet_B80_EN"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.19833333,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "3bebd586-2bdb-454e-8a12-391c56042d36",
+      "filename": "0032-2021-01_B-NEWS_EN_sc-db939b048e.md",
+      "title": "2021-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2021-01-01",
+      "certificates": [],
+      "product_families": [
+        "VERTICUS compressors"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2021-01_B-NEWS_EN_sc\nught a\nsecond-hand BAUER diving compressor\nto supply breathing air for her diving\nschools. For many years Erika Bayer ran\nthe Barracuda water sports club at Fe-\nringasee, a lake in the north-east of Mu-\nnich, as well as a further diving, surfing\nand sailing club in Austria. The compres-\nsor faithfully served the club there until\nwell into the 1990s. Its final home will\nbe in the Diving Museum in Flensburg.\nErika Bayer contacted BAUER and of-\nfered to donate her legendary compres-\nsor – still in full working order – to the\nmuseum. We were only too pleased to\nhelp her fulfil her aim! Ms Bayer and her\ndaughter accompanied the compressor\nto hand it over in person before it was\ninspected, serviced and prepared for\nexhibition. For over 30 years it had wai-\nted patiently outdoors – naturally well\nprotected – for its next role to come\nalong. After an oil change and replace-\n10\nISSUE 1/2021\nCCR-TECDIVE, Vienna’s most modern diving\nschool, offers exemplary safety and protection\nwith its two BAUER VERTICUS compressors with\nB-VIRUS FREE systems\nFactory tour during the handover\nThe “retirement home” for the K14 after 46 years\nof loyal service",
+      "page": 10,
+      "section": [
+        "2021-01_B-NEWS_EN_sc",
+        "Page 10"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.19782051,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+      "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+      "title": "2025-06_Product_overview_EN_N37488_sc",
+      "language": "en",
+      "publication_date": "2025-06-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nme are especially\nsuited for indoor installation in production halls or compressor rooms\nwhere a small footprint is essential. All skid-mounted solutions can be\ndelivered as turnkey, pre-tested units with the desired approvals and\nput into operation on site without problems.\nCOMPLETE SYSTEMS\nA great strength of BAUER KOMPRESSOREN is the company‘s expertise in the construction and manufacturing of\ncomplete systems that have to withstand particular climatic conditions and often operate auto­nomously in the world‘s\nmost remote places. The climatic con­ditions may vary from extremely low temperatures in winter ­and salty, moist air\nto high desert temperatures and sand drifts.",
+      "page": 39,
+      "section": [
+        "2025-06_Product_overview_EN_N37488_sc",
+        "Page 39"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.16612903,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+        "filename": "0047-2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc-496bbb4b6f.md",
+        "title": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+        "language": "en",
+        "publication_date": "2024-01-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION"
+        ],
+        "media": [],
+        "component_categories": [
+          "sensor"
+        ],
+        "standards": [],
+        "content": "Document: 2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc\nhe preset tolerances for automatic bump\ntests are only recommendations and can\nbe adjusted as required depending on the\napplication.\nCase with calibration gases\n## Page 12\n\nBAUER KOMPRESSOREN GmbH\nStäblistr. 8\n81477 Munich, Germany\nTel. +49 (0) 89 78049-0\nFax +49 (0) 89 78049-167\ninfo@bauer-kompressoren.de\nbauer-kompressoren.de\n\b\nB-DETECTION Sensor calibration EN\n\b\nN47183\n\n01.2024\n\b Subject to technical change without notice\nARE YOU INTERESTED IN OUR\nPRODUCTS?\nCONTACT US – WE ARE HAPPY TO PROVIDE\nINFORMATION AND ASSISTANCE.",
+        "page": 11,
+        "section": [
+          "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc",
+          "Page 11"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.37139344,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "454bf3de-1304-4550-adb2-6bd1a2f95508",
+        "filename": "0121-bauer_amfile_271-f0a5714bc6.md",
+        "title": "bauer_amfile_271",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_271\nry, service etc. knowing of the con-\ntradictory and/or supplementary conditions of the customer.\n2. The GTC shall only apply if the contractual partner of BAUER\nis a businessman (section 14 BGB [Bürgerliches Gesetzbuch,\nGerman Civil Code]), a legal person under public law or a spe-\ncial estate under public law.\n3. In an ongoing business relationship, these GTC shall apply in\ntheir respective version and – also without special indication or\nreference – also to all future transactions, especially also in\ncase of calls or (subsequent) orders placed orally or by phone.\n4. Any individual agreements concluded with customers shall\ntake precedence over these GTC. The basis for the content of\nsuch an individual agreement shall be, subject to proof to the\ncontrary, the contract the parties concluded in writing or the\nwritten order confirmation of BAUER.\n5. Any business communications BAUER prints using electronic\ndata processing or sends via e-mail, such as order confirma-\ntions, invoices, credit notifications, account statements and\npayment reminders, shall be valid and legally binding, also\nwithout signature.\n6. Where these GTC require legally relevant declarations by the\ncustomer (e.g. for setting time limits, notice of defects or with-\ndrawal) to be made in writing, the written form or text form shall\nbe sufficient (e.g. by letter, e-mail, fax). Formal requirements",
+        "page": 1,
+        "section": [
+          "bauer_amfile_271",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.25112903,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "0f867a7b-a022-410d-9419-9f5d6d600ba6",
+        "filename": "0349-0183_professional-diving_8f84535210-bfe75cb87a.md",
+        "title": "Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN\nl source: `bauer_index\\raw_html\\0183_professional-diving_8f84535210.html`\n- Original SHA-256: `bfe75cb87af5c9aa795a8565476b11977ad832dcbcfd5323ed92e41ed2b8592b`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nHigh-Pressure Breathing Air Systems for Professional Divers\nSafe Breathing Air – Powered by BAUER Technology\nBreathing air is the most vital component of any dive— especially during professional operations under extreme conditions.\nThat’s why at BAUER KOMPRESSOREN, delivering clean, safe, and reliable breathing air is our top priority — worldwide and in every scenario.\nFrom portable compressors for private diving excursions to complete professional systems for dive centres, BAUER offers everything from a single source.",
+        "page": null,
+        "section": [
+          "Professional Diving Equipment and Solutions | BAUER KOMPRESSOREN"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.21639344,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+        "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+        "title": "Hochdruck-Zubehoerkatalog_DE",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: Hochdruck-Zubehoerkatalog_DE\nDocument section: Hochdruck-Zubehoerkatalog_DE / Page 49\nTable: TECHNISCHE DATEN\nHeaders and units: schraube | M8×25 | N19548 | N4882 | O-Ring, auch | für 059410 | SIV | N19548 | Inbus- | schraube | M8×25 | Montage | Wichtig! | Die Montage | hat immer mit | 4 Schrauben | zu erfolgen. | SICHERHEITSVENTIL ADAPTER | 20 mm ist der untere | Zapfendurchmesser\nRow: vom 059410 Sicherheitsventil\nValues: 1 | 3 | 2 | 5 | 4\nFootnotes: 96 | HOCHDRUCK-ZUBEHÖRKATALOG\n2 × 8,5∅\n20 mm ∅\n4 × 8,5∅\n4 Schrauben\n20 mm ist der untere",
+        "page": 49,
+        "section": [
+          "Hochdruck-Zubehoerkatalog_DE",
+          "Page 49"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNISCHE DATEN",
+        "row_label": "vom 059410 Sicherheitsventil",
+        "headers": [
+          "schraube",
+          "M8×25",
+          "N19548",
+          "N4882",
+          "O-Ring, auch",
+          "für 059410",
+          "SIV",
+          "N19548",
+          "Inbus-",
+          "schraube",
+          "M8×25",
+          "Montage",
+          "Wichtig!",
+          "Die Montage",
+          "hat immer mit",
+          "4 Schrauben",
+          "zu erfolgen.",
+          "SICHERHEITSVENTIL ADAPTER",
+          "20 mm ist der untere",
+          "Zapfendurchmesser"
+        ],
+        "row_values": [
+          "1",
+          "3",
+          "2",
+          "5",
+          "4"
+        ],
+        "units": [],
+        "footnotes": "96 | HOCHDRUCK-ZUBEHÖRKATALOG\n2 × 8,5∅\n20 mm ∅\n4 × 8,5∅\n4 Schrauben\n20 mm ist der untere",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.20038462,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "d1ef8df5-d50b-4b5b-9a8a-0f21ce74b901",
+        "filename": "0143-Data_Sheet_B80_EN-fc7f586433.md",
+        "title": "Data_Sheet_B80_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "CERTIFICATE ACCORDING TO MODULE H1 (DIRECTIVE PED 2014/68/EU)",
+          "Our Storage systems B50 and B80 are supplied with certificate according to module H1 (directive"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: Data_Sheet_B80_EN\nDocument section: Data_Sheet_B80_EN / Page 3\nTable: Technical Data Sheet\nRow: Data Sheet B80 EN.docx\nPage 3/3: Stand: 10.02.2026\nCERTIFICATE ACCORDING TO MODULE H1 (DIRECTIVE PED 2014/68/EU): Our Storage systems B50 and B80 are supplied with certificate according to module H1 (directive\nPED 2014/68/EU), eliminating the need to obtain individual TÜV approval. The safety valve: setting does not require acceptance by TÜV. The storage units can be combined as required.",
+        "page": 3,
+        "section": [
+          "Data_Sheet_B80_EN",
+          "Page 3"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data Sheet",
+        "row_label": "Data Sheet B80 EN.docx",
+        "headers": [
+          "Page 3/3",
+          "CERTIFICATE ACCORDING TO MODULE H1 (DIRECTIVE PED 2014/68/EU)",
+          "PED 2014/68/EU), eliminating the need to obtain individual TÜV approval. The safety valve"
+        ],
+        "row_values": [
+          "Stand: 10.02.2026",
+          "Our Storage systems B50 and B80 are supplied with certificate according to module H1 (directive",
+          "setting does not require acceptance by TÜV. The storage units can be combined as required."
+        ],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.19949275,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "3bebd586-2bdb-454e-8a12-391c56042d36",
+        "filename": "0032-2021-01_B-NEWS_EN_sc-db939b048e.md",
+        "title": "2021-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2021-01-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2021-01_B-NEWS_EN_sc\ng our emplo-\nyees’ awareness of these concerns;\nour HR department will shortly intro-\nduce e-learning courses for this pur­\npose. “Our planned environmental au-\ndit will help us to improve further and\nidentify more areas of potential. Our\nobjective is to avoid or eliminate waste\nwherever possible. I also have the aim\nof consistently reducing our ecological\nfootprint in all areas, including our bu-\nsiness operations. The watchword is:\nevery little helps! Vague promises have\nturned into hands-on action. But we\nstill need everyone at our company to\nplay their part”, notes Birgitt Schäfer.\nMr. Hacker, for whom environmen-\ntal management has been a central is-\nsue for many years, sees the move to-\nwards greater awareness as the fulfil-\nment of a very personal vision. “My fa-\nmily and I aim to live our lives in a way\nthat is as environmentally friendly and\nsustainable as possible, by avoiding\nwaste, using green electricity and gas,\nreducing our meat consumption and\ncy­cling as our main means of transport\nto name just some of the steps we\nhave taken. Now I want to implant\nsome of this philosophy in the minds\nof each individual member of our com-\npany. We have to provide our children,\nour grandchildren and further genera-\ntions to come with the possibility of\nliving a positive, environmentally awa-\nre life.\nBAUER takes action because the en-\nvironment and a brighter future are",
+        "page": 9,
+        "section": [
+          "2021-01_B-NEWS_EN_sc",
+          "Page 9"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.19928571,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "2ab8d357-dc31-4dbf-8786-f439fc75b117",
+        "filename": "0142-Data_Sheet_B50_EN-27e6e26654.md",
+        "title": "Data_Sheet_B50_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "CERTIFICATE ACCORDING TO MODULE H1 (DIRECTIVE PED 2014/68/EU)",
+          "Our Storage systems B50 and B80 are supplied with certificate according to module H1 (directive"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: Data_Sheet_B50_EN\ndensate drain valve.\nOption: safety valve with pressure gauge\nOption from two storage cylinders: Connection tube (required for each additional storage cylinder)\n## Page 2\n\nTechnical Data Sheet\nHigh-pressure Storage System\nAir & Gas\n\nData Sheet B50 EN.docx\nPage 2/3\nStand: 10.02.2026\nCOLOUR\n\nConsole and storage cylinder: RAL 7024 (grey)\n\nDOCUMENTATION\n\nInstruction manual with spare parts-list in German, English or French, CE declaration of\nconformity, EU-pressure vessel certification\n\nB50 - flexible installation on console, modular extendable\n\nCERTIFICATE ACCORDING TO MODULE H1 (DIRECTIVE PED 2014/68/EU)\nOur Storage systems B50 and B80 are supplied with certificate according to module H1 (directive\nPED 2014/68/EU), eliminating the need to obtain individual TÜV approval. The safety valve\nsetting does not require acceptance by TÜV. The storage units can be combined as required.\n\nMultiple storage units without a safety valve do not constitute an assembly within the meaning of\nthe Pressure Equipment Directive and are supplied with a manufacturer’s declaration instead of\nCE declaration.",
+        "page": 1,
+        "section": [
+          "Data_Sheet_B50_EN",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.19869863,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "d1ef8df5-d50b-4b5b-9a8a-0f21ce74b901",
+        "filename": "0143-Data_Sheet_B80_EN-fc7f586433.md",
+        "title": "Data_Sheet_B80_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: Data_Sheet_B80_EN\nt_B80_EN\n\n- Original source: `bauer_index\\raw_docs\\Data_Sheet_B80_EN.pdf`\n- Original SHA-256: `fc7f586433296df0a0265049df3725a61715d6c26408cf1479e80158c5ff06f8`\n## Page 1\n\nTechnical Data Sheet\nHigh-pressure Storage System\nAir & Gas\n\nData Sheet B80 EN.docx\nPage 1/3\nStand: 10.02.2026\n\nHigh Pressure Storage System B80\n\nModular and easy to expansion high pressure storage system for storage of air and gases.\n\n2 × B80\n\nTECHNICAL SPECIFICATION\nTechnical Data\n\nSCOPE OF DELIVERY\n\nHP storage cylinder on console\nStorage cylinder(s) upright, mounted on console, connection at bottom, shut-off valve and\ncondensate drain valve.\nOption: safety valve with pressure gauge\nOption from two storage cylinders: Connection tube (required for each additional storage cylinder)",
+        "page": null,
+        "section": [
+          "Data_Sheet_B80_EN"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.19833333,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "3bebd586-2bdb-454e-8a12-391c56042d36",
+        "filename": "0032-2021-01_B-NEWS_EN_sc-db939b048e.md",
+        "title": "2021-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2021-01-01",
+        "certificates": [],
+        "product_families": [
+          "VERTICUS compressors"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2021-01_B-NEWS_EN_sc\nught a\nsecond-hand BAUER diving compressor\nto supply breathing air for her diving\nschools. For many years Erika Bayer ran\nthe Barracuda water sports club at Fe-\nringasee, a lake in the north-east of Mu-\nnich, as well as a further diving, surfing\nand sailing club in Austria. The compres-\nsor faithfully served the club there until\nwell into the 1990s. Its final home will\nbe in the Diving Museum in Flensburg.\nErika Bayer contacted BAUER and of-\nfered to donate her legendary compres-\nsor – still in full working order – to the\nmuseum. We were only too pleased to\nhelp her fulfil her aim! Ms Bayer and her\ndaughter accompanied the compressor\nto hand it over in person before it was\ninspected, serviced and prepared for\nexhibition. For over 30 years it had wai-\nted patiently outdoors – naturally well\nprotected – for its next role to come\nalong. After an oil change and replace-\n10\nISSUE 1/2021\nCCR-TECDIVE, Vienna’s most modern diving\nschool, offers exemplary safety and protection\nwith its two BAUER VERTICUS compressors with\nB-VIRUS FREE systems\nFactory tour during the handover\nThe “retirement home” for the K14 after 46 years\nof loyal service",
+        "page": 10,
+        "section": [
+          "2021-01_B-NEWS_EN_sc",
+          "Page 10"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.19782051,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+        "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+        "title": "2025-06_Product_overview_EN_N37488_sc",
+        "language": "en",
+        "publication_date": "2025-06-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nme are especially\nsuited for indoor installation in production halls or compressor rooms\nwhere a small footprint is essential. All skid-mounted solutions can be\ndelivered as turnkey, pre-tested units with the desired approvals and\nput into operation on site without problems.\nCOMPLETE SYSTEMS\nA great strength of BAUER KOMPRESSOREN is the company‘s expertise in the construction and manufacturing of\ncomplete systems that have to withstand particular climatic conditions and often operate auto­nomously in the world‘s\nmost remote places. The climatic con­ditions may vary from extremely low temperatures in winter ­and salty, moist air\nto high desert temperatures and sand drifts.",
+        "page": 39,
+        "section": [
+          "2025-06_Product_overview_EN_N37488_sc",
+          "Page 39"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.16612903,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "n47183"
+        ],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 0,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 1,
+      "elapsed_ms": 854.76
+    }
+  },
+  "completed_at": "2026-07-23T14:09:57.201304+00:00",
+  "case_id": "B23",
+  "split": "development",
+  "category": "exact_document_number",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

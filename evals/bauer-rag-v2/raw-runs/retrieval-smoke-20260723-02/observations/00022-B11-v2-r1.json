@@ -1,0 +1,1489 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1429.28,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+      "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+      "title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nDocument section: 2026-04_B-Nitrox_EN_N34460_sc / Page 7\nTable: 2026-04_B-Nitrox_EN_N34460_sc\nHeaders and units: OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR | NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure | breathing or compressed air for all applications, in strict compliance with international air quality standards | such as DIN EN12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex- | tensive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their | sophisticated technology, combined with our decades of experience, ensure high reliability in continuous | operation and extremely long service life. | NITROX COMPRESSORS | 330 BAR | VERTICUS-OX | 300 bar | MINI-VERTICUS-OX | 300 bar | MARINER 320-OX\nRow: 300 bar\nValues: 200 | 250 | 300 | 350 | 400 | 450 | 500",
+      "page": 7,
+      "section": [
+        "2026-04_B-Nitrox_EN_N34460_sc",
+        "Page 7"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "row_label": "300 bar",
+      "headers": [
+        "OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR",
+        "NEEDS",
+        "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure",
+        "breathing or compressed air for all applications, in strict compliance with international air quality standards",
+        "such as DIN EN12021:2014 (Breathing Air Standard).",
+        "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+        "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex-",
+        "tensive expertise in the fields of development, production and application.",
+        "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their",
+        "sophisticated technology, combined with our decades of experience, ensure high reliability in continuous",
+        "operation and extremely long service life.",
+        "NITROX COMPRESSORS | 330 BAR",
+        "VERTICUS-OX",
+        "300 bar",
+        "MINI-VERTICUS-OX",
+        "300 bar",
+        "MARINER 320-OX"
+      ],
+      "row_values": [
+        "200",
+        "250",
+        "300",
+        "350",
+        "400",
+        "450",
+        "500"
+      ],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.39045169,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "b6bf67d6-c95c-44d7-9df3-d521ff976dfd",
+      "filename": "0254-0088_hochdruck-speichersysteme_fbfbdcc4bf-0c560f62cf.md",
+      "title": "High-pressure storage systems · Storage Systems | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage systems · Storage Systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage Systems | BAUER KOMP / Web page content\nTable: Technical data\nRow: B 50\n–: ✓\n50: 1\nB 50 (Nitrox): –\n✓: –\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.: Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.\nStorage cylinder with console: A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.\nPressure vessel: The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.\nCondensate drain: Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.\nOptions: Safety valve and pressure gauge\nSafety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.: The storage design\nStorage system design – the basis for efficient compressor operation: A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.\nTo ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.: The size of the storage system depends on:\nCompressor delivery rate (l/min): Air consumption of the specific application\nPressure differential between start and stop (hysteresis): Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):\nVk (l/min): Compressor delivery volume in liters per minute: V (l): Storage volume in liters (water volume)\nΔp (bar): Pressure differential (hysteresis) in bar: We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+      "page": null,
+      "section": [
+        "High-pressure storage systems · Storage Systems | BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "B 50",
+      "headers": [
+        "–",
+        "50",
+        "B 50 (Nitrox)",
+        "✓",
+        "50",
+        "B 80",
+        "–",
+        "1",
+        "The modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.",
+        "Storage cylinder with console",
+        "Pressure vessel",
+        "Condensate drain",
+        "Options",
+        "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+        "Storage system design – the basis for efficient compressor operation",
+        "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+        "Compressor delivery rate (l/min)",
+        "Pressure differential between start and stop (hysteresis)",
+        "Vk (l/min): Compressor delivery volume in liters per minute",
+        "Δp (bar): Pressure differential (hysteresis) in bar"
+      ],
+      "row_values": [
+        "✓",
+        "1",
+        "–",
+        "–",
+        "1",
+        "✓",
+        "80",
+        "Details & Features",
+        "Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.",
+        "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+        "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+        "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+        "Safety valve and pressure gauge",
+        "The storage design",
+        "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+        "The size of the storage system depends on:",
+        "Air consumption of the specific application",
+        "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+        "V (l): Storage volume in liters (water volume)",
+        "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel."
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.35210526,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+      "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+      "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: Technical Data Sheet\nHeaders and units: High-pressure storage cylinder battery | Helium | Data Sheet Helium HP Storage 200_300 bar EN.docx | Page 1/1 | Stand: 10.02.2026 | High Pressure Storage Battery 200 / 300 bar | High pressure storage system for helium | Transportable in accordance with the TPED | Model | No. of | cylinders | Geometrical | total volume | Litre | Max. working | pressure 1 | bar | Version | N45579\nRow: 1-Bank\nValues: 420013294 | 12 | 600 | 300\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "page": 1,
+      "section": [
+        "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "Page 1"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data Sheet",
+      "row_label": "1-Bank",
+      "headers": [
+        "High-pressure storage cylinder battery",
+        "Helium",
+        "Data Sheet Helium HP Storage 200_300 bar EN.docx",
+        "Page 1/1",
+        "Stand: 10.02.2026",
+        "High Pressure Storage Battery 200 / 300 bar",
+        "High pressure storage system for helium",
+        "Transportable in accordance with the TPED",
+        "Model",
+        "No. of",
+        "cylinders",
+        "Geometrical",
+        "total volume",
+        "Litre",
+        "Max. working",
+        "pressure 1",
+        "bar",
+        "Version",
+        "N45579"
+      ],
+      "row_values": [
+        "420013294",
+        "12",
+        "600",
+        "300"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.33402502,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "05b118c5-d7c8-49f6-b16c-fcc2fbb74d72",
+      "filename": "0169-0003_aerotest-simultan_6a4b02a2b8-fb5f057ec3.md",
+      "title": "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS\nDocument section: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS / Web page content\nTable: Technical data\nRow: 300 bar\nPressure gauge: 0 - 400 bar\nOutlet: 9 mm quick connector for measuring device\nOverpressure valve: Set to 10⁺² bar\nAdapter 1: Inlet\nInternal thread G5/8–200 bar: Outlet\nInternal thread G5/8–300 bar for pressure reducer: Adapter 2\nInlet: Internal thread G5/8-200 bar\nOutlet: Internal thread G5/8-300 bar for pressure reducer\nMeasuring device: Length × Width (mm):\n100 × 38: Height including Dräger tube holder (mm):\n230: Connection for compressed air supply\n9 mm plug-in nipple: Inlet pressure\nFactory-set on delivery:: 8,5 bar\nVolume flow: CO and CO₂ tubes:\n0,2 l/min: Impactor and H₂O tubes:\n4 l/min: AEROTEST ALPHA\nCarrying case: Length × Width × Height (mm)\n350 × 300 × 85: Color\nBlack: Weight with contents\nCa. 3 kg: Pressure reducer\nFootnotes: 0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+      "page": null,
+      "section": [
+        "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "300 bar",
+      "headers": [
+        "Pressure gauge",
+        "Outlet",
+        "Overpressure valve",
+        "Adapter 1",
+        "Internal thread G5/8–200 bar",
+        "Internal thread G5/8–300 bar for pressure reducer",
+        "Inlet",
+        "Outlet",
+        "Measuring device",
+        "100 × 38",
+        "230",
+        "9 mm plug-in nipple",
+        "Factory-set on delivery:",
+        "Volume flow",
+        "0,2 l/min",
+        "4 l/min",
+        "Carrying case",
+        "350 × 300 × 85",
+        "Black",
+        "Ca. 3 kg"
+      ],
+      "row_values": [
+        "0 - 400 bar",
+        "9 mm quick connector for measuring device",
+        "Set to 10⁺² bar",
+        "Inlet",
+        "Outlet",
+        "Adapter 2",
+        "Internal thread G5/8-200 bar",
+        "Internal thread G5/8-300 bar for pressure reducer",
+        "Length × Width (mm):",
+        "Height including Dräger tube holder (mm):",
+        "Connection for compressed air supply",
+        "Inlet pressure",
+        "8,5 bar",
+        "CO and CO₂ tubes:",
+        "Impactor and H₂O tubes:",
+        "AEROTEST ALPHA",
+        "Length × Width × Height (mm)",
+        "Color",
+        "Weight with contents",
+        "Pressure reducer"
+      ],
+      "units": [
+        "bar",
+        "l/min",
+        "kg"
+      ],
+      "footnotes": "0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.33233746,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\nDocument section: bauer_amfile_5 / Page 9\nTable: bauer_amfile_5\nHeaders and units: In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER PREMIUM LINE breathing air compressors excel through their robustness and outstanding quality. | Scores of options and the wide spectrum of different charging rates, constructions and drive variants mean that | all units are individual and can thus be aligned to almost any application. | Their sophisticated technology combined with our decades of experience stand for reliable operation with an | ultra-long service life. | In addition to air and breathing air compression, we supply special TÜV-certified nitrox compressors (see our | “B-NITROX Systems” brochure for details). | BAUER KOMPRESSOREN | BAUER PREMIUM LINE | PERFORMANCE OVERVIEW | 9 | PERFORMANCE OVERVIEW | MOBILE COMPRESSORS | 90 – 420 BAR | STATIONARY COMPRESSORS | 90 – 420 BAR | COMPACT LINE | 90 - 330 bar | PROFI LINE | 90 - 420 bar | PROFI LINE diesel units\nRow: 225 - 330 bar\nValues: 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350\nFootnotes: 90 - 330 bar\n90 - 420 bar",
+      "page": 9,
+      "section": [
+        "bauer_amfile_5",
+        "Page 9"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "bauer_amfile_5",
+      "row_label": "225 - 330 bar",
+      "headers": [
+        "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "BAUER PREMIUM LINE breathing air compressors excel through their robustness and outstanding quality.",
+        "Scores of options and the wide spectrum of different charging rates, constructions and drive variants mean that",
+        "all units are individual and can thus be aligned to almost any application.",
+        "Their sophisticated technology combined with our decades of experience stand for reliable operation with an",
+        "ultra-long service life.",
+        "In addition to air and breathing air compression, we supply special TÜV-certified nitrox compressors (see our",
+        "“B-NITROX Systems” brochure for details).",
+        "BAUER KOMPRESSOREN",
+        "BAUER PREMIUM LINE | PERFORMANCE OVERVIEW | 9",
+        "PERFORMANCE OVERVIEW",
+        "MOBILE COMPRESSORS | 90 – 420 BAR",
+        "STATIONARY COMPRESSORS | 90 – 420 BAR",
+        "COMPACT LINE",
+        "90 - 330 bar",
+        "PROFI LINE",
+        "90 - 420 bar",
+        "PROFI LINE diesel units"
+      ],
+      "row_values": [
+        "0",
+        "50",
+        "100",
+        "150",
+        "200",
+        "250",
+        "300",
+        "350"
+      ],
+      "units": [],
+      "footnotes": "90 - 330 bar\n90 - 420 bar",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.32587302,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 100"
+      ],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: bauer_amfile_7\nDocument section: bauer_amfile_7 / Page 8\nTable: bauer_amfile_7\nHeaders and units: TO MEET ALL YOUR NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath- | ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN | 12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten- | sive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and | excellent quality. | The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER | core components with rugged, simple housing. | They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com- | pliance with international standards. | MOBILE COMPRESSORS | 225 – 330 BAR | PE 100 | 225 - 330 bar | PE-TE/TB\nRow: 225 - 330 bar\nValues: 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350\nFootnotes: 8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+      "page": 8,
+      "section": [
+        "bauer_amfile_7",
+        "Page 8"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "bauer_amfile_7",
+      "row_label": "225 - 330 bar",
+      "headers": [
+        "TO MEET ALL YOUR NEEDS",
+        "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath-",
+        "ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN",
+        "12021:2014 (Breathing Air Standard).",
+        "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+        "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten-",
+        "sive expertise in the fields of development, production and application.",
+        "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and",
+        "excellent quality.",
+        "The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER",
+        "core components with rugged, simple housing.",
+        "They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com-",
+        "pliance with international standards.",
+        "MOBILE COMPRESSORS | 225 – 330 BAR",
+        "PE 100",
+        "225 - 330 bar",
+        "PE-TE/TB"
+      ],
+      "row_values": [
+        "0",
+        "50",
+        "100",
+        "150",
+        "200",
+        "250",
+        "300",
+        "350"
+      ],
+      "units": [],
+      "footnotes": "8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.325625,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "b6bf67d6-c95c-44d7-9df3-d521ff976dfd",
+      "filename": "0254-0088_hochdruck-speichersysteme_fbfbdcc4bf-0c560f62cf.md",
+      "title": "High-pressure storage systems · Storage Systems | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage systems · Storage Systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage Systems | BAUER KOMP / Web page content\nTable: Technical data\nRow: 330 bar\n350 bar: 420 bar\nLiters: B 50\n–: ✓\n50: 1\nB 50 (Nitrox): –\n✓: –\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.: Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.\nStorage cylinder with console: A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.\nPressure vessel: The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.\nCondensate drain: Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.\nOptions: Safety valve and pressure gauge\nSafety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.: The storage design\nStorage system design – the basis for efficient compressor operation: A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.\nTo ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.: The size of the storage system depends on:\nCompressor delivery rate (l/min): Air consumption of the specific application\nPressure differential between start and stop (hysteresis): Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+      "page": null,
+      "section": [
+        "High-pressure storage systems · Storage Systems | BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "330 bar",
+      "headers": [
+        "350 bar",
+        "Liters",
+        "–",
+        "50",
+        "B 50 (Nitrox)",
+        "✓",
+        "50",
+        "B 80",
+        "–",
+        "1",
+        "The modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.",
+        "Storage cylinder with console",
+        "Pressure vessel",
+        "Condensate drain",
+        "Options",
+        "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+        "Storage system design – the basis for efficient compressor operation",
+        "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+        "Compressor delivery rate (l/min)",
+        "Pressure differential between start and stop (hysteresis)"
+      ],
+      "row_values": [
+        "420 bar",
+        "B 50",
+        "✓",
+        "1",
+        "–",
+        "–",
+        "1",
+        "✓",
+        "80",
+        "Details & Features",
+        "Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.",
+        "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+        "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+        "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+        "Safety valve and pressure gauge",
+        "The storage design",
+        "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+        "The size of the storage system depends on:",
+        "Air consumption of the specific application",
+        "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.32408451,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+      "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+      "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 5145"
+      ],
+      "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: TECHNICAL DATA\nRow: 200 bar\n300 bar: Medium\nHelium: Connection / standard\nW21,8x1/14“: DIN 477 nr.6\nW30x2 15,9 / 20,1: RH\nISO 5145 No.30: Operating temperature\n-20°C…+65°C: Dimension\n1900 x 1000 x 770 mm: Weight\n790 kg: 1160 kg\nApproval: Certification according to 2010/35/EU-TPED\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "page": 1,
+      "section": [
+        "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "Page 1"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "200 bar",
+      "headers": [
+        "300 bar",
+        "Helium",
+        "W21,8x1/14“",
+        "W30x2 15,9 / 20,1",
+        "ISO 5145 No.30",
+        "-20°C…+65°C",
+        "1900 x 1000 x 770 mm",
+        "790 kg",
+        "Approval"
+      ],
+      "row_values": [
+        "Medium",
+        "Connection / standard",
+        "DIN 477 nr.6",
+        "RH",
+        "Operating temperature",
+        "Dimension",
+        "Weight",
+        "1160 kg",
+        "Certification according to 2010/35/EU-TPED"
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.31928693,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+      "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+      "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "valve",
+        "control"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nuietly.\nMotor rocker with belt tensioner\nThanks to the integrated motor rocker with belt tensioner, no retightening of the V-belt is required anymore.\nB-LINK 4G\nWith an integrated WiFi or 4G router, compressor systems equipped with B-CONTROL MICRO can be wirelessly connected to the B-CLOUD. This enables stable remote access, reliable remote monitoring, and secure data transmission via WLAN or mobile networks. If required, the B-LINK 4G can be installed externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent-Version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nP 61 Purification System\nThe P 61\nPurification System\nwith oil and water separator as well as pressure-retaining non-return valve ensures reliable breathing air in accordance with DIN EN 12021:2014¹ when using original BAUER filter cartridges. A type-tested, sealed final pressure safety valve guarantees high operational safety. The processable air volume is 2,400 m³.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.26192565,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "8e2f25ae-001a-408b-853b-4bc7fe79206c",
+      "filename": "0278-0112_mini-verticus_b0fdf63240-dd57c4aa33.md",
+      "title": "MINI-VERTICUS (350 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "valve",
+        "control"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: MINI-VERTICUS (350 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nuietly.\nMotor rocker with belt tensioner\nThanks to the integrated motor rocker with belt tensioner, no retightening of the V-belt is required anymore.\nB-LINK 4G\nWith an integrated WiFi or 4G router, compressor systems equipped with B-CONTROL MICRO can be wirelessly connected to the B-CLOUD. This enables stable remote access, reliable remote monitoring, and secure data transmission via WLAN or mobile networks. If required, the B-LINK 4G can be installed externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent-Version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nP 61 Purification System\nThe P 61\nPurification System\nwith oil and water separator as well as pressure-retaining non-return valve ensures reliable breathing air in accordance with DIN EN 12021:2014¹ when using original BAUER filter cartridges. A type-tested, sealed final pressure safety valve guarantees high operational safety. The processable air volume is 2,400 m³.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS (350 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.26143725,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+        "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+        "title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nDocument section: 2026-04_B-Nitrox_EN_N34460_sc / Page 7\nTable: 2026-04_B-Nitrox_EN_N34460_sc\nHeaders and units: OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR | NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure | breathing or compressed air for all applications, in strict compliance with international air quality standards | such as DIN EN12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex- | tensive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their | sophisticated technology, combined with our decades of experience, ensure high reliability in continuous | operation and extremely long service life. | NITROX COMPRESSORS | 330 BAR | VERTICUS-OX | 300 bar | MINI-VERTICUS-OX | 300 bar | MARINER 320-OX\nRow: 300 bar\nValues: 200 | 250 | 300 | 350 | 400 | 450 | 500",
+        "page": 7,
+        "section": [
+          "2026-04_B-Nitrox_EN_N34460_sc",
+          "Page 7"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "row_label": "300 bar",
+        "headers": [
+          "OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR",
+          "NEEDS",
+          "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure",
+          "breathing or compressed air for all applications, in strict compliance with international air quality standards",
+          "such as DIN EN12021:2014 (Breathing Air Standard).",
+          "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+          "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex-",
+          "tensive expertise in the fields of development, production and application.",
+          "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their",
+          "sophisticated technology, combined with our decades of experience, ensure high reliability in continuous",
+          "operation and extremely long service life.",
+          "NITROX COMPRESSORS | 330 BAR",
+          "VERTICUS-OX",
+          "300 bar",
+          "MINI-VERTICUS-OX",
+          "300 bar",
+          "MARINER 320-OX"
+        ],
+        "row_values": [
+          "200",
+          "250",
+          "300",
+          "350",
+          "400",
+          "450",
+          "500"
+        ],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.39045169,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "b6bf67d6-c95c-44d7-9df3-d521ff976dfd",
+        "filename": "0254-0088_hochdruck-speichersysteme_fbfbdcc4bf-0c560f62cf.md",
+        "title": "High-pressure storage systems · Storage Systems | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage systems · Storage Systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage Systems | BAUER KOMP / Web page content\nTable: Technical data\nRow: B 50\n–: ✓\n50: 1\nB 50 (Nitrox): –\n✓: –\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.: Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.\nStorage cylinder with console: A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.\nPressure vessel: The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.\nCondensate drain: Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.\nOptions: Safety valve and pressure gauge\nSafety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.: The storage design\nStorage system design – the basis for efficient compressor operation: A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.\nTo ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.: The size of the storage system depends on:\nCompressor delivery rate (l/min): Air consumption of the specific application\nPressure differential between start and stop (hysteresis): Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):\nVk (l/min): Compressor delivery volume in liters per minute: V (l): Storage volume in liters (water volume)\nΔp (bar): Pressure differential (hysteresis) in bar: We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+        "page": null,
+        "section": [
+          "High-pressure storage systems · Storage Systems | BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "B 50",
+        "headers": [
+          "–",
+          "50",
+          "B 50 (Nitrox)",
+          "✓",
+          "50",
+          "B 80",
+          "–",
+          "1",
+          "The modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.",
+          "Storage cylinder with console",
+          "Pressure vessel",
+          "Condensate drain",
+          "Options",
+          "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+          "Storage system design – the basis for efficient compressor operation",
+          "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+          "Compressor delivery rate (l/min)",
+          "Pressure differential between start and stop (hysteresis)",
+          "Vk (l/min): Compressor delivery volume in liters per minute",
+          "Δp (bar): Pressure differential (hysteresis) in bar"
+        ],
+        "row_values": [
+          "✓",
+          "1",
+          "–",
+          "–",
+          "1",
+          "✓",
+          "80",
+          "Details & Features",
+          "Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.",
+          "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+          "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+          "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+          "Safety valve and pressure gauge",
+          "The storage design",
+          "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+          "The size of the storage system depends on:",
+          "Air consumption of the specific application",
+          "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+          "V (l): Storage volume in liters (water volume)",
+          "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel."
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.35210526,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+        "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+        "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: Technical Data Sheet\nHeaders and units: High-pressure storage cylinder battery | Helium | Data Sheet Helium HP Storage 200_300 bar EN.docx | Page 1/1 | Stand: 10.02.2026 | High Pressure Storage Battery 200 / 300 bar | High pressure storage system for helium | Transportable in accordance with the TPED | Model | No. of | cylinders | Geometrical | total volume | Litre | Max. working | pressure 1 | bar | Version | N45579\nRow: 1-Bank\nValues: 420013294 | 12 | 600 | 300\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "page": 1,
+        "section": [
+          "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+          "Page 1"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data Sheet",
+        "row_label": "1-Bank",
+        "headers": [
+          "High-pressure storage cylinder battery",
+          "Helium",
+          "Data Sheet Helium HP Storage 200_300 bar EN.docx",
+          "Page 1/1",
+          "Stand: 10.02.2026",
+          "High Pressure Storage Battery 200 / 300 bar",
+          "High pressure storage system for helium",
+          "Transportable in accordance with the TPED",
+          "Model",
+          "No. of",
+          "cylinders",
+          "Geometrical",
+          "total volume",
+          "Litre",
+          "Max. working",
+          "pressure 1",
+          "bar",
+          "Version",
+          "N45579"
+        ],
+        "row_values": [
+          "420013294",
+          "12",
+          "600",
+          "300"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.33402502,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "05b118c5-d7c8-49f6-b16c-fcc2fbb74d72",
+        "filename": "0169-0003_aerotest-simultan_6a4b02a2b8-fb5f057ec3.md",
+        "title": "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS\nDocument section: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS / Web page content\nTable: Technical data\nRow: 300 bar\nPressure gauge: 0 - 400 bar\nOutlet: 9 mm quick connector for measuring device\nOverpressure valve: Set to 10⁺² bar\nAdapter 1: Inlet\nInternal thread G5/8–200 bar: Outlet\nInternal thread G5/8–300 bar for pressure reducer: Adapter 2\nInlet: Internal thread G5/8-200 bar\nOutlet: Internal thread G5/8-300 bar for pressure reducer\nMeasuring device: Length × Width (mm):\n100 × 38: Height including Dräger tube holder (mm):\n230: Connection for compressed air supply\n9 mm plug-in nipple: Inlet pressure\nFactory-set on delivery:: 8,5 bar\nVolume flow: CO and CO₂ tubes:\n0,2 l/min: Impactor and H₂O tubes:\n4 l/min: AEROTEST ALPHA\nCarrying case: Length × Width × Height (mm)\n350 × 300 × 85: Color\nBlack: Weight with contents\nCa. 3 kg: Pressure reducer\nFootnotes: 0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+        "page": null,
+        "section": [
+          "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "300 bar",
+        "headers": [
+          "Pressure gauge",
+          "Outlet",
+          "Overpressure valve",
+          "Adapter 1",
+          "Internal thread G5/8–200 bar",
+          "Internal thread G5/8–300 bar for pressure reducer",
+          "Inlet",
+          "Outlet",
+          "Measuring device",
+          "100 × 38",
+          "230",
+          "9 mm plug-in nipple",
+          "Factory-set on delivery:",
+          "Volume flow",
+          "0,2 l/min",
+          "4 l/min",
+          "Carrying case",
+          "350 × 300 × 85",
+          "Black",
+          "Ca. 3 kg"
+        ],
+        "row_values": [
+          "0 - 400 bar",
+          "9 mm quick connector for measuring device",
+          "Set to 10⁺² bar",
+          "Inlet",
+          "Outlet",
+          "Adapter 2",
+          "Internal thread G5/8-200 bar",
+          "Internal thread G5/8-300 bar for pressure reducer",
+          "Length × Width (mm):",
+          "Height including Dräger tube holder (mm):",
+          "Connection for compressed air supply",
+          "Inlet pressure",
+          "8,5 bar",
+          "CO and CO₂ tubes:",
+          "Impactor and H₂O tubes:",
+          "AEROTEST ALPHA",
+          "Length × Width × Height (mm)",
+          "Color",
+          "Weight with contents",
+          "Pressure reducer"
+        ],
+        "units": [
+          "bar",
+          "l/min",
+          "kg"
+        ],
+        "footnotes": "0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.33233746,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\nDocument section: bauer_amfile_5 / Page 9\nTable: bauer_amfile_5\nHeaders and units: In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER PREMIUM LINE breathing air compressors excel through their robustness and outstanding quality. | Scores of options and the wide spectrum of different charging rates, constructions and drive variants mean that | all units are individual and can thus be aligned to almost any application. | Their sophisticated technology combined with our decades of experience stand for reliable operation with an | ultra-long service life. | In addition to air and breathing air compression, we supply special TÜV-certified nitrox compressors (see our | “B-NITROX Systems” brochure for details). | BAUER KOMPRESSOREN | BAUER PREMIUM LINE | PERFORMANCE OVERVIEW | 9 | PERFORMANCE OVERVIEW | MOBILE COMPRESSORS | 90 – 420 BAR | STATIONARY COMPRESSORS | 90 – 420 BAR | COMPACT LINE | 90 - 330 bar | PROFI LINE | 90 - 420 bar | PROFI LINE diesel units\nRow: 225 - 330 bar\nValues: 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350\nFootnotes: 90 - 330 bar\n90 - 420 bar",
+        "page": 9,
+        "section": [
+          "bauer_amfile_5",
+          "Page 9"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "bauer_amfile_5",
+        "row_label": "225 - 330 bar",
+        "headers": [
+          "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "BAUER PREMIUM LINE breathing air compressors excel through their robustness and outstanding quality.",
+          "Scores of options and the wide spectrum of different charging rates, constructions and drive variants mean that",
+          "all units are individual and can thus be aligned to almost any application.",
+          "Their sophisticated technology combined with our decades of experience stand for reliable operation with an",
+          "ultra-long service life.",
+          "In addition to air and breathing air compression, we supply special TÜV-certified nitrox compressors (see our",
+          "“B-NITROX Systems” brochure for details).",
+          "BAUER KOMPRESSOREN",
+          "BAUER PREMIUM LINE | PERFORMANCE OVERVIEW | 9",
+          "PERFORMANCE OVERVIEW",
+          "MOBILE COMPRESSORS | 90 – 420 BAR",
+          "STATIONARY COMPRESSORS | 90 – 420 BAR",
+          "COMPACT LINE",
+          "90 - 330 bar",
+          "PROFI LINE",
+          "90 - 420 bar",
+          "PROFI LINE diesel units"
+        ],
+        "row_values": [
+          "0",
+          "50",
+          "100",
+          "150",
+          "200",
+          "250",
+          "300",
+          "350"
+        ],
+        "units": [],
+        "footnotes": "90 - 330 bar\n90 - 420 bar",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.32587302,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 100"
+        ],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: bauer_amfile_7\nDocument section: bauer_amfile_7 / Page 8\nTable: bauer_amfile_7\nHeaders and units: TO MEET ALL YOUR NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath- | ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN | 12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten- | sive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and | excellent quality. | The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER | core components with rugged, simple housing. | They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com- | pliance with international standards. | MOBILE COMPRESSORS | 225 – 330 BAR | PE 100 | 225 - 330 bar | PE-TE/TB\nRow: 225 - 330 bar\nValues: 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350\nFootnotes: 8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+        "page": 8,
+        "section": [
+          "bauer_amfile_7",
+          "Page 8"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "bauer_amfile_7",
+        "row_label": "225 - 330 bar",
+        "headers": [
+          "TO MEET ALL YOUR NEEDS",
+          "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath-",
+          "ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN",
+          "12021:2014 (Breathing Air Standard).",
+          "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+          "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten-",
+          "sive expertise in the fields of development, production and application.",
+          "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and",
+          "excellent quality.",
+          "The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER",
+          "core components with rugged, simple housing.",
+          "They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com-",
+          "pliance with international standards.",
+          "MOBILE COMPRESSORS | 225 – 330 BAR",
+          "PE 100",
+          "225 - 330 bar",
+          "PE-TE/TB"
+        ],
+        "row_values": [
+          "0",
+          "50",
+          "100",
+          "150",
+          "200",
+          "250",
+          "300",
+          "350"
+        ],
+        "units": [],
+        "footnotes": "8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.325625,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "b6bf67d6-c95c-44d7-9df3-d521ff976dfd",
+        "filename": "0254-0088_hochdruck-speichersysteme_fbfbdcc4bf-0c560f62cf.md",
+        "title": "High-pressure storage systems · Storage Systems | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage systems · Storage Systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage Systems | BAUER KOMP / Web page content\nTable: Technical data\nRow: 330 bar\n350 bar: 420 bar\nLiters: B 50\n–: ✓\n50: 1\nB 50 (Nitrox): –\n✓: –\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.: Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.\nStorage cylinder with console: A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.\nPressure vessel: The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.\nCondensate drain: Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.\nOptions: Safety valve and pressure gauge\nSafety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.: The storage design\nStorage system design – the basis for efficient compressor operation: A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.\nTo ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.: The size of the storage system depends on:\nCompressor delivery rate (l/min): Air consumption of the specific application\nPressure differential between start and stop (hysteresis): Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+        "page": null,
+        "section": [
+          "High-pressure storage systems · Storage Systems | BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "330 bar",
+        "headers": [
+          "350 bar",
+          "Liters",
+          "–",
+          "50",
+          "B 50 (Nitrox)",
+          "✓",
+          "50",
+          "B 80",
+          "–",
+          "1",
+          "The modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.",
+          "Storage cylinder with console",
+          "Pressure vessel",
+          "Condensate drain",
+          "Options",
+          "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+          "Storage system design – the basis for efficient compressor operation",
+          "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+          "Compressor delivery rate (l/min)",
+          "Pressure differential between start and stop (hysteresis)"
+        ],
+        "row_values": [
+          "420 bar",
+          "B 50",
+          "✓",
+          "1",
+          "–",
+          "–",
+          "1",
+          "✓",
+          "80",
+          "Details & Features",
+          "Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.",
+          "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+          "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+          "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+          "Safety valve and pressure gauge",
+          "The storage design",
+          "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+          "The size of the storage system depends on:",
+          "Air consumption of the specific application",
+          "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.32408451,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+        "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+        "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 5145"
+        ],
+        "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: TECHNICAL DATA\nRow: 200 bar\n300 bar: Medium\nHelium: Connection / standard\nW21,8x1/14“: DIN 477 nr.6\nW30x2 15,9 / 20,1: RH\nISO 5145 No.30: Operating temperature\n-20°C…+65°C: Dimension\n1900 x 1000 x 770 mm: Weight\n790 kg: 1160 kg\nApproval: Certification according to 2010/35/EU-TPED\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "page": 1,
+        "section": [
+          "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+          "Page 1"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "200 bar",
+        "headers": [
+          "300 bar",
+          "Helium",
+          "W21,8x1/14“",
+          "W30x2 15,9 / 20,1",
+          "ISO 5145 No.30",
+          "-20°C…+65°C",
+          "1900 x 1000 x 770 mm",
+          "790 kg",
+          "Approval"
+        ],
+        "row_values": [
+          "Medium",
+          "Connection / standard",
+          "DIN 477 nr.6",
+          "RH",
+          "Operating temperature",
+          "Dimension",
+          "Weight",
+          "1160 kg",
+          "Certification according to 2010/35/EU-TPED"
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.31928693,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+        "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+        "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "valve",
+          "control"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nuietly.\nMotor rocker with belt tensioner\nThanks to the integrated motor rocker with belt tensioner, no retightening of the V-belt is required anymore.\nB-LINK 4G\nWith an integrated WiFi or 4G router, compressor systems equipped with B-CONTROL MICRO can be wirelessly connected to the B-CLOUD. This enables stable remote access, reliable remote monitoring, and secure data transmission via WLAN or mobile networks. If required, the B-LINK 4G can be installed externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent-Version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nP 61 Purification System\nThe P 61\nPurification System\nwith oil and water separator as well as pressure-retaining non-return valve ensures reliable breathing air in accordance with DIN EN 12021:2014¹ when using original BAUER filter cartridges. A type-tested, sealed final pressure safety valve guarantees high operational safety. The processable air volume is 2,400 m³.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.26192565,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "8e2f25ae-001a-408b-853b-4bc7fe79206c",
+        "filename": "0278-0112_mini-verticus_b0fdf63240-dd57c4aa33.md",
+        "title": "MINI-VERTICUS (350 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "valve",
+          "control"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: MINI-VERTICUS (350 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nuietly.\nMotor rocker with belt tensioner\nThanks to the integrated motor rocker with belt tensioner, no retightening of the V-belt is required anymore.\nB-LINK 4G\nWith an integrated WiFi or 4G router, compressor systems equipped with B-CONTROL MICRO can be wirelessly connected to the B-CLOUD. This enables stable remote access, reliable remote monitoring, and secure data transmission via WLAN or mobile networks. If required, the B-LINK 4G can be installed externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent-Version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nP 61 Purification System\nThe P 61\nPurification System\nwith oil and water separator as well as pressure-retaining non-return valve ensures reliable breathing air in accordance with DIN EN 12021:2014¹ when using original BAUER filter cartridges. A type-tested, sealed final pressure safety valve guarantees high operational safety. The processable air volume is 2,400 m³.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS (350 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.26143725,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "number_units": [
+          "300 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 0,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 0,
+      "elapsed_ms": 1164.62
+    }
+  },
+  "completed_at": "2026-07-23T14:09:38.297316+00:00",
+  "case_id": "B11",
+  "split": "development",
+  "category": "safety_limit",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

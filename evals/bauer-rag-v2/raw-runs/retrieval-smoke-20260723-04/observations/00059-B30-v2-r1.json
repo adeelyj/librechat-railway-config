@@ -1,0 +1,475 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 928.03,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+      "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "BM series",
+        "BM 6.1/40-11"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz\nRow: BM 6.1/40-11\nValues: 660 | 39.6 | 23.3 | 40 | 580 | 3 | 1470 | 11 | 425 | 935\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "page": null,
+      "section": [
+        "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "BM 6.1/40-11",
+      "headers": [
+        "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Shutdown pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "BM series 40 bar – 50 Hz"
+      ],
+      "row_values": [
+        "660",
+        "39.6",
+        "23.3",
+        "40",
+        "580",
+        "3",
+        "1470",
+        "11",
+        "425",
+        "935"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.30139344,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+      "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "BM series",
+        "BM 6.1/40-11",
+        "BM 10.1/40-15"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz | BM 6.1/40-11\nRow: BM 10.1/40-15\nValues: 1080 | 64.8 | 38.1 | 40 | 580 | 3 | 1480 | 15 | 475 | 1045\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "page": null,
+      "section": [
+        "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "BM 10.1/40-15",
+      "headers": [
+        "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Shutdown pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "BM series 40 bar – 50 Hz",
+        "BM 6.1/40-11"
+      ],
+      "row_values": [
+        "1080",
+        "64.8",
+        "38.1",
+        "40",
+        "580",
+        "3",
+        "1480",
+        "15",
+        "475",
+        "1045"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.30112903,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "25a0221f-cdea-44bf-94d6-8739f9a83b8b",
+      "filename": "0041-2023-01_B-NEWS_DE_sc-b614d09274.md",
+      "title": "2023-01_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2023-01-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium",
+        "argon"
+      ],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2023-01_B-NEWS_DE_sc\nK UND WASSERGEKÜHLT –\nDIE NEUE BK 23 ANLAGENREIHE\nMit einem stark erweiterten Leistungsbereich von 22 bis\n45 kW präsentiert sich die wassergekühlte BK 23 Reihe.\nSie glänzt gegenüber dem Vorgängermodell mit einer noch\nkompakteren Bauweise, reduzierten Schwingungen sowie\neiner druck- und gasdichten Ausführung. Der verfügbare\nLiefermengenbereich liegt zwischen 45 m³/h und\n402 m³/h bei Enddrücken zwischen 25 und 420 bar. Das\nAnwendungsspektrum der Reihe umfasst Luft, Stickstoff,\nHelium, Heliox, Argon sowie Erdgas und Biomethan.",
+      "page": 5,
+      "section": [
+        "2023-01 B-NEWS DE sc",
+        "Page 5"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.10806011,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "BM series",
+          "BM 6.1/40-11"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz\nRow: BM 6.1/40-11\nValues: 660 | 39.6 | 23.3 | 40 | 580 | 3 | 1470 | 11 | 425 | 935\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "page": null,
+        "section": [
+          "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "BM 6.1/40-11",
+        "headers": [
+          "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Shutdown pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "BM series 40 bar – 50 Hz"
+        ],
+        "row_values": [
+          "660",
+          "39.6",
+          "23.3",
+          "40",
+          "580",
+          "3",
+          "1470",
+          "11",
+          "425",
+          "935"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.30139344,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "BM series",
+          "BM 6.1/40-11",
+          "BM 10.1/40-15"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz | BM 6.1/40-11\nRow: BM 10.1/40-15\nValues: 1080 | 64.8 | 38.1 | 40 | 580 | 3 | 1480 | 15 | 475 | 1045\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "page": null,
+        "section": [
+          "BM series (40 bar) · Air-cooled compressors / BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "BM 10.1/40-15",
+        "headers": [
+          "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Shutdown pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "BM series 40 bar – 50 Hz",
+          "BM 6.1/40-11"
+        ],
+        "row_values": [
+          "1080",
+          "64.8",
+          "38.1",
+          "40",
+          "580",
+          "3",
+          "1480",
+          "15",
+          "475",
+          "1045"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.30112903,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "25a0221f-cdea-44bf-94d6-8739f9a83b8b",
+        "filename": "0041-2023-01_B-NEWS_DE_sc-b614d09274.md",
+        "title": "2023-01_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2023-01-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium",
+          "argon"
+        ],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2023-01_B-NEWS_DE_sc\nK UND WASSERGEKÜHLT –\nDIE NEUE BK 23 ANLAGENREIHE\nMit einem stark erweiterten Leistungsbereich von 22 bis\n45 kW präsentiert sich die wassergekühlte BK 23 Reihe.\nSie glänzt gegenüber dem Vorgängermodell mit einer noch\nkompakteren Bauweise, reduzierten Schwingungen sowie\neiner druck- und gasdichten Ausführung. Der verfügbare\nLiefermengenbereich liegt zwischen 45 m³/h und\n402 m³/h bei Enddrücken zwischen 25 und 420 bar. Das\nAnwendungsspektrum der Reihe umfasst Luft, Stickstoff,\nHelium, Heliox, Argon sowie Erdgas und Biomethan.",
+        "page": 5,
+        "section": [
+          "2023-01 B-NEWS DE sc",
+          "Page 5"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.10806011,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "bm 6 1 40 11"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": true,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 9,
+      "elapsed_ms": 679.82
+    }
+  },
+  "completed_at": "2026-07-23T14:51:10.202435+00:00",
+  "case_id": "B30",
+  "split": "development",
+  "category": "bilingual_table",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

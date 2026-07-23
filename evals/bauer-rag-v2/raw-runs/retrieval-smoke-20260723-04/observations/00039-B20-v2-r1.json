@@ -1,0 +1,952 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1154.0,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "sensor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nermediate storage unit, and switches off automatically when the maximum\nfilling pressure is reached.\nThe automatic selector unit performs 3 important functions:\n› Pre-filling of the cylinders from the storage bottle battery by overflow until pressure equilibrium\n› Filling of the diving cylinders up to the filling pressure directly from the compressor\n› Refilling the storage bottle battery to the max. storage pressure\nThe automatic unit consists of a pressure retention and check valve with integrated pressure sensor that\nswitches off the compressor unit on or off in each case. When this automatic unit is used, a cascade filling\nconnection is superfluous. The two pressure gauges are used for checking the preliminary and back pressure.\nThe pressure sensor is used for controlling the compressors.\nAUTOMATIC SELECTOR UNIT WITH PRESSURE SWITCH OR PRESSURE SENSOR\nFOR B-CONTROL.\nTECHNICAL DATA\n› Operating pressure: 414/420 bar\n› Adjustment range: Pressure relief valve/pressure retention valve: 100–414/420 bar\n› Dimensions: W × H × D: ca. 366 × 288 × 241 mm\nCONNECTIONS:\n› Input: G3/8, connection for either ∅ 8 mm or ∅ 10 mm pipe\n› Output: ∅ 8 or ∅ 10 mm\nSCOPE OF DELIVERY\n› The unit is completely piped up and ready to connect\nB-SELECT\nFlow rate at:\nP = 50 bar",
+      "page": 41,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 41"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.57100806,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "0b4ffad0-37e8-4044-bfb2-001b8f3200c8",
+      "filename": "0197-0031_b-select_fb91e8ddf4-20dda556a9.md",
+      "title": "B-SELECT · Storage Systems | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: B-SELECT · Storage Systems | BAUER KOMPRESSOREN\nrsions with pressure retention valve or pressure regulator\nEfficient overall system\nContact us\nRequest product\nSelected product:\nB-SELECT\nArt. Nr.: B-SELECT\nSKU\nB-SELECT\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nDetails & Features\nThe automatic selector unit enables simultaneous filling of breathing air cylinders via both a storage system and the compressor. Priority is given to the cylinders connected to the filling panel. Only once these are fully filled, the system begins replenishing the storage unit from the compressor. When the maximum storage pressure is reached, the compressor shuts off automatically. A new filling cycle begins as soon as another empty cylinder is connected.\nThe automatic selector unit performs three key functions:\nPre-filling the breathing air cylinders from the storage system by pressure equalization.\nFilling the connected cylinder directly via the compressor until the final filling pressure is reached.\nReplenishing the storage system until its maximum pressure is reached.\nOptions\nPressure regulator\nInstead of the standard pressure retention valve, a precise pressure regulator can be selected. It allows stable and exact adjustment of the overflow pressure – ideal for time-critical filling processes with storage systems. Temperature and environmental fluctuations have little effect on its regulation, making it the preferred option.\nScope of delivery",
+      "page": null,
+      "section": [
+        "B-SELECT · Storage Systems / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.53296977,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL",
+        "B-SELECT"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "dryer",
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_7\nyou to align your system precisely to your needs, enhancing its cost-effectiveness and economical\n­operation or expanding its range of applications.\nACCESSORIES\n## Page 28\n\nB-AEROGUARD\nSECCANT\nAIR AND GAS PURIFICATION\n› B-AEROGUARD CO2 Adsorber – reduces CO2 in intake air\n› B-VIRUS FREE - removes viruses, bacteria, moulds and\npollen from breathing air\n› External cartridge purification systems\n› B-KOOL Refrigeration Dryer – extends cartridge life\n› SECCANT Regeneration Dryer – extends cartridge life\nand maximises operating hours and charging rates\nExternal cartridge purification system\n28 | ACCESSORIES | POSEIDON EDITION\nBAUER KOMPRESSOREN\n2 x B 80 Storage cylinder system\nSTORAGE AND DISTRIBUTION\n› Single high-pressure cylinders\n› Storage cylinder racks – with one or more storage cylinders\n› Optional safety valve for maximum safety\n› Automatic selector unit – for fast, economical filling of stor-\nage cylinders\nB-SELECT\nB-VIRUS FREE\nB-KOOL III",
+      "page": 27,
+      "section": [
+        "bauer amfile 7",
+        "Page 27"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.48388889,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-SAFE",
+        "B-SELECT"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nted to the filling panel, the fully automatic filling\ncycle starts again from the beginning.\nAutomatic selector unit\nB-SELECT\nStorage system 2 x\nB80 for 330 bar\n## Page 19\n\nBAUER KOMPRESSOREN\nACCESSORY SYSTEMS | FILLING/DISTRIBUTION AND SAFETY | 19\nB-SAFE 300\nTAKING FILLING SAFETY\nTO A NEW LEVEL\nB-SAFE 300 – Uncompromising safety for\npersons and compressor rooms when filling\npressure cylinders.\nThe stationary safety filling station controls the\nfilling speed of the breathing air cylinders for\ndiving or respiratory applications1. The cylinders\nare placed in the B-SAFE 300 and attached\nto the fill valves. The integrated filling control\nsystem then begins the filling process, automati-\ncally locking the doors to eliminate the chance\nof operating errors.\nIf an incident occurs during filling – such as\nexplosion of a pressurised cylinder – the welded\nsteel safety chamber contains the metal frag-\nments and allows the pressure wave to dissipate\nthrough grilles on both sides and in the top\ncover.\nThe B-SAFE thus replaces costly protective\nmeasures for filling facilities and provides\n­operators with a high level of (legal) security.\nFEATURES\n› Explosion-proof filling chamber\n› 6 to 10 cylinders can be filled at the same\ntime\n› Operating pressure up to 410 bar\n› Optional: simultaneous filling of 225/330 bar\nB-SAFE 300 Safety filling system\nTECHNICAL DATA\nPARAMETERS\nDATA",
+      "page": 18,
+      "section": [
+        "2026 04 Accessory Systems EN N39608 sc",
+        "Page 18"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.44878289,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT"
+      ],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nither ∅ 8 mm or ∅ 10 mm pipe\n› Output: ∅ 8 or ∅ 10 mm\nSCOPE OF DELIVERY\n› The unit is completely piped up and ready to connect\nB-SELECT\nFlow rate at:\nP = 50 bar\n## Page 42\n\n2000\n100\n150\n50\nbar\npsi\n0\n200\n3000\n4000\n1000\n250\n300\n315\n4570\nConnection\nat rear\nConnection\nat bottom\nThe pressure gauges operate according to the Bourdon tube principle. They are hermetically sealed, filled with\nglycerine and have internal pressure compensation. We recommend these pressure gauges if there are high\ndynamic loads, pressure peaks, vibrations and pulsations. The glycerine fill considerably reduces the effects\nof loads. High display accuracy, stable pointer position and a long service life are the result. The hermetically\nsealed design prevents condensation from forming on the inside, as well as the penetration of aggressive\natmosphere that can lead to corrosion damage. The sturdy stainless steel housing made of CrNi steel has a\npressure release opening that is closed with a plastic cap.\nTECHNICAL DATA\n› Pressure range: from –1 to 600 bar depending on version\n› Pressure display: in bar and psi\n› Accuracy class: 1.6\n› Medium: Air, gases and oils\n› Temperature range: from –25 to +60 °C\n› Pressure connection: R1/4″\n› Safety version: DIN 16007\n› For front panel mounting (with front ring)\nrequired hole diameter: 63 mm ∅\nMATERIAL\n› Connection: Brass\n› Housing: Cr Ni steel\n› Front ring: Cr Ni steel",
+      "page": 41,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 41"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.44861201,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+      "filename": "0071-B-SELECT_en-f40d0389e3.md",
+      "title": "B-SELECT_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "sensor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SELECT_en\nvention.\nB-SELECT with backpressure regulator\n## Page 2\n\nTechnical data sheet\nSeries:\nAutomatic selector unit\n© BAUER KOMPRESSOREN GmbH | bauer-kompressoren.com\nPage 2\n\nStatus: 02/04/2026\nSCOPE OF DELIVERY\n■\nPaint-finished steel base plate for wall mounting\n■\n2 versions available\n■\nPressure retention valve\n■\nNEW! Backpressure regulator\n■\nCheck valve\n■\nPressure switch or pressure sensor, depending on the\nconnected\ncompressor control\n■\nManometer filling pressure\n■\nManometer storage pressure\n\nTECHNICAL DATA\n\nB-SELECT with pressure\nmaintaining valve\nB-SELECT with backpressure\nregulator\nMax. Inlet pressure\n\nAir inlet / outlet pipe with 8/10 mm outer diameter.\n\nRECOMMENDED USE\nB-SELECT with pressure maintaining valve\nThe version with pressure maintaining valve is the economical solution for applications with larger pressure\ndifferences (at least 50 bar) between storage and cylinder pressure. It enables simple and cost-effective\nconnection and is ideal when precise control is not required.\nB-SELECT with backpressure regulator\nThe version with backpressure regulator ensures particularly precise and reproducible filling of the diving\ncylinders. The set overflow pressure is maintained at a constant level with a repeat accuracy of ±5 bar, regardless\nof the storage or cylinder pressure. This variant is low-maintenance and ideal when precise control behaviour and",
+      "page": 2,
+      "section": [
+        "B-SELECT en",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.42846214,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+      "filename": "0071-B-SELECT_en-f40d0389e3.md",
+      "title": "B-SELECT_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT"
+      ],
+      "media": [
+        "breathing air",
+        "compressed air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: B-SELECT_en\nPage 1\n\nStatus: 02/04/2026\nB-SELECT\nAutomatic selector unit\n\nFor simultaneous filling of pressure cylinders with air from\nstorage system and compressor\nInlet pressure up to 420 bar\nFlow rate up to 850 bar\n\nThe automatic selector unit enables compressed air cylinders to be filled quickly and simultaneously in parallel from\na single storage system (buffer) and via one compressor.\nImportant! The automatic selector unit works most effectively when the nominal pressure in the storage system\nand the breathing air cylinder are nearly the same.\n\nHOW IT WORKS\nFilling of the breathing air cylinder connected to the filling panel takes priority. This means that the storage system\nand the compressor always fill the cylinder connected to the filling panel first. Once the cylinders are completely\nfilled, the automatic selector unit independently switches over to filling the storage system.\n\nWhen the maximum filling pressure of the storage system is reached, the compressor shuts down fully\nautomatically. As soon as the next empty breathing air cylinder is connected to the filling panel, the storage system\nagain fills the breathing air cylinder first. If the preset restart pressure in the storage system is undershot, the\ncompressor switches on.\n\nThe compressor then fills the breathing air cylinder up to the value preset on the backpressure regulator / pressure",
+      "page": 1,
+      "section": [
+        "B-SELECT en",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.41553571,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL",
+        "B-DETECTION PLUS",
+        "B-SELECT",
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_7\nders\n› Optional safety valve for maximum safety\n› Automatic selector unit – for fast, economical filling of stor-\nage cylinders\nB-SELECT\nB-VIRUS FREE\nB-KOOL III\n## Page 29\n\nB-DETECTION PLUS\nExternal filling panel B-FILL\nBAUER KOMPRESSOREN\nPOSEIDON EDITION | ACCESSORIES | 29\nFILLING AND SAFETY\n› B-FILL external filling panels – for wall mounting, with optional\nremote control unit\n› B-SAFE Filling System – for safe filling\nof breathing air cylinders\n› FSC Filling Speed Control unit – reduces filling speed\nto 20 up to 50 bar/min for safe filling, particularly of\ncomposite cylinders\nGAS MEASUREMENT TECHNOLOGY\n› AERO-TEST – portable breathing air tester\n› B-DETECTION PLUS m – mobile online gas measurement ­system\nfor rapid on-the-spot measurement of O2, CO, CO2 and ­optional\n­measurement of absolute moisture and ­residual oil (VOC)1 in\n­breathing air cylinders or at high-pressure ports.\n› B-DETECTION PLUS i and s – fixed online gas measurement systems\nfor continuously measuring O2, CO and CO2 with optional functions\nfor absolute humidity and total oil value (VOC)1. Measuring values\ncan be logged at any time and are saved in Excel format on an SD\ncard for easy access and use.\n› NEW! Now not only the ambient air can be measured, but also the\nintake air and the air in the cylinder.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible",
+      "page": 28,
+      "section": [
+        "bauer amfile 7",
+        "Page 28"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.41494863,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL",
+        "B-SELECT"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nrying chambers\n5. Oil removal filter/B-SECURUS\n6. Particle filter\n7. Air/gas outlet with pressure\nmaintaining valve\n8. B-CONTROL\nSECCANT III-A\n1\n8\n6\n3\n4\n5\n7\n2\n4\n## Page 18\n\n18 | STORAGE | ACCESSORY SYSTEMS\nBAUER KOMPRESSOREN\nHIGH-PRESSURE STORAGE SYSTEM\nThese high-performance storage systems sup-\nport the short-term availability of large quan-\ntities of air and gas and allow a fluctuating air\nconsumption.\nAt the same time, a carefully selected storage\nmodule optimizes runtime of the compressor\nand also serves as a pulsation damper.\nThe storage systems are available in pressure\nstages of 330, 350 and 420 bar. They can be\n­expanded as required by adding 50 or 80 l\nstorage cylinders.\nThe storage system should be dimensioned\nto guarantee that the compressor operates\ncontinuously for a minimum period of 15 to 30\nminutes.\nESSENTIAL ELEMENTS OF\nYOUR SYSTEM\nOPTIMISED FILLING PROCESS\nFEATURES\n› 330/350/420 bar\n› 50 l and 80 l cylinders\n› Extendable as required\nHigh-pressure\nstorage cylinder bank\nB-SELECT\nThe automatic selector unit B-SELECT enables air cylin-\nders to be filled quickly and simultaneously in parallel\nfrom a storage system (buffer) and via the compressor.\nThe storage cylinder connected to the filling panel takes\npriority for filling, i.e. the storage system and the compres-\nsor always start by filling the breathing air cylinders at the\nfilling panel.",
+      "page": 17,
+      "section": [
+        "2026 04 Accessory Systems EN N39608 sc",
+        "Page 17"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.41458333,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "e755f3ad-7b90-438a-92cc-89e5712044bf",
+      "filename": "0081-bauer_amfile_13-e7e9162a14.md",
+      "title": "bauer_amfile_13",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-KOOL",
+        "B-DETECTION PLUS",
+        "B-SELECT",
+        "PE 850-VE",
+        "B-CONTROL SMART",
+        "PE 850"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_13\ng with the B-APP\n› B-KOOL refrigeration dryer1\n› Gas measurement system B-DETECTION PLUS\n› B-AEROGUARD CO2 reduction system\n› BAUER high pressure storage system\n› Automatic selector unit B-SELECT\n› External BAUER filling panel B-FILL\nFEATURES\n› Optional Super Silent housing to minimise noise\n› Demand-driven electronic compressor control\nunit: B-CONTROL MICRO\n› Low-maintenance: no V-belt adjustment\nnecessary\nPE 850-VE with B-CONTROL MICRO control unit and optional\nSuper Silent housing\n1 Not available for PE 850-VE.\nB-CONTROL SMART\n2 | FEATURES AND HIGHLIGHTS | POSEIDON EDITION\nBAUER KOMPRESSOREN",
+      "page": 2,
+      "section": [
+        "bauer amfile 13",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3825,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "sensor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nermediate storage unit, and switches off automatically when the maximum\nfilling pressure is reached.\nThe automatic selector unit performs 3 important functions:\n› Pre-filling of the cylinders from the storage bottle battery by overflow until pressure equilibrium\n› Filling of the diving cylinders up to the filling pressure directly from the compressor\n› Refilling the storage bottle battery to the max. storage pressure\nThe automatic unit consists of a pressure retention and check valve with integrated pressure sensor that\nswitches off the compressor unit on or off in each case. When this automatic unit is used, a cascade filling\nconnection is superfluous. The two pressure gauges are used for checking the preliminary and back pressure.\nThe pressure sensor is used for controlling the compressors.\nAUTOMATIC SELECTOR UNIT WITH PRESSURE SWITCH OR PRESSURE SENSOR\nFOR B-CONTROL.\nTECHNICAL DATA\n› Operating pressure: 414/420 bar\n› Adjustment range: Pressure relief valve/pressure retention valve: 100–414/420 bar\n› Dimensions: W × H × D: ca. 366 × 288 × 241 mm\nCONNECTIONS:\n› Input: G3/8, connection for either ∅ 8 mm or ∅ 10 mm pipe\n› Output: ∅ 8 or ∅ 10 mm\nSCOPE OF DELIVERY\n› The unit is completely piped up and ready to connect\nB-SELECT\nFlow rate at:\nP = 50 bar",
+        "page": 41,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 41"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.57100806,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "0b4ffad0-37e8-4044-bfb2-001b8f3200c8",
+        "filename": "0197-0031_b-select_fb91e8ddf4-20dda556a9.md",
+        "title": "B-SELECT · Storage Systems | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: B-SELECT · Storage Systems | BAUER KOMPRESSOREN\nrsions with pressure retention valve or pressure regulator\nEfficient overall system\nContact us\nRequest product\nSelected product:\nB-SELECT\nArt. Nr.: B-SELECT\nSKU\nB-SELECT\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nDetails & Features\nThe automatic selector unit enables simultaneous filling of breathing air cylinders via both a storage system and the compressor. Priority is given to the cylinders connected to the filling panel. Only once these are fully filled, the system begins replenishing the storage unit from the compressor. When the maximum storage pressure is reached, the compressor shuts off automatically. A new filling cycle begins as soon as another empty cylinder is connected.\nThe automatic selector unit performs three key functions:\nPre-filling the breathing air cylinders from the storage system by pressure equalization.\nFilling the connected cylinder directly via the compressor until the final filling pressure is reached.\nReplenishing the storage system until its maximum pressure is reached.\nOptions\nPressure regulator\nInstead of the standard pressure retention valve, a precise pressure regulator can be selected. It allows stable and exact adjustment of the overflow pressure – ideal for time-critical filling processes with storage systems. Temperature and environmental fluctuations have little effect on its regulation, making it the preferred option.\nScope of delivery",
+        "page": null,
+        "section": [
+          "B-SELECT · Storage Systems / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.53296977,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL",
+          "B-SELECT"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "dryer",
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_7\nyou to align your system precisely to your needs, enhancing its cost-effectiveness and economical\n­operation or expanding its range of applications.\nACCESSORIES\n## Page 28\n\nB-AEROGUARD\nSECCANT\nAIR AND GAS PURIFICATION\n› B-AEROGUARD CO2 Adsorber – reduces CO2 in intake air\n› B-VIRUS FREE - removes viruses, bacteria, moulds and\npollen from breathing air\n› External cartridge purification systems\n› B-KOOL Refrigeration Dryer – extends cartridge life\n› SECCANT Regeneration Dryer – extends cartridge life\nand maximises operating hours and charging rates\nExternal cartridge purification system\n28 | ACCESSORIES | POSEIDON EDITION\nBAUER KOMPRESSOREN\n2 x B 80 Storage cylinder system\nSTORAGE AND DISTRIBUTION\n› Single high-pressure cylinders\n› Storage cylinder racks – with one or more storage cylinders\n› Optional safety valve for maximum safety\n› Automatic selector unit – for fast, economical filling of stor-\nage cylinders\nB-SELECT\nB-VIRUS FREE\nB-KOOL III",
+        "page": 27,
+        "section": [
+          "bauer amfile 7",
+          "Page 27"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.48388889,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-SAFE",
+          "B-SELECT"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nted to the filling panel, the fully automatic filling\ncycle starts again from the beginning.\nAutomatic selector unit\nB-SELECT\nStorage system 2 x\nB80 for 330 bar\n## Page 19\n\nBAUER KOMPRESSOREN\nACCESSORY SYSTEMS | FILLING/DISTRIBUTION AND SAFETY | 19\nB-SAFE 300\nTAKING FILLING SAFETY\nTO A NEW LEVEL\nB-SAFE 300 – Uncompromising safety for\npersons and compressor rooms when filling\npressure cylinders.\nThe stationary safety filling station controls the\nfilling speed of the breathing air cylinders for\ndiving or respiratory applications1. The cylinders\nare placed in the B-SAFE 300 and attached\nto the fill valves. The integrated filling control\nsystem then begins the filling process, automati-\ncally locking the doors to eliminate the chance\nof operating errors.\nIf an incident occurs during filling – such as\nexplosion of a pressurised cylinder – the welded\nsteel safety chamber contains the metal frag-\nments and allows the pressure wave to dissipate\nthrough grilles on both sides and in the top\ncover.\nThe B-SAFE thus replaces costly protective\nmeasures for filling facilities and provides\n­operators with a high level of (legal) security.\nFEATURES\n› Explosion-proof filling chamber\n› 6 to 10 cylinders can be filled at the same\ntime\n› Operating pressure up to 410 bar\n› Optional: simultaneous filling of 225/330 bar\nB-SAFE 300 Safety filling system\nTECHNICAL DATA\nPARAMETERS\nDATA",
+        "page": 18,
+        "section": [
+          "2026 04 Accessory Systems EN N39608 sc",
+          "Page 18"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.44878289,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT"
+        ],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nither ∅ 8 mm or ∅ 10 mm pipe\n› Output: ∅ 8 or ∅ 10 mm\nSCOPE OF DELIVERY\n› The unit is completely piped up and ready to connect\nB-SELECT\nFlow rate at:\nP = 50 bar\n## Page 42\n\n2000\n100\n150\n50\nbar\npsi\n0\n200\n3000\n4000\n1000\n250\n300\n315\n4570\nConnection\nat rear\nConnection\nat bottom\nThe pressure gauges operate according to the Bourdon tube principle. They are hermetically sealed, filled with\nglycerine and have internal pressure compensation. We recommend these pressure gauges if there are high\ndynamic loads, pressure peaks, vibrations and pulsations. The glycerine fill considerably reduces the effects\nof loads. High display accuracy, stable pointer position and a long service life are the result. The hermetically\nsealed design prevents condensation from forming on the inside, as well as the penetration of aggressive\natmosphere that can lead to corrosion damage. The sturdy stainless steel housing made of CrNi steel has a\npressure release opening that is closed with a plastic cap.\nTECHNICAL DATA\n› Pressure range: from –1 to 600 bar depending on version\n› Pressure display: in bar and psi\n› Accuracy class: 1.6\n› Medium: Air, gases and oils\n› Temperature range: from –25 to +60 °C\n› Pressure connection: R1/4″\n› Safety version: DIN 16007\n› For front panel mounting (with front ring)\nrequired hole diameter: 63 mm ∅\nMATERIAL\n› Connection: Brass\n› Housing: Cr Ni steel\n› Front ring: Cr Ni steel",
+        "page": 41,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 41"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.44861201,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+        "filename": "0071-B-SELECT_en-f40d0389e3.md",
+        "title": "B-SELECT_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "sensor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SELECT_en\nvention.\nB-SELECT with backpressure regulator\n## Page 2\n\nTechnical data sheet\nSeries:\nAutomatic selector unit\n© BAUER KOMPRESSOREN GmbH | bauer-kompressoren.com\nPage 2\n\nStatus: 02/04/2026\nSCOPE OF DELIVERY\n■\nPaint-finished steel base plate for wall mounting\n■\n2 versions available\n■\nPressure retention valve\n■\nNEW! Backpressure regulator\n■\nCheck valve\n■\nPressure switch or pressure sensor, depending on the\nconnected\ncompressor control\n■\nManometer filling pressure\n■\nManometer storage pressure\n\nTECHNICAL DATA\n\nB-SELECT with pressure\nmaintaining valve\nB-SELECT with backpressure\nregulator\nMax. Inlet pressure\n\nAir inlet / outlet pipe with 8/10 mm outer diameter.\n\nRECOMMENDED USE\nB-SELECT with pressure maintaining valve\nThe version with pressure maintaining valve is the economical solution for applications with larger pressure\ndifferences (at least 50 bar) between storage and cylinder pressure. It enables simple and cost-effective\nconnection and is ideal when precise control is not required.\nB-SELECT with backpressure regulator\nThe version with backpressure regulator ensures particularly precise and reproducible filling of the diving\ncylinders. The set overflow pressure is maintained at a constant level with a repeat accuracy of ±5 bar, regardless\nof the storage or cylinder pressure. This variant is low-maintenance and ideal when precise control behaviour and",
+        "page": 2,
+        "section": [
+          "B-SELECT en",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.42846214,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+        "filename": "0071-B-SELECT_en-f40d0389e3.md",
+        "title": "B-SELECT_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT"
+        ],
+        "media": [
+          "breathing air",
+          "compressed air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: B-SELECT_en\nPage 1\n\nStatus: 02/04/2026\nB-SELECT\nAutomatic selector unit\n\nFor simultaneous filling of pressure cylinders with air from\nstorage system and compressor\nInlet pressure up to 420 bar\nFlow rate up to 850 bar\n\nThe automatic selector unit enables compressed air cylinders to be filled quickly and simultaneously in parallel from\na single storage system (buffer) and via one compressor.\nImportant! The automatic selector unit works most effectively when the nominal pressure in the storage system\nand the breathing air cylinder are nearly the same.\n\nHOW IT WORKS\nFilling of the breathing air cylinder connected to the filling panel takes priority. This means that the storage system\nand the compressor always fill the cylinder connected to the filling panel first. Once the cylinders are completely\nfilled, the automatic selector unit independently switches over to filling the storage system.\n\nWhen the maximum filling pressure of the storage system is reached, the compressor shuts down fully\nautomatically. As soon as the next empty breathing air cylinder is connected to the filling panel, the storage system\nagain fills the breathing air cylinder first. If the preset restart pressure in the storage system is undershot, the\ncompressor switches on.\n\nThe compressor then fills the breathing air cylinder up to the value preset on the backpressure regulator / pressure",
+        "page": 1,
+        "section": [
+          "B-SELECT en",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.41553571,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL",
+          "B-DETECTION PLUS",
+          "B-SELECT",
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_7\nders\n› Optional safety valve for maximum safety\n› Automatic selector unit – for fast, economical filling of stor-\nage cylinders\nB-SELECT\nB-VIRUS FREE\nB-KOOL III\n## Page 29\n\nB-DETECTION PLUS\nExternal filling panel B-FILL\nBAUER KOMPRESSOREN\nPOSEIDON EDITION | ACCESSORIES | 29\nFILLING AND SAFETY\n› B-FILL external filling panels – for wall mounting, with optional\nremote control unit\n› B-SAFE Filling System – for safe filling\nof breathing air cylinders\n› FSC Filling Speed Control unit – reduces filling speed\nto 20 up to 50 bar/min for safe filling, particularly of\ncomposite cylinders\nGAS MEASUREMENT TECHNOLOGY\n› AERO-TEST – portable breathing air tester\n› B-DETECTION PLUS m – mobile online gas measurement ­system\nfor rapid on-the-spot measurement of O2, CO, CO2 and ­optional\n­measurement of absolute moisture and ­residual oil (VOC)1 in\n­breathing air cylinders or at high-pressure ports.\n› B-DETECTION PLUS i and s – fixed online gas measurement systems\nfor continuously measuring O2, CO and CO2 with optional functions\nfor absolute humidity and total oil value (VOC)1. Measuring values\ncan be logged at any time and are saved in Excel format on an SD\ncard for easy access and use.\n› NEW! Now not only the ambient air can be measured, but also the\nintake air and the air in the cylinder.\n› NEW! Measurement of gases and breathing air up to 420 bar\npossible",
+        "page": 28,
+        "section": [
+          "bauer amfile 7",
+          "Page 28"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.41494863,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL",
+          "B-SELECT"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nrying chambers\n5. Oil removal filter/B-SECURUS\n6. Particle filter\n7. Air/gas outlet with pressure\nmaintaining valve\n8. B-CONTROL\nSECCANT III-A\n1\n8\n6\n3\n4\n5\n7\n2\n4\n## Page 18\n\n18 | STORAGE | ACCESSORY SYSTEMS\nBAUER KOMPRESSOREN\nHIGH-PRESSURE STORAGE SYSTEM\nThese high-performance storage systems sup-\nport the short-term availability of large quan-\ntities of air and gas and allow a fluctuating air\nconsumption.\nAt the same time, a carefully selected storage\nmodule optimizes runtime of the compressor\nand also serves as a pulsation damper.\nThe storage systems are available in pressure\nstages of 330, 350 and 420 bar. They can be\n­expanded as required by adding 50 or 80 l\nstorage cylinders.\nThe storage system should be dimensioned\nto guarantee that the compressor operates\ncontinuously for a minimum period of 15 to 30\nminutes.\nESSENTIAL ELEMENTS OF\nYOUR SYSTEM\nOPTIMISED FILLING PROCESS\nFEATURES\n› 330/350/420 bar\n› 50 l and 80 l cylinders\n› Extendable as required\nHigh-pressure\nstorage cylinder bank\nB-SELECT\nThe automatic selector unit B-SELECT enables air cylin-\nders to be filled quickly and simultaneously in parallel\nfrom a storage system (buffer) and via the compressor.\nThe storage cylinder connected to the filling panel takes\npriority for filling, i.e. the storage system and the compres-\nsor always start by filling the breathing air cylinders at the\nfilling panel.",
+        "page": 17,
+        "section": [
+          "2026 04 Accessory Systems EN N39608 sc",
+          "Page 17"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.41458333,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "e755f3ad-7b90-438a-92cc-89e5712044bf",
+        "filename": "0081-bauer_amfile_13-e7e9162a14.md",
+        "title": "bauer_amfile_13",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-KOOL",
+          "B-DETECTION PLUS",
+          "B-SELECT",
+          "PE 850-VE",
+          "B-CONTROL SMART",
+          "PE 850"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_13\ng with the B-APP\n› B-KOOL refrigeration dryer1\n› Gas measurement system B-DETECTION PLUS\n› B-AEROGUARD CO2 reduction system\n› BAUER high pressure storage system\n› Automatic selector unit B-SELECT\n› External BAUER filling panel B-FILL\nFEATURES\n› Optional Super Silent housing to minimise noise\n› Demand-driven electronic compressor control\nunit: B-CONTROL MICRO\n› Low-maintenance: no V-belt adjustment\nnecessary\nPE 850-VE with B-CONTROL MICRO control unit and optional\nSuper Silent housing\n1 Not available for PE 850-VE.\nB-CONTROL SMART\n2 | FEATURES AND HIGHLIGHTS | POSEIDON EDITION\nBAUER KOMPRESSOREN",
+        "page": 2,
+        "section": [
+          "bauer amfile 13",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3825,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "b select"
+        ],
+        "standards": [],
+        "number_units": [
+          "300 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 3,
+      "elapsed_ms": 877.96
+    }
+  },
+  "completed_at": "2026-07-23T14:50:53.706061+00:00",
+  "case_id": "B20",
+  "split": "development",
+  "category": "exact_product_limit",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

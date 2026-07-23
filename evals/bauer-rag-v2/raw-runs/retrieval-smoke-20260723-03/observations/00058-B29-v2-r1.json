@@ -1,0 +1,1052 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1148.03,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+      "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+      "title": "2025-06_Product_overview_EN_N37488_sc",
+      "language": "en",
+      "publication_date": "2025-06-01",
+      "certificates": [],
+      "product_families": [
+        "K 22",
+        "K 28",
+        "K 23",
+        "PE-VE INDUSTRY"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nsystems that can be\nintegrated complete these compact system solutions.\n› Pressure range: 30 – 525 bar\n› Charging rate: 85 – 950 l/min\n› Motor power: 3 – 15 kW\n## Page 31\n\nBAUER KOMPRESSOREN\nPRODUCT OVERVIEW | INDUSTRY | 31\n› Pressure range: 30 – 525 bar\n› Charging rate: 600 – 6,800 l/min\n› Motor power: 22 – 110 kW\nK 22 – K 28 SERIES\nWhether they are found in standard compressed-gas applications in industry or built into vehicles for mobile\nuse: The air-cooled high-pressure compressor units in the K 22 – K 28 series are reliable, durable and the\n­solution of choice for demanding customers.\nThe units of the new K 22 series are designed with direct coupling, while the units K 23 – K 28 are driven by\nmeans of V-belts.\nPE-VE INDUSTRY\nWith the new PE-VE, BAUER has designed a series of system com-\nponents that combines interesting features with an outstanding\nprice-performance ratio, even in the basic version.\nIn combination with the numerous system options and a wide range\nof accessories, tailored solutions for almost all tasks in the air and\nnitrogen sector can be implemented.\n› Pressure range: 25 - 420 bar\n› Charging rate: 85 - 1470 l/min\n› Motor power: 3 - 15 kW",
+      "page": 30,
+      "section": [
+        "2025-06_Product_overview_EN_N37488_sc",
+        "Page 30"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.54876807,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "K 22",
+        "K 28",
+        "VERTICUS AND",
+        "K 120"
+      ],
+      "media": [
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nBK 23 – BK 52\n90 - 520 bar\n0\n5000\n10000\n15000\n20000\n25000\n30000\n35000\nF.A.D. [l/min]\nSuitable for compression of argon\n\nSuitable for compression of forming gas\n## Page 8\n\n8 | HIGHLIGHT FEATURES | COMPRESSORS FOR INDUSTRY\nBAUER KOMPRESSOREN\nCOMPRESSOR BLOCK\nEach and every one of our compressor blocks contains decades of experience and the expertise of our Testing and Develop-\nment Centre. BAUER compressor blocks have built a legendary reputation on their reliability and long service life. They are\nthe result of advanced design, intelligent in-depth solutions, the use of exceptionally high-quality materials and outstanding\nproduction quality.\nHIGHLIGHT FEATURES\nCOMPRESSOR BLOCKS FOR MINI-VERTICUS,\nVERTICUS AND K 22 – K 28 SERIES\n› An intelligent air-cooling system with generously dimensioned coolers combined with cylinders with heavy ribbing can be\nrelied upon for best possible cooling of each individual compressor stage.\n› Ultra-rugged industrial roller bearings are designed for continuous operation under challenging operating conditions.\n› Powerful pressure lubrication and oil microfilter for minimum wear of moving parts.\n› Long maintenance intervals for valves and piston rings and for oil changes keep the running costs of the unit low.\n› All drive units are dynamically balanced for quiet and vibration-free running.\nCompressor block K 120\nCompressor block K 28",
+      "page": 7,
+      "section": [
+        "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "Page 7"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.53243146,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "K 22",
+        "K 28"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 23\nTable: TECHNICAL DATA\nHeaders and units: F.A.D. ¹ | Max. operating pres- | sure2 | No. of | stages | Speed | approx. | Motor- | power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | K 22 - K 28 SERIES, 900 - 3500 l/min, 90 - 350/370 bar\nRow: I 22.0-22\nValues: 900 | 54 | 31.8 | 370 | 5370 | 4 | 985 | 22 | 710 | 1565\nFootnotes: 90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+      "page": 23,
+      "section": [
+        "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "Page 23"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "I 22.0-22",
+      "headers": [
+        "F.A.D. ¹",
+        "Max. operating pres-",
+        "sure2",
+        "No. of",
+        "stages",
+        "Speed",
+        "approx.",
+        "Motor-",
+        "power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "K 22 - K 28 SERIES, 900 - 3500 l/min, 90 - 350/370 bar"
+      ],
+      "row_values": [
+        "900",
+        "54",
+        "31.8",
+        "370",
+        "5370",
+        "4",
+        "985",
+        "22",
+        "710",
+        "1565"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.53043601,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "a8b2f676-6851-4947-98d8-99d897f0eae3",
+      "filename": "0042-2023-01_B-NEWS_EN_sc-361222d525.md",
+      "title": "2023-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2023-01-01",
+      "certificates": [],
+      "product_families": [
+        "K 22"
+      ],
+      "media": [
+        "nitrogen",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2023-01_B-NEWS_EN_sc\ne removed by the filter system. The compressed gas is\nthen stored, usually in portable storage cylinders.\nK 22 SERIES: IMPROVED PERFORMANCE\nAND OPTIMIZED DESIGN\nThe new K 22 Series is the star of the 22 to 37 kW category. Now\nextensively optimized, these systems deliver enhanced performan-\nce with higher final pressures at lower noise levels. K 22 Series\ncompressors have low-maintenance direct coupling and air cooling.\nThey are now suitable for use as booster systems for nitrogen\ncompression. The versatile series, which is naturally also available\nfor helium and argon applications, offers free air delivery of 600 –\n4,200 l/min and a pressure range of 55 to 525 bar.\nBAUER KOMPRESSOREN\nProduct drive for\n2023\n4",
+      "page": 4,
+      "section": [
+        "2023-01_B-NEWS_EN_sc",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.41583789,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "a8b2f676-6851-4947-98d8-99d897f0eae3",
+      "filename": "0042-2023-01_B-NEWS_EN_sc-361222d525.md",
+      "title": "2023-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2023-01-01",
+      "certificates": [],
+      "product_families": [
+        "BM Series",
+        "K 22"
+      ],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2023-01_B-NEWS_EN_sc\nBayat deep in discussion\nwith A Partners\nA visit to the Allianz Arena and the Bayern Munich museum – one of\nthe standout leisure events at the A Partner Meeting\n## Page 4\n\nNEW INDUSTRIAL BLOCK SERIES\nAT COMVAC 2023\nThree new BAUER industrial compressor block series have\nmade their debut at the ComVac trade show in Hanover.\nCombining performance with compact dimensions, these new\nmodels raise the bar even higher. The BM Series features a\nthree-stage pressure range extending to 100 bar, while the\nK 22 Series with max. 37 kW power rating – likewise air-\nG60 V – THE NEW HELIUM RECOVERY SOLUTION\nHelium has become a scarce commodity in recent years. Given this,\nrecovery of gaseous helium for return to the process cycle is\nincreasingly recognized as the most cost-effective and technically\nfeasible option, even for users with low or lowest helium needs. The\nnew, compact G60 V adds an easy-install turnkey helium recovery\nsystem to BAUER’s product portfolio. It is ideal for hospitals and\nclinics, laboratories and other medical institutions. The helium is\ncaptured in the integrated collection balloon and compressed to\npressures of up to 200 bar by the compressor. Impurities in the\nmedium are removed by the filter system. The compressed gas is\nthen stored, usually in portable storage cylinders.\nK 22 SERIES: IMPROVED PERFORMANCE\nAND OPTIMIZED DESIGN",
+      "page": 3,
+      "section": [
+        "2023-01_B-NEWS_EN_sc",
+        "Page 3"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.38258752,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "b3f6bac3-c500-42cb-9e5a-fc7761798af9",
+      "filename": "0258-0092_i22-series_44f98de39c-33e2fba86d.md",
+      "title": "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "K 22"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN\nd allow for easy monitoring of operating pressures. They support diagnostics and simplify maintenance work on the system.\nIntake device and intake buffer vessel\nThe intake device supplies air or gas to the compressor at a monitored intake pressure. If predefined pressure limits are exceeded or not met, the system automatically shuts down for protection. To minimize pulsations in the intake area, the use of an intake buffer tank is recommended.\nCondensate collection system 60 l\nThe large condensate collection system centrally collects the condensate generated during compression. An integrated float switch reliably monitors the fill level. The silencer and filter unit reduce noise and prevent unpleasant odors in the working environment.\nDownloads\nProduct Brochure Compressors for Industry EN\n(8.89 MB)\nBAUER Product overview EN\n(12.33 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nThe new BAUER K 22 series\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?",
+      "page": null,
+      "section": [
+        "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.35166667,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "36cb5895-0a25-40f8-ba63-a8e8365b443f",
+      "filename": "0230-0064_g22-series-ar_c35ee4bed0-9999c152d7.md",
+      "title": "G 22 series (Argon) · Air-cooled compressors | BAUER KOMPRES",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "K 22"
+      ],
+      "media": [
+        "breathing air",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer"
+      ],
+      "standards": [
+        "ISO 8573"
+      ],
+      "content": "Document: G 22 series (Argon) · Air-cooled compressors | BAUER KOMPRES\nMB)\nBAUER Product overview EN\n(12.33 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nThe new BAUER K 22 series\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER provides fully integrated solutions across the entire process chain, including compression, air and gas treatment, quality monitoring, and audit-proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest options and accessories portfolio in the industry – precisely tailored to every application, without the need for custom designs.\nMost comprehensive air and gas treatment portfolio: From separators and regenerative and adsorption dryers to refrigerated dryers, BAUER covers all air and gas purity requirements in accordance with DIN ISO 8573-1.\nGlobal market leadership & service expertise: BAUER is the global market standard in high- and medium-pressure applications across nearly all segments – with a 70% market share in breathing air systems and an undisputed leading position in industrial applications, supported by a global service network.",
+      "page": null,
+      "section": [
+        "G 22 series (Argon) · Air-cooled compressors | BAUER KOMPRES",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.32186228,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "f79fc98a-704a-444e-9160-aef12683e801",
+      "filename": "0242-0076_gib22-series-hd_c7951ec7ed-426ce5a20c.md",
+      "title": "GIB 22 series · Air-cooled boosters | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "GIB 22",
+        "K 22"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "dryer"
+      ],
+      "standards": [
+        "ISO 8573"
+      ],
+      "content": "Document: GIB 22 series · Air-cooled boosters | BAUER KOMPRESSOREN\nment.\nDownloads\nProduct Brochure Compressors for Industry EN\n(8.89 MB)\nBAUER Product overview EN\n(12.33 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nThe new BAUER K 22 series\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER provides fully integrated solutions across the entire process chain, including compression, air and gas treatment, quality monitoring, and audit-proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest options and accessories portfolio in the industry – precisely tailored to every application, without the need for custom designs.\nMost comprehensive air and gas treatment portfolio: From separators and regenerative and adsorption dryers to refrigerated dryers, BAUER covers all air and gas purity requirements in accordance with DIN ISO 8573-1.",
+      "page": null,
+      "section": [
+        "GIB 22 series · Air-cooled boosters | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.2921476,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "8c108b6e-09a6-489b-b811-612490f1e52f",
+      "filename": "0243-0077_gib22-series-md_87728d914b-1649e11ebc.md",
+      "title": "GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "GIB 22",
+        "K 22"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "dryer"
+      ],
+      "standards": [
+        "ISO 8573"
+      ],
+      "content": "Document: GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE\nment.\nDownloads\nProduct Brochure Compressors for Industry EN\n(8.89 MB)\nBAUER Product overview EN\n(12.33 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nThe new BAUER K 22 series\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER provides fully integrated solutions across the entire process chain, including compression, air and gas treatment, quality monitoring, and audit-proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest options and accessories portfolio in the industry – precisely tailored to every application, without the need for custom designs.\nMost comprehensive air and gas treatment portfolio: From separators and regenerative and adsorption dryers to refrigerated dryers, BAUER covers all air and gas purity requirements in accordance with DIN ISO 8573-1.",
+      "page": null,
+      "section": [
+        "GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.29171498,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "e56864d5-2bd2-4f45-b1d2-d5a98daad68b",
+      "filename": "0231-0065_g22-series-he_9611e8a1c5-55462f5b5d.md",
+      "title": "G 22 series (Helium) · Air-cooled compressors | BAUER KOMPRE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "K 22"
+      ],
+      "media": [
+        "breathing air",
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer"
+      ],
+      "standards": [
+        "ISO 8573"
+      ],
+      "content": "Document: G 22 series (Helium) · Air-cooled compressors | BAUER KOMPRE\n(12.33 MB)\nHelium-Recovery EN\n(1.32 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nThe new BAUER K 22 series\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER provides fully integrated solutions across the entire process chain, including compression, air and gas treatment, quality monitoring, and audit-proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest options and accessories portfolio in the industry – precisely tailored to every application, without the need for custom designs.\nMost comprehensive air and gas treatment portfolio: From separators and regenerative and adsorption dryers to refrigerated dryers, BAUER covers all air and gas purity requirements in accordance with DIN ISO 8573-1.\nGlobal market leadership & service expertise: BAUER is the global market standard in high- and medium-pressure applications across nearly all segments – with a 70% market share in breathing air systems and an undisputed leading position in industrial applications, supported by a global service network.\nWhat is the G22",
+      "page": null,
+      "section": [
+        "G 22 series (Helium) · Air-cooled compressors | BAUER KOMPRE",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.29150794,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+        "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+        "title": "2025-06_Product_overview_EN_N37488_sc",
+        "language": "en",
+        "publication_date": "2025-06-01",
+        "certificates": [],
+        "product_families": [
+          "K 22",
+          "K 28",
+          "K 23",
+          "PE-VE INDUSTRY"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nsystems that can be\nintegrated complete these compact system solutions.\n› Pressure range: 30 – 525 bar\n› Charging rate: 85 – 950 l/min\n› Motor power: 3 – 15 kW\n## Page 31\n\nBAUER KOMPRESSOREN\nPRODUCT OVERVIEW | INDUSTRY | 31\n› Pressure range: 30 – 525 bar\n› Charging rate: 600 – 6,800 l/min\n› Motor power: 22 – 110 kW\nK 22 – K 28 SERIES\nWhether they are found in standard compressed-gas applications in industry or built into vehicles for mobile\nuse: The air-cooled high-pressure compressor units in the K 22 – K 28 series are reliable, durable and the\n­solution of choice for demanding customers.\nThe units of the new K 22 series are designed with direct coupling, while the units K 23 – K 28 are driven by\nmeans of V-belts.\nPE-VE INDUSTRY\nWith the new PE-VE, BAUER has designed a series of system com-\nponents that combines interesting features with an outstanding\nprice-performance ratio, even in the basic version.\nIn combination with the numerous system options and a wide range\nof accessories, tailored solutions for almost all tasks in the air and\nnitrogen sector can be implemented.\n› Pressure range: 25 - 420 bar\n› Charging rate: 85 - 1470 l/min\n› Motor power: 3 - 15 kW",
+        "page": 30,
+        "section": [
+          "2025-06_Product_overview_EN_N37488_sc",
+          "Page 30"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.54876807,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "K 22",
+          "K 28",
+          "VERTICUS AND",
+          "K 120"
+        ],
+        "media": [
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nBK 23 – BK 52\n90 - 520 bar\n0\n5000\n10000\n15000\n20000\n25000\n30000\n35000\nF.A.D. [l/min]\nSuitable for compression of argon\n\nSuitable for compression of forming gas\n## Page 8\n\n8 | HIGHLIGHT FEATURES | COMPRESSORS FOR INDUSTRY\nBAUER KOMPRESSOREN\nCOMPRESSOR BLOCK\nEach and every one of our compressor blocks contains decades of experience and the expertise of our Testing and Develop-\nment Centre. BAUER compressor blocks have built a legendary reputation on their reliability and long service life. They are\nthe result of advanced design, intelligent in-depth solutions, the use of exceptionally high-quality materials and outstanding\nproduction quality.\nHIGHLIGHT FEATURES\nCOMPRESSOR BLOCKS FOR MINI-VERTICUS,\nVERTICUS AND K 22 – K 28 SERIES\n› An intelligent air-cooling system with generously dimensioned coolers combined with cylinders with heavy ribbing can be\nrelied upon for best possible cooling of each individual compressor stage.\n› Ultra-rugged industrial roller bearings are designed for continuous operation under challenging operating conditions.\n› Powerful pressure lubrication and oil microfilter for minimum wear of moving parts.\n› Long maintenance intervals for valves and piston rings and for oil changes keep the running costs of the unit low.\n› All drive units are dynamically balanced for quiet and vibration-free running.\nCompressor block K 120\nCompressor block K 28",
+        "page": 7,
+        "section": [
+          "2026-04_Compressors_for_Industry_EN_N39771_sc",
+          "Page 7"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.53243146,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "K 22",
+          "K 28"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 23\nTable: TECHNICAL DATA\nHeaders and units: F.A.D. ¹ | Max. operating pres- | sure2 | No. of | stages | Speed | approx. | Motor- | power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | K 22 - K 28 SERIES, 900 - 3500 l/min, 90 - 350/370 bar\nRow: I 22.0-22\nValues: 900 | 54 | 31.8 | 370 | 5370 | 4 | 985 | 22 | 710 | 1565\nFootnotes: 90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+        "page": 23,
+        "section": [
+          "2026-04_Compressors_for_Industry_EN_N39771_sc",
+          "Page 23"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "I 22.0-22",
+        "headers": [
+          "F.A.D. ¹",
+          "Max. operating pres-",
+          "sure2",
+          "No. of",
+          "stages",
+          "Speed",
+          "approx.",
+          "Motor-",
+          "power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "K 22 - K 28 SERIES, 900 - 3500 l/min, 90 - 350/370 bar"
+        ],
+        "row_values": [
+          "900",
+          "54",
+          "31.8",
+          "370",
+          "5370",
+          "4",
+          "985",
+          "22",
+          "710",
+          "1565"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.53043601,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "a8b2f676-6851-4947-98d8-99d897f0eae3",
+        "filename": "0042-2023-01_B-NEWS_EN_sc-361222d525.md",
+        "title": "2023-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2023-01-01",
+        "certificates": [],
+        "product_families": [
+          "K 22"
+        ],
+        "media": [
+          "nitrogen",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2023-01_B-NEWS_EN_sc\ne removed by the filter system. The compressed gas is\nthen stored, usually in portable storage cylinders.\nK 22 SERIES: IMPROVED PERFORMANCE\nAND OPTIMIZED DESIGN\nThe new K 22 Series is the star of the 22 to 37 kW category. Now\nextensively optimized, these systems deliver enhanced performan-\nce with higher final pressures at lower noise levels. K 22 Series\ncompressors have low-maintenance direct coupling and air cooling.\nThey are now suitable for use as booster systems for nitrogen\ncompression. The versatile series, which is naturally also available\nfor helium and argon applications, offers free air delivery of 600 –\n4,200 l/min and a pressure range of 55 to 525 bar.\nBAUER KOMPRESSOREN\nProduct drive for\n2023\n4",
+        "page": 4,
+        "section": [
+          "2023-01_B-NEWS_EN_sc",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.41583789,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "a8b2f676-6851-4947-98d8-99d897f0eae3",
+        "filename": "0042-2023-01_B-NEWS_EN_sc-361222d525.md",
+        "title": "2023-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2023-01-01",
+        "certificates": [],
+        "product_families": [
+          "BM Series",
+          "K 22"
+        ],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2023-01_B-NEWS_EN_sc\nBayat deep in discussion\nwith A Partners\nA visit to the Allianz Arena and the Bayern Munich museum – one of\nthe standout leisure events at the A Partner Meeting\n## Page 4\n\nNEW INDUSTRIAL BLOCK SERIES\nAT COMVAC 2023\nThree new BAUER industrial compressor block series have\nmade their debut at the ComVac trade show in Hanover.\nCombining performance with compact dimensions, these new\nmodels raise the bar even higher. The BM Series features a\nthree-stage pressure range extending to 100 bar, while the\nK 22 Series with max. 37 kW power rating – likewise air-\nG60 V – THE NEW HELIUM RECOVERY SOLUTION\nHelium has become a scarce commodity in recent years. Given this,\nrecovery of gaseous helium for return to the process cycle is\nincreasingly recognized as the most cost-effective and technically\nfeasible option, even for users with low or lowest helium needs. The\nnew, compact G60 V adds an easy-install turnkey helium recovery\nsystem to BAUER’s product portfolio. It is ideal for hospitals and\nclinics, laboratories and other medical institutions. The helium is\ncaptured in the integrated collection balloon and compressed to\npressures of up to 200 bar by the compressor. Impurities in the\nmedium are removed by the filter system. The compressed gas is\nthen stored, usually in portable storage cylinders.\nK 22 SERIES: IMPROVED PERFORMANCE\nAND OPTIMIZED DESIGN",
+        "page": 3,
+        "section": [
+          "2023-01_B-NEWS_EN_sc",
+          "Page 3"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.38258752,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "b3f6bac3-c500-42cb-9e5a-fc7761798af9",
+        "filename": "0258-0092_i22-series_44f98de39c-33e2fba86d.md",
+        "title": "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "K 22"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN\nd allow for easy monitoring of operating pressures. They support diagnostics and simplify maintenance work on the system.\nIntake device and intake buffer vessel\nThe intake device supplies air or gas to the compressor at a monitored intake pressure. If predefined pressure limits are exceeded or not met, the system automatically shuts down for protection. To minimize pulsations in the intake area, the use of an intake buffer tank is recommended.\nCondensate collection system 60 l\nThe large condensate collection system centrally collects the condensate generated during compression. An integrated float switch reliably monitors the fill level. The silencer and filter unit reduce noise and prevent unpleasant odors in the working environment.\nDownloads\nProduct Brochure Compressors for Industry EN\n(8.89 MB)\nBAUER Product overview EN\n(12.33 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nThe new BAUER K 22 series\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?",
+        "page": null,
+        "section": [
+          "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.35166667,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "36cb5895-0a25-40f8-ba63-a8e8365b443f",
+        "filename": "0230-0064_g22-series-ar_c35ee4bed0-9999c152d7.md",
+        "title": "G 22 series (Argon) · Air-cooled compressors | BAUER KOMPRES",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "K 22"
+        ],
+        "media": [
+          "breathing air",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer"
+        ],
+        "standards": [
+          "ISO 8573"
+        ],
+        "content": "Document: G 22 series (Argon) · Air-cooled compressors | BAUER KOMPRES\nMB)\nBAUER Product overview EN\n(12.33 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nThe new BAUER K 22 series\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER provides fully integrated solutions across the entire process chain, including compression, air and gas treatment, quality monitoring, and audit-proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest options and accessories portfolio in the industry – precisely tailored to every application, without the need for custom designs.\nMost comprehensive air and gas treatment portfolio: From separators and regenerative and adsorption dryers to refrigerated dryers, BAUER covers all air and gas purity requirements in accordance with DIN ISO 8573-1.\nGlobal market leadership & service expertise: BAUER is the global market standard in high- and medium-pressure applications across nearly all segments – with a 70% market share in breathing air systems and an undisputed leading position in industrial applications, supported by a global service network.",
+        "page": null,
+        "section": [
+          "G 22 series (Argon) · Air-cooled compressors | BAUER KOMPRES",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.32186228,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "f79fc98a-704a-444e-9160-aef12683e801",
+        "filename": "0242-0076_gib22-series-hd_c7951ec7ed-426ce5a20c.md",
+        "title": "GIB 22 series · Air-cooled boosters | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "GIB 22",
+          "K 22"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "dryer"
+        ],
+        "standards": [
+          "ISO 8573"
+        ],
+        "content": "Document: GIB 22 series · Air-cooled boosters | BAUER KOMPRESSOREN\nment.\nDownloads\nProduct Brochure Compressors for Industry EN\n(8.89 MB)\nBAUER Product overview EN\n(12.33 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nThe new BAUER K 22 series\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER provides fully integrated solutions across the entire process chain, including compression, air and gas treatment, quality monitoring, and audit-proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest options and accessories portfolio in the industry – precisely tailored to every application, without the need for custom designs.\nMost comprehensive air and gas treatment portfolio: From separators and regenerative and adsorption dryers to refrigerated dryers, BAUER covers all air and gas purity requirements in accordance with DIN ISO 8573-1.",
+        "page": null,
+        "section": [
+          "GIB 22 series · Air-cooled boosters | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.2921476,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "8c108b6e-09a6-489b-b811-612490f1e52f",
+        "filename": "0243-0077_gib22-series-md_87728d914b-1649e11ebc.md",
+        "title": "GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "GIB 22",
+          "K 22"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "dryer"
+        ],
+        "standards": [
+          "ISO 8573"
+        ],
+        "content": "Document: GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE\nment.\nDownloads\nProduct Brochure Compressors for Industry EN\n(8.89 MB)\nBAUER Product overview EN\n(12.33 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nThe new BAUER K 22 series\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER provides fully integrated solutions across the entire process chain, including compression, air and gas treatment, quality monitoring, and audit-proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest options and accessories portfolio in the industry – precisely tailored to every application, without the need for custom designs.\nMost comprehensive air and gas treatment portfolio: From separators and regenerative and adsorption dryers to refrigerated dryers, BAUER covers all air and gas purity requirements in accordance with DIN ISO 8573-1.",
+        "page": null,
+        "section": [
+          "GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.29171498,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "e56864d5-2bd2-4f45-b1d2-d5a98daad68b",
+        "filename": "0231-0065_g22-series-he_9611e8a1c5-55462f5b5d.md",
+        "title": "G 22 series (Helium) · Air-cooled compressors | BAUER KOMPRE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "K 22"
+        ],
+        "media": [
+          "breathing air",
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer"
+        ],
+        "standards": [
+          "ISO 8573"
+        ],
+        "content": "Document: G 22 series (Helium) · Air-cooled compressors | BAUER KOMPRE\n(12.33 MB)\nHelium-Recovery EN\n(1.32 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nProduct Video\nThe new BAUER K 22 series\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is BAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER provides fully integrated solutions across the entire process chain, including compression, air and gas treatment, quality monitoring, and audit-proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest options and accessories portfolio in the industry – precisely tailored to every application, without the need for custom designs.\nMost comprehensive air and gas treatment portfolio: From separators and regenerative and adsorption dryers to refrigerated dryers, BAUER covers all air and gas purity requirements in accordance with DIN ISO 8573-1.\nGlobal market leadership & service expertise: BAUER is the global market standard in high- and medium-pressure applications across nearly all segments – with a 70% market share in breathing air systems and an undisputed leading position in industrial applications, supported by a global service network.\nWhat is the G22",
+        "page": null,
+        "section": [
+          "G 22 series (Helium) · Air-cooled compressors | BAUER KOMPRE",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.29150794,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "k 22",
+          "k 28"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": true,
+        "document_lookup": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 3,
+      "elapsed_ms": 896.88
+    }
+  },
+  "completed_at": "2026-07-23T14:29:55.923152+00:00",
+  "case_id": "B29",
+  "split": "development",
+  "category": "exact_pressure",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

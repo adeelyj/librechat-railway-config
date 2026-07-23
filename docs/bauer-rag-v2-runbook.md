@@ -1,11 +1,11 @@
 # Bauer RAG V2 runbook
 
-Status: implemented locally; not deployed or promoted.
+Status: deployed for private evaluation; normal Bauer remains on V1.
 
 The V2 overlay is backward-compatible and keeps the current Bauer Agent, Test Archive Agent, V1
-index, S3 objects, and MongoDB associations unchanged. Creating the private Agent, changing Railway
-variables, deploying, indexing, activating, or promoting requires an explicit production-change
-approval.
+index, S3 objects, and MongoDB associations unchanged. The approved private rollout is recorded in
+`bauer-rag-v2-rollout-20260723.md`. Any promotion of the normal Bauer Agent remains a separate
+production change and requires a verified gold set plus passing formal evaluation.
 
 ## Frozen baseline
 
@@ -18,6 +18,8 @@ The checked-in gold set is provisional. A Bauer reviewer must adjudicate it and 
 `gold_status` to `verified` before the scorer can permit promotion. The corpus inspection verifies
 all 33 currently specified evidence locations against the frozen sources, but that engineering
 check does not replace human review of answer claims, constraints, and source interpretation.
+The retrieval-smoke disputes that must be resolved first are recorded in
+`../evals/bauer-rag-v2/reports/gold-adjudication-20260723.md`.
 
 ## Pre-deployment checks
 

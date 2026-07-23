@@ -125,7 +125,10 @@ try {
         [System.Net.Http.Headers.AuthenticationHeaderValue]::new('Bearer', [string]$session.token)
     $session.token = $null
 
-    if ($ResumeRunId -ne [Guid]::Empty) {
+    if (
+        $PSBoundParameters.ContainsKey('ResumeRunId') -and
+        $ResumeRunId -ne [Guid]::Empty
+    ) {
         $runId = $ResumeRunId
         $run = Invoke-JsonRequest -Client $rag -Method ([System.Net.Http.HttpMethod]::Get) `
             -Path "/v2/index-runs/$runId"
@@ -166,7 +169,7 @@ try {
         namespace = $namespace
         index_version = $IndexVersion
         started_at = [DateTime]::UtcNow.ToString('o')
-        completed = @{}
+        completed = [pscustomobject]@{}
     }
     if (Test-Path -LiteralPath $StatePath -PathType Leaf) {
         $existing = Get-Content -Raw -LiteralPath $StatePath | ConvertFrom-Json

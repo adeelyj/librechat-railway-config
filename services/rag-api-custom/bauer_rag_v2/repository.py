@@ -4,7 +4,9 @@ import asyncio
 import json
 import logging
 import os
+import re
 import uuid
+from datetime import date
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -39,6 +41,11 @@ def _decode_json(value: Any, fallback: Any) -> Any:
         except json.JSONDecodeError:
             return fallback
     return value
+
+
+def _publication_date(value: str | None) -> date | None:
+    """Convert extractor ISO dates to the native type required by asyncpg DATE."""
+    return date.fromisoformat(value) if value else None
 
 
 def _vector_literal(values: Iterable[float]) -> str:
@@ -292,7 +299,7 @@ async def stage_document(
                 parsed.revision,
                 parsed.organization,
                 parsed.address,
-                parsed.publication_date,
+                _publication_date(parsed.publication_date),
                 list(parsed.product_families),
                 list(parsed.media),
                 list(parsed.component_categories),
@@ -549,6 +556,84 @@ def _candidate_from_row(row: Any, channel: str, raw_score: float) -> Candidate:
     )
 
 
+def _maximum_pressure_bar(content: str) -> float:
+    normalized = re.sub(r"\s+", " ", content.casefold())
+    ranges = [
+        float(upper.replace(",", "."))
+        for _, upper in re.findall(
+            r"(?<!\d)(\d{2,4}(?:[.,]\d+)?)\s*[-–—]\s*"
+            r"(\d{2,4}(?:[.,]\d+)?)\s*bar\b",
+            normalized,
+        )
+    ]
+    singles = [
+        float(value.replace(",", "."))
+        for value in re.findall(
+            r"(?<!\d)(\d{2,4}(?:[.,]\d+)?)\s*bar\b",
+            normalized,
+        )
+    ]
+    return max((*ranges, *singles), default=0.0)
+
+
+async def _pressure_extremum_search(
+    *,
+    namespace: str,
+    index_version: str,
+    file_ids: list[str],
+    limit: int,
+) -> list[Candidate]:
+    pool = await _pool()
+    async with pool.acquire() as connection:
+        rows = await connection.fetch(
+            f"""
+            SELECT
+                {CANDIDATE_COLUMNS},
+                0.0 AS channel_score
+            FROM bauer_rag_v2.chunks AS chunk
+            JOIN bauer_rag_v2.documents AS document
+              ON document.document_id = chunk.document_id
+            WHERE document.active
+              AND document.namespace = $1
+              AND document.index_version = $2
+              AND document.file_id = ANY($3::text[])
+              AND chunk.chunk_kind = 'table_row'
+              AND chunk.row_label ~* '^(?:BM|I|K|GIB|GI|PE)[[:space:]]*[0-9]'
+              AND chunk.search_text ILIKE '%operating%'
+              AND (
+                    chunk.search_text ILIKE '%pressure%'
+                 OR chunk.search_text ILIKE '%pres-%'
+              )
+              AND 'compressor' = ANY(document.component_categories)
+            LIMIT 1000
+            """,
+            namespace,
+            index_version,
+            file_ids,
+        )
+    candidates = []
+    for row in rows:
+        maximum = _maximum_pressure_bar(row["content"])
+        if maximum <= 0:
+            continue
+        candidate = _candidate_from_row(
+            row,
+            "exact",
+            1.0 + min(maximum / 10_000.0, 0.1),
+        )
+        candidate.metadata["pressure_extremum_bar"] = maximum
+        candidates.append(candidate)
+    candidates.sort(
+        key=lambda item: (
+            -float(item.metadata["pressure_extremum_bar"]),
+            item.file_id,
+            item.page or 0,
+            item.chunk_id,
+        )
+    )
+    return candidates[:limit]
+
+
 async def exact_search(
     *,
     namespace: str,
@@ -557,20 +642,19 @@ async def exact_search(
     analysis: QueryAnalysis,
     limit: int = 20,
 ) -> list[Candidate]:
-    terms = list(
-        dict.fromkeys(
-            value
-            for value in (
-                *analysis.identifiers,
-                *analysis.number_units,
-                *analysis.quoted_phrases,
-                *analysis.tokens,
-            )
-            if len(value) >= 2
+    if analysis.pressure_extremum and not analysis.exact_terms:
+        return await _pressure_extremum_search(
+            namespace=namespace,
+            index_version=index_version,
+            file_ids=file_ids,
+            limit=limit,
         )
-    )[:80]
+    terms = [value for value in analysis.exact_terms if len(value) >= 2][:40]
     if not terms:
         return []
+    primary_terms = [
+        value for value in analysis.primary_exact_terms if len(value) >= 2
+    ][:30]
     patterns = [f"%{value}%" for value in terms if len(value) >= 3]
     pool = await _pool()
     async with pool.acquire() as connection:
@@ -579,14 +663,29 @@ async def exact_search(
             SELECT
                 {CANDIDATE_COLUMNS},
                 GREATEST(
+                    CASE WHEN btrim(regexp_replace(
+                        lower(COALESCE(chunk.row_label, '')),
+                        '[^[:alnum:]%]+', ' ', 'g'
+                    )) = ANY($8::text[]) THEN 1.12 ELSE 0.0 END,
+                    CASE WHEN btrim(regexp_replace(
+                        lower(COALESCE(chunk.row_label, '')),
+                        '[^[:alnum:]%]+', ' ', 'g'
+                    )) = ANY($4::text[]) THEN 0.98 ELSE 0.0 END,
+                    CASE WHEN EXISTS (
+                        SELECT 1 FROM bauer_rag_v2.entities AS entity
+                        WHERE entity.document_id = document.document_id
+                          AND entity.chunk_id = chunk.chunk_id
+                          AND entity.normalized_value = ANY($8::text[])
+                    ) THEN 1.08 ELSE 0.0 END,
                     CASE WHEN EXISTS (
                         SELECT 1 FROM bauer_rag_v2.entities AS entity
                         WHERE entity.document_id = document.document_id
                           AND entity.chunk_id = chunk.chunk_id
                           AND entity.normalized_value = ANY($4::text[])
                     ) THEN 1.0 ELSE 0.0 END,
-                    CASE WHEN chunk.row_label ILIKE ANY($5::text[]) THEN 0.99 ELSE 0.0 END,
-                    CASE WHEN document.filename ILIKE ANY($5::text[]) THEN 0.95 ELSE 0.0 END,
+                    CASE WHEN document.filename ILIKE ANY($5::text[])
+                        THEN CASE WHEN $7::boolean THEN 1.06 ELSE 0.95 END
+                        ELSE 0.0 END,
                     CASE WHEN document.title ILIKE ANY($5::text[]) THEN 0.92 ELSE 0.0 END,
                     CASE WHEN document.certificate ILIKE ANY($5::text[]) THEN 0.98 ELSE 0.0 END,
                     CASE WHEN EXISTS (
@@ -611,7 +710,8 @@ async def exact_search(
                         WHERE entity.document_id = document.document_id
                           AND entity.normalized_value ILIKE ANY($5::text[])
                     ) THEN 0.78 ELSE 0.0 END
-                ) AS channel_score
+                ) + LEAST(GREATEST(similarity(chunk.search_text, $6), 0.0) * 0.20, 0.12)
+                  AS channel_score
             FROM bauer_rag_v2.chunks AS chunk
             JOIN bauer_rag_v2.documents AS document
               ON document.document_id = chunk.document_id
@@ -620,7 +720,11 @@ async def exact_search(
               AND document.index_version = $2
               AND document.file_id = ANY($3::text[])
               AND (
-                    document.filename ILIKE ANY($5::text[])
+                    btrim(regexp_replace(
+                        lower(COALESCE(chunk.row_label, '')),
+                        '[^[:alnum:]%]+', ' ', 'g'
+                    )) = ANY($4::text[])
+                 OR document.filename ILIKE ANY($5::text[])
                  OR document.title ILIKE ANY($5::text[])
                  OR document.certificate ILIKE ANY($5::text[])
                  OR EXISTS (
@@ -639,19 +743,35 @@ async def exact_search(
                       )
                  )
               )
-            ORDER BY channel_score DESC, chunk.row_label NULLS LAST, chunk.chunk_id
-            LIMIT $6
+            ORDER BY
+                channel_score DESC,
+                CASE WHEN $7::boolean AND chunk.page IS NULL THEN 1 ELSE 0 END,
+                chunk.page NULLS LAST,
+                chunk.ordinal,
+                chunk.chunk_id
+            LIMIT $9
             """,
             namespace,
             index_version,
             file_ids,
             terms,
             patterns,
-            limit,
+            analysis.original,
+            analysis.document_lookup,
+            primary_terms,
+            min(limit * 5, 100),
         )
     candidates = [_candidate_from_row(row, "exact", row["channel_score"]) for row in rows]
     candidates.sort(key=lambda item: -item.channels["exact"]["raw_score"])
-    return candidates
+    return candidates[:limit]
+
+
+def _lexical_tsquery(analysis: QueryAnalysis) -> str:
+    lexemes = []
+    for token in analysis.tokens:
+        lexemes.extend(re.findall(r"[^\W_]+", token, flags=re.UNICODE))
+    unique = list(dict.fromkeys(lexeme for lexeme in lexemes if len(lexeme) >= 2))
+    return " | ".join(unique[:40])
 
 
 async def lexical_search(
@@ -659,21 +779,24 @@ async def lexical_search(
     namespace: str,
     index_version: str,
     file_ids: list[str],
-    query: str,
+    analysis: QueryAnalysis,
     limit: int = 30,
 ) -> list[Candidate]:
+    tsquery = _lexical_tsquery(analysis)
+    if not tsquery:
+        return []
     pool = await _pool()
     async with pool.acquire() as connection:
         rows = await connection.fetch(
             f"""
             WITH request AS (
-                SELECT websearch_to_tsquery('simple', $4) AS ts_query
+                SELECT to_tsquery('simple', $4) AS ts_query
             )
             SELECT
                 {CANDIDATE_COLUMNS},
                 (
                     ts_rank_cd(chunk.search_vector, request.ts_query) * 0.75
-                    + similarity(chunk.search_text, $4) * 0.25
+                    + similarity(chunk.search_text, $5) * 0.25
                 ) AS channel_score
             FROM bauer_rag_v2.chunks AS chunk
             JOIN bauer_rag_v2.documents AS document
@@ -685,15 +808,16 @@ async def lexical_search(
               AND document.file_id = ANY($3::text[])
               AND (
                     chunk.search_vector @@ request.ts_query
-                 OR chunk.search_text % $4
+                 OR chunk.search_text % $5
               )
             ORDER BY channel_score DESC, chunk.chunk_id
-            LIMIT $5
+            LIMIT $6
             """,
             namespace,
             index_version,
             file_ids,
-            query,
+            tsquery,
+            analysis.original,
             limit,
         )
     return [_candidate_from_row(row, "lexical", row["channel_score"]) for row in rows]

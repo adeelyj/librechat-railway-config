@@ -1,0 +1,1186 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1120.37,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "K 22"
+      ],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 24\nTable: TECHNICAL DATA\nHeaders and units: F.A.D. ¹ | Max. operating | ­pressure2 | No. of | stages | Speed | approx. | Motor- | power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | K 22 SERIES, 730 - 1000 l/min, 120 - 320 bar, HELIUM\nRow: G 22.6-22\nValues: 730 | 43,8 | 25.8 | 320 | 4640 | 4 | 1170 | 22 | 820 | 1810\nFootnotes: 24 | AIR-COOLED COMPRESSOR UNITS & BOOSTER | COMPRESSORS FOR INDUSTRY\n90 - 350 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability and other gases on request.",
+      "page": 24,
+      "section": [
+        "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "Page 24"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "G 22.6-22",
+      "headers": [
+        "F.A.D. ¹",
+        "Max. operating",
+        "­pressure2",
+        "No. of",
+        "stages",
+        "Speed",
+        "approx.",
+        "Motor-",
+        "power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "K 22 SERIES, 730 - 1000 l/min, 120 - 320 bar, HELIUM"
+      ],
+      "row_values": [
+        "730",
+        "43,8",
+        "25.8",
+        "320",
+        "4640",
+        "4",
+        "1170",
+        "22",
+        "820",
+        "1810"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "24 | AIR-COOLED COMPRESSOR UNITS & BOOSTER | COMPRESSORS FOR INDUSTRY\n90 - 350 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability and other gases on request.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.4857441,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "K 22",
+        "K 25"
+      ],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 24\nTable: TECHNICAL DATA\nHeaders and units: K 22 SERIES, 620 - 900 l/min, 120 - 320 bar, HELIUM | G 22.6-22 | G 22.6-30 | K 22 – K 25 SERIES, 780 - 1800 l/min, 200 - 350 bar, HELIUM\nRow: G 22.5-22\nValues: 780 | 46.8 | 27.5 | 350 | 5100 | 5 | 985 | 22 | 890 | 1960\nFootnotes: 24 | AIR-COOLED COMPRESSOR UNITS & BOOSTER | COMPRESSORS FOR INDUSTRY\n90 - 350 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability and other gases on request.",
+      "page": 24,
+      "section": [
+        "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "Page 24"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "G 22.5-22",
+      "headers": [
+        "K 22 SERIES, 620 - 900 l/min, 120 - 320 bar, HELIUM",
+        "G 22.6-22",
+        "G 22.6-30",
+        "K 22 – K 25 SERIES, 780 - 1800 l/min, 200 - 350 bar, HELIUM"
+      ],
+      "row_values": [
+        "780",
+        "46.8",
+        "27.5",
+        "350",
+        "5100",
+        "5",
+        "985",
+        "22",
+        "890",
+        "1960"
+      ],
+      "units": [],
+      "footnotes": "24 | AIR-COOLED COMPRESSOR UNITS & BOOSTER | COMPRESSORS FOR INDUSTRY\n90 - 350 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability and other gases on request.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.45028017,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "692622de-50ab-4fee-b097-841b7ab29359",
+      "filename": "0061-2026-04_Compressors_for_Industry_FR_N39772_sc-62ab889c8f.md",
+      "title": "2026-04_Compressors_for_Industry_FR_N39772_sc",
+      "language": "fr",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "K 22",
+        "K 25"
+      ],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_FR_N39772_sc\nDocument section: 2026-04_Compressors_for_Industry_FR_N39772_sc / Page 24\nTable: CARACTÉRISTIQUES TECHNIQUES\nHeaders and units: 3 350 | 1 180 | 3 920 | GAMME K 22,Q 620 À 900 l/min, 120 À 320 bar, HELIUM | G 22.6-22 | 4 640 | 1 810 | G 22.6-30 | 4 640 | 1 960 | GAMME K 22 – K 25, 780 À 1800 l/min, 200 À 350 bar, HELIUM\nRow: G 22.5-22\nValues: 780 | 46,8 | 27,5 | 350\nFootnotes: 24 | GROUPES COMPRESSEURS ET BOOSTERS REFROIDIS À L'AIR | COMPRESSEURS INDUSTRIELS\n90 À 350 BAR\n1 Débit en volume selon ISO 1217; valable pour l'hélium. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+      "page": 24,
+      "section": [
+        "2026-04_Compressors_for_Industry_FR_N39772_sc",
+        "Page 24"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "CARACTÉRISTIQUES TECHNIQUES",
+      "row_label": "G 22.5-22",
+      "headers": [
+        "3 350",
+        "1 180",
+        "3 920",
+        "GAMME K 22,Q 620 À 900 l/min, 120 À 320 bar, HELIUM",
+        "G 22.6-22",
+        "4 640",
+        "1 810",
+        "G 22.6-30",
+        "4 640",
+        "1 960",
+        "GAMME K 22 – K 25, 780 À 1800 l/min, 200 À 350 bar, HELIUM"
+      ],
+      "row_values": [
+        "780",
+        "46,8",
+        "27,5",
+        "350"
+      ],
+      "units": [],
+      "footnotes": "24 | GROUPES COMPRESSEURS ET BOOSTERS REFROIDIS À L'AIR | COMPRESSEURS INDUSTRIELS\n90 À 350 BAR\n1 Débit en volume selon ISO 1217; valable pour l'hélium. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.39291014,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "692622de-50ab-4fee-b097-841b7ab29359",
+      "filename": "0061-2026-04_Compressors_for_Industry_FR_N39772_sc-62ab889c8f.md",
+      "title": "2026-04_Compressors_for_Industry_FR_N39772_sc",
+      "language": "fr",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "K 22"
+      ],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_FR_N39772_sc\nDocument section: 2026-04_Compressors_for_Industry_FR_N39772_sc / Page 24\nTable: CARACTÉRISTIQUES TECHNIQUES\nHeaders and units: bar | psig | tr/min | kW | kg | lbs | GAMME K 22, 730 - 1000 l/min, 120 - 320 bar, HELIUM | G 22.6-22 | G 22.6-30 | GAMME K 22, 940 - 1500 l/min, 200 - 350 bar, HELIUM\nRow: G 22.5-22\nValues: 940 | 56,4 | 33,2 | 350 | 5100 | 5 | 1170 | 22 | 890 | 1960\nFootnotes: 24 | GROUPES COMPRESSEURS ET BOOSTERS REFROIDIS À L'AIR | COMPRESSEURS INDUSTRIELS\n90 À 350 BAR\n1 Débit en volume selon ISO 1217; valable pour l'hélium. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+      "page": 24,
+      "section": [
+        "2026-04_Compressors_for_Industry_FR_N39772_sc",
+        "Page 24"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "CARACTÉRISTIQUES TECHNIQUES",
+      "row_label": "G 22.5-22",
+      "headers": [
+        "bar",
+        "psig",
+        "tr/min",
+        "kW",
+        "kg",
+        "lbs",
+        "GAMME K 22, 730 - 1000 l/min, 120 - 320 bar, HELIUM",
+        "G 22.6-22",
+        "G 22.6-30",
+        "GAMME K 22, 940 - 1500 l/min, 200 - 350 bar, HELIUM"
+      ],
+      "row_values": [
+        "940",
+        "56,4",
+        "33,2",
+        "350",
+        "5100",
+        "5",
+        "1170",
+        "22",
+        "890",
+        "1960"
+      ],
+      "units": [
+        "bar",
+        "psig",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "24 | GROUPES COMPRESSEURS ET BOOSTERS REFROIDIS À L'AIR | COMPRESSEURS INDUSTRIELS\n90 À 350 BAR\n1 Débit en volume selon ISO 1217; valable pour l'hélium. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3924645,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+      "filename": "0071-B-SELECT_en-f40d0389e3.md",
+      "title": "B-SELECT_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "sensor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SELECT_en\nDocument section: B-SELECT_en / Page 2\nTable: TECHNICAL DATA\nRow: 150-330 bar\nUp to 414 bar: Version\nPressure switch (for compressors with hardwired control): Pressure sensor (for compressors with B-CONTROL)\nDimensions: 366 x 288 x 150 mm\n366 x 288 x 241 mm: Weight\nApprox. 7 kg: Material and Coating\nSteel, painted in RAL 7024: Stainless steel (only available for pressure sensor)\nFootnotes: 2 versions available",
+      "page": 2,
+      "section": [
+        "B-SELECT_en",
+        "Page 2"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "150-330 bar",
+      "headers": [
+        "Up to 414 bar",
+        "Pressure switch (for compressors with hardwired control)",
+        "Dimensions",
+        "366 x 288 x 241 mm",
+        "Approx. 7 kg",
+        "Steel, painted in RAL 7024"
+      ],
+      "row_values": [
+        "Version",
+        "Pressure sensor (for compressors with B-CONTROL)",
+        "366 x 288 x 150 mm",
+        "Weight",
+        "Material and Coating",
+        "Stainless steel (only available for pressure sensor)"
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "2 versions available",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.25518655,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+      "filename": "0071-B-SELECT_en-f40d0389e3.md",
+      "title": "B-SELECT_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "sensor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SELECT_en\nDocument section: B-SELECT_en / Page 2\nTable: TECHNICAL DATA\nRow: 420 bar\n420bar: Outlet pressure\n150-330 bar: Up to 414 bar\nVersion: Pressure switch (for compressors with hardwired control)\nPressure sensor (for compressors with B-CONTROL): Dimensions\n366 x 288 x 150 mm: 366 x 288 x 241 mm\nWeight: Approx. 7 kg\nMaterial and Coating: Steel, painted in RAL 7024\nFootnotes: 2 versions available",
+      "page": 2,
+      "section": [
+        "B-SELECT_en",
+        "Page 2"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "420 bar",
+      "headers": [
+        "420bar",
+        "150-330 bar",
+        "Version",
+        "Pressure sensor (for compressors with B-CONTROL)",
+        "366 x 288 x 150 mm",
+        "Weight",
+        "Material and Coating"
+      ],
+      "row_values": [
+        "Outlet pressure",
+        "Up to 414 bar",
+        "Pressure switch (for compressors with hardwired control)",
+        "Dimensions",
+        "366 x 288 x 241 mm",
+        "Approx. 7 kg",
+        "Steel, painted in RAL 7024"
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "2 versions available",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.25492214,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "ec97b52a-f336-47dd-93fb-5b88c53463f4",
+      "filename": "0008-2016-02_B-NEWS_EN_sc-af0bb80789.md",
+      "title": "2016-02_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2016-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2016-02_B-NEWS_EN_sc\nn this process.\nThe gas is directed into the purificati­\non system for further processing and\nISSUE 2/2016\n*\u0007The Serum Institute of India owned by The Poonawala\nGroup (http://www.seruminstitute.com/) is the largest\nsupplier of vaccines to the World Health Organisation\nand is amongst the Top 3 most valuable pharmaceutical\ncompanies in India. It has manufacturing sites in 5 coun­\ntries and their products are marketed in 90 countries.\nThe LD 12 mobile compressors can cope even in\nrough terrain.\nFrom l. to r.: Stefan Hacker (Managing Director BAUER KOMPRESSOREN), Sumedh Bapat (Director Technical NEX) and Philipp Bayat (Chairman of the Executive\nBoard BAUER GROUP) in front of the state-of-the-art biogas plant in Talegaon.",
+      "page": 3,
+      "section": [
+        "2016-02_B-NEWS_EN_sc",
+        "Page 3"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.18681869,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "bc8f6ea3-c404-41e2-9fdc-577c8541244d",
+      "filename": "0030-2020-02_B-NEWS_EN_sc-acefaf6ea1.md",
+      "title": "2020-02_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2020-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2020-02_B-NEWS_EN_sc\no individual areas\n­instead of the whole plant.\nThe regular information updates have\nbrought clarity and calm to the situ­\nation. Some colleagues have taken the\ninformation sheets home with them, for\ntheir partners to take to their own com-\npanies. From talking to my friends, I re­\nalized more and more how fast and\n­targeted our reactions at BAUER have\nbeen, which definitely places us at the\nforefront of our region.\nISSUE 2/2020\nKristijan Jardas fills a disinfectant dispenser at the\nproduction facility – masked, of course.\nOil and gas rig on the high seas\nVoluntary fever screening soon became a daily\n­routine.",
+      "page": 4,
+      "section": [
+        "2020-02_B-NEWS_EN_sc",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.16759715,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "15a18734-c8ea-474e-aebd-6ccb54ae08e1",
+      "filename": "0162-zubehoer_fuellventile_en-0fdb67669b.md",
+      "title": "zubehoer_fuellventile_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: zubehoer_fuellventile_en\n: For lever ﬁlling valve\n86102, 85878, 85877 or\n86242/86217\nSpare part no. 11347\nDouble nipple\nScrew-in element\nDouble nipple\nServicing kit for all ﬁlling\ncocks\n## Page 4\n\nBAUER KOMPRESSOREN GmbH Systemwerk, D-81452 München, Postfach 71 02 60,\nTel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de\nwww.bauer-kompressoren.de\nCONTACT FORM\nPLEASE INFORM US ABOUT THE FOLLOWING SERVICES\nPERSON TO CONTACT\nMr / Mrs / Ms:\n\nPhone:\n\nFax:\nYOUR ADDRESS\nCompany:\n\nStreet:\n\nZip Code, Town:\nPlease send the completed form by mail or fax to the a.m. agent. Our Service-Team will answer your request\nand will contact you as soon as possible.",
+      "page": 3,
+      "section": [
+        "zubehoer_fuellventile_en",
+        "Page 3"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.11122103,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "dd84f253-cdd5-4544-b45a-fede836c1157",
+      "filename": "0016-2017-02_B-NEWS_EN_sc-2d39436e72.md",
+      "title": "2017-02_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2017-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air",
+        "helium"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2017-02_B-NEWS_EN_sc\nthe con­\nsequences humanity must expect to\nface in the future, all delivered with an\nurgency that resonated in his listeners’\nminds long after he had finished.\nHeinz Bauer greets Dr. Uli Freier at BAUER KOMPRESSOREN.\nTwo progressive GB 23.2 rare gas compressors\n­operate as an interconnected unit to compress\nthe costly helium recovered during measurement.\nA BAUER MARINER provided a reliable supply of\nbreathing air on the Polarstern’s 2013 expedition.",
+      "page": 2,
+      "section": [
+        "2017-02_B-NEWS_EN_sc",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.09148707,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "K 22"
+        ],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 24\nTable: TECHNICAL DATA\nHeaders and units: F.A.D. ¹ | Max. operating | ­pressure2 | No. of | stages | Speed | approx. | Motor- | power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | K 22 SERIES, 730 - 1000 l/min, 120 - 320 bar, HELIUM\nRow: G 22.6-22\nValues: 730 | 43,8 | 25.8 | 320 | 4640 | 4 | 1170 | 22 | 820 | 1810\nFootnotes: 24 | AIR-COOLED COMPRESSOR UNITS & BOOSTER | COMPRESSORS FOR INDUSTRY\n90 - 350 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability and other gases on request.",
+        "page": 24,
+        "section": [
+          "2026-04_Compressors_for_Industry_EN_N39771_sc",
+          "Page 24"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "G 22.6-22",
+        "headers": [
+          "F.A.D. ¹",
+          "Max. operating",
+          "­pressure2",
+          "No. of",
+          "stages",
+          "Speed",
+          "approx.",
+          "Motor-",
+          "power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "K 22 SERIES, 730 - 1000 l/min, 120 - 320 bar, HELIUM"
+        ],
+        "row_values": [
+          "730",
+          "43,8",
+          "25.8",
+          "320",
+          "4640",
+          "4",
+          "1170",
+          "22",
+          "820",
+          "1810"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "24 | AIR-COOLED COMPRESSOR UNITS & BOOSTER | COMPRESSORS FOR INDUSTRY\n90 - 350 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability and other gases on request.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.4857441,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "K 22",
+          "K 25"
+        ],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 24\nTable: TECHNICAL DATA\nHeaders and units: K 22 SERIES, 620 - 900 l/min, 120 - 320 bar, HELIUM | G 22.6-22 | G 22.6-30 | K 22 – K 25 SERIES, 780 - 1800 l/min, 200 - 350 bar, HELIUM\nRow: G 22.5-22\nValues: 780 | 46.8 | 27.5 | 350 | 5100 | 5 | 985 | 22 | 890 | 1960\nFootnotes: 24 | AIR-COOLED COMPRESSOR UNITS & BOOSTER | COMPRESSORS FOR INDUSTRY\n90 - 350 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability and other gases on request.",
+        "page": 24,
+        "section": [
+          "2026-04_Compressors_for_Industry_EN_N39771_sc",
+          "Page 24"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "G 22.5-22",
+        "headers": [
+          "K 22 SERIES, 620 - 900 l/min, 120 - 320 bar, HELIUM",
+          "G 22.6-22",
+          "G 22.6-30",
+          "K 22 – K 25 SERIES, 780 - 1800 l/min, 200 - 350 bar, HELIUM"
+        ],
+        "row_values": [
+          "780",
+          "46.8",
+          "27.5",
+          "350",
+          "5100",
+          "5",
+          "985",
+          "22",
+          "890",
+          "1960"
+        ],
+        "units": [],
+        "footnotes": "24 | AIR-COOLED COMPRESSOR UNITS & BOOSTER | COMPRESSORS FOR INDUSTRY\n90 - 350 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability and other gases on request.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.45028017,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "692622de-50ab-4fee-b097-841b7ab29359",
+        "filename": "0061-2026-04_Compressors_for_Industry_FR_N39772_sc-62ab889c8f.md",
+        "title": "2026-04_Compressors_for_Industry_FR_N39772_sc",
+        "language": "fr",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "K 22",
+          "K 25"
+        ],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_FR_N39772_sc\nDocument section: 2026-04_Compressors_for_Industry_FR_N39772_sc / Page 24\nTable: CARACTÉRISTIQUES TECHNIQUES\nHeaders and units: 3 350 | 1 180 | 3 920 | GAMME K 22,Q 620 À 900 l/min, 120 À 320 bar, HELIUM | G 22.6-22 | 4 640 | 1 810 | G 22.6-30 | 4 640 | 1 960 | GAMME K 22 – K 25, 780 À 1800 l/min, 200 À 350 bar, HELIUM\nRow: G 22.5-22\nValues: 780 | 46,8 | 27,5 | 350\nFootnotes: 24 | GROUPES COMPRESSEURS ET BOOSTERS REFROIDIS À L'AIR | COMPRESSEURS INDUSTRIELS\n90 À 350 BAR\n1 Débit en volume selon ISO 1217; valable pour l'hélium. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+        "page": 24,
+        "section": [
+          "2026-04_Compressors_for_Industry_FR_N39772_sc",
+          "Page 24"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "CARACTÉRISTIQUES TECHNIQUES",
+        "row_label": "G 22.5-22",
+        "headers": [
+          "3 350",
+          "1 180",
+          "3 920",
+          "GAMME K 22,Q 620 À 900 l/min, 120 À 320 bar, HELIUM",
+          "G 22.6-22",
+          "4 640",
+          "1 810",
+          "G 22.6-30",
+          "4 640",
+          "1 960",
+          "GAMME K 22 – K 25, 780 À 1800 l/min, 200 À 350 bar, HELIUM"
+        ],
+        "row_values": [
+          "780",
+          "46,8",
+          "27,5",
+          "350"
+        ],
+        "units": [],
+        "footnotes": "24 | GROUPES COMPRESSEURS ET BOOSTERS REFROIDIS À L'AIR | COMPRESSEURS INDUSTRIELS\n90 À 350 BAR\n1 Débit en volume selon ISO 1217; valable pour l'hélium. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.39291014,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "692622de-50ab-4fee-b097-841b7ab29359",
+        "filename": "0061-2026-04_Compressors_for_Industry_FR_N39772_sc-62ab889c8f.md",
+        "title": "2026-04_Compressors_for_Industry_FR_N39772_sc",
+        "language": "fr",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "K 22"
+        ],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_FR_N39772_sc\nDocument section: 2026-04_Compressors_for_Industry_FR_N39772_sc / Page 24\nTable: CARACTÉRISTIQUES TECHNIQUES\nHeaders and units: bar | psig | tr/min | kW | kg | lbs | GAMME K 22, 730 - 1000 l/min, 120 - 320 bar, HELIUM | G 22.6-22 | G 22.6-30 | GAMME K 22, 940 - 1500 l/min, 200 - 350 bar, HELIUM\nRow: G 22.5-22\nValues: 940 | 56,4 | 33,2 | 350 | 5100 | 5 | 1170 | 22 | 890 | 1960\nFootnotes: 24 | GROUPES COMPRESSEURS ET BOOSTERS REFROIDIS À L'AIR | COMPRESSEURS INDUSTRIELS\n90 À 350 BAR\n1 Débit en volume selon ISO 1217; valable pour l'hélium. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+        "page": 24,
+        "section": [
+          "2026-04_Compressors_for_Industry_FR_N39772_sc",
+          "Page 24"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "CARACTÉRISTIQUES TECHNIQUES",
+        "row_label": "G 22.5-22",
+        "headers": [
+          "bar",
+          "psig",
+          "tr/min",
+          "kW",
+          "kg",
+          "lbs",
+          "GAMME K 22, 730 - 1000 l/min, 120 - 320 bar, HELIUM",
+          "G 22.6-22",
+          "G 22.6-30",
+          "GAMME K 22, 940 - 1500 l/min, 200 - 350 bar, HELIUM"
+        ],
+        "row_values": [
+          "940",
+          "56,4",
+          "33,2",
+          "350",
+          "5100",
+          "5",
+          "1170",
+          "22",
+          "890",
+          "1960"
+        ],
+        "units": [
+          "bar",
+          "psig",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "24 | GROUPES COMPRESSEURS ET BOOSTERS REFROIDIS À L'AIR | COMPRESSEURS INDUSTRIELS\n90 À 350 BAR\n1 Débit en volume selon ISO 1217; valable pour l'hélium. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3924645,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+        "filename": "0071-B-SELECT_en-f40d0389e3.md",
+        "title": "B-SELECT_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "sensor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SELECT_en\nDocument section: B-SELECT_en / Page 2\nTable: TECHNICAL DATA\nRow: 150-330 bar\nUp to 414 bar: Version\nPressure switch (for compressors with hardwired control): Pressure sensor (for compressors with B-CONTROL)\nDimensions: 366 x 288 x 150 mm\n366 x 288 x 241 mm: Weight\nApprox. 7 kg: Material and Coating\nSteel, painted in RAL 7024: Stainless steel (only available for pressure sensor)\nFootnotes: 2 versions available",
+        "page": 2,
+        "section": [
+          "B-SELECT_en",
+          "Page 2"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "150-330 bar",
+        "headers": [
+          "Up to 414 bar",
+          "Pressure switch (for compressors with hardwired control)",
+          "Dimensions",
+          "366 x 288 x 241 mm",
+          "Approx. 7 kg",
+          "Steel, painted in RAL 7024"
+        ],
+        "row_values": [
+          "Version",
+          "Pressure sensor (for compressors with B-CONTROL)",
+          "366 x 288 x 150 mm",
+          "Weight",
+          "Material and Coating",
+          "Stainless steel (only available for pressure sensor)"
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "2 versions available",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.25518655,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+        "filename": "0071-B-SELECT_en-f40d0389e3.md",
+        "title": "B-SELECT_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "sensor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SELECT_en\nDocument section: B-SELECT_en / Page 2\nTable: TECHNICAL DATA\nRow: 420 bar\n420bar: Outlet pressure\n150-330 bar: Up to 414 bar\nVersion: Pressure switch (for compressors with hardwired control)\nPressure sensor (for compressors with B-CONTROL): Dimensions\n366 x 288 x 150 mm: 366 x 288 x 241 mm\nWeight: Approx. 7 kg\nMaterial and Coating: Steel, painted in RAL 7024\nFootnotes: 2 versions available",
+        "page": 2,
+        "section": [
+          "B-SELECT_en",
+          "Page 2"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "420 bar",
+        "headers": [
+          "420bar",
+          "150-330 bar",
+          "Version",
+          "Pressure sensor (for compressors with B-CONTROL)",
+          "366 x 288 x 150 mm",
+          "Weight",
+          "Material and Coating"
+        ],
+        "row_values": [
+          "Outlet pressure",
+          "Up to 414 bar",
+          "Pressure switch (for compressors with hardwired control)",
+          "Dimensions",
+          "366 x 288 x 241 mm",
+          "Approx. 7 kg",
+          "Steel, painted in RAL 7024"
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "2 versions available",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.25492214,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "ec97b52a-f336-47dd-93fb-5b88c53463f4",
+        "filename": "0008-2016-02_B-NEWS_EN_sc-af0bb80789.md",
+        "title": "2016-02_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2016-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2016-02_B-NEWS_EN_sc\nn this process.\nThe gas is directed into the purificati­\non system for further processing and\nISSUE 2/2016\n*\u0007The Serum Institute of India owned by The Poonawala\nGroup (http://www.seruminstitute.com/) is the largest\nsupplier of vaccines to the World Health Organisation\nand is amongst the Top 3 most valuable pharmaceutical\ncompanies in India. It has manufacturing sites in 5 coun­\ntries and their products are marketed in 90 countries.\nThe LD 12 mobile compressors can cope even in\nrough terrain.\nFrom l. to r.: Stefan Hacker (Managing Director BAUER KOMPRESSOREN), Sumedh Bapat (Director Technical NEX) and Philipp Bayat (Chairman of the Executive\nBoard BAUER GROUP) in front of the state-of-the-art biogas plant in Talegaon.",
+        "page": 3,
+        "section": [
+          "2016-02_B-NEWS_EN_sc",
+          "Page 3"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.18681869,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "bc8f6ea3-c404-41e2-9fdc-577c8541244d",
+        "filename": "0030-2020-02_B-NEWS_EN_sc-acefaf6ea1.md",
+        "title": "2020-02_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2020-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2020-02_B-NEWS_EN_sc\no individual areas\n­instead of the whole plant.\nThe regular information updates have\nbrought clarity and calm to the situ­\nation. Some colleagues have taken the\ninformation sheets home with them, for\ntheir partners to take to their own com-\npanies. From talking to my friends, I re­\nalized more and more how fast and\n­targeted our reactions at BAUER have\nbeen, which definitely places us at the\nforefront of our region.\nISSUE 2/2020\nKristijan Jardas fills a disinfectant dispenser at the\nproduction facility – masked, of course.\nOil and gas rig on the high seas\nVoluntary fever screening soon became a daily\n­routine.",
+        "page": 4,
+        "section": [
+          "2020-02_B-NEWS_EN_sc",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.16759715,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "15a18734-c8ea-474e-aebd-6ccb54ae08e1",
+        "filename": "0162-zubehoer_fuellventile_en-0fdb67669b.md",
+        "title": "zubehoer_fuellventile_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: zubehoer_fuellventile_en\n: For lever ﬁlling valve\n86102, 85878, 85877 or\n86242/86217\nSpare part no. 11347\nDouble nipple\nScrew-in element\nDouble nipple\nServicing kit for all ﬁlling\ncocks\n## Page 4\n\nBAUER KOMPRESSOREN GmbH Systemwerk, D-81452 München, Postfach 71 02 60,\nTel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de\nwww.bauer-kompressoren.de\nCONTACT FORM\nPLEASE INFORM US ABOUT THE FOLLOWING SERVICES\nPERSON TO CONTACT\nMr / Mrs / Ms:\n\nPhone:\n\nFax:\nYOUR ADDRESS\nCompany:\n\nStreet:\n\nZip Code, Town:\nPlease send the completed form by mail or fax to the a.m. agent. Our Service-Team will answer your request\nand will contact you as soon as possible.",
+        "page": 3,
+        "section": [
+          "zubehoer_fuellventile_en",
+          "Page 3"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.11122103,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "dd84f253-cdd5-4544-b45a-fede836c1157",
+        "filename": "0016-2017-02_B-NEWS_EN_sc-2d39436e72.md",
+        "title": "2017-02_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2017-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air",
+          "helium"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2017-02_B-NEWS_EN_sc\nthe con­\nsequences humanity must expect to\nface in the future, all delivered with an\nurgency that resonated in his listeners’\nminds long after he had finished.\nHeinz Bauer greets Dr. Uli Freier at BAUER KOMPRESSOREN.\nTwo progressive GB 23.2 rare gas compressors\n­operate as an interconnected unit to compress\nthe costly helium recovered during measurement.\nA BAUER MARINER provided a reliable supply of\nbreathing air on the Polarstern’s 2013 expedition.",
+        "page": 2,
+        "section": [
+          "2017-02_B-NEWS_EN_sc",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.09148707,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "k 22",
+          "k 28"
+        ],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": true
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 0,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 1,
+      "elapsed_ms": 869.5
+    }
+  },
+  "completed_at": "2026-07-23T14:10:07.019401+00:00",
+  "case_id": "B29",
+  "split": "development",
+  "category": "exact_pressure",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

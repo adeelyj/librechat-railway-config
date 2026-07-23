@@ -1,0 +1,251 @@
+{
+  "system": "v1",
+  "path": "/query_multiple",
+  "http_status": 200,
+  "elapsed_ms": 429.69,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "file_id": "c507e770-5529-4839-95e5-5ea1731ed2a5",
+      "filename": "0003-2015-08_Proteccion_para_mangueras_ES_N40403_sc-3955526829_1aecd270cddb4396aeb13138d0acd543.md",
+      "content": "2015-08_Proteccion_para_mangueras_ES_N40403_sc\n\nOriginal source: bauer_index\\raw_docs\\2015-08_Proteccion_para_mangueras_ES_N40403_sc.pdf\n\nOriginal SHA-256: 3955526829f4880c897736da71c1cc02a3eb4cade5f100005ee4192ae45f696b\n\nPage 1\n\nSERVICIO Protección contra golpes de mangueras de alta presión Montaje sencillo Posibilidad de montaje posterior sin problemas Apto para muchas conexiones PROTECCIÓN PARA MANGUERAS SISTEMA DE PROTECCIÓN PARA MANGUERAS DE ALTA PRESIÓN\n\nPage 2\n\nBAUER COMPRESSORES S.L. Pol. Ind. La Clota; C/ Josep Ros i Ros 45 08740 Sant Andreu De La Barca, España Tel. +49 (0) 89 78049-0 Fax +49 (0) 89 78049-167 info@bauer-kompressoren.com www.bauer-kompressoren.com PROTECCIÓN PARA MANGUERAS DE BAUER KOMPRESSOREN PROTÉJASE A USTED MISMO Y A SU INSTALACIÓN\n\nCon el desgaste, los daños o las fluctuaciones de presión, las mangueras de alta presión importantes para la seguridad pueden resul­ tar peligrosas.Nuestro sistema de retención le proporciona una protección adicional. Con él se evitan eficazmente golpes incontrola­ dos de las mangueras de alta presión en caso de derrumbe. BAUER KOMPRESSOREN recomienda el equipamiento posterior de sus instalaciones. FUNCIONAMIENTO:",
+      "page": null,
+      "section": [],
+      "score": 0.645073413848877,
+      "route": "v1"
+    },
+    {
+      "file_id": "ec97b52a-f336-47dd-93fb-5b88c53463f4",
+      "filename": "0008-2016-02_B-NEWS_EN_sc-af0bb80789_a660398993194db3bcb72f3323e6bab3.md",
+      "content": "From l. to r.: Stefan Hacker (Managing Director BAUER KOMPRESSOREN), Sumedh Bapat (Director Technical NEX) and Philipp Bayat (Chairman of the Executive Board BAUER GROUP) in front of the state-of-the-art biogas plant in Talegaon.",
+      "page": null,
+      "section": [],
+      "score": 0.6325940489768982,
+      "route": "v1"
+    },
+    {
+      "file_id": "4d587de4-1561-42d3-9ba9-9a15c4c50c73",
+      "filename": "0065-2026-05_BM_Baureihe_EN_N46866_sc-905c1cde3e_1f8f0b9327e34a189ab253575a49b3ca.md",
+      "content": "pockets and structural tie-downs › Classification approval (DNV, ABS, RINA) Integral inter-stage separators ensure high efficiency of con- densate removal.",
+      "page": null,
+      "section": [],
+      "score": 0.62949981181323,
+      "route": "v1"
+    },
+    {
+      "file_id": "e2f488d9-6f05-48b4-b0d6-c276ea5748c1",
+      "filename": "0024-2019-02_B-NEWS_EN_sc-2e8c93ebaa_d1021b282aa74cec9e189764cf9a4249.md",
+      "content": "they use a PC, notebook, tablet or smartphone. Our modern platform optimizes the content and performance to any de- vice. This digital training system will have a long-term positive influence, im- proving our business and the collabora- tion between our branches”, affirms Petra Meinel.",
+      "page": null,
+      "section": [],
+      "score": 0.6284067630767822,
+      "route": "v1"
+    },
+    {
+      "file_id": "e755f3ad-7b90-438a-92cc-89e5712044bf",
+      "filename": "0081-bauer_amfile_13-e7e9162a14_c11e0694548543ae9a5770532efb7a5f.md",
+      "content": "Page 8\n\nBAUER KOMPRESSOREN GmbH Stäblistr. 8 81477 Munich, Germany Tel. +49 (0) 89 78049-0 Fax +49 (0) 89 78049-167 info@bauer-kompressoren.de bauer-kompressoren.de PE-VE SERIES EN N34459 04.2065 Subject to technical change without notice ARE YOU INTERESTED IN OUR PRODUCTS? CONTACT US – WE ARE HAPPY TO PROVIDE INFORMATION AND ASSISTANCE:",
+      "page": null,
+      "section": [],
+      "score": 0.6145052909851074,
+      "route": "v1"
+    },
+    {
+      "file_id": "70a56262-2415-44fa-8b3e-45831dda1dfb",
+      "filename": "0223-0057_fcc6_2b3480eeeb-07dcf15595_e4c4999e19b8410a80715eac31a3f1cb.md",
+      "content": "Shopping Basket My Basket Loading... calcActive())\"> FCC 6 Gas Controller High-pressure control panel for Gas Assisted Injection Technology (GIT) and other industrial applications The FCC 6 gas controller delivers precise pressure and time control while ensuring outstanding process repeatability. 1 to 8 valves 5 to 400 bar 3 available options Contact us Request product Selected product: FCC 6 Gas Controller Art. Nr.: Steuerpult SKU Steuerpult In stock CHF 100.00 Qty. Add to Basket Technical Data FCC 6 for Air, Nitrogen and inert gases Model designation Pressure range Number of valves Net weight approx. Dimensions Interface bar kg cm FCC 6 5 - 400 1, 2, 4, 6 or 8 77 - 110 49 x 52 x 140 Euromap 62, OPC-UA Details & feature The sixth generation of BAUER controllers offers exceptionally user-friendly and intuitive operation. This control panel ensures stable and consistent processing conditions. The precisely regulated nitrogen pressure profile injected into the melt guarantees a repeatable hollow section within the plastic part. Smart Interface & Advanced Control The FCC 6 features a high-performance PLC enabling fully digital closed-loop regulation. Its 10.4\" touchscreen provides an intuitive and secure user experience: Password protection with 3 user levels 7-step pressure and time sequencing with ramp control Automatic cleaning cycle with clogged-injector detection Leak detection Inerting step before plastic injection (OXIPURGE) Self-calibration based on valve response time",
+      "page": null,
+      "section": [],
+      "score": 0.6070706610125708,
+      "route": "v1"
+    },
+    {
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709_97e454d24fc34f648c8e3d464e850ec8.md",
+      "content": "words, for anyone that wants to rely on pure, safe breathing air in mobile applications. The light, compact system can be transported by one or two people and fits into virtually every vehicle boot.",
+      "page": null,
+      "section": [],
+      "score": 0.6064368124939922,
+      "route": "v1"
+    },
+    {
+      "file_id": "6b68f255-9dbb-4fe7-9e82-cfa0eedb0ee2",
+      "filename": "0028-2020-01_B-NEWS_EN_sc-289d7cd54b_d1aa07af3a484fb597b99449fe1e9509.md",
+      "content": "set out their intent to step up collaboration in many future-facing areas. Chancellor Merkel mentioned sus- tainable development and climate ac- tion as a further field in which Germa- ny and India will work closely to- gether, noting that while India’s CO2 emissions are relatively low at pre- sent, its future industrial develop- ment should naturally aim for maxi- mum sustainability. At the CEO Round Table attended by Chancellor Merkel, Prime Minister Modi and high-ranking representa­ tives from German and Indian govern- ment and business, Philipp Bayat spoke in his role as a supplier of ad- vanced technology products and re- presentative of Germany’s SME sec- tor. He described his experiences in public tender procedures and the situ- ation regarding skilled personnel in India. Bayat’s explanations were re­ ceived by the Indian government with great interest. BAUER KOMPRESSOREN BOOT 2020 NITROX and sustainability – BAUER’s recipe for success at Boot 2020 This year’s boot trade show in Düs- seldorf showcased the relaunched Dive Center complete with new hall. BAUER’s new stand location was in Hall 12 in the vicinity of the boot Dive Center. The company made the most of this great spot and presented a radical new stand concept focusing on sustainability Inst­ ead of standard panels, which are discarded when the show is over, BAU- ER had used old shipping containers to create a full-scale stand including kit- chenette and meeting room. The stand design can be used unchanged for",
+      "page": null,
+      "section": [],
+      "score": 0.6062481041998812,
+      "route": "v1"
+    },
+    {
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55_f9c75444390a4a4495c59f4c638c5993.md",
+      "content": "safety valve; final pressure (shut-down pressure) lower. 3 Not suitable for compression of nitrogen and forming gas.",
+      "page": null,
+      "section": [],
+      "score": 0.6036036846873959,
+      "route": "v1"
+    },
+    {
+      "file_id": "5c75ad2d-5eab-4bee-a128-372da9c34128",
+      "filename": "0006-2016-01_B-NEWS_EN_sc-3415a02a81_1b2d372a803d48059713b1906dceadce.md",
+      "content": "30th anniversary of BAUER France. Reliable, continuous plant operation is absolutely essential in challenging outdoor conditions.",
+      "page": null,
+      "section": [],
+      "score": 0.6027718186378479,
+      "route": "v1"
+    }
+  ],
+  "raw_response": [
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "b364cf427777cf1f9683c39ab32797dc",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0003-2015-08_Proteccion_para_mangueras_ES_N40403_sc-3955526829_1aecd270cddb4396aeb13138d0acd543.md",
+          "file_id": "c507e770-5529-4839-95e5-5ea1731ed2a5",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "2015-08_Proteccion_para_mangueras_ES_N40403_sc\n\nOriginal source: bauer_index\\raw_docs\\2015-08_Proteccion_para_mangueras_ES_N40403_sc.pdf\n\nOriginal SHA-256: 3955526829f4880c897736da71c1cc02a3eb4cade5f100005ee4192ae45f696b\n\nPage 1\n\nSERVICIO Protección contra golpes de mangueras de alta presión Montaje sencillo Posibilidad de montaje posterior sin problemas Apto para muchas conexiones PROTECCIÓN PARA MANGUERAS SISTEMA DE PROTECCIÓN PARA MANGUERAS DE ALTA PRESIÓN\n\nPage 2\n\nBAUER COMPRESSORES S.L. Pol. Ind. La Clota; C/ Josep Ros i Ros 45 08740 Sant Andreu De La Barca, España Tel. +49 (0) 89 78049-0 Fax +49 (0) 89 78049-167 info@bauer-kompressoren.com www.bauer-kompressoren.com PROTECCIÓN PARA MANGUERAS DE BAUER KOMPRESSOREN PROTÉJASE A USTED MISMO Y A SU INSTALACIÓN\n\nCon el desgaste, los daños o las fluctuaciones de presión, las mangueras de alta presión importantes para la seguridad pueden resul­ tar peligrosas.Nuestro sistema de retención le proporciona una protección adicional. Con él se evitan eficazmente golpes incontrola­ dos de las mangueras de alta presión en caso de derrumbe. BAUER KOMPRESSOREN recomienda el equipamiento posterior de sus instalaciones. FUNCIONAMIENTO:",
+        "type": "Document"
+      },
+      0.35492658615112305
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "c57f8e3a3b6b861ecdfd591ac1c98c39",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0008-2016-02_B-NEWS_EN_sc-af0bb80789_a660398993194db3bcb72f3323e6bab3.md",
+          "file_id": "ec97b52a-f336-47dd-93fb-5b88c53463f4",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "From l. to r.: Stefan Hacker (Managing Director BAUER KOMPRESSOREN), Sumedh Bapat (Director Technical NEX) and Philipp Bayat (Chairman of the Executive Board BAUER GROUP) in front of the state-of-the-art biogas plant in Talegaon.",
+        "type": "Document"
+      },
+      0.3674059510231018
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "80996e0642c39579c04103fe1d6b2258",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0065-2026-05_BM_Baureihe_EN_N46866_sc-905c1cde3e_1f8f0b9327e34a189ab253575a49b3ca.md",
+          "file_id": "4d587de4-1561-42d3-9ba9-9a15c4c50c73",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "pockets and structural tie-downs › Classification approval (DNV, ABS, RINA) Integral inter-stage separators ensure high efficiency of con- densate removal.",
+        "type": "Document"
+      },
+      0.37050018818677
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "8f76c477f81735d027812033569b60b4",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0024-2019-02_B-NEWS_EN_sc-2e8c93ebaa_d1021b282aa74cec9e189764cf9a4249.md",
+          "file_id": "e2f488d9-6f05-48b4-b0d6-c276ea5748c1",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "they use a PC, notebook, tablet or smartphone. Our modern platform optimizes the content and performance to any de- vice. This digital training system will have a long-term positive influence, im- proving our business and the collabora- tion between our branches”, affirms Petra Meinel.",
+        "type": "Document"
+      },
+      0.3715932369232178
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "4f1a00cd82639875577102c5ccb58457",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0081-bauer_amfile_13-e7e9162a14_c11e0694548543ae9a5770532efb7a5f.md",
+          "file_id": "e755f3ad-7b90-438a-92cc-89e5712044bf",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "Page 8\n\nBAUER KOMPRESSOREN GmbH Stäblistr. 8 81477 Munich, Germany Tel. +49 (0) 89 78049-0 Fax +49 (0) 89 78049-167 info@bauer-kompressoren.de bauer-kompressoren.de PE-VE SERIES EN N34459 04.2065 Subject to technical change without notice ARE YOU INTERESTED IN OUR PRODUCTS? CONTACT US – WE ARE HAPPY TO PROVIDE INFORMATION AND ASSISTANCE:",
+        "type": "Document"
+      },
+      0.3854947090148926
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "38e91ae1177f613f14899d28fd8d0e6d",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0223-0057_fcc6_2b3480eeeb-07dcf15595_e4c4999e19b8410a80715eac31a3f1cb.md",
+          "file_id": "70a56262-2415-44fa-8b3e-45831dda1dfb",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "Shopping Basket My Basket Loading... calcActive())\"> FCC 6 Gas Controller High-pressure control panel for Gas Assisted Injection Technology (GIT) and other industrial applications The FCC 6 gas controller delivers precise pressure and time control while ensuring outstanding process repeatability. 1 to 8 valves 5 to 400 bar 3 available options Contact us Request product Selected product: FCC 6 Gas Controller Art. Nr.: Steuerpult SKU Steuerpult In stock CHF 100.00 Qty. Add to Basket Technical Data FCC 6 for Air, Nitrogen and inert gases Model designation Pressure range Number of valves Net weight approx. Dimensions Interface bar kg cm FCC 6 5 - 400 1, 2, 4, 6 or 8 77 - 110 49 x 52 x 140 Euromap 62, OPC-UA Details & feature The sixth generation of BAUER controllers offers exceptionally user-friendly and intuitive operation. This control panel ensures stable and consistent processing conditions. The precisely regulated nitrogen pressure profile injected into the melt guarantees a repeatable hollow section within the plastic part. Smart Interface & Advanced Control The FCC 6 features a high-performance PLC enabling fully digital closed-loop regulation. Its 10.4\" touchscreen provides an intuitive and secure user experience: Password protection with 3 user levels 7-step pressure and time sequencing with ramp control Automatic cleaning cycle with clogged-injector detection Leak detection Inerting step before plastic injection (OXIPURGE) Self-calibration based on valve response time",
+        "type": "Document"
+      },
+      0.3929293389874292
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "f59e62658e1b1c6a5cb15f2a5a84f324",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0122-bauer_amfile_5-01e0b02709_97e454d24fc34f648c8e3d464e850ec8.md",
+          "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "words, for anyone that wants to rely on pure, safe breathing air in mobile applications. The light, compact system can be transported by one or two people and fits into virtually every vehicle boot.",
+        "type": "Document"
+      },
+      0.3935631875060078
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "d73928e5d03e1412e27bc04858213e74",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0028-2020-01_B-NEWS_EN_sc-289d7cd54b_d1aa07af3a484fb597b99449fe1e9509.md",
+          "file_id": "6b68f255-9dbb-4fe7-9e82-cfa0eedb0ee2",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "set out their intent to step up collaboration in many future-facing areas. Chancellor Merkel mentioned sus- tainable development and climate ac- tion as a further field in which Germa- ny and India will work closely to- gether, noting that while India’s CO2 emissions are relatively low at pre- sent, its future industrial develop- ment should naturally aim for maxi- mum sustainability. At the CEO Round Table attended by Chancellor Merkel, Prime Minister Modi and high-ranking representa­ tives from German and Indian govern- ment and business, Philipp Bayat spoke in his role as a supplier of ad- vanced technology products and re- presentative of Germany’s SME sec- tor. He described his experiences in public tender procedures and the situ- ation regarding skilled personnel in India. Bayat’s explanations were re­ ceived by the Indian government with great interest. BAUER KOMPRESSOREN BOOT 2020 NITROX and sustainability – BAUER’s recipe for success at Boot 2020 This year’s boot trade show in Düs- seldorf showcased the relaunched Dive Center complete with new hall. BAUER’s new stand location was in Hall 12 in the vicinity of the boot Dive Center. The company made the most of this great spot and presented a radical new stand concept focusing on sustainability Inst­ ead of standard panels, which are discarded when the show is over, BAU- ER had used old shipping containers to create a full-scale stand including kit- chenette and meeting room. The stand design can be used unchanged for",
+        "type": "Document"
+      },
+      0.3937518958001188
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "7a4120bd3fae1e6126cbf316f339ef66",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55_f9c75444390a4a4495c59f4c638c5993.md",
+          "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "safety valve; final pressure (shut-down pressure) lower. 3 Not suitable for compression of nitrogen and forming gas.",
+        "type": "Document"
+      },
+      0.3963963153126041
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "a709517e77790065267138bb981552a4",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0006-2016-01_B-NEWS_EN_sc-3415a02a81_1b2d372a803d48059713b1906dceadce.md",
+          "file_id": "5c75ad2d-5eab-4bee-a128-372da9c34128",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "30th anniversary of BAUER France. Reliable, continuous plant operation is absolutely essential in challenging outdoor conditions.",
+        "type": "Document"
+      },
+      0.3972281813621521
+    ]
+  ],
+  "completed_at": "2026-07-23T14:10:05.473263+00:00",
+  "case_id": "B28",
+  "split": "development",
+  "category": "authorization_isolation",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

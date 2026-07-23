@@ -1,0 +1,1282 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1243.87,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "f01eb444-1340-4df3-b917-0de93574875e",
+      "filename": "0188-0022_b-kool1_0358ce6a4f-f9f75b95db.md",
+      "title": "B-KOOL · Air and gas purification | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "compressed air",
+        "nitrogen",
+        "nitrox",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: B-KOOL III\nMedium: Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon\nDimension (L × W × H): 792 × 550 × 390 mm\nWeight approx.: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+      "page": null,
+      "section": [
+        "B-KOOL · Air and gas purification / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "B-KOOL III",
+      "headers": [
+        "Medium",
+        "Dimension (L × W × H)",
+        "Weight approx.",
+        "Ambient temperature",
+        "Cryogen",
+        "High pressure air inlet temperature",
+        "Maximum operating pressure",
+        "Minimum operating pressure",
+        "Maximum flow rate",
+        "Power supply",
+        "Power consumption"
+      ],
+      "row_values": [
+        "Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon",
+        "792 × 550 × 390 mm",
+        "58 kg",
+        "+5 °C to +45 °C",
+        "R 290 (Propan)",
+        "max. 60 °C",
+        "350 bar / 550 bar",
+        "100 bar",
+        "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+        "200 – 240 VAC, 50 Hz / 60 Hz",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz"
+      ],
+      "units": [
+        "kg",
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.64405167,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+      "filename": "0187-0021_b-kool_c5e62182b0-d01c99958a.md",
+      "title": "B-KOOL · Air purification | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "compressed air",
+        "nitrogen",
+        "nitrox",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: B-KOOL · Air purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: B-KOOL III\nMedium: Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon\nDimension (L × W × H): 792 × 550 × 390 mm\nWeight approx.: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+      "page": null,
+      "section": [
+        "B-KOOL · Air purification / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "B-KOOL III",
+      "headers": [
+        "Medium",
+        "Dimension (L × W × H)",
+        "Weight approx.",
+        "Ambient temperature",
+        "Cryogen",
+        "High pressure air inlet temperature",
+        "Maximum operating pressure",
+        "Minimum operating pressure",
+        "Maximum flow rate",
+        "Power supply",
+        "Power consumption"
+      ],
+      "row_values": [
+        "Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon",
+        "792 × 550 × 390 mm",
+        "58 kg",
+        "+5 °C to +45 °C",
+        "R 290 (Propan)",
+        "max. 60 °C",
+        "350 bar / 550 bar",
+        "100 bar",
+        "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+        "200 – 240 VAC, 50 Hz / 60 Hz",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz"
+      ],
+      "units": [
+        "kg",
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.64362903,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "nitrox",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: B-KOOL III\nMedium: Compressed air & nitrox (up to 40% O2)\nAmbient temperature: +5 °C to +45 °C\nRefrigerant: R 290 (Propan)\nCompressed air infeed temperature: max. 60 °C\nMax. operating pressure compressed air: 350 bar/550 bar\nMin. operating pressure compressed air: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "page": 12,
+      "section": [
+        "2026 04 Accessory Systems EN N39608 sc",
+        "Page 12"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "B-KOOL III",
+      "headers": [
+        "Medium",
+        "Ambient temperature",
+        "Refrigerant",
+        "Compressed air infeed temperature",
+        "Max. operating pressure compressed air",
+        "Min. operating pressure compressed air",
+        "Permissible free air delivery, compressor",
+        "200 - 650 l/min (according to ISO 1217, air)",
+        "Power supply",
+        "200 - 240 VAC 60 Hz (single phase)",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "15",
+        "Ambient temperature [°C]",
+        "WITH B-KOOL III",
+        "30",
+        "40",
+        "50",
+        "12,0",
+        "8,0",
+        "4,0"
+      ],
+      "row_values": [
+        "Compressed air & nitrox (up to 40% O2)",
+        "+5 °C to +45 °C",
+        "R 290 (Propan)",
+        "max. 60 °C",
+        "350 bar/550 bar",
+        "100 bar",
+        "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+        "200 - 420 l/min (helium and argon)",
+        "200 - 240 VAC 50 Hz (single phase)",
+        "Power consumption",
+        "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+        "20",
+        "EXTENDED LIFE TIME",
+        "25",
+        "35",
+        "45",
+        "55",
+        "10,0",
+        "6,0",
+        "2,0"
+      ],
+      "units": [
+        "l/min",
+        "bar"
+      ],
+      "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.55753968,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "eecfe0e5-ee45-43f8-95b5-28013f2068c2",
+      "filename": "0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994.md",
+      "title": "2025-03_B-DETECTION_PLUS_EN_N42078_sc",
+      "language": "en",
+      "publication_date": "2025-03-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION"
+      ],
+      "media": [],
+      "component_categories": [
+        "valve",
+        "sensor"
+      ],
+      "standards": [],
+      "content": "Document: 2025-03_B-DETECTION_PLUS_EN_N42078_sc\nDocument section: 2025-03_B-DETECTION_PLUS_EN_N42078_sc / Page 12\nTable: TECHNICAL DATA\nRow: CO2\nNondispersive infrared spectroscopy (NDIR): CO, O2\nElectrochemical: Absolute humidity\nVia dew point: VOC (oil)\nPhotoionization detector (PID): MEASUREMENT VALUES AND MEASUREMENT ACCURACY2\nCO2: 0... 2,000 ppm ± 1.5 % of the measuring range and value\n(calibration teamperature): 0... 2,000 ppm ± 2.5 % Full scale\nCO: 0 … 25 ppm ± 1 % of the measuring range and valve\n(calibration temperature): 0 … 25 ppm ± 2 % of measurement range final value\nO2: 0 % … 40 % O2 ± 1 % of the measuring range and end value\n(calibration temperature): 0 % … 40 % O2 ± 1 % of measurement range final value\nDew point: -70 ...+60°C / 10 ... 40,000 ppm ± 2°C\n-70 ...+60°C / 10 ... 40,000 ppm ± 2°C / 1 ppm + 20% of: displayed value\nVOC (oil): 0 … 1 ppm (based on isobutene as calibration\ngas) ± 5 % of the measuring range and end value: (calibration temperature)\n0 … 1 ppm (based on isobutene as calibration gas): TECHNICAL SPECIFICATIONS\nPermissible operating temperature: +5°C ... +45°C\nOperating voltage: Integrated: 24 VDC; standalone: 100-250 VAC, 50/60 Hz\n90 – 260 VAC, 50/60 Hz: Flow rate\n0,5 ... 1,5 l/min; Dew point sensor: 2,0 ... 5,5 l/min: Weight\nIntegrated: 2 kg; stand-alone without AIRBOX: 7.1 kg;: AIRBOX (450 bar): 14 kg (19 kg);\nFootnotes: 1 Optional extra\n2 Accuracy valid at max. +/- 10 ° C deviation from calibration temperature.\n3 Higher charging rate on request\n4 Includes Test with calibration gas; kit with testing gas cylinders and pressure reducer (flow meter) available from BAUER KOMPRESSOREN\n0... 2,000 ppm ± 1.5 % of the measuring range and value\n0... 2,000 ppm ± 2.5 % Full scale\n0 … 25 ppm ± 1 % of the measuring range and valve\n0 … 25 ppm ± 2 % of measurement range final value\n0 % … 40 % O2 ± 1 % of the measuring range and end value\n0 % … 40 % O2 ± 1 % of measurement range final value\n0 … 1 ppm (based on isobutene as calibration\n0 … 1 ppm (based on isobutene as calibration gas)\n90 – 260 VAC, 50/60 Hz\n12 | B-DETECTION PLUS",
+      "page": 12,
+      "section": [
+        "2025-03 B-DETECTION PLUS EN N42078 sc",
+        "Page 12"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "CO2",
+      "headers": [
+        "Nondispersive infrared spectroscopy (NDIR)",
+        "Electrochemical",
+        "Via dew point",
+        "Photoionization detector (PID)",
+        "CO2",
+        "(calibration teamperature)",
+        "CO",
+        "(calibration temperature)",
+        "O2",
+        "(calibration temperature)",
+        "Dew point",
+        "-70 ...+60°C / 10 ... 40,000 ppm ± 2°C / 1 ppm + 20% of",
+        "VOC (oil)",
+        "gas) ± 5 % of the measuring range and end value",
+        "0 … 1 ppm (based on isobutene as calibration gas)",
+        "Permissible operating temperature",
+        "Operating voltage",
+        "90 – 260 VAC, 50/60 Hz",
+        "0,5 ... 1,5 l/min; Dew point sensor: 2,0 ... 5,5 l/min",
+        "Integrated: 2 kg; stand-alone without AIRBOX: 7.1 kg;"
+      ],
+      "row_values": [
+        "CO, O2",
+        "Absolute humidity",
+        "VOC (oil)",
+        "MEASUREMENT VALUES AND MEASUREMENT ACCURACY2",
+        "0... 2,000 ppm ± 1.5 % of the measuring range and value",
+        "0... 2,000 ppm ± 2.5 % Full scale",
+        "0 … 25 ppm ± 1 % of the measuring range and valve",
+        "0 … 25 ppm ± 2 % of measurement range final value",
+        "0 % … 40 % O2 ± 1 % of the measuring range and end value",
+        "0 % … 40 % O2 ± 1 % of measurement range final value",
+        "-70 ...+60°C / 10 ... 40,000 ppm ± 2°C",
+        "displayed value",
+        "0 … 1 ppm (based on isobutene as calibration",
+        "(calibration temperature)",
+        "TECHNICAL SPECIFICATIONS",
+        "+5°C ... +45°C",
+        "Integrated: 24 VDC; standalone: 100-250 VAC, 50/60 Hz",
+        "Flow rate",
+        "Weight",
+        "AIRBOX (450 bar): 14 kg (19 kg);"
+      ],
+      "units": [
+        "ppm",
+        "l/min",
+        "kg",
+        "bar"
+      ],
+      "footnotes": "1 Optional extra\n2 Accuracy valid at max. +/- 10 ° C deviation from calibration temperature.\n3 Higher charging rate on request\n4 Includes Test with calibration gas; kit with testing gas cylinders and pressure reducer (flow meter) available from BAUER KOMPRESSOREN\n0... 2,000 ppm ± 1.5 % of the measuring range and value\n0... 2,000 ppm ± 2.5 % Full scale\n0 … 25 ppm ± 1 % of the measuring range and valve\n0 … 25 ppm ± 2 % of measurement range final value\n0 % … 40 % O2 ± 1 % of the measuring range and end value\n0 % … 40 % O2 ± 1 % of measurement range final value\n0 … 1 ppm (based on isobutene as calibration\n0 … 1 ppm (based on isobutene as calibration gas)\n90 – 260 VAC, 50/60 Hz\n12 | B-DETECTION PLUS",
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.32639344,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "a8080465-4d38-4088-a018-b897564ce51f",
+      "filename": "0237-0071_gb-23-baureihe_4e8745a038-d27e77ec6b.md",
+      "title": "GB 23 series (Helium) · Water-cooled compressors | BAUER KOM",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: GB 23 series (Helium) · Water-cooled compressors | BAUER KOM\na global service network ensure maximum availability whenever it is required.\nPressure-resistant and gas-tight crankcase for high-pressure noble gas compressors\nThe stress-optimized, gas-tight crankcase is designed to safely withstand internal and inlet pressures. Its pressure-resistant structure prevents leakage and reduces mechanical stress, extending service life and ensuring reliable long-term operation when compressing helium, argon, and other noble gases.\nMaximum tightness for noble gas and process gas\napplications\nGas-tight BAUER industrial compressors for helium and argon achieve leakage rates below 0.1 mbar·l/s. This enables extremely low-loss process gas compression and maximum purity for stable processes – ideal for laboratory applications, semiconductor manufacturing, and industrial noble gas applications.\nTechnical Data\nHigh-pressure compressor GB 23, 760–1360 l/min, 90–230 bar\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nGB 23 series | 90–230 bar | 50 Hz\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nGB 23 series | 90–230 bar | 60 Hz",
+      "page": null,
+      "section": [
+        "GB 23 series (Helium) · Water-cooled compressors / BAUER KOM",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.30946237,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "87ccd9a8-5b16-43cb-b9c8-9e0b7be052aa",
+      "filename": "0238-0072_gb-26-baureihe_b30cbe09c3-4360fa9f89.md",
+      "title": "GB 26 series (Helium) · Water-cooled compressors | BAUER KOM",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: GB 26 series (Helium) · Water-cooled compressors | BAUER KOM\na global service network ensure maximum availability whenever it is required.\nPressure-resistant and gas-tight crankcase for high-pressure noble gas compressors\nThe stress-optimized, gas-tight crankcase is designed to safely withstand internal and inlet pressures. Its pressure-resistant structure prevents leakage and reduces mechanical stress, extending service life and ensuring reliable long-term operation when compressing helium, argon, and other noble gases.\nMaximum tightness for noble gas and process gas\napplications\nGas-tight BAUER industrial compressors for helium and argon achieve leakage rates below 0.1 mbar·l/s. This enables extremely low-loss process gas compression and maximum purity for stable processes – ideal for laboratory applications, semiconductor manufacturing, and industrial noble gas applications.\nTechnical Data\nHigh-pressure compressor GB 26, 2800–3300 l/min, 120–330 bar\nModel designation\nEffective free air delivery ¹\nInlet pressure\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nGB 26 series | 120–330 bar\natm.\n330\n4780\n5\n1485\n75\n3100\n6850\n3330\n200\n118\n1,2 (abs)\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for helium.",
+      "page": null,
+      "section": [
+        "GB 26 series (Helium) · Water-cooled compressors / BAUER KOM",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.30895833,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "65823078-392e-4da2-880d-3ba85972e68b",
+      "filename": "0252-0086_hochdruck-speicherflaschenbatterie1_ee683facf9-efa3cfe860.md",
+      "title": "High-pressure storage cylinder battery · Storage systems | B",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage cylinder battery · Storage systems | B\nDocument section: High-pressure storage cylinder battery · Storage systems | B / Web page content\nTable: Technical Data\nHeaders and units: High-pressure storage systems – for helium | Storage system | Number of bottles | Total geometric volume | Permissible working pressure ¹ | Liter | bar\nRow: N45579\nValues: 12 | 600 | 200 | 420013294 | 12 | 600 | 300\nFootnotes: ¹ The pressures specified apply to the maximum setting of the safety valve (e.g. on the compressor). The actual usable pressure is lower.",
+      "page": null,
+      "section": [
+        "High-pressure storage cylinder battery · Storage systems / B",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "N45579",
+      "headers": [
+        "High-pressure storage systems – for helium",
+        "Storage system",
+        "Number of bottles",
+        "Total geometric volume",
+        "Permissible working pressure ¹",
+        "Liter",
+        "bar"
+      ],
+      "row_values": [
+        "12",
+        "600",
+        "200",
+        "420013294",
+        "12",
+        "600",
+        "300"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "¹ The pressures specified apply to the maximum setting of the safety valve (e.g. on the compressor). The actual usable pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.28848485,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "4e790807-b511-47a8-9658-6d479067a797",
+      "filename": "0232-0066_g25-series-ar_32bd6656a6-c0a2dacd0e.md",
+      "title": "G 25 series (Argon) · Air-cooled compressors | BAUER KOMPRES",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: G 25 series (Argon) · Air-cooled compressors | BAUER KOMPRES\ndition monitoring, and a global service network ensure maximum availability whenever it is required.\nEngineering\nfor efficiency, performance, and serviceability\nThe compressor system features a compact, ergonomic design engineered for high energy efficiency and reliable performance. An optimized layout ensures easy maintenance access and service-friendly operation, supporting low operating costs and long-term system availability.\nMaximum tightness for noble gas and process gas\napplications\nGas-tight BAUER industrial compressors for helium and argon achieve leakage rates below 0.1 mbar·l/s. This enables extremely low-loss process gas compression and maximum purity for stable processes – ideal for laboratory applications, semiconductor manufacturing, and industrial noble gas applications.\nTechnical Data\nHigh-pressure compressor G 25, 1750-2100 l/min, 150-350 bar\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nG 25 series | 150 – 230 bar\nG 25 series | 200 – 350 bar\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for Argon.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.\nDetails & Features",
+      "page": null,
+      "section": [
+        "G 25 series (Argon) · Air-cooled compressors / BAUER KOMPRES",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.27205128,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "5c218f7f-d7bb-4cff-be28-477514fa574b",
+      "filename": "0233-0067_g25-series-he_1f64165617-0ed2da1fc4.md",
+      "title": "G 25 series (Helium) · Air-cooled compressors | BAUER KOMPRE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: G 25 series (Helium) · Air-cooled compressors | BAUER KOMPRE\ndition monitoring, and a global service network ensure maximum availability whenever it is required.\nEngineering\nfor efficiency, performance, and serviceability\nThe compressor system features a compact, ergonomic design engineered for high energy efficiency and reliable performance. An optimized layout ensures easy maintenance access and service-friendly operation, supporting low operating costs and long-term system availability.\nMaximum tightness for noble gas and process gas\napplications\nGas-tight BAUER industrial compressors for helium and argon achieve leakage rates below 0.1 mbar·l/s. This enables extremely low-loss process gas compression and maximum purity for stable processes – ideal for laboratory applications, semiconductor manufacturing, and industrial noble gas applications.\nTechnical Data\nHigh-pressure compressor G 25, 1320–1800 l/min, 120–350 bar\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nG 25 series | 150 – 230 bar\nG 25 series | 200 – 350 bar\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for helium.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.\nDetails & Features",
+      "page": null,
+      "section": [
+        "G 25 series (Helium) · Air-cooled compressors / BAUER KOMPRE",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.27181818,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "70c05e95-4de4-4953-ab27-745460d9160e",
+      "filename": "0280-0114_mini-verticus-ar_749f224172-c7a134d40c.md",
+      "title": "MINI-VERTICUS series (Argon) · Air-cooled compressors | BAUE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "MINI-VERTICUS series"
+      ],
+      "media": [
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: MINI-VERTICUS series (Argon) · Air-cooled compressors | BAUE\ndition monitoring, and a global service network ensure maximum availability whenever it is required.\nEngineering\nfor efficiency, performance, and serviceability\nThe compressor system features a compact, ergonomic design engineered for high energy efficiency and reliable performance. An optimized layout ensures easy maintenance access and service-friendly operation, supporting low operating costs and long-term system availability.\nMaximum tightness for noble gas and process gas\napplications\nGas-tight BAUER industrial compressors for helium and argon achieve leakage rates below 0.1 mbar·l/s. This enables extremely low-loss process gas compression and maximum purity for stable processes – ideal for laboratory applications, semiconductor manufacturing, and industrial noble gas applications.\nTechnical Data\nHigh-pressure compressor MINI-VERTICUS, 90 – 180 l/min, 90 – 230 bar\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nMINI-VERTICUS | 90 – 230 bar\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for Argon.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.\nDetails & Features",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS series (Argon) · Air-cooled compressors / BAUE",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.27159204,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "f01eb444-1340-4df3-b917-0de93574875e",
+        "filename": "0188-0022_b-kool1_0358ce6a4f-f9f75b95db.md",
+        "title": "B-KOOL · Air and gas purification | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "compressed air",
+          "nitrogen",
+          "nitrox",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: B-KOOL III\nMedium: Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon\nDimension (L × W × H): 792 × 550 × 390 mm\nWeight approx.: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "page": null,
+        "section": [
+          "B-KOOL · Air and gas purification / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "B-KOOL III",
+        "headers": [
+          "Medium",
+          "Dimension (L × W × H)",
+          "Weight approx.",
+          "Ambient temperature",
+          "Cryogen",
+          "High pressure air inlet temperature",
+          "Maximum operating pressure",
+          "Minimum operating pressure",
+          "Maximum flow rate",
+          "Power supply",
+          "Power consumption"
+        ],
+        "row_values": [
+          "Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon",
+          "792 × 550 × 390 mm",
+          "58 kg",
+          "+5 °C to +45 °C",
+          "R 290 (Propan)",
+          "max. 60 °C",
+          "350 bar / 550 bar",
+          "100 bar",
+          "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+          "200 – 240 VAC, 50 Hz / 60 Hz",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz"
+        ],
+        "units": [
+          "kg",
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.64405167,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+        "filename": "0187-0021_b-kool_c5e62182b0-d01c99958a.md",
+        "title": "B-KOOL · Air purification | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "compressed air",
+          "nitrogen",
+          "nitrox",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: B-KOOL · Air purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: B-KOOL III\nMedium: Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon\nDimension (L × W × H): 792 × 550 × 390 mm\nWeight approx.: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "page": null,
+        "section": [
+          "B-KOOL · Air purification / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "B-KOOL III",
+        "headers": [
+          "Medium",
+          "Dimension (L × W × H)",
+          "Weight approx.",
+          "Ambient temperature",
+          "Cryogen",
+          "High pressure air inlet temperature",
+          "Maximum operating pressure",
+          "Minimum operating pressure",
+          "Maximum flow rate",
+          "Power supply",
+          "Power consumption"
+        ],
+        "row_values": [
+          "Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon",
+          "792 × 550 × 390 mm",
+          "58 kg",
+          "+5 °C to +45 °C",
+          "R 290 (Propan)",
+          "max. 60 °C",
+          "350 bar / 550 bar",
+          "100 bar",
+          "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+          "200 – 240 VAC, 50 Hz / 60 Hz",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz"
+        ],
+        "units": [
+          "kg",
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.64362903,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "nitrox",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: B-KOOL III\nMedium: Compressed air & nitrox (up to 40% O2)\nAmbient temperature: +5 °C to +45 °C\nRefrigerant: R 290 (Propan)\nCompressed air infeed temperature: max. 60 °C\nMax. operating pressure compressed air: 350 bar/550 bar\nMin. operating pressure compressed air: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "page": 12,
+        "section": [
+          "2026 04 Accessory Systems EN N39608 sc",
+          "Page 12"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "B-KOOL III",
+        "headers": [
+          "Medium",
+          "Ambient temperature",
+          "Refrigerant",
+          "Compressed air infeed temperature",
+          "Max. operating pressure compressed air",
+          "Min. operating pressure compressed air",
+          "Permissible free air delivery, compressor",
+          "200 - 650 l/min (according to ISO 1217, air)",
+          "Power supply",
+          "200 - 240 VAC 60 Hz (single phase)",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz",
+          "15",
+          "Ambient temperature [°C]",
+          "WITH B-KOOL III",
+          "30",
+          "40",
+          "50",
+          "12,0",
+          "8,0",
+          "4,0"
+        ],
+        "row_values": [
+          "Compressed air & nitrox (up to 40% O2)",
+          "+5 °C to +45 °C",
+          "R 290 (Propan)",
+          "max. 60 °C",
+          "350 bar/550 bar",
+          "100 bar",
+          "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+          "200 - 420 l/min (helium and argon)",
+          "200 - 240 VAC 50 Hz (single phase)",
+          "Power consumption",
+          "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+          "20",
+          "EXTENDED LIFE TIME",
+          "25",
+          "35",
+          "45",
+          "55",
+          "10,0",
+          "6,0",
+          "2,0"
+        ],
+        "units": [
+          "l/min",
+          "bar"
+        ],
+        "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.55753968,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "eecfe0e5-ee45-43f8-95b5-28013f2068c2",
+        "filename": "0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994.md",
+        "title": "2025-03_B-DETECTION_PLUS_EN_N42078_sc",
+        "language": "en",
+        "publication_date": "2025-03-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION"
+        ],
+        "media": [],
+        "component_categories": [
+          "valve",
+          "sensor"
+        ],
+        "standards": [],
+        "content": "Document: 2025-03_B-DETECTION_PLUS_EN_N42078_sc\nDocument section: 2025-03_B-DETECTION_PLUS_EN_N42078_sc / Page 12\nTable: TECHNICAL DATA\nRow: CO2\nNondispersive infrared spectroscopy (NDIR): CO, O2\nElectrochemical: Absolute humidity\nVia dew point: VOC (oil)\nPhotoionization detector (PID): MEASUREMENT VALUES AND MEASUREMENT ACCURACY2\nCO2: 0... 2,000 ppm ± 1.5 % of the measuring range and value\n(calibration teamperature): 0... 2,000 ppm ± 2.5 % Full scale\nCO: 0 … 25 ppm ± 1 % of the measuring range and valve\n(calibration temperature): 0 … 25 ppm ± 2 % of measurement range final value\nO2: 0 % … 40 % O2 ± 1 % of the measuring range and end value\n(calibration temperature): 0 % … 40 % O2 ± 1 % of measurement range final value\nDew point: -70 ...+60°C / 10 ... 40,000 ppm ± 2°C\n-70 ...+60°C / 10 ... 40,000 ppm ± 2°C / 1 ppm + 20% of: displayed value\nVOC (oil): 0 … 1 ppm (based on isobutene as calibration\ngas) ± 5 % of the measuring range and end value: (calibration temperature)\n0 … 1 ppm (based on isobutene as calibration gas): TECHNICAL SPECIFICATIONS\nPermissible operating temperature: +5°C ... +45°C\nOperating voltage: Integrated: 24 VDC; standalone: 100-250 VAC, 50/60 Hz\n90 – 260 VAC, 50/60 Hz: Flow rate\n0,5 ... 1,5 l/min; Dew point sensor: 2,0 ... 5,5 l/min: Weight\nIntegrated: 2 kg; stand-alone without AIRBOX: 7.1 kg;: AIRBOX (450 bar): 14 kg (19 kg);\nFootnotes: 1 Optional extra\n2 Accuracy valid at max. +/- 10 ° C deviation from calibration temperature.\n3 Higher charging rate on request\n4 Includes Test with calibration gas; kit with testing gas cylinders and pressure reducer (flow meter) available from BAUER KOMPRESSOREN\n0... 2,000 ppm ± 1.5 % of the measuring range and value\n0... 2,000 ppm ± 2.5 % Full scale\n0 … 25 ppm ± 1 % of the measuring range and valve\n0 … 25 ppm ± 2 % of measurement range final value\n0 % … 40 % O2 ± 1 % of the measuring range and end value\n0 % … 40 % O2 ± 1 % of measurement range final value\n0 … 1 ppm (based on isobutene as calibration\n0 … 1 ppm (based on isobutene as calibration gas)\n90 – 260 VAC, 50/60 Hz\n12 | B-DETECTION PLUS",
+        "page": 12,
+        "section": [
+          "2025-03 B-DETECTION PLUS EN N42078 sc",
+          "Page 12"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "CO2",
+        "headers": [
+          "Nondispersive infrared spectroscopy (NDIR)",
+          "Electrochemical",
+          "Via dew point",
+          "Photoionization detector (PID)",
+          "CO2",
+          "(calibration teamperature)",
+          "CO",
+          "(calibration temperature)",
+          "O2",
+          "(calibration temperature)",
+          "Dew point",
+          "-70 ...+60°C / 10 ... 40,000 ppm ± 2°C / 1 ppm + 20% of",
+          "VOC (oil)",
+          "gas) ± 5 % of the measuring range and end value",
+          "0 … 1 ppm (based on isobutene as calibration gas)",
+          "Permissible operating temperature",
+          "Operating voltage",
+          "90 – 260 VAC, 50/60 Hz",
+          "0,5 ... 1,5 l/min; Dew point sensor: 2,0 ... 5,5 l/min",
+          "Integrated: 2 kg; stand-alone without AIRBOX: 7.1 kg;"
+        ],
+        "row_values": [
+          "CO, O2",
+          "Absolute humidity",
+          "VOC (oil)",
+          "MEASUREMENT VALUES AND MEASUREMENT ACCURACY2",
+          "0... 2,000 ppm ± 1.5 % of the measuring range and value",
+          "0... 2,000 ppm ± 2.5 % Full scale",
+          "0 … 25 ppm ± 1 % of the measuring range and valve",
+          "0 … 25 ppm ± 2 % of measurement range final value",
+          "0 % … 40 % O2 ± 1 % of the measuring range and end value",
+          "0 % … 40 % O2 ± 1 % of measurement range final value",
+          "-70 ...+60°C / 10 ... 40,000 ppm ± 2°C",
+          "displayed value",
+          "0 … 1 ppm (based on isobutene as calibration",
+          "(calibration temperature)",
+          "TECHNICAL SPECIFICATIONS",
+          "+5°C ... +45°C",
+          "Integrated: 24 VDC; standalone: 100-250 VAC, 50/60 Hz",
+          "Flow rate",
+          "Weight",
+          "AIRBOX (450 bar): 14 kg (19 kg);"
+        ],
+        "units": [
+          "ppm",
+          "l/min",
+          "kg",
+          "bar"
+        ],
+        "footnotes": "1 Optional extra\n2 Accuracy valid at max. +/- 10 ° C deviation from calibration temperature.\n3 Higher charging rate on request\n4 Includes Test with calibration gas; kit with testing gas cylinders and pressure reducer (flow meter) available from BAUER KOMPRESSOREN\n0... 2,000 ppm ± 1.5 % of the measuring range and value\n0... 2,000 ppm ± 2.5 % Full scale\n0 … 25 ppm ± 1 % of the measuring range and valve\n0 … 25 ppm ± 2 % of measurement range final value\n0 % … 40 % O2 ± 1 % of the measuring range and end value\n0 % … 40 % O2 ± 1 % of measurement range final value\n0 … 1 ppm (based on isobutene as calibration\n0 … 1 ppm (based on isobutene as calibration gas)\n90 – 260 VAC, 50/60 Hz\n12 | B-DETECTION PLUS",
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.32639344,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "a8080465-4d38-4088-a018-b897564ce51f",
+        "filename": "0237-0071_gb-23-baureihe_4e8745a038-d27e77ec6b.md",
+        "title": "GB 23 series (Helium) · Water-cooled compressors | BAUER KOM",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: GB 23 series (Helium) · Water-cooled compressors | BAUER KOM\na global service network ensure maximum availability whenever it is required.\nPressure-resistant and gas-tight crankcase for high-pressure noble gas compressors\nThe stress-optimized, gas-tight crankcase is designed to safely withstand internal and inlet pressures. Its pressure-resistant structure prevents leakage and reduces mechanical stress, extending service life and ensuring reliable long-term operation when compressing helium, argon, and other noble gases.\nMaximum tightness for noble gas and process gas\napplications\nGas-tight BAUER industrial compressors for helium and argon achieve leakage rates below 0.1 mbar·l/s. This enables extremely low-loss process gas compression and maximum purity for stable processes – ideal for laboratory applications, semiconductor manufacturing, and industrial noble gas applications.\nTechnical Data\nHigh-pressure compressor GB 23, 760–1360 l/min, 90–230 bar\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nGB 23 series | 90–230 bar | 50 Hz\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nGB 23 series | 90–230 bar | 60 Hz",
+        "page": null,
+        "section": [
+          "GB 23 series (Helium) · Water-cooled compressors / BAUER KOM",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.30946237,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "87ccd9a8-5b16-43cb-b9c8-9e0b7be052aa",
+        "filename": "0238-0072_gb-26-baureihe_b30cbe09c3-4360fa9f89.md",
+        "title": "GB 26 series (Helium) · Water-cooled compressors | BAUER KOM",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: GB 26 series (Helium) · Water-cooled compressors | BAUER KOM\na global service network ensure maximum availability whenever it is required.\nPressure-resistant and gas-tight crankcase for high-pressure noble gas compressors\nThe stress-optimized, gas-tight crankcase is designed to safely withstand internal and inlet pressures. Its pressure-resistant structure prevents leakage and reduces mechanical stress, extending service life and ensuring reliable long-term operation when compressing helium, argon, and other noble gases.\nMaximum tightness for noble gas and process gas\napplications\nGas-tight BAUER industrial compressors for helium and argon achieve leakage rates below 0.1 mbar·l/s. This enables extremely low-loss process gas compression and maximum purity for stable processes – ideal for laboratory applications, semiconductor manufacturing, and industrial noble gas applications.\nTechnical Data\nHigh-pressure compressor GB 26, 2800–3300 l/min, 120–330 bar\nModel designation\nEffective free air delivery ¹\nInlet pressure\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nGB 26 series | 120–330 bar\natm.\n330\n4780\n5\n1485\n75\n3100\n6850\n3330\n200\n118\n1,2 (abs)\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for helium.",
+        "page": null,
+        "section": [
+          "GB 26 series (Helium) · Water-cooled compressors / BAUER KOM",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.30895833,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "65823078-392e-4da2-880d-3ba85972e68b",
+        "filename": "0252-0086_hochdruck-speicherflaschenbatterie1_ee683facf9-efa3cfe860.md",
+        "title": "High-pressure storage cylinder battery · Storage systems | B",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage cylinder battery · Storage systems | B\nDocument section: High-pressure storage cylinder battery · Storage systems | B / Web page content\nTable: Technical Data\nHeaders and units: High-pressure storage systems – for helium | Storage system | Number of bottles | Total geometric volume | Permissible working pressure ¹ | Liter | bar\nRow: N45579\nValues: 12 | 600 | 200 | 420013294 | 12 | 600 | 300\nFootnotes: ¹ The pressures specified apply to the maximum setting of the safety valve (e.g. on the compressor). The actual usable pressure is lower.",
+        "page": null,
+        "section": [
+          "High-pressure storage cylinder battery · Storage systems / B",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "N45579",
+        "headers": [
+          "High-pressure storage systems – for helium",
+          "Storage system",
+          "Number of bottles",
+          "Total geometric volume",
+          "Permissible working pressure ¹",
+          "Liter",
+          "bar"
+        ],
+        "row_values": [
+          "12",
+          "600",
+          "200",
+          "420013294",
+          "12",
+          "600",
+          "300"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "¹ The pressures specified apply to the maximum setting of the safety valve (e.g. on the compressor). The actual usable pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.28848485,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "4e790807-b511-47a8-9658-6d479067a797",
+        "filename": "0232-0066_g25-series-ar_32bd6656a6-c0a2dacd0e.md",
+        "title": "G 25 series (Argon) · Air-cooled compressors | BAUER KOMPRES",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: G 25 series (Argon) · Air-cooled compressors | BAUER KOMPRES\ndition monitoring, and a global service network ensure maximum availability whenever it is required.\nEngineering\nfor efficiency, performance, and serviceability\nThe compressor system features a compact, ergonomic design engineered for high energy efficiency and reliable performance. An optimized layout ensures easy maintenance access and service-friendly operation, supporting low operating costs and long-term system availability.\nMaximum tightness for noble gas and process gas\napplications\nGas-tight BAUER industrial compressors for helium and argon achieve leakage rates below 0.1 mbar·l/s. This enables extremely low-loss process gas compression and maximum purity for stable processes – ideal for laboratory applications, semiconductor manufacturing, and industrial noble gas applications.\nTechnical Data\nHigh-pressure compressor G 25, 1750-2100 l/min, 150-350 bar\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nG 25 series | 150 – 230 bar\nG 25 series | 200 – 350 bar\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for Argon.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.\nDetails & Features",
+        "page": null,
+        "section": [
+          "G 25 series (Argon) · Air-cooled compressors / BAUER KOMPRES",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.27205128,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "5c218f7f-d7bb-4cff-be28-477514fa574b",
+        "filename": "0233-0067_g25-series-he_1f64165617-0ed2da1fc4.md",
+        "title": "G 25 series (Helium) · Air-cooled compressors | BAUER KOMPRE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: G 25 series (Helium) · Air-cooled compressors | BAUER KOMPRE\ndition monitoring, and a global service network ensure maximum availability whenever it is required.\nEngineering\nfor efficiency, performance, and serviceability\nThe compressor system features a compact, ergonomic design engineered for high energy efficiency and reliable performance. An optimized layout ensures easy maintenance access and service-friendly operation, supporting low operating costs and long-term system availability.\nMaximum tightness for noble gas and process gas\napplications\nGas-tight BAUER industrial compressors for helium and argon achieve leakage rates below 0.1 mbar·l/s. This enables extremely low-loss process gas compression and maximum purity for stable processes – ideal for laboratory applications, semiconductor manufacturing, and industrial noble gas applications.\nTechnical Data\nHigh-pressure compressor G 25, 1320–1800 l/min, 120–350 bar\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nG 25 series | 150 – 230 bar\nG 25 series | 200 – 350 bar\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for helium.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.\nDetails & Features",
+        "page": null,
+        "section": [
+          "G 25 series (Helium) · Air-cooled compressors / BAUER KOMPRE",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.27181818,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "70c05e95-4de4-4953-ab27-745460d9160e",
+        "filename": "0280-0114_mini-verticus-ar_749f224172-c7a134d40c.md",
+        "title": "MINI-VERTICUS series (Argon) · Air-cooled compressors | BAUE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "MINI-VERTICUS series"
+        ],
+        "media": [
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: MINI-VERTICUS series (Argon) · Air-cooled compressors | BAUE\ndition monitoring, and a global service network ensure maximum availability whenever it is required.\nEngineering\nfor efficiency, performance, and serviceability\nThe compressor system features a compact, ergonomic design engineered for high energy efficiency and reliable performance. An optimized layout ensures easy maintenance access and service-friendly operation, supporting low operating costs and long-term system availability.\nMaximum tightness for noble gas and process gas\napplications\nGas-tight BAUER industrial compressors for helium and argon achieve leakage rates below 0.1 mbar·l/s. This enables extremely low-loss process gas compression and maximum purity for stable processes – ideal for laboratory applications, semiconductor manufacturing, and industrial noble gas applications.\nTechnical Data\nHigh-pressure compressor MINI-VERTICUS, 90 – 180 l/min, 90 – 230 bar\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nMINI-VERTICUS | 90 – 230 bar\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for Argon.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.\nDetails & Features",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS series (Argon) · Air-cooled compressors / BAUE",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.27159204,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "b kool iii"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": true,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 3,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 3,
+      "elapsed_ms": 915.4
+    }
+  },
+  "completed_at": "2026-07-23T14:50:52.543039+00:00",
+  "case_id": "B19",
+  "split": "development",
+  "category": "exact_product_limit",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

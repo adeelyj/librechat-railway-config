@@ -1,0 +1,1213 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1198.93,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+      "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "BM series",
+        "BM 6.1/40-11",
+        "BM 10.1/40-15"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz | BM 6.1/40-11\nRow: BM 10.1/40-15\nValues: 1080 | 64.8 | 38.1 | 40 | 580 | 3 | 1480 | 15 | 475 | 1045\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "page": null,
+      "section": [
+        "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "BM 10.1/40-15",
+      "headers": [
+        "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Shutdown pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "BM series 40 bar – 50 Hz",
+        "BM 6.1/40-11"
+      ],
+      "row_values": [
+        "1080",
+        "64.8",
+        "38.1",
+        "40",
+        "580",
+        "3",
+        "1480",
+        "15",
+        "475",
+        "1045"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.37718292,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+      "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+      "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "BM series",
+        "BM 6.1/40-11",
+        "BM 10.1/40-15",
+        "BM 20.1/40-30"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz | BM 6.1/40-11 | BM 10.1/40-15\nRow: BM 20.1/40-30\nValues: 2210 | 132.6 | 78 | 40 | 580 | 3 | 1475 | 30 | 960 | 2115\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "page": null,
+      "section": [
+        "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "BM 20.1/40-30",
+      "headers": [
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "BM series 40 bar – 50 Hz",
+        "BM 6.1/40-11",
+        "BM 10.1/40-15"
+      ],
+      "row_values": [
+        "2210",
+        "132.6",
+        "78",
+        "40",
+        "580",
+        "3",
+        "1475",
+        "30",
+        "960",
+        "2115"
+      ],
+      "units": [
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.37691851,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+      "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+      "title": "Hochdruck-Zubehoerkatalog_DE",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "K 2"
+      ],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: Hochdruck-Zubehoerkatalog_DE\nDocument section: Hochdruck-Zubehoerkatalog_DE / Page 55\nTable: TECHNISCHE DATEN\nRow: Die Druckangaben in der nachfolgenden Tabelle (Seite 109) wurden gem. DIN\n2413 Geltungsbereich I für 20 °C Raumtemperatur errechnet. Bei höheren: Temperaturen ist nur eine reduzierte Druckbeaufschlagung zulässig, die über\neinen Berechnungsfaktor ermittelt werden kann.: Der Richtwert für die Durchflussgeschwindigkeit in Rohren beträgt 6–15 m/s\nWerkstoffkennwert: K = 235N/mm² Sicherheitsbeiwert: S 1,5: Beispiel bei 50 °C Rohrtemperatur und 200 bar Druck:\nFaktor = 0,945 Das bedeutet: 200 bar × 0,945 = 189 bar max. Druck: Beispiel bei 100 °C Rohrtemperatur und 200 bar Druck:\nFaktor = 0,885 Das bedeutet: 200 bar × 0,885 = 177 bar max. Druck: Zur genauen Berechnung siehe DIN 17440\nmm/bar: ∅/max.\n120: 135\n140: 165\n170: 180\n205: 220\n297: 345\n385: 425\n450: 540\n6 × 1,0: N3616\n6 × 1,5: N3617\n8 × 1,0: N3618\n8 × 1,5: N3619\n8 × 2,0: N18356\n10 × 1,0: N3620\n10 × 1,5: N4699\nFootnotes: 6 × 1,0\n6 × 1,5\n8 × 1,0\n8 × 1,5\n8 × 2,0\n10 × 1,0\n10 × 1,5\n10 × 2,0\n12 × 1,0\n12 × 1,5\n12 × 2,0\n12 × 3,0\n15 × 1,0\n15 × 1,5\n16 × 2,0\n18 × 1,0\n18 × 1,5\n20 × 2,5\n20 × 3,0\n22 × 1,5\n22 × 2,0\n28 × 1,5\n28 × 2,0\n42 × 2,0",
+      "page": 55,
+      "section": [
+        "Hochdruck-Zubehoerkatalog_DE",
+        "Page 55"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNISCHE DATEN",
+      "row_label": "Die Druckangaben in der nachfolgenden Tabelle (Seite 109) wurden gem. DIN",
+      "headers": [
+        "2413 Geltungsbereich I für 20 °C Raumtemperatur errechnet. Bei höheren",
+        "einen Berechnungsfaktor ermittelt werden kann.",
+        "Werkstoffkennwert: K = 235N/mm² Sicherheitsbeiwert: S 1,5",
+        "Faktor = 0,945 Das bedeutet: 200 bar × 0,945 = 189 bar max. Druck",
+        "Faktor = 0,885 Das bedeutet: 200 bar × 0,885 = 177 bar max. Druck",
+        "mm/bar",
+        "120",
+        "140",
+        "170",
+        "205",
+        "297",
+        "385",
+        "450",
+        "6 × 1,0",
+        "6 × 1,5",
+        "8 × 1,0",
+        "8 × 1,5",
+        "8 × 2,0",
+        "10 × 1,0",
+        "10 × 1,5"
+      ],
+      "row_values": [
+        "Temperaturen ist nur eine reduzierte Druckbeaufschlagung zulässig, die über",
+        "Der Richtwert für die Durchflussgeschwindigkeit in Rohren beträgt 6–15 m/s",
+        "Beispiel bei 50 °C Rohrtemperatur und 200 bar Druck:",
+        "Beispiel bei 100 °C Rohrtemperatur und 200 bar Druck:",
+        "Zur genauen Berechnung siehe DIN 17440",
+        "∅/max.",
+        "135",
+        "165",
+        "180",
+        "220",
+        "345",
+        "425",
+        "540",
+        "N3616",
+        "N3617",
+        "N3618",
+        "N3619",
+        "N18356",
+        "N3620",
+        "N4699"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "6 × 1,0\n6 × 1,5\n8 × 1,0\n8 × 1,5\n8 × 2,0\n10 × 1,0\n10 × 1,5\n10 × 2,0\n12 × 1,0\n12 × 1,5\n12 × 2,0\n12 × 3,0\n15 × 1,0\n15 × 1,5\n16 × 2,0\n18 × 1,0\n18 × 1,5\n20 × 2,5\n20 × 3,0\n22 × 1,5\n22 × 2,0\n28 × 1,5\n28 × 2,0\n42 × 2,0",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.28402256,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+      "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+      "title": "Hochdruck-Zubehoerkatalog_DE",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "K 2"
+      ],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: Hochdruck-Zubehoerkatalog_DE\nDocument section: Hochdruck-Zubehoerkatalog_DE / Page 55\nTable: TECHNISCHE DATEN\nRow: Der Richtwert für die Durchflussgeschwindigkeit in Rohren beträgt 6–15 m/s\nWerkstoffkennwert: K = 235N/mm² Sicherheitsbeiwert: S 1,5: Beispiel bei 50 °C Rohrtemperatur und 200 bar Druck:\nFaktor = 0,945 Das bedeutet: 200 bar × 0,945 = 189 bar max. Druck: Beispiel bei 100 °C Rohrtemperatur und 200 bar Druck:\nFaktor = 0,885 Das bedeutet: 200 bar × 0,885 = 177 bar max. Druck: Zur genauen Berechnung siehe DIN 17440\nmm/bar: ∅/max.\n120: 135\n140: 165\n170: 180\n205: 220\n297: 345\n385: 425\n450: 540\n6 × 1,0: N3616\n6 × 1,5: N3617\n8 × 1,0: N3618\n8 × 1,5: N3619\n8 × 2,0: N18356\n10 × 1,0: N3620\n10 × 1,5: N4699\n10 × 2,0: N17973\n12 × 1,0: N15098\nFootnotes: 6 × 1,0\n6 × 1,5\n8 × 1,0\n8 × 1,5\n8 × 2,0\n10 × 1,0\n10 × 1,5\n10 × 2,0\n12 × 1,0\n12 × 1,5\n12 × 2,0\n12 × 3,0\n15 × 1,0\n15 × 1,5\n16 × 2,0\n18 × 1,0\n18 × 1,5\n20 × 2,5\n20 × 3,0\n22 × 1,5\n22 × 2,0\n28 × 1,5\n28 × 2,0\n42 × 2,0",
+      "page": 55,
+      "section": [
+        "Hochdruck-Zubehoerkatalog_DE",
+        "Page 55"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNISCHE DATEN",
+      "row_label": "Der Richtwert für die Durchflussgeschwindigkeit in Rohren beträgt 6–15 m/s",
+      "headers": [
+        "Werkstoffkennwert: K = 235N/mm² Sicherheitsbeiwert: S 1,5",
+        "Faktor = 0,945 Das bedeutet: 200 bar × 0,945 = 189 bar max. Druck",
+        "Faktor = 0,885 Das bedeutet: 200 bar × 0,885 = 177 bar max. Druck",
+        "mm/bar",
+        "120",
+        "140",
+        "170",
+        "205",
+        "297",
+        "385",
+        "450",
+        "6 × 1,0",
+        "6 × 1,5",
+        "8 × 1,0",
+        "8 × 1,5",
+        "8 × 2,0",
+        "10 × 1,0",
+        "10 × 1,5",
+        "10 × 2,0",
+        "12 × 1,0"
+      ],
+      "row_values": [
+        "Beispiel bei 50 °C Rohrtemperatur und 200 bar Druck:",
+        "Beispiel bei 100 °C Rohrtemperatur und 200 bar Druck:",
+        "Zur genauen Berechnung siehe DIN 17440",
+        "∅/max.",
+        "135",
+        "165",
+        "180",
+        "220",
+        "345",
+        "425",
+        "540",
+        "N3616",
+        "N3617",
+        "N3618",
+        "N3619",
+        "N18356",
+        "N3620",
+        "N4699",
+        "N17973",
+        "N15098"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "6 × 1,0\n6 × 1,5\n8 × 1,0\n8 × 1,5\n8 × 2,0\n10 × 1,0\n10 × 1,5\n10 × 2,0\n12 × 1,0\n12 × 1,5\n12 × 2,0\n12 × 3,0\n15 × 1,0\n15 × 1,5\n16 × 2,0\n18 × 1,0\n18 × 1,5\n20 × 2,5\n20 × 3,0\n22 × 1,5\n22 × 2,0\n28 × 1,5\n28 × 2,0\n42 × 2,0",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.25528223,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "679306d1-0fcb-4474-bf9a-280c02aae0a0",
+      "filename": "0083-bauer_amfile_203-3d3040caa9.md",
+      "title": "bauer_amfile_203",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "ZERTIFIKAT",
+        "Zertifikat-Registrier-Nr.:1210417634TMS/Auftrags-Nr.:70008415",
+        "CERTIFICATE",
+        "Dieses Zertifikat ist gultig vom 25.09.2024 bis 29.08.2027."
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_203\nmfile_203\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_203.pdf`\n- Original SHA-256: `3d3040caa9e625a2f48dfa6b5986a8d5b2e22a1a4fbe0f35b32376c95735ea0b`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nZERTIFIKAT\nCERTIFICADO\nZertifikat-Registrier-Nr.:1210417634TMS/Auftrags-Nr.:70008415\nDie Zertifizierungsstelle\nderTuvsUDManagementServiceGmbH\nbescheinigt,dassdieOrganisation\nBAUER\nKOMPRESSOREN\nCEPTNONKAT\nQuality.Our DNA\nBAUERKOMPRESSORENGmbH\nStablistraBe8\n81477Munchen\nDeutschland\nfur den Geltungsbereich\nVertrieb,Entwicklung,HerstellungundServicevonVerdichteranlagen,\n證證書\nAufbereitungs-undSpeichersystemenfurLuftundGasebis5o0bar\neinschlieBlichderStandortegemaBAnlage\neinUmweltmanagementsystemeingefuhrt hatund anwendet.\nDurcheinAuditwurdederNachweiserbracht,\ndassdieForderungender\nDINENISO14001:2015\nCERTIFICATE\nerfullt sind.\nDieses Zertifikat ist gultig vom 25.09.2024 bis 29.08.2027.\nVorherigesZertifikat gultig bis 29.08.2024.\nPα以(\nIAF\nDAkkS\nDeutsche\nZERTIFIKAT\nAkkreditierungsstelle\nFredWenke\nD-ZM-14143-01-00\nLeiterderZertifizierungsstelle\nMunchen,25.09.2024\nMS/01-07/2023\nSeite 1von 2\nTUv SUD Management Service GmbH ·Zertifizierungsstelle·Ridlerstrasse 57·B0339 Munchen● Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+      "page": null,
+      "section": [
+        "bauer_amfile_203"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.19343547,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "4782bf05-0d55-4e9e-8123-1623ddf99632",
+      "filename": "0023-2019-02_B-NEWS_DE_sc-6bb5417af9.md",
+      "title": "2019-02_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2019-02-01",
+      "certificates": [],
+      "product_families": [
+        "VERTICUS und",
+        "PE-VE ist",
+        "MINI-VERTICUS und",
+        "VERTICUS zur"
+      ],
+      "media": [
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "booster"
+      ],
+      "standards": [],
+      "content": "Document: 2019-02_B-NEWS_DE_sc\nBooster sowie\nals\nSchraube-Booster\nKombination\nGIB26.5 bis 500 bar Enddruck, die BK\n52 Baureihe bis 420 bar erhältlich. Ein\nechter Star im Bereich VERTICUS und\nPE-VE ist die Boosteranlage GIB15.41.\nMit Liefermengen bis zu 830 l/min bei\nmaximal 350 bar Enddruck setzt sie in\ndiesem Bereich den Standard. Für\nmehr Wirtschaftlichkeit und geringeren\nPlatzbedarf: Kompressoren der Baurei-\nhe MINI-VERTICUS und VERTICUS zur\nVerdichtung von Helium und Argon\nwerden nun in der Basiskonfiguration\nmit kombiniertem Ansaug- und Kon-\ndensatbehälter ausgestattet.\nQualität ist immer der Maßstab\nUnabhängig vom Produkt gilt bei BAUER\ndas Gebot kompromissloser Qualität.\nProdukte durchlaufen auch nach der\n­Serieneinführung im unternehmenseige-\nnen Qualitätserprobungszentrum im-\nmer wieder rigide Kontrollen. So wurde\ngerade ein 8000-Stunden-Dauertest bei\nder mobilen PE-300-TE Anlage absol-\nviert, bei dem im Langzeittest der Ein-\nfluss von unterschiedlichen Temperatu-\nren und Drehzahlen bis 1800 min-1 un-\ntersucht wurde. Mit hervorragendem\nErgebnis, das die Erfahrungen aus der\nPraxis bestätigt: Es konnten nicht nur\nkeine negativen Auswirkungen aufgrund\nhöherer Drehzahlen festgestellt werden,\nsondern es hat sich erwartungsgemäß\nwieder einmal Folgendes bestätigt: Die\nhohe Qualität der BAUER Kompressor-\nblöcke ermöglicht den Einsatz bei här-\ntesten Bedingungen und unterschiedli-\nchen Drehzahlen.",
+      "page": 8,
+      "section": [
+        "2019-02_B-NEWS_DE_sc",
+        "Page 8"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "vector"
+      ],
+      "score": 0.17786099,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "d8fe1ea3-2818-42a8-8620-530803662ed3",
+      "filename": "0253-0087_hochdruck-speichersystem_022666859b-7eb29d8f59.md",
+      "title": "High-pressure storage system · Storage systems | BAUER KOMPR",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [
+        "DIN EN 12021"
+      ],
+      "content": "Document: High-pressure storage system · Storage systems | BAUER KOMPR\nur Auswahl. Eine Anbindung externer Signalgeber sowie der Betrieb im Verbundsystem oder mit externem Display ist jederzeit möglich.\nOptions\nSuper Silent-Version\nDie Super Silent-Verkleidung reduziert den Schalldruckpegel der Kompressoranlage deutlich und ermöglicht den Anschluss eines Abluftschachts. Die effektive Schalldämmung sorgt für einen leiseren Betrieb und kann bei Bedarf auch nachträglich nachgerüstet werden.\nFiltersystem P 61\nDas P 61 Filtersystem mit Öl- und Wasserabscheider sowie Druckhalterückschlagventil sorgt bei Verwendung originaler BAUER Filterpatronen für zuverlässige Atemluft nach DIN EN 12021:2014¹. Ein baumustergeprüftes, verplombtes Enddrucksicherheitsventil garantiert hohe Betriebssicherheit. Die aufbereitbare Luftmenge beträgt 2.400 m³. ¹ Gilt bei sachgemäßer Wartung, Aufstellung nach Betreiberhandbuch und Nutzung des BAUER B-AEROGUARD, wenn die CO₂-Konzentration die Normwerte übersteigt.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches",
+      "page": null,
+      "section": [
+        "High-pressure storage system · Storage systems | BAUER KOMPR",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.16641447,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "9c3287b3-96a3-4044-a529-7722d3c59221",
+      "filename": "0249-0083_hochdruck-gasaufbereitung_9c0910f906-bb70389eb3.md",
+      "title": "High-pressure gas purification · Gas purification | BAUER KO",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [
+        "DIN EN 12021"
+      ],
+      "content": "Document: High-pressure gas purification · Gas purification | BAUER KO\nzur Auswahl. Eine Anbindung externer Signalgeber sowie der Betrieb im Verbundsystem oder mit externem Display ist jederzeit möglich.\nB-DRAIN Kondensatautomatik\nDie Kondensatautomatik B-DRAIN leitet das anfallende Wasser-Öl-Gemisch automatisch aus Zwischen- und Endabscheider ab. Magnetventile steuern den Ablauf einzeln und zuverlässig. Der sanfte, kontrollierte Kondensatablass reduziert Druckverluste, spart Energie und erhöht die Effizienz. Im Vergleich zu herkömmlichen Lösungen arbeitet B-DRAIN deutlich leiser.\nOptionen\nSuper Silent-Version\nDie Super Silent-Verkleidung reduziert den Schalldruckpegel der Kompressoranlage deutlich und ermöglicht den Anschluss eines Abluftschachts. Die effektive Schalldämmung sorgt für einen leiseren Betrieb und kann bei Bedarf auch nachträglich nachgerüstet werden.\nFiltersystem P 61\nDas P 61 Filtersystem mit Öl- und Wasserabscheider sowie Druckhalterückschlagventil sorgt bei Verwendung originaler BAUER Filterpatronen für zuverlässige Atemluft nach DIN EN 12021:2014¹. Ein baumustergeprüftes, verplombtes Enddrucksicherheitsventil garantiert hohe Betriebssicherheit. Die aufbereitbare Luftmenge beträgt 2.400 m³. ¹ Gilt bei sachgemäßer Wartung, Aufstellung nach Betreiberhandbuch und Nutzung des BAUER B-AEROGUARD, wenn die CO₂-Konzentration die Normwerte übersteigt.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport",
+      "page": null,
+      "section": [
+        "High-pressure gas purification · Gas purification | BAUER KO",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.16571485,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "c5f82c16-aa9d-482a-9774-a5758bbf54ee",
+      "filename": "0229-0063_full-und-betankungssteuerung1_ff69f2c140-cc747df802.md",
+      "title": "Filling and refuelling control · Filling and refuelling cont",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "filter",
+        "control"
+      ],
+      "standards": [
+        "DIN EN 12021"
+      ],
+      "content": "Document: Filling and refuelling control · Filling and refuelling cont\nur Auswahl. Eine Anbindung externer Signalgeber sowie der Betrieb im Verbundsystem oder mit externem Display ist jederzeit möglich.\nOptions\nSuper Silent-Version\nDie Super Silent-Verkleidung reduziert den Schalldruckpegel der Kompressoranlage deutlich und ermöglicht den Anschluss eines Abluftschachts. Die effektive Schalldämmung sorgt für einen leiseren Betrieb und kann bei Bedarf auch nachträglich nachgerüstet werden.\nFiltersystem P 61\nDas P 61 Filtersystem mit Öl- und Wasserabscheider sowie Druckhalterückschlagventil sorgt bei Verwendung originaler BAUER Filterpatronen für zuverlässige Atemluft nach DIN EN 12021:2014¹. Ein baumustergeprüftes, verplombtes Enddrucksicherheitsventil garantiert hohe Betriebssicherheit. Die aufbereitbare Luftmenge beträgt 2.400 m³. ¹ Gilt bei sachgemäßer Wartung, Aufstellung nach Betreiberhandbuch und Nutzung des BAUER B-AEROGUARD, wenn die CO₂-Konzentration die Normwerte übersteigt.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches",
+      "page": null,
+      "section": [
+        "Filling and refuelling control · Filling and refuelling cont",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.16549536,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "4782bf05-0d55-4e9e-8123-1623ddf99632",
+      "filename": "0023-2019-02_B-NEWS_DE_sc-6bb5417af9.md",
+      "title": "2019-02_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2019-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2019-02_B-NEWS_DE_sc\nit „Business\nBike“. Mit über 3.000 angebundenen\nFachhändlern ist „Business Bike“ einer\nder führenden Anbieter in Deutsch-\nland.\nBei den Infoveranstaltungen Ende\nJuli haben sich rund 120 Mitarbeiterin-\nnen und Mitarbeiter von ROTORCOMP,\n­UNICCOMP und BAUER KOMPRESSO-\nREN für das moderne, umweltbewusste\nMobilitätsangebot bei BAUER interes-\nsiert. Das Besondere dabei ist die freie\nWahl des Fachhändlers und die Aus-\nwahl aus einer Vielzahl an hochwerti-\ngen Fahrrad/Pedelec-Modellen.\nAlexander Kuhnert, Versandlogisti-\nker bei BAUER KOMPRESSOREN war\ngleich zu Beginn begeistert vom Ange-\nbot. „Ich finde es super, dass uns die\nFirma ein solches Angebot ermöglicht,\nnutze das E-Bike in der Freizeit, fahre\nmeinen Sohn zum Kindergarten und\nfreue mich, so unkompliziert ein hoch-\nwertiges E-Bike nutzen zu können“.\nInnerhalb von acht Wochen wurden\nbereits 25 E-Bikes (80 %) und Fahrrä-\nder (20 %) über das Angebot der BAU-\nER GROUP aus allen operativen inländi-\nschen Gesellschaften in Anspruch ge-\nnommen. „Es freut mich, dass unser\nAngebot bei der Belegschaft sehr gut\nankommt und wir gemeinsam einen\nwertvollen Beitrag zur Nachhaltigkeits-\ndiskussion leisten“, so Dr. Monika Bayat,\nGeschäftsführende Gesellschafterin der\nBAUER GROUP.\nBAUER\nKOMPRESSOREN\nDIVE4LIFE: JETZT\nMIT B-NITROX\nUND PUREAIR\nManfred Narres, Geschäftsführer des\n„Dive4life“ in Siegburg, nutzte die",
+      "page": 4,
+      "section": [
+        "2019-02_B-NEWS_DE_sc",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.16467836,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "BM series",
+          "BM 6.1/40-11",
+          "BM 10.1/40-15"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar | Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz | BM 6.1/40-11\nRow: BM 10.1/40-15\nValues: 1080 | 64.8 | 38.1 | 40 | 580 | 3 | 1480 | 15 | 475 | 1045\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "page": null,
+        "section": [
+          "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "BM 10.1/40-15",
+        "headers": [
+          "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Shutdown pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "BM series 40 bar – 50 Hz",
+          "BM 6.1/40-11"
+        ],
+        "row_values": [
+          "1080",
+          "64.8",
+          "38.1",
+          "40",
+          "580",
+          "3",
+          "1480",
+          "15",
+          "475",
+          "1045"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.37718292,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "5538605f-ad45-43f3-b551-74bc96c7d662",
+        "filename": "0193-0027_bm-series-40_e0b4c6a9a3-922108b284.md",
+        "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "BM series",
+          "BM 6.1/40-11",
+          "BM 10.1/40-15",
+          "BM 20.1/40-30"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS\nDocument section: BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS / Web page content\nTable: Technical Data\nHeaders and units: cfm | bar | psig | rpm | kW | kg | lbs | BM series 40 bar – 50 Hz | BM 6.1/40-11 | BM 10.1/40-15\nRow: BM 20.1/40-30\nValues: 2210 | 132.6 | 78 | 40 | 580 | 3 | 1475 | 30 | 960 | 2115\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "page": null,
+        "section": [
+          "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "BM 20.1/40-30",
+        "headers": [
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "BM series 40 bar – 50 Hz",
+          "BM 6.1/40-11",
+          "BM 10.1/40-15"
+        ],
+        "row_values": [
+          "2210",
+          "132.6",
+          "78",
+          "40",
+          "580",
+          "3",
+          "1475",
+          "30",
+          "960",
+          "2115"
+        ],
+        "units": [
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. shutdown pressure. Safety valve set pressure 10% higher.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.37691851,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+        "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+        "title": "Hochdruck-Zubehoerkatalog_DE",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "K 2"
+        ],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: Hochdruck-Zubehoerkatalog_DE\nDocument section: Hochdruck-Zubehoerkatalog_DE / Page 55\nTable: TECHNISCHE DATEN\nRow: Die Druckangaben in der nachfolgenden Tabelle (Seite 109) wurden gem. DIN\n2413 Geltungsbereich I für 20 °C Raumtemperatur errechnet. Bei höheren: Temperaturen ist nur eine reduzierte Druckbeaufschlagung zulässig, die über\neinen Berechnungsfaktor ermittelt werden kann.: Der Richtwert für die Durchflussgeschwindigkeit in Rohren beträgt 6–15 m/s\nWerkstoffkennwert: K = 235N/mm² Sicherheitsbeiwert: S 1,5: Beispiel bei 50 °C Rohrtemperatur und 200 bar Druck:\nFaktor = 0,945 Das bedeutet: 200 bar × 0,945 = 189 bar max. Druck: Beispiel bei 100 °C Rohrtemperatur und 200 bar Druck:\nFaktor = 0,885 Das bedeutet: 200 bar × 0,885 = 177 bar max. Druck: Zur genauen Berechnung siehe DIN 17440\nmm/bar: ∅/max.\n120: 135\n140: 165\n170: 180\n205: 220\n297: 345\n385: 425\n450: 540\n6 × 1,0: N3616\n6 × 1,5: N3617\n8 × 1,0: N3618\n8 × 1,5: N3619\n8 × 2,0: N18356\n10 × 1,0: N3620\n10 × 1,5: N4699\nFootnotes: 6 × 1,0\n6 × 1,5\n8 × 1,0\n8 × 1,5\n8 × 2,0\n10 × 1,0\n10 × 1,5\n10 × 2,0\n12 × 1,0\n12 × 1,5\n12 × 2,0\n12 × 3,0\n15 × 1,0\n15 × 1,5\n16 × 2,0\n18 × 1,0\n18 × 1,5\n20 × 2,5\n20 × 3,0\n22 × 1,5\n22 × 2,0\n28 × 1,5\n28 × 2,0\n42 × 2,0",
+        "page": 55,
+        "section": [
+          "Hochdruck-Zubehoerkatalog_DE",
+          "Page 55"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNISCHE DATEN",
+        "row_label": "Die Druckangaben in der nachfolgenden Tabelle (Seite 109) wurden gem. DIN",
+        "headers": [
+          "2413 Geltungsbereich I für 20 °C Raumtemperatur errechnet. Bei höheren",
+          "einen Berechnungsfaktor ermittelt werden kann.",
+          "Werkstoffkennwert: K = 235N/mm² Sicherheitsbeiwert: S 1,5",
+          "Faktor = 0,945 Das bedeutet: 200 bar × 0,945 = 189 bar max. Druck",
+          "Faktor = 0,885 Das bedeutet: 200 bar × 0,885 = 177 bar max. Druck",
+          "mm/bar",
+          "120",
+          "140",
+          "170",
+          "205",
+          "297",
+          "385",
+          "450",
+          "6 × 1,0",
+          "6 × 1,5",
+          "8 × 1,0",
+          "8 × 1,5",
+          "8 × 2,0",
+          "10 × 1,0",
+          "10 × 1,5"
+        ],
+        "row_values": [
+          "Temperaturen ist nur eine reduzierte Druckbeaufschlagung zulässig, die über",
+          "Der Richtwert für die Durchflussgeschwindigkeit in Rohren beträgt 6–15 m/s",
+          "Beispiel bei 50 °C Rohrtemperatur und 200 bar Druck:",
+          "Beispiel bei 100 °C Rohrtemperatur und 200 bar Druck:",
+          "Zur genauen Berechnung siehe DIN 17440",
+          "∅/max.",
+          "135",
+          "165",
+          "180",
+          "220",
+          "345",
+          "425",
+          "540",
+          "N3616",
+          "N3617",
+          "N3618",
+          "N3619",
+          "N18356",
+          "N3620",
+          "N4699"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "6 × 1,0\n6 × 1,5\n8 × 1,0\n8 × 1,5\n8 × 2,0\n10 × 1,0\n10 × 1,5\n10 × 2,0\n12 × 1,0\n12 × 1,5\n12 × 2,0\n12 × 3,0\n15 × 1,0\n15 × 1,5\n16 × 2,0\n18 × 1,0\n18 × 1,5\n20 × 2,5\n20 × 3,0\n22 × 1,5\n22 × 2,0\n28 × 1,5\n28 × 2,0\n42 × 2,0",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.28402256,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+        "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+        "title": "Hochdruck-Zubehoerkatalog_DE",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "K 2"
+        ],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: Hochdruck-Zubehoerkatalog_DE\nDocument section: Hochdruck-Zubehoerkatalog_DE / Page 55\nTable: TECHNISCHE DATEN\nRow: Der Richtwert für die Durchflussgeschwindigkeit in Rohren beträgt 6–15 m/s\nWerkstoffkennwert: K = 235N/mm² Sicherheitsbeiwert: S 1,5: Beispiel bei 50 °C Rohrtemperatur und 200 bar Druck:\nFaktor = 0,945 Das bedeutet: 200 bar × 0,945 = 189 bar max. Druck: Beispiel bei 100 °C Rohrtemperatur und 200 bar Druck:\nFaktor = 0,885 Das bedeutet: 200 bar × 0,885 = 177 bar max. Druck: Zur genauen Berechnung siehe DIN 17440\nmm/bar: ∅/max.\n120: 135\n140: 165\n170: 180\n205: 220\n297: 345\n385: 425\n450: 540\n6 × 1,0: N3616\n6 × 1,5: N3617\n8 × 1,0: N3618\n8 × 1,5: N3619\n8 × 2,0: N18356\n10 × 1,0: N3620\n10 × 1,5: N4699\n10 × 2,0: N17973\n12 × 1,0: N15098\nFootnotes: 6 × 1,0\n6 × 1,5\n8 × 1,0\n8 × 1,5\n8 × 2,0\n10 × 1,0\n10 × 1,5\n10 × 2,0\n12 × 1,0\n12 × 1,5\n12 × 2,0\n12 × 3,0\n15 × 1,0\n15 × 1,5\n16 × 2,0\n18 × 1,0\n18 × 1,5\n20 × 2,5\n20 × 3,0\n22 × 1,5\n22 × 2,0\n28 × 1,5\n28 × 2,0\n42 × 2,0",
+        "page": 55,
+        "section": [
+          "Hochdruck-Zubehoerkatalog_DE",
+          "Page 55"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNISCHE DATEN",
+        "row_label": "Der Richtwert für die Durchflussgeschwindigkeit in Rohren beträgt 6–15 m/s",
+        "headers": [
+          "Werkstoffkennwert: K = 235N/mm² Sicherheitsbeiwert: S 1,5",
+          "Faktor = 0,945 Das bedeutet: 200 bar × 0,945 = 189 bar max. Druck",
+          "Faktor = 0,885 Das bedeutet: 200 bar × 0,885 = 177 bar max. Druck",
+          "mm/bar",
+          "120",
+          "140",
+          "170",
+          "205",
+          "297",
+          "385",
+          "450",
+          "6 × 1,0",
+          "6 × 1,5",
+          "8 × 1,0",
+          "8 × 1,5",
+          "8 × 2,0",
+          "10 × 1,0",
+          "10 × 1,5",
+          "10 × 2,0",
+          "12 × 1,0"
+        ],
+        "row_values": [
+          "Beispiel bei 50 °C Rohrtemperatur und 200 bar Druck:",
+          "Beispiel bei 100 °C Rohrtemperatur und 200 bar Druck:",
+          "Zur genauen Berechnung siehe DIN 17440",
+          "∅/max.",
+          "135",
+          "165",
+          "180",
+          "220",
+          "345",
+          "425",
+          "540",
+          "N3616",
+          "N3617",
+          "N3618",
+          "N3619",
+          "N18356",
+          "N3620",
+          "N4699",
+          "N17973",
+          "N15098"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "6 × 1,0\n6 × 1,5\n8 × 1,0\n8 × 1,5\n8 × 2,0\n10 × 1,0\n10 × 1,5\n10 × 2,0\n12 × 1,0\n12 × 1,5\n12 × 2,0\n12 × 3,0\n15 × 1,0\n15 × 1,5\n16 × 2,0\n18 × 1,0\n18 × 1,5\n20 × 2,5\n20 × 3,0\n22 × 1,5\n22 × 2,0\n28 × 1,5\n28 × 2,0\n42 × 2,0",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.25528223,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "679306d1-0fcb-4474-bf9a-280c02aae0a0",
+        "filename": "0083-bauer_amfile_203-3d3040caa9.md",
+        "title": "bauer_amfile_203",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "ZERTIFIKAT",
+          "Zertifikat-Registrier-Nr.:1210417634TMS/Auftrags-Nr.:70008415",
+          "CERTIFICATE",
+          "Dieses Zertifikat ist gultig vom 25.09.2024 bis 29.08.2027."
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_203\nmfile_203\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_203.pdf`\n- Original SHA-256: `3d3040caa9e625a2f48dfa6b5986a8d5b2e22a1a4fbe0f35b32376c95735ea0b`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nZERTIFIKAT\nCERTIFICADO\nZertifikat-Registrier-Nr.:1210417634TMS/Auftrags-Nr.:70008415\nDie Zertifizierungsstelle\nderTuvsUDManagementServiceGmbH\nbescheinigt,dassdieOrganisation\nBAUER\nKOMPRESSOREN\nCEPTNONKAT\nQuality.Our DNA\nBAUERKOMPRESSORENGmbH\nStablistraBe8\n81477Munchen\nDeutschland\nfur den Geltungsbereich\nVertrieb,Entwicklung,HerstellungundServicevonVerdichteranlagen,\n證證書\nAufbereitungs-undSpeichersystemenfurLuftundGasebis5o0bar\neinschlieBlichderStandortegemaBAnlage\neinUmweltmanagementsystemeingefuhrt hatund anwendet.\nDurcheinAuditwurdederNachweiserbracht,\ndassdieForderungender\nDINENISO14001:2015\nCERTIFICATE\nerfullt sind.\nDieses Zertifikat ist gultig vom 25.09.2024 bis 29.08.2027.\nVorherigesZertifikat gultig bis 29.08.2024.\nPα以(\nIAF\nDAkkS\nDeutsche\nZERTIFIKAT\nAkkreditierungsstelle\nFredWenke\nD-ZM-14143-01-00\nLeiterderZertifizierungsstelle\nMunchen,25.09.2024\nMS/01-07/2023\nSeite 1von 2\nTUv SUD Management Service GmbH ·Zertifizierungsstelle·Ridlerstrasse 57·B0339 Munchen● Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+        "page": null,
+        "section": [
+          "bauer_amfile_203"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.19343547,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "4782bf05-0d55-4e9e-8123-1623ddf99632",
+        "filename": "0023-2019-02_B-NEWS_DE_sc-6bb5417af9.md",
+        "title": "2019-02_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2019-02-01",
+        "certificates": [],
+        "product_families": [
+          "VERTICUS und",
+          "PE-VE ist",
+          "MINI-VERTICUS und",
+          "VERTICUS zur"
+        ],
+        "media": [
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "booster"
+        ],
+        "standards": [],
+        "content": "Document: 2019-02_B-NEWS_DE_sc\nBooster sowie\nals\nSchraube-Booster\nKombination\nGIB26.5 bis 500 bar Enddruck, die BK\n52 Baureihe bis 420 bar erhältlich. Ein\nechter Star im Bereich VERTICUS und\nPE-VE ist die Boosteranlage GIB15.41.\nMit Liefermengen bis zu 830 l/min bei\nmaximal 350 bar Enddruck setzt sie in\ndiesem Bereich den Standard. Für\nmehr Wirtschaftlichkeit und geringeren\nPlatzbedarf: Kompressoren der Baurei-\nhe MINI-VERTICUS und VERTICUS zur\nVerdichtung von Helium und Argon\nwerden nun in der Basiskonfiguration\nmit kombiniertem Ansaug- und Kon-\ndensatbehälter ausgestattet.\nQualität ist immer der Maßstab\nUnabhängig vom Produkt gilt bei BAUER\ndas Gebot kompromissloser Qualität.\nProdukte durchlaufen auch nach der\n­Serieneinführung im unternehmenseige-\nnen Qualitätserprobungszentrum im-\nmer wieder rigide Kontrollen. So wurde\ngerade ein 8000-Stunden-Dauertest bei\nder mobilen PE-300-TE Anlage absol-\nviert, bei dem im Langzeittest der Ein-\nfluss von unterschiedlichen Temperatu-\nren und Drehzahlen bis 1800 min-1 un-\ntersucht wurde. Mit hervorragendem\nErgebnis, das die Erfahrungen aus der\nPraxis bestätigt: Es konnten nicht nur\nkeine negativen Auswirkungen aufgrund\nhöherer Drehzahlen festgestellt werden,\nsondern es hat sich erwartungsgemäß\nwieder einmal Folgendes bestätigt: Die\nhohe Qualität der BAUER Kompressor-\nblöcke ermöglicht den Einsatz bei här-\ntesten Bedingungen und unterschiedli-\nchen Drehzahlen.",
+        "page": 8,
+        "section": [
+          "2019-02_B-NEWS_DE_sc",
+          "Page 8"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "vector"
+        ],
+        "score": 0.17786099,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "d8fe1ea3-2818-42a8-8620-530803662ed3",
+        "filename": "0253-0087_hochdruck-speichersystem_022666859b-7eb29d8f59.md",
+        "title": "High-pressure storage system · Storage systems | BAUER KOMPR",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [
+          "DIN EN 12021"
+        ],
+        "content": "Document: High-pressure storage system · Storage systems | BAUER KOMPR\nur Auswahl. Eine Anbindung externer Signalgeber sowie der Betrieb im Verbundsystem oder mit externem Display ist jederzeit möglich.\nOptions\nSuper Silent-Version\nDie Super Silent-Verkleidung reduziert den Schalldruckpegel der Kompressoranlage deutlich und ermöglicht den Anschluss eines Abluftschachts. Die effektive Schalldämmung sorgt für einen leiseren Betrieb und kann bei Bedarf auch nachträglich nachgerüstet werden.\nFiltersystem P 61\nDas P 61 Filtersystem mit Öl- und Wasserabscheider sowie Druckhalterückschlagventil sorgt bei Verwendung originaler BAUER Filterpatronen für zuverlässige Atemluft nach DIN EN 12021:2014¹. Ein baumustergeprüftes, verplombtes Enddrucksicherheitsventil garantiert hohe Betriebssicherheit. Die aufbereitbare Luftmenge beträgt 2.400 m³. ¹ Gilt bei sachgemäßer Wartung, Aufstellung nach Betreiberhandbuch und Nutzung des BAUER B-AEROGUARD, wenn die CO₂-Konzentration die Normwerte übersteigt.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches",
+        "page": null,
+        "section": [
+          "High-pressure storage system · Storage systems | BAUER KOMPR",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.16641447,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "9c3287b3-96a3-4044-a529-7722d3c59221",
+        "filename": "0249-0083_hochdruck-gasaufbereitung_9c0910f906-bb70389eb3.md",
+        "title": "High-pressure gas purification · Gas purification | BAUER KO",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [
+          "DIN EN 12021"
+        ],
+        "content": "Document: High-pressure gas purification · Gas purification | BAUER KO\nzur Auswahl. Eine Anbindung externer Signalgeber sowie der Betrieb im Verbundsystem oder mit externem Display ist jederzeit möglich.\nB-DRAIN Kondensatautomatik\nDie Kondensatautomatik B-DRAIN leitet das anfallende Wasser-Öl-Gemisch automatisch aus Zwischen- und Endabscheider ab. Magnetventile steuern den Ablauf einzeln und zuverlässig. Der sanfte, kontrollierte Kondensatablass reduziert Druckverluste, spart Energie und erhöht die Effizienz. Im Vergleich zu herkömmlichen Lösungen arbeitet B-DRAIN deutlich leiser.\nOptionen\nSuper Silent-Version\nDie Super Silent-Verkleidung reduziert den Schalldruckpegel der Kompressoranlage deutlich und ermöglicht den Anschluss eines Abluftschachts. Die effektive Schalldämmung sorgt für einen leiseren Betrieb und kann bei Bedarf auch nachträglich nachgerüstet werden.\nFiltersystem P 61\nDas P 61 Filtersystem mit Öl- und Wasserabscheider sowie Druckhalterückschlagventil sorgt bei Verwendung originaler BAUER Filterpatronen für zuverlässige Atemluft nach DIN EN 12021:2014¹. Ein baumustergeprüftes, verplombtes Enddrucksicherheitsventil garantiert hohe Betriebssicherheit. Die aufbereitbare Luftmenge beträgt 2.400 m³. ¹ Gilt bei sachgemäßer Wartung, Aufstellung nach Betreiberhandbuch und Nutzung des BAUER B-AEROGUARD, wenn die CO₂-Konzentration die Normwerte übersteigt.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport",
+        "page": null,
+        "section": [
+          "High-pressure gas purification · Gas purification | BAUER KO",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.16571485,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "c5f82c16-aa9d-482a-9774-a5758bbf54ee",
+        "filename": "0229-0063_full-und-betankungssteuerung1_ff69f2c140-cc747df802.md",
+        "title": "Filling and refuelling control · Filling and refuelling cont",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "filter",
+          "control"
+        ],
+        "standards": [
+          "DIN EN 12021"
+        ],
+        "content": "Document: Filling and refuelling control · Filling and refuelling cont\nur Auswahl. Eine Anbindung externer Signalgeber sowie der Betrieb im Verbundsystem oder mit externem Display ist jederzeit möglich.\nOptions\nSuper Silent-Version\nDie Super Silent-Verkleidung reduziert den Schalldruckpegel der Kompressoranlage deutlich und ermöglicht den Anschluss eines Abluftschachts. Die effektive Schalldämmung sorgt für einen leiseren Betrieb und kann bei Bedarf auch nachträglich nachgerüstet werden.\nFiltersystem P 61\nDas P 61 Filtersystem mit Öl- und Wasserabscheider sowie Druckhalterückschlagventil sorgt bei Verwendung originaler BAUER Filterpatronen für zuverlässige Atemluft nach DIN EN 12021:2014¹. Ein baumustergeprüftes, verplombtes Enddrucksicherheitsventil garantiert hohe Betriebssicherheit. Die aufbereitbare Luftmenge beträgt 2.400 m³. ¹ Gilt bei sachgemäßer Wartung, Aufstellung nach Betreiberhandbuch und Nutzung des BAUER B-AEROGUARD, wenn die CO₂-Konzentration die Normwerte übersteigt.\nDownloads\nProduct Brochure Fuel Gas Systems EN\n(7.70 MB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects\nService & Support\nGlobal Support\nSupport Centre\nBAUER Services\nTraining courses\nСompany\nBAUER Group\nBranches",
+        "page": null,
+        "section": [
+          "Filling and refuelling control · Filling and refuelling cont",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.16549536,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "4782bf05-0d55-4e9e-8123-1623ddf99632",
+        "filename": "0023-2019-02_B-NEWS_DE_sc-6bb5417af9.md",
+        "title": "2019-02_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2019-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2019-02_B-NEWS_DE_sc\nit „Business\nBike“. Mit über 3.000 angebundenen\nFachhändlern ist „Business Bike“ einer\nder führenden Anbieter in Deutsch-\nland.\nBei den Infoveranstaltungen Ende\nJuli haben sich rund 120 Mitarbeiterin-\nnen und Mitarbeiter von ROTORCOMP,\n­UNICCOMP und BAUER KOMPRESSO-\nREN für das moderne, umweltbewusste\nMobilitätsangebot bei BAUER interes-\nsiert. Das Besondere dabei ist die freie\nWahl des Fachhändlers und die Aus-\nwahl aus einer Vielzahl an hochwerti-\ngen Fahrrad/Pedelec-Modellen.\nAlexander Kuhnert, Versandlogisti-\nker bei BAUER KOMPRESSOREN war\ngleich zu Beginn begeistert vom Ange-\nbot. „Ich finde es super, dass uns die\nFirma ein solches Angebot ermöglicht,\nnutze das E-Bike in der Freizeit, fahre\nmeinen Sohn zum Kindergarten und\nfreue mich, so unkompliziert ein hoch-\nwertiges E-Bike nutzen zu können“.\nInnerhalb von acht Wochen wurden\nbereits 25 E-Bikes (80 %) und Fahrrä-\nder (20 %) über das Angebot der BAU-\nER GROUP aus allen operativen inländi-\nschen Gesellschaften in Anspruch ge-\nnommen. „Es freut mich, dass unser\nAngebot bei der Belegschaft sehr gut\nankommt und wir gemeinsam einen\nwertvollen Beitrag zur Nachhaltigkeits-\ndiskussion leisten“, so Dr. Monika Bayat,\nGeschäftsführende Gesellschafterin der\nBAUER GROUP.\nBAUER\nKOMPRESSOREN\nDIVE4LIFE: JETZT\nMIT B-NITROX\nUND PUREAIR\nManfred Narres, Geschäftsführer des\n„Dive4life“ in Siegburg, nutzte die",
+        "page": 4,
+        "section": [
+          "2019-02_B-NEWS_DE_sc",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.16467836,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "bm 6 1 40 11"
+        ],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": true
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 0,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 3,
+      "elapsed_ms": 902.23
+    }
+  },
+  "completed_at": "2026-07-23T14:10:08.228678+00:00",
+  "case_id": "B30",
+  "split": "development",
+  "category": "bilingual_table",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

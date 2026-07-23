@@ -12,6 +12,7 @@ from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (  # noqa: E402
+    case_prompt,
     collect_evidence,
     create_run_directory,
     extract_text,
@@ -186,7 +187,7 @@ def main() -> None:
                         base_url=args.base_url,
                         token=token,
                         agent_id=agent_id,
-                        prompt=case["prompt_en"],
+                        prompt=case_prompt(case),
                         timeout=args.timeout,
                         keep_conversation=args.keep_conversations,
                     )

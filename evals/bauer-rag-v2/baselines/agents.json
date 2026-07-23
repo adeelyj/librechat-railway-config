@@ -1,7 +1,7 @@
 ﻿{
     "schema_version":  1,
-    "captured_at":  "2026-07-23T10:11:02.7147083Z",
-    "capture_source":  "verified_provision_state_and_versioned_contract",
+    "captured_at":  "2026-07-23T13:43:17.7516429Z",
+    "capture_source":  "live_librechat_api",
     "provision_state_verified_at":  "2026-07-22T11:29:43.6301247Z",
     "bauer_v1":  {
                      "id":  "agent_Z8A2LtQWLeP4KuUDbvqZL",
@@ -10,9 +10,9 @@
                      "provider":  "RapidDraft Local AI",
                      "model":  "local/qwen-coder",
                      "model_parameters":  {
-                                              "temperature":  0.1,
+                                              "max_tokens":  2048,
                                               "maxContextTokens":  24000,
-                                              "max_tokens":  2048
+                                              "temperature":  0.1
                                           },
                      "tools":  [
                                    "file_search",
@@ -30,9 +30,9 @@
                             "provider":  "RapidDraft Local AI",
                             "model":  "local/qwen-coder",
                             "model_parameters":  {
-                                                     "temperature":  0.1,
+                                                     "max_tokens":  2048,
                                                      "maxContextTokens":  24000,
-                                                     "max_tokens":  2048
+                                                     "temperature":  0.1
                                                  },
                             "tools":  [
                                           "file_search"

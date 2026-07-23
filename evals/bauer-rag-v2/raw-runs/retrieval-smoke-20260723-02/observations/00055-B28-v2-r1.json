@@ -1,0 +1,931 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1199.36,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+      "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+      "title": "2025-06_Product_overview_EN_N37488_sc",
+      "language": "en",
+      "publication_date": "2025-06-01",
+      "certificates": [],
+      "product_families": [
+        "MINI-VERTICUS AND",
+        "VERTICUS series",
+        "BM SERIES",
+        "VERTICUS combine"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "booster"
+      ],
+      "standards": [],
+      "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nof air cushions in isobaric double belt presses\n› Bulk handling with high-pressure air\n› Supply of test benches with air, gases and gas mixtures\n› Metal forming\n## Page 30\n\nBAUER KOMPRESSOREN\n30 | INDUSTRY | PRODUCT OVERVIEW\n› Pressure range: 30 – 110 bar\n› Charging rate: 470 – 6,200 l/min\n› Motor power: 7.5 – 110 kW\nAIR-COOLED COMPRESSOR AND BOOSTER UNITS\nBM SERIES\nThe BAUER BM series offers a wide power range from 7.5 - 110 kW with delivery\nrates from 470 - 6,200 l/min. The compressors are available in a 2-stage version for\ndischarge pressures up to 30 bar or in a 3-stage version for discharge pressures up\nto 40 bar and 100 bar.\nLow centre of gravity with the ability to operate at inclinations up to 30° under\nmotion makes this an ideal product for shipboard and\noffshore applications.\nMINI-VERTICUS and VERTICUS SERIES\nThe new MINI-VERTICUS and VERTICUS combine the legendary BAUER compressor blocks with improved\n­components and ultra-modern design! During the redesign, the focus was on ergonomics, making operation\nas easy as possible, reducing noise and boosting efficiency.\nSuitable for all common, non-aggressive gases and gas mixtures, these compressors can be used in practically\nevery industrial application.\nStorage units, gas measuring systems, an extensive range of accessories and purification systems that can be\nintegrated complete these compact system solutions.",
+      "page": 29,
+      "section": [
+        "2025-06_Product_overview_EN_N37488_sc",
+        "Page 29"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.25764344,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nB-DETECTION AIRBOX\n7. External filling panel\n8. External display\n9. Automatic selector unit\n10. Storage cylinder\n11. \u0007High-pressure reducing\nstation\n12. B-CLOUD\n## Page 6\n\n6 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS\nBAUER KOMPRESSOREN\n1 Free air delivery of the connected compressor measured with cylinder filling from 0 – 200 bar ± 5%, 10 l cylinder.\n2 Includes filter cartridge and 10-litre water ballast.\nB-AEROGUARD\nRELIABLY REMOVES CO2 FROM\nBREATHING AIR\nThe intake air of the compressor is routed through the\nB-AEROGUARD via an ingenious bypass system. This\nenables the CO2 content to be reduced to one-third of\nthat of the intake air, with B-AEROGUARD-OX version\nfor NITROX membrane units the initial value can even be\nreduced up to 20%.\nThe air is humidified in the base of the tank, optimising\nfilter efficiency and significantly extending filter life.\nNEW! As an option, a lever can be used in conjunction\nwith B-DETECTION PLUS to precisely adjust the CO₂\nreduction – thereby extending the filter’s service life.\nFEATURES\n› CO2 – removal/reduction\n› Economical operation\n› Flow rate 100 – 1,500 l/min\nSUITABLE FOR\nDESCRIPTION\nMedium\nl/min\nMax. CO2-inlet\nconcentration\nADJUSTABLE CO₂ REDUCTION VIA A LEVER FOR THE B-AEROGUARD SINGLE\nAir\n100 – 650\n1,000 ppm\nOnly available in combination with B-DETECTION PLUS i or B-DETECTION PLUS s!\nAir\n650 – 1.000\n750 ppm",
+      "page": 5,
+      "section": [
+        "2026_04_Accessory_Systems_EN_N39608_sc",
+        "Page 5"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.25663462,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "454bf3de-1304-4550-adb2-6bd1a2f95508",
+      "filename": "0121-bauer_amfile_271-f0a5714bc6.md",
+      "title": "bauer_amfile_271",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_271\nry, service etc. knowing of the con-\ntradictory and/or supplementary conditions of the customer.\n2. The GTC shall only apply if the contractual partner of BAUER\nis a businessman (section 14 BGB [Bürgerliches Gesetzbuch,\nGerman Civil Code]), a legal person under public law or a spe-\ncial estate under public law.\n3. In an ongoing business relationship, these GTC shall apply in\ntheir respective version and – also without special indication or\nreference – also to all future transactions, especially also in\ncase of calls or (subsequent) orders placed orally or by phone.\n4. Any individual agreements concluded with customers shall\ntake precedence over these GTC. The basis for the content of\nsuch an individual agreement shall be, subject to proof to the\ncontrary, the contract the parties concluded in writing or the\nwritten order confirmation of BAUER.\n5. Any business communications BAUER prints using electronic\ndata processing or sends via e-mail, such as order confirma-\ntions, invoices, credit notifications, account statements and\npayment reminders, shall be valid and legally binding, also\nwithout signature.\n6. Where these GTC require legally relevant declarations by the\ncustomer (e.g. for setting time limits, notice of defects or with-\ndrawal) to be made in writing, the written form or text form shall\nbe sufficient (e.g. by letter, e-mail, fax). Formal requirements",
+      "page": 1,
+      "section": [
+        "bauer_amfile_271",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.25494863,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "3b4bfeac-8848-4a17-87cf-f9c5b34fbf31",
+      "filename": "0293-0127_pe20-series_d49b7b5000-d18faa0db8.md",
+      "title": "PE 20 series · Air-cooled boosters | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 20",
+        "B-CONTROL III",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: PE 20 series · Air-cooled boosters | BAUER KOMPRESSOREN\nnstalled externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nB-CLOUD & B-APP\nWith BAUER B-CLOUD and the B-APP, users can keep an eye on their compressor system at all times, even remotely. Operating data, maintenance instructions, and status messages are transmitted and visualized in real time. This increases transparency, simplifies monitoring, and supports optimized maintenance planning. In addition, the stored operating data in the B-CLOUD is available for later analysis and system performance optimization. If the condition of your compressor system changes, B-CLOUD or B-APP will notify you immediately – by email or via push notification straight to your smartphone.\nSuper Silent version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nB-CONTROL III",
+      "page": null,
+      "section": [
+        "PE 20 series · Air-cooled boosters | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.22300403,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+      "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+      "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "valve",
+        "control"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nuietly.\nMotor rocker with belt tensioner\nThanks to the integrated motor rocker with belt tensioner, no retightening of the V-belt is required anymore.\nB-LINK 4G\nWith an integrated WiFi or 4G router, compressor systems equipped with B-CONTROL MICRO can be wirelessly connected to the B-CLOUD. This enables stable remote access, reliable remote monitoring, and secure data transmission via WLAN or mobile networks. If required, the B-LINK 4G can be installed externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent-Version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nP 61 Purification System\nThe P 61\nPurification System\nwith oil and water separator as well as pressure-retaining non-return valve ensures reliable breathing air in accordance with DIN EN 12021:2014¹ when using original BAUER filter cartridges. A type-tested, sealed final pressure safety valve guarantees high operational safety. The processable air volume is 2,400 m³.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.2225,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "7d74c61f-023e-46bb-acaa-64030126e904",
+      "filename": "0277-0111_mining-en_ce53dab43b-9c0e15be04.md",
+      "title": "Mining EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air",
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: Mining EN\nes, exploration and processing increasingly depend on compressed air and industrial gases to power systems, facilitate control, and improve process performance.\nThese applications demand equipment that performs under pressure: heat, cold, dust, humidity and remote settings place extreme requirements on reliability and durability.\nBAUER KOMPRESSOREN has proven itself in exactly these environments – with robust, field-tested compressor systems that deliver consistent performance, whether stationary or mobile, and under the toughest conditions.\nTypical compressor applications include\nAir supply for air-pulse systems in geophysical exploration\nFilling surge tanks for membrane pump operation\nAutoclave charging with air or nitrogen – constant and process-safe\nOur customers\nEPC contractors in global plant engineering\nOperators of extraction and processing sites\nManufacturers of mining and exploration equipment\nYour benefits with BAUER KOMPRESSOREN\nCustom-engineered solutions precisely matched to your project\nStationary and mobile compressor units – ready for deployment worldwide\nRugged container systems – ideal for harsh environmental and mechanical conditions\nBuilt to perform\nFrom underground tunnels and desert fields to mountainous terrain: BAUER compressors are made for conditions where reliability isn’t a luxury, but a necessity.",
+      "page": null,
+      "section": [
+        "Mining EN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.22237903,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "8c108b6e-09a6-489b-b811-612490f1e52f",
+      "filename": "0243-0077_gib22-series-md_87728d914b-1649e11ebc.md",
+      "title": "GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "GIB 22",
+        "B-CONTROL III",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE\nled externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nB-CONTROL III\nThe B-CONTROL III is the premium control system for complex applications. Its 7-inch touchscreen display provides a user-friendly visualization of all operating data. Features such as a data logger, USB interface, Remote HMI, and protocols including OPC UA, Modbus, and CAN bus are integrated. The control system supports up to four compressors in a network and can be expanded flexibly.\nSoft start\nFor a smooth start-up of your system, the use of a soft starter is recommended, as it significantly reduces the starting current. From a motor power of 75 kW and above, this function is included as standard in combination with the B-CONTROL control system. Alternatively, a frequency converter can be used. In addition to enabling soft starting, it allows the delivery rate to be adjusted according to actual demand, helping to reduce energy consumption – for maximum efficiency and operational reliability.\nMonitoring of intermediate pressures and intermediate stage temperatures",
+      "page": null,
+      "section": [
+        "GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.22180037,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "b3f6bac3-c500-42cb-9e5a-fc7761798af9",
+      "filename": "0258-0092_i22-series_44f98de39c-33e2fba86d.md",
+      "title": "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL III",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN\nled externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nB-CONTROL III\nThe B-CONTROL III is the premium control system for complex applications. Its 7-inch touchscreen display provides a user-friendly visualization of all operating data. Features such as a data logger, USB interface, Remote HMI, and protocols including OPC UA, Modbus, and CAN bus are integrated. The control system supports up to four compressors in a network and can be expanded flexibly.\nSoft start\nFor a smooth start-up of your system, the use of a soft starter is recommended, as it significantly reduces the starting current. From a motor power of 75 kW and above, this function is included as standard in combination with the B-CONTROL control system. Alternatively, a frequency converter can be used. In addition to enabling soft starting, it allows the delivery rate to be adjusted according to actual demand, helping to reduce energy consumption – for maximum efficiency and operational reliability.\nMonitoring of intermediate pressures and intermediate stage temperatures",
+      "page": null,
+      "section": [
+        "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.22116071,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "e8984eb2-4627-42c6-a7df-f856e38ed03c",
+      "filename": "0370-0204_verticus-he_98b4f4745d-6e943ec122.md",
+      "title": "VERTICUS series (Helium) · Air-cooled compressors | BAUER KO",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS series",
+        "B-CONTROL III",
+        "B-CONTROL"
+      ],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: VERTICUS series (Helium) · Air-cooled compressors | BAUER KO\nled externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nComplete version\nInstead of a combined vessel without a base frame, two separate intake and condensate vessels are provided. These are fully piped and mounted together with the compressor unit on a base frame – resulting in a compact, ready-to-install system solution.\nB-CONTROL III\nThe B-CONTROL III is the premium control system for complex applications. Its 7-inch touchscreen display provides a user-friendly visualization of all operating data. Features such as a data logger, USB interface, Remote HMI, and protocols including OPC UA, Modbus, and CAN bus are integrated. The control system supports up to four compressors in a network and can be expanded flexibly.\nMonitoring of intermediate pressures and intermediate stage temperatures",
+      "page": null,
+      "section": [
+        "VERTICUS series (Helium) · Air-cooled compressors | BAUER KO",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.22038851,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "49f012eb-5792-4b87-a0b1-1fb44348ac7c",
+      "filename": "0369-0203_verticus-gib-series_2817b67e31-bf529df636.md",
+      "title": "VERTICUS series · Air-cooled boosters | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS series",
+        "B-CONTROL III",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: VERTICUS series · Air-cooled boosters | BAUER KOMPRESSOREN\nled externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nB-CONTROL III\nThe B-CONTROL III is the premium control system for complex applications. Its 7-inch touchscreen display provides a user-friendly visualization of all operating data. Features such as a data logger, USB interface, Remote HMI, and protocols including OPC UA, Modbus, and CAN bus are integrated. The control system supports up to four compressors in a network and can be expanded flexibly.\nMonitoring of intermediate pressures and intermediate stage temperatures\nThis monitoring system is ideal for continuous or fully automatic operation, as well as for systems without constant specialist supervision. If defined limit values are exceeded or undershot, an automatic shutdown is triggered. The current actual values are displayed in the B-CONTROL compressor control system.\nOil level monitoring",
+      "page": null,
+      "section": [
+        "VERTICUS series · Air-cooled boosters | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.22020833,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+        "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+        "title": "2025-06_Product_overview_EN_N37488_sc",
+        "language": "en",
+        "publication_date": "2025-06-01",
+        "certificates": [],
+        "product_families": [
+          "MINI-VERTICUS AND",
+          "VERTICUS series",
+          "BM SERIES",
+          "VERTICUS combine"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "booster"
+        ],
+        "standards": [],
+        "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nof air cushions in isobaric double belt presses\n› Bulk handling with high-pressure air\n› Supply of test benches with air, gases and gas mixtures\n› Metal forming\n## Page 30\n\nBAUER KOMPRESSOREN\n30 | INDUSTRY | PRODUCT OVERVIEW\n› Pressure range: 30 – 110 bar\n› Charging rate: 470 – 6,200 l/min\n› Motor power: 7.5 – 110 kW\nAIR-COOLED COMPRESSOR AND BOOSTER UNITS\nBM SERIES\nThe BAUER BM series offers a wide power range from 7.5 - 110 kW with delivery\nrates from 470 - 6,200 l/min. The compressors are available in a 2-stage version for\ndischarge pressures up to 30 bar or in a 3-stage version for discharge pressures up\nto 40 bar and 100 bar.\nLow centre of gravity with the ability to operate at inclinations up to 30° under\nmotion makes this an ideal product for shipboard and\noffshore applications.\nMINI-VERTICUS and VERTICUS SERIES\nThe new MINI-VERTICUS and VERTICUS combine the legendary BAUER compressor blocks with improved\n­components and ultra-modern design! During the redesign, the focus was on ergonomics, making operation\nas easy as possible, reducing noise and boosting efficiency.\nSuitable for all common, non-aggressive gases and gas mixtures, these compressors can be used in practically\nevery industrial application.\nStorage units, gas measuring systems, an extensive range of accessories and purification systems that can be\nintegrated complete these compact system solutions.",
+        "page": 29,
+        "section": [
+          "2025-06_Product_overview_EN_N37488_sc",
+          "Page 29"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.25764344,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nB-DETECTION AIRBOX\n7. External filling panel\n8. External display\n9. Automatic selector unit\n10. Storage cylinder\n11. \u0007High-pressure reducing\nstation\n12. B-CLOUD\n## Page 6\n\n6 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS\nBAUER KOMPRESSOREN\n1 Free air delivery of the connected compressor measured with cylinder filling from 0 – 200 bar ± 5%, 10 l cylinder.\n2 Includes filter cartridge and 10-litre water ballast.\nB-AEROGUARD\nRELIABLY REMOVES CO2 FROM\nBREATHING AIR\nThe intake air of the compressor is routed through the\nB-AEROGUARD via an ingenious bypass system. This\nenables the CO2 content to be reduced to one-third of\nthat of the intake air, with B-AEROGUARD-OX version\nfor NITROX membrane units the initial value can even be\nreduced up to 20%.\nThe air is humidified in the base of the tank, optimising\nfilter efficiency and significantly extending filter life.\nNEW! As an option, a lever can be used in conjunction\nwith B-DETECTION PLUS to precisely adjust the CO₂\nreduction – thereby extending the filter’s service life.\nFEATURES\n› CO2 – removal/reduction\n› Economical operation\n› Flow rate 100 – 1,500 l/min\nSUITABLE FOR\nDESCRIPTION\nMedium\nl/min\nMax. CO2-inlet\nconcentration\nADJUSTABLE CO₂ REDUCTION VIA A LEVER FOR THE B-AEROGUARD SINGLE\nAir\n100 – 650\n1,000 ppm\nOnly available in combination with B-DETECTION PLUS i or B-DETECTION PLUS s!\nAir\n650 – 1.000\n750 ppm",
+        "page": 5,
+        "section": [
+          "2026_04_Accessory_Systems_EN_N39608_sc",
+          "Page 5"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.25663462,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "454bf3de-1304-4550-adb2-6bd1a2f95508",
+        "filename": "0121-bauer_amfile_271-f0a5714bc6.md",
+        "title": "bauer_amfile_271",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_271\nry, service etc. knowing of the con-\ntradictory and/or supplementary conditions of the customer.\n2. The GTC shall only apply if the contractual partner of BAUER\nis a businessman (section 14 BGB [Bürgerliches Gesetzbuch,\nGerman Civil Code]), a legal person under public law or a spe-\ncial estate under public law.\n3. In an ongoing business relationship, these GTC shall apply in\ntheir respective version and – also without special indication or\nreference – also to all future transactions, especially also in\ncase of calls or (subsequent) orders placed orally or by phone.\n4. Any individual agreements concluded with customers shall\ntake precedence over these GTC. The basis for the content of\nsuch an individual agreement shall be, subject to proof to the\ncontrary, the contract the parties concluded in writing or the\nwritten order confirmation of BAUER.\n5. Any business communications BAUER prints using electronic\ndata processing or sends via e-mail, such as order confirma-\ntions, invoices, credit notifications, account statements and\npayment reminders, shall be valid and legally binding, also\nwithout signature.\n6. Where these GTC require legally relevant declarations by the\ncustomer (e.g. for setting time limits, notice of defects or with-\ndrawal) to be made in writing, the written form or text form shall\nbe sufficient (e.g. by letter, e-mail, fax). Formal requirements",
+        "page": 1,
+        "section": [
+          "bauer_amfile_271",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.25494863,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "3b4bfeac-8848-4a17-87cf-f9c5b34fbf31",
+        "filename": "0293-0127_pe20-series_d49b7b5000-d18faa0db8.md",
+        "title": "PE 20 series · Air-cooled boosters | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 20",
+          "B-CONTROL III",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: PE 20 series · Air-cooled boosters | BAUER KOMPRESSOREN\nnstalled externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nB-CLOUD & B-APP\nWith BAUER B-CLOUD and the B-APP, users can keep an eye on their compressor system at all times, even remotely. Operating data, maintenance instructions, and status messages are transmitted and visualized in real time. This increases transparency, simplifies monitoring, and supports optimized maintenance planning. In addition, the stored operating data in the B-CLOUD is available for later analysis and system performance optimization. If the condition of your compressor system changes, B-CLOUD or B-APP will notify you immediately – by email or via push notification straight to your smartphone.\nSuper Silent version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nB-CONTROL III",
+        "page": null,
+        "section": [
+          "PE 20 series · Air-cooled boosters | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.22300403,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+        "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+        "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "valve",
+          "control"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nuietly.\nMotor rocker with belt tensioner\nThanks to the integrated motor rocker with belt tensioner, no retightening of the V-belt is required anymore.\nB-LINK 4G\nWith an integrated WiFi or 4G router, compressor systems equipped with B-CONTROL MICRO can be wirelessly connected to the B-CLOUD. This enables stable remote access, reliable remote monitoring, and secure data transmission via WLAN or mobile networks. If required, the B-LINK 4G can be installed externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent-Version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nP 61 Purification System\nThe P 61\nPurification System\nwith oil and water separator as well as pressure-retaining non-return valve ensures reliable breathing air in accordance with DIN EN 12021:2014¹ when using original BAUER filter cartridges. A type-tested, sealed final pressure safety valve guarantees high operational safety. The processable air volume is 2,400 m³.\n¹ Applies with proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.2225,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "7d74c61f-023e-46bb-acaa-64030126e904",
+        "filename": "0277-0111_mining-en_ce53dab43b-9c0e15be04.md",
+        "title": "Mining EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air",
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: Mining EN\nes, exploration and processing increasingly depend on compressed air and industrial gases to power systems, facilitate control, and improve process performance.\nThese applications demand equipment that performs under pressure: heat, cold, dust, humidity and remote settings place extreme requirements on reliability and durability.\nBAUER KOMPRESSOREN has proven itself in exactly these environments – with robust, field-tested compressor systems that deliver consistent performance, whether stationary or mobile, and under the toughest conditions.\nTypical compressor applications include\nAir supply for air-pulse systems in geophysical exploration\nFilling surge tanks for membrane pump operation\nAutoclave charging with air or nitrogen – constant and process-safe\nOur customers\nEPC contractors in global plant engineering\nOperators of extraction and processing sites\nManufacturers of mining and exploration equipment\nYour benefits with BAUER KOMPRESSOREN\nCustom-engineered solutions precisely matched to your project\nStationary and mobile compressor units – ready for deployment worldwide\nRugged container systems – ideal for harsh environmental and mechanical conditions\nBuilt to perform\nFrom underground tunnels and desert fields to mountainous terrain: BAUER compressors are made for conditions where reliability isn’t a luxury, but a necessity.",
+        "page": null,
+        "section": [
+          "Mining EN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.22237903,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "8c108b6e-09a6-489b-b811-612490f1e52f",
+        "filename": "0243-0077_gib22-series-md_87728d914b-1649e11ebc.md",
+        "title": "GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "GIB 22",
+          "B-CONTROL III",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE\nled externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nB-CONTROL III\nThe B-CONTROL III is the premium control system for complex applications. Its 7-inch touchscreen display provides a user-friendly visualization of all operating data. Features such as a data logger, USB interface, Remote HMI, and protocols including OPC UA, Modbus, and CAN bus are integrated. The control system supports up to four compressors in a network and can be expanded flexibly.\nSoft start\nFor a smooth start-up of your system, the use of a soft starter is recommended, as it significantly reduces the starting current. From a motor power of 75 kW and above, this function is included as standard in combination with the B-CONTROL control system. Alternatively, a frequency converter can be used. In addition to enabling soft starting, it allows the delivery rate to be adjusted according to actual demand, helping to reduce energy consumption – for maximum efficiency and operational reliability.\nMonitoring of intermediate pressures and intermediate stage temperatures",
+        "page": null,
+        "section": [
+          "GIB 22 series (120 bar) · Air-cooled boosters | BAUER KOMPRE",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.22180037,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "b3f6bac3-c500-42cb-9e5a-fc7761798af9",
+        "filename": "0258-0092_i22-series_44f98de39c-33e2fba86d.md",
+        "title": "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL III",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN\nled externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nB-CONTROL III\nThe B-CONTROL III is the premium control system for complex applications. Its 7-inch touchscreen display provides a user-friendly visualization of all operating data. Features such as a data logger, USB interface, Remote HMI, and protocols including OPC UA, Modbus, and CAN bus are integrated. The control system supports up to four compressors in a network and can be expanded flexibly.\nSoft start\nFor a smooth start-up of your system, the use of a soft starter is recommended, as it significantly reduces the starting current. From a motor power of 75 kW and above, this function is included as standard in combination with the B-CONTROL control system. Alternatively, a frequency converter can be used. In addition to enabling soft starting, it allows the delivery rate to be adjusted according to actual demand, helping to reduce energy consumption – for maximum efficiency and operational reliability.\nMonitoring of intermediate pressures and intermediate stage temperatures",
+        "page": null,
+        "section": [
+          "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.22116071,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "e8984eb2-4627-42c6-a7df-f856e38ed03c",
+        "filename": "0370-0204_verticus-he_98b4f4745d-6e943ec122.md",
+        "title": "VERTICUS series (Helium) · Air-cooled compressors | BAUER KO",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS series",
+          "B-CONTROL III",
+          "B-CONTROL"
+        ],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: VERTICUS series (Helium) · Air-cooled compressors | BAUER KO\nled externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nComplete version\nInstead of a combined vessel without a base frame, two separate intake and condensate vessels are provided. These are fully piped and mounted together with the compressor unit on a base frame – resulting in a compact, ready-to-install system solution.\nB-CONTROL III\nThe B-CONTROL III is the premium control system for complex applications. Its 7-inch touchscreen display provides a user-friendly visualization of all operating data. Features such as a data logger, USB interface, Remote HMI, and protocols including OPC UA, Modbus, and CAN bus are integrated. The control system supports up to four compressors in a network and can be expanded flexibly.\nMonitoring of intermediate pressures and intermediate stage temperatures",
+        "page": null,
+        "section": [
+          "VERTICUS series (Helium) · Air-cooled compressors | BAUER KO",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.22038851,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "49f012eb-5792-4b87-a0b1-1fb44348ac7c",
+        "filename": "0369-0203_verticus-gib-series_2817b67e31-bf529df636.md",
+        "title": "VERTICUS series · Air-cooled boosters | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS series",
+          "B-CONTROL III",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: VERTICUS series · Air-cooled boosters | BAUER KOMPRESSOREN\nled externally to optimize signal strength. It is designed for use in Europe, the Middle East, Africa, and the Asia-Pacific region.\nOptions\nSuper Silent version\nThe Super Silent enclosure significantly reduces the sound pressure level of the compressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nB-CONTROL III\nThe B-CONTROL III is the premium control system for complex applications. Its 7-inch touchscreen display provides a user-friendly visualization of all operating data. Features such as a data logger, USB interface, Remote HMI, and protocols including OPC UA, Modbus, and CAN bus are integrated. The control system supports up to four compressors in a network and can be expanded flexibly.\nMonitoring of intermediate pressures and intermediate stage temperatures\nThis monitoring system is ideal for continuous or fully automatic operation, as well as for systems without constant specialist supervision. If defined limit values are exceeded or undershot, an automatic shutdown is triggered. The current actual values are displayed in the B-CONTROL compressor control system.\nOil level monitoring",
+        "page": null,
+        "section": [
+          "VERTICUS series · Air-cooled boosters | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.22020833,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 0,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 0,
+      "elapsed_ms": 920.34
+    }
+  },
+  "completed_at": "2026-07-23T14:10:05.038016+00:00",
+  "case_id": "B28",
+  "split": "development",
+  "category": "authorization_isolation",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

@@ -1,0 +1,869 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1110.42,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "50a078af-39d0-4244-bc9d-b10e3671dcfc",
+      "filename": "0087-bauer_amfile_216-1d4691de14.md",
+      "title": "bauer_amfile_216",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "CERTIFICATE"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "EN ISO 3834-2"
+      ],
+      "content": "Document: bauer_amfile_216\nmfile_216\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_216.pdf`\n- Original SHA-256: `1d4691de1400363b8fd8a624b3345aa1913069e18e0a400b0c136cfdc2479001`\n## Page 1\n\n_____________________\nHenrik Bohl\n\nCERTIFICATE\nTÜV SÜD-MUC-WD-3112378.2015.005\nManufacturer:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nPlant(s):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nThe above mentioned company fulfills the\ncomprehensive quality requirements for fusion\nwelding of metallic materials\naccording to\nEN ISO 3834-2\nContract:\n4243762\nValid until:\nDecember 15, 2026\nMunich, October 29, 2025",
+      "page": null,
+      "section": [
+        "bauer_amfile_216"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.36916667,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "f2e0d1c6-4eb3-4c54-ae09-a0f3c1c56965",
+      "filename": "0114-bauer_amfile_264-7660adceb4.md",
+      "title": "bauer_amfile_264",
+      "language": "en",
+      "publication_date": "2026-01-01",
+      "certificates": [
+        "CERTIFICATE",
+        "ZERTIFIKAT",
+        "www.tuvsud.com/de-certificate-validity-check"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_264\nmfile_264\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_264.pdf`\n- Original SHA-256: `7660adceb4b4e084e66186f38e49fe31261e492de056b5c8e6c516b4827472c9`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nCERTIFICATE\nCERTIFICADO\nCertificateRegistrationNo.:1210017634TMS/OrderNo.:70008415\nThe Certification Body\nofTuvsuDManagementServiceGmbH\ncertifiesthattheorganization\nBAUER\nCEPTNONKAT\nKOMPRESSOREN\nQuality.OurDNA\nBAUER COMPHolding GmbH\nWolfratshausenerStr.80\n81379Munchen\nGermany\nfor the scope\nDevelopment,salesandserviceof\n證證書\ncompressorunits,purification-andstoragesystems\nfor airandgasesupto5o0bar,screwcompressor airendsand\ncompactunitsandspecialaggregates\nincludingthesitesseeenclosure\nhasestablishedandappliesaQualityManagementSystem.\nAnauditwasperformedandhasfurnishedproof\nthattherequirementsaccordingto\nCERTIFICATE\nDINENISO9001:2015\nare fulfilled.\nThecertificateisvalidfrom2026-01-26until2027-11-26.\nIAF\n(DAkkS\nDeutsche\nZERTIFIKAT\nAkkreditierungsstelle\nFredWenke\nD-ZM·14143-01-00\nHeadofCertificationBody\nMunich,2026-01-27\nMS/01-07/2023\nPage1of 2\nTUv SUD Management Service GmbH ·Zertifizierungsstelle ·Ridlerstrasse 57· B0339 Munchen · Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+      "page": null,
+      "section": [
+        "bauer_amfile_264"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.34854167,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "0bcf29d2-6c90-4226-8a5b-b7a5be14f5c7",
+      "filename": "0095-bauer_amfile_231-c7b41331ce.md",
+      "title": "bauer_amfile_231",
+      "language": "en",
+      "publication_date": "2017-04-01",
+      "certificates": [
+        "CERTIFICATE",
+        "ZERTIFIKAT",
+        "www.tuev-sued.de/certificate-validity-check"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_231\nmfile_231\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_231.pdf`\n- Original SHA-256: `c7b41331cebe99b49595e4489feee3af6d9d33e72800266ea355ffe134961f03`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nCERTIFICATE\nCERTIFICADO\nA\nThe CertificationBody\nof Tuv suD Management Service GmbH\ncertifies that\nBAUER\nKOMPRESSOREN\nCEPTNONKAT\nQuality.OurDNA\nBauer Kompressoren GCC FZE\nUnitAF07,JebelAliFreeZone,P.O.Box261413\nDubai,UnitedArabEmirates\nhasestablished and applies\naQualityManagementSystemfor\nUV SUD TUV SUD TUV SUD TUV SUD TUV SUDTUV SUD TJV SUD\n證證書\nSales and Service of Compressors and Accessories.\nStocking andSalesofSpareParts.\nAnauditwasperformed,ReportNo.707009664.\nProofhasbeenfurnished thattherequirements\naccordingto\nISO9001:2015\nCERTIFICATE\narefulfilled.\nThecertificateisvalidfrom2017-04-04until2019-02-25.\nCertificateRegistrationNo.:1210045150TMS.\nZERTIFIKAT\nIAF\n((DAKkS\nDeutsche\nAkkreditierungsstelle\nProductComplianceManagement\nD-ZM-14143-01-00\nMunich,2017-04-04\nTUV SUDManagementServiceGmbH·Zertifizierungsstelle·RidlerstraBe65·80339Munchen·Germany\nTUV?\nwww.tuev-sued.de/certificate-validity-check",
+      "page": null,
+      "section": [
+        "bauer_amfile_231"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.32408451,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "02b76ef2-c14b-40aa-9655-1f692b9fc448",
+      "filename": "0098-bauer_amfile_234-d1f3e6cfd8.md",
+      "title": "bauer_amfile_234",
+      "language": "en",
+      "publication_date": "2024-03-01",
+      "certificates": [
+        "CERTIFICATE",
+        "Certificate Registration No.: 12 100 43061 TMS / Order No.: 4153921171",
+        "The certificate is valid from 2024-03-21 until 2027-03-20."
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "DIN EN ISO 9001"
+      ],
+      "content": "Document: bauer_amfile_234\nmfile_234\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_234.pdf`\n- Original SHA-256: `d1f3e6cfd8ac56106e8d4049cfadc932310343d74e9b16c1715c574bde729798`\n## Page 1\n\nCERTIFICATE\nCertificate Registration No.: 12 100 43061 TMS / Order No.: 4153921171\nThe Certification Body\nof TÜV SÜD Management Service GmbH\ncertifies that the organization\n\nBAUER KOMPRESSOREN INDIA PVT. LTD.\nPlot No – T-128, T Block, MIDC, Pimpri Chinchwad Industrial Area,\nBhosari\nPune - 411026\nIndia\nfor the scope\nDesign, Manufacturing, Sales and Service of Compressors and Accessories.\nStocking and Sales of Spare Parts..\nhas established and applies a Quality Management System.\nAn audit was performed and has furnished proof\nthat the requirements according to\nDIN EN ISO 9001:2015\nare fulfilled.\nThe certificate is valid from 2024-03-21 until 2027-03-20.\n\nFred Wenke\nHead of Certification Body\nMunich, 2024-03-18",
+      "page": null,
+      "section": [
+        "bauer_amfile_234"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.32388889,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "d149ca29-2997-4247-97b4-77e219639345",
+      "filename": "0109-bauer_amfile_247-959d2c3147.md",
+      "title": "bauer_amfile_247",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "CERTIFICATE",
+        "ZERTIFIKAT"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_247\nmfile_247\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_247.pdf`\n- Original SHA-256: `959d2c3147a9b8fc74ad438a11565a5d9391031d2768b652699f43469370b5bc`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nIndustrieService\nCERTIFICATE\nCERTIFICADO\nTheCertificationBodyof\nTUV sUD Industrie Service GmbH,\na Notified Body of thePressure EquipmentDirective(PED),\ncertifies that\nBAUER\nKOMPRESSOREN\nCEPTNONKAT\nStäblistraBe8,81477 Munchen, Germany\nwith themanufacturingplants\nplant1,BayerwaldstraBe8,82538Geretsried\nUNICCOMPGmbH,BayerwaldstraBe6,82538Geretsried\nimplemented, operates and maintains a quality\nassurance system as described in the Pressure Equipment\nDirective2014/68/EUAnnexIll,ModuleH1\nfor the scope of\nDesign and manufacture ofpressurevessels,\n正\npressure accessories, safety valves and assemblies\n恐\nforairandgasesupto550bar\nThe audit with the report number Q-IS-ESA1-MUC-PED-4051-135-22\nproves that the quality assurance system fulfils thePED requirements.\nCERTIFICATE\nThemanufacturerisauthorizedtoprovidethepressureequipment\nproduced within the scope of the assessed quality assurance system with\nthefollowingNotifiedBodyNumber:\nCE 0036\nCertificateNo.:DGR-0036-QS-913a-22\nvaliduntilDecember13th，2025\nZERTIFIKAT\nFilderstadt,November11th,2022\nMartina/John\nNotifiedBodyNo.:0036\nTUVSUDIndustrieServiceGmbH\nWestendstraBe199\nTel.:\n+497117005289\n80686Munchen\nFax:\n+497117005582\nGermany",
+      "page": null,
+      "section": [
+        "bauer_amfile_247"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.32282051,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "2765f1bd-b34e-4b4f-b23f-0c3be6b9216c",
+      "filename": "0110-bauer_amfile_248-ed35debdab.md",
+      "title": "bauer_amfile_248",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "ZERTIFIKAT",
+        "CERTIFICATE",
+        "Zertifikat-Nr.:"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_248\nmfile_248\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_248.pdf`\n- Original SHA-256: `ed35debdaba3770bef8fe858da737fba654f2f6f5ec48c9f9ba81872481ce1cd`\n## Page 1\n\nCERTIFICAT\nTUV\nSOD\nIndustrie Service\nZERTIFIKAT\ngultig bis:31.03.2032\nCERTIFICADO\nCERTIFICATE\nvaliduntil:31.03.2032\nEU-Baumusterprufung(ModulB)-Baumuster-nachRichtlinie2014/68/EU\nEUTypeexamination(moduleB)-productiontype-accordingtoDirective2014/68/EU\nZertifikat-Nr.:\nZ-IS-AN1-MAN-22-04-3145192-12165340\nCertificateNo.:\nName undAnschriftdesHerstellers:\nBAUERKOMPRESSORENGmbH\nStablistr.8\nNameandaddressofmanufacturer:\nDE-81477Munchen\nCEPTNONKAT\nHiermitwirdbescheinigt,dassdasuntengenannteBaumusterdieAnforderungenderRichtlinie2014/68/EU\nerfullt.\nWeherewithcertifythatthetypementionedbelowmeetstherequirementsoftheDirective2014/68/EU.\nPrufberichtNr.:\nP-IS-AN1-MAN-22-027\nEvaluationreportNo.:\nGeltungsbereich:\nDirektwirkendefederbelasteteSicherheitsventile\nScopeofexamination:\ndesTyps059410-340\nCERTIFICATE\nFertigungsstatte:\nBAUERKOMPRESSORENGmbH\nManufacturingplant:\nStablistr.8\nDE-81477Munchen\nMannheim,12.04.2022\nZertifizierungsstelle fur Druckgerate\n(Ort,Datum)\nans\n(Place,date)\nDipl-Ing. R. Brinkmann\nEchtheitsprufungdurchAppTUVSUDVerify\nVerificationofCertificatebyTuvsuDAppVerify\nZERTIFIKAT\nNotifizierteStelle,Kenn-Nr.0036\nDokumentID:3145192Y5201b\nralf.brinkmann@tuev-sued.de\nNotifiedBody，No.0036\nTUVSUDIndustrieServiceGmbH",
+      "page": null,
+      "section": [
+        "bauer_amfile_248"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3225,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "679306d1-0fcb-4474-bf9a-280c02aae0a0",
+      "filename": "0083-bauer_amfile_203-3d3040caa9.md",
+      "title": "bauer_amfile_203",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "ZERTIFIKAT",
+        "Zertifikat-Registrier-Nr.:1210417634TMS/Auftrags-Nr.:70008415",
+        "CERTIFICATE",
+        "Dieses Zertifikat ist gultig vom 25.09.2024 bis 29.08.2027."
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_203\nmfile_203\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_203.pdf`\n- Original SHA-256: `3d3040caa9e625a2f48dfa6b5986a8d5b2e22a1a4fbe0f35b32376c95735ea0b`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nZERTIFIKAT\nCERTIFICADO\nZertifikat-Registrier-Nr.:1210417634TMS/Auftrags-Nr.:70008415\nDie Zertifizierungsstelle\nderTuvsUDManagementServiceGmbH\nbescheinigt,dassdieOrganisation\nBAUER\nKOMPRESSOREN\nCEPTNONKAT\nQuality.Our DNA\nBAUERKOMPRESSORENGmbH\nStablistraBe8\n81477Munchen\nDeutschland\nfur den Geltungsbereich\nVertrieb,Entwicklung,HerstellungundServicevonVerdichteranlagen,\n證證書\nAufbereitungs-undSpeichersystemenfurLuftundGasebis5o0bar\neinschlieBlichderStandortegemaBAnlage\neinUmweltmanagementsystemeingefuhrt hatund anwendet.\nDurcheinAuditwurdederNachweiserbracht,\ndassdieForderungender\nDINENISO14001:2015\nCERTIFICATE\nerfullt sind.\nDieses Zertifikat ist gultig vom 25.09.2024 bis 29.08.2027.\nVorherigesZertifikat gultig bis 29.08.2024.\nPα以(\nIAF\nDAkkS\nDeutsche\nZERTIFIKAT\nAkkreditierungsstelle\nFredWenke\nD-ZM-14143-01-00\nLeiterderZertifizierungsstelle\nMunchen,25.09.2024\nMS/01-07/2023\nSeite 1von 2\nTUv SUD Management Service GmbH ·Zertifizierungsstelle·Ridlerstrasse 57·B0339 Munchen● Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+      "page": null,
+      "section": [
+        "bauer_amfile_203"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.30178922,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "44d17a37-7d84-4532-b520-f5f88fa8fdb4",
+      "filename": "0090-bauer_amfile_226-a6fb2c212e.md",
+      "title": "bauer_amfile_226",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "ZERTIFIKAT",
+        "Zertifikat-Registrier-Nr.:1210017634/06TMS/Auftrags-Nr.:70008415",
+        "CERTIFICATE",
+        "www.tuvsud.com/de-certificate-validity-check"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_226\nmfile_226\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_226.pdf`\n- Original SHA-256: `a6fb2c212ec89c16687fd3dc6b069993dc67450bbd242d37ef2b163a9bde683b`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nZERTIFIKAT\nCERTIFICADO\nZertifikat-Registrier-Nr.:1210017634/06TMS/Auftrags-Nr.:70008415\nDieZertifizierungsstelle\nderTUvsUDManagementServiceGmbH\nbescheinigt,dassdieOrganisation\nBAUERCOMPHoldingGmbH\nWolfratshausenerStr.80\n81379Munchen\nDeutschland\nCEPTNONKAT\namStandort\nBAUER\nKOMPRESSOREN\nQuality.OurDNA\nBAUERCOMPRESSORIS.r.I.UNIPERSONALE\nViaGalileoGalilei9\n36057ARCUGNANO(VI)\nItalien\n證證書\nfurdenGeltungsbereich\nVertriebundServicevonVerdichteranlagen,\nAufbereitungs-undSpeichersystemenfurLuftundGasebis5oobar\neinQualitatsmanagementsystemeingefuhrthatundanwendet.\nDurcheinAuditwurdederNachweiserbracht,\ndassdieForderungender\nCERTIFICATE\nDINENISO9001:2015\nerfullt sind.\nDiesesZertifikatistgultiginVerbindung\nmitdemHauptzertifikatvom27.11.2024bis26.11.2027.\nIAF\nDAKkS\nDeutche\nZERTIFIKAT\nAkkreditierurgsstelle\nFredWenke\nD-ZM-14143-01-00\nLeiterderZertifizierungsstelle\nMunchen,22.11.2024\nMS/01-07/2023\nTUv SUD Management Service GmbH ·Zertifizierungsstelle·Ridlerstrasse 57·B0339 Munchen● Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+      "page": null,
+      "section": [
+        "bauer_amfile_226"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.28003968,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "3695f9ea-f2e6-4624-b261-01459ba40eb4",
+      "filename": "0115-bauer_amfile_265-a91efbbe6f.md",
+      "title": "bauer_amfile_265",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "ZERTIFIKAT",
+        "Zertifikat-Registrier-Nr.:1210017634/05TMS/Auftrags-Nr.:70008415",
+        "CERTIFICATE",
+        "www.tuvsud.com/de-certificate-validity-check"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_265\nmfile_265\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_265.pdf`\n- Original SHA-256: `a91efbbe6ff09568bebd228b3329c16b02ba2a4a05a3d8fad9e34e2dac7e0426`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nZERTIFIKAT\nCERTIFICADO\nZertifikat-Registrier-Nr.:1210017634/05TMS/Auftrags-Nr.:70008415\nDieZertifizierungsstelle\nder TuvsUDManagementService GmbH\nbescheinigt,dassdieOrganisation\nBAUERCOMPHoldingGmbH\nWolfratshausenerStr.80\n81379Munchen\nDeutschland\nCEPTNONKAT\namStandort\nBAUER\nKOMPRESSOREN\nQuality.OurDNA\nBAUERCOMPRESSEURSSAS\n315RueNicolasCOPERNIC\n73420Mery\nFrankreich\n證證書\nfurdenGeltungsbereich\nEntwicklung,Herstellung,VertriebundServicevonVerdichteranlagen,\nAufbereitungs-undSpeichersystemenfurLuftund Gasebis5o0bar\neinQualitatsmanagementsystemeingefuhrthatundanwendet.\nDurcheinAuditwurdederNachweiserbracht,\ndassdieForderungender\nCERTIFICATE\nDINENISO9001:2015\nerfuilltsind.\nDiesesZertifikatistgultiginVerbindung\nmitdemHauptzertifikatvom26.01.2026bis26.11.2027.\nIAF\n(DAkkS\nDeutsche\nZERTIFIKAT\nAkkreditierurgsstelle\nFredWenke\nD·ZM-14143·01·00\nLeiterderZertifizierungsstelle\nMunchen,27.01.2026\nMS/01-07/2023\nTUv SUD Management Service GmbH ·Zertifizierungsstelle·Ridlerstrasse 57·B0339 Munchen● Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+      "page": null,
+      "section": [
+        "bauer_amfile_265"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.2778653,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "1fbc7d76-76d9-45b6-8760-f3f07f49e26a",
+      "filename": "0096-bauer_amfile_232-2503e2d6a3.md",
+      "title": "bauer_amfile_232",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "ZERTIFIKAT",
+        "Zertifikat-Registrier-Nr.:1210017634/04TMS/Auftrags-Nr.:70008415",
+        "CERTIFICATE",
+        "www.tuvsud.com/de-certificate-validity-check"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_232\nmfile_232\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_232.pdf`\n- Original SHA-256: `2503e2d6a344e0d44fe9e38f0698cf7c13ab753cdc0997ee783141bd710e77fd`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nZERTIFIKAT\nCERTIFICADO\nZertifikat-Registrier-Nr.:1210017634/04TMS/Auftrags-Nr.:70008415\nDieZertifizierungsstelle\nderTuvsUDManagementServiceGmbH\nbescheinigt,dassdieOrganisation\nBAUERCOMPHoldingGmbH\nWolfratshausenerStr.80\n81379Munchen\nDeutschland\nCEPTNONKAT\nam Standort\nBAUER\nKOMPRESSOREN\nQuality.OurDNA\nBAUERKOMPRESSORENGeS.m.b.H.\nIZ NO-Sud Straβe3 Obj.26\n2355WienerNeudorf\nOsterreich\n證證書\nfurdenGeltungsbereich\nVertriebundServicevonVerdichteranlagen,\neinQualitatsmanagementsystemeingefuhrthatundanwendet.\nDurcheinAuditwurdederNachweiserbracht,\ndassdieForderungender\nCERTIFICATE\nDINENISO9001:2015\nerfullt sind.\nDiesesZertifikatistgultiginVerbindung\nmit demHauptzertifikatvom27.11.2024bis26.11.2027.\nIAF\n(DAkkS\nDeutsche\nZERTIFIKAT\nAkeredterungstelle\nFred Wenke\nD-ZM-14143-01-00\nLeiterderZertifizierungsstelle\nMunchen,22.11.2024\nMS/01-07/2023\nTUv SUD Management Service GmbH ·Zertifizierungsstelle·Ridlerstrasse 57·B0339 Munchen● Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+      "page": null,
+      "section": [
+        "bauer_amfile_232"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.27715368,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "50a078af-39d0-4244-bc9d-b10e3671dcfc",
+        "filename": "0087-bauer_amfile_216-1d4691de14.md",
+        "title": "bauer_amfile_216",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "CERTIFICATE"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "EN ISO 3834-2"
+        ],
+        "content": "Document: bauer_amfile_216\nmfile_216\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_216.pdf`\n- Original SHA-256: `1d4691de1400363b8fd8a624b3345aa1913069e18e0a400b0c136cfdc2479001`\n## Page 1\n\n_____________________\nHenrik Bohl\n\nCERTIFICATE\nTÜV SÜD-MUC-WD-3112378.2015.005\nManufacturer:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nPlant(s):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nThe above mentioned company fulfills the\ncomprehensive quality requirements for fusion\nwelding of metallic materials\naccording to\nEN ISO 3834-2\nContract:\n4243762\nValid until:\nDecember 15, 2026\nMunich, October 29, 2025",
+        "page": null,
+        "section": [
+          "bauer_amfile_216"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.36916667,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "f2e0d1c6-4eb3-4c54-ae09-a0f3c1c56965",
+        "filename": "0114-bauer_amfile_264-7660adceb4.md",
+        "title": "bauer_amfile_264",
+        "language": "en",
+        "publication_date": "2026-01-01",
+        "certificates": [
+          "CERTIFICATE",
+          "ZERTIFIKAT",
+          "www.tuvsud.com/de-certificate-validity-check"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_264\nmfile_264\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_264.pdf`\n- Original SHA-256: `7660adceb4b4e084e66186f38e49fe31261e492de056b5c8e6c516b4827472c9`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nCERTIFICATE\nCERTIFICADO\nCertificateRegistrationNo.:1210017634TMS/OrderNo.:70008415\nThe Certification Body\nofTuvsuDManagementServiceGmbH\ncertifiesthattheorganization\nBAUER\nCEPTNONKAT\nKOMPRESSOREN\nQuality.OurDNA\nBAUER COMPHolding GmbH\nWolfratshausenerStr.80\n81379Munchen\nGermany\nfor the scope\nDevelopment,salesandserviceof\n證證書\ncompressorunits,purification-andstoragesystems\nfor airandgasesupto5o0bar,screwcompressor airendsand\ncompactunitsandspecialaggregates\nincludingthesitesseeenclosure\nhasestablishedandappliesaQualityManagementSystem.\nAnauditwasperformedandhasfurnishedproof\nthattherequirementsaccordingto\nCERTIFICATE\nDINENISO9001:2015\nare fulfilled.\nThecertificateisvalidfrom2026-01-26until2027-11-26.\nIAF\n(DAkkS\nDeutsche\nZERTIFIKAT\nAkkreditierungsstelle\nFredWenke\nD-ZM·14143-01-00\nHeadofCertificationBody\nMunich,2026-01-27\nMS/01-07/2023\nPage1of 2\nTUv SUD Management Service GmbH ·Zertifizierungsstelle ·Ridlerstrasse 57· B0339 Munchen · Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+        "page": null,
+        "section": [
+          "bauer_amfile_264"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.34854167,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "0bcf29d2-6c90-4226-8a5b-b7a5be14f5c7",
+        "filename": "0095-bauer_amfile_231-c7b41331ce.md",
+        "title": "bauer_amfile_231",
+        "language": "en",
+        "publication_date": "2017-04-01",
+        "certificates": [
+          "CERTIFICATE",
+          "ZERTIFIKAT",
+          "www.tuev-sued.de/certificate-validity-check"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_231\nmfile_231\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_231.pdf`\n- Original SHA-256: `c7b41331cebe99b49595e4489feee3af6d9d33e72800266ea355ffe134961f03`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nCERTIFICATE\nCERTIFICADO\nA\nThe CertificationBody\nof Tuv suD Management Service GmbH\ncertifies that\nBAUER\nKOMPRESSOREN\nCEPTNONKAT\nQuality.OurDNA\nBauer Kompressoren GCC FZE\nUnitAF07,JebelAliFreeZone,P.O.Box261413\nDubai,UnitedArabEmirates\nhasestablished and applies\naQualityManagementSystemfor\nUV SUD TUV SUD TUV SUD TUV SUD TUV SUDTUV SUD TJV SUD\n證證書\nSales and Service of Compressors and Accessories.\nStocking andSalesofSpareParts.\nAnauditwasperformed,ReportNo.707009664.\nProofhasbeenfurnished thattherequirements\naccordingto\nISO9001:2015\nCERTIFICATE\narefulfilled.\nThecertificateisvalidfrom2017-04-04until2019-02-25.\nCertificateRegistrationNo.:1210045150TMS.\nZERTIFIKAT\nIAF\n((DAKkS\nDeutsche\nAkkreditierungsstelle\nProductComplianceManagement\nD-ZM-14143-01-00\nMunich,2017-04-04\nTUV SUDManagementServiceGmbH·Zertifizierungsstelle·RidlerstraBe65·80339Munchen·Germany\nTUV?\nwww.tuev-sued.de/certificate-validity-check",
+        "page": null,
+        "section": [
+          "bauer_amfile_231"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.32408451,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "02b76ef2-c14b-40aa-9655-1f692b9fc448",
+        "filename": "0098-bauer_amfile_234-d1f3e6cfd8.md",
+        "title": "bauer_amfile_234",
+        "language": "en",
+        "publication_date": "2024-03-01",
+        "certificates": [
+          "CERTIFICATE",
+          "Certificate Registration No.: 12 100 43061 TMS / Order No.: 4153921171",
+          "The certificate is valid from 2024-03-21 until 2027-03-20."
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "DIN EN ISO 9001"
+        ],
+        "content": "Document: bauer_amfile_234\nmfile_234\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_234.pdf`\n- Original SHA-256: `d1f3e6cfd8ac56106e8d4049cfadc932310343d74e9b16c1715c574bde729798`\n## Page 1\n\nCERTIFICATE\nCertificate Registration No.: 12 100 43061 TMS / Order No.: 4153921171\nThe Certification Body\nof TÜV SÜD Management Service GmbH\ncertifies that the organization\n\nBAUER KOMPRESSOREN INDIA PVT. LTD.\nPlot No – T-128, T Block, MIDC, Pimpri Chinchwad Industrial Area,\nBhosari\nPune - 411026\nIndia\nfor the scope\nDesign, Manufacturing, Sales and Service of Compressors and Accessories.\nStocking and Sales of Spare Parts..\nhas established and applies a Quality Management System.\nAn audit was performed and has furnished proof\nthat the requirements according to\nDIN EN ISO 9001:2015\nare fulfilled.\nThe certificate is valid from 2024-03-21 until 2027-03-20.\n\nFred Wenke\nHead of Certification Body\nMunich, 2024-03-18",
+        "page": null,
+        "section": [
+          "bauer_amfile_234"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.32388889,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "d149ca29-2997-4247-97b4-77e219639345",
+        "filename": "0109-bauer_amfile_247-959d2c3147.md",
+        "title": "bauer_amfile_247",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "CERTIFICATE",
+          "ZERTIFIKAT"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_247\nmfile_247\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_247.pdf`\n- Original SHA-256: `959d2c3147a9b8fc74ad438a11565a5d9391031d2768b652699f43469370b5bc`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nIndustrieService\nCERTIFICATE\nCERTIFICADO\nTheCertificationBodyof\nTUV sUD Industrie Service GmbH,\na Notified Body of thePressure EquipmentDirective(PED),\ncertifies that\nBAUER\nKOMPRESSOREN\nCEPTNONKAT\nStäblistraBe8,81477 Munchen, Germany\nwith themanufacturingplants\nplant1,BayerwaldstraBe8,82538Geretsried\nUNICCOMPGmbH,BayerwaldstraBe6,82538Geretsried\nimplemented, operates and maintains a quality\nassurance system as described in the Pressure Equipment\nDirective2014/68/EUAnnexIll,ModuleH1\nfor the scope of\nDesign and manufacture ofpressurevessels,\n正\npressure accessories, safety valves and assemblies\n恐\nforairandgasesupto550bar\nThe audit with the report number Q-IS-ESA1-MUC-PED-4051-135-22\nproves that the quality assurance system fulfils thePED requirements.\nCERTIFICATE\nThemanufacturerisauthorizedtoprovidethepressureequipment\nproduced within the scope of the assessed quality assurance system with\nthefollowingNotifiedBodyNumber:\nCE 0036\nCertificateNo.:DGR-0036-QS-913a-22\nvaliduntilDecember13th，2025\nZERTIFIKAT\nFilderstadt,November11th,2022\nMartina/John\nNotifiedBodyNo.:0036\nTUVSUDIndustrieServiceGmbH\nWestendstraBe199\nTel.:\n+497117005289\n80686Munchen\nFax:\n+497117005582\nGermany",
+        "page": null,
+        "section": [
+          "bauer_amfile_247"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.32282051,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "2765f1bd-b34e-4b4f-b23f-0c3be6b9216c",
+        "filename": "0110-bauer_amfile_248-ed35debdab.md",
+        "title": "bauer_amfile_248",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "ZERTIFIKAT",
+          "CERTIFICATE",
+          "Zertifikat-Nr.:"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_248\nmfile_248\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_248.pdf`\n- Original SHA-256: `ed35debdaba3770bef8fe858da737fba654f2f6f5ec48c9f9ba81872481ce1cd`\n## Page 1\n\nCERTIFICAT\nTUV\nSOD\nIndustrie Service\nZERTIFIKAT\ngultig bis:31.03.2032\nCERTIFICADO\nCERTIFICATE\nvaliduntil:31.03.2032\nEU-Baumusterprufung(ModulB)-Baumuster-nachRichtlinie2014/68/EU\nEUTypeexamination(moduleB)-productiontype-accordingtoDirective2014/68/EU\nZertifikat-Nr.:\nZ-IS-AN1-MAN-22-04-3145192-12165340\nCertificateNo.:\nName undAnschriftdesHerstellers:\nBAUERKOMPRESSORENGmbH\nStablistr.8\nNameandaddressofmanufacturer:\nDE-81477Munchen\nCEPTNONKAT\nHiermitwirdbescheinigt,dassdasuntengenannteBaumusterdieAnforderungenderRichtlinie2014/68/EU\nerfullt.\nWeherewithcertifythatthetypementionedbelowmeetstherequirementsoftheDirective2014/68/EU.\nPrufberichtNr.:\nP-IS-AN1-MAN-22-027\nEvaluationreportNo.:\nGeltungsbereich:\nDirektwirkendefederbelasteteSicherheitsventile\nScopeofexamination:\ndesTyps059410-340\nCERTIFICATE\nFertigungsstatte:\nBAUERKOMPRESSORENGmbH\nManufacturingplant:\nStablistr.8\nDE-81477Munchen\nMannheim,12.04.2022\nZertifizierungsstelle fur Druckgerate\n(Ort,Datum)\nans\n(Place,date)\nDipl-Ing. R. Brinkmann\nEchtheitsprufungdurchAppTUVSUDVerify\nVerificationofCertificatebyTuvsuDAppVerify\nZERTIFIKAT\nNotifizierteStelle,Kenn-Nr.0036\nDokumentID:3145192Y5201b\nralf.brinkmann@tuev-sued.de\nNotifiedBody，No.0036\nTUVSUDIndustrieServiceGmbH",
+        "page": null,
+        "section": [
+          "bauer_amfile_248"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3225,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "679306d1-0fcb-4474-bf9a-280c02aae0a0",
+        "filename": "0083-bauer_amfile_203-3d3040caa9.md",
+        "title": "bauer_amfile_203",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "ZERTIFIKAT",
+          "Zertifikat-Registrier-Nr.:1210417634TMS/Auftrags-Nr.:70008415",
+          "CERTIFICATE",
+          "Dieses Zertifikat ist gultig vom 25.09.2024 bis 29.08.2027."
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_203\nmfile_203\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_203.pdf`\n- Original SHA-256: `3d3040caa9e625a2f48dfa6b5986a8d5b2e22a1a4fbe0f35b32376c95735ea0b`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nZERTIFIKAT\nCERTIFICADO\nZertifikat-Registrier-Nr.:1210417634TMS/Auftrags-Nr.:70008415\nDie Zertifizierungsstelle\nderTuvsUDManagementServiceGmbH\nbescheinigt,dassdieOrganisation\nBAUER\nKOMPRESSOREN\nCEPTNONKAT\nQuality.Our DNA\nBAUERKOMPRESSORENGmbH\nStablistraBe8\n81477Munchen\nDeutschland\nfur den Geltungsbereich\nVertrieb,Entwicklung,HerstellungundServicevonVerdichteranlagen,\n證證書\nAufbereitungs-undSpeichersystemenfurLuftundGasebis5o0bar\neinschlieBlichderStandortegemaBAnlage\neinUmweltmanagementsystemeingefuhrt hatund anwendet.\nDurcheinAuditwurdederNachweiserbracht,\ndassdieForderungender\nDINENISO14001:2015\nCERTIFICATE\nerfullt sind.\nDieses Zertifikat ist gultig vom 25.09.2024 bis 29.08.2027.\nVorherigesZertifikat gultig bis 29.08.2024.\nPα以(\nIAF\nDAkkS\nDeutsche\nZERTIFIKAT\nAkkreditierungsstelle\nFredWenke\nD-ZM-14143-01-00\nLeiterderZertifizierungsstelle\nMunchen,25.09.2024\nMS/01-07/2023\nSeite 1von 2\nTUv SUD Management Service GmbH ·Zertifizierungsstelle·Ridlerstrasse 57·B0339 Munchen● Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+        "page": null,
+        "section": [
+          "bauer_amfile_203"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.30178922,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "44d17a37-7d84-4532-b520-f5f88fa8fdb4",
+        "filename": "0090-bauer_amfile_226-a6fb2c212e.md",
+        "title": "bauer_amfile_226",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "ZERTIFIKAT",
+          "Zertifikat-Registrier-Nr.:1210017634/06TMS/Auftrags-Nr.:70008415",
+          "CERTIFICATE",
+          "www.tuvsud.com/de-certificate-validity-check"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_226\nmfile_226\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_226.pdf`\n- Original SHA-256: `a6fb2c212ec89c16687fd3dc6b069993dc67450bbd242d37ef2b163a9bde683b`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nZERTIFIKAT\nCERTIFICADO\nZertifikat-Registrier-Nr.:1210017634/06TMS/Auftrags-Nr.:70008415\nDieZertifizierungsstelle\nderTUvsUDManagementServiceGmbH\nbescheinigt,dassdieOrganisation\nBAUERCOMPHoldingGmbH\nWolfratshausenerStr.80\n81379Munchen\nDeutschland\nCEPTNONKAT\namStandort\nBAUER\nKOMPRESSOREN\nQuality.OurDNA\nBAUERCOMPRESSORIS.r.I.UNIPERSONALE\nViaGalileoGalilei9\n36057ARCUGNANO(VI)\nItalien\n證證書\nfurdenGeltungsbereich\nVertriebundServicevonVerdichteranlagen,\nAufbereitungs-undSpeichersystemenfurLuftundGasebis5oobar\neinQualitatsmanagementsystemeingefuhrthatundanwendet.\nDurcheinAuditwurdederNachweiserbracht,\ndassdieForderungender\nCERTIFICATE\nDINENISO9001:2015\nerfullt sind.\nDiesesZertifikatistgultiginVerbindung\nmitdemHauptzertifikatvom27.11.2024bis26.11.2027.\nIAF\nDAKkS\nDeutche\nZERTIFIKAT\nAkkreditierurgsstelle\nFredWenke\nD-ZM-14143-01-00\nLeiterderZertifizierungsstelle\nMunchen,22.11.2024\nMS/01-07/2023\nTUv SUD Management Service GmbH ·Zertifizierungsstelle·Ridlerstrasse 57·B0339 Munchen● Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+        "page": null,
+        "section": [
+          "bauer_amfile_226"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.28003968,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "3695f9ea-f2e6-4624-b261-01459ba40eb4",
+        "filename": "0115-bauer_amfile_265-a91efbbe6f.md",
+        "title": "bauer_amfile_265",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "ZERTIFIKAT",
+          "Zertifikat-Registrier-Nr.:1210017634/05TMS/Auftrags-Nr.:70008415",
+          "CERTIFICATE",
+          "www.tuvsud.com/de-certificate-validity-check"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_265\nmfile_265\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_265.pdf`\n- Original SHA-256: `a91efbbe6ff09568bebd228b3329c16b02ba2a4a05a3d8fad9e34e2dac7e0426`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nZERTIFIKAT\nCERTIFICADO\nZertifikat-Registrier-Nr.:1210017634/05TMS/Auftrags-Nr.:70008415\nDieZertifizierungsstelle\nder TuvsUDManagementService GmbH\nbescheinigt,dassdieOrganisation\nBAUERCOMPHoldingGmbH\nWolfratshausenerStr.80\n81379Munchen\nDeutschland\nCEPTNONKAT\namStandort\nBAUER\nKOMPRESSOREN\nQuality.OurDNA\nBAUERCOMPRESSEURSSAS\n315RueNicolasCOPERNIC\n73420Mery\nFrankreich\n證證書\nfurdenGeltungsbereich\nEntwicklung,Herstellung,VertriebundServicevonVerdichteranlagen,\nAufbereitungs-undSpeichersystemenfurLuftund Gasebis5o0bar\neinQualitatsmanagementsystemeingefuhrthatundanwendet.\nDurcheinAuditwurdederNachweiserbracht,\ndassdieForderungender\nCERTIFICATE\nDINENISO9001:2015\nerfuilltsind.\nDiesesZertifikatistgultiginVerbindung\nmitdemHauptzertifikatvom26.01.2026bis26.11.2027.\nIAF\n(DAkkS\nDeutsche\nZERTIFIKAT\nAkkreditierurgsstelle\nFredWenke\nD·ZM-14143·01·00\nLeiterderZertifizierungsstelle\nMunchen,27.01.2026\nMS/01-07/2023\nTUv SUD Management Service GmbH ·Zertifizierungsstelle·Ridlerstrasse 57·B0339 Munchen● Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+        "page": null,
+        "section": [
+          "bauer_amfile_265"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.2778653,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "1fbc7d76-76d9-45b6-8760-f3f07f49e26a",
+        "filename": "0096-bauer_amfile_232-2503e2d6a3.md",
+        "title": "bauer_amfile_232",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "ZERTIFIKAT",
+          "Zertifikat-Registrier-Nr.:1210017634/04TMS/Auftrags-Nr.:70008415",
+          "CERTIFICATE",
+          "www.tuvsud.com/de-certificate-validity-check"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_232\nmfile_232\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_232.pdf`\n- Original SHA-256: `2503e2d6a344e0d44fe9e38f0698cf7c13ab753cdc0997ee783141bd710e77fd`\n## Page 1\n\nCERTIFICAT\nTUV\nSUD\nManagement Service\nZERTIFIKAT\nCERTIFICADO\nZertifikat-Registrier-Nr.:1210017634/04TMS/Auftrags-Nr.:70008415\nDieZertifizierungsstelle\nderTuvsUDManagementServiceGmbH\nbescheinigt,dassdieOrganisation\nBAUERCOMPHoldingGmbH\nWolfratshausenerStr.80\n81379Munchen\nDeutschland\nCEPTNONKAT\nam Standort\nBAUER\nKOMPRESSOREN\nQuality.OurDNA\nBAUERKOMPRESSORENGeS.m.b.H.\nIZ NO-Sud Straβe3 Obj.26\n2355WienerNeudorf\nOsterreich\n證證書\nfurdenGeltungsbereich\nVertriebundServicevonVerdichteranlagen,\neinQualitatsmanagementsystemeingefuhrthatundanwendet.\nDurcheinAuditwurdederNachweiserbracht,\ndassdieForderungender\nCERTIFICATE\nDINENISO9001:2015\nerfullt sind.\nDiesesZertifikatistgultiginVerbindung\nmit demHauptzertifikatvom27.11.2024bis26.11.2027.\nIAF\n(DAkkS\nDeutsche\nZERTIFIKAT\nAkeredterungstelle\nFred Wenke\nD-ZM-14143-01-00\nLeiterderZertifizierungsstelle\nMunchen,22.11.2024\nMS/01-07/2023\nTUv SUD Management Service GmbH ·Zertifizierungsstelle·Ridlerstrasse 57·B0339 Munchen● Germany\nTUV?\nwww.tuvsud.com/de-certificate-validity-check",
+        "page": null,
+        "section": [
+          "bauer_amfile_232"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.27715368,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 0,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 0,
+      "elapsed_ms": 843.52
+    }
+  },
+  "completed_at": "2026-07-23T14:09:44.880790+00:00",
+  "case_id": "B15",
+  "split": "development",
+  "category": "exact_certificate",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

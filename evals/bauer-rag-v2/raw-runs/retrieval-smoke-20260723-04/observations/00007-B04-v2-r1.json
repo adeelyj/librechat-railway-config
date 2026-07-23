@@ -1,0 +1,1426 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1198.64,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "b6bf67d6-c95c-44d7-9df3-d521ff976dfd",
+      "filename": "0254-0088_hochdruck-speichersysteme_fbfbdcc4bf-0c560f62cf.md",
+      "title": "High-pressure storage systems · Storage Systems | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage systems · Storage Systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage Systems | BAUER KOMP / Web page content\nTable: Technical data\nRow: B 50\n–: ✓\n50: 1\nB 50 (Nitrox): –\n✓: –\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.: Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.\nStorage cylinder with console: A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.\nPressure vessel: The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.\nCondensate drain: Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.\nOptions: Safety valve and pressure gauge\nSafety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.: The storage design\nStorage system design – the basis for efficient compressor operation: A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.\nTo ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.: The size of the storage system depends on:\nCompressor delivery rate (l/min): Air consumption of the specific application\nPressure differential between start and stop (hysteresis): Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):\nVk (l/min): Compressor delivery volume in liters per minute: V (l): Storage volume in liters (water volume)\nΔp (bar): Pressure differential (hysteresis) in bar: We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+      "page": null,
+      "section": [
+        "High-pressure storage systems · Storage Systems / BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "B 50",
+      "headers": [
+        "–",
+        "50",
+        "B 50 (Nitrox)",
+        "✓",
+        "50",
+        "B 80",
+        "–",
+        "1",
+        "The modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.",
+        "Storage cylinder with console",
+        "Pressure vessel",
+        "Condensate drain",
+        "Options",
+        "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+        "Storage system design – the basis for efficient compressor operation",
+        "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+        "Compressor delivery rate (l/min)",
+        "Pressure differential between start and stop (hysteresis)",
+        "Vk (l/min): Compressor delivery volume in liters per minute",
+        "Δp (bar): Pressure differential (hysteresis) in bar"
+      ],
+      "row_values": [
+        "✓",
+        "1",
+        "–",
+        "–",
+        "1",
+        "✓",
+        "80",
+        "Details & Features",
+        "Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.",
+        "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+        "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+        "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+        "Safety valve and pressure gauge",
+        "The storage design",
+        "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+        "The size of the storage system depends on:",
+        "Air consumption of the specific application",
+        "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+        "V (l): Storage volume in liters (water volume)",
+        "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel."
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.19946237,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "384ebfa3-dc1e-4583-952d-07162a47f263",
+      "filename": "0255-0089_hochdruck-speichersysteme1_33b7c41212-c007706fef.md",
+      "title": "High-pressure storage systems · Storage systems | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage systems · Storage systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage systems | BAUER KOMP / Web page content\nTable: Technical Data\nRow: 420 bar\nLiter: B 50\n–: ✓\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.: Storage cylinder with console\nA module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.: Pressure vessel\nThe storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.: Condensate drain\nDepending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.: Options\nSafety valve and pressure gauge: Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.\nThe storage design: Storage system design – the basis for efficient compressor operation\nA correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.: To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.\nThe size of the storage system depends on:: Compressor delivery rate (l/min)\nAir consumption of the specific application: Pressure differential between start and stop (hysteresis)\nSimplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):: Vk (l/min): Compressor delivery volume in liters per minute\nV (l): Storage volume in liters (water volume): Δp (bar): Pressure differential (hysteresis) in bar\nWe recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.: Downloads\nProduct Brochure Accessory Systems EN: (3.44 MB)\nData Sheet B50 EN: (256.64 kB)",
+      "page": null,
+      "section": [
+        "High-pressure storage systems · Storage systems / BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "420 bar",
+      "headers": [
+        "Liter",
+        "–",
+        "50",
+        "B 80",
+        "–",
+        "1",
+        "The modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.",
+        "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+        "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+        "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+        "Safety valve and pressure gauge",
+        "The storage design",
+        "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+        "The size of the storage system depends on:",
+        "Air consumption of the specific application",
+        "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+        "V (l): Storage volume in liters (water volume)",
+        "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+        "Product Brochure Accessory Systems EN",
+        "Data Sheet B50 EN"
+      ],
+      "row_values": [
+        "B 50",
+        "✓",
+        "1",
+        "✓",
+        "80",
+        "Details & Features",
+        "Storage cylinder with console",
+        "Pressure vessel",
+        "Condensate drain",
+        "Options",
+        "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+        "Storage system design – the basis for efficient compressor operation",
+        "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+        "Compressor delivery rate (l/min)",
+        "Pressure differential between start and stop (hysteresis)",
+        "Vk (l/min): Compressor delivery volume in liters per minute",
+        "Δp (bar): Pressure differential (hysteresis) in bar",
+        "Downloads",
+        "(3.44 MB)",
+        "(256.64 kB)"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.17935641,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "384ebfa3-dc1e-4583-952d-07162a47f263",
+      "filename": "0255-0089_hochdruck-speichersysteme1_33b7c41212-c007706fef.md",
+      "title": "High-pressure storage systems · Storage systems | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage systems · Storage systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage systems | BAUER KOMP / Web page content\nTable: Technical Data\nRow: B 50\n–: ✓\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.: Storage cylinder with console\nA module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.: Pressure vessel\nThe storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.: Condensate drain\nDepending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.: Options\nSafety valve and pressure gauge: Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.\nThe storage design: Storage system design – the basis for efficient compressor operation\nA correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.: To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.\nThe size of the storage system depends on:: Compressor delivery rate (l/min)\nAir consumption of the specific application: Pressure differential between start and stop (hysteresis)\nSimplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):: Vk (l/min): Compressor delivery volume in liters per minute\nV (l): Storage volume in liters (water volume): Δp (bar): Pressure differential (hysteresis) in bar\nWe recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.: Downloads\nProduct Brochure Accessory Systems EN: (3.44 MB)\nData Sheet B50 EN: (256.64 kB)\nData Sheet B80 EN: (400.79 kB)",
+      "page": null,
+      "section": [
+        "High-pressure storage systems · Storage systems / BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "B 50",
+      "headers": [
+        "–",
+        "50",
+        "B 80",
+        "–",
+        "1",
+        "The modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.",
+        "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+        "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+        "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+        "Safety valve and pressure gauge",
+        "The storage design",
+        "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+        "The size of the storage system depends on:",
+        "Air consumption of the specific application",
+        "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+        "V (l): Storage volume in liters (water volume)",
+        "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+        "Product Brochure Accessory Systems EN",
+        "Data Sheet B50 EN",
+        "Data Sheet B80 EN"
+      ],
+      "row_values": [
+        "✓",
+        "1",
+        "✓",
+        "80",
+        "Details & Features",
+        "Storage cylinder with console",
+        "Pressure vessel",
+        "Condensate drain",
+        "Options",
+        "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+        "Storage system design – the basis for efficient compressor operation",
+        "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+        "Compressor delivery rate (l/min)",
+        "Pressure differential between start and stop (hysteresis)",
+        "Vk (l/min): Compressor delivery volume in liters per minute",
+        "Δp (bar): Pressure differential (hysteresis) in bar",
+        "Downloads",
+        "(3.44 MB)",
+        "(256.64 kB)",
+        "(400.79 kB)"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.17883598,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "b6bf67d6-c95c-44d7-9df3-d521ff976dfd",
+      "filename": "0254-0088_hochdruck-speichersysteme_fbfbdcc4bf-0c560f62cf.md",
+      "title": "High-pressure storage systems · Storage Systems | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage systems · Storage Systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage Systems | BAUER KOMP / Web page content\nTable: Technical data\nRow: 420 bar\nLiters: B 50\n–: ✓\n50: 1\nB 50 (Nitrox): –\n✓: –\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.: Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.\nStorage cylinder with console: A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.\nPressure vessel: The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.\nCondensate drain: Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.\nOptions: Safety valve and pressure gauge\nSafety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.: The storage design\nStorage system design – the basis for efficient compressor operation: A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.\nTo ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.: The size of the storage system depends on:\nCompressor delivery rate (l/min): Air consumption of the specific application\nPressure differential between start and stop (hysteresis): Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):\nVk (l/min): Compressor delivery volume in liters per minute: V (l): Storage volume in liters (water volume)",
+      "page": null,
+      "section": [
+        "High-pressure storage systems · Storage Systems / BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "420 bar",
+      "headers": [
+        "Liters",
+        "–",
+        "50",
+        "B 50 (Nitrox)",
+        "✓",
+        "50",
+        "B 80",
+        "–",
+        "1",
+        "The modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.",
+        "Storage cylinder with console",
+        "Pressure vessel",
+        "Condensate drain",
+        "Options",
+        "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+        "Storage system design – the basis for efficient compressor operation",
+        "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+        "Compressor delivery rate (l/min)",
+        "Pressure differential between start and stop (hysteresis)",
+        "Vk (l/min): Compressor delivery volume in liters per minute"
+      ],
+      "row_values": [
+        "B 50",
+        "✓",
+        "1",
+        "–",
+        "–",
+        "1",
+        "✓",
+        "80",
+        "Details & Features",
+        "Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.",
+        "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+        "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+        "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+        "Safety valve and pressure gauge",
+        "The storage design",
+        "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+        "The size of the storage system depends on:",
+        "Air consumption of the specific application",
+        "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+        "V (l): Storage volume in liters (water volume)"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.17858796,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+      "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nOptions: Proportional valve\nFor sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.: Scope of delivery\nScope of delivery B-SAFE 300 with filling hoses: Safety cell with explosion-proof, automatically locking doors\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+      "page": null,
+      "section": [
+        "B-SAFE · Filling and Safety / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "ca. 450 kg",
+      "headers": [
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Filling chamber dimensions",
+        "B-SAFE ECO",
+        "Atemluft",
+        "410 bar",
+        "225/330 bar",
+        "ca. 450 kg",
+        "6",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+        "Safety cell",
+        "Safety doors",
+        "Filling control",
+        "Filling options",
+        "Options",
+        "For sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.",
+        "Scope of delivery B-SAFE 300 with filling hoses"
+      ],
+      "row_values": [
+        "maximal 10",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "130 cm × 40 cm × 70 cm",
+        "Medium",
+        "Maximum operating pressure",
+        "Filling pressures (up to 2)",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Details & Features",
+        "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+        "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+        "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "Proportional valve",
+        "Scope of delivery",
+        "Safety cell with explosion-proof, automatically locking doors"
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.15774411,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+      "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: 410 bar\nFilling pressures (up to 2): 225/330 bar\nVariable pressure increase: 20 – 50 bar/min\nWeight: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+      "page": null,
+      "section": [
+        "B-SAFE · Filling and Safety / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "410 bar",
+      "headers": [
+        "Filling pressures (up to 2)",
+        "Variable pressure increase",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Filling chamber dimensions",
+        "B-SAFE ECO",
+        "Atemluft",
+        "410 bar",
+        "225/330 bar",
+        "ca. 450 kg",
+        "6",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+        "Safety cell",
+        "Safety doors",
+        "Filling control",
+        "Filling options"
+      ],
+      "row_values": [
+        "225/330 bar",
+        "20 – 50 bar/min",
+        "ca. 450 kg",
+        "maximal 10",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "130 cm × 40 cm × 70 cm",
+        "Medium",
+        "Maximum operating pressure",
+        "Filling pressures (up to 2)",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Details & Features",
+        "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+        "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+        "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process."
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.15751797,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "be113977-712d-46a9-9154-6a39a8bfc4ba",
+      "filename": "0189-0023_b-master_4ad12ec30c-e15d7a4af1.md",
+      "title": "B-MASTER · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: B-MASTER · Filling and Safety | BAUER KOMPRESSOREN\ne ranges (with safety valve and pressure reducer)\nContact us\nRequest product\nSelected product:\nB-MASTER\nArt. Nr.: B-MASTER\nSKU\nB-MASTER\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nTechnical data\nB-MASTER\nNumber of filling valves\nNumber of pressure ranges\nSafety valve\nPressure reducer\nMINI filling panel\n1\n–\nMIDI filling panel\n2\n1\n–\nMAXI filling panel ¹\n1\n2\n✓\n¹ Suitable for direct connection of the filling panel to a storage system with a maximum storage pressure of 420 bar.\nIn combination with additional filling panels, the MAXI filling panel is ideally suited for setting up a filling line with an alternative filling pressure (e.g., additional MIDI filling panels with 300 and 200 bar).\nThe filling pressure in the pressure vessel is displayed via a pressure gauge in bar/psi.\nDetails & Features\nThe B-MASTER MINI, MIDI, and MAXI filling panels are purpose-built for the filling of compressed air cylinders used in paintball sports. They enable safe and efficient filling of bottles ranging from 0.8 to 1.9 liters at 200 or 300 bar. The system is designed for external mounting and can be expanded using T-pieces – ideal for multi-table setups.\nThe rugged filling coupling with integrated check valve fits all standard paintball nipples and prevents the hose from whipping if triggered without a connected marker. An integrated silencer reduces noise when venting the hose.",
+      "page": null,
+      "section": [
+        "B-MASTER · Filling and Safety / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.1566771,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "5447e78f-159a-41d1-91e6-6c5f4db80973",
+      "filename": "0039-2022-01_B-NEWS_EN_sc-53814cbeae.md",
+      "title": "2022-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2022-01-01",
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-DETECTION"
+      ],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2022-01_B-NEWS_EN_sc\n5 B-DETECTION PLUS\n6 B-DETECTION AIRBOX\n7 Filling panel\n8 External display\n9 Automatic selector unit\n10 Storage system\n11 \u0007High pressure regulator\n12 B-CLOUD\n6\n## Page 5\n\n9\n8\nIn heartfelt speeches, BAUER’s “First\nFamily” warmly thanked the employ­\nees for all their efforts in the pre-\nvious two difficult years, and hailed\nthe extremely positive prospects for\nBAUER in the future, based on the\ncompany’s financial results and the\nstream of new product developments.\nAt dinner a lavish selection of Bavar­ian\nspecialities and drinks were served,\naccompanied by a musical programme\nfeaturing a traditional brass band,\nthen a DJ to keep the party mood in\nfull swing. A hugely popular photo\nbooth invited guests to dress up in fun\naccessories and snap themselves. But\nthe real star of the event was Heinz\nBauer, who was fittingly celebrated by\nthe guests and employees on this\nspecial occasion. They had put heart,\nsoul and plenty of effort into assem-\nbling a varied series of entertaining\nskits, sketches, songs and videos.\nHeinz Bauer himself was clearly\nthoroughly amused by the many\nself-penned songs, medleys and films\noffering imaginative and humorous\nlooks at this exceptional and many-\nfaceted personality in the finest BAUER\ntradition. When the event came to a\nclose at around 11 pm, it had been a\ngreat evening full of memories to\ntreasure, as the departing guests\nunanimously agreed.",
+      "page": 4,
+      "section": [
+        "2022-01 B-NEWS EN sc",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.13650794,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\ncompressor:\nautomatic condensate drain B-DRAIN\nPROFI LINE with diesel engine: CAPITANO II-D\n1 Compressor control not availabe for units with combustion engines.\n## Page 16\n\n16 | FEATURES AND HIGHLIGHTS | BAUER PREMIUM LINE\nBAUER KOMPRESSOREN\nB-CONTROL controls and monitors all functions of your BAUER stationary compressor system. Electronic control\nunits in the B-CONTROL Series enable all relevant requirements for stationary compressors to be comprehen-\nsively met.\nCOMPRESSOR CONTROL UNITS\nSafe, secure monitoring of system functions and a control unit aligned to the system are essential for cost effective,\nsafe operation of a compressor system.\nOur mobile compressors feature straightforward, self-explanatory operation using a simple compressor control\nunit for optional integration.\nThis electronic control unit and additional monitoring system shuts down the compressor when the system rea-\nches final pressure, measures operating hours and oil pressure and displays the current operating status. It also\nenables the compressor to operate fully automatically – the compressor is switched on when pressure falls below\na defined minimum level – in conjunction with a storage system.\nThe patented mini-computer B-TIMER can also be used with mobile systems without a control unit. B-TIMER shows",
+      "page": 15,
+      "section": [
+        "bauer amfile 5",
+        "Page 15"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.13650794,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "ba48b958-905e-4663-bad1-c372f2d79517",
+      "filename": "0226-0060_fsc-filling-speed-control_075613a48e-9ca4a5709b.md",
+      "title": "FSC Filling Speed Control · Filling and Safety | BAUER KOMPR",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: FSC Filling Speed Control · Filling and Safety | BAUER KOMPR\nce: `bauer_index\\raw_html\\0060_fsc-filling-speed-control_075613a48e.html`\n- Original SHA-256: `9ca4a5709b4a8fafd530d42c4aff1593c0c2979da8dc48904319f58c5fd9da3e`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\ncalcActive())\">\nFSC Filling Speed Control\nControl of filling speed for breathing air applications up to 330 bar\nThe FSC (Filling Speed Control) with touchscreen control allows regulated filling speeds between 20 and 50 bar/min. This enables safe filling, especially of composite cylinders.\nWall-mounted installation\nExtends cylinder service life and increases safety\nContact us\nRequest product\nSelected product:\nFSC Filling Speed Control\nArt. Nr.: FSCFillingSpeedControl\nSKU\nFSCFillingSpeedControl\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nTechnical data\nFSC – Filling Speed Control\nGeneral\nMedium\nAir\nPermissible ambient temperature",
+      "page": null,
+      "section": [
+        "FSC Filling Speed Control · Filling and Safety / BAUER KOMPR"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.13611111,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "b6bf67d6-c95c-44d7-9df3-d521ff976dfd",
+        "filename": "0254-0088_hochdruck-speichersysteme_fbfbdcc4bf-0c560f62cf.md",
+        "title": "High-pressure storage systems · Storage Systems | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage systems · Storage Systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage Systems | BAUER KOMP / Web page content\nTable: Technical data\nRow: B 50\n–: ✓\n50: 1\nB 50 (Nitrox): –\n✓: –\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.: Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.\nStorage cylinder with console: A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.\nPressure vessel: The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.\nCondensate drain: Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.\nOptions: Safety valve and pressure gauge\nSafety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.: The storage design\nStorage system design – the basis for efficient compressor operation: A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.\nTo ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.: The size of the storage system depends on:\nCompressor delivery rate (l/min): Air consumption of the specific application\nPressure differential between start and stop (hysteresis): Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):\nVk (l/min): Compressor delivery volume in liters per minute: V (l): Storage volume in liters (water volume)\nΔp (bar): Pressure differential (hysteresis) in bar: We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+        "page": null,
+        "section": [
+          "High-pressure storage systems · Storage Systems / BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "B 50",
+        "headers": [
+          "–",
+          "50",
+          "B 50 (Nitrox)",
+          "✓",
+          "50",
+          "B 80",
+          "–",
+          "1",
+          "The modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.",
+          "Storage cylinder with console",
+          "Pressure vessel",
+          "Condensate drain",
+          "Options",
+          "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+          "Storage system design – the basis for efficient compressor operation",
+          "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+          "Compressor delivery rate (l/min)",
+          "Pressure differential between start and stop (hysteresis)",
+          "Vk (l/min): Compressor delivery volume in liters per minute",
+          "Δp (bar): Pressure differential (hysteresis) in bar"
+        ],
+        "row_values": [
+          "✓",
+          "1",
+          "–",
+          "–",
+          "1",
+          "✓",
+          "80",
+          "Details & Features",
+          "Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.",
+          "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+          "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+          "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+          "Safety valve and pressure gauge",
+          "The storage design",
+          "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+          "The size of the storage system depends on:",
+          "Air consumption of the specific application",
+          "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+          "V (l): Storage volume in liters (water volume)",
+          "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel."
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.19946237,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "384ebfa3-dc1e-4583-952d-07162a47f263",
+        "filename": "0255-0089_hochdruck-speichersysteme1_33b7c41212-c007706fef.md",
+        "title": "High-pressure storage systems · Storage systems | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage systems · Storage systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage systems | BAUER KOMP / Web page content\nTable: Technical Data\nRow: 420 bar\nLiter: B 50\n–: ✓\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.: Storage cylinder with console\nA module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.: Pressure vessel\nThe storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.: Condensate drain\nDepending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.: Options\nSafety valve and pressure gauge: Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.\nThe storage design: Storage system design – the basis for efficient compressor operation\nA correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.: To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.\nThe size of the storage system depends on:: Compressor delivery rate (l/min)\nAir consumption of the specific application: Pressure differential between start and stop (hysteresis)\nSimplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):: Vk (l/min): Compressor delivery volume in liters per minute\nV (l): Storage volume in liters (water volume): Δp (bar): Pressure differential (hysteresis) in bar\nWe recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.: Downloads\nProduct Brochure Accessory Systems EN: (3.44 MB)\nData Sheet B50 EN: (256.64 kB)",
+        "page": null,
+        "section": [
+          "High-pressure storage systems · Storage systems / BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "420 bar",
+        "headers": [
+          "Liter",
+          "–",
+          "50",
+          "B 80",
+          "–",
+          "1",
+          "The modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.",
+          "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+          "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+          "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+          "Safety valve and pressure gauge",
+          "The storage design",
+          "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+          "The size of the storage system depends on:",
+          "Air consumption of the specific application",
+          "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+          "V (l): Storage volume in liters (water volume)",
+          "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+          "Product Brochure Accessory Systems EN",
+          "Data Sheet B50 EN"
+        ],
+        "row_values": [
+          "B 50",
+          "✓",
+          "1",
+          "✓",
+          "80",
+          "Details & Features",
+          "Storage cylinder with console",
+          "Pressure vessel",
+          "Condensate drain",
+          "Options",
+          "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+          "Storage system design – the basis for efficient compressor operation",
+          "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+          "Compressor delivery rate (l/min)",
+          "Pressure differential between start and stop (hysteresis)",
+          "Vk (l/min): Compressor delivery volume in liters per minute",
+          "Δp (bar): Pressure differential (hysteresis) in bar",
+          "Downloads",
+          "(3.44 MB)",
+          "(256.64 kB)"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.17935641,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "384ebfa3-dc1e-4583-952d-07162a47f263",
+        "filename": "0255-0089_hochdruck-speichersysteme1_33b7c41212-c007706fef.md",
+        "title": "High-pressure storage systems · Storage systems | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage systems · Storage systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage systems | BAUER KOMP / Web page content\nTable: Technical Data\nRow: B 50\n–: ✓\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.: Storage cylinder with console\nA module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.: Pressure vessel\nThe storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.: Condensate drain\nDepending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.: Options\nSafety valve and pressure gauge: Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.\nThe storage design: Storage system design – the basis for efficient compressor operation\nA correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.: To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.\nThe size of the storage system depends on:: Compressor delivery rate (l/min)\nAir consumption of the specific application: Pressure differential between start and stop (hysteresis)\nSimplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):: Vk (l/min): Compressor delivery volume in liters per minute\nV (l): Storage volume in liters (water volume): Δp (bar): Pressure differential (hysteresis) in bar\nWe recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.: Downloads\nProduct Brochure Accessory Systems EN: (3.44 MB)\nData Sheet B50 EN: (256.64 kB)\nData Sheet B80 EN: (400.79 kB)",
+        "page": null,
+        "section": [
+          "High-pressure storage systems · Storage systems / BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "B 50",
+        "headers": [
+          "–",
+          "50",
+          "B 80",
+          "–",
+          "1",
+          "The modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.",
+          "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+          "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+          "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+          "Safety valve and pressure gauge",
+          "The storage design",
+          "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+          "The size of the storage system depends on:",
+          "Air consumption of the specific application",
+          "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+          "V (l): Storage volume in liters (water volume)",
+          "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+          "Product Brochure Accessory Systems EN",
+          "Data Sheet B50 EN",
+          "Data Sheet B80 EN"
+        ],
+        "row_values": [
+          "✓",
+          "1",
+          "✓",
+          "80",
+          "Details & Features",
+          "Storage cylinder with console",
+          "Pressure vessel",
+          "Condensate drain",
+          "Options",
+          "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+          "Storage system design – the basis for efficient compressor operation",
+          "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+          "Compressor delivery rate (l/min)",
+          "Pressure differential between start and stop (hysteresis)",
+          "Vk (l/min): Compressor delivery volume in liters per minute",
+          "Δp (bar): Pressure differential (hysteresis) in bar",
+          "Downloads",
+          "(3.44 MB)",
+          "(256.64 kB)",
+          "(400.79 kB)"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.17883598,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "b6bf67d6-c95c-44d7-9df3-d521ff976dfd",
+        "filename": "0254-0088_hochdruck-speichersysteme_fbfbdcc4bf-0c560f62cf.md",
+        "title": "High-pressure storage systems · Storage Systems | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage systems · Storage Systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage Systems | BAUER KOMP / Web page content\nTable: Technical data\nRow: 420 bar\nLiters: B 50\n–: ✓\n50: 1\nB 50 (Nitrox): –\n✓: –\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.: Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.\nStorage cylinder with console: A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.\nPressure vessel: The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.\nCondensate drain: Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.\nOptions: Safety valve and pressure gauge\nSafety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.: The storage design\nStorage system design – the basis for efficient compressor operation: A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.\nTo ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.: The size of the storage system depends on:\nCompressor delivery rate (l/min): Air consumption of the specific application\nPressure differential between start and stop (hysteresis): Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):\nVk (l/min): Compressor delivery volume in liters per minute: V (l): Storage volume in liters (water volume)",
+        "page": null,
+        "section": [
+          "High-pressure storage systems · Storage Systems / BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "420 bar",
+        "headers": [
+          "Liters",
+          "–",
+          "50",
+          "B 50 (Nitrox)",
+          "✓",
+          "50",
+          "B 80",
+          "–",
+          "1",
+          "The modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.",
+          "Storage cylinder with console",
+          "Pressure vessel",
+          "Condensate drain",
+          "Options",
+          "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+          "Storage system design – the basis for efficient compressor operation",
+          "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+          "Compressor delivery rate (l/min)",
+          "Pressure differential between start and stop (hysteresis)",
+          "Vk (l/min): Compressor delivery volume in liters per minute"
+        ],
+        "row_values": [
+          "B 50",
+          "✓",
+          "1",
+          "–",
+          "–",
+          "1",
+          "✓",
+          "80",
+          "Details & Features",
+          "Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.",
+          "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+          "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+          "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+          "Safety valve and pressure gauge",
+          "The storage design",
+          "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+          "The size of the storage system depends on:",
+          "Air consumption of the specific application",
+          "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+          "V (l): Storage volume in liters (water volume)"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.17858796,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nOptions: Proportional valve\nFor sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.: Scope of delivery\nScope of delivery B-SAFE 300 with filling hoses: Safety cell with explosion-proof, automatically locking doors\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+        "page": null,
+        "section": [
+          "B-SAFE · Filling and Safety / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "ca. 450 kg",
+        "headers": [
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Filling chamber dimensions",
+          "B-SAFE ECO",
+          "Atemluft",
+          "410 bar",
+          "225/330 bar",
+          "ca. 450 kg",
+          "6",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+          "Safety cell",
+          "Safety doors",
+          "Filling control",
+          "Filling options",
+          "Options",
+          "For sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.",
+          "Scope of delivery B-SAFE 300 with filling hoses"
+        ],
+        "row_values": [
+          "maximal 10",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "130 cm × 40 cm × 70 cm",
+          "Medium",
+          "Maximum operating pressure",
+          "Filling pressures (up to 2)",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Details & Features",
+          "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+          "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+          "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "Proportional valve",
+          "Scope of delivery",
+          "Safety cell with explosion-proof, automatically locking doors"
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.15774411,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: 410 bar\nFilling pressures (up to 2): 225/330 bar\nVariable pressure increase: 20 – 50 bar/min\nWeight: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+        "page": null,
+        "section": [
+          "B-SAFE · Filling and Safety / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "410 bar",
+        "headers": [
+          "Filling pressures (up to 2)",
+          "Variable pressure increase",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Filling chamber dimensions",
+          "B-SAFE ECO",
+          "Atemluft",
+          "410 bar",
+          "225/330 bar",
+          "ca. 450 kg",
+          "6",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+          "Safety cell",
+          "Safety doors",
+          "Filling control",
+          "Filling options"
+        ],
+        "row_values": [
+          "225/330 bar",
+          "20 – 50 bar/min",
+          "ca. 450 kg",
+          "maximal 10",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "130 cm × 40 cm × 70 cm",
+          "Medium",
+          "Maximum operating pressure",
+          "Filling pressures (up to 2)",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Details & Features",
+          "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+          "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+          "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process."
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.15751797,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "be113977-712d-46a9-9154-6a39a8bfc4ba",
+        "filename": "0189-0023_b-master_4ad12ec30c-e15d7a4af1.md",
+        "title": "B-MASTER · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: B-MASTER · Filling and Safety | BAUER KOMPRESSOREN\ne ranges (with safety valve and pressure reducer)\nContact us\nRequest product\nSelected product:\nB-MASTER\nArt. Nr.: B-MASTER\nSKU\nB-MASTER\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nTechnical data\nB-MASTER\nNumber of filling valves\nNumber of pressure ranges\nSafety valve\nPressure reducer\nMINI filling panel\n1\n–\nMIDI filling panel\n2\n1\n–\nMAXI filling panel ¹\n1\n2\n✓\n¹ Suitable for direct connection of the filling panel to a storage system with a maximum storage pressure of 420 bar.\nIn combination with additional filling panels, the MAXI filling panel is ideally suited for setting up a filling line with an alternative filling pressure (e.g., additional MIDI filling panels with 300 and 200 bar).\nThe filling pressure in the pressure vessel is displayed via a pressure gauge in bar/psi.\nDetails & Features\nThe B-MASTER MINI, MIDI, and MAXI filling panels are purpose-built for the filling of compressed air cylinders used in paintball sports. They enable safe and efficient filling of bottles ranging from 0.8 to 1.9 liters at 200 or 300 bar. The system is designed for external mounting and can be expanded using T-pieces – ideal for multi-table setups.\nThe rugged filling coupling with integrated check valve fits all standard paintball nipples and prevents the hose from whipping if triggered without a connected marker. An integrated silencer reduces noise when venting the hose.",
+        "page": null,
+        "section": [
+          "B-MASTER · Filling and Safety / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.1566771,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "5447e78f-159a-41d1-91e6-6c5f4db80973",
+        "filename": "0039-2022-01_B-NEWS_EN_sc-53814cbeae.md",
+        "title": "2022-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2022-01-01",
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-DETECTION"
+        ],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2022-01_B-NEWS_EN_sc\n5 B-DETECTION PLUS\n6 B-DETECTION AIRBOX\n7 Filling panel\n8 External display\n9 Automatic selector unit\n10 Storage system\n11 \u0007High pressure regulator\n12 B-CLOUD\n6\n## Page 5\n\n9\n8\nIn heartfelt speeches, BAUER’s “First\nFamily” warmly thanked the employ­\nees for all their efforts in the pre-\nvious two difficult years, and hailed\nthe extremely positive prospects for\nBAUER in the future, based on the\ncompany’s financial results and the\nstream of new product developments.\nAt dinner a lavish selection of Bavar­ian\nspecialities and drinks were served,\naccompanied by a musical programme\nfeaturing a traditional brass band,\nthen a DJ to keep the party mood in\nfull swing. A hugely popular photo\nbooth invited guests to dress up in fun\naccessories and snap themselves. But\nthe real star of the event was Heinz\nBauer, who was fittingly celebrated by\nthe guests and employees on this\nspecial occasion. They had put heart,\nsoul and plenty of effort into assem-\nbling a varied series of entertaining\nskits, sketches, songs and videos.\nHeinz Bauer himself was clearly\nthoroughly amused by the many\nself-penned songs, medleys and films\noffering imaginative and humorous\nlooks at this exceptional and many-\nfaceted personality in the finest BAUER\ntradition. When the event came to a\nclose at around 11 pm, it had been a\ngreat evening full of memories to\ntreasure, as the departing guests\nunanimously agreed.",
+        "page": 4,
+        "section": [
+          "2022-01 B-NEWS EN sc",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.13650794,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\ncompressor:\nautomatic condensate drain B-DRAIN\nPROFI LINE with diesel engine: CAPITANO II-D\n1 Compressor control not availabe for units with combustion engines.\n## Page 16\n\n16 | FEATURES AND HIGHLIGHTS | BAUER PREMIUM LINE\nBAUER KOMPRESSOREN\nB-CONTROL controls and monitors all functions of your BAUER stationary compressor system. Electronic control\nunits in the B-CONTROL Series enable all relevant requirements for stationary compressors to be comprehen-\nsively met.\nCOMPRESSOR CONTROL UNITS\nSafe, secure monitoring of system functions and a control unit aligned to the system are essential for cost effective,\nsafe operation of a compressor system.\nOur mobile compressors feature straightforward, self-explanatory operation using a simple compressor control\nunit for optional integration.\nThis electronic control unit and additional monitoring system shuts down the compressor when the system rea-\nches final pressure, measures operating hours and oil pressure and displays the current operating status. It also\nenables the compressor to operate fully automatically – the compressor is switched on when pressure falls below\na defined minimum level – in conjunction with a storage system.\nThe patented mini-computer B-TIMER can also be used with mobile systems without a control unit. B-TIMER shows",
+        "page": 15,
+        "section": [
+          "bauer amfile 5",
+          "Page 15"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.13650794,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "ba48b958-905e-4663-bad1-c372f2d79517",
+        "filename": "0226-0060_fsc-filling-speed-control_075613a48e-9ca4a5709b.md",
+        "title": "FSC Filling Speed Control · Filling and Safety | BAUER KOMPR",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: FSC Filling Speed Control · Filling and Safety | BAUER KOMPR\nce: `bauer_index\\raw_html\\0060_fsc-filling-speed-control_075613a48e.html`\n- Original SHA-256: `9ca4a5709b4a8fafd530d42c4aff1593c0c2979da8dc48904319f58c5fd9da3e`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\ncalcActive())\">\nFSC Filling Speed Control\nControl of filling speed for breathing air applications up to 330 bar\nThe FSC (Filling Speed Control) with touchscreen control allows regulated filling speeds between 20 and 50 bar/min. This enables safe filling, especially of composite cylinders.\nWall-mounted installation\nExtends cylinder service life and increases safety\nContact us\nRequest product\nSelected product:\nFSC Filling Speed Control\nArt. Nr.: FSCFillingSpeedControl\nSKU\nFSCFillingSpeedControl\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nTechnical data\nFSC – Filling Speed Control\nGeneral\nMedium\nAir\nPermissible ambient temperature",
+        "page": null,
+        "section": [
+          "FSC Filling Speed Control · Filling and Safety / BAUER KOMPR"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.13611111,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "syn bk n2 420 500"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 0,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 11,
+      "elapsed_ms": 880.56
+    }
+  },
+  "completed_at": "2026-07-23T14:50:26.509968+00:00",
+  "case_id": "B04",
+  "split": "development",
+  "category": "structured_drilldown",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

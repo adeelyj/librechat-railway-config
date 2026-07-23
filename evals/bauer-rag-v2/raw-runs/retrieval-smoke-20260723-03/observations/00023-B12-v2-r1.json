@@ -1,0 +1,1156 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1299.79,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+      "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+      "title": "2025-06_Product_overview_EN_N37488_sc",
+      "language": "en",
+      "publication_date": "2025-06-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrogen",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "dryer",
+        "filter",
+        "control"
+      ],
+      "standards": [
+        "ISO 8573"
+      ],
+      "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nration of the filter\ncartridge is electronically monitored.\nSECCANT – REGENERATION DRYER\nThese regeneration dryers operate in the 25 to 420 bar pressure ranges.\nSECCANT is suited for drying air and gases at high service per­formances and\nF.A.D.s or at higher ambient temperatures. Further­more, the regeneration dryer\nis equipped as standard with electronic control, soft change-over between\nregeneration and load cycle, pre-­separation and a particle filter. Even the basic\nversion of the the SECCANT is designed for easy integration into the complete\nsystem. Also, these dryers can be expanded as required to include activated\ncarbon adsorbers for removing oil and transforming CO.\nPURIFICATION OF AIR AND GAS\n› Pressure range: 90 – 550 bar\n› Charging rate: 85 – 3,500 l/min\n› Pressure range: 25 – 420 bar\n› Charging rate: 500 – 30,000 l/min\nPX-FILTER\nBAUER PX series of medium and high-pressure coalescing and active charcoal filters\nare designed to remove particulates, oil droplets and aerosols. They are suitable for\nair, nitrogen, helium, argon and other gases. Various air/gas quality standards in accor-\ndance with ISO 8573 up to class 1 can be produced depending on the filter type and\nfilter combination.\n› Pressure range: 25 – 420 bar\n› Charging rate: up to 2,340 m³/h",
+      "page": 36,
+      "section": [
+        "2025-06_Product_overview_EN_N37488_sc",
+        "Page 36"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.53445101,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "e08d2039-f6f3-4274-a835-59556164a1e4",
+      "filename": "0245-0079_gib-23-baureihe2_5a66ec3c0d-d9f49c582d.md",
+      "title": "GIB 23 series · Water-cooled boosters | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "GIB 23",
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [
+        "nitrogen",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: GIB 23 series · Water-cooled boosters | BAUER KOMPRESSOREN\nexisting inlet pressure and increases it to the required final pressure. In contrast, a compressor compresses gas directly from atmospheric inlet pressure.\nWhat\npressure ranges does the GIB 23 series cover?\nDepending on the configuration and available inlet pressure, GIB 23 high-pressure booster compressors achieve final pressures of approximately 90 to 420 bar.\nWhat\nflow rates do the GIB 23 boosters provide?\nThe GIB 23 series covers flow rates of approximately 1,450 to 3,900 litres per minute. The actual flow rate depends on the inlet pressure, final pressure and system configuration.\nWhich\ngases can be compressed with GIB 23 boosters?\nGIB 23 boosters are designed for the compression of Air, Nitrogen, Helium, Heliox and Argon. They are specifically developed for industrial applications with increased pressure requirements.\nHow\nare GIB 23 boosters controlled and monitored?\nThe boosters are equipped with the B-CONTROL MICRO control system. It enables easy operation, reliable monitoring of all relevant operating parameters and connection to the B-CLOUD and the B-APP for digital system monitoring.\nWhat\nadvantages does the B-CLOUD offer for GIB 23 booster applications?\nThe B-CLOUD enables digital remote monitoring of the booster system. Operating data, alarms and system statuses can be accessed in real time, supporting predictive maintenance and high system availability.\nWhat",
+      "page": null,
+      "section": [
+        "GIB 23 series · Water-cooled boosters | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.35327652,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "b6bf67d6-c95c-44d7-9df3-d521ff976dfd",
+      "filename": "0254-0088_hochdruck-speichersysteme_fbfbdcc4bf-0c560f62cf.md",
+      "title": "High-pressure storage systems · Storage Systems | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage systems · Storage Systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage Systems | BAUER KOMP / Web page content\nTable: Technical data\nRow: 420 bar\nLiters: B 50\n–: ✓\n50: 1\nB 50 (Nitrox): –\n✓: –\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.: Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.\nStorage cylinder with console: A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.\nPressure vessel: The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.\nCondensate drain: Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.\nOptions: Safety valve and pressure gauge\nSafety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.: The storage design\nStorage system design – the basis for efficient compressor operation: A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.\nTo ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.: The size of the storage system depends on:\nCompressor delivery rate (l/min): Air consumption of the specific application\nPressure differential between start and stop (hysteresis): Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):\nVk (l/min): Compressor delivery volume in liters per minute: V (l): Storage volume in liters (water volume)",
+      "page": null,
+      "section": [
+        "High-pressure storage systems · Storage Systems | BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "420 bar",
+      "headers": [
+        "Liters",
+        "–",
+        "50",
+        "B 50 (Nitrox)",
+        "✓",
+        "50",
+        "B 80",
+        "–",
+        "1",
+        "The modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.",
+        "Storage cylinder with console",
+        "Pressure vessel",
+        "Condensate drain",
+        "Options",
+        "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+        "Storage system design – the basis for efficient compressor operation",
+        "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+        "Compressor delivery rate (l/min)",
+        "Pressure differential between start and stop (hysteresis)",
+        "Vk (l/min): Compressor delivery volume in liters per minute"
+      ],
+      "row_values": [
+        "B 50",
+        "✓",
+        "1",
+        "–",
+        "–",
+        "1",
+        "✓",
+        "80",
+        "Details & Features",
+        "Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.",
+        "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+        "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+        "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+        "Safety valve and pressure gauge",
+        "The storage design",
+        "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+        "The size of the storage system depends on:",
+        "Air consumption of the specific application",
+        "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+        "V (l): Storage volume in liters (water volume)"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.33733094,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "384ebfa3-dc1e-4583-952d-07162a47f263",
+      "filename": "0255-0089_hochdruck-speichersysteme1_33b7c41212-c007706fef.md",
+      "title": "High-pressure storage systems · Storage systems | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage systems · Storage systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage systems | BAUER KOMP / Web page content\nTable: Technical Data\nRow: 420 bar\nLiter: B 50\n–: ✓\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.: Storage cylinder with console\nA module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.: Pressure vessel\nThe storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.: Condensate drain\nDepending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.: Options\nSafety valve and pressure gauge: Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.\nThe storage design: Storage system design – the basis for efficient compressor operation\nA correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.: To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.\nThe size of the storage system depends on:: Compressor delivery rate (l/min)\nAir consumption of the specific application: Pressure differential between start and stop (hysteresis)\nSimplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):: Vk (l/min): Compressor delivery volume in liters per minute\nV (l): Storage volume in liters (water volume): Δp (bar): Pressure differential (hysteresis) in bar\nWe recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.: Downloads\nProduct Brochure Accessory Systems EN: (3.44 MB)\nData Sheet B50 EN: (256.64 kB)",
+      "page": null,
+      "section": [
+        "High-pressure storage systems · Storage systems | BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "420 bar",
+      "headers": [
+        "Liter",
+        "–",
+        "50",
+        "B 80",
+        "–",
+        "1",
+        "The modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.",
+        "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+        "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+        "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+        "Safety valve and pressure gauge",
+        "The storage design",
+        "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+        "The size of the storage system depends on:",
+        "Air consumption of the specific application",
+        "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+        "V (l): Storage volume in liters (water volume)",
+        "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+        "Product Brochure Accessory Systems EN",
+        "Data Sheet B50 EN"
+      ],
+      "row_values": [
+        "B 50",
+        "✓",
+        "1",
+        "✓",
+        "80",
+        "Details & Features",
+        "Storage cylinder with console",
+        "Pressure vessel",
+        "Condensate drain",
+        "Options",
+        "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+        "Storage system design – the basis for efficient compressor operation",
+        "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+        "Compressor delivery rate (l/min)",
+        "Pressure differential between start and stop (hysteresis)",
+        "Vk (l/min): Compressor delivery volume in liters per minute",
+        "Δp (bar): Pressure differential (hysteresis) in bar",
+        "Downloads",
+        "(3.44 MB)",
+        "(256.64 kB)"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.33706653,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "e249be0b-5008-4e42-98c1-596636ed7f81",
+      "filename": "0260-0094_i-26-baureihe_42c3075f9a-f36954e6cc.md",
+      "title": "I 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: I 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN\nin breathing air systems and an undisputed leading position in industrial applications, supported by a global service network.\nWhat\nis the I26 series used for?\nThe I26 series comprises water-cooled high-pressure compressors for the compression of air and nitrogen. It is used whenever these gases need to be reliably compressed from atmospheric pressure to high final pressures and supplied over long periods in continuous operation. Typical applications include industrial compressed air and nitrogen supply, process gas systems, research and development, test facilities and applications with permanent high-pressure demand where thermal stability and high operational reliability are required.\nWhat\nperformance ranges does the I26 series cover?\nThe I26 high-pressure compressors achieve final pressures from 90 to 420 bar. The effective delivery rates range from approximately 2,200 to 3,300 litres per minute, depending on configuration, inlet pressure and operating conditions. This makes the series suitable for medium to high-capacity industrial applications in continuous operation.\nWhat\ncharacterises the technical concept of the I26 series?",
+      "page": null,
+      "section": [
+        "I 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.33632212,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+      "filename": "0071-B-SELECT_en-f40d0389e3.md",
+      "title": "B-SELECT_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT"
+      ],
+      "media": [
+        "breathing air",
+        "compressed air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: B-SELECT_en\nPage 1\n\nStatus: 02/04/2026\nB-SELECT\nAutomatic selector unit\n\nFor simultaneous filling of pressure cylinders with air from\nstorage system and compressor\nInlet pressure up to 420 bar\nFlow rate up to 850 bar\n\nThe automatic selector unit enables compressed air cylinders to be filled quickly and simultaneously in parallel from\na single storage system (buffer) and via one compressor.\nImportant! The automatic selector unit works most effectively when the nominal pressure in the storage system\nand the breathing air cylinder are nearly the same.\n\nHOW IT WORKS\nFilling of the breathing air cylinder connected to the filling panel takes priority. This means that the storage system\nand the compressor always fill the cylinder connected to the filling panel first. Once the cylinders are completely\nfilled, the automatic selector unit independently switches over to filling the storage system.\n\nWhen the maximum filling pressure of the storage system is reached, the compressor shuts down fully\nautomatically. As soon as the next empty breathing air cylinder is connected to the filling panel, the storage system\nagain fills the breathing air cylinder first. If the preset restart pressure in the storage system is undershot, the\ncompressor switches on.\n\nThe compressor then fills the breathing air cylinder up to the value preset on the backpressure regulator / pressure",
+      "page": 1,
+      "section": [
+        "B-SELECT_en",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.33586287,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "fceca740-57cd-4b0a-a877-4cce185dd61b",
+      "filename": "0305-0139_pe-ve-series-industry_f2dc902272-5063ca4723.md",
+      "title": "PE-VE series · Air-cooled compressors | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE-VE series",
+        "B-CONTROL MICRO",
+        "B-CONTROL",
+        "PE-VE compressors"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE series · Air-cooled compressors | BAUER KOMPRESSOREN\nr?\nDepending on the version, PE-VE compressors cover pressure ranges from 90 to 365 bar. Certain models are also available for final pressures of up to 420 bar.\nWhat delivery rates are possible with PE-VE compressors?\nPE-VE compressors achieve delivery rates of approximately 85 to 800 l/min. The actual delivery rate depends on the model and the specific configuration.\nWhich gases are PE-VE compressors suitable for?\nPE-VE compressors are designed for the compression of air, nitrogen, and forming gas. They are intended for reliable continuous operation in industrial environments.\nWhat technically distinguishes PE-VE compressors?\nThe systems are based on proven BAUER high-pressure blocks and are designed for robustness, long service life, and continuous industrial duty. The design focuses on reliable technology and an especially attractive price-performance ratio.\nHow are PE-VE compressors controlled and monitored?\nThe compressor is equipped with the B-CONTROL MICRO control system. It enables easy operation, safe monitoring of operating parameters, and connectivity to the B-CLOUD and B-APP.\nWhat\nare the benefits of B-CLOUD?\nB-CLOUD enables centralized digital monitoring of the compressor. Operators have continuous access to operating data, can monitor system status, and plan maintenance more efficiently.\nHow maintenance-friendly are PE-VE compressors?",
+      "page": null,
+      "section": [
+        "PE-VE series · Air-cooled compressors | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.33543025,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "f7d0ae70-e54d-4272-9b78-e25313d49b9a",
+      "filename": "0284-0118_mini-verticus-i-series_34aaf7f2a0-a919d3810d.md",
+      "title": "MINI-VERTICUS series · Air-cooled compressors | BAUER KOMPRE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "MINI-VERTICUS series",
+        "B-CONTROL",
+        "MINI-VERTICUS is",
+        "B-CONTROL MICRO",
+        "MINI-VERTICUS cover",
+        "MINI-VERTICUS controlled",
+        "MINI-VERTICUS suitable",
+        "MINI-VERTICUS particularly"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: MINI-VERTICUS series · Air-cooled compressors | BAUER KOMPRE\nooled high-pressure compressor for industrial applications. It is used for the reliable compression of air and nitrogen at pressures ranging from 90 to 420 bar.\nWhat performance ranges does the MINI-VERTICUS cover?\nThe MINI-VERTICUS series offers free air delivery rates up to 300 l/min. This makes it suitable for both smaller industrial applications and continuous processes.\nHow is the MINI-VERTICUS controlled and monitored?\nThe compressor is equipped with the B-CONTROL MICRO control system. It enables easy operation, safe monitoring of operating parameters, and connectivity to the B-CLOUD and B-APP.\nWhat\nare the benefits of B-CLOUD?\nB-CLOUD enables centralized digital monitoring of the compressor. Operators have continuous access to operating data, can monitor system status, and plan maintenance more efficiently.\nWhich\ngases is the MINI-VERTICUS suitable for?\nThe MINI-VERTICUS is designed for the compression of air and nitrogen. The design is specially tailored to these gases and meets the requirements of industrial applications.\nHow\nmaintenance-friendly is the MINI-VERTICUS?\nThe compressors are designed for low maintenance operation and long service intervals. Robust components and the self-tensioning V-belt drive reduce service effort and downtime.\nWhich\nindustrial applications is the MINI-VERTICUS particularly suited for?",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS series · Air-cooled compressors | BAUER KOMPRE",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.33482639,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "e2f488d9-6f05-48b4-b0d6-c276ea5748c1",
+      "filename": "0024-2019-02_B-NEWS_EN_sc-2e8c93ebaa.md",
+      "title": "2019-02_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2019-02-01",
+      "certificates": [],
+      "product_families": [
+        "VERTICUS and",
+        "PE-VE sector",
+        "VERTICUS series",
+        "PE Series"
+      ],
+      "media": [
+        "nitrox",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster"
+      ],
+      "standards": [],
+      "content": "Document: 2019-02_B-NEWS_EN_sc\n-\nzed components and lubricants, as well\nas temperature monitoring of the gas\nflow at each stage and at the oil/water\nseparator.\nRange of new industrial systems\nBAUER has added some extremely at-\ntractive products to its portfolio of large-\nscale industrial systems for pressures of\nup to 500 bar. The BK 26 and BK 52\n­series are now available as boosters and\nas the GIB26.5 screw/booster combina-\ntion for final pressures of up to 500 bar,\nwhile the BK 52 is available for pressu-\nres up to 420 bar.\nA real star in the VERTICUS and PE-VE\nsector is the GIB15.41 booster system.\nWith free air delivery of up to 830 l/min\nand maximum final pressure of 350 bar,\nit sets the standard for this sector. En-\nhancing cost-effectiveness in a compact\ndesign, compressors in the MINI-VERTI-\nCUS and VERTICUS series for helium\nand argon compression are now avail­\nable in basic configurations with com-\nbined intake and condensate reser-\nvoirs.\nThe BAUER filling station was in constant use as the divers replenished their air supplies.\nThe divers cleared mountains of litter and debris\nout of the Danube.\nEspecially attractive: the new PE Series as\nPE-NITROX model for membrane systems",
+      "page": 7,
+      "section": [
+        "2019-02_B-NEWS_EN_sc",
+        "Page 7"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.33409539,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "3cbcc167-e566-42ba-af30-5bd9f1d63548",
+      "filename": "0248-0082_gib-52-baureihe_78b4c97b74-03ea859019.md",
+      "title": "GIB 52 series · Water-cooled boosters | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "GIB 52",
+        "GIB series",
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "valve",
+        "sensor",
+        "control"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: GIB 52 series · Water-cooled boosters | BAUER KOMPRESSOREN\nnlet pressure\nOperating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\nbar (min)\nbar (max)\nrpm\nkW\nkg\nlbs\nGIB 52 series | 200 to 420 bar | 50 Hz\nGIB 52 series | 420 – 520 bar | 50 Hz\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for air and nitrogen.\n² Shutdown pressure (final pressure sensor). Safety valve set pressure max. 365, 420 or 520 bar.\nDetails & Features\nThe water-cooled high-pressure boosters in the GIB series from BAUER KOMPRESSOREN are ideal for demanding industrial applications in continuous operation. Thanks to targeted water cooling of the compressor blocks and multi-stage compression, operating temperatures remain low and wear is minimised. The systems offer maximum gas tightness for loss-free compression up to 520 bar. Proven BAUER system components, robust construction and optimised power consumption ensure maximum efficiency. Low oil consumption, long maintenance intervals and transparent maintenance kits reduce operating costs (TCO) in the long term.\nB-CONTROL MICRO compressor control system",
+      "page": null,
+      "section": [
+        "GIB 52 series · Water-cooled boosters | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3334375,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+        "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+        "title": "2025-06_Product_overview_EN_N37488_sc",
+        "language": "en",
+        "publication_date": "2025-06-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrogen",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "dryer",
+          "filter",
+          "control"
+        ],
+        "standards": [
+          "ISO 8573"
+        ],
+        "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nration of the filter\ncartridge is electronically monitored.\nSECCANT – REGENERATION DRYER\nThese regeneration dryers operate in the 25 to 420 bar pressure ranges.\nSECCANT is suited for drying air and gases at high service per­formances and\nF.A.D.s or at higher ambient temperatures. Further­more, the regeneration dryer\nis equipped as standard with electronic control, soft change-over between\nregeneration and load cycle, pre-­separation and a particle filter. Even the basic\nversion of the the SECCANT is designed for easy integration into the complete\nsystem. Also, these dryers can be expanded as required to include activated\ncarbon adsorbers for removing oil and transforming CO.\nPURIFICATION OF AIR AND GAS\n› Pressure range: 90 – 550 bar\n› Charging rate: 85 – 3,500 l/min\n› Pressure range: 25 – 420 bar\n› Charging rate: 500 – 30,000 l/min\nPX-FILTER\nBAUER PX series of medium and high-pressure coalescing and active charcoal filters\nare designed to remove particulates, oil droplets and aerosols. They are suitable for\nair, nitrogen, helium, argon and other gases. Various air/gas quality standards in accor-\ndance with ISO 8573 up to class 1 can be produced depending on the filter type and\nfilter combination.\n› Pressure range: 25 – 420 bar\n› Charging rate: up to 2,340 m³/h",
+        "page": 36,
+        "section": [
+          "2025-06_Product_overview_EN_N37488_sc",
+          "Page 36"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.53445101,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "e08d2039-f6f3-4274-a835-59556164a1e4",
+        "filename": "0245-0079_gib-23-baureihe2_5a66ec3c0d-d9f49c582d.md",
+        "title": "GIB 23 series · Water-cooled boosters | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "GIB 23",
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [
+          "nitrogen",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: GIB 23 series · Water-cooled boosters | BAUER KOMPRESSOREN\nexisting inlet pressure and increases it to the required final pressure. In contrast, a compressor compresses gas directly from atmospheric inlet pressure.\nWhat\npressure ranges does the GIB 23 series cover?\nDepending on the configuration and available inlet pressure, GIB 23 high-pressure booster compressors achieve final pressures of approximately 90 to 420 bar.\nWhat\nflow rates do the GIB 23 boosters provide?\nThe GIB 23 series covers flow rates of approximately 1,450 to 3,900 litres per minute. The actual flow rate depends on the inlet pressure, final pressure and system configuration.\nWhich\ngases can be compressed with GIB 23 boosters?\nGIB 23 boosters are designed for the compression of Air, Nitrogen, Helium, Heliox and Argon. They are specifically developed for industrial applications with increased pressure requirements.\nHow\nare GIB 23 boosters controlled and monitored?\nThe boosters are equipped with the B-CONTROL MICRO control system. It enables easy operation, reliable monitoring of all relevant operating parameters and connection to the B-CLOUD and the B-APP for digital system monitoring.\nWhat\nadvantages does the B-CLOUD offer for GIB 23 booster applications?\nThe B-CLOUD enables digital remote monitoring of the booster system. Operating data, alarms and system statuses can be accessed in real time, supporting predictive maintenance and high system availability.\nWhat",
+        "page": null,
+        "section": [
+          "GIB 23 series · Water-cooled boosters | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.35327652,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "b6bf67d6-c95c-44d7-9df3-d521ff976dfd",
+        "filename": "0254-0088_hochdruck-speichersysteme_fbfbdcc4bf-0c560f62cf.md",
+        "title": "High-pressure storage systems · Storage Systems | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage systems · Storage Systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage Systems | BAUER KOMP / Web page content\nTable: Technical data\nRow: 420 bar\nLiters: B 50\n–: ✓\n50: 1\nB 50 (Nitrox): –\n✓: –\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.: Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.\nStorage cylinder with console: A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.\nPressure vessel: The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.\nCondensate drain: Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.\nOptions: Safety valve and pressure gauge\nSafety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.: The storage design\nStorage system design – the basis for efficient compressor operation: A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.\nTo ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.: The size of the storage system depends on:\nCompressor delivery rate (l/min): Air consumption of the specific application\nPressure differential between start and stop (hysteresis): Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):\nVk (l/min): Compressor delivery volume in liters per minute: V (l): Storage volume in liters (water volume)",
+        "page": null,
+        "section": [
+          "High-pressure storage systems · Storage Systems | BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "420 bar",
+        "headers": [
+          "Liters",
+          "–",
+          "50",
+          "B 50 (Nitrox)",
+          "✓",
+          "50",
+          "B 80",
+          "–",
+          "1",
+          "The modular storage system is the ideal supplement for compressor units and ensures stable pressure supply for air and Nitrox applications. Available in pressure levels of 330, 350, and 420 bar, it minimizes pressure fluctuations during peak withdrawals and reduces the number of compressor start-ups.",
+          "Storage cylinder with console",
+          "Pressure vessel",
+          "Condensate drain",
+          "Options",
+          "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+          "Storage system design – the basis for efficient compressor operation",
+          "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+          "Compressor delivery rate (l/min)",
+          "Pressure differential between start and stop (hysteresis)",
+          "Vk (l/min): Compressor delivery volume in liters per minute"
+        ],
+        "row_values": [
+          "B 50",
+          "✓",
+          "1",
+          "–",
+          "–",
+          "1",
+          "✓",
+          "80",
+          "Details & Features",
+          "Flexible expansion using 50- or 80-liter storage cylinders allows the system to be tailored precisely to individual demand, supporting smooth and efficient operation.",
+          "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+          "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+          "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+          "Safety valve and pressure gauge",
+          "The storage design",
+          "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+          "The size of the storage system depends on:",
+          "Air consumption of the specific application",
+          "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+          "V (l): Storage volume in liters (water volume)"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.33733094,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "384ebfa3-dc1e-4583-952d-07162a47f263",
+        "filename": "0255-0089_hochdruck-speichersysteme1_33b7c41212-c007706fef.md",
+        "title": "High-pressure storage systems · Storage systems | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage systems · Storage systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage systems | BAUER KOMP / Web page content\nTable: Technical Data\nRow: 420 bar\nLiter: B 50\n–: ✓\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.: Storage cylinder with console\nA module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.: Pressure vessel\nThe storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.: Condensate drain\nDepending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.: Options\nSafety valve and pressure gauge: Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.\nThe storage design: Storage system design – the basis for efficient compressor operation\nA correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.: To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.\nThe size of the storage system depends on:: Compressor delivery rate (l/min)\nAir consumption of the specific application: Pressure differential between start and stop (hysteresis)\nSimplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):: Vk (l/min): Compressor delivery volume in liters per minute\nV (l): Storage volume in liters (water volume): Δp (bar): Pressure differential (hysteresis) in bar\nWe recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.: Downloads\nProduct Brochure Accessory Systems EN: (3.44 MB)\nData Sheet B50 EN: (256.64 kB)",
+        "page": null,
+        "section": [
+          "High-pressure storage systems · Storage systems | BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "420 bar",
+        "headers": [
+          "Liter",
+          "–",
+          "50",
+          "B 80",
+          "–",
+          "1",
+          "The modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.",
+          "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+          "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+          "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+          "Safety valve and pressure gauge",
+          "The storage design",
+          "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+          "The size of the storage system depends on:",
+          "Air consumption of the specific application",
+          "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+          "V (l): Storage volume in liters (water volume)",
+          "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+          "Product Brochure Accessory Systems EN",
+          "Data Sheet B50 EN"
+        ],
+        "row_values": [
+          "B 50",
+          "✓",
+          "1",
+          "✓",
+          "80",
+          "Details & Features",
+          "Storage cylinder with console",
+          "Pressure vessel",
+          "Condensate drain",
+          "Options",
+          "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+          "Storage system design – the basis for efficient compressor operation",
+          "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+          "Compressor delivery rate (l/min)",
+          "Pressure differential between start and stop (hysteresis)",
+          "Vk (l/min): Compressor delivery volume in liters per minute",
+          "Δp (bar): Pressure differential (hysteresis) in bar",
+          "Downloads",
+          "(3.44 MB)",
+          "(256.64 kB)"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.33706653,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "e249be0b-5008-4e42-98c1-596636ed7f81",
+        "filename": "0260-0094_i-26-baureihe_42c3075f9a-f36954e6cc.md",
+        "title": "I 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: I 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN\nin breathing air systems and an undisputed leading position in industrial applications, supported by a global service network.\nWhat\nis the I26 series used for?\nThe I26 series comprises water-cooled high-pressure compressors for the compression of air and nitrogen. It is used whenever these gases need to be reliably compressed from atmospheric pressure to high final pressures and supplied over long periods in continuous operation. Typical applications include industrial compressed air and nitrogen supply, process gas systems, research and development, test facilities and applications with permanent high-pressure demand where thermal stability and high operational reliability are required.\nWhat\nperformance ranges does the I26 series cover?\nThe I26 high-pressure compressors achieve final pressures from 90 to 420 bar. The effective delivery rates range from approximately 2,200 to 3,300 litres per minute, depending on configuration, inlet pressure and operating conditions. This makes the series suitable for medium to high-capacity industrial applications in continuous operation.\nWhat\ncharacterises the technical concept of the I26 series?",
+        "page": null,
+        "section": [
+          "I 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.33632212,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+        "filename": "0071-B-SELECT_en-f40d0389e3.md",
+        "title": "B-SELECT_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT"
+        ],
+        "media": [
+          "breathing air",
+          "compressed air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: B-SELECT_en\nPage 1\n\nStatus: 02/04/2026\nB-SELECT\nAutomatic selector unit\n\nFor simultaneous filling of pressure cylinders with air from\nstorage system and compressor\nInlet pressure up to 420 bar\nFlow rate up to 850 bar\n\nThe automatic selector unit enables compressed air cylinders to be filled quickly and simultaneously in parallel from\na single storage system (buffer) and via one compressor.\nImportant! The automatic selector unit works most effectively when the nominal pressure in the storage system\nand the breathing air cylinder are nearly the same.\n\nHOW IT WORKS\nFilling of the breathing air cylinder connected to the filling panel takes priority. This means that the storage system\nand the compressor always fill the cylinder connected to the filling panel first. Once the cylinders are completely\nfilled, the automatic selector unit independently switches over to filling the storage system.\n\nWhen the maximum filling pressure of the storage system is reached, the compressor shuts down fully\nautomatically. As soon as the next empty breathing air cylinder is connected to the filling panel, the storage system\nagain fills the breathing air cylinder first. If the preset restart pressure in the storage system is undershot, the\ncompressor switches on.\n\nThe compressor then fills the breathing air cylinder up to the value preset on the backpressure regulator / pressure",
+        "page": 1,
+        "section": [
+          "B-SELECT_en",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.33586287,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "fceca740-57cd-4b0a-a877-4cce185dd61b",
+        "filename": "0305-0139_pe-ve-series-industry_f2dc902272-5063ca4723.md",
+        "title": "PE-VE series · Air-cooled compressors | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE-VE series",
+          "B-CONTROL MICRO",
+          "B-CONTROL",
+          "PE-VE compressors"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE series · Air-cooled compressors | BAUER KOMPRESSOREN\nr?\nDepending on the version, PE-VE compressors cover pressure ranges from 90 to 365 bar. Certain models are also available for final pressures of up to 420 bar.\nWhat delivery rates are possible with PE-VE compressors?\nPE-VE compressors achieve delivery rates of approximately 85 to 800 l/min. The actual delivery rate depends on the model and the specific configuration.\nWhich gases are PE-VE compressors suitable for?\nPE-VE compressors are designed for the compression of air, nitrogen, and forming gas. They are intended for reliable continuous operation in industrial environments.\nWhat technically distinguishes PE-VE compressors?\nThe systems are based on proven BAUER high-pressure blocks and are designed for robustness, long service life, and continuous industrial duty. The design focuses on reliable technology and an especially attractive price-performance ratio.\nHow are PE-VE compressors controlled and monitored?\nThe compressor is equipped with the B-CONTROL MICRO control system. It enables easy operation, safe monitoring of operating parameters, and connectivity to the B-CLOUD and B-APP.\nWhat\nare the benefits of B-CLOUD?\nB-CLOUD enables centralized digital monitoring of the compressor. Operators have continuous access to operating data, can monitor system status, and plan maintenance more efficiently.\nHow maintenance-friendly are PE-VE compressors?",
+        "page": null,
+        "section": [
+          "PE-VE series · Air-cooled compressors | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.33543025,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "f7d0ae70-e54d-4272-9b78-e25313d49b9a",
+        "filename": "0284-0118_mini-verticus-i-series_34aaf7f2a0-a919d3810d.md",
+        "title": "MINI-VERTICUS series · Air-cooled compressors | BAUER KOMPRE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "MINI-VERTICUS series",
+          "B-CONTROL",
+          "MINI-VERTICUS is",
+          "B-CONTROL MICRO",
+          "MINI-VERTICUS cover",
+          "MINI-VERTICUS controlled",
+          "MINI-VERTICUS suitable",
+          "MINI-VERTICUS particularly"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: MINI-VERTICUS series · Air-cooled compressors | BAUER KOMPRE\nooled high-pressure compressor for industrial applications. It is used for the reliable compression of air and nitrogen at pressures ranging from 90 to 420 bar.\nWhat performance ranges does the MINI-VERTICUS cover?\nThe MINI-VERTICUS series offers free air delivery rates up to 300 l/min. This makes it suitable for both smaller industrial applications and continuous processes.\nHow is the MINI-VERTICUS controlled and monitored?\nThe compressor is equipped with the B-CONTROL MICRO control system. It enables easy operation, safe monitoring of operating parameters, and connectivity to the B-CLOUD and B-APP.\nWhat\nare the benefits of B-CLOUD?\nB-CLOUD enables centralized digital monitoring of the compressor. Operators have continuous access to operating data, can monitor system status, and plan maintenance more efficiently.\nWhich\ngases is the MINI-VERTICUS suitable for?\nThe MINI-VERTICUS is designed for the compression of air and nitrogen. The design is specially tailored to these gases and meets the requirements of industrial applications.\nHow\nmaintenance-friendly is the MINI-VERTICUS?\nThe compressors are designed for low maintenance operation and long service intervals. Robust components and the self-tensioning V-belt drive reduce service effort and downtime.\nWhich\nindustrial applications is the MINI-VERTICUS particularly suited for?",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS series · Air-cooled compressors | BAUER KOMPRE",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.33482639,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "e2f488d9-6f05-48b4-b0d6-c276ea5748c1",
+        "filename": "0024-2019-02_B-NEWS_EN_sc-2e8c93ebaa.md",
+        "title": "2019-02_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2019-02-01",
+        "certificates": [],
+        "product_families": [
+          "VERTICUS and",
+          "PE-VE sector",
+          "VERTICUS series",
+          "PE Series"
+        ],
+        "media": [
+          "nitrox",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster"
+        ],
+        "standards": [],
+        "content": "Document: 2019-02_B-NEWS_EN_sc\n-\nzed components and lubricants, as well\nas temperature monitoring of the gas\nflow at each stage and at the oil/water\nseparator.\nRange of new industrial systems\nBAUER has added some extremely at-\ntractive products to its portfolio of large-\nscale industrial systems for pressures of\nup to 500 bar. The BK 26 and BK 52\n­series are now available as boosters and\nas the GIB26.5 screw/booster combina-\ntion for final pressures of up to 500 bar,\nwhile the BK 52 is available for pressu-\nres up to 420 bar.\nA real star in the VERTICUS and PE-VE\nsector is the GIB15.41 booster system.\nWith free air delivery of up to 830 l/min\nand maximum final pressure of 350 bar,\nit sets the standard for this sector. En-\nhancing cost-effectiveness in a compact\ndesign, compressors in the MINI-VERTI-\nCUS and VERTICUS series for helium\nand argon compression are now avail­\nable in basic configurations with com-\nbined intake and condensate reser-\nvoirs.\nThe BAUER filling station was in constant use as the divers replenished their air supplies.\nThe divers cleared mountains of litter and debris\nout of the Danube.\nEspecially attractive: the new PE Series as\nPE-NITROX model for membrane systems",
+        "page": 7,
+        "section": [
+          "2019-02_B-NEWS_EN_sc",
+          "Page 7"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.33409539,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "3cbcc167-e566-42ba-af30-5bd9f1d63548",
+        "filename": "0248-0082_gib-52-baureihe_78b4c97b74-03ea859019.md",
+        "title": "GIB 52 series · Water-cooled boosters | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "GIB 52",
+          "GIB series",
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "valve",
+          "sensor",
+          "control"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: GIB 52 series · Water-cooled boosters | BAUER KOMPRESSOREN\nnlet pressure\nOperating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\nbar (min)\nbar (max)\nrpm\nkW\nkg\nlbs\nGIB 52 series | 200 to 420 bar | 50 Hz\nGIB 52 series | 420 – 520 bar | 50 Hz\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions, valid for air and nitrogen.\n² Shutdown pressure (final pressure sensor). Safety valve set pressure max. 365, 420 or 520 bar.\nDetails & Features\nThe water-cooled high-pressure boosters in the GIB series from BAUER KOMPRESSOREN are ideal for demanding industrial applications in continuous operation. Thanks to targeted water cooling of the compressor blocks and multi-stage compression, operating temperatures remain low and wear is minimised. The systems offer maximum gas tightness for loss-free compression up to 520 bar. Proven BAUER system components, robust construction and optimised power consumption ensure maximum efficiency. Low oil consumption, long maintenance intervals and transparent maintenance kits reduce operating costs (TCO) in the long term.\nB-CONTROL MICRO compressor control system",
+        "page": null,
+        "section": [
+          "GIB 52 series · Water-cooled boosters | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3334375,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "standards": [],
+        "number_units": [
+          "420 bar",
+          "500 l min"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 2,
+      "elapsed_ms": 964.97
+    }
+  },
+  "completed_at": "2026-07-23T14:29:29.308465+00:00",
+  "case_id": "B12",
+  "split": "development",
+  "category": "bilingual_consistency",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

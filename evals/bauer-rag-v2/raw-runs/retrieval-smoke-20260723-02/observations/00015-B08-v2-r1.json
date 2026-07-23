@@ -1,0 +1,1366 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1330.58,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "d1a82a82-c977-4b54-b433-d837a1e006f7",
+      "filename": "0080-bauer_amfile_11-395dc528f8.md",
+      "title": "bauer_amfile_11",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS Series",
+        "VERTICUS BAUER",
+        "B-DETECTION PLUS",
+        "B-KOOL"
+      ],
+      "media": [],
+      "component_categories": [
+        "dryer",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_11\nof pressurised\nparts and saves energy.\nSETTING NEW STANDARDS IN DESIGN, ERGONOMICS AND FUNCTION\nTHE NEW SYSTEMS\n6 | MINI-VERTICUS & VERTICUS\nBAUER KOMPRESSOREN\n## Page 7\n\nSIGNIFICANTLY EXPANDS WHAT YOUR SYSTEM CAN DO\nThe new MINI VERTICUS & VERTICUS Series are supplied with a wide range of features as standard.\nHowever, we also want you to have the opportunity to customise and extend your system in line with your individual requi-\nrements. Our comprehensive range of accessories opens up virtually unlimited possibilities. See our ­“Accessory Systems”\nbrochure for a full overview of our products.\nTHE ACCESSORIES\n› B-DETECTION PLUS s: The new gas measure-\nment system is also available as a standalone\nmodel for retrofitting, with the same range of\nfeatures.\n› B-KOOL: This fully integrated refrigeration dryer\nhelps you to slash operating costs by significant-\nly extending filter cartridge life. Purchase costs\nare soon recouped; from then onwards, you save\nmoney while helping to conserve the environ-\nment.\n› B-SECURUS filter cartridge monitoring unit:\nEfficiently monitors filter cartridge saturation and\nwarns the operator in good time when the car-\ntridge is nearing the end of its service life. If the\ncartridge reaches full saturation without being\nchanged, B-SECURUS shuts down the system\nbefore moisture and oil can contaminate the air\ncylinders.",
+      "page": 6,
+      "section": [
+        "bauer_amfile_11",
+        "Page 6"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical",
+        "vector"
+      ],
+      "score": 0.29055328,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+      "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+      "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "PE-VE INDUSTRY",
+        "PE 180-18.5-VE",
+        "B-KOOL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\nDocument section: 2026-04_PE_VE_Industry_EN_N42434_sc / Page 6\nTable: TECHNICAL DATA\nRow: 1140 x 830 x 1520 mm\nPE 180-18.5-VE:: 1600 x 830 x 1520 mm\n› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system: while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a\nlater date if required.: › P 41/61 Purification Systems: Depending on the application or filter cartridge type, these\nsystems absorb, convert or extract moisture (H20) and oil. They are available as integrated: and external models.\n› Particulate filter: › B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.\n› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-: cantly extending filter cartridge life. Purchase costs are soon recouped.\n› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.: › Intake pressure reducer\n› 60-litre condensate vessel: › Base frame-mounted storage systems: The compressor and up to two storage cylinders,\neach with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to: form a ready-to-use system.\n› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or: operating rooms.\nModel: F.A.D. ¹\nMax. operating pres-: sure2\nNo. of: stages\nSpeed: approx.\nMotor: power\nNet weight approx.: l/min\nm³/h: cfm\nbar: psig\nrpm: kW\nkg: lbs\nFootnotes: 6 | PE-VE INDUSTRY",
+      "page": 6,
+      "section": [
+        "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "Page 6"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "1140 x 830 x 1520 mm",
+      "headers": [
+        "PE 180-18.5-VE:",
+        "› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system",
+        "later date if required.",
+        "systems absorb, convert or extract moisture (H20) and oil. They are available as integrated",
+        "› Particulate filter",
+        "› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-",
+        "› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.",
+        "› 60-litre condensate vessel",
+        "each with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to",
+        "› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or",
+        "Model",
+        "Max. operating pres-",
+        "No. of",
+        "Speed",
+        "Motor",
+        "Net weight approx.",
+        "m³/h",
+        "bar",
+        "rpm",
+        "kg"
+      ],
+      "row_values": [
+        "1600 x 830 x 1520 mm",
+        "while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a",
+        "› P 41/61 Purification Systems: Depending on the application or filter cartridge type, these",
+        "and external models.",
+        "› B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.",
+        "cantly extending filter cartridge life. Purchase costs are soon recouped.",
+        "› Intake pressure reducer",
+        "› Base frame-mounted storage systems: The compressor and up to two storage cylinders,",
+        "form a ready-to-use system.",
+        "operating rooms.",
+        "F.A.D. ¹",
+        "sure2",
+        "stages",
+        "approx.",
+        "power",
+        "l/min",
+        "cfm",
+        "psig",
+        "kW",
+        "lbs"
+      ],
+      "units": [
+        "m³/h",
+        "bar",
+        "rpm",
+        "kg",
+        "l/min",
+        "cfm",
+        "psig",
+        "kW"
+      ],
+      "footnotes": "6 | PE-VE INDUSTRY",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.27915789,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+      "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+      "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "PE-VE INDUSTRY",
+        "PE-VE Series",
+        "B-KOOL",
+        "PE 100-3-VE"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\nDocument section: 2026-04_PE_VE_Industry_EN_N42434_sc / Page 6\nTable: TECHNICAL DATA\nRow: 1600 x 830 x 1520 mm\n› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system: while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a\nlater date if required.: › P 41/61 Purification Systems: Depending on the application or filter cartridge type, these\nsystems absorb, convert or extract moisture (H20) and oil. They are available as integrated: and external models.\n› Particulate filter: › B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.\n› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-: cantly extending filter cartridge life. Purchase costs are soon recouped.\n› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.: › Intake pressure reducer\n› 60-litre condensate vessel: › Base frame-mounted storage systems: The compressor and up to two storage cylinders,\neach with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to: form a ready-to-use system.\n› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or: operating rooms.\nModel: F.A.D. ¹\nMax. operating pres-: sure2\nNo. of: stages\nSpeed: approx.\nMotor: power\nNet weight approx.: l/min\nm³/h: cfm\nbar: psig\nrpm: kW\nkg: lbs\nPE-VE SERIES, 90 - 365 bar: PE 100-3-VE\nFootnotes: 6 | PE-VE INDUSTRY",
+      "page": 6,
+      "section": [
+        "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "Page 6"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "1600 x 830 x 1520 mm",
+      "headers": [
+        "› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system",
+        "later date if required.",
+        "systems absorb, convert or extract moisture (H20) and oil. They are available as integrated",
+        "› Particulate filter",
+        "› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-",
+        "› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.",
+        "› 60-litre condensate vessel",
+        "each with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to",
+        "› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or",
+        "Model",
+        "Max. operating pres-",
+        "No. of",
+        "Speed",
+        "Motor",
+        "Net weight approx.",
+        "m³/h",
+        "bar",
+        "rpm",
+        "kg",
+        "PE-VE SERIES, 90 - 365 bar"
+      ],
+      "row_values": [
+        "while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a",
+        "› P 41/61 Purification Systems: Depending on the application or filter cartridge type, these",
+        "and external models.",
+        "› B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.",
+        "cantly extending filter cartridge life. Purchase costs are soon recouped.",
+        "› Intake pressure reducer",
+        "› Base frame-mounted storage systems: The compressor and up to two storage cylinders,",
+        "form a ready-to-use system.",
+        "operating rooms.",
+        "F.A.D. ¹",
+        "sure2",
+        "stages",
+        "approx.",
+        "power",
+        "l/min",
+        "cfm",
+        "psig",
+        "kW",
+        "lbs",
+        "PE 100-3-VE"
+      ],
+      "units": [
+        "m³/h",
+        "bar",
+        "rpm",
+        "kg",
+        "l/min",
+        "cfm",
+        "psig",
+        "kW"
+      ],
+      "footnotes": "6 | PE-VE INDUSTRY",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.27865823,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "1849f387-d7b3-4b97-a86d-e438aac3ffc3",
+      "filename": "0352-0186_px-filter_371fcd2a16-8ba572c24d.md",
+      "title": "PX filter · Air and gas purification | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: PX filter · Air and gas purification | BAUER KOMPRESSOREN\nDocument section: PX filter · Air and gas purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: 100 bar\nPX05/100: 100\n14000: 840\nG⅜: 7.9\nPX07/100: 100\n26000: 1560\nG½: 15.8\nPX10/100: 100\n39000: 2340\nG¾: 16.6\n250 bar: PX05/250\n250: 14000\n840: G⅜\n7.9: PX07/250\n250: 26000\n1560: G½\n15.8: PX10/250\n250: 39000\n2340: G¾\n16.6: 420 bar\nPX05/420: 420\nFootnotes: ¹ Oil vapor not taken into account\n² Filter element “A” with activated carbon layer: For removing small amounts of oil vapor",
+      "page": null,
+      "section": [
+        "PX filter · Air and gas purification | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "100 bar",
+      "headers": [
+        "PX05/100",
+        "14000",
+        "G⅜",
+        "PX07/100",
+        "26000",
+        "G½",
+        "PX10/100",
+        "39000",
+        "G¾",
+        "250 bar",
+        "250",
+        "840",
+        "7.9",
+        "250",
+        "1560",
+        "15.8",
+        "250",
+        "2340",
+        "16.6",
+        "PX05/420"
+      ],
+      "row_values": [
+        "100",
+        "840",
+        "7.9",
+        "100",
+        "1560",
+        "15.8",
+        "100",
+        "2340",
+        "16.6",
+        "PX05/250",
+        "14000",
+        "G⅜",
+        "PX07/250",
+        "26000",
+        "G½",
+        "PX10/250",
+        "39000",
+        "G¾",
+        "420 bar",
+        "420"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "¹ Oil vapor not taken into account\n² Filter element “A” with activated carbon layer: For removing small amounts of oil vapor",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.26069863,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-KOOL",
+        "VERTICUS and",
+        "PE-VE series"
+      ],
+      "media": [
+        "breathing air",
+        "compressed air"
+      ],
+      "component_categories": [
+        "dryer",
+        "filter",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\ner provide information about the\noperating status.\n4\n5\n1\n2\n3\n1. Ambient air\n2. Textile filter\n3. UV light source\n4. Cleaned breathing air\n5. Control and display\n## Page 10\n\n10 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS\nBAUER KOMPRESSOREN\nTHE SMART WAY TO SAVE COSTS AND HELP THE ENVIRONMENT!\nB-KOOL\nSIGNIFICANTLY LONGER FILTER CARTRIDGE LIFE\nB-KOOL Refrigeration Dryer cools the compressed air and separates out most of the moisture,\ncollecting it in the B-KOOL and thus preventing it from passing into the filter cartridge.\nParticularly in environments with high ambient temperatures, the B-KOOL refrigeration dryer extends filter\ncapacity to an outstanding extent.\nThe B-KOOL can either be installed on the Super Silent housing of the MINI-VERTICUS, VERTICUS and PE-VE series\nor outside the unit on a frame for floor-mounted installation or using a wall mount.\nB-KOOL-Control\nB-KOOL III\n1\n2\n3\n6\n5\n4",
+      "page": 9,
+      "section": [
+        "2026_04_Accessory_Systems_EN_N39608_sc",
+        "Page 9"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.25839344,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\nor s continuous gas monitoring system\nindicates that the CO2 level has fallen below the maximum\nstandard value, the damper can be opened further using the lever\non the B-AEROGUARD. This allows more air to flow directly into the\ncompressor without passing through the filter cartridge, thereby\nsignificantly extending the cartridge’s service life.\nA 300% increase in cartridge service life is possible!\nB-KOOL Refrigeration Dryer cools the compressed air and se-\nparates out most of the moisture, collecting it in the B-KOOL\nand thus preventing it from passing into the filter cartridge.\nParticularly in environments with high ambient temperatures,\nthe B-KOOL refrigeration dryer extends filter\ncapacity to an outstanding extent.\nB-AEROGUARD",
+      "page": 39,
+      "section": [
+        "bauer_amfile_5",
+        "Page 39"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.24712903,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "breathing air",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\n0,0: Extended life time at continuous operating mode\nExtended life time at 30 min. intermittent operating mode: Extended life time at 15 min. intermittent operating mode\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "page": 12,
+      "section": [
+        "2026_04_Accessory_Systems_EN_N39608_sc",
+        "Page 12"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "100 bar",
+      "headers": [
+        "Permissible free air delivery, compressor",
+        "200 - 650 l/min (according to ISO 1217, air)",
+        "Power supply",
+        "200 - 240 VAC 60 Hz (single phase)",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "15",
+        "Ambient temperature [°C]",
+        "WITH B-KOOL III",
+        "30",
+        "40",
+        "50",
+        "12,0",
+        "8,0",
+        "4,0",
+        "0,0",
+        "Extended life time at 30 min. intermittent operating mode",
+        "12,0",
+        "8,0",
+        "4,0"
+      ],
+      "row_values": [
+        "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+        "200 - 420 l/min (helium and argon)",
+        "200 - 240 VAC 50 Hz (single phase)",
+        "Power consumption",
+        "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+        "20",
+        "EXTENDED LIFE TIME",
+        "25",
+        "35",
+        "45",
+        "55",
+        "10,0",
+        "6,0",
+        "2,0",
+        "Extended life time at continuous operating mode",
+        "Extended life time at 15 min. intermittent operating mode",
+        "10,0",
+        "6,0",
+        "2,0"
+      ],
+      "units": [
+        "l/min",
+        "bar"
+      ],
+      "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.20288889,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "4e3cd61d-f8ef-46d6-9c60-c6995bdc70bd",
+      "filename": "0149-GTC_BCA_20160615_EN-6b0666569f.md",
+      "title": "GTC_BCA_20160615_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: GTC_BCA_20160615_EN\no be based on a\nbreach of the warranty, is notified to the company during the Warranty\nPeriod, the Company will (at the Company’s sole option) repair or replace\nthe Products, or (at the Company’s sole option) credit a sum to be agreed with\nthe Customer in lieu of the replacement of, any Product of part thereof.\n(d) The value of any claim under the Warranty cannot exceed the original value\npaid by the Customer for the Products\n(e) There are no third party beneficiaries of the Warranty granted by the\nCompany herein.\n(f) For warranty claim procedure information, please refer to Bauer Compressors\nAsia Pte Ltd or our respective distributors and agents.",
+      "page": 1,
+      "section": [
+        "GTC_BCA_20160615_EN",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.18139344,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "bdafe1eb-f001-4060-82da-efb2dcb4a26a",
+      "filename": "0146-Data_Sheet_Pressure_Reducing_Station_EN-602642de5d.md",
+      "title": "Data_Sheet_Pressure_Reducing_Station_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "filter",
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: Data_Sheet_Pressure_Reducing_Station_EN\nDocument section: Data_Sheet_Pressure_Reducing_Station_EN / Page 1\nTable: Technical data sheet\nHeaders and units: ■ | 1x Particle filter, 20 µm | ■ | 1x Pressure reducer (adjustable) | ■ | 1x Pressure gauge for inlet and outlet pressure | ■ | 1x Safety valve for outlet pressure | ■ | 2x Ball valve | ■ | 1x Panel for wall mounting | VERSIONS | Order number | Max inlet pressure | [bar] | Outlet pressure [bar] | Sicherheitsventil | [bar] | KV*\nRow: 077838-V001\nValues: 365 | 5 - 40 | 45 | 0,07\nFootnotes: 5 - 40\n41 - 100\n34 – 240\n41 - 230",
+      "page": 1,
+      "section": [
+        "Data_Sheet_Pressure_Reducing_Station_EN",
+        "Page 1"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data sheet",
+      "row_label": "077838-V001",
+      "headers": [
+        "■",
+        "1x Particle filter, 20 µm",
+        "■",
+        "1x Pressure reducer (adjustable)",
+        "■",
+        "1x Pressure gauge for inlet and outlet pressure",
+        "■",
+        "1x Safety valve for outlet pressure",
+        "■",
+        "2x Ball valve",
+        "■",
+        "1x Panel for wall mounting",
+        "VERSIONS",
+        "Order number",
+        "Max inlet pressure",
+        "[bar]",
+        "Outlet pressure [bar]",
+        "Sicherheitsventil",
+        "[bar]",
+        "KV*"
+      ],
+      "row_values": [
+        "365",
+        "5 - 40",
+        "45",
+        "0,07"
+      ],
+      "units": [],
+      "footnotes": "5 - 40\n41 - 100\n34 – 240\n41 - 230",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.17239344,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "6ac3dffd-39cb-4323-b860-c3d8578fce42",
+      "filename": "0250-0084_hochdruck-reduzierstation_f3134b9492-a0a9a07cb3.md",
+      "title": "High-pressure reducing station · Air and Gas Distribution |",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure reducing station · Air and Gas Distribution |\nDocument section: High-pressure reducing station · Air and Gas Distribution | / Web page content\nTable: Technical Data\nHeaders and units: High Pressure Reducing Station | Pressure Reduction | Inlet pressure max. | Outlet pressure adjustable ¹ | Safety valve ² | bar\nRow: 077838-V001\nValues: 365 | 5 – 40 | 45\nFootnotes: 5 – 40\n41 – 100\n34 – 241\n41 – 230\n¹ The initial pressure should always be set once (not intended for permanent change).\n² Standard pressure setting for safety valve. Other pressure settings available on request.",
+      "page": null,
+      "section": [
+        "High-pressure reducing station · Air and Gas Distribution |",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "077838-V001",
+      "headers": [
+        "High Pressure Reducing Station",
+        "Pressure Reduction",
+        "Inlet pressure max.",
+        "Outlet pressure adjustable ¹",
+        "Safety valve ²",
+        "bar"
+      ],
+      "row_values": [
+        "365",
+        "5 – 40",
+        "45"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "5 – 40\n41 – 100\n34 – 241\n41 – 230\n¹ The initial pressure should always be set once (not intended for permanent change).\n² Standard pressure setting for safety valve. Other pressure settings available on request.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.17212903,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "d1a82a82-c977-4b54-b433-d837a1e006f7",
+        "filename": "0080-bauer_amfile_11-395dc528f8.md",
+        "title": "bauer_amfile_11",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS Series",
+          "VERTICUS BAUER",
+          "B-DETECTION PLUS",
+          "B-KOOL"
+        ],
+        "media": [],
+        "component_categories": [
+          "dryer",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_11\nof pressurised\nparts and saves energy.\nSETTING NEW STANDARDS IN DESIGN, ERGONOMICS AND FUNCTION\nTHE NEW SYSTEMS\n6 | MINI-VERTICUS & VERTICUS\nBAUER KOMPRESSOREN\n## Page 7\n\nSIGNIFICANTLY EXPANDS WHAT YOUR SYSTEM CAN DO\nThe new MINI VERTICUS & VERTICUS Series are supplied with a wide range of features as standard.\nHowever, we also want you to have the opportunity to customise and extend your system in line with your individual requi-\nrements. Our comprehensive range of accessories opens up virtually unlimited possibilities. See our ­“Accessory Systems”\nbrochure for a full overview of our products.\nTHE ACCESSORIES\n› B-DETECTION PLUS s: The new gas measure-\nment system is also available as a standalone\nmodel for retrofitting, with the same range of\nfeatures.\n› B-KOOL: This fully integrated refrigeration dryer\nhelps you to slash operating costs by significant-\nly extending filter cartridge life. Purchase costs\nare soon recouped; from then onwards, you save\nmoney while helping to conserve the environ-\nment.\n› B-SECURUS filter cartridge monitoring unit:\nEfficiently monitors filter cartridge saturation and\nwarns the operator in good time when the car-\ntridge is nearing the end of its service life. If the\ncartridge reaches full saturation without being\nchanged, B-SECURUS shuts down the system\nbefore moisture and oil can contaminate the air\ncylinders.",
+        "page": 6,
+        "section": [
+          "bauer_amfile_11",
+          "Page 6"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical",
+          "vector"
+        ],
+        "score": 0.29055328,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+        "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+        "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "PE-VE INDUSTRY",
+          "PE 180-18.5-VE",
+          "B-KOOL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\nDocument section: 2026-04_PE_VE_Industry_EN_N42434_sc / Page 6\nTable: TECHNICAL DATA\nRow: 1140 x 830 x 1520 mm\nPE 180-18.5-VE:: 1600 x 830 x 1520 mm\n› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system: while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a\nlater date if required.: › P 41/61 Purification Systems: Depending on the application or filter cartridge type, these\nsystems absorb, convert or extract moisture (H20) and oil. They are available as integrated: and external models.\n› Particulate filter: › B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.\n› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-: cantly extending filter cartridge life. Purchase costs are soon recouped.\n› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.: › Intake pressure reducer\n› 60-litre condensate vessel: › Base frame-mounted storage systems: The compressor and up to two storage cylinders,\neach with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to: form a ready-to-use system.\n› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or: operating rooms.\nModel: F.A.D. ¹\nMax. operating pres-: sure2\nNo. of: stages\nSpeed: approx.\nMotor: power\nNet weight approx.: l/min\nm³/h: cfm\nbar: psig\nrpm: kW\nkg: lbs\nFootnotes: 6 | PE-VE INDUSTRY",
+        "page": 6,
+        "section": [
+          "2026-04_PE_VE_Industry_EN_N42434_sc",
+          "Page 6"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "1140 x 830 x 1520 mm",
+        "headers": [
+          "PE 180-18.5-VE:",
+          "› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system",
+          "later date if required.",
+          "systems absorb, convert or extract moisture (H20) and oil. They are available as integrated",
+          "› Particulate filter",
+          "› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-",
+          "› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.",
+          "› 60-litre condensate vessel",
+          "each with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to",
+          "› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or",
+          "Model",
+          "Max. operating pres-",
+          "No. of",
+          "Speed",
+          "Motor",
+          "Net weight approx.",
+          "m³/h",
+          "bar",
+          "rpm",
+          "kg"
+        ],
+        "row_values": [
+          "1600 x 830 x 1520 mm",
+          "while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a",
+          "› P 41/61 Purification Systems: Depending on the application or filter cartridge type, these",
+          "and external models.",
+          "› B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.",
+          "cantly extending filter cartridge life. Purchase costs are soon recouped.",
+          "› Intake pressure reducer",
+          "› Base frame-mounted storage systems: The compressor and up to two storage cylinders,",
+          "form a ready-to-use system.",
+          "operating rooms.",
+          "F.A.D. ¹",
+          "sure2",
+          "stages",
+          "approx.",
+          "power",
+          "l/min",
+          "cfm",
+          "psig",
+          "kW",
+          "lbs"
+        ],
+        "units": [
+          "m³/h",
+          "bar",
+          "rpm",
+          "kg",
+          "l/min",
+          "cfm",
+          "psig",
+          "kW"
+        ],
+        "footnotes": "6 | PE-VE INDUSTRY",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.27915789,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+        "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+        "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "PE-VE INDUSTRY",
+          "PE-VE Series",
+          "B-KOOL",
+          "PE 100-3-VE"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\nDocument section: 2026-04_PE_VE_Industry_EN_N42434_sc / Page 6\nTable: TECHNICAL DATA\nRow: 1600 x 830 x 1520 mm\n› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system: while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a\nlater date if required.: › P 41/61 Purification Systems: Depending on the application or filter cartridge type, these\nsystems absorb, convert or extract moisture (H20) and oil. They are available as integrated: and external models.\n› Particulate filter: › B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.\n› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-: cantly extending filter cartridge life. Purchase costs are soon recouped.\n› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.: › Intake pressure reducer\n› 60-litre condensate vessel: › Base frame-mounted storage systems: The compressor and up to two storage cylinders,\neach with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to: form a ready-to-use system.\n› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or: operating rooms.\nModel: F.A.D. ¹\nMax. operating pres-: sure2\nNo. of: stages\nSpeed: approx.\nMotor: power\nNet weight approx.: l/min\nm³/h: cfm\nbar: psig\nrpm: kW\nkg: lbs\nPE-VE SERIES, 90 - 365 bar: PE 100-3-VE\nFootnotes: 6 | PE-VE INDUSTRY",
+        "page": 6,
+        "section": [
+          "2026-04_PE_VE_Industry_EN_N42434_sc",
+          "Page 6"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "1600 x 830 x 1520 mm",
+        "headers": [
+          "› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system",
+          "later date if required.",
+          "systems absorb, convert or extract moisture (H20) and oil. They are available as integrated",
+          "› Particulate filter",
+          "› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-",
+          "› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.",
+          "› 60-litre condensate vessel",
+          "each with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to",
+          "› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or",
+          "Model",
+          "Max. operating pres-",
+          "No. of",
+          "Speed",
+          "Motor",
+          "Net weight approx.",
+          "m³/h",
+          "bar",
+          "rpm",
+          "kg",
+          "PE-VE SERIES, 90 - 365 bar"
+        ],
+        "row_values": [
+          "while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a",
+          "› P 41/61 Purification Systems: Depending on the application or filter cartridge type, these",
+          "and external models.",
+          "› B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.",
+          "cantly extending filter cartridge life. Purchase costs are soon recouped.",
+          "› Intake pressure reducer",
+          "› Base frame-mounted storage systems: The compressor and up to two storage cylinders,",
+          "form a ready-to-use system.",
+          "operating rooms.",
+          "F.A.D. ¹",
+          "sure2",
+          "stages",
+          "approx.",
+          "power",
+          "l/min",
+          "cfm",
+          "psig",
+          "kW",
+          "lbs",
+          "PE 100-3-VE"
+        ],
+        "units": [
+          "m³/h",
+          "bar",
+          "rpm",
+          "kg",
+          "l/min",
+          "cfm",
+          "psig",
+          "kW"
+        ],
+        "footnotes": "6 | PE-VE INDUSTRY",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.27865823,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "1849f387-d7b3-4b97-a86d-e438aac3ffc3",
+        "filename": "0352-0186_px-filter_371fcd2a16-8ba572c24d.md",
+        "title": "PX filter · Air and gas purification | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: PX filter · Air and gas purification | BAUER KOMPRESSOREN\nDocument section: PX filter · Air and gas purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: 100 bar\nPX05/100: 100\n14000: 840\nG⅜: 7.9\nPX07/100: 100\n26000: 1560\nG½: 15.8\nPX10/100: 100\n39000: 2340\nG¾: 16.6\n250 bar: PX05/250\n250: 14000\n840: G⅜\n7.9: PX07/250\n250: 26000\n1560: G½\n15.8: PX10/250\n250: 39000\n2340: G¾\n16.6: 420 bar\nPX05/420: 420\nFootnotes: ¹ Oil vapor not taken into account\n² Filter element “A” with activated carbon layer: For removing small amounts of oil vapor",
+        "page": null,
+        "section": [
+          "PX filter · Air and gas purification | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "100 bar",
+        "headers": [
+          "PX05/100",
+          "14000",
+          "G⅜",
+          "PX07/100",
+          "26000",
+          "G½",
+          "PX10/100",
+          "39000",
+          "G¾",
+          "250 bar",
+          "250",
+          "840",
+          "7.9",
+          "250",
+          "1560",
+          "15.8",
+          "250",
+          "2340",
+          "16.6",
+          "PX05/420"
+        ],
+        "row_values": [
+          "100",
+          "840",
+          "7.9",
+          "100",
+          "1560",
+          "15.8",
+          "100",
+          "2340",
+          "16.6",
+          "PX05/250",
+          "14000",
+          "G⅜",
+          "PX07/250",
+          "26000",
+          "G½",
+          "PX10/250",
+          "39000",
+          "G¾",
+          "420 bar",
+          "420"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "¹ Oil vapor not taken into account\n² Filter element “A” with activated carbon layer: For removing small amounts of oil vapor",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.26069863,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-KOOL",
+          "VERTICUS and",
+          "PE-VE series"
+        ],
+        "media": [
+          "breathing air",
+          "compressed air"
+        ],
+        "component_categories": [
+          "dryer",
+          "filter",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\ner provide information about the\noperating status.\n4\n5\n1\n2\n3\n1. Ambient air\n2. Textile filter\n3. UV light source\n4. Cleaned breathing air\n5. Control and display\n## Page 10\n\n10 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS\nBAUER KOMPRESSOREN\nTHE SMART WAY TO SAVE COSTS AND HELP THE ENVIRONMENT!\nB-KOOL\nSIGNIFICANTLY LONGER FILTER CARTRIDGE LIFE\nB-KOOL Refrigeration Dryer cools the compressed air and separates out most of the moisture,\ncollecting it in the B-KOOL and thus preventing it from passing into the filter cartridge.\nParticularly in environments with high ambient temperatures, the B-KOOL refrigeration dryer extends filter\ncapacity to an outstanding extent.\nThe B-KOOL can either be installed on the Super Silent housing of the MINI-VERTICUS, VERTICUS and PE-VE series\nor outside the unit on a frame for floor-mounted installation or using a wall mount.\nB-KOOL-Control\nB-KOOL III\n1\n2\n3\n6\n5\n4",
+        "page": 9,
+        "section": [
+          "2026_04_Accessory_Systems_EN_N39608_sc",
+          "Page 9"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.25839344,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\nor s continuous gas monitoring system\nindicates that the CO2 level has fallen below the maximum\nstandard value, the damper can be opened further using the lever\non the B-AEROGUARD. This allows more air to flow directly into the\ncompressor without passing through the filter cartridge, thereby\nsignificantly extending the cartridge’s service life.\nA 300% increase in cartridge service life is possible!\nB-KOOL Refrigeration Dryer cools the compressed air and se-\nparates out most of the moisture, collecting it in the B-KOOL\nand thus preventing it from passing into the filter cartridge.\nParticularly in environments with high ambient temperatures,\nthe B-KOOL refrigeration dryer extends filter\ncapacity to an outstanding extent.\nB-AEROGUARD",
+        "page": 39,
+        "section": [
+          "bauer_amfile_5",
+          "Page 39"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.24712903,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "breathing air",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\n0,0: Extended life time at continuous operating mode\nExtended life time at 30 min. intermittent operating mode: Extended life time at 15 min. intermittent operating mode\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "page": 12,
+        "section": [
+          "2026_04_Accessory_Systems_EN_N39608_sc",
+          "Page 12"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "100 bar",
+        "headers": [
+          "Permissible free air delivery, compressor",
+          "200 - 650 l/min (according to ISO 1217, air)",
+          "Power supply",
+          "200 - 240 VAC 60 Hz (single phase)",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz",
+          "15",
+          "Ambient temperature [°C]",
+          "WITH B-KOOL III",
+          "30",
+          "40",
+          "50",
+          "12,0",
+          "8,0",
+          "4,0",
+          "0,0",
+          "Extended life time at 30 min. intermittent operating mode",
+          "12,0",
+          "8,0",
+          "4,0"
+        ],
+        "row_values": [
+          "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+          "200 - 420 l/min (helium and argon)",
+          "200 - 240 VAC 50 Hz (single phase)",
+          "Power consumption",
+          "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+          "20",
+          "EXTENDED LIFE TIME",
+          "25",
+          "35",
+          "45",
+          "55",
+          "10,0",
+          "6,0",
+          "2,0",
+          "Extended life time at continuous operating mode",
+          "Extended life time at 15 min. intermittent operating mode",
+          "10,0",
+          "6,0",
+          "2,0"
+        ],
+        "units": [
+          "l/min",
+          "bar"
+        ],
+        "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.20288889,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "4e3cd61d-f8ef-46d6-9c60-c6995bdc70bd",
+        "filename": "0149-GTC_BCA_20160615_EN-6b0666569f.md",
+        "title": "GTC_BCA_20160615_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: GTC_BCA_20160615_EN\no be based on a\nbreach of the warranty, is notified to the company during the Warranty\nPeriod, the Company will (at the Company’s sole option) repair or replace\nthe Products, or (at the Company’s sole option) credit a sum to be agreed with\nthe Customer in lieu of the replacement of, any Product of part thereof.\n(d) The value of any claim under the Warranty cannot exceed the original value\npaid by the Customer for the Products\n(e) There are no third party beneficiaries of the Warranty granted by the\nCompany herein.\n(f) For warranty claim procedure information, please refer to Bauer Compressors\nAsia Pte Ltd or our respective distributors and agents.",
+        "page": 1,
+        "section": [
+          "GTC_BCA_20160615_EN",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.18139344,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "bdafe1eb-f001-4060-82da-efb2dcb4a26a",
+        "filename": "0146-Data_Sheet_Pressure_Reducing_Station_EN-602642de5d.md",
+        "title": "Data_Sheet_Pressure_Reducing_Station_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "filter",
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: Data_Sheet_Pressure_Reducing_Station_EN\nDocument section: Data_Sheet_Pressure_Reducing_Station_EN / Page 1\nTable: Technical data sheet\nHeaders and units: ■ | 1x Particle filter, 20 µm | ■ | 1x Pressure reducer (adjustable) | ■ | 1x Pressure gauge for inlet and outlet pressure | ■ | 1x Safety valve for outlet pressure | ■ | 2x Ball valve | ■ | 1x Panel for wall mounting | VERSIONS | Order number | Max inlet pressure | [bar] | Outlet pressure [bar] | Sicherheitsventil | [bar] | KV*\nRow: 077838-V001\nValues: 365 | 5 - 40 | 45 | 0,07\nFootnotes: 5 - 40\n41 - 100\n34 – 240\n41 - 230",
+        "page": 1,
+        "section": [
+          "Data_Sheet_Pressure_Reducing_Station_EN",
+          "Page 1"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data sheet",
+        "row_label": "077838-V001",
+        "headers": [
+          "■",
+          "1x Particle filter, 20 µm",
+          "■",
+          "1x Pressure reducer (adjustable)",
+          "■",
+          "1x Pressure gauge for inlet and outlet pressure",
+          "■",
+          "1x Safety valve for outlet pressure",
+          "■",
+          "2x Ball valve",
+          "■",
+          "1x Panel for wall mounting",
+          "VERSIONS",
+          "Order number",
+          "Max inlet pressure",
+          "[bar]",
+          "Outlet pressure [bar]",
+          "Sicherheitsventil",
+          "[bar]",
+          "KV*"
+        ],
+        "row_values": [
+          "365",
+          "5 - 40",
+          "45",
+          "0,07"
+        ],
+        "units": [],
+        "footnotes": "5 - 40\n41 - 100\n34 – 240\n41 - 230",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.17239344,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "6ac3dffd-39cb-4323-b860-c3d8578fce42",
+        "filename": "0250-0084_hochdruck-reduzierstation_f3134b9492-a0a9a07cb3.md",
+        "title": "High-pressure reducing station · Air and Gas Distribution |",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure reducing station · Air and Gas Distribution |\nDocument section: High-pressure reducing station · Air and Gas Distribution | / Web page content\nTable: Technical Data\nHeaders and units: High Pressure Reducing Station | Pressure Reduction | Inlet pressure max. | Outlet pressure adjustable ¹ | Safety valve ² | bar\nRow: 077838-V001\nValues: 365 | 5 – 40 | 45\nFootnotes: 5 – 40\n41 – 100\n34 – 241\n41 – 230\n¹ The initial pressure should always be set once (not intended for permanent change).\n² Standard pressure setting for safety valve. Other pressure settings available on request.",
+        "page": null,
+        "section": [
+          "High-pressure reducing station · Air and Gas Distribution |",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "077838-V001",
+        "headers": [
+          "High Pressure Reducing Station",
+          "Pressure Reduction",
+          "Inlet pressure max.",
+          "Outlet pressure adjustable ¹",
+          "Safety valve ²",
+          "bar"
+        ],
+        "row_values": [
+          "365",
+          "5 – 40",
+          "45"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "5 – 40\n41 – 100\n34 – 241\n41 – 230\n¹ The initial pressure should always be set once (not intended for permanent change).\n² Standard pressure setting for safety valve. Other pressure settings available on request.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.17212903,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "number_units": [
+          "500 bar",
+          "420 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 11,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 0,
+      "elapsed_ms": 1078.1
+    }
+  },
+  "completed_at": "2026-07-23T14:09:32.578249+00:00",
+  "case_id": "B08",
+  "split": "development",
+  "category": "product_discovery",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

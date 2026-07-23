@@ -4,6 +4,7 @@ import asyncio
 import hashlib
 import logging
 import os
+import re
 import time
 import uuid
 from typing import Any
@@ -136,6 +137,15 @@ def _minimum_evidence_score() -> float:
     return min(max(configured, 0.0), 1.0)
 
 
+def _display_label(value: str | None) -> str | None:
+    if value is None:
+        return None
+    clean = re.sub(r"^#+\s*", "", value.strip())
+    clean = clean.replace("_", " ")
+    clean = re.sub(r"\s*\|\s*", " / ", clean)
+    return re.sub(r"\s+", " ", clean).strip()
+
+
 def _candidate_evidence(candidate: Any, rank: int) -> dict[str, Any]:
     normalized_content = normalize_for_search(candidate.content)
 
@@ -160,10 +170,10 @@ def _candidate_evidence(candidate: Any, rank: int) -> dict[str, Any]:
         "standards": relevant(candidate.standards),
         "content": candidate.content,
         "page": candidate.page,
-        "section": candidate.section_path,
+        "section": [_display_label(value) for value in candidate.section_path],
         "chunk_kind": candidate.chunk_kind,
-        "table_title": candidate.table_title,
-        "row_label": candidate.row_label,
+        "table_title": _display_label(candidate.table_title),
+        "row_label": _display_label(candidate.row_label),
         "headers": candidate.headers,
         "row_values": candidate.row_values,
         "units": candidate.units,
@@ -214,7 +224,7 @@ async def query_v2(request: Request, body: QueryV2Body):
                 namespace=namespace,
                 index_version=index_version,
                 file_ids=file_ids,
-                query=body.query,
+                analysis=analysis,
                 limit=30,
             )
         ),
@@ -298,9 +308,12 @@ async def query_v2(request: Request, body: QueryV2Body):
         response["debug"] = {
             "analysis": {
                 "identifiers": analysis.identifiers,
+                "standards": analysis.standards,
                 "number_units": analysis.number_units,
                 "quoted_phrases": analysis.quoted_phrases,
                 "table_intent": analysis.table_intent,
+                "document_lookup": analysis.document_lookup,
+                "pressure_extremum": analysis.pressure_extremum,
             },
             "channel_counts": {
                 channel: len(results) for channel, results in channel_results.items()

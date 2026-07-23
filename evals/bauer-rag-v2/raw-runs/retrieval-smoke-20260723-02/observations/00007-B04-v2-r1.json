@@ -1,0 +1,1573 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1092.04,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\nDocument section: bauer_amfile_5 / Page 26\nTable: TECHNICAL DATA\nHeaders and units: 130 x 60 x 64 | MARINER 320-B | P 31 | Petrol engine | 4-stroke | 130 x 65 x 70 | MARINER 320-E | P 31 | Three-phase | 400 V, 50 Hz ² | 130 x 65 x 70 | PROFI LINE II 420 bar | MARINER\nRow: 200/420-E\nValues: 200 | 7 | 420 | 6,000\nFootnotes: 26 | MOBILE COMPRESSORS | BAUER PREMIUM LINE\n1 Measured by cylinder filling (10 l) from 0 to 200 bar, ± 5%.\n2 Plug dimension: 16 A.",
+      "page": 26,
+      "section": [
+        "bauer_amfile_5",
+        "Page 26"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "200/420-E",
+      "headers": [
+        "130 x 60 x 64",
+        "MARINER 320-B",
+        "P 31",
+        "Petrol engine",
+        "4-stroke",
+        "130 x 65 x 70",
+        "MARINER 320-E",
+        "P 31",
+        "Three-phase",
+        "400 V, 50 Hz ²",
+        "130 x 65 x 70",
+        "PROFI LINE II 420 bar",
+        "MARINER"
+      ],
+      "row_values": [
+        "200",
+        "7",
+        "420",
+        "6,000"
+      ],
+      "units": [],
+      "footnotes": "26 | MOBILE COMPRESSORS | BAUER PREMIUM LINE\n1 Measured by cylinder filling (10 l) from 0 to 200 bar, ± 5%.\n2 Plug dimension: 16 A.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.17441292,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+      "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: 225/330 bar\nVariable pressure increase: 20 – 50 bar/min\nWeight: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nOptions: Proportional valve\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+      "page": null,
+      "section": [
+        "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "225/330 bar",
+      "headers": [
+        "Variable pressure increase",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Filling chamber dimensions",
+        "B-SAFE ECO",
+        "Atemluft",
+        "410 bar",
+        "225/330 bar",
+        "ca. 450 kg",
+        "6",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+        "Safety cell",
+        "Safety doors",
+        "Filling control",
+        "Filling options",
+        "Options"
+      ],
+      "row_values": [
+        "20 – 50 bar/min",
+        "ca. 450 kg",
+        "maximal 10",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "130 cm × 40 cm × 70 cm",
+        "Medium",
+        "Maximum operating pressure",
+        "Filling pressures (up to 2)",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Details & Features",
+        "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+        "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+        "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "Proportional valve"
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.1737013,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\nDocument section: bauer_amfile_5 / Page 26\nTable: TECHNICAL DATA\nHeaders and units: 130 x 65 x 70 | MARINER 320-E | P 31 | Three-phase | 400 V, 50 Hz ² | 130 x 65 x 70 | PROFI LINE II 420 bar | MARINER | 200/420-E | P 41/420 | Three-phase | 400 V, 50 Hz ² | 130 x 65 x 81 | MARINER\nRow: 250/420-E\nValues: 250 | 9 | 420 | 6,000\nFootnotes: 26 | MOBILE COMPRESSORS | BAUER PREMIUM LINE\n1 Measured by cylinder filling (10 l) from 0 to 200 bar, ± 5%.\n2 Plug dimension: 16 A.",
+      "page": 26,
+      "section": [
+        "bauer_amfile_5",
+        "Page 26"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "250/420-E",
+      "headers": [
+        "130 x 65 x 70",
+        "MARINER 320-E",
+        "P 31",
+        "Three-phase",
+        "400 V, 50 Hz ²",
+        "130 x 65 x 70",
+        "PROFI LINE II 420 bar",
+        "MARINER",
+        "200/420-E",
+        "P 41/420",
+        "Three-phase",
+        "400 V, 50 Hz ²",
+        "130 x 65 x 81",
+        "MARINER"
+      ],
+      "row_values": [
+        "250",
+        "9",
+        "420",
+        "6,000"
+      ],
+      "units": [],
+      "footnotes": "26 | MOBILE COMPRESSORS | BAUER PREMIUM LINE\n1 Measured by cylinder filling (10 l) from 0 to 200 bar, ± 5%.\n2 Plug dimension: 16 A.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.17337251,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 100"
+      ],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: bauer_amfile_7\nDocument section: bauer_amfile_7 / Page 8\nTable: bauer_amfile_7\nHeaders and units: TO MEET ALL YOUR NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath- | ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN | 12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten- | sive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and | excellent quality. | The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER | core components with rugged, simple housing. | They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com- | pliance with international standards. | MOBILE COMPRESSORS | 225 – 330 BAR | PE 100 | 225 - 330 bar | PE-TE/TB\nRow: 225 - 330 bar\nValues: 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350\nFootnotes: 8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+      "page": 8,
+      "section": [
+        "bauer_amfile_7",
+        "Page 8"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "bauer_amfile_7",
+      "row_label": "225 - 330 bar",
+      "headers": [
+        "TO MEET ALL YOUR NEEDS",
+        "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath-",
+        "ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN",
+        "12021:2014 (Breathing Air Standard).",
+        "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+        "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten-",
+        "sive expertise in the fields of development, production and application.",
+        "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and",
+        "excellent quality.",
+        "The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER",
+        "core components with rugged, simple housing.",
+        "They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com-",
+        "pliance with international standards.",
+        "MOBILE COMPRESSORS | 225 – 330 BAR",
+        "PE 100",
+        "225 - 330 bar",
+        "PE-TE/TB"
+      ],
+      "row_values": [
+        "0",
+        "50",
+        "100",
+        "150",
+        "200",
+        "250",
+        "300",
+        "350"
+      ],
+      "units": [],
+      "footnotes": "8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.15815789,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 100"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_7\nDocument section: bauer_amfile_7 / Page 8\nTable: bauer_amfile_7\nHeaders and units: use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and | excellent quality. | The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER | core components with rugged, simple housing. | They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com- | pliance with international standards. | MOBILE COMPRESSORS | 225 – 330 BAR | PE 100 | 225 - 330 bar | PE-TE/TB | 225 - 330 bar | Charging rate [l/min] | STATIONARY COMPRESSORS | 225 – 330 – 420 BAR | PE-HE | 225 - 330 bar | PE-MVE | 225 - 330 bar | PE-VE\nRow: 225 - 420 bar\nValues: 0 | 200 | 400 | 600 | 800 | 1000\nFootnotes: 8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+      "page": 8,
+      "section": [
+        "bauer_amfile_7",
+        "Page 8"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "bauer_amfile_7",
+      "row_label": "225 - 420 bar",
+      "headers": [
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and",
+        "excellent quality.",
+        "The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER",
+        "core components with rugged, simple housing.",
+        "They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com-",
+        "pliance with international standards.",
+        "MOBILE COMPRESSORS | 225 – 330 BAR",
+        "PE 100",
+        "225 - 330 bar",
+        "PE-TE/TB",
+        "225 - 330 bar",
+        "Charging rate [l/min]",
+        "STATIONARY COMPRESSORS | 225 – 330 – 420 BAR",
+        "PE-HE",
+        "225 - 330 bar",
+        "PE-MVE",
+        "225 - 330 bar",
+        "PE-VE"
+      ],
+      "row_values": [
+        "0",
+        "200",
+        "400",
+        "600",
+        "800",
+        "1000"
+      ],
+      "units": [],
+      "footnotes": "8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.15782051,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+      "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+      "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "PE-VE INDUSTRY",
+        "PE 180-18.5-VE",
+        "B-KOOL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\nDocument section: 2026-04_PE_VE_Industry_EN_N42434_sc / Page 6\nTable: TECHNICAL DATA\nRow: 1140 x 830 x 1520 mm\nPE 180-18.5-VE:: 1600 x 830 x 1520 mm\n› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system: while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a\nlater date if required.: › P 41/61 Purification Systems: Depending on the application or filter cartridge type, these\nsystems absorb, convert or extract moisture (H20) and oil. They are available as integrated: and external models.\n› Particulate filter: › B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.\n› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-: cantly extending filter cartridge life. Purchase costs are soon recouped.\n› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.: › Intake pressure reducer\n› 60-litre condensate vessel: › Base frame-mounted storage systems: The compressor and up to two storage cylinders,\neach with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to: form a ready-to-use system.\n› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or: operating rooms.\nModel: F.A.D. ¹\nMax. operating pres-: sure2\nNo. of: stages\nSpeed: approx.\nMotor: power\nNet weight approx.: l/min\nm³/h: cfm\nbar: psig\nrpm: kW\nkg: lbs\nFootnotes: 6 | PE-VE INDUSTRY",
+      "page": 6,
+      "section": [
+        "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "Page 6"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "1140 x 830 x 1520 mm",
+      "headers": [
+        "PE 180-18.5-VE:",
+        "› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system",
+        "later date if required.",
+        "systems absorb, convert or extract moisture (H20) and oil. They are available as integrated",
+        "› Particulate filter",
+        "› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-",
+        "› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.",
+        "› 60-litre condensate vessel",
+        "each with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to",
+        "› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or",
+        "Model",
+        "Max. operating pres-",
+        "No. of",
+        "Speed",
+        "Motor",
+        "Net weight approx.",
+        "m³/h",
+        "bar",
+        "rpm",
+        "kg"
+      ],
+      "row_values": [
+        "1600 x 830 x 1520 mm",
+        "while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a",
+        "› P 41/61 Purification Systems: Depending on the application or filter cartridge type, these",
+        "and external models.",
+        "› B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.",
+        "cantly extending filter cartridge life. Purchase costs are soon recouped.",
+        "› Intake pressure reducer",
+        "› Base frame-mounted storage systems: The compressor and up to two storage cylinders,",
+        "form a ready-to-use system.",
+        "operating rooms.",
+        "F.A.D. ¹",
+        "sure2",
+        "stages",
+        "approx.",
+        "power",
+        "l/min",
+        "cfm",
+        "psig",
+        "kW",
+        "lbs"
+      ],
+      "units": [
+        "m³/h",
+        "bar",
+        "rpm",
+        "kg",
+        "l/min",
+        "cfm",
+        "psig",
+        "kW"
+      ],
+      "footnotes": "6 | PE-VE INDUSTRY",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.14491071,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+      "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+      "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "PE-VE INDUSTRY",
+        "PE-VE Series",
+        "B-KOOL",
+        "PE 100-3-VE"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\nDocument section: 2026-04_PE_VE_Industry_EN_N42434_sc / Page 6\nTable: TECHNICAL DATA\nRow: 1600 x 830 x 1520 mm\n› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system: while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a\nlater date if required.: › P 41/61 Purification Systems: Depending on the application or filter cartridge type, these\nsystems absorb, convert or extract moisture (H20) and oil. They are available as integrated: and external models.\n› Particulate filter: › B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.\n› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-: cantly extending filter cartridge life. Purchase costs are soon recouped.\n› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.: › Intake pressure reducer\n› 60-litre condensate vessel: › Base frame-mounted storage systems: The compressor and up to two storage cylinders,\neach with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to: form a ready-to-use system.\n› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or: operating rooms.\nModel: F.A.D. ¹\nMax. operating pres-: sure2\nNo. of: stages\nSpeed: approx.\nMotor: power\nNet weight approx.: l/min\nm³/h: cfm\nbar: psig\nrpm: kW\nkg: lbs\nPE-VE SERIES, 90 - 365 bar: PE 100-3-VE\nFootnotes: 6 | PE-VE INDUSTRY",
+      "page": 6,
+      "section": [
+        "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "Page 6"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "1600 x 830 x 1520 mm",
+      "headers": [
+        "› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system",
+        "later date if required.",
+        "systems absorb, convert or extract moisture (H20) and oil. They are available as integrated",
+        "› Particulate filter",
+        "› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-",
+        "› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.",
+        "› 60-litre condensate vessel",
+        "each with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to",
+        "› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or",
+        "Model",
+        "Max. operating pres-",
+        "No. of",
+        "Speed",
+        "Motor",
+        "Net weight approx.",
+        "m³/h",
+        "bar",
+        "rpm",
+        "kg",
+        "PE-VE SERIES, 90 - 365 bar"
+      ],
+      "row_values": [
+        "while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a",
+        "› P 41/61 Purification Systems: Depending on the application or filter cartridge type, these",
+        "and external models.",
+        "› B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.",
+        "cantly extending filter cartridge life. Purchase costs are soon recouped.",
+        "› Intake pressure reducer",
+        "› Base frame-mounted storage systems: The compressor and up to two storage cylinders,",
+        "form a ready-to-use system.",
+        "operating rooms.",
+        "F.A.D. ¹",
+        "sure2",
+        "stages",
+        "approx.",
+        "power",
+        "l/min",
+        "cfm",
+        "psig",
+        "kW",
+        "lbs",
+        "PE 100-3-VE"
+      ],
+      "units": [
+        "m³/h",
+        "bar",
+        "rpm",
+        "kg",
+        "l/min",
+        "cfm",
+        "psig",
+        "kW"
+      ],
+      "footnotes": "6 | PE-VE INDUSTRY",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.14443723,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "9cb00b53-cf2b-49b6-b65b-51f6e5d3c1b4",
+      "filename": "0010-2016-03_B-NEWS_EN_sc-fc550e3c63.md",
+      "title": "2016-03_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2016-03-01",
+      "certificates": [],
+      "product_families": [
+        "GIB 26.8-160"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2016-03_B-NEWS_EN_sc\nor­\nted along a 220-km pipeline to the refi­\nnery, where it undergoes several stages\nof hydrometallurgical processing before\nending up as the finished product –\n­ingots of nickel and cobalt, metals that\nare essential to industrial production.\nThe refining process involves the use\nof autoclaves. Compressed nitrogen\nproduced by BAUER compressor units\nserves as a flushing gas for an array\nof pipelines. The nitrogen is supplied\nusing membrane technology and com­\npressed by four high-powered BAUER\nGIB 26.8-160 industrial compressors.\nThe nitrogen enters the compressors at\nan intake pressure of 10 bar and is then\nThe refinery, 11 kilometres south of the port of Toamasina\nISSUE 3/2016\nBAUER COMPRESSORS USA\nNICKEL MINING\nThe plant startup team\nPhilipp Bayat, Dr. Monika Bayat, Heinz Bauer\n(from left to right)",
+      "page": 1,
+      "section": [
+        "2016-03_B-NEWS_EN_sc",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.14184332,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "breathing air",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\n0,0: Extended life time at continuous operating mode\nExtended life time at 30 min. intermittent operating mode: Extended life time at 15 min. intermittent operating mode\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "page": 12,
+      "section": [
+        "2026_04_Accessory_Systems_EN_N39608_sc",
+        "Page 12"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "100 bar",
+      "headers": [
+        "Permissible free air delivery, compressor",
+        "200 - 650 l/min (according to ISO 1217, air)",
+        "Power supply",
+        "200 - 240 VAC 60 Hz (single phase)",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "15",
+        "Ambient temperature [°C]",
+        "WITH B-KOOL III",
+        "30",
+        "40",
+        "50",
+        "12,0",
+        "8,0",
+        "4,0",
+        "0,0",
+        "Extended life time at 30 min. intermittent operating mode",
+        "12,0",
+        "8,0",
+        "4,0"
+      ],
+      "row_values": [
+        "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+        "200 - 420 l/min (helium and argon)",
+        "200 - 240 VAC 50 Hz (single phase)",
+        "Power consumption",
+        "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+        "20",
+        "EXTENDED LIFE TIME",
+        "25",
+        "35",
+        "45",
+        "55",
+        "10,0",
+        "6,0",
+        "2,0",
+        "Extended life time at continuous operating mode",
+        "Extended life time at 15 min. intermittent operating mode",
+        "10,0",
+        "6,0",
+        "2,0"
+      ],
+      "units": [
+        "l/min",
+        "bar"
+      ],
+      "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.12970046,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "1849f387-d7b3-4b97-a86d-e438aac3ffc3",
+      "filename": "0352-0186_px-filter_371fcd2a16-8ba572c24d.md",
+      "title": "PX filter · Air and gas purification | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: PX filter · Air and gas purification | BAUER KOMPRESSOREN\nDocument section: PX filter · Air and gas purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: 100 bar\nPX05/100: 100\n14000: 840\nG⅜: 7.9\nPX07/100: 100\n26000: 1560\nG½: 15.8\nPX10/100: 100\n39000: 2340\nG¾: 16.6\n250 bar: PX05/250\n250: 14000\n840: G⅜\n7.9: PX07/250\n250: 26000\n1560: G½\n15.8: PX10/250\n250: 39000\n2340: G¾\n16.6: 420 bar\nPX05/420: 420\nFootnotes: ¹ Oil vapor not taken into account\n² Filter element “A” with activated carbon layer: For removing small amounts of oil vapor",
+      "page": null,
+      "section": [
+        "PX filter · Air and gas purification | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "100 bar",
+      "headers": [
+        "PX05/100",
+        "14000",
+        "G⅜",
+        "PX07/100",
+        "26000",
+        "G½",
+        "PX10/100",
+        "39000",
+        "G¾",
+        "250 bar",
+        "250",
+        "840",
+        "7.9",
+        "250",
+        "1560",
+        "15.8",
+        "250",
+        "2340",
+        "16.6",
+        "PX05/420"
+      ],
+      "row_values": [
+        "100",
+        "840",
+        "7.9",
+        "100",
+        "1560",
+        "15.8",
+        "100",
+        "2340",
+        "16.6",
+        "PX05/250",
+        "14000",
+        "G⅜",
+        "PX07/250",
+        "26000",
+        "G½",
+        "PX10/250",
+        "39000",
+        "G¾",
+        "420 bar",
+        "420"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "¹ Oil vapor not taken into account\n² Filter element “A” with activated carbon layer: For removing small amounts of oil vapor",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.12944444,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\nDocument section: bauer_amfile_5 / Page 26\nTable: TECHNICAL DATA\nHeaders and units: 130 x 60 x 64 | MARINER 320-B | P 31 | Petrol engine | 4-stroke | 130 x 65 x 70 | MARINER 320-E | P 31 | Three-phase | 400 V, 50 Hz ² | 130 x 65 x 70 | PROFI LINE II 420 bar | MARINER\nRow: 200/420-E\nValues: 200 | 7 | 420 | 6,000\nFootnotes: 26 | MOBILE COMPRESSORS | BAUER PREMIUM LINE\n1 Measured by cylinder filling (10 l) from 0 to 200 bar, ± 5%.\n2 Plug dimension: 16 A.",
+        "page": 26,
+        "section": [
+          "bauer_amfile_5",
+          "Page 26"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "200/420-E",
+        "headers": [
+          "130 x 60 x 64",
+          "MARINER 320-B",
+          "P 31",
+          "Petrol engine",
+          "4-stroke",
+          "130 x 65 x 70",
+          "MARINER 320-E",
+          "P 31",
+          "Three-phase",
+          "400 V, 50 Hz ²",
+          "130 x 65 x 70",
+          "PROFI LINE II 420 bar",
+          "MARINER"
+        ],
+        "row_values": [
+          "200",
+          "7",
+          "420",
+          "6,000"
+        ],
+        "units": [],
+        "footnotes": "26 | MOBILE COMPRESSORS | BAUER PREMIUM LINE\n1 Measured by cylinder filling (10 l) from 0 to 200 bar, ± 5%.\n2 Plug dimension: 16 A.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.17441292,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: 225/330 bar\nVariable pressure increase: 20 – 50 bar/min\nWeight: ca. 450 kg\nNumber of filling stations: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nOptions: Proportional valve\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+        "page": null,
+        "section": [
+          "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "225/330 bar",
+        "headers": [
+          "Variable pressure increase",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Filling chamber dimensions",
+          "B-SAFE ECO",
+          "Atemluft",
+          "410 bar",
+          "225/330 bar",
+          "ca. 450 kg",
+          "6",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+          "Safety cell",
+          "Safety doors",
+          "Filling control",
+          "Filling options",
+          "Options"
+        ],
+        "row_values": [
+          "20 – 50 bar/min",
+          "ca. 450 kg",
+          "maximal 10",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "130 cm × 40 cm × 70 cm",
+          "Medium",
+          "Maximum operating pressure",
+          "Filling pressures (up to 2)",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Details & Features",
+          "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+          "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+          "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "Proportional valve"
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.1737013,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\nDocument section: bauer_amfile_5 / Page 26\nTable: TECHNICAL DATA\nHeaders and units: 130 x 65 x 70 | MARINER 320-E | P 31 | Three-phase | 400 V, 50 Hz ² | 130 x 65 x 70 | PROFI LINE II 420 bar | MARINER | 200/420-E | P 41/420 | Three-phase | 400 V, 50 Hz ² | 130 x 65 x 81 | MARINER\nRow: 250/420-E\nValues: 250 | 9 | 420 | 6,000\nFootnotes: 26 | MOBILE COMPRESSORS | BAUER PREMIUM LINE\n1 Measured by cylinder filling (10 l) from 0 to 200 bar, ± 5%.\n2 Plug dimension: 16 A.",
+        "page": 26,
+        "section": [
+          "bauer_amfile_5",
+          "Page 26"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "250/420-E",
+        "headers": [
+          "130 x 65 x 70",
+          "MARINER 320-E",
+          "P 31",
+          "Three-phase",
+          "400 V, 50 Hz ²",
+          "130 x 65 x 70",
+          "PROFI LINE II 420 bar",
+          "MARINER",
+          "200/420-E",
+          "P 41/420",
+          "Three-phase",
+          "400 V, 50 Hz ²",
+          "130 x 65 x 81",
+          "MARINER"
+        ],
+        "row_values": [
+          "250",
+          "9",
+          "420",
+          "6,000"
+        ],
+        "units": [],
+        "footnotes": "26 | MOBILE COMPRESSORS | BAUER PREMIUM LINE\n1 Measured by cylinder filling (10 l) from 0 to 200 bar, ± 5%.\n2 Plug dimension: 16 A.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.17337251,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 100"
+        ],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: bauer_amfile_7\nDocument section: bauer_amfile_7 / Page 8\nTable: bauer_amfile_7\nHeaders and units: TO MEET ALL YOUR NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath- | ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN | 12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten- | sive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and | excellent quality. | The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER | core components with rugged, simple housing. | They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com- | pliance with international standards. | MOBILE COMPRESSORS | 225 – 330 BAR | PE 100 | 225 - 330 bar | PE-TE/TB\nRow: 225 - 330 bar\nValues: 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350\nFootnotes: 8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+        "page": 8,
+        "section": [
+          "bauer_amfile_7",
+          "Page 8"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "bauer_amfile_7",
+        "row_label": "225 - 330 bar",
+        "headers": [
+          "TO MEET ALL YOUR NEEDS",
+          "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in reliable supply of pure breath-",
+          "ing or compressed air for all applications, in compliance with international air quality standards such as DIN EN",
+          "12021:2014 (Breathing Air Standard).",
+          "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+          "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered exten-",
+          "sive expertise in the fields of development, production and application.",
+          "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and",
+          "excellent quality.",
+          "The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER",
+          "core components with rugged, simple housing.",
+          "They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com-",
+          "pliance with international standards.",
+          "MOBILE COMPRESSORS | 225 – 330 BAR",
+          "PE 100",
+          "225 - 330 bar",
+          "PE-TE/TB"
+        ],
+        "row_values": [
+          "0",
+          "50",
+          "100",
+          "150",
+          "200",
+          "250",
+          "300",
+          "350"
+        ],
+        "units": [],
+        "footnotes": "8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.15815789,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 100"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_7\nDocument section: bauer_amfile_7 / Page 8\nTable: bauer_amfile_7\nHeaders and units: use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and | excellent quality. | The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER | core components with rugged, simple housing. | They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com- | pliance with international standards. | MOBILE COMPRESSORS | 225 – 330 BAR | PE 100 | 225 - 330 bar | PE-TE/TB | 225 - 330 bar | Charging rate [l/min] | STATIONARY COMPRESSORS | 225 – 330 – 420 BAR | PE-HE | 225 - 330 bar | PE-MVE | 225 - 330 bar | PE-VE\nRow: 225 - 420 bar\nValues: 0 | 200 | 400 | 600 | 800 | 1000\nFootnotes: 8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+        "page": 8,
+        "section": [
+          "bauer_amfile_7",
+          "Page 8"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "bauer_amfile_7",
+        "row_label": "225 - 420 bar",
+        "headers": [
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "BAUER POSEIDON EDITION breathing air compressors provide an outstanding price/performance ratio and",
+          "excellent quality.",
+          "The POSEIDON EDITION series was designed for straightforward, easy operation and combines proven BAUER",
+          "core components with rugged, simple housing.",
+          "They naturally feature BAUER’s hallmark durability, high safety levels and pure breathing air quality in com-",
+          "pliance with international standards.",
+          "MOBILE COMPRESSORS | 225 – 330 BAR",
+          "PE 100",
+          "225 - 330 bar",
+          "PE-TE/TB",
+          "225 - 330 bar",
+          "Charging rate [l/min]",
+          "STATIONARY COMPRESSORS | 225 – 330 – 420 BAR",
+          "PE-HE",
+          "225 - 330 bar",
+          "PE-MVE",
+          "225 - 330 bar",
+          "PE-VE"
+        ],
+        "row_values": [
+          "0",
+          "200",
+          "400",
+          "600",
+          "800",
+          "1000"
+        ],
+        "units": [],
+        "footnotes": "8 | PERFORMANCE OVERVIEW | POSEIDON EDITION",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.15782051,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+        "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+        "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "PE-VE INDUSTRY",
+          "PE 180-18.5-VE",
+          "B-KOOL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\nDocument section: 2026-04_PE_VE_Industry_EN_N42434_sc / Page 6\nTable: TECHNICAL DATA\nRow: 1140 x 830 x 1520 mm\nPE 180-18.5-VE:: 1600 x 830 x 1520 mm\n› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system: while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a\nlater date if required.: › P 41/61 Purification Systems: Depending on the application or filter cartridge type, these\nsystems absorb, convert or extract moisture (H20) and oil. They are available as integrated: and external models.\n› Particulate filter: › B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.\n› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-: cantly extending filter cartridge life. Purchase costs are soon recouped.\n› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.: › Intake pressure reducer\n› 60-litre condensate vessel: › Base frame-mounted storage systems: The compressor and up to two storage cylinders,\neach with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to: form a ready-to-use system.\n› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or: operating rooms.\nModel: F.A.D. ¹\nMax. operating pres-: sure2\nNo. of: stages\nSpeed: approx.\nMotor: power\nNet weight approx.: l/min\nm³/h: cfm\nbar: psig\nrpm: kW\nkg: lbs\nFootnotes: 6 | PE-VE INDUSTRY",
+        "page": 6,
+        "section": [
+          "2026-04_PE_VE_Industry_EN_N42434_sc",
+          "Page 6"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "1140 x 830 x 1520 mm",
+        "headers": [
+          "PE 180-18.5-VE:",
+          "› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system",
+          "later date if required.",
+          "systems absorb, convert or extract moisture (H20) and oil. They are available as integrated",
+          "› Particulate filter",
+          "› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-",
+          "› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.",
+          "› 60-litre condensate vessel",
+          "each with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to",
+          "› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or",
+          "Model",
+          "Max. operating pres-",
+          "No. of",
+          "Speed",
+          "Motor",
+          "Net weight approx.",
+          "m³/h",
+          "bar",
+          "rpm",
+          "kg"
+        ],
+        "row_values": [
+          "1600 x 830 x 1520 mm",
+          "while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a",
+          "› P 41/61 Purification Systems: Depending on the application or filter cartridge type, these",
+          "and external models.",
+          "› B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.",
+          "cantly extending filter cartridge life. Purchase costs are soon recouped.",
+          "› Intake pressure reducer",
+          "› Base frame-mounted storage systems: The compressor and up to two storage cylinders,",
+          "form a ready-to-use system.",
+          "operating rooms.",
+          "F.A.D. ¹",
+          "sure2",
+          "stages",
+          "approx.",
+          "power",
+          "l/min",
+          "cfm",
+          "psig",
+          "kW",
+          "lbs"
+        ],
+        "units": [
+          "m³/h",
+          "bar",
+          "rpm",
+          "kg",
+          "l/min",
+          "cfm",
+          "psig",
+          "kW"
+        ],
+        "footnotes": "6 | PE-VE INDUSTRY",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.14491071,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+        "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+        "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "PE-VE INDUSTRY",
+          "PE-VE Series",
+          "B-KOOL",
+          "PE 100-3-VE"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\nDocument section: 2026-04_PE_VE_Industry_EN_N42434_sc / Page 6\nTable: TECHNICAL DATA\nRow: 1600 x 830 x 1520 mm\n› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system: while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a\nlater date if required.: › P 41/61 Purification Systems: Depending on the application or filter cartridge type, these\nsystems absorb, convert or extract moisture (H20) and oil. They are available as integrated: and external models.\n› Particulate filter: › B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.\n› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-: cantly extending filter cartridge life. Purchase costs are soon recouped.\n› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.: › Intake pressure reducer\n› 60-litre condensate vessel: › Base frame-mounted storage systems: The compressor and up to two storage cylinders,\neach with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to: form a ready-to-use system.\n› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or: operating rooms.\nModel: F.A.D. ¹\nMax. operating pres-: sure2\nNo. of: stages\nSpeed: approx.\nMotor: power\nNet weight approx.: l/min\nm³/h: cfm\nbar: psig\nrpm: kW\nkg: lbs\nPE-VE SERIES, 90 - 365 bar: PE 100-3-VE\nFootnotes: 6 | PE-VE INDUSTRY",
+        "page": 6,
+        "section": [
+          "2026-04_PE_VE_Industry_EN_N42434_sc",
+          "Page 6"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "1600 x 830 x 1520 mm",
+        "headers": [
+          "› SUPER SILENT cladding: Reduces the acoustic pressure level of the compressor system",
+          "later date if required.",
+          "systems absorb, convert or extract moisture (H20) and oil. They are available as integrated",
+          "› Particulate filter",
+          "› B-KOOL: This fully integrated refrigeration dryer helps you to slash operating costs by signifi-",
+          "› Intake unit: Delivers air or gas to the compressor at appropriate monitored intake pressure.",
+          "› 60-litre condensate vessel",
+          "each with a geometric volume of 50 or 80 litres, are mounted on an extended base frame to",
+          "› Exhaust air shaft: For installation of SUPER SILENT systems in containers, housings or",
+          "Model",
+          "Max. operating pres-",
+          "No. of",
+          "Speed",
+          "Motor",
+          "Net weight approx.",
+          "m³/h",
+          "bar",
+          "rpm",
+          "kg",
+          "PE-VE SERIES, 90 - 365 bar"
+        ],
+        "row_values": [
+          "while permitting an exhaust air shaft to be used. Super Silent cladding can be retrofitted at a",
+          "› P 41/61 Purification Systems: Depending on the application or filter cartridge type, these",
+          "and external models.",
+          "› B-SECURUS filter cartridge monitoring unit: Efficiently monitors filter cartridge saturation.",
+          "cantly extending filter cartridge life. Purchase costs are soon recouped.",
+          "› Intake pressure reducer",
+          "› Base frame-mounted storage systems: The compressor and up to two storage cylinders,",
+          "form a ready-to-use system.",
+          "operating rooms.",
+          "F.A.D. ¹",
+          "sure2",
+          "stages",
+          "approx.",
+          "power",
+          "l/min",
+          "cfm",
+          "psig",
+          "kW",
+          "lbs",
+          "PE 100-3-VE"
+        ],
+        "units": [
+          "m³/h",
+          "bar",
+          "rpm",
+          "kg",
+          "l/min",
+          "cfm",
+          "psig",
+          "kW"
+        ],
+        "footnotes": "6 | PE-VE INDUSTRY",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.14443723,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "9cb00b53-cf2b-49b6-b65b-51f6e5d3c1b4",
+        "filename": "0010-2016-03_B-NEWS_EN_sc-fc550e3c63.md",
+        "title": "2016-03_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2016-03-01",
+        "certificates": [],
+        "product_families": [
+          "GIB 26.8-160"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2016-03_B-NEWS_EN_sc\nor­\nted along a 220-km pipeline to the refi­\nnery, where it undergoes several stages\nof hydrometallurgical processing before\nending up as the finished product –\n­ingots of nickel and cobalt, metals that\nare essential to industrial production.\nThe refining process involves the use\nof autoclaves. Compressed nitrogen\nproduced by BAUER compressor units\nserves as a flushing gas for an array\nof pipelines. The nitrogen is supplied\nusing membrane technology and com­\npressed by four high-powered BAUER\nGIB 26.8-160 industrial compressors.\nThe nitrogen enters the compressors at\nan intake pressure of 10 bar and is then\nThe refinery, 11 kilometres south of the port of Toamasina\nISSUE 3/2016\nBAUER COMPRESSORS USA\nNICKEL MINING\nThe plant startup team\nPhilipp Bayat, Dr. Monika Bayat, Heinz Bauer\n(from left to right)",
+        "page": 1,
+        "section": [
+          "2016-03_B-NEWS_EN_sc",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.14184332,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "breathing air",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\n0,0: Extended life time at continuous operating mode\nExtended life time at 30 min. intermittent operating mode: Extended life time at 15 min. intermittent operating mode\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "page": 12,
+        "section": [
+          "2026_04_Accessory_Systems_EN_N39608_sc",
+          "Page 12"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "100 bar",
+        "headers": [
+          "Permissible free air delivery, compressor",
+          "200 - 650 l/min (according to ISO 1217, air)",
+          "Power supply",
+          "200 - 240 VAC 60 Hz (single phase)",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz",
+          "15",
+          "Ambient temperature [°C]",
+          "WITH B-KOOL III",
+          "30",
+          "40",
+          "50",
+          "12,0",
+          "8,0",
+          "4,0",
+          "0,0",
+          "Extended life time at 30 min. intermittent operating mode",
+          "12,0",
+          "8,0",
+          "4,0"
+        ],
+        "row_values": [
+          "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+          "200 - 420 l/min (helium and argon)",
+          "200 - 240 VAC 50 Hz (single phase)",
+          "Power consumption",
+          "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+          "20",
+          "EXTENDED LIFE TIME",
+          "25",
+          "35",
+          "45",
+          "55",
+          "10,0",
+          "6,0",
+          "2,0",
+          "Extended life time at continuous operating mode",
+          "Extended life time at 15 min. intermittent operating mode",
+          "10,0",
+          "6,0",
+          "2,0"
+        ],
+        "units": [
+          "l/min",
+          "bar"
+        ],
+        "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.12970046,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "1849f387-d7b3-4b97-a86d-e438aac3ffc3",
+        "filename": "0352-0186_px-filter_371fcd2a16-8ba572c24d.md",
+        "title": "PX filter · Air and gas purification | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: PX filter · Air and gas purification | BAUER KOMPRESSOREN\nDocument section: PX filter · Air and gas purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: 100 bar\nPX05/100: 100\n14000: 840\nG⅜: 7.9\nPX07/100: 100\n26000: 1560\nG½: 15.8\nPX10/100: 100\n39000: 2340\nG¾: 16.6\n250 bar: PX05/250\n250: 14000\n840: G⅜\n7.9: PX07/250\n250: 26000\n1560: G½\n15.8: PX10/250\n250: 39000\n2340: G¾\n16.6: 420 bar\nPX05/420: 420\nFootnotes: ¹ Oil vapor not taken into account\n² Filter element “A” with activated carbon layer: For removing small amounts of oil vapor",
+        "page": null,
+        "section": [
+          "PX filter · Air and gas purification | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "100 bar",
+        "headers": [
+          "PX05/100",
+          "14000",
+          "G⅜",
+          "PX07/100",
+          "26000",
+          "G½",
+          "PX10/100",
+          "39000",
+          "G¾",
+          "250 bar",
+          "250",
+          "840",
+          "7.9",
+          "250",
+          "1560",
+          "15.8",
+          "250",
+          "2340",
+          "16.6",
+          "PX05/420"
+        ],
+        "row_values": [
+          "100",
+          "840",
+          "7.9",
+          "100",
+          "1560",
+          "15.8",
+          "100",
+          "2340",
+          "16.6",
+          "PX05/250",
+          "14000",
+          "G⅜",
+          "PX07/250",
+          "26000",
+          "G½",
+          "PX10/250",
+          "39000",
+          "G¾",
+          "420 bar",
+          "420"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "¹ Oil vapor not taken into account\n² Filter element “A” with activated carbon layer: For removing small amounts of oil vapor",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.12944444,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "syn bk n2 420 500"
+        ],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 0,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 5,
+      "elapsed_ms": 837.65
+    }
+  },
+  "completed_at": "2026-07-23T14:09:26.332751+00:00",
+  "case_id": "B04",
+  "split": "development",
+  "category": "structured_drilldown",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

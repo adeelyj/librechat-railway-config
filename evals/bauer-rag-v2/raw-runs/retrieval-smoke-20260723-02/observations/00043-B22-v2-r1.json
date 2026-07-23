@@ -1,0 +1,1015 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1074.34,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "bf12c047-5d8c-4f65-bc13-64812d89dd65",
+      "filename": "0120-bauer_amfile_270-08f7abd956.md",
+      "title": "bauer_amfile_270",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_270\nzu verlangen oder weitere gesetzliche\nAnsprüche geltend zu machen, bleibt durch vorstehende Ziffer\n5. unberührt. BAUER ist hierbei berechtigt, statt der konkret\nentstandenen Schäden pauschalen Schadensersatz in Höhe\nvon 10% des Brutto-Auftragspreises zu verlangen. In diesem\nFall bleibt dem Kunden jedoch der Nachweis gestattet, dass\nkein oder nur ein gegenüber der Pauschale wesentlich niedri-\ngerer Schaden entstanden ist.\n7. Die Lieferung von BAUER erfolgt ab Werk („ex works“, EXW gemäß\nIncoterms 2020). Wird das Werk im vorgenannten Sinne nicht im\nEinzelauftrag spezifiziert, gelten die folgenden Lieferorte:\n- Ersatzteile/Anlagen: BAUER Kompressoren GmbH, Bayer-\nwaldstraße 6, 82538 Geretsried / Deutschland.\nDer konkrete Lieferort für Anlagen wird dem Kunden, sofern nicht im\nEinzelauftrag spezifiziert, im Rahmen der Anzeige der Versandbe-\nreitschaft durch BAUER bekanntgegeben. Bei vereinbarter Lieferung\nab Werk hat die Abholung der Ware bis zum Ablauf von 5 Werktagen\nnach Zugang der Anzeige der Versandbereitschaft bei dem Kunden\nzu erfolgen. Unterbleibt die Abholung der Ware durch bzw. im Auf-\ntrag des Kunden innerhalb dieser Frist aus einem von dem Kunden\nzu vertretenden Grund, gerät der Kunden hinsichtlich seiner Ver-\npflichtung zur Abholung der Ware in Schuldnerverzug gemäß\n§ 286 BGB.\nBAUER behält sich das Recht vor, Teillieferungen durchzuführen.",
+      "page": 5,
+      "section": [
+        "bauer_amfile_270",
+        "Page 5"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.25475543,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "159c80c5-5903-43d1-91f4-802a595b5cee",
+      "filename": "0152-JUNIOR_II_de-bdbd992727.md",
+      "title": "JUNIOR_II_de",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021:2014"
+      ],
+      "content": "Document: JUNIOR_II_de\ngesehen)\nlinks\nAntriebsart\nKeilriemen\nKompressorblock Ölmenge\n0,36 l\n1 Gemessen bei Flaschenfüllung von 0-200 bar Toleranz +/- 5% bei +20°C Umgebungstemperatur\n## Page 4\n\nTechnisches Datenblatt\nBaureihe:\nJUNIOR II\n© BAUER KOMPRESSOREN GmbH | bauer-kompressoren.de\nSeite 4/10\nStand: 14.05.2025\nFiltersystem P21/350 - Filter mit\nintegriertem Öl- und Wasserabscheider\n■\nMechanische Abscheidung von Öl-/ Wasser Kondensat\n■\nTRIPLEX-Langzeitfilterpatrone zur Trocknung und Entölung, optional mit\nCO-Entfernung (serienmäßig bei verbrennungsmotorgetriebenen Versionen)\n■\nEnddruck Sicherheitsventil, montiert am Filtergehäuse\n■\nDruckhalte-/Rückschlagventil, montiert am Filtergehäuse\n\nLuftqualität gemäß DIN/EN 12021:2014:\nVerunreinigung mit\nMaximalgehalt nach\nDIN EN 12021:2014\nLuftqualität von BAUER\nH2O\n25 mg/m³\n≤ 10 mg/m³\nCO\n5 ppm(v)\nAbhängig v. d. Filterpatrone 1\nCO2\n500 ppm(v)\nAbhängig v. d. Ansaugluft 2\nÖl\n0,5 mg/m³\n≤ 0,1 mg/m³\n1 Nur mit BAUER Spezialpatrone mit Hopcalite und bis zu einer maximalen Konzentration von 25 ppm CO in der angesaugten Luft.\nEs befindet sich dann in der komprimierten sauberen Atemluft nicht mehr als 5 ppm CO.\n2 Der CO2 Gehalt in der Ansaugluft darf den maximal nach DIN EN 12021:2014 erlaubten Wert nicht übersteigen!\n\nFiltersystem\nP21/350\nBetriebsdruck (Standard)\nPN200 / PN300\nBetriebsdruck max. (PS)\n330 bar\nDrucktaupunkt\n< -20 °C, entspricht 3 mg/m³ bei 300 bar",
+      "page": 3,
+      "section": [
+        "JUNIOR_II_de",
+        "Page 3"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.2180163,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+      "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+      "title": "Hochdruck-Zubehoerkatalog_DE",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: Hochdruck-Zubehoerkatalog_DE\nDocument section: Hochdruck-Zubehoerkatalog_DE / Page 5\nTable: TECHNISCHE DATEN\nRow: 2.000 h oder alle 2 Jahre\nEMPFEHLUNG ÜBER DIE DIMENSIONIERUNG: VON ANSAUGROHREN\nTECHNISCHE INFORMATION ROHRDIMENSIONIERUNG: Detail\nBeschreibung: Grundlagen\nDie maximale Länge sollte 15 (fünfzehn) Meter nicht überschreiten.: • Ansaugrohre sollten gerade geführt werden\n(möglichst ohne 45o/90o Winkel).: • Wenn die Rohrleitung gerade geführt ist, gelten folgende\nStandard-Durchmesser:: • Bis10 Meter–∅ 80 mm\n• Bis15 Meter–∅100 mm: Ein Winkel\nWenn es nicht vermieden werden kann einen Winkel einzusetzen, sollte das: Rohr mindestens auf den nächstgrößeren Durchmesser erweitert werden,\nz. Bspl.:: • Bis10 Meterinklusiveeinem(1)Winkel–∅100 mm\n• Bis15 Meterinklusiveeinem(1)Winkel–∅120 mm: Jeder weitere Winkel\nDas Gleiche gilt für weitere zusätzliche Winkel, welche in der Ansaugleitung: montiert werden.\nAllgemeines: Die Eingangsseite des Ansaugrohres (außen) sollte mit einer Eingangssi-\ncherung gegen zum Beispiel Regen, groben Schmutz, Insekten oder Vögel: versehen werden. Die Ausgangsseite (im Haus) sollte so dicht wie möglich\nin Richtung des Kompressors ausgeführt werden sowie am Eingangsfilter: des Kompressors mit einem unterdruckfesten aber flexiblen Schlauch\n(Entkoppelung der Vibrationen): und einem Adapter (∅ Eingangsrohr = ∅ des flexiblen Schlauches) ausge-\nstattet sein.: Hinweis\nDas Arbeitsgeräusch des Kompressors wird – wie bei jedem Kolbenkom-: pressor – im Außenbereich bzw. am Anfang des Eingangsrohres hörbar sein.\nFootnotes: 8 | HOCHDRUCK-ZUBEHÖRKATALOG\n1 Mit dem B-VIRUS FREE Filter werden mindestens 99,9 % des SARS-CoV-2 Virus inaktiviert.",
+      "page": 5,
+      "section": [
+        "Hochdruck-Zubehoerkatalog_DE",
+        "Page 5"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNISCHE DATEN",
+      "row_label": "2.000 h oder alle 2 Jahre",
+      "headers": [
+        "EMPFEHLUNG ÜBER DIE DIMENSIONIERUNG",
+        "TECHNISCHE INFORMATION ROHRDIMENSIONIERUNG",
+        "Beschreibung",
+        "Die maximale Länge sollte 15 (fünfzehn) Meter nicht überschreiten.",
+        "(möglichst ohne 45o/90o Winkel).",
+        "Standard-Durchmesser:",
+        "• Bis15 Meter–∅100 mm",
+        "Wenn es nicht vermieden werden kann einen Winkel einzusetzen, sollte das",
+        "z. Bspl.:",
+        "• Bis15 Meterinklusiveeinem(1)Winkel–∅120 mm",
+        "Das Gleiche gilt für weitere zusätzliche Winkel, welche in der Ansaugleitung",
+        "Allgemeines",
+        "cherung gegen zum Beispiel Regen, groben Schmutz, Insekten oder Vögel",
+        "in Richtung des Kompressors ausgeführt werden sowie am Eingangsfilter",
+        "(Entkoppelung der Vibrationen)",
+        "stattet sein.",
+        "Das Arbeitsgeräusch des Kompressors wird – wie bei jedem Kolbenkom-"
+      ],
+      "row_values": [
+        "VON ANSAUGROHREN",
+        "Detail",
+        "Grundlagen",
+        "• Ansaugrohre sollten gerade geführt werden",
+        "• Wenn die Rohrleitung gerade geführt ist, gelten folgende",
+        "• Bis10 Meter–∅ 80 mm",
+        "Ein Winkel",
+        "Rohr mindestens auf den nächstgrößeren Durchmesser erweitert werden,",
+        "• Bis10 Meterinklusiveeinem(1)Winkel–∅100 mm",
+        "Jeder weitere Winkel",
+        "montiert werden.",
+        "Die Eingangsseite des Ansaugrohres (außen) sollte mit einer Eingangssi-",
+        "versehen werden. Die Ausgangsseite (im Haus) sollte so dicht wie möglich",
+        "des Kompressors mit einem unterdruckfesten aber flexiblen Schlauch",
+        "und einem Adapter (∅ Eingangsrohr = ∅ des flexiblen Schlauches) ausge-",
+        "Hinweis",
+        "pressor – im Außenbereich bzw. am Anfang des Eingangsrohres hörbar sein."
+      ],
+      "units": [],
+      "footnotes": "8 | HOCHDRUCK-ZUBEHÖRKATALOG\n1 Mit dem B-VIRUS FREE Filter werden mindestens 99,9 % des SARS-CoV-2 Virus inaktiviert.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.21667702,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+      "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+      "title": "Hochdruck-Zubehoerkatalog_DE",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrox"
+      ],
+      "component_categories": [],
+      "standards": [
+        "EN 144"
+      ],
+      "content": "Document: Hochdruck-Zubehoerkatalog_DE\nle waren der Schwerpunt bei der Entwicklung dieser Variante.\nFÜLLVENTILE\nSPEICHERFLASCHENBATTERIE, B80-B\nHandradausführung\nKipphebelausführung\nDrehradausführung\n## Page 25\n\nBAUER KOMPRESSOREN\nHOCHDRUCK-ZUBEHÖRKATALOG | 49\n48 | HOCHDRUCK-ZUBEHÖRKATALOG\nBAUER KOMPRESSOREN\nFÜLLANSCHLUSS IN ROT\nfür 300 bar Atemluft\nFÜLLANSCHLUSS IN SCHWARZ\nfür 200 bar Atemluft\nFÜLLANSCHLUSS IN GRÜN\nfür Nitrox\nDie standardisierten Füllanschlüsse (EN 144-2) gibt es in den Varianten PN200 bar und\nPN300 bar für Atemluft und als Nitrox Version.\nFÜLLANSCHLÜSSE\n300 bar\n200 bar\nDIE VORTEILE DER NEUEN KIPPHEBEL-\nFÜLLVENTILE\nBei der Druckentlastung wird der Lärm um mehr als die Hälfte\n(16 dBA) reduziert. Angenehmere, tiefe und für das menschli-\nche Ohr abgestimmte Frequenz des Abblasetones. Zusätzlich\nkönnen der geringe Restlärm und die überschüssige Luft über\neinen G1/8 Anschluss nach Außen geführt werden. Komplett\nabwärtskompatibel, kann mühelos gegen ältere Versionen\nausgetauscht werden. Viele Ersatzteile separat beziehbar\nsowie die passenden Wartungssätze. Absolut rostfrei. Für den\nDauereisatz geeignet.\nFÜLLVENTILE\nSchalldämpfer\nim G1/8\nInnengewinde\nUNIMAM\nM16 × 1,5\nG5/8\nO-Ring\nN638\nO-Ring\nN16632\nUNIMAM\nM16 × 1,5\nG5/8\nO-Ring\nN638\nO-Ring\nN16632\nohne Manometer\nmit Manometer\nG5/8\nG1/4",
+      "page": 24,
+      "section": [
+        "Hochdruck-Zubehoerkatalog_DE",
+        "Page 24"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.19460729,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+      "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+      "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "PE-VE INDUSTRY",
+        "PE-VE Series"
+      ],
+      "media": [
+        "breathing air",
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "booster",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\n256: `9be2c89e1126b178d31ba94355f5c30e990015979c25ce15580ddb8051d3dea1`\n## Page 1\n\nINDUSTRY\nPE-VE INDUSTRY\nSTRONG PERFORMANCE AT A COMPACT PRICE\n1946 – 2026\n8 0\n## Page 2\n\n2 | PE-VE INDUSTRY\nBAUER KOMPRESSOREN\nFOCUSING ON THE CORE OF QUALITY\n› 25 - 420 bar\n› 85 - 1470 l/min\n› Available as open or soundproofed models\n› For air and nitrogen\n› Compressor or booster version\nBAUER’s new PE-VE Series presents compressors offe-\nring an attractive range of features from the Basic model\nupwards, all at outstanding value for money.\nThe systems are available for pressures up to 420 bar and as\nbooster systems. Available with a wide range of compressor\noptions and extensive accessories, the PE-VE Series enables\ntailored solutions to be designed for virtually all uses involving\nbreathing air or nitrogen.\nThe systems have BAUER’s high-pressure compressor blocks at\ntheir core, with their legendary market reputation for reliability\nand durability. The system technology is designed for industrial\nuse.\nAs an all-new feature, the B-APP enables users to control and\nmonitor their systems from a smartphone in real time.\nTHE PE-VE SERIES – AN ALL-ROUNDER FOR THE INDUSTRY SECTOR",
+      "page": 1,
+      "section": [
+        "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.16971673,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "4ea22244-85ce-4777-9d0b-f6ac50f165cf",
+      "filename": "0124-bauer_amfile_8-fad9ac0f60.md",
+      "title": "bauer_amfile_8",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE 100"
+      ],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_8\nDocument section: bauer_amfile_8 / Page 4\nTable: TECHNICAL DATA\nRow: Stäblistr. 8\n81477 Munich, Germany: Tel. +49 (0) 89 78049-0\nFax +49 (0) 89 78049-167: info@bauer-kompressoren.de\nbauer-kompressoren.de: ARE YOU INTERESTED IN OUR\nPRODUCTS?: CONTACT US – WE ARE HAPPY TO PROVIDE\nINFORMATION AND ASSISTANCE.: PE 100 EN\nN40566: 04.2026",
+      "page": 4,
+      "section": [
+        "bauer_amfile_8",
+        "Page 4"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "Stäblistr. 8",
+      "headers": [
+        "81477 Munich, Germany",
+        "Fax +49 (0) 89 78049-167",
+        "bauer-kompressoren.de",
+        "PRODUCTS?",
+        "INFORMATION AND ASSISTANCE.",
+        "N40566"
+      ],
+      "row_values": [
+        "Tel. +49 (0) 89 78049-0",
+        "info@bauer-kompressoren.de",
+        "ARE YOU INTERESTED IN OUR",
+        "CONTACT US – WE ARE HAPPY TO PROVIDE",
+        "PE 100 EN",
+        "04.2026"
+      ],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.16722345,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "e755f3ad-7b90-438a-92cc-89e5712044bf",
+      "filename": "0081-bauer_amfile_13-e7e9162a14.md",
+      "title": "bauer_amfile_13",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE-VE SERIES"
+      ],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_13\nDocument section: bauer_amfile_13 / Page 8\nTable: TECHNICAL DATA\nRow: Stäblistr. 8\n81477 Munich, Germany: Tel. +49 (0) 89 78049-0\nFax +49 (0) 89 78049-167: info@bauer-kompressoren.de\nbauer-kompressoren.de: PE-VE SERIES EN\nN34459: 04.2065\nSubject to technical change without notice: ARE YOU INTERESTED IN OUR\nPRODUCTS?: CONTACT US – WE ARE HAPPY TO PROVIDE",
+      "page": 8,
+      "section": [
+        "bauer_amfile_13",
+        "Page 8"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "Stäblistr. 8",
+      "headers": [
+        "81477 Munich, Germany",
+        "Fax +49 (0) 89 78049-167",
+        "bauer-kompressoren.de",
+        "N34459",
+        "Subject to technical change without notice",
+        "PRODUCTS?"
+      ],
+      "row_values": [
+        "Tel. +49 (0) 89 78049-0",
+        "info@bauer-kompressoren.de",
+        "PE-VE SERIES EN",
+        "04.2065",
+        "ARE YOU INTERESTED IN OUR",
+        "CONTACT US – WE ARE HAPPY TO PROVIDE"
+      ],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.16706522,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "075da428-8faa-4327-bcd0-1367fda62bd1",
+      "filename": "0005-2016-01_B-NEWS_DE_sc-20166a4d06.md",
+      "title": "2016-01_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2016-01-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2016-01_B-NEWS_DE_sc\nu 40 kW\ninstallierter Leistung positionieren sie\nsich zwischen der COMPACT und der\nX-FILL Reihe und eignen sich für die Be­\ntankung von PKWs und – bei mittlerem\nFüllbedarf gleichermaßen – für Busbe­\ntankungen.\nIm Eventzelt konnten die Besucher\ndann die COMPACT und X-FILL Anlagen\nim Livebetrieb erleben und im Anschluss\ndas brandneue Fertigungswerk I bei ei­\nnem Rundgang kennenlernen.\nUnmittelbar im Anschluss gingen die\nAnlagen auf Tour in die Schweiz zum 11.\nGasmobilsymposium.\nBAUER ist im Nachbarstaat mit knapp\n60 Tankstellen sehr breit aufgestellt und\ndie Gespräche zeigten, dass das neue\nKonzept vollumfänglich den Bedarf der\nBranche getroffen hat.\nBAUER ACADEMY\nNEUES\n­PROGRAMM 2016\nDer Bereich Technisches Training der\nBAUER ACADEMY hat sein Schulungs­\nprgramm 2016 überarbeitet und erwei­\ntert. Das Programm präsentiert sich in\nzwei Sprachen und in insgesamt vier\nVersionen.\nNeben den bisherigen, offenen Schu­\nlungsprogrammen für Kunden wurden\nzwei erweiterte Versionen für unsere\nTochterunternehmen und A-Partner er­\nstellt. Dabei sind einige neue anwen­\nderorientierte Schulungen hinzugekom­\nmen, die auch teilweise als Webinare\nwahrgenommen werden können.\nMit den neuen Programmen im neu­\nen CD professionalisieren wir weiter den\nBereich Kundentraining, um einen Mehr­\nwert für unsere Kunden und Partner zu\nbieten.\nZudem haben wir auf über 120 Quad­",
+      "page": 7,
+      "section": [
+        "2016-01_B-NEWS_DE_sc",
+        "Page 7"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.14652519,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "25a0221f-cdea-44bf-94d6-8739f9a83b8b",
+      "filename": "0041-2023-01_B-NEWS_DE_sc-b614d09274.md",
+      "title": "2023-01_B-NEWS_DE_sc",
+      "language": "de",
+      "publication_date": "2023-01-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: 2023-01_B-NEWS_DE_sc\nDocument section: 2023-01_B-NEWS_DE_sc / Page 7\nTable: 2023-01_B-NEWS_DE_sc\nHeaders and units: im Zusammenspiel mit einem Rück- | schlagventil den Druckabfall und ver- | längert so die Lebensdauer dieses | Behälters erheblich. | Druckhalteventil in Kombination | mit Rückschlagventil | 1 \u0007Die verdichtete Luft gelangt durch | die Eintrittsbohrung ins Druckhalte- | ventil. | 2 \u0007Eine Feder baut die notwendige | Schließkraft auf, mit der der | Ventilkolben 3 die Durchlass­ | bohrung 4 verschließt, solange | der Druck der verdichteten Luft | unter dem am Ventil eingestellten | Wert liegt. | 3 \u0007Ist der Einstelldruck des Druckhalte- | ventils erreicht, wird der Ventilkol- | ben durch den Druck nach oben | geschoben und die verdichtete Luft\nRow: kann durch den Ausgang 5 strömen.\nValues: 1 | 2 | 3 | 4 | 5\nFootnotes: 60 % des jeweiligen Enddrucks beträgt.\n1 Die verdichtete Luft gelangt durch\n2 Eine Feder baut die notwendige\n3 Ist der Einstelldruck des Druckhalte-",
+      "page": 7,
+      "section": [
+        "2023-01_B-NEWS_DE_sc",
+        "Page 7"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "2023-01_B-NEWS_DE_sc",
+      "row_label": "kann durch den Ausgang 5 strömen.",
+      "headers": [
+        "im Zusammenspiel mit einem Rück-",
+        "schlagventil den Druckabfall und ver-",
+        "längert so die Lebensdauer dieses",
+        "Behälters erheblich.",
+        "Druckhalteventil in Kombination",
+        "mit Rückschlagventil",
+        "1 \u0007Die verdichtete Luft gelangt durch",
+        "die Eintrittsbohrung ins Druckhalte-",
+        "ventil.",
+        "2 \u0007Eine Feder baut die notwendige",
+        "Schließkraft auf, mit der der",
+        "Ventilkolben 3 die Durchlass­",
+        "bohrung 4 verschließt, solange",
+        "der Druck der verdichteten Luft",
+        "unter dem am Ventil eingestellten",
+        "Wert liegt.",
+        "3 \u0007Ist der Einstelldruck des Druckhalte-",
+        "ventils erreicht, wird der Ventilkol-",
+        "ben durch den Druck nach oben",
+        "geschoben und die verdichtete Luft"
+      ],
+      "row_values": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "units": [],
+      "footnotes": "60 % des jeweiligen Enddrucks beträgt.\n1 Die verdichtete Luft gelangt durch\n2 Eine Feder baut die notwendige\n3 Ist der Einstelldruck des Druckhalte-",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.14381007,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "15a18734-c8ea-474e-aebd-6ccb54ae08e1",
+      "filename": "0162-zubehoer_fuellventile_en-0fdb67669b.md",
+      "title": "zubehoer_fuellventile_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: zubehoer_fuellventile_en\n: For lever ﬁlling valve\n86102, 85878, 85877 or\n86242/86217\nSpare part no. 11347\nDouble nipple\nScrew-in element\nDouble nipple\nServicing kit for all ﬁlling\ncocks\n## Page 4\n\nBAUER KOMPRESSOREN GmbH Systemwerk, D-81452 München, Postfach 71 02 60,\nTel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de\nwww.bauer-kompressoren.de\nCONTACT FORM\nPLEASE INFORM US ABOUT THE FOLLOWING SERVICES\nPERSON TO CONTACT\nMr / Mrs / Ms:\n\nPhone:\n\nFax:\nYOUR ADDRESS\nCompany:\n\nStreet:\n\nZip Code, Town:\nPlease send the completed form by mail or fax to the a.m. agent. Our Service-Team will answer your request\nand will contact you as soon as possible.",
+      "page": 3,
+      "section": [
+        "zubehoer_fuellventile_en",
+        "Page 3"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.13543823,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "bf12c047-5d8c-4f65-bc13-64812d89dd65",
+        "filename": "0120-bauer_amfile_270-08f7abd956.md",
+        "title": "bauer_amfile_270",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_270\nzu verlangen oder weitere gesetzliche\nAnsprüche geltend zu machen, bleibt durch vorstehende Ziffer\n5. unberührt. BAUER ist hierbei berechtigt, statt der konkret\nentstandenen Schäden pauschalen Schadensersatz in Höhe\nvon 10% des Brutto-Auftragspreises zu verlangen. In diesem\nFall bleibt dem Kunden jedoch der Nachweis gestattet, dass\nkein oder nur ein gegenüber der Pauschale wesentlich niedri-\ngerer Schaden entstanden ist.\n7. Die Lieferung von BAUER erfolgt ab Werk („ex works“, EXW gemäß\nIncoterms 2020). Wird das Werk im vorgenannten Sinne nicht im\nEinzelauftrag spezifiziert, gelten die folgenden Lieferorte:\n- Ersatzteile/Anlagen: BAUER Kompressoren GmbH, Bayer-\nwaldstraße 6, 82538 Geretsried / Deutschland.\nDer konkrete Lieferort für Anlagen wird dem Kunden, sofern nicht im\nEinzelauftrag spezifiziert, im Rahmen der Anzeige der Versandbe-\nreitschaft durch BAUER bekanntgegeben. Bei vereinbarter Lieferung\nab Werk hat die Abholung der Ware bis zum Ablauf von 5 Werktagen\nnach Zugang der Anzeige der Versandbereitschaft bei dem Kunden\nzu erfolgen. Unterbleibt die Abholung der Ware durch bzw. im Auf-\ntrag des Kunden innerhalb dieser Frist aus einem von dem Kunden\nzu vertretenden Grund, gerät der Kunden hinsichtlich seiner Ver-\npflichtung zur Abholung der Ware in Schuldnerverzug gemäß\n§ 286 BGB.\nBAUER behält sich das Recht vor, Teillieferungen durchzuführen.",
+        "page": 5,
+        "section": [
+          "bauer_amfile_270",
+          "Page 5"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.25475543,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "159c80c5-5903-43d1-91f4-802a595b5cee",
+        "filename": "0152-JUNIOR_II_de-bdbd992727.md",
+        "title": "JUNIOR_II_de",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021:2014"
+        ],
+        "content": "Document: JUNIOR_II_de\ngesehen)\nlinks\nAntriebsart\nKeilriemen\nKompressorblock Ölmenge\n0,36 l\n1 Gemessen bei Flaschenfüllung von 0-200 bar Toleranz +/- 5% bei +20°C Umgebungstemperatur\n## Page 4\n\nTechnisches Datenblatt\nBaureihe:\nJUNIOR II\n© BAUER KOMPRESSOREN GmbH | bauer-kompressoren.de\nSeite 4/10\nStand: 14.05.2025\nFiltersystem P21/350 - Filter mit\nintegriertem Öl- und Wasserabscheider\n■\nMechanische Abscheidung von Öl-/ Wasser Kondensat\n■\nTRIPLEX-Langzeitfilterpatrone zur Trocknung und Entölung, optional mit\nCO-Entfernung (serienmäßig bei verbrennungsmotorgetriebenen Versionen)\n■\nEnddruck Sicherheitsventil, montiert am Filtergehäuse\n■\nDruckhalte-/Rückschlagventil, montiert am Filtergehäuse\n\nLuftqualität gemäß DIN/EN 12021:2014:\nVerunreinigung mit\nMaximalgehalt nach\nDIN EN 12021:2014\nLuftqualität von BAUER\nH2O\n25 mg/m³\n≤ 10 mg/m³\nCO\n5 ppm(v)\nAbhängig v. d. Filterpatrone 1\nCO2\n500 ppm(v)\nAbhängig v. d. Ansaugluft 2\nÖl\n0,5 mg/m³\n≤ 0,1 mg/m³\n1 Nur mit BAUER Spezialpatrone mit Hopcalite und bis zu einer maximalen Konzentration von 25 ppm CO in der angesaugten Luft.\nEs befindet sich dann in der komprimierten sauberen Atemluft nicht mehr als 5 ppm CO.\n2 Der CO2 Gehalt in der Ansaugluft darf den maximal nach DIN EN 12021:2014 erlaubten Wert nicht übersteigen!\n\nFiltersystem\nP21/350\nBetriebsdruck (Standard)\nPN200 / PN300\nBetriebsdruck max. (PS)\n330 bar\nDrucktaupunkt\n< -20 °C, entspricht 3 mg/m³ bei 300 bar",
+        "page": 3,
+        "section": [
+          "JUNIOR_II_de",
+          "Page 3"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.2180163,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+        "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+        "title": "Hochdruck-Zubehoerkatalog_DE",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: Hochdruck-Zubehoerkatalog_DE\nDocument section: Hochdruck-Zubehoerkatalog_DE / Page 5\nTable: TECHNISCHE DATEN\nRow: 2.000 h oder alle 2 Jahre\nEMPFEHLUNG ÜBER DIE DIMENSIONIERUNG: VON ANSAUGROHREN\nTECHNISCHE INFORMATION ROHRDIMENSIONIERUNG: Detail\nBeschreibung: Grundlagen\nDie maximale Länge sollte 15 (fünfzehn) Meter nicht überschreiten.: • Ansaugrohre sollten gerade geführt werden\n(möglichst ohne 45o/90o Winkel).: • Wenn die Rohrleitung gerade geführt ist, gelten folgende\nStandard-Durchmesser:: • Bis10 Meter–∅ 80 mm\n• Bis15 Meter–∅100 mm: Ein Winkel\nWenn es nicht vermieden werden kann einen Winkel einzusetzen, sollte das: Rohr mindestens auf den nächstgrößeren Durchmesser erweitert werden,\nz. Bspl.:: • Bis10 Meterinklusiveeinem(1)Winkel–∅100 mm\n• Bis15 Meterinklusiveeinem(1)Winkel–∅120 mm: Jeder weitere Winkel\nDas Gleiche gilt für weitere zusätzliche Winkel, welche in der Ansaugleitung: montiert werden.\nAllgemeines: Die Eingangsseite des Ansaugrohres (außen) sollte mit einer Eingangssi-\ncherung gegen zum Beispiel Regen, groben Schmutz, Insekten oder Vögel: versehen werden. Die Ausgangsseite (im Haus) sollte so dicht wie möglich\nin Richtung des Kompressors ausgeführt werden sowie am Eingangsfilter: des Kompressors mit einem unterdruckfesten aber flexiblen Schlauch\n(Entkoppelung der Vibrationen): und einem Adapter (∅ Eingangsrohr = ∅ des flexiblen Schlauches) ausge-\nstattet sein.: Hinweis\nDas Arbeitsgeräusch des Kompressors wird – wie bei jedem Kolbenkom-: pressor – im Außenbereich bzw. am Anfang des Eingangsrohres hörbar sein.\nFootnotes: 8 | HOCHDRUCK-ZUBEHÖRKATALOG\n1 Mit dem B-VIRUS FREE Filter werden mindestens 99,9 % des SARS-CoV-2 Virus inaktiviert.",
+        "page": 5,
+        "section": [
+          "Hochdruck-Zubehoerkatalog_DE",
+          "Page 5"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNISCHE DATEN",
+        "row_label": "2.000 h oder alle 2 Jahre",
+        "headers": [
+          "EMPFEHLUNG ÜBER DIE DIMENSIONIERUNG",
+          "TECHNISCHE INFORMATION ROHRDIMENSIONIERUNG",
+          "Beschreibung",
+          "Die maximale Länge sollte 15 (fünfzehn) Meter nicht überschreiten.",
+          "(möglichst ohne 45o/90o Winkel).",
+          "Standard-Durchmesser:",
+          "• Bis15 Meter–∅100 mm",
+          "Wenn es nicht vermieden werden kann einen Winkel einzusetzen, sollte das",
+          "z. Bspl.:",
+          "• Bis15 Meterinklusiveeinem(1)Winkel–∅120 mm",
+          "Das Gleiche gilt für weitere zusätzliche Winkel, welche in der Ansaugleitung",
+          "Allgemeines",
+          "cherung gegen zum Beispiel Regen, groben Schmutz, Insekten oder Vögel",
+          "in Richtung des Kompressors ausgeführt werden sowie am Eingangsfilter",
+          "(Entkoppelung der Vibrationen)",
+          "stattet sein.",
+          "Das Arbeitsgeräusch des Kompressors wird – wie bei jedem Kolbenkom-"
+        ],
+        "row_values": [
+          "VON ANSAUGROHREN",
+          "Detail",
+          "Grundlagen",
+          "• Ansaugrohre sollten gerade geführt werden",
+          "• Wenn die Rohrleitung gerade geführt ist, gelten folgende",
+          "• Bis10 Meter–∅ 80 mm",
+          "Ein Winkel",
+          "Rohr mindestens auf den nächstgrößeren Durchmesser erweitert werden,",
+          "• Bis10 Meterinklusiveeinem(1)Winkel–∅100 mm",
+          "Jeder weitere Winkel",
+          "montiert werden.",
+          "Die Eingangsseite des Ansaugrohres (außen) sollte mit einer Eingangssi-",
+          "versehen werden. Die Ausgangsseite (im Haus) sollte so dicht wie möglich",
+          "des Kompressors mit einem unterdruckfesten aber flexiblen Schlauch",
+          "und einem Adapter (∅ Eingangsrohr = ∅ des flexiblen Schlauches) ausge-",
+          "Hinweis",
+          "pressor – im Außenbereich bzw. am Anfang des Eingangsrohres hörbar sein."
+        ],
+        "units": [],
+        "footnotes": "8 | HOCHDRUCK-ZUBEHÖRKATALOG\n1 Mit dem B-VIRUS FREE Filter werden mindestens 99,9 % des SARS-CoV-2 Virus inaktiviert.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.21667702,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "23b7069a-c26f-4174-8c95-b3c83ba462fe",
+        "filename": "0151-Hochdruck-Zubehoerkatalog_DE-b67333cde9.md",
+        "title": "Hochdruck-Zubehoerkatalog_DE",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrox"
+        ],
+        "component_categories": [],
+        "standards": [
+          "EN 144"
+        ],
+        "content": "Document: Hochdruck-Zubehoerkatalog_DE\nle waren der Schwerpunt bei der Entwicklung dieser Variante.\nFÜLLVENTILE\nSPEICHERFLASCHENBATTERIE, B80-B\nHandradausführung\nKipphebelausführung\nDrehradausführung\n## Page 25\n\nBAUER KOMPRESSOREN\nHOCHDRUCK-ZUBEHÖRKATALOG | 49\n48 | HOCHDRUCK-ZUBEHÖRKATALOG\nBAUER KOMPRESSOREN\nFÜLLANSCHLUSS IN ROT\nfür 300 bar Atemluft\nFÜLLANSCHLUSS IN SCHWARZ\nfür 200 bar Atemluft\nFÜLLANSCHLUSS IN GRÜN\nfür Nitrox\nDie standardisierten Füllanschlüsse (EN 144-2) gibt es in den Varianten PN200 bar und\nPN300 bar für Atemluft und als Nitrox Version.\nFÜLLANSCHLÜSSE\n300 bar\n200 bar\nDIE VORTEILE DER NEUEN KIPPHEBEL-\nFÜLLVENTILE\nBei der Druckentlastung wird der Lärm um mehr als die Hälfte\n(16 dBA) reduziert. Angenehmere, tiefe und für das menschli-\nche Ohr abgestimmte Frequenz des Abblasetones. Zusätzlich\nkönnen der geringe Restlärm und die überschüssige Luft über\neinen G1/8 Anschluss nach Außen geführt werden. Komplett\nabwärtskompatibel, kann mühelos gegen ältere Versionen\nausgetauscht werden. Viele Ersatzteile separat beziehbar\nsowie die passenden Wartungssätze. Absolut rostfrei. Für den\nDauereisatz geeignet.\nFÜLLVENTILE\nSchalldämpfer\nim G1/8\nInnengewinde\nUNIMAM\nM16 × 1,5\nG5/8\nO-Ring\nN638\nO-Ring\nN16632\nUNIMAM\nM16 × 1,5\nG5/8\nO-Ring\nN638\nO-Ring\nN16632\nohne Manometer\nmit Manometer\nG5/8\nG1/4",
+        "page": 24,
+        "section": [
+          "Hochdruck-Zubehoerkatalog_DE",
+          "Page 24"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.19460729,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "227866c0-75df-4bf6-b090-3b8d94482556",
+        "filename": "0064-2026-04_PE_VE_Industry_EN_N42434_sc-9be2c89e11.md",
+        "title": "2026-04_PE_VE_Industry_EN_N42434_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "PE-VE INDUSTRY",
+          "PE-VE Series"
+        ],
+        "media": [
+          "breathing air",
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "booster",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_PE_VE_Industry_EN_N42434_sc\n256: `9be2c89e1126b178d31ba94355f5c30e990015979c25ce15580ddb8051d3dea1`\n## Page 1\n\nINDUSTRY\nPE-VE INDUSTRY\nSTRONG PERFORMANCE AT A COMPACT PRICE\n1946 – 2026\n8 0\n## Page 2\n\n2 | PE-VE INDUSTRY\nBAUER KOMPRESSOREN\nFOCUSING ON THE CORE OF QUALITY\n› 25 - 420 bar\n› 85 - 1470 l/min\n› Available as open or soundproofed models\n› For air and nitrogen\n› Compressor or booster version\nBAUER’s new PE-VE Series presents compressors offe-\nring an attractive range of features from the Basic model\nupwards, all at outstanding value for money.\nThe systems are available for pressures up to 420 bar and as\nbooster systems. Available with a wide range of compressor\noptions and extensive accessories, the PE-VE Series enables\ntailored solutions to be designed for virtually all uses involving\nbreathing air or nitrogen.\nThe systems have BAUER’s high-pressure compressor blocks at\ntheir core, with their legendary market reputation for reliability\nand durability. The system technology is designed for industrial\nuse.\nAs an all-new feature, the B-APP enables users to control and\nmonitor their systems from a smartphone in real time.\nTHE PE-VE SERIES – AN ALL-ROUNDER FOR THE INDUSTRY SECTOR",
+        "page": 1,
+        "section": [
+          "2026-04_PE_VE_Industry_EN_N42434_sc",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.16971673,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "4ea22244-85ce-4777-9d0b-f6ac50f165cf",
+        "filename": "0124-bauer_amfile_8-fad9ac0f60.md",
+        "title": "bauer_amfile_8",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE 100"
+        ],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_8\nDocument section: bauer_amfile_8 / Page 4\nTable: TECHNICAL DATA\nRow: Stäblistr. 8\n81477 Munich, Germany: Tel. +49 (0) 89 78049-0\nFax +49 (0) 89 78049-167: info@bauer-kompressoren.de\nbauer-kompressoren.de: ARE YOU INTERESTED IN OUR\nPRODUCTS?: CONTACT US – WE ARE HAPPY TO PROVIDE\nINFORMATION AND ASSISTANCE.: PE 100 EN\nN40566: 04.2026",
+        "page": 4,
+        "section": [
+          "bauer_amfile_8",
+          "Page 4"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "Stäblistr. 8",
+        "headers": [
+          "81477 Munich, Germany",
+          "Fax +49 (0) 89 78049-167",
+          "bauer-kompressoren.de",
+          "PRODUCTS?",
+          "INFORMATION AND ASSISTANCE.",
+          "N40566"
+        ],
+        "row_values": [
+          "Tel. +49 (0) 89 78049-0",
+          "info@bauer-kompressoren.de",
+          "ARE YOU INTERESTED IN OUR",
+          "CONTACT US – WE ARE HAPPY TO PROVIDE",
+          "PE 100 EN",
+          "04.2026"
+        ],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.16722345,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "e755f3ad-7b90-438a-92cc-89e5712044bf",
+        "filename": "0081-bauer_amfile_13-e7e9162a14.md",
+        "title": "bauer_amfile_13",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE-VE SERIES"
+        ],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_13\nDocument section: bauer_amfile_13 / Page 8\nTable: TECHNICAL DATA\nRow: Stäblistr. 8\n81477 Munich, Germany: Tel. +49 (0) 89 78049-0\nFax +49 (0) 89 78049-167: info@bauer-kompressoren.de\nbauer-kompressoren.de: PE-VE SERIES EN\nN34459: 04.2065\nSubject to technical change without notice: ARE YOU INTERESTED IN OUR\nPRODUCTS?: CONTACT US – WE ARE HAPPY TO PROVIDE",
+        "page": 8,
+        "section": [
+          "bauer_amfile_13",
+          "Page 8"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "Stäblistr. 8",
+        "headers": [
+          "81477 Munich, Germany",
+          "Fax +49 (0) 89 78049-167",
+          "bauer-kompressoren.de",
+          "N34459",
+          "Subject to technical change without notice",
+          "PRODUCTS?"
+        ],
+        "row_values": [
+          "Tel. +49 (0) 89 78049-0",
+          "info@bauer-kompressoren.de",
+          "PE-VE SERIES EN",
+          "04.2065",
+          "ARE YOU INTERESTED IN OUR",
+          "CONTACT US – WE ARE HAPPY TO PROVIDE"
+        ],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.16706522,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "075da428-8faa-4327-bcd0-1367fda62bd1",
+        "filename": "0005-2016-01_B-NEWS_DE_sc-20166a4d06.md",
+        "title": "2016-01_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2016-01-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2016-01_B-NEWS_DE_sc\nu 40 kW\ninstallierter Leistung positionieren sie\nsich zwischen der COMPACT und der\nX-FILL Reihe und eignen sich für die Be­\ntankung von PKWs und – bei mittlerem\nFüllbedarf gleichermaßen – für Busbe­\ntankungen.\nIm Eventzelt konnten die Besucher\ndann die COMPACT und X-FILL Anlagen\nim Livebetrieb erleben und im Anschluss\ndas brandneue Fertigungswerk I bei ei­\nnem Rundgang kennenlernen.\nUnmittelbar im Anschluss gingen die\nAnlagen auf Tour in die Schweiz zum 11.\nGasmobilsymposium.\nBAUER ist im Nachbarstaat mit knapp\n60 Tankstellen sehr breit aufgestellt und\ndie Gespräche zeigten, dass das neue\nKonzept vollumfänglich den Bedarf der\nBranche getroffen hat.\nBAUER ACADEMY\nNEUES\n­PROGRAMM 2016\nDer Bereich Technisches Training der\nBAUER ACADEMY hat sein Schulungs­\nprgramm 2016 überarbeitet und erwei­\ntert. Das Programm präsentiert sich in\nzwei Sprachen und in insgesamt vier\nVersionen.\nNeben den bisherigen, offenen Schu­\nlungsprogrammen für Kunden wurden\nzwei erweiterte Versionen für unsere\nTochterunternehmen und A-Partner er­\nstellt. Dabei sind einige neue anwen­\nderorientierte Schulungen hinzugekom­\nmen, die auch teilweise als Webinare\nwahrgenommen werden können.\nMit den neuen Programmen im neu­\nen CD professionalisieren wir weiter den\nBereich Kundentraining, um einen Mehr­\nwert für unsere Kunden und Partner zu\nbieten.\nZudem haben wir auf über 120 Quad­",
+        "page": 7,
+        "section": [
+          "2016-01_B-NEWS_DE_sc",
+          "Page 7"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.14652519,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "25a0221f-cdea-44bf-94d6-8739f9a83b8b",
+        "filename": "0041-2023-01_B-NEWS_DE_sc-b614d09274.md",
+        "title": "2023-01_B-NEWS_DE_sc",
+        "language": "de",
+        "publication_date": "2023-01-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: 2023-01_B-NEWS_DE_sc\nDocument section: 2023-01_B-NEWS_DE_sc / Page 7\nTable: 2023-01_B-NEWS_DE_sc\nHeaders and units: im Zusammenspiel mit einem Rück- | schlagventil den Druckabfall und ver- | längert so die Lebensdauer dieses | Behälters erheblich. | Druckhalteventil in Kombination | mit Rückschlagventil | 1 \u0007Die verdichtete Luft gelangt durch | die Eintrittsbohrung ins Druckhalte- | ventil. | 2 \u0007Eine Feder baut die notwendige | Schließkraft auf, mit der der | Ventilkolben 3 die Durchlass­ | bohrung 4 verschließt, solange | der Druck der verdichteten Luft | unter dem am Ventil eingestellten | Wert liegt. | 3 \u0007Ist der Einstelldruck des Druckhalte- | ventils erreicht, wird der Ventilkol- | ben durch den Druck nach oben | geschoben und die verdichtete Luft\nRow: kann durch den Ausgang 5 strömen.\nValues: 1 | 2 | 3 | 4 | 5\nFootnotes: 60 % des jeweiligen Enddrucks beträgt.\n1 Die verdichtete Luft gelangt durch\n2 Eine Feder baut die notwendige\n3 Ist der Einstelldruck des Druckhalte-",
+        "page": 7,
+        "section": [
+          "2023-01_B-NEWS_DE_sc",
+          "Page 7"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "2023-01_B-NEWS_DE_sc",
+        "row_label": "kann durch den Ausgang 5 strömen.",
+        "headers": [
+          "im Zusammenspiel mit einem Rück-",
+          "schlagventil den Druckabfall und ver-",
+          "längert so die Lebensdauer dieses",
+          "Behälters erheblich.",
+          "Druckhalteventil in Kombination",
+          "mit Rückschlagventil",
+          "1 \u0007Die verdichtete Luft gelangt durch",
+          "die Eintrittsbohrung ins Druckhalte-",
+          "ventil.",
+          "2 \u0007Eine Feder baut die notwendige",
+          "Schließkraft auf, mit der der",
+          "Ventilkolben 3 die Durchlass­",
+          "bohrung 4 verschließt, solange",
+          "der Druck der verdichteten Luft",
+          "unter dem am Ventil eingestellten",
+          "Wert liegt.",
+          "3 \u0007Ist der Einstelldruck des Druckhalte-",
+          "ventils erreicht, wird der Ventilkol-",
+          "ben durch den Druck nach oben",
+          "geschoben und die verdichtete Luft"
+        ],
+        "row_values": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "units": [],
+        "footnotes": "60 % des jeweiligen Enddrucks beträgt.\n1 Die verdichtete Luft gelangt durch\n2 Eine Feder baut die notwendige\n3 Ist der Einstelldruck des Druckhalte-",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.14381007,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "15a18734-c8ea-474e-aebd-6ccb54ae08e1",
+        "filename": "0162-zubehoer_fuellventile_en-0fdb67669b.md",
+        "title": "zubehoer_fuellventile_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: zubehoer_fuellventile_en\n: For lever ﬁlling valve\n86102, 85878, 85877 or\n86242/86217\nSpare part no. 11347\nDouble nipple\nScrew-in element\nDouble nipple\nServicing kit for all ﬁlling\ncocks\n## Page 4\n\nBAUER KOMPRESSOREN GmbH Systemwerk, D-81452 München, Postfach 71 02 60,\nTel. +49·89·7 80 49-0, Fax +49·89·7 80 49-167, info@bauer-kompressoren.de\nwww.bauer-kompressoren.de\nCONTACT FORM\nPLEASE INFORM US ABOUT THE FOLLOWING SERVICES\nPERSON TO CONTACT\nMr / Mrs / Ms:\n\nPhone:\n\nFax:\nYOUR ADDRESS\nCompany:\n\nStreet:\n\nZip Code, Town:\nPlease send the completed form by mail or fax to the a.m. agent. Our Service-Team will answer your request\nand will contact you as soon as possible.",
+        "page": 3,
+        "section": [
+          "zubehoer_fuellventile_en",
+          "Page 3"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.13543823,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 0,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 1,
+      "elapsed_ms": 807.45
+    }
+  },
+  "completed_at": "2026-07-23T14:09:55.130551+00:00",
+  "case_id": "B22",
+  "split": "development",
+  "category": "bilingual_exact",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

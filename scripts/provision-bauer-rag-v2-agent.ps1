@@ -192,7 +192,18 @@ claim with general knowledge.
 
     $groupResult = Invoke-LibreChatRequest -Client $client -Method ([System.Net.Http.HttpMethod]::Get) `
         -Path "/api/admin/groups?search=KB%20-%20Bauer%20Kompressoren&source=local&limit=100&offset=0"
-    $group = @($groupResult.groups | Where-Object { [string]$_.id -eq $groupId -or [string]$_._id -eq $groupId }) |
+    $group = @($groupResult.groups | Where-Object {
+        $candidateId = if ($null -ne $_.PSObject.Properties['id']) {
+            [string]$_.id
+        }
+        elseif ($null -ne $_.PSObject.Properties['_id']) {
+            [string]$_._id
+        }
+        else {
+            ''
+        }
+        $candidateId -eq $groupId
+    }) |
         Select-Object -First 1
     if ($null -eq $group) {
         throw "Could not resolve Bauer access group $groupId."

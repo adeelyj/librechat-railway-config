@@ -70,6 +70,14 @@ def load_manifest() -> dict[str, Any]:
     return load_json(EVAL_ROOT / "baselines" / "corpus-manifest.json")
 
 
+def case_prompt(case: dict[str, Any]) -> str:
+    for field in ("prompt_en", "prompt_de"):
+        value = case.get(field)
+        if isinstance(value, str) and value.strip():
+            return value
+    raise ValueError(f"Evaluation case {case.get('id', '<unknown>')} has no prompt")
+
+
 def create_run_directory(run_id: str) -> Path:
     if not run_id or any(character not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for character in run_id):
         raise ValueError("run_id may contain only letters, digits, '-' and '_'.")

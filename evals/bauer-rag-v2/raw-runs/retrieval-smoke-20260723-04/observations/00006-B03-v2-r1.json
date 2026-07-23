@@ -1,0 +1,923 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1366.04,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "7ed481bf-af60-4a09-b02a-d1acbe138871",
+      "filename": "0367-0201_verticus1_5ee3a4cd85-1b3917e37f.md",
+      "title": "VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS 420",
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nof breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat\nperformance ranges does the VERTICUS (420 bar) cover?\nThe VERTICUS (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 560 liters per minute, making it ideal for continuous filling operations in stationary applications.\nHow\nmaintenance-friendly is the VERTICUS (420 bar) ?\nThe VERTICUS (420 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich\nconditions is the VERTICUS (420 bar) built to handle?\nThe VERTICUS (420 bar) is particularly well suited for applications that require a stationary breathing air supply.\nHow is\nthe VERTICUS (420 bar) operated and monitored?\nThe VERTICUS (420 bar) is equipped with the B-CONTROL MICRO control system. This enables simple operation, continuous monitoring of all relevant operating parameters and connection to the B-CLOUD and the B-APP.\nWhat\nbenefits does the B-CLOUD provide?\nThe B-CLOUD enables central digital monitoring of the high-pressure system. Operating data, statuses and messages are available in real time and support condition-based maintenance as well as high system availability, particularly in high-performance industrial applications.\nAccessories",
+      "page": null,
+      "section": [
+        "VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.24442969,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "35585413-0269-4463-ba66-923b881f52fc",
+      "filename": "0301-0135_pe-ve2_d3e6c78319-d58ce3f9cb.md",
+      "title": "PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer"
+      ],
+      "standards": [],
+      "content": "Document: PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nlio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications.\nGlobal market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the PE-VE (420 bar) used for?\nThe PE-VE (420 bar) is a stationary high-pressure breathing air compressor designed for continuous operation, ensuring a reliable supply of breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat\nperformance ranges does the PE-VE (420 bar) cover?\nThe PE-VE (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 600 liters per minute, making it ideal for continuous filling operations in stationary applications.\nHow\nmaintenance-friendly is the PE-VE (420 bar)?\nThe PE-VE (420 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich\nconditions is the PE-VE (420 bar) built to handle?\nThe PE-VE (420 bar) is particularly well suited for applications that require a stationary breathing air supply.\nHow is\nthe PE-VE (420 bar) operated and monitored?",
+      "page": null,
+      "section": [
+        "PE-VE (420 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.24426251,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+      "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+      "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nof breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat\nperformance ranges does the MINI-VERTICUS (420 bar) cover?\nThe MINI-VERTICUS (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 320 liters per minute, making it ideal for continuous filling operations in stationary applications.\nHow\nmaintenance-friendly is the MINI-VERTICUS (420 bar)?\nThe MINI-VERTICUS (420 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich\nconditions is the MINI-VERTICUS (420 bar) built to handle?\nThe MINI-VERTICUS (420 bar) is particularly well suited for applications that require a stationary breathing air supply.\nHow is\nthe MINI-VERTICUS (420 bar) operated and monitored?\nThe MINI-VERTICUS (420 bar) is equipped with the B-CONTROL MICRO control system. This enables simple operation, continuous monitoring of all relevant operating parameters and connection to the B-CLOUD and the B-APP.\nWhat\nare the benefits of B-CLOUD?",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.24413854,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "793def90-ceca-4be0-803f-8fe1d0b578be",
+      "filename": "0296-0130_pe-mve1_ea5cf31cb6-8f2db7f09f.md",
+      "title": "PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\ny is the PE-MVE (420 bar) ?\nThe PE-MVE (420 bar) maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich\nconditions is the PE-MVE (420 bar) built to handle?\nThe PE-MVE (420 bar) is particularly well suited for applications that require a stationary breathing air supply.\nHow is\nthe PE-MVE (420 bar) operated and monitored?\nThe PE-MVE (420 bar) is equipped with the B-CONTROL MICRO control system. This enables simple operation, continuous monitoring of all relevant operating parameters and connection to the B-CLOUD and the B-APP.\nWhat\nbenefits does the B-CLOUD provide?\nThe B-CLOUD enables central digital monitoring of the high-pressure system. Operating data, statuses and messages are available in real time and support condition-based maintenance as well as high system availability, particularly in high-performance industrial applications.\nAccessories\nNavigating through the elements of the carousel is possible using the tab key. You can skip the carousel or go straight to carousel navigation using the skip links.\nPress to skip carousel\nPress to go to carousel navigation\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects",
+      "page": null,
+      "section": [
+        "PE-MVE (420 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.24014047,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "793def90-ceca-4be0-803f-8fe1d0b578be",
+      "filename": "0296-0130_pe-mve1_ea5cf31cb6-8f2db7f09f.md",
+      "title": "PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer"
+      ],
+      "standards": [],
+      "content": "Document: PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nR offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions.\nMost extensive breathing air treatment portfolio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications.\nGlobal market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the PE-MVE (420 bar) used for?\nThe PE-MVE (420 bar) is a stationary high-pressure breathing air compressor designed for continuous operation, ensuring a reliable supply of breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat\nperformance ranges does the PE-MVE (420 bar) cover?\nThe PE-MVE (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 250 liters per minute, making it ideal for continuous filling operations in stationary applications.\nHow\nmaintenance-friendly is the PE-MVE (420 bar) ?\nThe PE-MVE (420 bar) maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich",
+      "page": null,
+      "section": [
+        "PE-MVE (420 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.23989878,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "059b54d3-3290-447c-9989-f775a2b3b4d9",
+      "filename": "0272-0106_mariner-420_ef22a119a5-bbd5ffbeed.md",
+      "title": "MARINER (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: MARINER (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nss nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the MARINER (420 bar) used for?\nThe MARINER (420 bar) is a mobile high-pressure breathing air compressor that delivers reliable breathing air supply for flexible use at different locations. It is built for demanding conditions where mobility and operational safety are essential.\nWhat\nperformance ranges does the MARINER (420 bar)cover?\nThe MARINER (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 320 liters per minute. This makes it ideal for filling breathing air cylinders in mobile applications.\nHow is\nthe MARINER (420 bar) powered?\nThe MARINER (420 bar) is available with a three-phase motor or petrol engine, and is built for reliable operation in each configuration.\nHow\nportable is the MARINER (420 bar)?\nThanks to its compact design and mobility, the MARINER (420 bar) is especially suited for use at multiple locations.\nHow\nmaintenance-friendly is the MARINER (420 bar)?\nThe MARINER (420 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nAccessories\nNavigating through the elements of the carousel is possible using the tab key. You can skip the carousel or go straight to carousel navigation using the skip links.\nPress to skip carousel",
+      "page": null,
+      "section": [
+        "MARINER (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.22743393,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "059b54d3-3290-447c-9989-f775a2b3b4d9",
+      "filename": "0272-0106_mariner-420_ef22a119a5-bbd5ffbeed.md",
+      "title": "MARINER (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer"
+      ],
+      "standards": [],
+      "content": "Document: MARINER (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nRINER and CAPITANO – Mobile All-Round Compressors\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is\nBAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions.\nMost extensive breathing air treatment portfolio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications.\nGlobal market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the MARINER (420 bar) used for?",
+      "page": null,
+      "section": [
+        "MARINER (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.21338681,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL",
+        "B-SELECT"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nrying chambers\n5. Oil removal filter/B-SECURUS\n6. Particle filter\n7. Air/gas outlet with pressure\nmaintaining valve\n8. B-CONTROL\nSECCANT III-A\n1\n8\n6\n3\n4\n5\n7\n2\n4\n## Page 18\n\n18 | STORAGE | ACCESSORY SYSTEMS\nBAUER KOMPRESSOREN\nHIGH-PRESSURE STORAGE SYSTEM\nThese high-performance storage systems sup-\nport the short-term availability of large quan-\ntities of air and gas and allow a fluctuating air\nconsumption.\nAt the same time, a carefully selected storage\nmodule optimizes runtime of the compressor\nand also serves as a pulsation damper.\nThe storage systems are available in pressure\nstages of 330, 350 and 420 bar. They can be\n­expanded as required by adding 50 or 80 l\nstorage cylinders.\nThe storage system should be dimensioned\nto guarantee that the compressor operates\ncontinuously for a minimum period of 15 to 30\nminutes.\nESSENTIAL ELEMENTS OF\nYOUR SYSTEM\nOPTIMISED FILLING PROCESS\nFEATURES\n› 330/350/420 bar\n› 50 l and 80 l cylinders\n› Extendable as required\nHigh-pressure\nstorage cylinder bank\nB-SELECT\nThe automatic selector unit B-SELECT enables air cylin-\nders to be filled quickly and simultaneously in parallel\nfrom a storage system (buffer) and via the compressor.\nThe storage cylinder connected to the filling panel takes\npriority for filling, i.e. the storage system and the compres-\nsor always start by filling the breathing air cylinders at the\nfilling panel.",
+      "page": 17,
+      "section": [
+        "2026 04 Accessory Systems EN N39608 sc",
+        "Page 17"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.2123198,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "7ed481bf-af60-4a09-b02a-d1acbe138871",
+      "filename": "0367-0201_verticus1_5ee3a4cd85-1b3917e37f.md",
+      "title": "VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS 420"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer"
+      ],
+      "standards": [],
+      "content": "Document: VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\ns\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is\nBAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions.\nMost extensive breathing air treatment portfolio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications.\nGlobal market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the VERTICUS (420 bar) used for?\nThe VERTICUS (420 bar) is a stationary high-pressure breathing air compressor designed for continuous operation, ensuring a reliable supply of breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat",
+      "page": null,
+      "section": [
+        "VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.21193392,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+      "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+      "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer"
+      ],
+      "standards": [],
+      "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\ns\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is\nBAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions.\nMost extensive breathing air treatment portfolio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications.\nGlobal market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the MINI-VERTICUS (420 bar) used for?\nThe MINI-VERTICUS (420 bar) is a stationary high-pressure breathing air compressor designed for continuous operation, ensuring a reliable supply of breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.21156863,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "7ed481bf-af60-4a09-b02a-d1acbe138871",
+        "filename": "0367-0201_verticus1_5ee3a4cd85-1b3917e37f.md",
+        "title": "VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS 420",
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nof breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat\nperformance ranges does the VERTICUS (420 bar) cover?\nThe VERTICUS (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 560 liters per minute, making it ideal for continuous filling operations in stationary applications.\nHow\nmaintenance-friendly is the VERTICUS (420 bar) ?\nThe VERTICUS (420 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich\nconditions is the VERTICUS (420 bar) built to handle?\nThe VERTICUS (420 bar) is particularly well suited for applications that require a stationary breathing air supply.\nHow is\nthe VERTICUS (420 bar) operated and monitored?\nThe VERTICUS (420 bar) is equipped with the B-CONTROL MICRO control system. This enables simple operation, continuous monitoring of all relevant operating parameters and connection to the B-CLOUD and the B-APP.\nWhat\nbenefits does the B-CLOUD provide?\nThe B-CLOUD enables central digital monitoring of the high-pressure system. Operating data, statuses and messages are available in real time and support condition-based maintenance as well as high system availability, particularly in high-performance industrial applications.\nAccessories",
+        "page": null,
+        "section": [
+          "VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.24442969,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "35585413-0269-4463-ba66-923b881f52fc",
+        "filename": "0301-0135_pe-ve2_d3e6c78319-d58ce3f9cb.md",
+        "title": "PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer"
+        ],
+        "standards": [],
+        "content": "Document: PE-VE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nlio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications.\nGlobal market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the PE-VE (420 bar) used for?\nThe PE-VE (420 bar) is a stationary high-pressure breathing air compressor designed for continuous operation, ensuring a reliable supply of breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat\nperformance ranges does the PE-VE (420 bar) cover?\nThe PE-VE (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 600 liters per minute, making it ideal for continuous filling operations in stationary applications.\nHow\nmaintenance-friendly is the PE-VE (420 bar)?\nThe PE-VE (420 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich\nconditions is the PE-VE (420 bar) built to handle?\nThe PE-VE (420 bar) is particularly well suited for applications that require a stationary breathing air supply.\nHow is\nthe PE-VE (420 bar) operated and monitored?",
+        "page": null,
+        "section": [
+          "PE-VE (420 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.24426251,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+        "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+        "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nof breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat\nperformance ranges does the MINI-VERTICUS (420 bar) cover?\nThe MINI-VERTICUS (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 320 liters per minute, making it ideal for continuous filling operations in stationary applications.\nHow\nmaintenance-friendly is the MINI-VERTICUS (420 bar)?\nThe MINI-VERTICUS (420 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich\nconditions is the MINI-VERTICUS (420 bar) built to handle?\nThe MINI-VERTICUS (420 bar) is particularly well suited for applications that require a stationary breathing air supply.\nHow is\nthe MINI-VERTICUS (420 bar) operated and monitored?\nThe MINI-VERTICUS (420 bar) is equipped with the B-CONTROL MICRO control system. This enables simple operation, continuous monitoring of all relevant operating parameters and connection to the B-CLOUD and the B-APP.\nWhat\nare the benefits of B-CLOUD?",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.24413854,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "793def90-ceca-4be0-803f-8fe1d0b578be",
+        "filename": "0296-0130_pe-mve1_ea5cf31cb6-8f2db7f09f.md",
+        "title": "PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\ny is the PE-MVE (420 bar) ?\nThe PE-MVE (420 bar) maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich\nconditions is the PE-MVE (420 bar) built to handle?\nThe PE-MVE (420 bar) is particularly well suited for applications that require a stationary breathing air supply.\nHow is\nthe PE-MVE (420 bar) operated and monitored?\nThe PE-MVE (420 bar) is equipped with the B-CONTROL MICRO control system. This enables simple operation, continuous monitoring of all relevant operating parameters and connection to the B-CLOUD and the B-APP.\nWhat\nbenefits does the B-CLOUD provide?\nThe B-CLOUD enables central digital monitoring of the high-pressure system. Operating data, statuses and messages are available in real time and support condition-based maintenance as well as high system availability, particularly in high-performance industrial applications.\nAccessories\nNavigating through the elements of the carousel is possible using the tab key. You can skip the carousel or go straight to carousel navigation using the skip links.\nPress to skip carousel\nPress to go to carousel navigation\nMy Account\nLogin/Register\nQuote requests\nProducts\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systeme\nSolutions\nBreathing Air / Sports\nIndustry\nShipping & Offshore\nFuel Gas Systems\nSmart Solutions\nReferences / Sponsoring Projects",
+        "page": null,
+        "section": [
+          "PE-MVE (420 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.24014047,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "793def90-ceca-4be0-803f-8fe1d0b578be",
+        "filename": "0296-0130_pe-mve1_ea5cf31cb6-8f2db7f09f.md",
+        "title": "PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer"
+        ],
+        "standards": [],
+        "content": "Document: PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nR offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions.\nMost extensive breathing air treatment portfolio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications.\nGlobal market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the PE-MVE (420 bar) used for?\nThe PE-MVE (420 bar) is a stationary high-pressure breathing air compressor designed for continuous operation, ensuring a reliable supply of breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat\nperformance ranges does the PE-MVE (420 bar) cover?\nThe PE-MVE (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 250 liters per minute, making it ideal for continuous filling operations in stationary applications.\nHow\nmaintenance-friendly is the PE-MVE (420 bar) ?\nThe PE-MVE (420 bar) maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich",
+        "page": null,
+        "section": [
+          "PE-MVE (420 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.23989878,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "059b54d3-3290-447c-9989-f775a2b3b4d9",
+        "filename": "0272-0106_mariner-420_ef22a119a5-bbd5ffbeed.md",
+        "title": "MARINER (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: MARINER (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nss nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the MARINER (420 bar) used for?\nThe MARINER (420 bar) is a mobile high-pressure breathing air compressor that delivers reliable breathing air supply for flexible use at different locations. It is built for demanding conditions where mobility and operational safety are essential.\nWhat\nperformance ranges does the MARINER (420 bar)cover?\nThe MARINER (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 320 liters per minute. This makes it ideal for filling breathing air cylinders in mobile applications.\nHow is\nthe MARINER (420 bar) powered?\nThe MARINER (420 bar) is available with a three-phase motor or petrol engine, and is built for reliable operation in each configuration.\nHow\nportable is the MARINER (420 bar)?\nThanks to its compact design and mobility, the MARINER (420 bar) is especially suited for use at multiple locations.\nHow\nmaintenance-friendly is the MARINER (420 bar)?\nThe MARINER (420 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nAccessories\nNavigating through the elements of the carousel is possible using the tab key. You can skip the carousel or go straight to carousel navigation using the skip links.\nPress to skip carousel",
+        "page": null,
+        "section": [
+          "MARINER (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.22743393,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "059b54d3-3290-447c-9989-f775a2b3b4d9",
+        "filename": "0272-0106_mariner-420_ef22a119a5-bbd5ffbeed.md",
+        "title": "MARINER (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer"
+        ],
+        "standards": [],
+        "content": "Document: MARINER (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nRINER and CAPITANO – Mobile All-Round Compressors\nCookie acceptance required\nTo be able to watch this video you must accept the\nPreference and Marketing Cookies\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is\nBAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions.\nMost extensive breathing air treatment portfolio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications.\nGlobal market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the MARINER (420 bar) used for?",
+        "page": null,
+        "section": [
+          "MARINER (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.21338681,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL",
+          "B-SELECT"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nrying chambers\n5. Oil removal filter/B-SECURUS\n6. Particle filter\n7. Air/gas outlet with pressure\nmaintaining valve\n8. B-CONTROL\nSECCANT III-A\n1\n8\n6\n3\n4\n5\n7\n2\n4\n## Page 18\n\n18 | STORAGE | ACCESSORY SYSTEMS\nBAUER KOMPRESSOREN\nHIGH-PRESSURE STORAGE SYSTEM\nThese high-performance storage systems sup-\nport the short-term availability of large quan-\ntities of air and gas and allow a fluctuating air\nconsumption.\nAt the same time, a carefully selected storage\nmodule optimizes runtime of the compressor\nand also serves as a pulsation damper.\nThe storage systems are available in pressure\nstages of 330, 350 and 420 bar. They can be\n­expanded as required by adding 50 or 80 l\nstorage cylinders.\nThe storage system should be dimensioned\nto guarantee that the compressor operates\ncontinuously for a minimum period of 15 to 30\nminutes.\nESSENTIAL ELEMENTS OF\nYOUR SYSTEM\nOPTIMISED FILLING PROCESS\nFEATURES\n› 330/350/420 bar\n› 50 l and 80 l cylinders\n› Extendable as required\nHigh-pressure\nstorage cylinder bank\nB-SELECT\nThe automatic selector unit B-SELECT enables air cylin-\nders to be filled quickly and simultaneously in parallel\nfrom a storage system (buffer) and via the compressor.\nThe storage cylinder connected to the filling panel takes\npriority for filling, i.e. the storage system and the compres-\nsor always start by filling the breathing air cylinders at the\nfilling panel.",
+        "page": 17,
+        "section": [
+          "2026 04 Accessory Systems EN N39608 sc",
+          "Page 17"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.2123198,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "7ed481bf-af60-4a09-b02a-d1acbe138871",
+        "filename": "0367-0201_verticus1_5ee3a4cd85-1b3917e37f.md",
+        "title": "VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS 420"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer"
+        ],
+        "standards": [],
+        "content": "Document: VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\ns\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is\nBAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions.\nMost extensive breathing air treatment portfolio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications.\nGlobal market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the VERTICUS (420 bar) used for?\nThe VERTICUS (420 bar) is a stationary high-pressure breathing air compressor designed for continuous operation, ensuring a reliable supply of breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat",
+        "page": null,
+        "section": [
+          "VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.21193392,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+        "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+        "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer"
+        ],
+        "standards": [],
+        "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\ns\n, you can change your\ncookies configuration\nand open the video.\nFrequently Asked Questions\nWhy is\nBAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions.\nMost extensive breathing air treatment portfolio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications.\nGlobal market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network.\nWhat\nis the MINI-VERTICUS (420 bar) used for?\nThe MINI-VERTICUS (420 bar) is a stationary high-pressure breathing air compressor designed for continuous operation, ensuring a reliable supply of breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.21156863,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "syn bk n2 420 500",
+          "syn bk n2 365 500"
+        ],
+        "standards": [],
+        "number_units": [
+          "420 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 1,
+      "elapsed_ms": 1071.92
+    }
+  },
+  "completed_at": "2026-07-23T14:50:25.297369+00:00",
+  "case_id": "B03",
+  "split": "development",
+  "category": "structured_comparison",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

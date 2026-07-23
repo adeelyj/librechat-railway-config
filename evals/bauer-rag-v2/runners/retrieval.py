@@ -9,6 +9,7 @@ from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (  # noqa: E402
+    case_prompt,
     create_run_directory,
     load_cases,
     load_manifest,
@@ -133,7 +134,7 @@ def main() -> None:
                         system=system,
                         base_url=args.base_url,
                         token=token,
-                        query=case["prompt_en"],
+                        query=case_prompt(case),
                         file_ids=file_ids,
                         entity_id=entity_id,
                         timeout=args.timeout,

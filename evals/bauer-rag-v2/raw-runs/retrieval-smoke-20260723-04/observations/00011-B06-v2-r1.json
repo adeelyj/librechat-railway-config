@@ -1,0 +1,1532 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1369.31,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "2d6d8bc8-a742-465a-8b3e-9bfb61f1fcd7",
+      "filename": "0371-0205_verticus-i-series_2e921bd912-e301b7a3ae.md",
+      "title": "VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS series",
+        "VERTICUS I"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: High-pressure compressor VERTICUS, 310 – 610 l/min, 90 – 525 bar | Model designation | Effective free air delivery ¹ | Maximum operating pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | VERTICUS I 90 - 365 bar\nRow: I 15.1-7.5-V\nValues: 340 | 20.4 | 12 | 365 | 5300 | 4 | 1050 | 7.5 | 384 | 847\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "page": null,
+      "section": [
+        "VERTICUS series · Air-cooled compressors / BAUER KOMPRESSORE",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "I 15.1-7.5-V",
+      "headers": [
+        "High-pressure compressor VERTICUS, 310 – 610 l/min, 90 – 525 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Maximum operating pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "VERTICUS I 90 - 365 bar"
+      ],
+      "row_values": [
+        "340",
+        "20.4",
+        "12",
+        "365",
+        "5300",
+        "4",
+        "1050",
+        "7.5",
+        "384",
+        "847"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.24269779,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "2d6d8bc8-a742-465a-8b3e-9bfb61f1fcd7",
+      "filename": "0371-0205_verticus-i-series_2e921bd912-e301b7a3ae.md",
+      "title": "VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS series",
+        "VERTICUS I"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: VERTICUS I 420 - 525 bar | I 15.11-7.5-V | I 15.11-11-V\nRow: I 18.1-15-V\nValues: 510 | 30.6 | 18 | 525 | 7600 | 5 | 1490 | 15 | 468 | 1032\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "page": null,
+      "section": [
+        "VERTICUS series · Air-cooled compressors / BAUER KOMPRESSORE",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "I 18.1-15-V",
+      "headers": [
+        "VERTICUS I 420 - 525 bar",
+        "I 15.11-7.5-V",
+        "I 15.11-11-V"
+      ],
+      "row_values": [
+        "510",
+        "30.6",
+        "18",
+        "525",
+        "7600",
+        "5",
+        "1490",
+        "15",
+        "468",
+        "1032"
+      ],
+      "units": [],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.24243338,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "4acc08ac-67df-49f1-968d-d6dad320dbe1",
+      "filename": "0259-0093_i-25-i28-series_6a81578826-2f9f7ee418.md",
+      "title": "I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: I 28.0-55 | I 28.0-75 | I 25 series | 420 – 525 bar\nRow: I 25.9-45\nValues: 1900 | 114 | 67 | 525 | 7600 | 5 | 1180 | 45 | 1900 | 4180\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "page": null,
+      "section": [
+        "I 25/I28 series · Air-cooled compressors / BAUER KOMPRESSORE",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "I 25.9-45",
+      "headers": [
+        "I 28.0-55",
+        "I 28.0-75",
+        "I 25 series | 420 – 525 bar"
+      ],
+      "row_values": [
+        "1900",
+        "114",
+        "67",
+        "525",
+        "7600",
+        "5",
+        "1180",
+        "45",
+        "1900",
+        "4180"
+      ],
+      "units": [],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.24145586,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "4acc08ac-67df-49f1-968d-d6dad320dbe1",
+      "filename": "0259-0093_i-25-i28-series_6a81578826-2f9f7ee418.md",
+      "title": "I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: High-pressure compressor I 25 / I 28, 1900–3500 l/min, 90–525 bar | Model designation | Effective free air delivery ¹ | Maximum operating pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | I 25 / I 28 series | 90 – 350 bar | I 25.0-45\nRow: I 28.0-55\nValues: 2500 | 150 | 88 | 350 | 5100 | 4 | 830 | 55 | 1860 | 4090\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "page": null,
+      "section": [
+        "I 25/I28 series · Air-cooled compressors / BAUER KOMPRESSORE",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "I 28.0-55",
+      "headers": [
+        "High-pressure compressor I 25 / I 28, 1900–3500 l/min, 90–525 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Maximum operating pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "I 25 / I 28 series | 90 – 350 bar",
+        "I 25.0-45"
+      ],
+      "row_values": [
+        "2500",
+        "150",
+        "88",
+        "350",
+        "5100",
+        "4",
+        "830",
+        "55",
+        "1860",
+        "4090"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.24122972,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "b3f6bac3-c500-42cb-9e5a-fc7761798af9",
+      "filename": "0258-0092_i22-series_44f98de39c-33e2fba86d.md",
+      "title": "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN\nDocument section: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: bar | psig | rpm | kW | kg | lbs | I 22 series | 90 – 440 bar | 60 Hz | I 22.2-22 | I 22.2-37 | I 22 series | 420 – 525 bar | 60 Hz\nRow: I 22.5-30\nValues: 980 | 58.8 | 34.6 | 525 | 7600 | 5 | 1170 | 30 | 780 | 1720\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "page": null,
+      "section": [
+        "I 22 series · Air-cooled compressors / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "I 22.5-30",
+      "headers": [
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "I 22 series | 90 – 440 bar | 60 Hz",
+        "I 22.2-22",
+        "I 22.2-37",
+        "I 22 series | 420 – 525 bar | 60 Hz"
+      ],
+      "row_values": [
+        "980",
+        "58.8",
+        "34.6",
+        "525",
+        "7600",
+        "5",
+        "1170",
+        "30",
+        "780",
+        "1720"
+      ],
+      "units": [
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.23929136,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "b3f6bac3-c500-42cb-9e5a-fc7761798af9",
+      "filename": "0258-0092_i22-series_44f98de39c-33e2fba86d.md",
+      "title": "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN\nDocument section: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: High-pressure compressor I 22, 870–1480 l/min, 90–525 bar | Model designation | Effective free air delivery ¹ | Maximum operating pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | I 22 series | 90 – 370 bar | 50 Hz | I 22.0-22\nRow: I 22.0-30\nValues: 1300 | 78 | 45.9 | 370 | 5370 | 4 | 1485 | 30 | 780 | 1715\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "page": null,
+      "section": [
+        "I 22 series · Air-cooled compressors / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "I 22.0-30",
+      "headers": [
+        "High-pressure compressor I 22, 870–1480 l/min, 90–525 bar",
+        "Model designation",
+        "Effective free air delivery ¹",
+        "Maximum operating pressure ²",
+        "Number of stages",
+        "Rotational speed approx.",
+        "Motor power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "I 22 series | 90 – 370 bar | 50 Hz",
+        "I 22.0-22"
+      ],
+      "row_values": [
+        "1300",
+        "78",
+        "45.9",
+        "370",
+        "5370",
+        "4",
+        "1485",
+        "30",
+        "780",
+        "1715"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.23912486,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "384ebfa3-dc1e-4583-952d-07162a47f263",
+      "filename": "0255-0089_hochdruck-speichersysteme1_33b7c41212-c007706fef.md",
+      "title": "High-pressure storage systems · Storage systems | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage systems · Storage systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage systems | BAUER KOMP / Web page content\nTable: Technical Data\nRow: 420 bar\nLiter: B 50\n–: ✓\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.: Storage cylinder with console\nA module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.: Pressure vessel\nThe storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.: Condensate drain\nDepending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.: Options\nSafety valve and pressure gauge: Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.\nThe storage design: Storage system design – the basis for efficient compressor operation\nA correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.: To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.\nThe size of the storage system depends on:: Compressor delivery rate (l/min)\nAir consumption of the specific application: Pressure differential between start and stop (hysteresis)\nSimplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):: Vk (l/min): Compressor delivery volume in liters per minute\nV (l): Storage volume in liters (water volume): Δp (bar): Pressure differential (hysteresis) in bar\nWe recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.: Downloads\nProduct Brochure Accessory Systems EN: (3.44 MB)\nData Sheet B50 EN: (256.64 kB)",
+      "page": null,
+      "section": [
+        "High-pressure storage systems · Storage systems / BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "420 bar",
+      "headers": [
+        "Liter",
+        "–",
+        "50",
+        "B 80",
+        "–",
+        "1",
+        "The modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.",
+        "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+        "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+        "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+        "Safety valve and pressure gauge",
+        "The storage design",
+        "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+        "The size of the storage system depends on:",
+        "Air consumption of the specific application",
+        "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+        "V (l): Storage volume in liters (water volume)",
+        "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+        "Product Brochure Accessory Systems EN",
+        "Data Sheet B50 EN"
+      ],
+      "row_values": [
+        "B 50",
+        "✓",
+        "1",
+        "✓",
+        "80",
+        "Details & Features",
+        "Storage cylinder with console",
+        "Pressure vessel",
+        "Condensate drain",
+        "Options",
+        "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+        "Storage system design – the basis for efficient compressor operation",
+        "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+        "Compressor delivery rate (l/min)",
+        "Pressure differential between start and stop (hysteresis)",
+        "Vk (l/min): Compressor delivery volume in liters per minute",
+        "Δp (bar): Pressure differential (hysteresis) in bar",
+        "Downloads",
+        "(3.44 MB)",
+        "(256.64 kB)"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.20769779,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "384ebfa3-dc1e-4583-952d-07162a47f263",
+      "filename": "0255-0089_hochdruck-speichersysteme1_33b7c41212-c007706fef.md",
+      "title": "High-pressure storage systems · Storage systems | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure storage systems · Storage systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage systems | BAUER KOMP / Web page content\nTable: Technical Data\nRow: B 50\n–: ✓\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.: Storage cylinder with console\nA module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.: Pressure vessel\nThe storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.: Condensate drain\nDepending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.: Options\nSafety valve and pressure gauge: Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.\nThe storage design: Storage system design – the basis for efficient compressor operation\nA correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.: To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.\nThe size of the storage system depends on:: Compressor delivery rate (l/min)\nAir consumption of the specific application: Pressure differential between start and stop (hysteresis)\nSimplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):: Vk (l/min): Compressor delivery volume in liters per minute\nV (l): Storage volume in liters (water volume): Δp (bar): Pressure differential (hysteresis) in bar\nWe recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.: Downloads\nProduct Brochure Accessory Systems EN: (3.44 MB)\nData Sheet B50 EN: (256.64 kB)\nData Sheet B80 EN: (400.79 kB)",
+      "page": null,
+      "section": [
+        "High-pressure storage systems · Storage systems / BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "B 50",
+      "headers": [
+        "–",
+        "50",
+        "B 80",
+        "–",
+        "1",
+        "The modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.",
+        "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+        "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+        "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+        "Safety valve and pressure gauge",
+        "The storage design",
+        "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+        "The size of the storage system depends on:",
+        "Air consumption of the specific application",
+        "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+        "V (l): Storage volume in liters (water volume)",
+        "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+        "Product Brochure Accessory Systems EN",
+        "Data Sheet B50 EN",
+        "Data Sheet B80 EN"
+      ],
+      "row_values": [
+        "✓",
+        "1",
+        "✓",
+        "80",
+        "Details & Features",
+        "Storage cylinder with console",
+        "Pressure vessel",
+        "Condensate drain",
+        "Options",
+        "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+        "Storage system design – the basis for efficient compressor operation",
+        "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+        "Compressor delivery rate (l/min)",
+        "Pressure differential between start and stop (hysteresis)",
+        "Vk (l/min): Compressor delivery volume in liters per minute",
+        "Δp (bar): Pressure differential (hysteresis) in bar",
+        "Downloads",
+        "(3.44 MB)",
+        "(256.64 kB)",
+        "(400.79 kB)"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.20743338,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "0efa5846-f0a4-4f77-b1e2-cbc0db925fc3",
+      "filename": "0247-0081_gib26-sp-baureihe_267e68373f-e2021a8944.md",
+      "title": "GIB26-SP series · Water-cooled compressors | BAUER KOMPRESSO",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "GIB 26-SP",
+        "GIB 26"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "booster"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: GIB26-SP series · Water-cooled compressors | BAUER KOMPRESSO\nmonitoring, and a global service network ensure maximum availability whenever it is required.\nPressure-resistant, gas-tight crankcase for\nhigh-pressure boosters\nThe stress-optimized, gas-tight crankcase is designed to safely withstand high internal and inlet pressures. Its pressure-resistant structure prevents leakage and reduces mechanical stress, extending service life and ensuring reliable long-term operation of high-pressure boosters.\nDesigned for extreme environmental conditions\nBAUER compressors for marine and offshore applications are corrosion-protected and optimized for saline, harsh environments. They deliver reliable performance and long service life and ensure reliable operation even under the most severe conditions.\nTechnical Data\nHigh-pressure compressor GIB 26-SP, 10400–15000 l/min, 110–520 bar\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nGIB 26-SP series | 110 bar\n1+2\n1485\n315\n4600\n10200\nGIB 26-SP series | 365 bar\n1+4\n1485\n250\n4400\n9700\nGIB 26-SP series | 420 bar\n1+4\n1485\n250\n4400\n9700\nGIB 26-SP series | 520 bar\n1+4\n1485\n250\n4400\n9700\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.",
+      "page": null,
+      "section": [
+        "GIB26-SP series · Water-cooled compressors / BAUER KOMPRESSO",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "vector"
+      ],
+      "score": 0.20717736,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "K 22",
+        "K 28"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 23\nTable: TECHNICAL DATA\nHeaders and units: F.A.D. ¹ | Max. operating pres- | sure2 | No. of | stages | Speed | approx. | Motor- | power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | K 22 - K 28 SERIES, 900 - 3500 l/min, 90 - 350/370 bar\nRow: I 22.0-22\nValues: 900 | 54 | 31.8 | 370 | 5370 | 4 | 985 | 22 | 710 | 1565\nFootnotes: 90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+      "page": 23,
+      "section": [
+        "2026-04 Compressors for Industry EN N39771 sc",
+        "Page 23"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "I 22.0-22",
+      "headers": [
+        "F.A.D. ¹",
+        "Max. operating pres-",
+        "sure2",
+        "No. of",
+        "stages",
+        "Speed",
+        "approx.",
+        "Motor-",
+        "power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "K 22 - K 28 SERIES, 900 - 3500 l/min, 90 - 350/370 bar"
+      ],
+      "row_values": [
+        "900",
+        "54",
+        "31.8",
+        "370",
+        "5370",
+        "4",
+        "985",
+        "22",
+        "710",
+        "1565"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.19276398,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "2d6d8bc8-a742-465a-8b3e-9bfb61f1fcd7",
+        "filename": "0371-0205_verticus-i-series_2e921bd912-e301b7a3ae.md",
+        "title": "VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS series",
+          "VERTICUS I"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: High-pressure compressor VERTICUS, 310 – 610 l/min, 90 – 525 bar | Model designation | Effective free air delivery ¹ | Maximum operating pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | VERTICUS I 90 - 365 bar\nRow: I 15.1-7.5-V\nValues: 340 | 20.4 | 12 | 365 | 5300 | 4 | 1050 | 7.5 | 384 | 847\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "page": null,
+        "section": [
+          "VERTICUS series · Air-cooled compressors / BAUER KOMPRESSORE",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "I 15.1-7.5-V",
+        "headers": [
+          "High-pressure compressor VERTICUS, 310 – 610 l/min, 90 – 525 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Maximum operating pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "VERTICUS I 90 - 365 bar"
+        ],
+        "row_values": [
+          "340",
+          "20.4",
+          "12",
+          "365",
+          "5300",
+          "4",
+          "1050",
+          "7.5",
+          "384",
+          "847"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.24269779,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "2d6d8bc8-a742-465a-8b3e-9bfb61f1fcd7",
+        "filename": "0371-0205_verticus-i-series_2e921bd912-e301b7a3ae.md",
+        "title": "VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS series",
+          "VERTICUS I"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: VERTICUS I 420 - 525 bar | I 15.11-7.5-V | I 15.11-11-V\nRow: I 18.1-15-V\nValues: 510 | 30.6 | 18 | 525 | 7600 | 5 | 1490 | 15 | 468 | 1032\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "page": null,
+        "section": [
+          "VERTICUS series · Air-cooled compressors / BAUER KOMPRESSORE",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "I 18.1-15-V",
+        "headers": [
+          "VERTICUS I 420 - 525 bar",
+          "I 15.11-7.5-V",
+          "I 15.11-11-V"
+        ],
+        "row_values": [
+          "510",
+          "30.6",
+          "18",
+          "525",
+          "7600",
+          "5",
+          "1490",
+          "15",
+          "468",
+          "1032"
+        ],
+        "units": [],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.24243338,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "4acc08ac-67df-49f1-968d-d6dad320dbe1",
+        "filename": "0259-0093_i-25-i28-series_6a81578826-2f9f7ee418.md",
+        "title": "I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: I 28.0-55 | I 28.0-75 | I 25 series | 420 – 525 bar\nRow: I 25.9-45\nValues: 1900 | 114 | 67 | 525 | 7600 | 5 | 1180 | 45 | 1900 | 4180\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "page": null,
+        "section": [
+          "I 25/I28 series · Air-cooled compressors / BAUER KOMPRESSORE",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "I 25.9-45",
+        "headers": [
+          "I 28.0-55",
+          "I 28.0-75",
+          "I 25 series | 420 – 525 bar"
+        ],
+        "row_values": [
+          "1900",
+          "114",
+          "67",
+          "525",
+          "7600",
+          "5",
+          "1180",
+          "45",
+          "1900",
+          "4180"
+        ],
+        "units": [],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.24145586,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "4acc08ac-67df-49f1-968d-d6dad320dbe1",
+        "filename": "0259-0093_i-25-i28-series_6a81578826-2f9f7ee418.md",
+        "title": "I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: I 25/I28 series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: High-pressure compressor I 25 / I 28, 1900–3500 l/min, 90–525 bar | Model designation | Effective free air delivery ¹ | Maximum operating pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | I 25 / I 28 series | 90 – 350 bar | I 25.0-45\nRow: I 28.0-55\nValues: 2500 | 150 | 88 | 350 | 5100 | 4 | 830 | 55 | 1860 | 4090\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "page": null,
+        "section": [
+          "I 25/I28 series · Air-cooled compressors / BAUER KOMPRESSORE",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "I 28.0-55",
+        "headers": [
+          "High-pressure compressor I 25 / I 28, 1900–3500 l/min, 90–525 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Maximum operating pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "I 25 / I 28 series | 90 – 350 bar",
+          "I 25.0-45"
+        ],
+        "row_values": [
+          "2500",
+          "150",
+          "88",
+          "350",
+          "5100",
+          "4",
+          "830",
+          "55",
+          "1860",
+          "4090"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.24122972,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "b3f6bac3-c500-42cb-9e5a-fc7761798af9",
+        "filename": "0258-0092_i22-series_44f98de39c-33e2fba86d.md",
+        "title": "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN\nDocument section: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: bar | psig | rpm | kW | kg | lbs | I 22 series | 90 – 440 bar | 60 Hz | I 22.2-22 | I 22.2-37 | I 22 series | 420 – 525 bar | 60 Hz\nRow: I 22.5-30\nValues: 980 | 58.8 | 34.6 | 525 | 7600 | 5 | 1170 | 30 | 780 | 1720\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "page": null,
+        "section": [
+          "I 22 series · Air-cooled compressors / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "I 22.5-30",
+        "headers": [
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "I 22 series | 90 – 440 bar | 60 Hz",
+          "I 22.2-22",
+          "I 22.2-37",
+          "I 22 series | 420 – 525 bar | 60 Hz"
+        ],
+        "row_values": [
+          "980",
+          "58.8",
+          "34.6",
+          "525",
+          "7600",
+          "5",
+          "1170",
+          "30",
+          "780",
+          "1720"
+        ],
+        "units": [
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.23929136,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "b3f6bac3-c500-42cb-9e5a-fc7761798af9",
+        "filename": "0258-0092_i22-series_44f98de39c-33e2fba86d.md",
+        "title": "I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN\nDocument section: I 22 series · Air-cooled compressors | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nHeaders and units: High-pressure compressor I 22, 870–1480 l/min, 90–525 bar | Model designation | Effective free air delivery ¹ | Maximum operating pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | I 22 series | 90 – 370 bar | 50 Hz | I 22.0-22\nRow: I 22.0-30\nValues: 1300 | 78 | 45.9 | 370 | 5370 | 4 | 1485 | 30 | 780 | 1715\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "page": null,
+        "section": [
+          "I 22 series · Air-cooled compressors / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "I 22.0-30",
+        "headers": [
+          "High-pressure compressor I 22, 870–1480 l/min, 90–525 bar",
+          "Model designation",
+          "Effective free air delivery ¹",
+          "Maximum operating pressure ²",
+          "Number of stages",
+          "Rotational speed approx.",
+          "Motor power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "I 22 series | 90 – 370 bar | 50 Hz",
+          "I 22.0-22"
+        ],
+        "row_values": [
+          "1300",
+          "78",
+          "45.9",
+          "370",
+          "5370",
+          "4",
+          "1485",
+          "30",
+          "780",
+          "1715"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.23912486,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "384ebfa3-dc1e-4583-952d-07162a47f263",
+        "filename": "0255-0089_hochdruck-speichersysteme1_33b7c41212-c007706fef.md",
+        "title": "High-pressure storage systems · Storage systems | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage systems · Storage systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage systems | BAUER KOMP / Web page content\nTable: Technical Data\nRow: 420 bar\nLiter: B 50\n–: ✓\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.: Storage cylinder with console\nA module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.: Pressure vessel\nThe storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.: Condensate drain\nDepending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.: Options\nSafety valve and pressure gauge: Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.\nThe storage design: Storage system design – the basis for efficient compressor operation\nA correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.: To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.\nThe size of the storage system depends on:: Compressor delivery rate (l/min)\nAir consumption of the specific application: Pressure differential between start and stop (hysteresis)\nSimplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):: Vk (l/min): Compressor delivery volume in liters per minute\nV (l): Storage volume in liters (water volume): Δp (bar): Pressure differential (hysteresis) in bar\nWe recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.: Downloads\nProduct Brochure Accessory Systems EN: (3.44 MB)\nData Sheet B50 EN: (256.64 kB)",
+        "page": null,
+        "section": [
+          "High-pressure storage systems · Storage systems / BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "420 bar",
+        "headers": [
+          "Liter",
+          "–",
+          "50",
+          "B 80",
+          "–",
+          "1",
+          "The modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.",
+          "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+          "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+          "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+          "Safety valve and pressure gauge",
+          "The storage design",
+          "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+          "The size of the storage system depends on:",
+          "Air consumption of the specific application",
+          "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+          "V (l): Storage volume in liters (water volume)",
+          "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+          "Product Brochure Accessory Systems EN",
+          "Data Sheet B50 EN"
+        ],
+        "row_values": [
+          "B 50",
+          "✓",
+          "1",
+          "✓",
+          "80",
+          "Details & Features",
+          "Storage cylinder with console",
+          "Pressure vessel",
+          "Condensate drain",
+          "Options",
+          "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+          "Storage system design – the basis for efficient compressor operation",
+          "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+          "Compressor delivery rate (l/min)",
+          "Pressure differential between start and stop (hysteresis)",
+          "Vk (l/min): Compressor delivery volume in liters per minute",
+          "Δp (bar): Pressure differential (hysteresis) in bar",
+          "Downloads",
+          "(3.44 MB)",
+          "(256.64 kB)"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.20769779,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "384ebfa3-dc1e-4583-952d-07162a47f263",
+        "filename": "0255-0089_hochdruck-speichersysteme1_33b7c41212-c007706fef.md",
+        "title": "High-pressure storage systems · Storage systems | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure storage systems · Storage systems | BAUER KOMP\nDocument section: High-pressure storage systems · Storage systems | BAUER KOMP / Web page content\nTable: Technical Data\nRow: B 50\n–: ✓\n50: 1\nB 80: ✓\n–: 80\n1: Details & Features\nThe modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.: Storage cylinder with console\nA module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.: Pressure vessel\nThe storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.: Condensate drain\nDepending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.: Options\nSafety valve and pressure gauge: Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.\nThe storage design: Storage system design – the basis for efficient compressor operation\nA correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.: To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.\nThe size of the storage system depends on:: Compressor delivery rate (l/min)\nAir consumption of the specific application: Pressure differential between start and stop (hysteresis)\nSimplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):: Vk (l/min): Compressor delivery volume in liters per minute\nV (l): Storage volume in liters (water volume): Δp (bar): Pressure differential (hysteresis) in bar\nWe recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.: Downloads\nProduct Brochure Accessory Systems EN: (3.44 MB)\nData Sheet B50 EN: (256.64 kB)\nData Sheet B80 EN: (400.79 kB)",
+        "page": null,
+        "section": [
+          "High-pressure storage systems · Storage systems / BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "B 50",
+        "headers": [
+          "–",
+          "50",
+          "B 80",
+          "–",
+          "1",
+          "The modular storage system is the ideal addition to compressor systems and ensures a stable pressure supply for air and gas applications. Available in pressure stages of 330 bar and 420 bar, it reduces pressure fluctuations during peak demand and reduces the frequency of compressor start-ups. Flexible expansion with 50- or 80-litre storage cylinders allows the system to be tailored precisely to requirements and supports smooth, efficient system operation.",
+          "A module consists of a storage cylinder that is pre-piped and ready for connection, mounted on a console for floor or wall installation. Based on 50 l or 80 l storage cylinders, these storage systems can be expanded as required.",
+          "The storage cylinders comply with DGRL2014/68/EU (PED) and are intended for stationary applications.",
+          "Depending on the application or due to insufficient air or gas treatment, condensate can accumulate in high-pressure storage systems. All standard storage vessels from BAUER KOMPRESSOREN are therefore equipped with a manual condensate drain.",
+          "Safety valve and pressure gauge",
+          "The storage design",
+          "A correctly dimensioned storage system is one of the key components of a high-pressure setup. It reduces pressure fluctuations during intermittent air withdrawal and decreases compressor start frequency by providing sufficient storage capacity. The pressure vessels and final separators in high-pressure compressors are designed for a limited number of load cycles. Fewer start-stop cycles significantly extend the service life of these components.",
+          "The size of the storage system depends on:",
+          "Air consumption of the specific application",
+          "Simplified formula for sizing a high-pressure storage system (based on 4 load cycles/hour):",
+          "V (l): Storage volume in liters (water volume)",
+          "We recommend a pressure differential Δp of max. 60 bar for continuous operation. Within this range, stationary high-pressure storage cylinders are typically rated for continuous duty. For higher differentials, the number of allowable filling cycles is limited. Please refer to the documentation for the specific pressure vessel.",
+          "Product Brochure Accessory Systems EN",
+          "Data Sheet B50 EN",
+          "Data Sheet B80 EN"
+        ],
+        "row_values": [
+          "✓",
+          "1",
+          "✓",
+          "80",
+          "Details & Features",
+          "Storage cylinder with console",
+          "Pressure vessel",
+          "Condensate drain",
+          "Options",
+          "Safety valve and pressure gauge are mounted on the console of the first module. This is mandatory if exceeding the maximum permissible storage pressure cannot be otherwise avoided, e.g. by approved safety valves on the compressor or in the pipeline.",
+          "Storage system design – the basis for efficient compressor operation",
+          "To ensure optimal operation, the compressor should ideally run no more than two to four cycles per hour. BAUER industrial compressors are equipped with cycle counters as standard, which record actual start cycles and support safe, efficient system control.",
+          "Compressor delivery rate (l/min)",
+          "Pressure differential between start and stop (hysteresis)",
+          "Vk (l/min): Compressor delivery volume in liters per minute",
+          "Δp (bar): Pressure differential (hysteresis) in bar",
+          "Downloads",
+          "(3.44 MB)",
+          "(256.64 kB)",
+          "(400.79 kB)"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.20743338,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "0efa5846-f0a4-4f77-b1e2-cbc0db925fc3",
+        "filename": "0247-0081_gib26-sp-baureihe_267e68373f-e2021a8944.md",
+        "title": "GIB26-SP series · Water-cooled compressors | BAUER KOMPRESSO",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "GIB 26-SP",
+          "GIB 26"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "booster"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: GIB26-SP series · Water-cooled compressors | BAUER KOMPRESSO\nmonitoring, and a global service network ensure maximum availability whenever it is required.\nPressure-resistant, gas-tight crankcase for\nhigh-pressure boosters\nThe stress-optimized, gas-tight crankcase is designed to safely withstand high internal and inlet pressures. Its pressure-resistant structure prevents leakage and reduces mechanical stress, extending service life and ensuring reliable long-term operation of high-pressure boosters.\nDesigned for extreme environmental conditions\nBAUER compressors for marine and offshore applications are corrosion-protected and optimized for saline, harsh environments. They deliver reliable performance and long service life and ensure reliable operation even under the most severe conditions.\nTechnical Data\nHigh-pressure compressor GIB 26-SP, 10400–15000 l/min, 110–520 bar\nModel designation\nEffective free air delivery ¹\nMaximum operating pressure ²\nNumber of stages\nRotational speed approx.\nMotor power\nNet weight approx.\nl/min\nm³/h\ncfm\nbar\npsig\nrpm\nkW\nkg\nlbs\nGIB 26-SP series | 110 bar\n1+2\n1485\n315\n4600\n10200\nGIB 26-SP series | 365 bar\n1+4\n1485\n250\n4400\n9700\nGIB 26-SP series | 420 bar\n1+4\n1485\n250\n4400\n9700\nGIB 26-SP series | 520 bar\n1+4\n1485\n250\n4400\n9700\n¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.",
+        "page": null,
+        "section": [
+          "GIB26-SP series · Water-cooled compressors / BAUER KOMPRESSO",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "vector"
+        ],
+        "score": 0.20717736,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "K 22",
+          "K 28"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 23\nTable: TECHNICAL DATA\nHeaders and units: F.A.D. ¹ | Max. operating pres- | sure2 | No. of | stages | Speed | approx. | Motor- | power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | K 22 - K 28 SERIES, 900 - 3500 l/min, 90 - 350/370 bar\nRow: I 22.0-22\nValues: 900 | 54 | 31.8 | 370 | 5370 | 4 | 985 | 22 | 710 | 1565\nFootnotes: 90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+        "page": 23,
+        "section": [
+          "2026-04 Compressors for Industry EN N39771 sc",
+          "Page 23"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "I 22.0-22",
+        "headers": [
+          "F.A.D. ¹",
+          "Max. operating pres-",
+          "sure2",
+          "No. of",
+          "stages",
+          "Speed",
+          "approx.",
+          "Motor-",
+          "power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "K 22 - K 28 SERIES, 900 - 3500 l/min, 90 - 350/370 bar"
+        ],
+        "row_values": [
+          "900",
+          "54",
+          "31.8",
+          "370",
+          "5370",
+          "4",
+          "985",
+          "22",
+          "710",
+          "1565"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.19276398,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": true
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 1,
+      "elapsed_ms": 1115.52
+    }
+  },
+  "completed_at": "2026-07-23T14:50:29.962704+00:00",
+  "case_id": "B06",
+  "split": "development",
+  "category": "exact_pressure",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

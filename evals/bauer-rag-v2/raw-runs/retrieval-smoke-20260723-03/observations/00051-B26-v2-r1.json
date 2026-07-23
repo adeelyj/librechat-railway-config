@@ -1,0 +1,920 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1067.03,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+      "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "Certificate",
+        "ISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH",
+        "EN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE",
+        "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 9001",
+        "ISO 14001:2015",
+        "EN ISO 3834-2",
+        "EN 13445",
+        "EN 13480",
+        "AD 2000-Merkblatt HP 0",
+        "AD 2000-Information",
+        "ISO 14001"
+      ],
+      "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\n5 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH\n(586.94 kB)\nEN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(235.09 kB)\nEN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(231.71 kB)\nZertifikat AD 2000-Merkblatt HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(226.88 kB)\nCertificate AD 2000-Information Sheet HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(224.02 kB)\nISO 9001: Bauer Compresseurs S.A.S\nISO 9001 Zertifikat-BAUER-COMPRESSEURS DE\n(333.82 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS EN\n(328.99 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS FR\n(330.89 kB)\nISO 9001: BAUER COMPRESSORI S.R.L\nISO9001 Zertifikat-BAUER-COMPRESSORI DE\n(318.90 kB)\nISO9001 Certificate-BAUER-COMPRESSORI EN\n(315.87 kB)\nISO9001 Certificato-BAUER-COMPRESSORI IT\n(335.31 kB)\nISO 9001: BAUER COMPRESSORS Asia Pte. Ltd.\nISO 9001 Certficate BAUER COMPRESSORS Asia Pte. Ltd. EN\n(55.45 kB)\nISO 9001: BAUER KOMPRESSOREN Australia Pty. Ltd\nISO 9001 Certficate BAUER KOMPRESSOREN Australia Pty. Ltd. EN\n(77.19 kB)\nISO 9001: BAUER KOMPRESSOREN GCC FZE\nISO 9001 Certficate: BAUER KOMPRESSOREN GCC FZE EN\n(357.34 kB)",
+      "page": null,
+      "section": [
+        "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.70725806,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+      "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+      "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [
+        "Certificate",
+        "ISO 9001-Zertifikat: BAUER COMP Holding GmbH DE",
+        "ISO 9001 Certificate: BAUER COMP Holding GmbH EN",
+        "ISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 9001",
+        "ISO 14001:2015",
+        "EN ISO 3834-2",
+        "EN 13445",
+        "EN 13480",
+        "ISO 14001"
+      ],
+      "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\nsource: `bauer_index\\raw_html\\0035_certificate-download_e42c3f318d.html`\n- Original SHA-256: `d4cc35ee9f6af76832ecdd6632abc84e6a92c95aeeabb57ec980e1aa8c30313a`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nCertificate\nISO 9001: BAUER GROUP\nISO 9001-Zertifikat: BAUER COMP Holding GmbH DE\n(797.61 kB)\nISO 9001 Certificate: BAUER COMP Holding GmbH EN\n(771.39 kB)\nISO 9001, ISO 14001:2015, EN ISO 3834-2, EN 13445-4, EN 13480-4: BAUER KOMPRESSOREN GmbH\nISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE\n(329.27 kB)\nISO9001 Certificate-BAUER-KOMPRESSOREN-Werk-I EN\n(325.80 kB)\nISO9001_Zertifikat-BAUER-Stäbli DE\n(319.85 kB)\nISO9001 Certificate-BAUER-Stäbli EN\n(316.54 kB)\nISO 14001:2015 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH",
+      "page": null,
+      "section": [
+        "Download Certificates from BAUER KOMPRESSOREN Easily"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.70602453,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "50a078af-39d0-4244-bc9d-b10e3671dcfc",
+      "filename": "0087-bauer_amfile_216-1d4691de14.md",
+      "title": "bauer_amfile_216",
+      "language": "und",
+      "publication_date": null,
+      "certificates": [
+        "CERTIFICATE"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "EN ISO 3834-2"
+      ],
+      "content": "Document: bauer_amfile_216\nmfile_216\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_216.pdf`\n- Original SHA-256: `1d4691de1400363b8fd8a624b3345aa1913069e18e0a400b0c136cfdc2479001`\n## Page 1\n\n_____________________\nHenrik Bohl\n\nCERTIFICATE\nTÜV SÜD-MUC-WD-3112378.2015.005\nManufacturer:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nPlant(s):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nThe above mentioned company fulfills the\ncomprehensive quality requirements for fusion\nwelding of metallic materials\naccording to\nEN ISO 3834-2\nContract:\n4243762\nValid until:\nDecember 15, 2026\nMunich, October 29, 2025",
+      "page": null,
+      "section": [
+        "bauer_amfile_216"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.52087302,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "b0501256-51e0-4e09-b574-0323d8f5919b",
+      "filename": "0034-2021-02_B-NEWS_EN_sc-0702d9e0ec.md",
+      "title": "2021-02_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2021-02-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 14001"
+      ],
+      "content": "Document: 2021-02_B-NEWS_EN_sc\n, Dr. Monika Bayat, Heinz Bauer\n(l. to r.)\nBAUER KOMPRESSOREN\nBAUER‘s INTERNET OF THINGS\nAlways in the picture with B-CLOUD\nTHE NEWSLETTER OF BAUER KOMPRESSOREN\n## Page 2\n\n2\nmaintenance works or draw up full-\nscale maintenance plans. Help is on\nhand fast when it is needed, and re-\nmote monitoring saves time and costs\nby eliminating the need for technicians\nto travel.\nAll data transmission from and to\nB-CLOUD takes place under strong\nend-to-end encryption. In these times\nwhere cyber attacks are an ever-grow-\ning risk, BAUER has made data secu-\nrity and compliance with EU-GDPR its\nforemost concern.\nBAUER\nKOMPRESSOREN\nECO\nCREDENTIALS\nTo mark BAUER’s successful com-\npletion of ISO 14001 environmental\nmanagement certiﬁ cation, the Manag-\ning Director of TÜV SÜD Management\nGmbH personally presented the certiﬁ -\ncate to Dr Monika Bayat, owner and\nManaging Partner of BAUER.\nBAUER has consistently pursued the\ngoal of increasing sustainability in its\noperations for many years. As early as\n1995, the company opened a public\nfuelling station for eco-friendly CNG-\npowered vehicles at its premises at the\ntime. Given the challenges presented\nto us all by climate change, Dr Bayat\nhas made it her personal mission to\nconsistently reduce BAUER’s ecologi-\ncal footprint.\nToday, practising sustainability is\nembedded in the company’s corporate\nphilosophy as a technology leader in",
+      "page": 1,
+      "section": [
+        "2021-02_B-NEWS_EN_sc",
+        "Page 1"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.43204678,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "93ac7ad8-4d5c-4092-903d-3c6a98470a92",
+      "filename": "0138-Cartucce_Filtranti_IT-bf027e7874.md",
+      "title": "Cartucce_Filtranti_IT",
+      "language": "it",
+      "publication_date": null,
+      "certificates": [
+        "Tutte le fasi di produzione delle cartucce sono state certificate in base al sistema di gestione della"
+      ],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [
+        "ISO 9001"
+      ],
+      "content": "Document: Cartucce_Filtranti_IT\n'o-\nperatore e a condizione che la concentrazione di CO2, presente nell'aria di aspirazione, non superi i valori indicati dalla normativa sull’aria respirabile.\n## Page 5\n\nBAUER KOMPRESSOREN\b\nCARTUCCE FILTRANTI | 5\nQUALITÀ ECCELLENTE\nPER GARANTIRE UN FUNZIONAMENTO AFFIDABILE\nIN QUALSIASI MOMENTO.\nMATERIALI DI ALTO VALORE\nLa qualità è determinante per le prestazioni e la sicurezza di un prodotto. È per questo motivo\nche tutte le cartucce filtranti BAUER sono realizzate con plastica di alta qualità e senza alcun\ntipo di colle e solventi.\nLUNGA DURATA\nGrazie all'elevata e costante qualità di produzione con tempi di lavorazione delle sostanze più\nbrevi, le nostre cartucce filtranti offrono una durevolezza prolungata e ben definita, su cui si può\ncontare! Nel nostro centro di collaudo vengono effettuati regolarmente controlli supplementari.\nTutte le fasi di produzione delle cartucce sono state certificate in base al sistema di gestione della\nqualità ISO 9001 di BAUER. BAUER KOMPRESSOREN raccomanda di sostituire le cartucce per\nl'aria respirabile installate almeno una volta all'anno oppure dopo tre mesi in caso di arresto\ndell'impianto. Osservate anche eventuali intervalli di cambio più brevi specifici per i vari paesi.\nTEMPI DI LAVORAZIONE BREVI PER GLI ESSICANTI DI MARCA\nIl tempo di apertura dell'essiccatore influisce notevolmente sul tempo di funzionamento della",
+      "page": 4,
+      "section": [
+        "Cartucce_Filtranti_IT",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.4175,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [
+        "ISO 9001",
+        "DIN EN ISO 9001"
+      ],
+      "content": "Document: bauer_amfile_7\nis to be in a class of our own – for both our products and our services.\n› Service agreements\n› Modernisation\n› Remote maintenance\n› Spare parts\n› System rental\n## Page 31\n\nBAUER KOMPRESSOREN\nPOSEIDON EDITION | ACCEPTANCE AND SERVICES | 31\nACCEPTANCE AND SERVICES\nThis brochure provides a general overview of the product range of POSEIDON EDITION compressors for Sports&Safety applications by BAUER KOMPRESSOREN. Some product images\nshow custom or optional extras not supplied as standard. Some options or combinations of options may not be available for every compressor type. For more information, contact your\nBAUER sales partner or visit www.bauer-kompressoren.de.\nFOR MORE DETAILS\nand more accessories, see our service brochures and visit www.bauer-kompressoren.de/en/service-support.\nMANUFACTURING IS ONLY PART OF WHAT WE DO\nISO 9001 CERTIFICATION\n› BAUER assures consistent maximum product quality by applying extensive quality control measures during and after\nproduction in line with DIN EN ISO 9001.\nACCEPTANCE TESTING\n› A factory acceptance test (FAT) or site acceptance test (SAT) in the presence of the customer or independent\ncertifying body can be performed in addition to the standard BAUER final test.\n› Many BAUER compressors can also be produced in compliance with other standards, e.g. ASME, KHK, ATEX etc.\nPACKING & PRESERVATION",
+      "page": 30,
+      "section": [
+        "bauer_amfile_7",
+        "Page 30"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.36992537,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [
+        "ISO 9001",
+        "DIN EN ISO 9001"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\ns to be in a class of our own – for both our products and our services.\n› Service agreements\n› Modernisation\n› Remote maintenance\n› Spare plarts\n› System rental\n## Page 39\n\nBAUER KOMPRESSOREN\b\nCOMPRESSORS FOR INDUSTRY | ACCEPTANCE AND SERVICES | 39\nMANUFACTURING IS ONLY PART OF WHAT WE DO\nISO 9001 CERTIFICATION\n› BAUER assures consistent maximum product quality by applying extensive quality control measures during and after\nproduction in line with DIN EN ISO 9001.\nACCEPTANCE TESTING\n› A factory acceptance test or site acceptance test in the presence of the customer or certifying body can be per­\nformed in addition to the standard BAUER final test. Many BAUER compressors can also be produced in compliance\nwith other standards, e.g. according to ASME, KHK etc.\nPACKING & PROTECTION\n› Our compressors are packed ex works for transport by truck or air freight. We offer appropriate packing designs\ntailored for shipping, transport to tropical regions or long storage periods.\nINSTALLATION\n› Professional installation is a vital basic factor in safe operation of high-pressure systems. Our global network of bran-\nches and qualified partners provides smooth, trouble-free support in planning and implementation, wherever you are.\nCOMMISSIONING\n› When installation is completed, BAUER’s expert staff check and confirm the system functions correctly during",
+      "page": 38,
+      "section": [
+        "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "Page 38"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.36949275,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "0f44f852-d923-452e-834e-2a63ff337976",
+      "filename": "0148-Filterpatronen_EN-541daa8851.md",
+      "title": "Filterpatronen_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "filter"
+      ],
+      "standards": [
+        "ISO 9001"
+      ],
+      "content": "Document: Filterpatronen_EN\ninstructions or user manual and if the concen-\ntration of CO2 in the intake air does not exceed the values specified in the supplied standard for breathing air.\n## Page 5\n\nBAUER KOMPRESSOREN\b\nFILTER CARTRIDGES | 5\nOPTIMUM QUALITY\nENSURES RELIABLE PERFORMANCE – AT ALL TIMES.\nHIGH-QUALITY MATERIALS\nQuality is crucial when it comes to the performance and safety of a product. For this reason, all\nBAUER filter cartridges are manufactured using materials including the highest-quality plastic\nwithout any adhesives or solvents.\nLONG SERVICE LIFE\nThanks to their consistently high production quality and shortest possible content processing\ntimes, our filter cartridges have extended and clearly defined service lives on which you can rely!\nAdditional inspections are also carried out regularly at our testing centre. In line with the BAUER\nISO 9001 quality management system, every single stage in the production of the cartridges has\nbeen certified. BAUER KOMPRESSOREN recommends that breathing air cartridges are changed\nat least once a year or every three months if the unit has been shut down. Please also comply\nwith any shorter replacement intervals that may be in force locally.\nSHORT PROCESSING TIME FOR BRANDED DESICCANTS\nAs the opening time for the desiccant container has a significant influence on the running time\nof the cartridge, we make sure that we keep it to a minimum.",
+      "page": 4,
+      "section": [
+        "Filterpatronen_EN",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.36908451,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "2a508bcd-3946-4335-8325-a95cc68f409f",
+      "filename": "0139-Cartuches_De_Filtre_FR-63f029e783.md",
+      "title": "Cartuches_De_Filtre_FR",
+      "language": "de",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [
+        "ISO 9001"
+      ],
+      "content": "Document: Cartuches_De_Filtre_FR\nau manuel de l’exploitant et si la concentration en\nCO2 dans l’air aspiré ne dépasse pas les valeurs définies dans la norme relative à l’air respirable fourni.\n## Page 5\n\nCOMPRESSEURS BAUER\b\nCARTOUCHES DE FILTRE | 5\nLA MEILLEURE QUALITÉ\nASSURE UN FONCTIONNEMENT STABLE, À TOUT MOMENT.\nMATÉRIAUX DE HAUTE QUALITÉ\nLa qualité est décisive lorsqu’il s’agit de l’efficacité et de la sécurité d’un produit. C’est pourquoi\ntoutes les cartouches de filtre BAUER sont fabriquées, entre autres, en plastique de très haute\nqualité sans aucun type de colle et de solvant.\nLONGUE DURÉE DE VIE\nGrâce à la qualité de fabrication élevée et constante et aux temps de traitement les plus courts\ndes substances contenues, nos cartouches de filtre disposent de durées d’utilisation prolon-\ngées, clairement définies auxquelles vous pouvez vous fier ! Des contrôles supplémentaires sont\neffectués régulièrement dans notre centre d’essais. Toutes les étapes de fabrication des\ncartouches ont été certifiées conformément au système de gestion de la qualité BAUER ISO\n9001. BAUER KOMPRESSOREN recommande de remplacer la cartouche d’air respirable utilisée\nau moins une fois par an ou au bout de trois mois lorsque l’installation est à l’arrêt. Veuillez faire\nattention aux intervalles de remplacement éventuellement plus courts en fonction du pays.\nCOURTS TEMPS DE TRAITEMENT DES AGENTS DESSICCATIFS DE\nMARQUE",
+      "page": 4,
+      "section": [
+        "Cartuches_De_Filtre_FR",
+        "Page 4"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.36851351,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [
+        "ISO 9001",
+        "DIN EN ISO 9001"
+      ],
+      "content": "Document: bauer_amfile_5\nis to be in a class of our own – for both our products and our services.\n› Service agreements\n› Modernisation\n› Remote maintenance\n› Spare parts\n› System rental\n## Page 43\n\nBAUER KOMPRESSOREN\nBAUER PREMIUM LINE | ACCEPTANCE AND SERVICES | 43\nMANUFACTURING IS ONLY PART OF WHAT WE DO\nISO 9001 CERTIFICATION\n› BAUER assures consistent maximum product quality by applying extensive quality control measures during and after\nproduction in line with DIN EN ISO 9001.\nACCEPTANCE TESTING\n› A factory acceptance test (FAT) or site acceptance test (SAT) in the presence of the customer or independent\ncertifying body can be performed in addition to the standard BAUER final test.\n› Many BAUER compressors can also be produced in compliance with other standards, e.g. ASME, KHK, ATEX etc.\nPACKING & PRESERVATION\n› Our compressors are packed ex works for transport by truck or air freight. We offer appropriate packing designs\ntailored for shipping, transport to tropical regions or long storage periods as well as short or long-term preservation.\nINSTALLATION\n› Professional installation is a vital basic factor in safe operation of high-pressure systems. Our global network of\nbranches and qualified partners provides smooth, trouble-free support in planning and implementation, wherever you\nare.\nTRAINING",
+      "page": 42,
+      "section": [
+        "bauer_amfile_5",
+        "Page 42"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.36815789,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "Certificate",
+          "ISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH",
+          "EN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE",
+          "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 9001",
+          "ISO 14001:2015",
+          "EN ISO 3834-2",
+          "EN 13445",
+          "EN 13480",
+          "AD 2000-Merkblatt HP 0",
+          "AD 2000-Information",
+          "ISO 14001"
+        ],
+        "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\n5 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH\n(586.94 kB)\nEN ISO 3834-2 Zertifikat: BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(235.09 kB)\nEN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(231.71 kB)\nZertifikat AD 2000-Merkblatt HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistraße 8, 81477 München DE\n(226.88 kB)\nCertificate AD 2000-Information Sheet HP 0 / HP 100 R, EN 13445-4, EN 13480-4, BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich EN\n(224.02 kB)\nISO 9001: Bauer Compresseurs S.A.S\nISO 9001 Zertifikat-BAUER-COMPRESSEURS DE\n(333.82 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS EN\n(328.99 kB)\nISO 9001 Certificate-BAUER-COMPRESSEURS FR\n(330.89 kB)\nISO 9001: BAUER COMPRESSORI S.R.L\nISO9001 Zertifikat-BAUER-COMPRESSORI DE\n(318.90 kB)\nISO9001 Certificate-BAUER-COMPRESSORI EN\n(315.87 kB)\nISO9001 Certificato-BAUER-COMPRESSORI IT\n(335.31 kB)\nISO 9001: BAUER COMPRESSORS Asia Pte. Ltd.\nISO 9001 Certficate BAUER COMPRESSORS Asia Pte. Ltd. EN\n(55.45 kB)\nISO 9001: BAUER KOMPRESSOREN Australia Pty. Ltd\nISO 9001 Certficate BAUER KOMPRESSOREN Australia Pty. Ltd. EN\n(77.19 kB)\nISO 9001: BAUER KOMPRESSOREN GCC FZE\nISO 9001 Certficate: BAUER KOMPRESSOREN GCC FZE EN\n(357.34 kB)",
+        "page": null,
+        "section": [
+          "Download Certificates from BAUER KOMPRESSOREN Easily",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.70725806,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa",
+        "filename": "0201-0035_certificate-download_e42c3f318d-d4cc35ee9f.md",
+        "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [
+          "Certificate",
+          "ISO 9001-Zertifikat: BAUER COMP Holding GmbH DE",
+          "ISO 9001 Certificate: BAUER COMP Holding GmbH EN",
+          "ISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 9001",
+          "ISO 14001:2015",
+          "EN ISO 3834-2",
+          "EN 13445",
+          "EN 13480",
+          "ISO 14001"
+        ],
+        "content": "Document: Download Certificates from BAUER KOMPRESSOREN Easily\nsource: `bauer_index\\raw_html\\0035_certificate-download_e42c3f318d.html`\n- Original SHA-256: `d4cc35ee9f6af76832ecdd6632abc84e6a92c95aeeabb57ec980e1aa8c30313a`\n## Web page content\n\nSkip to Content\nJobs & careers\nThe BAUER GROUP as an employer\nYour entry into the BAUER GROUP\nInternships & thesis\nTraining\nVacancies\nUniversity fairs\nContacts\nDownloads & Media\nMedia library\nDocuments\nNews & events\nNews\nTrade show dates\nContact\nSearch\nLanguage\nEN\n{\nconst searchInput = document.querySelector('#search');\nsearchInput.focus();\nsearchInput.select();\n});\n\"\n>\nSearch\nMy Account\nMy Wishlist\n{\n$dispatch('toggle-cart', { isOpen: true })\n}\"\n@toggle-cart.window=\"toggleCart($event)\"\n:aria-expanded=\"isCartOpen\"\naria-haspopup=\"dialog\"\n>\nShopping Basket\nMy Basket\nLoading...\nCertificate\nISO 9001: BAUER GROUP\nISO 9001-Zertifikat: BAUER COMP Holding GmbH DE\n(797.61 kB)\nISO 9001 Certificate: BAUER COMP Holding GmbH EN\n(771.39 kB)\nISO 9001, ISO 14001:2015, EN ISO 3834-2, EN 13445-4, EN 13480-4: BAUER KOMPRESSOREN GmbH\nISO9001 Zertifikat-BAUER-KOMPRESSOREN-Werk-I DE\n(329.27 kB)\nISO9001 Certificate-BAUER-KOMPRESSOREN-Werk-I EN\n(325.80 kB)\nISO9001_Zertifikat-BAUER-Stäbli DE\n(319.85 kB)\nISO9001 Certificate-BAUER-Stäbli EN\n(316.54 kB)\nISO 14001:2015 Zertifikat: Umweltmanagementsystem – BAUER KOMPRESSOREN GmbH\n(597.96 kB)\nISO 14001:2015 Certificate: Environmental Management System – BAUER KOMPRESSOREN GmbH",
+        "page": null,
+        "section": [
+          "Download Certificates from BAUER KOMPRESSOREN Easily"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.70602453,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "50a078af-39d0-4244-bc9d-b10e3671dcfc",
+        "filename": "0087-bauer_amfile_216-1d4691de14.md",
+        "title": "bauer_amfile_216",
+        "language": "und",
+        "publication_date": null,
+        "certificates": [
+          "CERTIFICATE"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "EN ISO 3834-2"
+        ],
+        "content": "Document: bauer_amfile_216\nmfile_216\n\n- Original source: `bauer_index\\raw_docs\\bauer_amfile_216.pdf`\n- Original SHA-256: `1d4691de1400363b8fd8a624b3345aa1913069e18e0a400b0c136cfdc2479001`\n## Page 1\n\n_____________________\nHenrik Bohl\n\nCERTIFICATE\nTÜV SÜD-MUC-WD-3112378.2015.005\nManufacturer:\nBauer Kompressoren GmbH\nStäblistraße 8\nDE\n81477 München\nPlant(s):\nBKM Werk I, Bayerwaldstr. 8, 82538 Geretsried\nUNICCOMP GmbH, Bayerwaldstr. 6, 82538 Geretsried\nThe above mentioned company fulfills the\ncomprehensive quality requirements for fusion\nwelding of metallic materials\naccording to\nEN ISO 3834-2\nContract:\n4243762\nValid until:\nDecember 15, 2026\nMunich, October 29, 2025",
+        "page": null,
+        "section": [
+          "bauer_amfile_216"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.52087302,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "b0501256-51e0-4e09-b574-0323d8f5919b",
+        "filename": "0034-2021-02_B-NEWS_EN_sc-0702d9e0ec.md",
+        "title": "2021-02_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2021-02-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 14001"
+        ],
+        "content": "Document: 2021-02_B-NEWS_EN_sc\n, Dr. Monika Bayat, Heinz Bauer\n(l. to r.)\nBAUER KOMPRESSOREN\nBAUER‘s INTERNET OF THINGS\nAlways in the picture with B-CLOUD\nTHE NEWSLETTER OF BAUER KOMPRESSOREN\n## Page 2\n\n2\nmaintenance works or draw up full-\nscale maintenance plans. Help is on\nhand fast when it is needed, and re-\nmote monitoring saves time and costs\nby eliminating the need for technicians\nto travel.\nAll data transmission from and to\nB-CLOUD takes place under strong\nend-to-end encryption. In these times\nwhere cyber attacks are an ever-grow-\ning risk, BAUER has made data secu-\nrity and compliance with EU-GDPR its\nforemost concern.\nBAUER\nKOMPRESSOREN\nECO\nCREDENTIALS\nTo mark BAUER’s successful com-\npletion of ISO 14001 environmental\nmanagement certiﬁ cation, the Manag-\ning Director of TÜV SÜD Management\nGmbH personally presented the certiﬁ -\ncate to Dr Monika Bayat, owner and\nManaging Partner of BAUER.\nBAUER has consistently pursued the\ngoal of increasing sustainability in its\noperations for many years. As early as\n1995, the company opened a public\nfuelling station for eco-friendly CNG-\npowered vehicles at its premises at the\ntime. Given the challenges presented\nto us all by climate change, Dr Bayat\nhas made it her personal mission to\nconsistently reduce BAUER’s ecologi-\ncal footprint.\nToday, practising sustainability is\nembedded in the company’s corporate\nphilosophy as a technology leader in",
+        "page": 1,
+        "section": [
+          "2021-02_B-NEWS_EN_sc",
+          "Page 1"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.43204678,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "93ac7ad8-4d5c-4092-903d-3c6a98470a92",
+        "filename": "0138-Cartucce_Filtranti_IT-bf027e7874.md",
+        "title": "Cartucce_Filtranti_IT",
+        "language": "it",
+        "publication_date": null,
+        "certificates": [
+          "Tutte le fasi di produzione delle cartucce sono state certificate in base al sistema di gestione della"
+        ],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [
+          "ISO 9001"
+        ],
+        "content": "Document: Cartucce_Filtranti_IT\n'o-\nperatore e a condizione che la concentrazione di CO2, presente nell'aria di aspirazione, non superi i valori indicati dalla normativa sull’aria respirabile.\n## Page 5\n\nBAUER KOMPRESSOREN\b\nCARTUCCE FILTRANTI | 5\nQUALITÀ ECCELLENTE\nPER GARANTIRE UN FUNZIONAMENTO AFFIDABILE\nIN QUALSIASI MOMENTO.\nMATERIALI DI ALTO VALORE\nLa qualità è determinante per le prestazioni e la sicurezza di un prodotto. È per questo motivo\nche tutte le cartucce filtranti BAUER sono realizzate con plastica di alta qualità e senza alcun\ntipo di colle e solventi.\nLUNGA DURATA\nGrazie all'elevata e costante qualità di produzione con tempi di lavorazione delle sostanze più\nbrevi, le nostre cartucce filtranti offrono una durevolezza prolungata e ben definita, su cui si può\ncontare! Nel nostro centro di collaudo vengono effettuati regolarmente controlli supplementari.\nTutte le fasi di produzione delle cartucce sono state certificate in base al sistema di gestione della\nqualità ISO 9001 di BAUER. BAUER KOMPRESSOREN raccomanda di sostituire le cartucce per\nl'aria respirabile installate almeno una volta all'anno oppure dopo tre mesi in caso di arresto\ndell'impianto. Osservate anche eventuali intervalli di cambio più brevi specifici per i vari paesi.\nTEMPI DI LAVORAZIONE BREVI PER GLI ESSICANTI DI MARCA\nIl tempo di apertura dell'essiccatore influisce notevolmente sul tempo di funzionamento della",
+        "page": 4,
+        "section": [
+          "Cartucce_Filtranti_IT",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.4175,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [
+          "ISO 9001",
+          "DIN EN ISO 9001"
+        ],
+        "content": "Document: bauer_amfile_7\nis to be in a class of our own – for both our products and our services.\n› Service agreements\n› Modernisation\n› Remote maintenance\n› Spare parts\n› System rental\n## Page 31\n\nBAUER KOMPRESSOREN\nPOSEIDON EDITION | ACCEPTANCE AND SERVICES | 31\nACCEPTANCE AND SERVICES\nThis brochure provides a general overview of the product range of POSEIDON EDITION compressors for Sports&Safety applications by BAUER KOMPRESSOREN. Some product images\nshow custom or optional extras not supplied as standard. Some options or combinations of options may not be available for every compressor type. For more information, contact your\nBAUER sales partner or visit www.bauer-kompressoren.de.\nFOR MORE DETAILS\nand more accessories, see our service brochures and visit www.bauer-kompressoren.de/en/service-support.\nMANUFACTURING IS ONLY PART OF WHAT WE DO\nISO 9001 CERTIFICATION\n› BAUER assures consistent maximum product quality by applying extensive quality control measures during and after\nproduction in line with DIN EN ISO 9001.\nACCEPTANCE TESTING\n› A factory acceptance test (FAT) or site acceptance test (SAT) in the presence of the customer or independent\ncertifying body can be performed in addition to the standard BAUER final test.\n› Many BAUER compressors can also be produced in compliance with other standards, e.g. ASME, KHK, ATEX etc.\nPACKING & PRESERVATION",
+        "page": 30,
+        "section": [
+          "bauer_amfile_7",
+          "Page 30"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.36992537,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [
+          "ISO 9001",
+          "DIN EN ISO 9001"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\ns to be in a class of our own – for both our products and our services.\n› Service agreements\n› Modernisation\n› Remote maintenance\n› Spare plarts\n› System rental\n## Page 39\n\nBAUER KOMPRESSOREN\b\nCOMPRESSORS FOR INDUSTRY | ACCEPTANCE AND SERVICES | 39\nMANUFACTURING IS ONLY PART OF WHAT WE DO\nISO 9001 CERTIFICATION\n› BAUER assures consistent maximum product quality by applying extensive quality control measures during and after\nproduction in line with DIN EN ISO 9001.\nACCEPTANCE TESTING\n› A factory acceptance test or site acceptance test in the presence of the customer or certifying body can be per­\nformed in addition to the standard BAUER final test. Many BAUER compressors can also be produced in compliance\nwith other standards, e.g. according to ASME, KHK etc.\nPACKING & PROTECTION\n› Our compressors are packed ex works for transport by truck or air freight. We offer appropriate packing designs\ntailored for shipping, transport to tropical regions or long storage periods.\nINSTALLATION\n› Professional installation is a vital basic factor in safe operation of high-pressure systems. Our global network of bran-\nches and qualified partners provides smooth, trouble-free support in planning and implementation, wherever you are.\nCOMMISSIONING\n› When installation is completed, BAUER’s expert staff check and confirm the system functions correctly during",
+        "page": 38,
+        "section": [
+          "2026-04_Compressors_for_Industry_EN_N39771_sc",
+          "Page 38"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.36949275,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "0f44f852-d923-452e-834e-2a63ff337976",
+        "filename": "0148-Filterpatronen_EN-541daa8851.md",
+        "title": "Filterpatronen_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "filter"
+        ],
+        "standards": [
+          "ISO 9001"
+        ],
+        "content": "Document: Filterpatronen_EN\ninstructions or user manual and if the concen-\ntration of CO2 in the intake air does not exceed the values specified in the supplied standard for breathing air.\n## Page 5\n\nBAUER KOMPRESSOREN\b\nFILTER CARTRIDGES | 5\nOPTIMUM QUALITY\nENSURES RELIABLE PERFORMANCE – AT ALL TIMES.\nHIGH-QUALITY MATERIALS\nQuality is crucial when it comes to the performance and safety of a product. For this reason, all\nBAUER filter cartridges are manufactured using materials including the highest-quality plastic\nwithout any adhesives or solvents.\nLONG SERVICE LIFE\nThanks to their consistently high production quality and shortest possible content processing\ntimes, our filter cartridges have extended and clearly defined service lives on which you can rely!\nAdditional inspections are also carried out regularly at our testing centre. In line with the BAUER\nISO 9001 quality management system, every single stage in the production of the cartridges has\nbeen certified. BAUER KOMPRESSOREN recommends that breathing air cartridges are changed\nat least once a year or every three months if the unit has been shut down. Please also comply\nwith any shorter replacement intervals that may be in force locally.\nSHORT PROCESSING TIME FOR BRANDED DESICCANTS\nAs the opening time for the desiccant container has a significant influence on the running time\nof the cartridge, we make sure that we keep it to a minimum.",
+        "page": 4,
+        "section": [
+          "Filterpatronen_EN",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.36908451,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "2a508bcd-3946-4335-8325-a95cc68f409f",
+        "filename": "0139-Cartuches_De_Filtre_FR-63f029e783.md",
+        "title": "Cartuches_De_Filtre_FR",
+        "language": "de",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [
+          "ISO 9001"
+        ],
+        "content": "Document: Cartuches_De_Filtre_FR\nau manuel de l’exploitant et si la concentration en\nCO2 dans l’air aspiré ne dépasse pas les valeurs définies dans la norme relative à l’air respirable fourni.\n## Page 5\n\nCOMPRESSEURS BAUER\b\nCARTOUCHES DE FILTRE | 5\nLA MEILLEURE QUALITÉ\nASSURE UN FONCTIONNEMENT STABLE, À TOUT MOMENT.\nMATÉRIAUX DE HAUTE QUALITÉ\nLa qualité est décisive lorsqu’il s’agit de l’efficacité et de la sécurité d’un produit. C’est pourquoi\ntoutes les cartouches de filtre BAUER sont fabriquées, entre autres, en plastique de très haute\nqualité sans aucun type de colle et de solvant.\nLONGUE DURÉE DE VIE\nGrâce à la qualité de fabrication élevée et constante et aux temps de traitement les plus courts\ndes substances contenues, nos cartouches de filtre disposent de durées d’utilisation prolon-\ngées, clairement définies auxquelles vous pouvez vous fier ! Des contrôles supplémentaires sont\neffectués régulièrement dans notre centre d’essais. Toutes les étapes de fabrication des\ncartouches ont été certifiées conformément au système de gestion de la qualité BAUER ISO\n9001. BAUER KOMPRESSOREN recommande de remplacer la cartouche d’air respirable utilisée\nau moins une fois par an ou au bout de trois mois lorsque l’installation est à l’arrêt. Veuillez faire\nattention aux intervalles de remplacement éventuellement plus courts en fonction du pays.\nCOURTS TEMPS DE TRAITEMENT DES AGENTS DESSICCATIFS DE\nMARQUE",
+        "page": 4,
+        "section": [
+          "Cartuches_De_Filtre_FR",
+          "Page 4"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.36851351,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [
+          "ISO 9001",
+          "DIN EN ISO 9001"
+        ],
+        "content": "Document: bauer_amfile_5\nis to be in a class of our own – for both our products and our services.\n› Service agreements\n› Modernisation\n› Remote maintenance\n› Spare parts\n› System rental\n## Page 43\n\nBAUER KOMPRESSOREN\nBAUER PREMIUM LINE | ACCEPTANCE AND SERVICES | 43\nMANUFACTURING IS ONLY PART OF WHAT WE DO\nISO 9001 CERTIFICATION\n› BAUER assures consistent maximum product quality by applying extensive quality control measures during and after\nproduction in line with DIN EN ISO 9001.\nACCEPTANCE TESTING\n› A factory acceptance test (FAT) or site acceptance test (SAT) in the presence of the customer or independent\ncertifying body can be performed in addition to the standard BAUER final test.\n› Many BAUER compressors can also be produced in compliance with other standards, e.g. ASME, KHK, ATEX etc.\nPACKING & PRESERVATION\n› Our compressors are packed ex works for transport by truck or air freight. We offer appropriate packing designs\ntailored for shipping, transport to tropical regions or long storage periods as well as short or long-term preservation.\nINSTALLATION\n› Professional installation is a vital basic factor in safe operation of high-pressure systems. Our global network of\nbranches and qualified partners provides smooth, trouble-free support in planning and implementation, wherever you\nare.\nTRAINING",
+        "page": 42,
+        "section": [
+          "bauer_amfile_5",
+          "Page 42"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.36815789,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "standards": [
+          "iso 27001",
+          "iso 9001",
+          "iso 14001",
+          "en iso 3834 2"
+        ],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 2,
+      "elapsed_ms": 808.78
+    }
+  },
+  "completed_at": "2026-07-23T14:29:50.962723+00:00",
+  "case_id": "B26",
+  "split": "development",
+  "category": "safe_no_answer",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

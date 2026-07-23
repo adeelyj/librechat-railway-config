@@ -1,0 +1,1197 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1210.31,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "VERTICUS SERIES"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 23\nTable: TECHNICAL DATA\nHeaders and units: I 180-15-V | VERTICUS SERIES, 310 - 515 l/min, 350 - 420 bar | I 15.11-7.5-V\nRow: I 15.11-11-V\nValues: 420 | 25.2 | 15 | 420 | 6100 | 4 | 1320 | 11 | 426 | 939\nFootnotes: 90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+      "page": 23,
+      "section": [
+        "2026-04 Compressors for Industry EN N39771 sc",
+        "Page 23"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "I 15.11-11-V",
+      "headers": [
+        "I 180-15-V",
+        "VERTICUS SERIES, 310 - 515 l/min, 350 - 420 bar",
+        "I 15.11-7.5-V"
+      ],
+      "row_values": [
+        "420",
+        "25.2",
+        "15",
+        "420",
+        "6100",
+        "4",
+        "1320",
+        "11",
+        "426",
+        "939"
+      ],
+      "units": [],
+      "footnotes": "90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.60663462,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "692622de-50ab-4fee-b097-841b7ab29359",
+      "filename": "0061-2026-04_Compressors_for_Industry_FR_N39772_sc-62ab889c8f.md",
+      "title": "2026-04_Compressors_for_Industry_FR_N39772_sc",
+      "language": "fr",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_FR_N39772_sc\nDocument section: 2026-04_Compressors_for_Industry_FR_N39772_sc / Page 23\nTable: CARACTÉRISTIQUES TECHNIQUES\nHeaders and units: 5 300 | 1 230 | I 180-15-V | 5 300 | 1 320 | GAMME VERTICUS, 310 À 515 l/min, 350 À 420 bar | I 15.11-7.5-V | 6 100\nRow: I 15.11-11-V\nValues: 420 | 25,2 | 15 | 420\nFootnotes: 90 À 525 BAR\n1 Débit en volume selon ISO 1217; valable pour l'air et l'azote. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+      "page": 23,
+      "section": [
+        "2026-04 Compressors for Industry FR N39772 sc",
+        "Page 23"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "CARACTÉRISTIQUES TECHNIQUES",
+      "row_label": "I 15.11-11-V",
+      "headers": [
+        "5 300",
+        "1 230",
+        "I 180-15-V",
+        "5 300",
+        "1 320",
+        "GAMME VERTICUS, 310 À 515 l/min, 350 À 420 bar",
+        "I 15.11-7.5-V",
+        "6 100"
+      ],
+      "row_values": [
+        "420",
+        "25,2",
+        "15",
+        "420"
+      ],
+      "units": [],
+      "footnotes": "90 À 525 BAR\n1 Débit en volume selon ISO 1217; valable pour l'air et l'azote. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.57180037,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "692622de-50ab-4fee-b097-841b7ab29359",
+      "filename": "0061-2026-04_Compressors_for_Industry_FR_N39772_sc-62ab889c8f.md",
+      "title": "2026-04_Compressors_for_Industry_FR_N39772_sc",
+      "language": "fr",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_FR_N39772_sc\nDocument section: 2026-04_Compressors_for_Industry_FR_N39772_sc / Page 23\nTable: CARACTÉRISTIQUES TECHNIQUES\nHeaders and units: 5 300 | 1 320 | GAMME VERTICUS, 310 À 515 l/min, 350 À 420 bar | I 15.11-7.5-V | 6 100 | I 15.11-11-V | 6 100 | 1 320\nRow: I 18.1-15-V\nValues: 515 | 30,9 | 18,2 | 420\nFootnotes: 90 À 525 BAR\n1 Débit en volume selon ISO 1217; valable pour l'air et l'azote. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+      "page": 23,
+      "section": [
+        "2026-04 Compressors for Industry FR N39772 sc",
+        "Page 23"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "CARACTÉRISTIQUES TECHNIQUES",
+      "row_label": "I 18.1-15-V",
+      "headers": [
+        "5 300",
+        "1 320",
+        "GAMME VERTICUS, 310 À 515 l/min, 350 À 420 bar",
+        "I 15.11-7.5-V",
+        "6 100",
+        "I 15.11-11-V",
+        "6 100",
+        "1 320"
+      ],
+      "row_values": [
+        "515",
+        "30,9",
+        "18,2",
+        "420"
+      ],
+      "units": [],
+      "footnotes": "90 À 525 BAR\n1 Débit en volume selon ISO 1217; valable pour l'air et l'azote. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.56986201,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "2d6d8bc8-a742-465a-8b3e-9bfb61f1fcd7",
+      "filename": "0371-0205_verticus-i-series_2e921bd912-e301b7a3ae.md",
+      "title": "VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS series",
+        "VERTICUS I"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: I 18.1-15-V | VERTICUS I 420 - 525 bar | I 15.11-7.5-V\nRow: I 15.11-11-V\nValues: 420 | 25.2 | 15 | 525 | 7600 | 4 | 1320 | 11 | 426 | 939\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "page": null,
+      "section": [
+        "VERTICUS series · Air-cooled compressors / BAUER KOMPRESSORE",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "I 15.11-11-V",
+      "headers": [
+        "I 18.1-15-V",
+        "VERTICUS I 420 - 525 bar",
+        "I 15.11-7.5-V"
+      ],
+      "row_values": [
+        "420",
+        "25.2",
+        "15",
+        "525",
+        "7600",
+        "4",
+        "1320",
+        "11",
+        "426",
+        "939"
+      ],
+      "units": [],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.55764344,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "9f7e9334-3f49-493e-b720-75c2d7c52d5c",
+      "filename": "0062-2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc-51f5cf81ca.md",
+      "title": "2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "VERTICUS 350",
+        "VERTICUS IND"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc\nDocument section: 2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc / Page 7\nTable: 2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc\nHeaders and units: I 120-5.5-MV³ | VERTICUS 350 - 525 bar | I 15.11-7.5-V\nRow: I 15.11-11-V\nValues: 420 | 25.2 | 15 | 525 | 7600 | 4 | 1320 | 11 | 426 | 939\nFootnotes: 1 Volume flow rate in accordance with ISO 1217. Different ambient conditions will result in differing performance values. Values are valid for 50 Hz.\n2 Max. operating pressure = max. pressure setting for safety valve; shutdown pressure is lower.\n3 Not suitable for nitrogen.",
+      "page": 7,
+      "section": [
+        "2026-04 MINI VERTICUS VERTICUS IND EN N42254 sc",
+        "Page 7"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "2026-04 MINI VERTICUS VERTICUS IND EN N42254 sc",
+      "row_label": "I 15.11-11-V",
+      "headers": [
+        "I 120-5.5-MV³",
+        "VERTICUS 350 - 525 bar",
+        "I 15.11-7.5-V"
+      ],
+      "row_values": [
+        "420",
+        "25.2",
+        "15",
+        "525",
+        "7600",
+        "4",
+        "1320",
+        "11",
+        "426",
+        "939"
+      ],
+      "units": [],
+      "footnotes": "1 Volume flow rate in accordance with ISO 1217. Different ambient conditions will result in differing performance values. Values are valid for 50 Hz.\n2 Max. operating pressure = max. pressure setting for safety valve; shutdown pressure is lower.\n3 Not suitable for nitrogen.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.55712302,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "VERTICUS SERIES"
+      ],
+      "media": [
+        "nitrogen"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 23\nTable: TECHNICAL DATA\nHeaders and units: I 18.1-15-V | VERTICUS SERIES, 310 - 510 l/min, 420 - 525 bar | I 15.11-7.5-V\nRow: I 15.11-11-V\nValues: 420 | 25.2 | 15 | 525 | 7600 | 4 | 1320 | 11 | 426 | 939\nFootnotes: 90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+      "page": 23,
+      "section": [
+        "2026-04 Compressors for Industry EN N39771 sc",
+        "Page 23"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "I 15.11-11-V",
+      "headers": [
+        "I 18.1-15-V",
+        "VERTICUS SERIES, 310 - 510 l/min, 420 - 525 bar",
+        "I 15.11-7.5-V"
+      ],
+      "row_values": [
+        "420",
+        "25.2",
+        "15",
+        "525",
+        "7600",
+        "4",
+        "1320",
+        "11",
+        "426",
+        "939"
+      ],
+      "units": [],
+      "footnotes": "90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.556875,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "2d6d8bc8-a742-465a-8b3e-9bfb61f1fcd7",
+      "filename": "0371-0205_verticus-i-series_2e921bd912-e301b7a3ae.md",
+      "title": "VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS series",
+        "VERTICUS I"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: I 180-15-V | VERTICUS I 350 - 420 bar | I 15.11-7.5-V\nRow: I 15.11-11-V\nValues: 420 | 25.2 | 15 | 420 | 6100 | 4 | 1320 | 11 | 426 | 939\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "page": null,
+      "section": [
+        "VERTICUS series · Air-cooled compressors / BAUER KOMPRESSORE",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "I 15.11-11-V",
+      "headers": [
+        "I 180-15-V",
+        "VERTICUS I 350 - 420 bar",
+        "I 15.11-7.5-V"
+      ],
+      "row_values": [
+        "420",
+        "25.2",
+        "15",
+        "420",
+        "6100",
+        "4",
+        "1320",
+        "11",
+        "426",
+        "939"
+      ],
+      "units": [],
+      "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.52300403,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "a8b2f676-6851-4947-98d8-99d897f0eae3",
+      "filename": "0042-2023-01_B-NEWS_EN_sc-361222d525.md",
+      "title": "2023-01_B-NEWS_EN_sc",
+      "language": "en",
+      "publication_date": "2023-01-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrogen",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2023-01_B-NEWS_EN_sc\nicantly\nextended power rating up to 45 kW.\n5\nHIGH-POWER WATER-COOLED COMPRESSORS –\nTHE NEW BK 23 SERIES\nThe water-cooled BK 23 Series now features significantly\nextended power ratings from 22 to 45 kW. The new series\noffers an even more compact footprint and reduced\nvibrations compared to its predecessor, and is available in\na pressure- and gas-tight model. Available free air delivery\nranges from 45 m³/h to 402 m³/h at final pressures from\n25 to 420 bar. The series is suitable for applications\ninvolving air, nitrogen, helium, heliox, argon, natural gas\nand biomethane.",
+      "page": 5,
+      "section": [
+        "2023-01 B-NEWS EN sc",
+        "Page 5"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.33878289,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+      "filename": "0071-B-SELECT_en-f40d0389e3.md",
+      "title": "B-SELECT_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "sensor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SELECT_en\nDocument section: B-SELECT_en / Page 2\nTable: TECHNICAL DATA\nRow: 420 bar\n420bar: Outlet pressure\n150-330 bar: Up to 414 bar\nVersion: Pressure switch (for compressors with hardwired control)\nPressure sensor (for compressors with B-CONTROL): Dimensions\n366 x 288 x 150 mm: 366 x 288 x 241 mm\nWeight: Approx. 7 kg\nMaterial and Coating: Steel, painted in RAL 7024\nFootnotes: 2 versions available",
+      "page": 2,
+      "section": [
+        "B-SELECT en",
+        "Page 2"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "420 bar",
+      "headers": [
+        "420bar",
+        "150-330 bar",
+        "Version",
+        "Pressure sensor (for compressors with B-CONTROL)",
+        "366 x 288 x 150 mm",
+        "Weight",
+        "Material and Coating"
+      ],
+      "row_values": [
+        "Outlet pressure",
+        "Up to 414 bar",
+        "Pressure switch (for compressors with hardwired control)",
+        "Dimensions",
+        "366 x 288 x 241 mm",
+        "Approx. 7 kg",
+        "Steel, painted in RAL 7024"
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "2 versions available",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.32720588,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "d1a82a82-c977-4b54-b433-d837a1e006f7",
+      "filename": "0080-bauer_amfile_11-395dc528f8.md",
+      "title": "bauer_amfile_11",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS up"
+      ],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_11\nDocument section: bauer_amfile_11 / Page 8\nTable: TECHNICAL DATA\nHeaders and units: 400 V/50 Hz 5 | 120 x 79 x 153 | V540 | P 61/350 | 400 V/50 Hz 5 | 120 x 79 x 153 | V680 | P 61/350 | 400 V/50 Hz 6 | 120 x 79 x 153 | VERTICUS up to 420 bar\nRow: V450/420\nValues: 450 | 16 | 420 | 6,000\nFootnotes: 1 Measured in cylinder filling (10 l) from 0–200 bar, ± 5 %\n2 Weight increases by approx. 50 kg in the Super Silent version\n3 Dimensions without doors. Dimensions in Super Silent version:\n4 Plug dimensions: 16 A\n5 Plug dimensions: 32 A\n6 Without plug\n8 | MINI-VERTICUS & VERTICUS",
+      "page": 8,
+      "section": [
+        "bauer amfile 11",
+        "Page 8"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "V450/420",
+      "headers": [
+        "400 V/50 Hz 5",
+        "120 x 79 x 153",
+        "V540",
+        "P 61/350",
+        "400 V/50 Hz 5",
+        "120 x 79 x 153",
+        "V680",
+        "P 61/350",
+        "400 V/50 Hz 6",
+        "120 x 79 x 153",
+        "VERTICUS up to 420 bar"
+      ],
+      "row_values": [
+        "450",
+        "16",
+        "420",
+        "6,000"
+      ],
+      "units": [],
+      "footnotes": "1 Measured in cylinder filling (10 l) from 0–200 bar, ± 5 %\n2 Weight increases by approx. 50 kg in the Super Silent version\n3 Dimensions without doors. Dimensions in Super Silent version:\n4 Plug dimensions: 16 A\n5 Plug dimensions: 32 A\n6 Without plug\n8 | MINI-VERTICUS & VERTICUS",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.32699275,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "VERTICUS SERIES"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 23\nTable: TECHNICAL DATA\nHeaders and units: I 180-15-V | VERTICUS SERIES, 310 - 515 l/min, 350 - 420 bar | I 15.11-7.5-V\nRow: I 15.11-11-V\nValues: 420 | 25.2 | 15 | 420 | 6100 | 4 | 1320 | 11 | 426 | 939\nFootnotes: 90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+        "page": 23,
+        "section": [
+          "2026-04 Compressors for Industry EN N39771 sc",
+          "Page 23"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "I 15.11-11-V",
+        "headers": [
+          "I 180-15-V",
+          "VERTICUS SERIES, 310 - 515 l/min, 350 - 420 bar",
+          "I 15.11-7.5-V"
+        ],
+        "row_values": [
+          "420",
+          "25.2",
+          "15",
+          "420",
+          "6100",
+          "4",
+          "1320",
+          "11",
+          "426",
+          "939"
+        ],
+        "units": [],
+        "footnotes": "90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.60663462,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "692622de-50ab-4fee-b097-841b7ab29359",
+        "filename": "0061-2026-04_Compressors_for_Industry_FR_N39772_sc-62ab889c8f.md",
+        "title": "2026-04_Compressors_for_Industry_FR_N39772_sc",
+        "language": "fr",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_FR_N39772_sc\nDocument section: 2026-04_Compressors_for_Industry_FR_N39772_sc / Page 23\nTable: CARACTÉRISTIQUES TECHNIQUES\nHeaders and units: 5 300 | 1 230 | I 180-15-V | 5 300 | 1 320 | GAMME VERTICUS, 310 À 515 l/min, 350 À 420 bar | I 15.11-7.5-V | 6 100\nRow: I 15.11-11-V\nValues: 420 | 25,2 | 15 | 420\nFootnotes: 90 À 525 BAR\n1 Débit en volume selon ISO 1217; valable pour l'air et l'azote. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+        "page": 23,
+        "section": [
+          "2026-04 Compressors for Industry FR N39772 sc",
+          "Page 23"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "CARACTÉRISTIQUES TECHNIQUES",
+        "row_label": "I 15.11-11-V",
+        "headers": [
+          "5 300",
+          "1 230",
+          "I 180-15-V",
+          "5 300",
+          "1 320",
+          "GAMME VERTICUS, 310 À 515 l/min, 350 À 420 bar",
+          "I 15.11-7.5-V",
+          "6 100"
+        ],
+        "row_values": [
+          "420",
+          "25,2",
+          "15",
+          "420"
+        ],
+        "units": [],
+        "footnotes": "90 À 525 BAR\n1 Débit en volume selon ISO 1217; valable pour l'air et l'azote. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.57180037,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "692622de-50ab-4fee-b097-841b7ab29359",
+        "filename": "0061-2026-04_Compressors_for_Industry_FR_N39772_sc-62ab889c8f.md",
+        "title": "2026-04_Compressors_for_Industry_FR_N39772_sc",
+        "language": "fr",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_FR_N39772_sc\nDocument section: 2026-04_Compressors_for_Industry_FR_N39772_sc / Page 23\nTable: CARACTÉRISTIQUES TECHNIQUES\nHeaders and units: 5 300 | 1 320 | GAMME VERTICUS, 310 À 515 l/min, 350 À 420 bar | I 15.11-7.5-V | 6 100 | I 15.11-11-V | 6 100 | 1 320\nRow: I 18.1-15-V\nValues: 515 | 30,9 | 18,2 | 420\nFootnotes: 90 À 525 BAR\n1 Débit en volume selon ISO 1217; valable pour l'air et l'azote. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+        "page": 23,
+        "section": [
+          "2026-04 Compressors for Industry FR N39772 sc",
+          "Page 23"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "CARACTÉRISTIQUES TECHNIQUES",
+        "row_label": "I 18.1-15-V",
+        "headers": [
+          "5 300",
+          "1 320",
+          "GAMME VERTICUS, 310 À 515 l/min, 350 À 420 bar",
+          "I 15.11-7.5-V",
+          "6 100",
+          "I 15.11-11-V",
+          "6 100",
+          "1 320"
+        ],
+        "row_values": [
+          "515",
+          "30,9",
+          "18,2",
+          "420"
+        ],
+        "units": [],
+        "footnotes": "90 À 525 BAR\n1 Débit en volume selon ISO 1217; valable pour l'air et l'azote. Des conditions ambiantes différentes ont pour résultat des valeurs différentes de performance.\n2 Pression de service maximale admise = pression de réglage maximale de la soupape de sûreté ; pression finale (pression de mise à l'arrêt) inférieure.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.56986201,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "2d6d8bc8-a742-465a-8b3e-9bfb61f1fcd7",
+        "filename": "0371-0205_verticus-i-series_2e921bd912-e301b7a3ae.md",
+        "title": "VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS series",
+          "VERTICUS I"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: I 18.1-15-V | VERTICUS I 420 - 525 bar | I 15.11-7.5-V\nRow: I 15.11-11-V\nValues: 420 | 25.2 | 15 | 525 | 7600 | 4 | 1320 | 11 | 426 | 939\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "page": null,
+        "section": [
+          "VERTICUS series · Air-cooled compressors / BAUER KOMPRESSORE",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "I 15.11-11-V",
+        "headers": [
+          "I 18.1-15-V",
+          "VERTICUS I 420 - 525 bar",
+          "I 15.11-7.5-V"
+        ],
+        "row_values": [
+          "420",
+          "25.2",
+          "15",
+          "525",
+          "7600",
+          "4",
+          "1320",
+          "11",
+          "426",
+          "939"
+        ],
+        "units": [],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.55764344,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "9f7e9334-3f49-493e-b720-75c2d7c52d5c",
+        "filename": "0062-2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc-51f5cf81ca.md",
+        "title": "2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "VERTICUS 350",
+          "VERTICUS IND"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc\nDocument section: 2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc / Page 7\nTable: 2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc\nHeaders and units: I 120-5.5-MV³ | VERTICUS 350 - 525 bar | I 15.11-7.5-V\nRow: I 15.11-11-V\nValues: 420 | 25.2 | 15 | 525 | 7600 | 4 | 1320 | 11 | 426 | 939\nFootnotes: 1 Volume flow rate in accordance with ISO 1217. Different ambient conditions will result in differing performance values. Values are valid for 50 Hz.\n2 Max. operating pressure = max. pressure setting for safety valve; shutdown pressure is lower.\n3 Not suitable for nitrogen.",
+        "page": 7,
+        "section": [
+          "2026-04 MINI VERTICUS VERTICUS IND EN N42254 sc",
+          "Page 7"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "2026-04 MINI VERTICUS VERTICUS IND EN N42254 sc",
+        "row_label": "I 15.11-11-V",
+        "headers": [
+          "I 120-5.5-MV³",
+          "VERTICUS 350 - 525 bar",
+          "I 15.11-7.5-V"
+        ],
+        "row_values": [
+          "420",
+          "25.2",
+          "15",
+          "525",
+          "7600",
+          "4",
+          "1320",
+          "11",
+          "426",
+          "939"
+        ],
+        "units": [],
+        "footnotes": "1 Volume flow rate in accordance with ISO 1217. Different ambient conditions will result in differing performance values. Values are valid for 50 Hz.\n2 Max. operating pressure = max. pressure setting for safety valve; shutdown pressure is lower.\n3 Not suitable for nitrogen.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.55712302,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "VERTICUS SERIES"
+        ],
+        "media": [
+          "nitrogen"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 23\nTable: TECHNICAL DATA\nHeaders and units: I 18.1-15-V | VERTICUS SERIES, 310 - 510 l/min, 420 - 525 bar | I 15.11-7.5-V\nRow: I 15.11-11-V\nValues: 420 | 25.2 | 15 | 525 | 7600 | 4 | 1320 | 11 | 426 | 939\nFootnotes: 90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+        "page": 23,
+        "section": [
+          "2026-04 Compressors for Industry EN N39771 sc",
+          "Page 23"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "I 15.11-11-V",
+        "headers": [
+          "I 18.1-15-V",
+          "VERTICUS SERIES, 310 - 510 l/min, 420 - 525 bar",
+          "I 15.11-7.5-V"
+        ],
+        "row_values": [
+          "420",
+          "25.2",
+          "15",
+          "525",
+          "7600",
+          "4",
+          "1320",
+          "11",
+          "426",
+          "939"
+        ],
+        "units": [],
+        "footnotes": "90 - 525 BAR\n1 Volume flow rate according to ISO 1217; valid for air and nitrogen. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.556875,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "2d6d8bc8-a742-465a-8b3e-9bfb61f1fcd7",
+        "filename": "0371-0205_verticus-i-series_2e921bd912-e301b7a3ae.md",
+        "title": "VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS series",
+          "VERTICUS I"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE\nDocument section: VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE / Web page content\nTable: Technical Data\nHeaders and units: I 180-15-V | VERTICUS I 350 - 420 bar | I 15.11-7.5-V\nRow: I 15.11-11-V\nValues: 420 | 25.2 | 15 | 420 | 6100 | 4 | 1320 | 11 | 426 | 939\nFootnotes: ¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "page": null,
+        "section": [
+          "VERTICUS series · Air-cooled compressors / BAUER KOMPRESSORE",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "I 15.11-11-V",
+        "headers": [
+          "I 180-15-V",
+          "VERTICUS I 350 - 420 bar",
+          "I 15.11-7.5-V"
+        ],
+        "row_values": [
+          "420",
+          "25.2",
+          "15",
+          "420",
+          "6100",
+          "4",
+          "1320",
+          "11",
+          "426",
+          "939"
+        ],
+        "units": [],
+        "footnotes": "¹ Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions.\n² Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.52300403,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "a8b2f676-6851-4947-98d8-99d897f0eae3",
+        "filename": "0042-2023-01_B-NEWS_EN_sc-361222d525.md",
+        "title": "2023-01_B-NEWS_EN_sc",
+        "language": "en",
+        "publication_date": "2023-01-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrogen",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2023-01_B-NEWS_EN_sc\nicantly\nextended power rating up to 45 kW.\n5\nHIGH-POWER WATER-COOLED COMPRESSORS –\nTHE NEW BK 23 SERIES\nThe water-cooled BK 23 Series now features significantly\nextended power ratings from 22 to 45 kW. The new series\noffers an even more compact footprint and reduced\nvibrations compared to its predecessor, and is available in\na pressure- and gas-tight model. Available free air delivery\nranges from 45 m³/h to 402 m³/h at final pressures from\n25 to 420 bar. The series is suitable for applications\ninvolving air, nitrogen, helium, heliox, argon, natural gas\nand biomethane.",
+        "page": 5,
+        "section": [
+          "2023-01 B-NEWS EN sc",
+          "Page 5"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.33878289,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+        "filename": "0071-B-SELECT_en-f40d0389e3.md",
+        "title": "B-SELECT_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "sensor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SELECT_en\nDocument section: B-SELECT_en / Page 2\nTable: TECHNICAL DATA\nRow: 420 bar\n420bar: Outlet pressure\n150-330 bar: Up to 414 bar\nVersion: Pressure switch (for compressors with hardwired control)\nPressure sensor (for compressors with B-CONTROL): Dimensions\n366 x 288 x 150 mm: 366 x 288 x 241 mm\nWeight: Approx. 7 kg\nMaterial and Coating: Steel, painted in RAL 7024\nFootnotes: 2 versions available",
+        "page": 2,
+        "section": [
+          "B-SELECT en",
+          "Page 2"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "420 bar",
+        "headers": [
+          "420bar",
+          "150-330 bar",
+          "Version",
+          "Pressure sensor (for compressors with B-CONTROL)",
+          "366 x 288 x 150 mm",
+          "Weight",
+          "Material and Coating"
+        ],
+        "row_values": [
+          "Outlet pressure",
+          "Up to 414 bar",
+          "Pressure switch (for compressors with hardwired control)",
+          "Dimensions",
+          "366 x 288 x 241 mm",
+          "Approx. 7 kg",
+          "Steel, painted in RAL 7024"
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "2 versions available",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.32720588,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "d1a82a82-c977-4b54-b433-d837a1e006f7",
+        "filename": "0080-bauer_amfile_11-395dc528f8.md",
+        "title": "bauer_amfile_11",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS up"
+        ],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_11\nDocument section: bauer_amfile_11 / Page 8\nTable: TECHNICAL DATA\nHeaders and units: 400 V/50 Hz 5 | 120 x 79 x 153 | V540 | P 61/350 | 400 V/50 Hz 5 | 120 x 79 x 153 | V680 | P 61/350 | 400 V/50 Hz 6 | 120 x 79 x 153 | VERTICUS up to 420 bar\nRow: V450/420\nValues: 450 | 16 | 420 | 6,000\nFootnotes: 1 Measured in cylinder filling (10 l) from 0–200 bar, ± 5 %\n2 Weight increases by approx. 50 kg in the Super Silent version\n3 Dimensions without doors. Dimensions in Super Silent version:\n4 Plug dimensions: 16 A\n5 Plug dimensions: 32 A\n6 Without plug\n8 | MINI-VERTICUS & VERTICUS",
+        "page": 8,
+        "section": [
+          "bauer amfile 11",
+          "Page 8"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "V450/420",
+        "headers": [
+          "400 V/50 Hz 5",
+          "120 x 79 x 153",
+          "V540",
+          "P 61/350",
+          "400 V/50 Hz 5",
+          "120 x 79 x 153",
+          "V680",
+          "P 61/350",
+          "400 V/50 Hz 6",
+          "120 x 79 x 153",
+          "VERTICUS up to 420 bar"
+        ],
+        "row_values": [
+          "450",
+          "16",
+          "420",
+          "6,000"
+        ],
+        "units": [],
+        "footnotes": "1 Measured in cylinder filling (10 l) from 0–200 bar, ± 5 %\n2 Weight increases by approx. 50 kg in the Super Silent version\n3 Dimensions without doors. Dimensions in Super Silent version:\n4 Plug dimensions: 16 A\n5 Plug dimensions: 32 A\n6 Without plug\n8 | MINI-VERTICUS & VERTICUS",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.32699275,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "i 15 11 11 v"
+        ],
+        "standards": [],
+        "number_units": [
+          "420 bar",
+          "525 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": true,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 2,
+      "elapsed_ms": 909.95
+    }
+  },
+  "completed_at": "2026-07-23T14:50:50.436266+00:00",
+  "case_id": "B18",
+  "split": "development",
+  "category": "exact_table_ambiguity",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

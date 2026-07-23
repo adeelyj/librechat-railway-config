@@ -1,0 +1,941 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1213.61,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_7\nnd BAUER compressors.\nB-APP\nThe B-APP delivers the full range of B-CLOUD functions to your\nsmart­phone or tablet, providing flexible remote access to your BAUER\n­KOMPRESSOREN and gas measurement systems.\nAvailable on the App Store (iOS) and on GooglePlay (Android).\nB-CLOUD READY UNITS\nTo use the B-CLOUD, your system must be equipped with\nB-CONTROL MICRO +Net control with software version 3.73\nor later. Older systems from version 3.0 can receive a software\nupdate and thus become B-CLOUD compatible.\nDATA SECURITY\nA fundamental aspect of the B-CLOUD¹ involves ensuring\nthe security of compressor systems and the data they\ntransmit. Rigorous protections are in place for compressor\nauthentication, communication, and identification. All data\ntransmitted between the control unit and the cloud is fully end-\nto-end encrypted.\n1 \u0007All data stored in B-CLOUD is stored in a high-security data centre located in Western Europe. B-CLOUD complies with the\nrequirements set out in the EU-GDPR and uses SSL encryption.\nPlease note that B-CLOUD services are not available in all regions.\nStay informed anytime,anywhere with the B-APP",
+      "page": 14,
+      "section": [
+        "bauer_amfile_7",
+        "Page 14"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.49323529,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL",
+        "B-CONTROL MICRO"
+      ],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\nch, and access to news and videos about\ncompressed air and BAUER compressors.\nB-APP\nThe B-APP delivers the full range of B-CLOUD functions to your smartphone or\ntablet, providing flexible remote access to your BAUER KOMPRESSOREN and gas\nmeasurement systems.\nAvailable on the App Store (iOS) and on Google Play (Android).\nStay informed anytime, anywhere with the B-APP\nDATA SECURITY\nA fundamental aspect of the B-CLOUD¹ involves ensuring the\nsecurity of compressor systems and the data they transmit.\nRigorous protections are in place for compressor authentication,\ncommunication, and identification. All data transmitted between\nthe control unit and the cloud is fully end-to-end encrypted.\nB-CLOUD READY UNITS\nTo use the B-CLOUD, your system must be equipped with B-CONTROL\nMICRO +Net control with software version 3.73 or later. Older systems\nfrom version 3.0 can receive a software update and thus become\nB-CLOUD compatible.\n1 All data stored in B-CLOUD is stored in a high-security data centre located in Western Europe.\nThe B-CLOUD complies with the requirements set in the EU-GDPR and uses SSL encryption. Please note that B-CLOUD services are not available in all regions.",
+      "page": 18,
+      "section": [
+        "bauer_amfile_5",
+        "Page 18"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.49302217,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL",
+        "B-CONTROL MICRO"
+      ],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nut\ncompressed air and BAUER compressors.\nStay informed anytime, anywhere with the B-APP\nDATA SECURITY\nA fundamental aspect of the B-CLOUD¹ involves ensuring the\nsecurity of compressor systems and the data they transmit.\nRigorous protections are in place for compressor authentication,\ncommunication, and identification. All data transmitted between\nthe control unit and the cloud is fully end-to-end encrypted.\nB-CLOUD READY UNITS\nTo use the B-CLOUD, your system must be equipped with B-CONTROL\nMICRO +Net control with software version 3.73 or later. Older systems\nfrom version 3.0 can receive a software update and thus become\nB-CLOUD compatible.\n1 All data stored in B-CLOUD is stored in a high-security data centre located in Western Europe.\nThe B-CLOUD complies with the requirements set in the EU-GDPR and uses SSL encryption. Please note that B-CLOUD services are not available in all regions.\nB-CLOUD\nThe B-APP delivers the full range of B-CLOUD functions to your smartphone or\ntablet, providing flexible remote access to your BAUER KOMPRESSOREN and\ngas measurement systems.\nAvailable on the App Store (iOS) and on Google Play (Android).\nB-APP",
+      "page": 23,
+      "section": [
+        "2026_04_Accessory_Systems_EN_N39608_sc",
+        "Page 23"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.49281513,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+      "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+      "title": "2025-06_Product_overview_EN_N37488_sc",
+      "language": "en",
+      "publication_date": "2025-06-01",
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nut\ncompressed air and BAUER compressors.\nStay informed anytime, anywhere with the B-APP\nDATA SECURITY\nA fundamental aspect of the B-CLOUD¹ involves ensuring the\nsecurity of compressor systems and the data they transmit.\nRigorous protections are in place for compressor authentication,\ncommunication, and identification. All data transmitted between\nthe control unit and the cloud is fully end-to-end encrypted.\nB-CLOUD READY UNITS\nTo use the B-CLOUD, your system must be equipped with\nB-CONTROL MICRO +Net control with software version 3.73 or later.\nOlder systems from version 3.0 can receive a software update and\nthus become B-CLOUD compatible.\n1 All data stored in B-CLOUD is stored in a high-security data centre located in Western Europe.\nThe B-CLOUD complies with the requirements set in the EU-GDPR and uses SSL encryption. Please note that B-CLOUD services are not available in all regions.\nB-CLOUD\nThe B-APP delivers the full range of B-CLOUD functions to your smartphone or\ntablet, providing flexible remote access to your BAUER KOMPRESSOREN and\ngas measurement systems.\nAvailable on the App Store (iOS) and on Google Play (Android).\nB-APP",
+      "page": 23,
+      "section": [
+        "2025-06_Product_overview_EN_N37488_sc",
+        "Page 23"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.49222804,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL",
+        "B-CONTROL MICRO"
+      ],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nch, and access to news and videos about\ncompressed air and BAUER compressors.\nB-APP\nThe B-APP delivers the full range of B-CLOUD functions to your smartphone or\ntablet, providing flexible remote access to your BAUER KOMPRESSOREN and gas\nmeasurement systems.\nAvailable on the App Store (iOS) and on Google Play (Android).\nStay informed anytime, anywhere with the B-APP\nDATA SECURITY\nA fundamental aspect of the B-CLOUD¹ involves ensuring the\nsecurity of compressor systems and the data they transmit.\nRigorous protections are in place for compressor authentication,\ncommunication, and identification. All data transmitted between\nthe control unit and the cloud is fully end-to-end encrypted.\nB-CLOUD READY UNITS\nTo use the B-CLOUD, your system must be equipped with B-CONTROL\nMICRO +Net control with software version 3.73 or later. Older systems\nfrom version 3.0 can receive a software update and thus become\nB-CLOUD compatible.\n1 All data stored in B-CLOUD is stored in a high-security data centre located in Western Europe.\nThe B-CLOUD complies with the requirements set in the EU-GDPR and uses SSL encryption. Please note that B-CLOUD services are not available in all regions.",
+      "page": 11,
+      "section": [
+        "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "Page 11"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.49204293,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS",
+        "B-CONTROL",
+        "B-CONTROL MICRO",
+        "B-DETECTION"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "sensor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\ne details, see our\nbrochures “BAUER Accessories” and “B-DETECTION PLUS-\nthe next generation online gas measurement systems“ and\nvisit www.bauer-kompressoren.de.\n1 Total oil measurement based only on volatile organic compounds (VOCs). Sensor calibration based on isobutene.\n2 B-DETECTION PLUS i is only B-APP and B-CLOUD compatible if this is integrated in a compressor with B-CONTROL MICRO +Net. For more information, see page 18..\nB-DETECTION PLUS s",
+      "page": 41,
+      "section": [
+        "bauer_amfile_5",
+        "Page 41"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.42995256,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL",
+        "B-CONTROL MICRO"
+      ],
+      "media": [],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\ncertificates on compatible SD card inserted in the control unit\n› Optional for software updates through the cloud: Compatible SD card in the display unit\nACCESS\n› Free of charge\n› Through the cellular network via B-LINK 4G\n› Via mobile browser (smartphone, tablet)\n› Via mobile app (iOS, Android)\nRELATED ACCESSORIES\n› B-LINK: Order No. 178712\n› For wireless connection to a local network. Client mode configuration required.\n› B-LINK 4G: Order No. 192310\n› For network independent internet access.\n› SIM card with internet tariff required. Not offered by BAUER.\n› SD card: Order No. 420005805\n› BAUER verified SD card (confirmed to be compatible with B-CONTROL MICRO +Net\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 37\n36 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+      "page": 19,
+      "section": [
+        "High-pressure-accessories-catalogue_EN",
+        "Page 19"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.42969655,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "e8984eb2-4627-42c6-a7df-f856e38ed03c",
+      "filename": "0370-0204_verticus-he_98b4f4745d-6e943ec122.md",
+      "title": "VERTICUS series (Helium) · Air-cooled compressors | BAUER KO",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS series",
+        "B-CONTROL MICRO",
+        "B-CONTROL",
+        "VERTICUS is",
+        "VERTICUS cover",
+        "VERTICUS controlled",
+        "VERTICUS suitable"
+      ],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: VERTICUS series (Helium) · Air-cooled compressors | BAUER KO\nCUS is an air-cooled high-pressure compressor for industrial applications and is specifically designed for the compression of helium and other noble gases.\nWhat\nperformance range does the VERTICUS cover for helium?\nThe VERTICUS is an air-cooled high-pressure compressor for industrial applications and is specifically designed for the compression of helium and other noble gases.This BAUER G series offers delivery rates from 240 to 420 l/min and operating pressures of up to 350 bar, depending on the model and process gas.\nHow is the VERTICUS controlled and monitored?\nThe compressor is equipped with the B-CONTROL MICRO control system. It enables easy operation, safe monitoring of operating parameters, and connectivity to the B-CLOUD and B-APP.\nWhat\nare the benefits of B-CLOUD?\nB-CLOUD enables centralized digital monitoring of the compressor. Operators have continuous access to operating data, can monitor system status, and plan maintenance more efficiently.\nWhich\ngases is the VERTICUS suitable for?\nThe G series is designed for the compression of helium as well as other noble gases. The configuration is optimized for high gas tightness and efficient handling of these gases.\nHow\nmaintenance-friendly is the VERTICUS?",
+      "page": null,
+      "section": [
+        "VERTICUS series (Helium) · Air-cooled compressors | BAUER KO",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.42897504,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "7d034c62-bd00-428a-b501-8f7050a779c5",
+      "filename": "0172-0006_b-26-baureihe_d43126ca8f-4925ea2eea.md",
+      "title": "B 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN\nitoring\nThe intake filter is equipped with a vacuum monitoring system, which is continuously monitored by the B-CONTROL compressor control unit.\nB-CLOUD & B-APP\nWith BAUER B-CLOUD and the B-APP, users can keep an eye on their compressor system at all times, even remotely. Operating data, maintenance instructions, and status messages are transmitted and visualized in real time. This increases transparency, simplifies monitoring, and supports optimized maintenance planning. In addition, the stored operating data in the B-CLOUD is available for later analysis and system performance optimization. If the condition of your compressor system changes, B-CLOUD or B-APP will notify you immediately – by email or via push notification straight to your smartphone.\nB-LINK\nWi-Fi and 4G routers enable the wireless communication of the B-CONTROL MICRO with the B-CLOUD. They establish a reliable Wi-Fi or mobile network connection, allowing secure remote access to the compressor system.\nIntermediate pressure gauge\nAnalog pressure gauges are installed at appropriate points of the compressor system and allow for easy monitoring of operating pressures. They support diagnostics and simplify maintenance work on the system.\nPre-lubrication pump\nAfter extended downtimes, the bearings are automatically pre-lubricated to ensure safe start-up. This process is managed by the B-CONTROL control system.",
+      "page": null,
+      "section": [
+        "B 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.4273055,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "7ed481bf-af60-4a09-b02a-d1acbe138871",
+      "filename": "0367-0201_verticus1_5ee3a4cd85-1b3917e37f.md",
+      "title": "VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS 420",
+        "B-CONTROL MICRO",
+        "B-CONTROL"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nof breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat\nperformance ranges does the VERTICUS (420 bar) cover?\nThe VERTICUS (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 560 liters per minute, making it ideal for continuous filling operations in stationary applications.\nHow\nmaintenance-friendly is the VERTICUS (420 bar) ?\nThe VERTICUS (420 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich\nconditions is the VERTICUS (420 bar) built to handle?\nThe VERTICUS (420 bar) is particularly well suited for applications that require a stationary breathing air supply.\nHow is\nthe VERTICUS (420 bar) operated and monitored?\nThe VERTICUS (420 bar) is equipped with the B-CONTROL MICRO control system. This enables simple operation, continuous monitoring of all relevant operating parameters and connection to the B-CLOUD and the B-APP.\nWhat\nbenefits does the B-CLOUD provide?\nThe B-CLOUD enables central digital monitoring of the high-pressure system. Operating data, statuses and messages are available in real time and support condition-based maintenance as well as high system availability, particularly in high-performance industrial applications.\nAccessories",
+      "page": null,
+      "section": [
+        "VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.42715686,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_7\nnd BAUER compressors.\nB-APP\nThe B-APP delivers the full range of B-CLOUD functions to your\nsmart­phone or tablet, providing flexible remote access to your BAUER\n­KOMPRESSOREN and gas measurement systems.\nAvailable on the App Store (iOS) and on GooglePlay (Android).\nB-CLOUD READY UNITS\nTo use the B-CLOUD, your system must be equipped with\nB-CONTROL MICRO +Net control with software version 3.73\nor later. Older systems from version 3.0 can receive a software\nupdate and thus become B-CLOUD compatible.\nDATA SECURITY\nA fundamental aspect of the B-CLOUD¹ involves ensuring\nthe security of compressor systems and the data they\ntransmit. Rigorous protections are in place for compressor\nauthentication, communication, and identification. All data\ntransmitted between the control unit and the cloud is fully end-\nto-end encrypted.\n1 \u0007All data stored in B-CLOUD is stored in a high-security data centre located in Western Europe. B-CLOUD complies with the\nrequirements set out in the EU-GDPR and uses SSL encryption.\nPlease note that B-CLOUD services are not available in all regions.\nStay informed anytime,anywhere with the B-APP",
+        "page": 14,
+        "section": [
+          "bauer_amfile_7",
+          "Page 14"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.49323529,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL",
+          "B-CONTROL MICRO"
+        ],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\nch, and access to news and videos about\ncompressed air and BAUER compressors.\nB-APP\nThe B-APP delivers the full range of B-CLOUD functions to your smartphone or\ntablet, providing flexible remote access to your BAUER KOMPRESSOREN and gas\nmeasurement systems.\nAvailable on the App Store (iOS) and on Google Play (Android).\nStay informed anytime, anywhere with the B-APP\nDATA SECURITY\nA fundamental aspect of the B-CLOUD¹ involves ensuring the\nsecurity of compressor systems and the data they transmit.\nRigorous protections are in place for compressor authentication,\ncommunication, and identification. All data transmitted between\nthe control unit and the cloud is fully end-to-end encrypted.\nB-CLOUD READY UNITS\nTo use the B-CLOUD, your system must be equipped with B-CONTROL\nMICRO +Net control with software version 3.73 or later. Older systems\nfrom version 3.0 can receive a software update and thus become\nB-CLOUD compatible.\n1 All data stored in B-CLOUD is stored in a high-security data centre located in Western Europe.\nThe B-CLOUD complies with the requirements set in the EU-GDPR and uses SSL encryption. Please note that B-CLOUD services are not available in all regions.",
+        "page": 18,
+        "section": [
+          "bauer_amfile_5",
+          "Page 18"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.49302217,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL",
+          "B-CONTROL MICRO"
+        ],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nut\ncompressed air and BAUER compressors.\nStay informed anytime, anywhere with the B-APP\nDATA SECURITY\nA fundamental aspect of the B-CLOUD¹ involves ensuring the\nsecurity of compressor systems and the data they transmit.\nRigorous protections are in place for compressor authentication,\ncommunication, and identification. All data transmitted between\nthe control unit and the cloud is fully end-to-end encrypted.\nB-CLOUD READY UNITS\nTo use the B-CLOUD, your system must be equipped with B-CONTROL\nMICRO +Net control with software version 3.73 or later. Older systems\nfrom version 3.0 can receive a software update and thus become\nB-CLOUD compatible.\n1 All data stored in B-CLOUD is stored in a high-security data centre located in Western Europe.\nThe B-CLOUD complies with the requirements set in the EU-GDPR and uses SSL encryption. Please note that B-CLOUD services are not available in all regions.\nB-CLOUD\nThe B-APP delivers the full range of B-CLOUD functions to your smartphone or\ntablet, providing flexible remote access to your BAUER KOMPRESSOREN and\ngas measurement systems.\nAvailable on the App Store (iOS) and on Google Play (Android).\nB-APP",
+        "page": 23,
+        "section": [
+          "2026_04_Accessory_Systems_EN_N39608_sc",
+          "Page 23"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.49281513,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+        "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+        "title": "2025-06_Product_overview_EN_N37488_sc",
+        "language": "en",
+        "publication_date": "2025-06-01",
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2025-06_Product_overview_EN_N37488_sc\nut\ncompressed air and BAUER compressors.\nStay informed anytime, anywhere with the B-APP\nDATA SECURITY\nA fundamental aspect of the B-CLOUD¹ involves ensuring the\nsecurity of compressor systems and the data they transmit.\nRigorous protections are in place for compressor authentication,\ncommunication, and identification. All data transmitted between\nthe control unit and the cloud is fully end-to-end encrypted.\nB-CLOUD READY UNITS\nTo use the B-CLOUD, your system must be equipped with\nB-CONTROL MICRO +Net control with software version 3.73 or later.\nOlder systems from version 3.0 can receive a software update and\nthus become B-CLOUD compatible.\n1 All data stored in B-CLOUD is stored in a high-security data centre located in Western Europe.\nThe B-CLOUD complies with the requirements set in the EU-GDPR and uses SSL encryption. Please note that B-CLOUD services are not available in all regions.\nB-CLOUD\nThe B-APP delivers the full range of B-CLOUD functions to your smartphone or\ntablet, providing flexible remote access to your BAUER KOMPRESSOREN and\ngas measurement systems.\nAvailable on the App Store (iOS) and on Google Play (Android).\nB-APP",
+        "page": 23,
+        "section": [
+          "2025-06_Product_overview_EN_N37488_sc",
+          "Page 23"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.49222804,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL",
+          "B-CONTROL MICRO"
+        ],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nch, and access to news and videos about\ncompressed air and BAUER compressors.\nB-APP\nThe B-APP delivers the full range of B-CLOUD functions to your smartphone or\ntablet, providing flexible remote access to your BAUER KOMPRESSOREN and gas\nmeasurement systems.\nAvailable on the App Store (iOS) and on Google Play (Android).\nStay informed anytime, anywhere with the B-APP\nDATA SECURITY\nA fundamental aspect of the B-CLOUD¹ involves ensuring the\nsecurity of compressor systems and the data they transmit.\nRigorous protections are in place for compressor authentication,\ncommunication, and identification. All data transmitted between\nthe control unit and the cloud is fully end-to-end encrypted.\nB-CLOUD READY UNITS\nTo use the B-CLOUD, your system must be equipped with B-CONTROL\nMICRO +Net control with software version 3.73 or later. Older systems\nfrom version 3.0 can receive a software update and thus become\nB-CLOUD compatible.\n1 All data stored in B-CLOUD is stored in a high-security data centre located in Western Europe.\nThe B-CLOUD complies with the requirements set in the EU-GDPR and uses SSL encryption. Please note that B-CLOUD services are not available in all regions.",
+        "page": 11,
+        "section": [
+          "2026-04_Compressors_for_Industry_EN_N39771_sc",
+          "Page 11"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.49204293,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS",
+          "B-CONTROL",
+          "B-CONTROL MICRO",
+          "B-DETECTION"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "sensor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\ne details, see our\nbrochures “BAUER Accessories” and “B-DETECTION PLUS-\nthe next generation online gas measurement systems“ and\nvisit www.bauer-kompressoren.de.\n1 Total oil measurement based only on volatile organic compounds (VOCs). Sensor calibration based on isobutene.\n2 B-DETECTION PLUS i is only B-APP and B-CLOUD compatible if this is integrated in a compressor with B-CONTROL MICRO +Net. For more information, see page 18..\nB-DETECTION PLUS s",
+        "page": 41,
+        "section": [
+          "bauer_amfile_5",
+          "Page 41"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.42995256,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL",
+          "B-CONTROL MICRO"
+        ],
+        "media": [],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\ncertificates on compatible SD card inserted in the control unit\n› Optional for software updates through the cloud: Compatible SD card in the display unit\nACCESS\n› Free of charge\n› Through the cellular network via B-LINK 4G\n› Via mobile browser (smartphone, tablet)\n› Via mobile app (iOS, Android)\nRELATED ACCESSORIES\n› B-LINK: Order No. 178712\n› For wireless connection to a local network. Client mode configuration required.\n› B-LINK 4G: Order No. 192310\n› For network independent internet access.\n› SIM card with internet tariff required. Not offered by BAUER.\n› SD card: Order No. 420005805\n› BAUER verified SD card (confirmed to be compatible with B-CONTROL MICRO +Net\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 37\n36 | HIGH-PRESSURE ACCESSORIES CATALOGUE\nBAUER KOMPRESSOREN",
+        "page": 19,
+        "section": [
+          "High-pressure-accessories-catalogue_EN",
+          "Page 19"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.42969655,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "e8984eb2-4627-42c6-a7df-f856e38ed03c",
+        "filename": "0370-0204_verticus-he_98b4f4745d-6e943ec122.md",
+        "title": "VERTICUS series (Helium) · Air-cooled compressors | BAUER KO",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS series",
+          "B-CONTROL MICRO",
+          "B-CONTROL",
+          "VERTICUS is",
+          "VERTICUS cover",
+          "VERTICUS controlled",
+          "VERTICUS suitable"
+        ],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: VERTICUS series (Helium) · Air-cooled compressors | BAUER KO\nCUS is an air-cooled high-pressure compressor for industrial applications and is specifically designed for the compression of helium and other noble gases.\nWhat\nperformance range does the VERTICUS cover for helium?\nThe VERTICUS is an air-cooled high-pressure compressor for industrial applications and is specifically designed for the compression of helium and other noble gases.This BAUER G series offers delivery rates from 240 to 420 l/min and operating pressures of up to 350 bar, depending on the model and process gas.\nHow is the VERTICUS controlled and monitored?\nThe compressor is equipped with the B-CONTROL MICRO control system. It enables easy operation, safe monitoring of operating parameters, and connectivity to the B-CLOUD and B-APP.\nWhat\nare the benefits of B-CLOUD?\nB-CLOUD enables centralized digital monitoring of the compressor. Operators have continuous access to operating data, can monitor system status, and plan maintenance more efficiently.\nWhich\ngases is the VERTICUS suitable for?\nThe G series is designed for the compression of helium as well as other noble gases. The configuration is optimized for high gas tightness and efficient handling of these gases.\nHow\nmaintenance-friendly is the VERTICUS?",
+        "page": null,
+        "section": [
+          "VERTICUS series (Helium) · Air-cooled compressors | BAUER KO",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.42897504,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "7d034c62-bd00-428a-b501-8f7050a779c5",
+        "filename": "0172-0006_b-26-baureihe_d43126ca8f-4925ea2eea.md",
+        "title": "B 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN\nitoring\nThe intake filter is equipped with a vacuum monitoring system, which is continuously monitored by the B-CONTROL compressor control unit.\nB-CLOUD & B-APP\nWith BAUER B-CLOUD and the B-APP, users can keep an eye on their compressor system at all times, even remotely. Operating data, maintenance instructions, and status messages are transmitted and visualized in real time. This increases transparency, simplifies monitoring, and supports optimized maintenance planning. In addition, the stored operating data in the B-CLOUD is available for later analysis and system performance optimization. If the condition of your compressor system changes, B-CLOUD or B-APP will notify you immediately – by email or via push notification straight to your smartphone.\nB-LINK\nWi-Fi and 4G routers enable the wireless communication of the B-CONTROL MICRO with the B-CLOUD. They establish a reliable Wi-Fi or mobile network connection, allowing secure remote access to the compressor system.\nIntermediate pressure gauge\nAnalog pressure gauges are installed at appropriate points of the compressor system and allow for easy monitoring of operating pressures. They support diagnostics and simplify maintenance work on the system.\nPre-lubrication pump\nAfter extended downtimes, the bearings are automatically pre-lubricated to ensure safe start-up. This process is managed by the B-CONTROL control system.",
+        "page": null,
+        "section": [
+          "B 26 series · Water-Cooled Compressors | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.4273055,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "7ed481bf-af60-4a09-b02a-d1acbe138871",
+        "filename": "0367-0201_verticus1_5ee3a4cd85-1b3917e37f.md",
+        "title": "VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS 420",
+          "B-CONTROL MICRO",
+          "B-CONTROL"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nof breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving.\nWhat\nperformance ranges does the VERTICUS (420 bar) cover?\nThe VERTICUS (420 bar) is designed for final pressures of up to 420 bar and can deliver up to 560 liters per minute, making it ideal for continuous filling operations in stationary applications.\nHow\nmaintenance-friendly is the VERTICUS (420 bar) ?\nThe VERTICUS (420 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy.\nWhich\nconditions is the VERTICUS (420 bar) built to handle?\nThe VERTICUS (420 bar) is particularly well suited for applications that require a stationary breathing air supply.\nHow is\nthe VERTICUS (420 bar) operated and monitored?\nThe VERTICUS (420 bar) is equipped with the B-CONTROL MICRO control system. This enables simple operation, continuous monitoring of all relevant operating parameters and connection to the B-CLOUD and the B-APP.\nWhat\nbenefits does the B-CLOUD provide?\nThe B-CLOUD enables central digital monitoring of the high-pressure system. Operating data, statuses and messages are available in real time and support condition-based maintenance as well as high system availability, particularly in high-performance industrial applications.\nAccessories",
+        "page": null,
+        "section": [
+          "VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.42715686,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "b control micro"
+        ],
+        "standards": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 0,
+      "elapsed_ms": 971.24
+    }
+  },
+  "completed_at": "2026-07-23T14:29:49.891747+00:00",
+  "case_id": "B25",
+  "split": "development",
+  "category": "semantic_product",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "system": "v1",
+  "path": "/query_multiple",
+  "http_status": 200,
+  "elapsed_ms": 290.61,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "file_id": "c507e770-5529-4839-95e5-5ea1731ed2a5",
+      "filename": "0003-2015-08_Proteccion_para_mangueras_ES_N40403_sc-3955526829_1aecd270cddb4396aeb13138d0acd543.md",
+      "content": "2015-08_Proteccion_para_mangueras_ES_N40403_sc\n\nOriginal source: bauer_index\\raw_docs\\2015-08_Proteccion_para_mangueras_ES_N40403_sc.pdf\n\nOriginal SHA-256: 3955526829f4880c897736da71c1cc02a3eb4cade5f100005ee4192ae45f696b\n\nPage 1\n\nSERVICIO Protección contra golpes de mangueras de alta presión Montaje sencillo Posibilidad de montaje posterior sin problemas Apto para muchas conexiones PROTECCIÓN PARA MANGUERAS SISTEMA DE PROTECCIÓN PARA MANGUERAS DE ALTA PRESIÓN\n\nPage 2\n\nBAUER COMPRESSORES S.L. Pol. Ind. La Clota; C/ Josep Ros i Ros 45 08740 Sant Andreu De La Barca, España Tel. +49 (0) 89 78049-0 Fax +49 (0) 89 78049-167 info@bauer-kompressoren.com www.bauer-kompressoren.com PROTECCIÓN PARA MANGUERAS DE BAUER KOMPRESSOREN PROTÉJASE A USTED MISMO Y A SU INSTALACIÓN\n\nCon el desgaste, los daños o las fluctuaciones de presión, las mangueras de alta presión importantes para la seguridad pueden resul­ tar peligrosas.Nuestro sistema de retención le proporciona una protección adicional. Con él se evitan eficazmente golpes incontrola­ dos de las mangueras de alta presión en caso de derrumbe. BAUER KOMPRESSOREN recomienda el equipamiento posterior de sus instalaciones. FUNCIONAMIENTO:",
+      "page": null,
+      "section": [],
+      "score": 0.6605867945798174,
+      "route": "v1"
+    },
+    {
+      "file_id": "6b68f255-9dbb-4fe7-9e82-cfa0eedb0ee2",
+      "filename": "0028-2020-01_B-NEWS_EN_sc-289d7cd54b_d1aa07af3a484fb597b99449fe1e9509.md",
+      "content": "design engineers. And no wonder; for almost three-quar- ters of a century, BAUER the man has been inseparable from BAUER the com- pany. Heinz Bauer’s life with BAUER be­ gan shortly after the Second World War in 1946, when the newly founded com- pany began operations. After leaving school, he went straight into the company. In 1956 he played a leading role in developing the legendary UTILUS, the original diving compressor. Spells working with other companies in Switzerland and Great Britain enabled him to build a wealth of knowledge and experience. In 1976 his father Hans han- ded the family company to him, and four years later he also took the helm of the ISSUE 1/2020 Philipp Bayat, Dr. Monika Bayat, Heinz Bauer (l. to r.). BAUER KOMPRESSOREN HEINZ BAUER CELEBRATES HIS 80th BIRTHDAY Flowers and a great birthday surprise: in the cafeteria, BAUER employees used high-pressure cylinders and screw compressor rotors to portray Heinz Bauer’s age!",
+      "page": null,
+      "section": [],
+      "score": 0.6530544368592252,
+      "route": "v1"
+    },
+    {
+      "file_id": "9cf4de16-068c-47e9-a14d-33dea9161042",
+      "filename": "0004-2015-08_Securite_anti-coup_de_fouet_FR_N40402_sc-d35bbb4f5b_ef74b4ec13bf4152925efe41de3fe635.md",
+      "content": "2015-08_Securite_anti-coup_de_fouet_FR_N40402_sc\n\nOriginal source: bauer_index\\raw_docs\\2015-08_Securite_anti-coup_de_fouet_FR_N40402_sc.pdf\n\nOriginal SHA-256: d35bbb4f5b47c9878ac8fe4f48743b06df371404e494d264d8c99370cac3e140\n\nPage 1\n\nSERVICE Protection anti-coup de fouet pour les flexibles Montage facile Montage en post-équipement sans problème Compatible avec de multiples modèles de raccordement SÉCURITÉ ANTI-COUP DE FOUET LE SYSTÈME DE SÉCURITÉ POUR FLEXIBLE\n\nPage 2\n\nBAUER COMPRESSEURS S.A.S. 60, Avenue Franklin D. Roosevelt 73100 Aix-les-Bains, France Tel. +49 (0) 89 78049-0 Fax +49 (0) 89 78049-167 info@bauer-kompressoren.com www.bauer-kompressoren.com LA SÉCURITÉ ANTI-COUP DE FOUET BAUER KOMPRESSOREN ASSURE VOTRE PROTECTION AINSI QUE CELLE DE VOS INSTALLATIONS\n\nL‘usure, l‘endommagement ou les fluctuations de pression peuvent rendre dangereux les flexibles haute sécurité. Notre système de retenue vous apporte une sécurité supplémentaire. Ils évitent efficacement l‘effet « coup de fouet » incontrôlé provoqué par l‘arrachement des flexibles. BAUER KOMPRESSOREN recommande un post-équipement de vos installations. PRINCIPE DE FONCTIONNEMENT:",
+      "page": null,
+      "section": [],
+      "score": 0.6519746586091945,
+      "route": "v1"
+    },
+    {
+      "file_id": "5c75ad2d-5eab-4bee-a128-372da9c34128",
+      "filename": "0006-2016-01_B-NEWS_EN_sc-3415a02a81_1b2d372a803d48059713b1906dceadce.md",
+      "content": "30th anniversary of BAUER France. Reliable, continuous plant operation is absolutely essential in challenging outdoor conditions.",
+      "page": null,
+      "section": [],
+      "score": 0.6502562373723854,
+      "route": "v1"
+    },
+    {
+      "file_id": "075da428-8faa-4327-bcd0-1367fda62bd1",
+      "filename": "0005-2016-01_B-NEWS_DE_sc-20166a4d06_9727174e0fdc4ade817f7b4751f55873.md",
+      "content": "der Jubiläumsfeier 30 Jahre BAUER Frankreich Im harten Outdoor-Einsatz ist der zuverlässige kontinuierliche Anlagenbetrieb ein absolutes Muß!",
+      "page": null,
+      "section": [],
+      "score": 0.6439883921153323,
+      "route": "v1"
+    },
+    {
+      "file_id": "4e790807-b511-47a8-9658-6d479067a797",
+      "filename": "0232-0066_g25-series-ar_32bd6656a6-c0a2dacd0e_d5e08c892b4d4cafb2de13c6294350b9.md",
+      "content": "the stored operating data in the B-CLOUD is available for later analysis and system performance optimization. If the condition of your compressor system changes, B-CLOUD or B-APP will notify you immediately – by email or via push notification straight to your smartphone. B-LINK Wi-Fi and 4G routers enable the wireless communication of the B-CONTROL MICRO with the B-CLOUD. They establish a reliable Wi-Fi or mobile network connection, allowing secure remote access to the compressor system. Intermediate pressure gauge Analog pressure gauges are installed at appropriate points of the compressor system and allow for easy monitoring of operating pressures. They support diagnostics and simplify maintenance work on the system. Separate intake buffer and condensate vessel In this closed system, the gas released during automatic condensate drainage is captured within the containers and fed directly back into the compression process. The system can also operate without a customer-supplied gas balloon. Its design is based on the combined container concept but consists of two separate vessels. The delivery scope also includes a suction solenoid valve and a compensation line for returning the collected gas to the intake side of the compressor. Downloads Product Brochure Compressors for Industry EN (8.89 MB) BAUER Product overview EN (12.33 MB) Support Bauer dealers worldwide Get in touch with us Frequently Asked Questions Why is BAUER the right partner for industrial compressor solutions?",
+      "page": null,
+      "section": [],
+      "score": 0.6438432548139551,
+      "route": "v1"
+    },
+    {
+      "file_id": "a8b2f676-6851-4947-98d8-99d897f0eae3",
+      "filename": "0042-2023-01_B-NEWS_EN_sc-361222d525_63f6328d0cf24f8189f587c6a8670b02.md",
+      "content": "and technology buffs in the crowds. The youthful team at the stand, the majority of them still trainees themselves, were kept busy providing information about the variety of apprenticeships and trainee places on offer at the BAUER GROUP, from mechatronics technicians to degree courses combining work and study. Backed by the knowledge and positive experiences they had gained during their training, the BAUER team were well able to advise the young fair visitors in detail. And judging by the growing stack of “instant applications” collected through­ out the fair, they clearly did a great job of convincing prospective trainees.",
+      "page": null,
+      "section": [],
+      "score": 0.6355616667531939,
+      "route": "v1"
+    },
+    {
+      "file_id": "ae2d88f8-fab2-49ce-a869-4ca51ac2e300",
+      "filename": "0366-0200_verticus_a360e59ee5-f25419e8cd_eb8ccec072c24ff0a9995fb197b4f6ed.md",
+      "content": "source. Most comprehensive options and accessories portfolio: BAUER offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions. Most extensive breathing air treatment portfolio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications. Global market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network. What is the VERTICUS (350 bar) used for? The VERTICUS (350 bar) is a stationary high-pressure breathing air compressor designed for continuous operation, ensuring a reliable supply of breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving. What performance ranges does the VERTICUS (350 bar) cover? The VERTICUS (350 bar) is designed for final pressures of up to 350 bar and can deliver up to 680 liters per minute, making it ideal for continuous filling operations in stationary applications. How maintenance-friendly is the VERTICUS (350 bar)? The VERTICUS (350 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy. Which conditions is the",
+      "page": null,
+      "section": [],
+      "score": 0.6330152372708786,
+      "route": "v1"
+    },
+    {
+      "file_id": "a1c2e59d-cf7f-4006-825b-3ed386e01900",
+      "filename": "0040-2022_02_B-DETECTION_Test_and_Calibration_Gases_EN_N43312_sc-f76a9145b9_68634f287b5b4b1c98870d5076b68f64.md",
+      "content": "2022_02_B-DETECTION_Test_and_Calibration_Gases_EN_N43312_sc\n\nOriginal source: bauer_index\\raw_docs\\2022_02_B-DETECTION_Test_and_Calibration_Gases_EN_N43312_sc.pdf\n\nOriginal SHA-256: f76a9145b9330f5b333fa1651673552e9f28814550ecf08517c1ba758b5994cf\n\nPage 1\n\nB-DETECTION ACCESSORIES BAUER B-DETECTION TEST- AND CALIBRATION GASES NOW AS A SUITCASE COMPLETE WITH TESTING EQUIPMENT ‚Äļ High-quality case including pressure relief valve ‚Äļ Includes all test and calibration gases and pressure reducer ‚Äļ All test and calibration gases can be ¬≠ordered individually from our warehouse 1946 ‚Äď 2026 8 0\n\nPage 2\n\n\b BAUER KOMPRESSOREN OPTIMUM MAINTENANCE ‚Äď THE BASIS FOR HIGH-PRECISION MEASUREMENT 2 | B-DETECTION ACCESSORIES All our gas blends are tailored to the sensor technology of our systems. They have a BAUER-¬≠ guaranteed shelf life of two years from the manufacturing date.",
+      "page": null,
+      "section": [],
+      "score": 0.6328438739273634,
+      "route": "v1"
+    },
+    {
+      "file_id": "4782bf05-0d55-4e9e-8123-1623ddf99632",
+      "filename": "0023-2019-02_B-NEWS_DE_sc-6bb5417af9_6bc774401e9e4917b425ac010e96f2a1.md",
+      "content": "oder dritten Tauchgang be- reit. Der bekannte Fotograf und Umwelt- schützer Martin Aigner von Reef Project rückte mit dem Team von Reefvillage www.reefvillage.org und einem riesigen Pool an Unterwasserequipment an, um mitzusammeln und um die Aktion unter Wasser fotografisch zu dokumentieren. Ebenfalls mit von der Partie war Christi- VERTICUS – Die neueste Generation gasdichter Verdichter von BAUER 6 AUSGABE 2/2019 Dive4Life bietet jetzt B-NITROX 32 von BAUER Redundantes Kompressorsystem zur Produktions- sicherheit",
+      "page": null,
+      "section": [],
+      "score": 0.6322472533884939,
+      "route": "v1"
+    }
+  ],
+  "raw_response": [
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "b364cf427777cf1f9683c39ab32797dc",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0003-2015-08_Proteccion_para_mangueras_ES_N40403_sc-3955526829_1aecd270cddb4396aeb13138d0acd543.md",
+          "file_id": "c507e770-5529-4839-95e5-5ea1731ed2a5",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "2015-08_Proteccion_para_mangueras_ES_N40403_sc\n\nOriginal source: bauer_index\\raw_docs\\2015-08_Proteccion_para_mangueras_ES_N40403_sc.pdf\n\nOriginal SHA-256: 3955526829f4880c897736da71c1cc02a3eb4cade5f100005ee4192ae45f696b\n\nPage 1\n\nSERVICIO Protección contra golpes de mangueras de alta presión Montaje sencillo Posibilidad de montaje posterior sin problemas Apto para muchas conexiones PROTECCIÓN PARA MANGUERAS SISTEMA DE PROTECCIÓN PARA MANGUERAS DE ALTA PRESIÓN\n\nPage 2\n\nBAUER COMPRESSORES S.L. Pol. Ind. La Clota; C/ Josep Ros i Ros 45 08740 Sant Andreu De La Barca, España Tel. +49 (0) 89 78049-0 Fax +49 (0) 89 78049-167 info@bauer-kompressoren.com www.bauer-kompressoren.com PROTECCIÓN PARA MANGUERAS DE BAUER KOMPRESSOREN PROTÉJASE A USTED MISMO Y A SU INSTALACIÓN\n\nCon el desgaste, los daños o las fluctuaciones de presión, las mangueras de alta presión importantes para la seguridad pueden resul­ tar peligrosas.Nuestro sistema de retención le proporciona una protección adicional. Con él se evitan eficazmente golpes incontrola­ dos de las mangueras de alta presión en caso de derrumbe. BAUER KOMPRESSOREN recomienda el equipamiento posterior de sus instalaciones. FUNCIONAMIENTO:",
+        "type": "Document"
+      },
+      0.3394132054201826
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "3a7500ece3d74e425759aae24f905d2d",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0028-2020-01_B-NEWS_EN_sc-289d7cd54b_d1aa07af3a484fb597b99449fe1e9509.md",
+          "file_id": "6b68f255-9dbb-4fe7-9e82-cfa0eedb0ee2",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "design engineers. And no wonder; for almost three-quar- ters of a century, BAUER the man has been inseparable from BAUER the com- pany. Heinz Bauer’s life with BAUER be­ gan shortly after the Second World War in 1946, when the newly founded com- pany began operations. After leaving school, he went straight into the company. In 1956 he played a leading role in developing the legendary UTILUS, the original diving compressor. Spells working with other companies in Switzerland and Great Britain enabled him to build a wealth of knowledge and experience. In 1976 his father Hans han- ded the family company to him, and four years later he also took the helm of the ISSUE 1/2020 Philipp Bayat, Dr. Monika Bayat, Heinz Bauer (l. to r.). BAUER KOMPRESSOREN HEINZ BAUER CELEBRATES HIS 80th BIRTHDAY Flowers and a great birthday surprise: in the cafeteria, BAUER employees used high-pressure cylinders and screw compressor rotors to portray Heinz Bauer’s age!",
+        "type": "Document"
+      },
+      0.34694556314077485
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "4f664f5a4640b243db454c6f2ecb00be",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0004-2015-08_Securite_anti-coup_de_fouet_FR_N40402_sc-d35bbb4f5b_ef74b4ec13bf4152925efe41de3fe635.md",
+          "file_id": "9cf4de16-068c-47e9-a14d-33dea9161042",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "2015-08_Securite_anti-coup_de_fouet_FR_N40402_sc\n\nOriginal source: bauer_index\\raw_docs\\2015-08_Securite_anti-coup_de_fouet_FR_N40402_sc.pdf\n\nOriginal SHA-256: d35bbb4f5b47c9878ac8fe4f48743b06df371404e494d264d8c99370cac3e140\n\nPage 1\n\nSERVICE Protection anti-coup de fouet pour les flexibles Montage facile Montage en post-équipement sans problème Compatible avec de multiples modèles de raccordement SÉCURITÉ ANTI-COUP DE FOUET LE SYSTÈME DE SÉCURITÉ POUR FLEXIBLE\n\nPage 2\n\nBAUER COMPRESSEURS S.A.S. 60, Avenue Franklin D. Roosevelt 73100 Aix-les-Bains, France Tel. +49 (0) 89 78049-0 Fax +49 (0) 89 78049-167 info@bauer-kompressoren.com www.bauer-kompressoren.com LA SÉCURITÉ ANTI-COUP DE FOUET BAUER KOMPRESSOREN ASSURE VOTRE PROTECTION AINSI QUE CELLE DE VOS INSTALLATIONS\n\nL‘usure, l‘endommagement ou les fluctuations de pression peuvent rendre dangereux les flexibles haute sécurité. Notre système de retenue vous apporte une sécurité supplémentaire. Ils évitent efficacement l‘effet « coup de fouet » incontrôlé provoqué par l‘arrachement des flexibles. BAUER KOMPRESSOREN recommande un post-équipement de vos installations. PRINCIPE DE FONCTIONNEMENT:",
+        "type": "Document"
+      },
+      0.34802534139080554
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "a709517e77790065267138bb981552a4",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0006-2016-01_B-NEWS_EN_sc-3415a02a81_1b2d372a803d48059713b1906dceadce.md",
+          "file_id": "5c75ad2d-5eab-4bee-a128-372da9c34128",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "30th anniversary of BAUER France. Reliable, continuous plant operation is absolutely essential in challenging outdoor conditions.",
+        "type": "Document"
+      },
+      0.34974376262761464
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "c69a8b4675878742b16f66a612ccd774",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0005-2016-01_B-NEWS_DE_sc-20166a4d06_9727174e0fdc4ade817f7b4751f55873.md",
+          "file_id": "075da428-8faa-4327-bcd0-1367fda62bd1",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "der Jubiläumsfeier 30 Jahre BAUER Frankreich Im harten Outdoor-Einsatz ist der zuverlässige kontinuierliche Anlagenbetrieb ein absolutes Muß!",
+        "type": "Document"
+      },
+      0.3560116078846677
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "9eb265a2720fc587a6322536b8b9f449",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0232-0066_g25-series-ar_32bd6656a6-c0a2dacd0e_d5e08c892b4d4cafb2de13c6294350b9.md",
+          "file_id": "4e790807-b511-47a8-9658-6d479067a797",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "the stored operating data in the B-CLOUD is available for later analysis and system performance optimization. If the condition of your compressor system changes, B-CLOUD or B-APP will notify you immediately – by email or via push notification straight to your smartphone. B-LINK Wi-Fi and 4G routers enable the wireless communication of the B-CONTROL MICRO with the B-CLOUD. They establish a reliable Wi-Fi or mobile network connection, allowing secure remote access to the compressor system. Intermediate pressure gauge Analog pressure gauges are installed at appropriate points of the compressor system and allow for easy monitoring of operating pressures. They support diagnostics and simplify maintenance work on the system. Separate intake buffer and condensate vessel In this closed system, the gas released during automatic condensate drainage is captured within the containers and fed directly back into the compression process. The system can also operate without a customer-supplied gas balloon. Its design is based on the combined container concept but consists of two separate vessels. The delivery scope also includes a suction solenoid valve and a compensation line for returning the collected gas to the intake side of the compressor. Downloads Product Brochure Compressors for Industry EN (8.89 MB) BAUER Product overview EN (12.33 MB) Support Bauer dealers worldwide Get in touch with us Frequently Asked Questions Why is BAUER the right partner for industrial compressor solutions?",
+        "type": "Document"
+      },
+      0.3561567451860449
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "cc523f0bc6bfc18333d6bf2507ea2c9f",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0042-2023-01_B-NEWS_EN_sc-361222d525_63f6328d0cf24f8189f587c6a8670b02.md",
+          "file_id": "a8b2f676-6851-4947-98d8-99d897f0eae3",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "and technology buffs in the crowds. The youthful team at the stand, the majority of them still trainees themselves, were kept busy providing information about the variety of apprenticeships and trainee places on offer at the BAUER GROUP, from mechatronics technicians to degree courses combining work and study. Backed by the knowledge and positive experiences they had gained during their training, the BAUER team were well able to advise the young fair visitors in detail. And judging by the growing stack of “instant applications” collected through­ out the fair, they clearly did a great job of convincing prospective trainees.",
+        "type": "Document"
+      },
+      0.3644383332468061
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "bf39092a26f9194f515a72156db38b8b",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0366-0200_verticus_a360e59ee5-f25419e8cd_eb8ccec072c24ff0a9995fb197b4f6ed.md",
+          "file_id": "ae2d88f8-fab2-49ce-a869-4ca51ac2e300",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "source. Most comprehensive options and accessories portfolio: BAUER offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions. Most extensive breathing air treatment portfolio: From separators, purification systems and regeneration dryers to refrigeration dryers, BAUER covers all purity requirements for breathing air applications. Global market leadership and service expertise: In the high pressure segment, BAUER is the worldwide market standard across nearly all industries, with a 70 percent market share in breathing air supply, supported by a global service network. What is the VERTICUS (350 bar) used for? The VERTICUS (350 bar) is a stationary high-pressure breathing air compressor designed for continuous operation, ensuring a reliable supply of breathing air. It is ideal for applications with the highest demands on air quality, such as firefighting, maritime operations, and professional diving. What performance ranges does the VERTICUS (350 bar) cover? The VERTICUS (350 bar) is designed for final pressures of up to 350 bar and can deliver up to 680 liters per minute, making it ideal for continuous filling operations in stationary applications. How maintenance-friendly is the VERTICUS (350 bar)? The VERTICUS (350 bar) is engineered for low-maintenance operation. Its sturdy build and easily accessible components make maintenance quick and easy. Which conditions is the",
+        "type": "Document"
+      },
+      0.3669847627291214
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "5a9f36ad75214d3a3e6d9f6bf0624828",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0040-2022_02_B-DETECTION_Test_and_Calibration_Gases_EN_N43312_sc-f76a9145b9_68634f287b5b4b1c98870d5076b68f64.md",
+          "file_id": "a1c2e59d-cf7f-4006-825b-3ed386e01900",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "2022_02_B-DETECTION_Test_and_Calibration_Gases_EN_N43312_sc\n\nOriginal source: bauer_index\\raw_docs\\2022_02_B-DETECTION_Test_and_Calibration_Gases_EN_N43312_sc.pdf\n\nOriginal SHA-256: f76a9145b9330f5b333fa1651673552e9f28814550ecf08517c1ba758b5994cf\n\nPage 1\n\nB-DETECTION ACCESSORIES BAUER B-DETECTION TEST- AND CALIBRATION GASES NOW AS A SUITCASE COMPLETE WITH TESTING EQUIPMENT ‚Äļ High-quality case including pressure relief valve ‚Äļ Includes all test and calibration gases and pressure reducer ‚Äļ All test and calibration gases can be ¬≠ordered individually from our warehouse 1946 ‚Äď 2026 8 0\n\nPage 2\n\n\b BAUER KOMPRESSOREN OPTIMUM MAINTENANCE ‚Äď THE BASIS FOR HIGH-PRECISION MEASUREMENT 2 | B-DETECTION ACCESSORIES All our gas blends are tailored to the sensor technology of our systems. They have a BAUER-¬≠ guaranteed shelf life of two years from the manufacturing date.",
+        "type": "Document"
+      },
+      0.3671561260726366
+    ],
+    [
+      {
+        "id": null,
+        "metadata": {
+          "digest": "757c9a788ae0746cbb8179128bc7892f",
+          "source": "/app/uploads/agent_Z8A2LtQWLeP4KuUDbvqZL/0023-2019-02_B-NEWS_DE_sc-6bb5417af9_6bc774401e9e4917b425ac010e96f2a1.md",
+          "file_id": "4782bf05-0d55-4e9e-8123-1623ddf99632",
+          "user_id": "agent_Z8A2LtQWLeP4KuUDbvqZL"
+        },
+        "page_content": "oder dritten Tauchgang be- reit. Der bekannte Fotograf und Umwelt- schützer Martin Aigner von Reef Project rückte mit dem Team von Reefvillage www.reefvillage.org und einem riesigen Pool an Unterwasserequipment an, um mitzusammeln und um die Aktion unter Wasser fotografisch zu dokumentieren. Ebenfalls mit von der Partie war Christi- VERTICUS – Die neueste Generation gasdichter Verdichter von BAUER 6 AUSGABE 2/2019 Dive4Life bietet jetzt B-NITROX 32 von BAUER Redundantes Kompressorsystem zur Produktions- sicherheit",
+        "type": "Document"
+      },
+      0.36775274661150614
+    ]
+  ],
+  "completed_at": "2026-07-23T14:09:29.738574+00:00",
+  "case_id": "B06",
+  "split": "development",
+  "category": "exact_pressure",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

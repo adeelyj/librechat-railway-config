@@ -1,0 +1,985 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1226.53,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "MINI-VERTICUS and",
+        "VERTICUS AND",
+        "B-KOOL",
+        "B-CONTROL",
+        "B-CONTROL III",
+        "VERTICUS SERIES",
+        "VERTICUS breathing"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter",
+        "control"
+      ],
+      "standards": [
+        "ISO 8573"
+      ],
+      "content": "Document: bauer_amfile_5\nng for remotely monitoring\nthe compressor.\nThe MINI-VERTICUS and VERTICUS breathing air compressors are available in versions for 225 and/or 330/350 bar as well\nas in a version for up to 420 bar. The high modularity of the MINI-VERTICUS and VERTICUS series means that the units can\neasily be adapted to provide the best possible solution to your requirements and wishes.\nOPTIONAL FEATURES (SELECTION)\n› Integrated gas measurement system for compliance with DIN EN12021:20141\n› Remote control and monitoring with the B-CLOUD and B-APP\n› Oil level monitoring for safely switching off the compressor unit when the oil level is low\n› Particle filter conforming to ISO 8573 class 2\n› Super Silent noise insulation housing\n› Purification System P 81 (for VERTICUS) or P 61 (for MINI-VERTICUS) for extended filter cartridge life\n› B-SECURUS filter cartridge saturation monitoring system\n› 4 front-mounted filling devices, optionally for one or two pressure ranges (225/300 bar)\n› B-CONTROL III compressor control unit – e.g. for interconnected operation etc.\n› Intermediate separator after first stage – recommended in conditions of high humidity\n› Extended base frame to take up to 2 storage cylinders\n› B-KOOL refrigeration dryer for extending the filter service life\n› Nitrox version available2",
+      "page": 29,
+      "section": [
+        "bauer amfile 5",
+        "Page 29"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.37346608,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "breathing air",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nox. 26\nAERO-GUARD-L\n220–320\n50 × 46 × 72\napprox. 26\nAERO-GUARD-XL\n330–450\n50 × 46 × 72\napprox. 26\nAERO-GUARD-XXL\n460–700\n50 × 46 × 72\napprox. 26\nAERO-GUARD-OX-L\n260–320\n50 × 46 × 72\napprox. 26\nAERO-GUARD-OX-XL\n330–450\n50 × 46 × 72\napprox. 26\nAERO-GUARD DUO-1000\n650–1000\n85 × 63 × 87\napprox. 55\n1 Delivery quantity of the connected compressor measured with cylinder filling from 0–200 bar ±5 %.\n2 Order hose ND 100 separately; length as required, however not more than 20 m; order no. N25150\nA long filter life time or capacity is decisive for cost-effective operation of professional filling stations. The\ntemperature of the compressed medium has a significant influence on this.\nOur B-KOOL significantly extends the life time of filter cartridges many times over, it is equipped with a separator\nas well as automatic condensate drain and removes a large proportion of the humidity before it can get into the\nfilter system.\nB-KOOL III\nTECHNICAL DATA\n› Medium: Air, Helium* und Argon*\n› Operating temperature: +5 – +45 °C\n› Input temperature: max. +60 °C\n› Maximum operating pressure: 350/500 bar\n› Minimaler Betriebsdruck: 100 bar\n› Minimum operating pressure: 200 – 700 l/ min. (Breathing air)\n› Power consumption: max. 550 W bei 50 Hz\n› Cooling: R 290 (Propane)\n› Available with floor or wall bracket\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 23",
+      "page": 12,
+      "section": [
+        "High-pressure-accessories-catalogue EN",
+        "Page 12"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3242911,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+      "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+      "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-CONTROL SMART",
+        "B-CONTROL"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "valve",
+        "control"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nrs minimize wear. Dynamically balanced drive units ensure smooth operation and long maintenance intervals.\nPurification System P 41\nThe P 41\nPurification System\nwith additional oil and water separator as well as pressure-retaining non-return valve ensures reliable breathing air in accordance with DIN EN 12021:2014¹ when using original BAUER filter cartridges. A type-tested, sealed final pressure safety valve ensures high operational safety. The processable air volume is 1,550 m³.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\nB-CONTROL MICRO compressor control system\nThe B-CONTROL MICRO is a modern, user-friendly compressor control system with a color display that intelligently manages and reliably monitors all basic functions. Interaction between the user and the control system is intuitive and straightforward, with information displayed in clear text. Various languages are available. External signal transmitters can be connected at any time, and operation in a networked system or with an external display is also possible.\nKompressorsteuerung B-CONTROL SMART",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.31044563,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "PE-VE SERIES",
+        "B-KOOL",
+        "B-DETECTION PLUS",
+        "B-CONTROL MICRO",
+        "PE-VE PE-VE",
+        "PE-VE units"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "filter",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_7\nV, 50 Hz²\n5,5\n270\n104 x 75,5 x 132\n1 Measured by cylinder filling (10 l) from 0 - 200 bar, ± 5%\n2 Plug dimension: 16 A\nPE-MVE UP TO 420 BAR\nPE-MVE UP TO 330 BAR\n## Page 25\n\nPE-VE\nPE-VE SERIES – FOR UNIVERSAL USE WITH\nCHARGING RATES UP TO 850 L/MIN\nThe PE-VE Series offers impressive peak free air delivery rates of up to 850 l/min.\nProfessionally customised to meet individual needs and charging rate requirements in breathing air applica-\ntions, PE-VE units feature practical functions, BAUER’s hallmark quality and certified safety for reliable station-\nary operation\nThe compressors are available in versions for 225 bar and/or 330 bar and for 420 bar.\nThe modular design of the PE-VE Series enables the units to be ideally aligned to your needs.\nThe B-CONTROL MICRO demand-driven electronic control unit features clear functional menu-based operation\nfor safe, secure and convenient use and enables the compressor to be controlled fully automatically.\n› 300 - 850 l/min\n› 225/330/420 bar\n› 7.5 – 18.5 kW\nOPTIONAL FEATURES (SELECTED)\n› Super Silent soundproof housing\n› B-SECURUS filter cartridge saturation monitoring system\n› Filling device for 4 x 200 bar / 4 x 300 bar1\n› Remote access via B-CLOUD\n› B-KOOL refrigeration dryer1\n› Gas measurement system B-DETECTION PLUS\n› B-AEROGUARD CO2 reduction system\n› BAUER high pressure storage system\n› Automatic selector unit",
+      "page": 24,
+      "section": [
+        "bauer amfile 7",
+        "Page 24"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.31,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "793def90-ceca-4be0-803f-8fe1d0b578be",
+      "filename": "0296-0130_pe-mve1_ea5cf31cb6-8f2db7f09f.md",
+      "title": "PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "valve",
+        "control"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nmpressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nP 41 Purification System\nThe P 41\nPurification System\nwith additional oil and water separator as well as pressure-retaining non-return valve ensures reliable breathing air in accordance with DIN EN 12021:2014¹ when using original BAUER filter cartridges. A type-tested, sealed final pressure safety valve ensures high operational safety. The processable air volume is 1,550 m³.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\nCompressor control\nThe electrical control with monitoring electronics shuts down the compressor at final pressure, records operating hours and oil pressure, displays the current status, and features phase sequence monitoring.\nB-DRAIN automatic condensate drain\nThe B-DRAIN condensate drain automatically discharges the water-oil mixture from the intermediate and final separators. Solenoid valves control the discharge individually and reliably. The gentle, controlled condensate release reduces pressure losses, saves energy, and increases efficiency. Compared to conventional solutions, B-DRAIN operates significantly more quietly.\nFilling hose",
+      "page": null,
+      "section": [
+        "PE-MVE (420 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.30828113,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "793def90-ceca-4be0-803f-8fe1d0b578be",
+      "filename": "0296-0130_pe-mve1_ea5cf31cb6-8f2db7f09f.md",
+      "title": "PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\ne unit. The B-SECURUS filter monitoring system can only be used in conjunction with the P 41, P 61, or P 81\nPurification System\ns, as well as the external BAUER\nPurification System\ns.\nChangeover device PN 300/200 bar\nThe PN 300/200 bar changeover device allows filling of cylinders with different operating pressures.\nFully automatic compressor control\nThe compressor control is also available as a fully automatic version. In this design, the compressor not only shuts down at final pressure but also restarts automatically when the pressure drops below a defined minimum – ideal for storage operation.\nDownloads\nProduct Brochure POSEIDON EDITION EN\n(6.59 MB)\nProduct brochure PE-MVE EN\n(502.94 kB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nFrequently Asked Questions\nWhy is\nBAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions.",
+      "page": null,
+      "section": [
+        "PE-MVE (420 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.29551109,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+      "filename": "0123-bauer_amfile_7-4574340c96.md",
+      "title": "bauer_amfile_7",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_7\n3\n1,800\nThree-phase\n400 V, 50 Hz2\n7.5\n230\n110 x 69 x 99\nTECHNICAL DATA\nCourtesy of DIVEX Ltd.\n22 | STATIONARY COMPRESSORS | POSEIDON EDITION\nBAUER KOMPRESSOREN\n## Page 23\n\nPE-MVE\nSPACE-SAVING ALL-IN-ONE SOLUTION AT ATTRACTIVE PRICE FOR\nEXTRA-LOW-NOISE OPERATION\nThe PE-MVE is BAUER’s compact all-in-one solution, offering high quality at outstanding value for money. The\nunit is in vertical format and ideal for all applications requiring medium charging rates. Supplied as standard\nwith Super Silent housing, the unit provides for a variety of installation options even in noise-sensitive environ-\nments. The soundproof PE-MVE is ideally suited for applications that prioritise reliability and long operating life\ncombined with low operating costs.\nIt is also supplied with an automatic condensate drain system and the user-friendly BHW-CONTROL control unit\nas standard; the fully automatic BHW-CONTROL also supports storage cylinder filling.\n› 250 - 300 l/min\n› 225/330/420 bar\n› 5.5 - 7.5 kW\nOPTIONAL FEATURES\n› Large-scale P 41 Purification System for longer cartridge life\n› B-TIMER filter catridge lifetime monitoring system in\ncombination with P 31\n› B-SECURUS filter cartridge saturation monitoring system in\ncombination with P 41\n› Fully automatic compressor control\n› External air intake over roof\n› BAUER high pressure storage system\n› Automatic selector unit\nFEATURES",
+      "page": 22,
+      "section": [
+        "bauer amfile 7",
+        "Page 22"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.29450226,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+      "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+      "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-DETECTION PLUS"
+      ],
+      "media": [
+        "breathing air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "filter",
+        "sensor",
+        "control"
+      ],
+      "standards": [
+        "EN 12021:2014",
+        "DIN EN 12021:2014",
+        "DIN EN 12021"
+      ],
+      "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nwith proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\nIntegrated gas measurement system B-DETECTION PLUS i\nThe integrated B-DETECTION PLUS gas measurement system monitors breathing air and Nitrox in real time according to DIN EN 12021:2014. It measures CO, CO₂, O₂, humidity, and VOCs, and protects with automatic shutdown in case of limit exceedance. The CO ping test checks sensors before start. With B-CLOUD, digital documentation and remote access are possible. Optionally, contaminated air can be vented automatically outdoors.\nB-SECURUS filter monitoring\nThe B-SECURUS system monitors the saturation of the filter cartridge(s) by measuring the moisture level in the molecular sieve and provides a timely indication when a cartridge replacement is required – either on the display or via the control unit. Once saturation is reached, the system automatically shuts down the unit. The B-SECURUS filter monitoring system can only be used in conjunction with the P 41, P 61, or P 81\nPurification Systems\n, as well as the external BAUER\nPurification Systems\n.\nB-CLOUD & B-APP",
+      "page": null,
+      "section": [
+        "MINI-VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.29227554,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "be113977-712d-46a9-9154-6a39a8bfc4ba",
+      "filename": "0189-0023_b-master_4ad12ec30c-e15d7a4af1.md",
+      "title": "B-MASTER · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: B-MASTER · Filling and Safety | BAUER KOMPRESSOREN\ne ranges (with safety valve and pressure reducer)\nContact us\nRequest product\nSelected product:\nB-MASTER\nArt. Nr.: B-MASTER\nSKU\nB-MASTER\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nTechnical data\nB-MASTER\nNumber of filling valves\nNumber of pressure ranges\nSafety valve\nPressure reducer\nMINI filling panel\n1\n–\nMIDI filling panel\n2\n1\n–\nMAXI filling panel ¹\n1\n2\n✓\n¹ Suitable for direct connection of the filling panel to a storage system with a maximum storage pressure of 420 bar.\nIn combination with additional filling panels, the MAXI filling panel is ideally suited for setting up a filling line with an alternative filling pressure (e.g., additional MIDI filling panels with 300 and 200 bar).\nThe filling pressure in the pressure vessel is displayed via a pressure gauge in bar/psi.\nDetails & Features\nThe B-MASTER MINI, MIDI, and MAXI filling panels are purpose-built for the filling of compressed air cylinders used in paintball sports. They enable safe and efficient filling of bottles ranging from 0.8 to 1.9 liters at 200 or 300 bar. The system is designed for external mounting and can be expanded using T-pieces – ideal for multi-table setups.\nThe rugged filling coupling with integrated check valve fits all standard paintball nipples and prevents the hose from whipping if triggered without a connected marker. An integrated silencer reduces noise when venting the hose.",
+      "page": null,
+      "section": [
+        "B-MASTER · Filling and Safety / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.2913114,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "7ed481bf-af60-4a09-b02a-d1acbe138871",
+      "filename": "0367-0201_verticus1_5ee3a4cd85-1b3917e37f.md",
+      "title": "VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "VERTICUS 420",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nilter monitoring system can only be used in conjunction with the P 41, P 61, or P 81\nPurification System\ns, as well as the external BAUER\nPurification System\ns.\nMonitoring of intermediate pressures and intermediate stage temperatures\nThis monitoring system is ideal for continuous or fully automatic operation, as well as for systems without constant specialist supervision. If defined limit values are exceeded or undershot, an automatic shutdown is triggered. The current actual values are displayed in the B-CONTROL compressor control system.\nOil level monitoring\nWhen the minimum oil level mark is reached, a warning message appears in the control system. This option is particularly recommended for continuous operation and increases the operational safety of the compressor system by providing early information about critical fill levels.\nParticle filter\nAn integrated particle filter is optionally available in combination with the P 41, P 61, and P 81 purification systems, ensuring consistently high purity levels.\nConnection for external air inlet",
+      "page": null,
+      "section": [
+        "VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.27881419,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "MINI-VERTICUS and",
+          "VERTICUS AND",
+          "B-KOOL",
+          "B-CONTROL",
+          "B-CONTROL III",
+          "VERTICUS SERIES",
+          "VERTICUS breathing"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter",
+          "control"
+        ],
+        "standards": [
+          "ISO 8573"
+        ],
+        "content": "Document: bauer_amfile_5\nng for remotely monitoring\nthe compressor.\nThe MINI-VERTICUS and VERTICUS breathing air compressors are available in versions for 225 and/or 330/350 bar as well\nas in a version for up to 420 bar. The high modularity of the MINI-VERTICUS and VERTICUS series means that the units can\neasily be adapted to provide the best possible solution to your requirements and wishes.\nOPTIONAL FEATURES (SELECTION)\n› Integrated gas measurement system for compliance with DIN EN12021:20141\n› Remote control and monitoring with the B-CLOUD and B-APP\n› Oil level monitoring for safely switching off the compressor unit when the oil level is low\n› Particle filter conforming to ISO 8573 class 2\n› Super Silent noise insulation housing\n› Purification System P 81 (for VERTICUS) or P 61 (for MINI-VERTICUS) for extended filter cartridge life\n› B-SECURUS filter cartridge saturation monitoring system\n› 4 front-mounted filling devices, optionally for one or two pressure ranges (225/300 bar)\n› B-CONTROL III compressor control unit – e.g. for interconnected operation etc.\n› Intermediate separator after first stage – recommended in conditions of high humidity\n› Extended base frame to take up to 2 storage cylinders\n› B-KOOL refrigeration dryer for extending the filter service life\n› Nitrox version available2",
+        "page": 29,
+        "section": [
+          "bauer amfile 5",
+          "Page 29"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.37346608,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "breathing air",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nox. 26\nAERO-GUARD-L\n220–320\n50 × 46 × 72\napprox. 26\nAERO-GUARD-XL\n330–450\n50 × 46 × 72\napprox. 26\nAERO-GUARD-XXL\n460–700\n50 × 46 × 72\napprox. 26\nAERO-GUARD-OX-L\n260–320\n50 × 46 × 72\napprox. 26\nAERO-GUARD-OX-XL\n330–450\n50 × 46 × 72\napprox. 26\nAERO-GUARD DUO-1000\n650–1000\n85 × 63 × 87\napprox. 55\n1 Delivery quantity of the connected compressor measured with cylinder filling from 0–200 bar ±5 %.\n2 Order hose ND 100 separately; length as required, however not more than 20 m; order no. N25150\nA long filter life time or capacity is decisive for cost-effective operation of professional filling stations. The\ntemperature of the compressed medium has a significant influence on this.\nOur B-KOOL significantly extends the life time of filter cartridges many times over, it is equipped with a separator\nas well as automatic condensate drain and removes a large proportion of the humidity before it can get into the\nfilter system.\nB-KOOL III\nTECHNICAL DATA\n› Medium: Air, Helium* und Argon*\n› Operating temperature: +5 – +45 °C\n› Input temperature: max. +60 °C\n› Maximum operating pressure: 350/500 bar\n› Minimaler Betriebsdruck: 100 bar\n› Minimum operating pressure: 200 – 700 l/ min. (Breathing air)\n› Power consumption: max. 550 W bei 50 Hz\n› Cooling: R 290 (Propane)\n› Available with floor or wall bracket\nBAUER KOMPRESSOREN\nHIGH-PRESSURE ACCESSORIES CATALOGUE | 23",
+        "page": 12,
+        "section": [
+          "High-pressure-accessories-catalogue EN",
+          "Page 12"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3242911,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+        "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+        "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-CONTROL SMART",
+          "B-CONTROL"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "valve",
+          "control"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nrs minimize wear. Dynamically balanced drive units ensure smooth operation and long maintenance intervals.\nPurification System P 41\nThe P 41\nPurification System\nwith additional oil and water separator as well as pressure-retaining non-return valve ensures reliable breathing air in accordance with DIN EN 12021:2014¹ when using original BAUER filter cartridges. A type-tested, sealed final pressure safety valve ensures high operational safety. The processable air volume is 1,550 m³.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\nB-CONTROL MICRO compressor control system\nThe B-CONTROL MICRO is a modern, user-friendly compressor control system with a color display that intelligently manages and reliably monitors all basic functions. Interaction between the user and the control system is intuitive and straightforward, with information displayed in clear text. Various languages are available. External signal transmitters can be connected at any time, and operation in a networked system or with an external display is also possible.\nKompressorsteuerung B-CONTROL SMART",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.31044563,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "PE-VE SERIES",
+          "B-KOOL",
+          "B-DETECTION PLUS",
+          "B-CONTROL MICRO",
+          "PE-VE PE-VE",
+          "PE-VE units"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "filter",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_7\nV, 50 Hz²\n5,5\n270\n104 x 75,5 x 132\n1 Measured by cylinder filling (10 l) from 0 - 200 bar, ± 5%\n2 Plug dimension: 16 A\nPE-MVE UP TO 420 BAR\nPE-MVE UP TO 330 BAR\n## Page 25\n\nPE-VE\nPE-VE SERIES – FOR UNIVERSAL USE WITH\nCHARGING RATES UP TO 850 L/MIN\nThe PE-VE Series offers impressive peak free air delivery rates of up to 850 l/min.\nProfessionally customised to meet individual needs and charging rate requirements in breathing air applica-\ntions, PE-VE units feature practical functions, BAUER’s hallmark quality and certified safety for reliable station-\nary operation\nThe compressors are available in versions for 225 bar and/or 330 bar and for 420 bar.\nThe modular design of the PE-VE Series enables the units to be ideally aligned to your needs.\nThe B-CONTROL MICRO demand-driven electronic control unit features clear functional menu-based operation\nfor safe, secure and convenient use and enables the compressor to be controlled fully automatically.\n› 300 - 850 l/min\n› 225/330/420 bar\n› 7.5 – 18.5 kW\nOPTIONAL FEATURES (SELECTED)\n› Super Silent soundproof housing\n› B-SECURUS filter cartridge saturation monitoring system\n› Filling device for 4 x 200 bar / 4 x 300 bar1\n› Remote access via B-CLOUD\n› B-KOOL refrigeration dryer1\n› Gas measurement system B-DETECTION PLUS\n› B-AEROGUARD CO2 reduction system\n› BAUER high pressure storage system\n› Automatic selector unit",
+        "page": 24,
+        "section": [
+          "bauer amfile 7",
+          "Page 24"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.31,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "793def90-ceca-4be0-803f-8fe1d0b578be",
+        "filename": "0296-0130_pe-mve1_ea5cf31cb6-8f2db7f09f.md",
+        "title": "PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "valve",
+          "control"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\nmpressor system and enables the connection of an exhaust duct. Its effective sound insulation ensures quieter operation and can also be retrofitted if required.\nP 41 Purification System\nThe P 41\nPurification System\nwith additional oil and water separator as well as pressure-retaining non-return valve ensures reliable breathing air in accordance with DIN EN 12021:2014¹ when using original BAUER filter cartridges. A type-tested, sealed final pressure safety valve ensures high operational safety. The processable air volume is 1,550 m³.\n¹ Applies with proper maintenance, installation according to the operating manual, and when using the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\nCompressor control\nThe electrical control with monitoring electronics shuts down the compressor at final pressure, records operating hours and oil pressure, displays the current status, and features phase sequence monitoring.\nB-DRAIN automatic condensate drain\nThe B-DRAIN condensate drain automatically discharges the water-oil mixture from the intermediate and final separators. Solenoid valves control the discharge individually and reliably. The gentle, controlled condensate release reduces pressure losses, saves energy, and increases efficiency. Compared to conventional solutions, B-DRAIN operates significantly more quietly.\nFilling hose",
+        "page": null,
+        "section": [
+          "PE-MVE (420 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.30828113,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "793def90-ceca-4be0-803f-8fe1d0b578be",
+        "filename": "0296-0130_pe-mve1_ea5cf31cb6-8f2db7f09f.md",
+        "title": "PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: PE-MVE (420 bar) · POSEIDON EDITION | BAUER KOMPRESSOREN\ne unit. The B-SECURUS filter monitoring system can only be used in conjunction with the P 41, P 61, or P 81\nPurification System\ns, as well as the external BAUER\nPurification System\ns.\nChangeover device PN 300/200 bar\nThe PN 300/200 bar changeover device allows filling of cylinders with different operating pressures.\nFully automatic compressor control\nThe compressor control is also available as a fully automatic version. In this design, the compressor not only shuts down at final pressure but also restarts automatically when the pressure drops below a defined minimum – ideal for storage operation.\nDownloads\nProduct Brochure POSEIDON EDITION EN\n(6.59 MB)\nProduct brochure PE-MVE EN\n(502.94 kB)\nSupport\nBauer dealers worldwide\nGet in touch with us\nFrequently Asked Questions\nWhy is\nBAUER the right partner for industrial compressor solutions?\nEnd-to-end system expertise from a single source: BAUER covers the entire process chain, including compression, air and gas treatment, quality monitoring, and audit proof documentation from a single source.\nMost comprehensive options and accessories portfolio: BAUER offers the broadest range of options and accessories in the industry, precisely tailored to each application without the need for custom engineered solutions.",
+        "page": null,
+        "section": [
+          "PE-MVE (420 bar) · POSEIDON EDITION / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.29551109,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "5ccc3740-67dd-43e2-8eee-51b14e725da7",
+        "filename": "0123-bauer_amfile_7-4574340c96.md",
+        "title": "bauer_amfile_7",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_7\n3\n1,800\nThree-phase\n400 V, 50 Hz2\n7.5\n230\n110 x 69 x 99\nTECHNICAL DATA\nCourtesy of DIVEX Ltd.\n22 | STATIONARY COMPRESSORS | POSEIDON EDITION\nBAUER KOMPRESSOREN\n## Page 23\n\nPE-MVE\nSPACE-SAVING ALL-IN-ONE SOLUTION AT ATTRACTIVE PRICE FOR\nEXTRA-LOW-NOISE OPERATION\nThe PE-MVE is BAUER’s compact all-in-one solution, offering high quality at outstanding value for money. The\nunit is in vertical format and ideal for all applications requiring medium charging rates. Supplied as standard\nwith Super Silent housing, the unit provides for a variety of installation options even in noise-sensitive environ-\nments. The soundproof PE-MVE is ideally suited for applications that prioritise reliability and long operating life\ncombined with low operating costs.\nIt is also supplied with an automatic condensate drain system and the user-friendly BHW-CONTROL control unit\nas standard; the fully automatic BHW-CONTROL also supports storage cylinder filling.\n› 250 - 300 l/min\n› 225/330/420 bar\n› 5.5 - 7.5 kW\nOPTIONAL FEATURES\n› Large-scale P 41 Purification System for longer cartridge life\n› B-TIMER filter catridge lifetime monitoring system in\ncombination with P 31\n› B-SECURUS filter cartridge saturation monitoring system in\ncombination with P 41\n› Fully automatic compressor control\n› External air intake over roof\n› BAUER high pressure storage system\n› Automatic selector unit\nFEATURES",
+        "page": 22,
+        "section": [
+          "bauer amfile 7",
+          "Page 22"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.29450226,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "134d5918-b2cc-4e82-81d9-05fa3970db74",
+        "filename": "0279-0113_mini-verticus1_618d13970e-983e786e80.md",
+        "title": "MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-DETECTION PLUS"
+        ],
+        "media": [
+          "breathing air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "filter",
+          "sensor",
+          "control"
+        ],
+        "standards": [
+          "EN 12021:2014",
+          "DIN EN 12021:2014",
+          "DIN EN 12021"
+        ],
+        "content": "Document: MINI-VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nwith proper maintenance, installation according to the operating manual, and use of the BAUER B-AEROGUARD if the CO₂ concentration exceeds the standard limits.\nIntegrated gas measurement system B-DETECTION PLUS i\nThe integrated B-DETECTION PLUS gas measurement system monitors breathing air and Nitrox in real time according to DIN EN 12021:2014. It measures CO, CO₂, O₂, humidity, and VOCs, and protects with automatic shutdown in case of limit exceedance. The CO ping test checks sensors before start. With B-CLOUD, digital documentation and remote access are possible. Optionally, contaminated air can be vented automatically outdoors.\nB-SECURUS filter monitoring\nThe B-SECURUS system monitors the saturation of the filter cartridge(s) by measuring the moisture level in the molecular sieve and provides a timely indication when a cartridge replacement is required – either on the display or via the control unit. Once saturation is reached, the system automatically shuts down the unit. The B-SECURUS filter monitoring system can only be used in conjunction with the P 41, P 61, or P 81\nPurification Systems\n, as well as the external BAUER\nPurification Systems\n.\nB-CLOUD & B-APP",
+        "page": null,
+        "section": [
+          "MINI-VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.29227554,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "be113977-712d-46a9-9154-6a39a8bfc4ba",
+        "filename": "0189-0023_b-master_4ad12ec30c-e15d7a4af1.md",
+        "title": "B-MASTER · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: B-MASTER · Filling and Safety | BAUER KOMPRESSOREN\ne ranges (with safety valve and pressure reducer)\nContact us\nRequest product\nSelected product:\nB-MASTER\nArt. Nr.: B-MASTER\nSKU\nB-MASTER\nIn stock\nCHF 100.00\nQty.\nAdd to Basket\nTechnical data\nB-MASTER\nNumber of filling valves\nNumber of pressure ranges\nSafety valve\nPressure reducer\nMINI filling panel\n1\n–\nMIDI filling panel\n2\n1\n–\nMAXI filling panel ¹\n1\n2\n✓\n¹ Suitable for direct connection of the filling panel to a storage system with a maximum storage pressure of 420 bar.\nIn combination with additional filling panels, the MAXI filling panel is ideally suited for setting up a filling line with an alternative filling pressure (e.g., additional MIDI filling panels with 300 and 200 bar).\nThe filling pressure in the pressure vessel is displayed via a pressure gauge in bar/psi.\nDetails & Features\nThe B-MASTER MINI, MIDI, and MAXI filling panels are purpose-built for the filling of compressed air cylinders used in paintball sports. They enable safe and efficient filling of bottles ranging from 0.8 to 1.9 liters at 200 or 300 bar. The system is designed for external mounting and can be expanded using T-pieces – ideal for multi-table setups.\nThe rugged filling coupling with integrated check valve fits all standard paintball nipples and prevents the hose from whipping if triggered without a connected marker. An integrated silencer reduces noise when venting the hose.",
+        "page": null,
+        "section": [
+          "B-MASTER · Filling and Safety / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.2913114,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "7ed481bf-af60-4a09-b02a-d1acbe138871",
+        "filename": "0367-0201_verticus1_5ee3a4cd85-1b3917e37f.md",
+        "title": "VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "VERTICUS 420",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: VERTICUS (420 bar) · PREMIUM LINE | BAUER KOMPRESSOREN\nilter monitoring system can only be used in conjunction with the P 41, P 61, or P 81\nPurification System\ns, as well as the external BAUER\nPurification System\ns.\nMonitoring of intermediate pressures and intermediate stage temperatures\nThis monitoring system is ideal for continuous or fully automatic operation, as well as for systems without constant specialist supervision. If defined limit values are exceeded or undershot, an automatic shutdown is triggered. The current actual values are displayed in the B-CONTROL compressor control system.\nOil level monitoring\nWhen the minimum oil level mark is reached, a warning message appears in the control system. This option is particularly recommended for continuous operation and increases the operational safety of the compressor system by providing early information about critical fill levels.\nParticle filter\nAn integrated particle filter is optionally available in combination with the P 41, P 61, and P 81 purification systems, ensuring consistently high purity levels.\nConnection for external air inlet",
+        "page": null,
+        "section": [
+          "VERTICUS (420 bar) · PREMIUM LINE / BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.27881419,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "standards": [],
+        "number_units": [
+          "500 bar",
+          "420 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": false,
+        "document_lookup": false,
+        "pressure_extremum": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 1,
+      "elapsed_ms": 992.51
+    }
+  },
+  "completed_at": "2026-07-23T14:50:33.280439+00:00",
+  "case_id": "B08",
+  "split": "development",
+  "category": "product_discovery",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

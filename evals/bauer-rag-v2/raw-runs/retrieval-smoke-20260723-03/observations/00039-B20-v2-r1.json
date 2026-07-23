@@ -1,0 +1,1253 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1122.08,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+      "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+      "title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "nitrox"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [],
+      "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nDocument section: 2026-04_B-Nitrox_EN_N34460_sc / Page 7\nTable: 2026-04_B-Nitrox_EN_N34460_sc\nHeaders and units: OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR | NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure | breathing or compressed air for all applications, in strict compliance with international air quality standards | such as DIN EN12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex- | tensive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their | sophisticated technology, combined with our decades of experience, ensure high reliability in continuous | operation and extremely long service life. | NITROX COMPRESSORS | 330 BAR | VERTICUS-OX | 300 bar | MINI-VERTICUS-OX | 300 bar | MARINER 320-OX\nRow: 300 bar\nValues: 200 | 250 | 300 | 350 | 400 | 450 | 500",
+      "page": 7,
+      "section": [
+        "2026-04_B-Nitrox_EN_N34460_sc",
+        "Page 7"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "2026-04_B-Nitrox_EN_N34460_sc",
+      "row_label": "300 bar",
+      "headers": [
+        "OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR",
+        "NEEDS",
+        "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure",
+        "breathing or compressed air for all applications, in strict compliance with international air quality standards",
+        "such as DIN EN12021:2014 (Breathing Air Standard).",
+        "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+        "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex-",
+        "tensive expertise in the fields of development, production and application.",
+        "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+        "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+        "system, maximum operating pressure and required output for your needs from our extensive product range.",
+        "Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their",
+        "sophisticated technology, combined with our decades of experience, ensure high reliability in continuous",
+        "operation and extremely long service life.",
+        "NITROX COMPRESSORS | 330 BAR",
+        "VERTICUS-OX",
+        "300 bar",
+        "MINI-VERTICUS-OX",
+        "300 bar",
+        "MARINER 320-OX"
+      ],
+      "row_values": [
+        "200",
+        "250",
+        "300",
+        "350",
+        "400",
+        "450",
+        "500"
+      ],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.61587302,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT",
+        "B-CONTROL"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "sensor",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nermediate storage unit, and switches off automatically when the maximum\nfilling pressure is reached.\nThe automatic selector unit performs 3 important functions:\n› Pre-filling of the cylinders from the storage bottle battery by overflow until pressure equilibrium\n› Filling of the diving cylinders up to the filling pressure directly from the compressor\n› Refilling the storage bottle battery to the max. storage pressure\nThe automatic unit consists of a pressure retention and check valve with integrated pressure sensor that\nswitches off the compressor unit on or off in each case. When this automatic unit is used, a cascade filling\nconnection is superfluous. The two pressure gauges are used for checking the preliminary and back pressure.\nThe pressure sensor is used for controlling the compressors.\nAUTOMATIC SELECTOR UNIT WITH PRESSURE SWITCH OR PRESSURE SENSOR\nFOR B-CONTROL.\nTECHNICAL DATA\n› Operating pressure: 414/420 bar\n› Adjustment range: Pressure relief valve/pressure retention valve: 100–414/420 bar\n› Dimensions: W × H × D: ca. 366 × 288 × 241 mm\nCONNECTIONS:\n› Input: G3/8, connection for either ∅ 8 mm or ∅ 10 mm pipe\n› Output: ∅ 8 or ∅ 10 mm\nSCOPE OF DELIVERY\n› The unit is completely piped up and ready to connect\nB-SELECT\nFlow rate at:\nP = 50 bar",
+      "page": 41,
+      "section": [
+        "High-pressure-accessories-catalogue_EN",
+        "Page 41"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact",
+        "lexical"
+      ],
+      "score": 0.53003055,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+      "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+      "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 5145"
+      ],
+      "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: TECHNICAL DATA\nRow: 300 bar\nMedium: Helium\nConnection / standard: W21,8x1/14“\nDIN 477 nr.6: W30x2 15,9 / 20,1\nRH: ISO 5145 No.30\nOperating temperature: -20°C…+65°C\nDimension: 1900 x 1000 x 770 mm\nWeight: 790 kg\n1160 kg: Approval\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "page": 1,
+      "section": [
+        "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "Page 1"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "300 bar",
+      "headers": [
+        "Medium",
+        "Connection / standard",
+        "DIN 477 nr.6",
+        "RH",
+        "Operating temperature",
+        "Dimension",
+        "Weight",
+        "1160 kg"
+      ],
+      "row_values": [
+        "Helium",
+        "W21,8x1/14“",
+        "W30x2 15,9 / 20,1",
+        "ISO 5145 No.30",
+        "-20°C…+65°C",
+        "1900 x 1000 x 770 mm",
+        "790 kg",
+        "Approval"
+      ],
+      "units": [
+        "kg"
+      ],
+      "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.51326844,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "05b118c5-d7c8-49f6-b16c-fcc2fbb74d72",
+      "filename": "0169-0003_aerotest-simultan_6a4b02a2b8-fb5f057ec3.md",
+      "title": "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "compressed air"
+      ],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS\nDocument section: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS / Web page content\nTable: Technical data\nRow: 300 bar\nPressure gauge: 0 - 400 bar\nOutlet: 9 mm quick connector for measuring device\nOverpressure valve: Set to 10⁺² bar\nAdapter 1: Inlet\nInternal thread G5/8–200 bar: Outlet\nInternal thread G5/8–300 bar for pressure reducer: Adapter 2\nInlet: Internal thread G5/8-200 bar\nOutlet: Internal thread G5/8-300 bar for pressure reducer\nMeasuring device: Length × Width (mm):\n100 × 38: Height including Dräger tube holder (mm):\n230: Connection for compressed air supply\n9 mm plug-in nipple: Inlet pressure\nFactory-set on delivery:: 8,5 bar\nVolume flow: CO and CO₂ tubes:\n0,2 l/min: Impactor and H₂O tubes:\n4 l/min: AEROTEST ALPHA\nCarrying case: Length × Width × Height (mm)\n350 × 300 × 85: Color\nBlack: Weight with contents\nCa. 3 kg: Pressure reducer\nFootnotes: 0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+      "page": null,
+      "section": [
+        "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "300 bar",
+      "headers": [
+        "Pressure gauge",
+        "Outlet",
+        "Overpressure valve",
+        "Adapter 1",
+        "Internal thread G5/8–200 bar",
+        "Internal thread G5/8–300 bar for pressure reducer",
+        "Inlet",
+        "Outlet",
+        "Measuring device",
+        "100 × 38",
+        "230",
+        "9 mm plug-in nipple",
+        "Factory-set on delivery:",
+        "Volume flow",
+        "0,2 l/min",
+        "4 l/min",
+        "Carrying case",
+        "350 × 300 × 85",
+        "Black",
+        "Ca. 3 kg"
+      ],
+      "row_values": [
+        "0 - 400 bar",
+        "9 mm quick connector for measuring device",
+        "Set to 10⁺² bar",
+        "Inlet",
+        "Outlet",
+        "Adapter 2",
+        "Internal thread G5/8-200 bar",
+        "Internal thread G5/8-300 bar for pressure reducer",
+        "Length × Width (mm):",
+        "Height including Dräger tube holder (mm):",
+        "Connection for compressed air supply",
+        "Inlet pressure",
+        "8,5 bar",
+        "CO and CO₂ tubes:",
+        "Impactor and H₂O tubes:",
+        "AEROTEST ALPHA",
+        "Length × Width × Height (mm)",
+        "Color",
+        "Weight with contents",
+        "Pressure reducer"
+      ],
+      "units": [
+        "bar",
+        "l/min",
+        "kg"
+      ],
+      "footnotes": "0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.51300403,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+      "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+      "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [],
+      "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: Technical Data Sheet\nHeaders and units: High-pressure storage cylinder battery | Helium | Data Sheet Helium HP Storage 200_300 bar EN.docx | Page 1/1 | Stand: 10.02.2026 | High Pressure Storage Battery 200 / 300 bar | High pressure storage system for helium | Transportable in accordance with the TPED | Model | No. of | cylinders | Geometrical | total volume | Litre | Max. working | pressure 1 | bar | Version\nRow: N45579\nValues: 12 | 600 | 200\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "page": 1,
+      "section": [
+        "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "Page 1"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data Sheet",
+      "row_label": "N45579",
+      "headers": [
+        "High-pressure storage cylinder battery",
+        "Helium",
+        "Data Sheet Helium HP Storage 200_300 bar EN.docx",
+        "Page 1/1",
+        "Stand: 10.02.2026",
+        "High Pressure Storage Battery 200 / 300 bar",
+        "High pressure storage system for helium",
+        "Transportable in accordance with the TPED",
+        "Model",
+        "No. of",
+        "cylinders",
+        "Geometrical",
+        "total volume",
+        "Litre",
+        "Max. working",
+        "pressure 1",
+        "bar",
+        "Version"
+      ],
+      "row_values": [
+        "12",
+        "600",
+        "200"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.50969551,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+      "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+      "title": "High-pressure-accessories-catalogue_EN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: High-pressure-accessories-catalogue_EN\nDocument section: High-pressure-accessories-catalogue_EN / Page 41\nTable: TECHNICAL DATA\nRow: 2750 l/min\nP = 200 bar: 3500 l/min\nP = 300 bar: 3700 l/min\nBAUER KOMPRESSOREN: HIGH-PRESSURE ACCESSORIES CATALOGUE | 81\n80 | HIGH-PRESSURE ACCESSORIES CATALOGUE: BAUER KOMPRESSOREN\nFootnotes: 80 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+      "page": 41,
+      "section": [
+        "High-pressure-accessories-catalogue_EN",
+        "Page 41"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "2750 l/min",
+      "headers": [
+        "P = 200 bar",
+        "P = 300 bar",
+        "BAUER KOMPRESSOREN",
+        "80 | HIGH-PRESSURE ACCESSORIES CATALOGUE"
+      ],
+      "row_values": [
+        "3500 l/min",
+        "3700 l/min",
+        "HIGH-PRESSURE ACCESSORIES CATALOGUE | 81",
+        "BAUER KOMPRESSOREN"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": "80 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.47720588,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+      "filename": "0122-bauer_amfile_5-01e0b02709.md",
+      "title": "bauer_amfile_5",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [],
+      "component_categories": [],
+      "standards": [],
+      "content": "Document: bauer_amfile_5\nng automatic shutoff when final pressure is reached\n› Trolley\n› Telescopic intake tube (standard with OCEANUS-B) or intake manifold for attaching a suction hose\nOCEANUS seen from rear with 300 bar\nfilling hose",
+      "page": 21,
+      "section": [
+        "bauer_amfile_5",
+        "Page 21"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.388125,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+      "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+      "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SAFE"
+      ],
+      "media": [
+        "breathing air"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nOptions: Proportional valve\nFor sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.: Scope of delivery\nScope of delivery B-SAFE 300 with filling hoses: Safety cell with explosion-proof, automatically locking doors\nHolding device for 6 pressure cylinders (optionally up to 10): Available proportional valve (20-50 bar/min) or solenoid valve\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+      "page": null,
+      "section": [
+        "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical data",
+      "row_label": "maximal 10",
+      "headers": [
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Filling chamber dimensions",
+        "B-SAFE ECO",
+        "Atemluft",
+        "410 bar",
+        "225/330 bar",
+        "ca. 450 kg",
+        "6",
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+        "Safety cell",
+        "Safety doors",
+        "Filling control",
+        "Filling options",
+        "Options",
+        "For sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.",
+        "Scope of delivery B-SAFE 300 with filling hoses",
+        "Holding device for 6 pressure cylinders (optionally up to 10)"
+      ],
+      "row_values": [
+        "+5 – +45° C",
+        "175 cm × 60 cm × 135 cm",
+        "130 cm × 40 cm × 70 cm",
+        "Medium",
+        "Maximum operating pressure",
+        "Filling pressures (up to 2)",
+        "Weight",
+        "Number of filling stations",
+        "Operating temperature",
+        "Dimensions (L × W × H)",
+        "Details & Features",
+        "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+        "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+        "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+        "Proportional valve",
+        "Scope of delivery",
+        "Safety cell with explosion-proof, automatically locking doors",
+        "Available proportional valve (20-50 bar/min) or solenoid valve"
+      ],
+      "units": [
+        "bar",
+        "kg"
+      ],
+      "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+      "source_type": "public_document",
+      "channels": [
+        "lexical"
+      ],
+      "score": 0.34649802,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+      "filename": "0071-B-SELECT_en-f40d0389e3.md",
+      "title": "B-SELECT_en",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-SELECT"
+      ],
+      "media": [],
+      "component_categories": [
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: B-SELECT_en\nl with a repeat accuracy of ±5 bar, regardless\nof the storage or cylinder pressure. This variant is low-maintenance and ideal when precise control behaviour and\na reproducible fast filling process are paramount.\nNote: B-SELECT is only available for systems with a fully automatic operating mode!\nSubject to technical changes without prior notice.\nB-SELECT with pressure maintaining valve",
+      "page": 2,
+      "section": [
+        "B-SELECT_en",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.34225962,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "e755f3ad-7b90-438a-92cc-89e5712044bf",
+      "filename": "0081-bauer_amfile_13-e7e9162a14.md",
+      "title": "bauer_amfile_13",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-CONTROL MICRO",
+        "B-KOOL",
+        "B-DETECTION PLUS",
+        "B-SELECT",
+        "PE 850-VE",
+        "B-CONTROL SMART",
+        "PE 850"
+      ],
+      "media": [],
+      "component_categories": [
+        "compressor",
+        "dryer",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: bauer_amfile_13\ng with the B-APP\n› B-KOOL refrigeration dryer1\n› Gas measurement system B-DETECTION PLUS\n› B-AEROGUARD CO2 reduction system\n› BAUER high pressure storage system\n› Automatic selector unit B-SELECT\n› External BAUER filling panel B-FILL\nFEATURES\n› Optional Super Silent housing to minimise noise\n› Demand-driven electronic compressor control\nunit: B-CONTROL MICRO\n› Low-maintenance: no V-belt adjustment\nnecessary\nPE 850-VE with B-CONTROL MICRO control unit and optional\nSuper Silent housing\n1 Not available for PE 850-VE.\nB-CONTROL SMART\n2 | FEATURES AND HIGHLIGHTS | POSEIDON EDITION\nBAUER KOMPRESSOREN",
+      "page": 2,
+      "section": [
+        "bauer_amfile_13",
+        "Page 2"
+      ],
+      "chunk_kind": "prose",
+      "table_title": null,
+      "row_label": null,
+      "headers": [],
+      "row_values": [],
+      "units": [],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.34136775,
+      "metadata": {
+        "parser": "structure_aware_prose",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "8ba8ea1a-215c-41ac-80b4-118b68267852",
+        "filename": "0057-2026-04_B-Nitrox_EN_N34460_sc-02d2e82947.md",
+        "title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "nitrox"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [],
+        "content": "Document: 2026-04_B-Nitrox_EN_N34460_sc\nDocument section: 2026-04_B-Nitrox_EN_N34460_sc / Page 7\nTable: 2026-04_B-Nitrox_EN_N34460_sc\nHeaders and units: OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR | NEEDS | BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure | breathing or compressed air for all applications, in strict compliance with international air quality standards | such as DIN EN12021:2014 (Breathing Air Standard). | BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression, | using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex- | tensive expertise in the fields of development, production and application. | In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary | use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive | system, maximum operating pressure and required output for your needs from our extensive product range. | Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their | sophisticated technology, combined with our decades of experience, ensure high reliability in continuous | operation and extremely long service life. | NITROX COMPRESSORS | 330 BAR | VERTICUS-OX | 300 bar | MINI-VERTICUS-OX | 300 bar | MARINER 320-OX\nRow: 300 bar\nValues: 200 | 250 | 300 | 350 | 400 | 450 | 500",
+        "page": 7,
+        "section": [
+          "2026-04_B-Nitrox_EN_N34460_sc",
+          "Page 7"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "2026-04_B-Nitrox_EN_N34460_sc",
+        "row_label": "300 bar",
+        "headers": [
+          "OUTSTANDING COMPRESSOR SOLUTIONS TO MEET ALL YOUR",
+          "NEEDS",
+          "BAUER KOMPRESSOREN filling systems ensure optimum availability and safety in the reliable supply of pure",
+          "breathing or compressed air for all applications, in strict compliance with international air quality standards",
+          "such as DIN EN12021:2014 (Breathing Air Standard).",
+          "BAUER KOMPRESSOREN produces high-pressure compressors for air, breathing air and nitrox compression,",
+          "using state-of-the-art technology in outstanding quality. With decades of experience, we have gathered ex-",
+          "tensive expertise in the fields of development, production and application.",
+          "In the Sports & Safety sector, we develop and manufacture mobile compressors and compressors for stationary",
+          "use, optionally supplied with sound-insulating housing. Select the high-pressure compressor with the right drive",
+          "system, maximum operating pressure and required output for your needs from our extensive product range.",
+          "Our Nitrox compressors with type approval feature ultra-rugged design and especially high safety. Their",
+          "sophisticated technology, combined with our decades of experience, ensure high reliability in continuous",
+          "operation and extremely long service life.",
+          "NITROX COMPRESSORS | 330 BAR",
+          "VERTICUS-OX",
+          "300 bar",
+          "MINI-VERTICUS-OX",
+          "300 bar",
+          "MARINER 320-OX"
+        ],
+        "row_values": [
+          "200",
+          "250",
+          "300",
+          "350",
+          "400",
+          "450",
+          "500"
+        ],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.61587302,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT",
+          "B-CONTROL"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "sensor",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nermediate storage unit, and switches off automatically when the maximum\nfilling pressure is reached.\nThe automatic selector unit performs 3 important functions:\n› Pre-filling of the cylinders from the storage bottle battery by overflow until pressure equilibrium\n› Filling of the diving cylinders up to the filling pressure directly from the compressor\n› Refilling the storage bottle battery to the max. storage pressure\nThe automatic unit consists of a pressure retention and check valve with integrated pressure sensor that\nswitches off the compressor unit on or off in each case. When this automatic unit is used, a cascade filling\nconnection is superfluous. The two pressure gauges are used for checking the preliminary and back pressure.\nThe pressure sensor is used for controlling the compressors.\nAUTOMATIC SELECTOR UNIT WITH PRESSURE SWITCH OR PRESSURE SENSOR\nFOR B-CONTROL.\nTECHNICAL DATA\n› Operating pressure: 414/420 bar\n› Adjustment range: Pressure relief valve/pressure retention valve: 100–414/420 bar\n› Dimensions: W × H × D: ca. 366 × 288 × 241 mm\nCONNECTIONS:\n› Input: G3/8, connection for either ∅ 8 mm or ∅ 10 mm pipe\n› Output: ∅ 8 or ∅ 10 mm\nSCOPE OF DELIVERY\n› The unit is completely piped up and ready to connect\nB-SELECT\nFlow rate at:\nP = 50 bar",
+        "page": 41,
+        "section": [
+          "High-pressure-accessories-catalogue_EN",
+          "Page 41"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact",
+          "lexical"
+        ],
+        "score": 0.53003055,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+        "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+        "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 5145"
+        ],
+        "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: TECHNICAL DATA\nRow: 300 bar\nMedium: Helium\nConnection / standard: W21,8x1/14“\nDIN 477 nr.6: W30x2 15,9 / 20,1\nRH: ISO 5145 No.30\nOperating temperature: -20°C…+65°C\nDimension: 1900 x 1000 x 770 mm\nWeight: 790 kg\n1160 kg: Approval\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "page": 1,
+        "section": [
+          "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+          "Page 1"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "300 bar",
+        "headers": [
+          "Medium",
+          "Connection / standard",
+          "DIN 477 nr.6",
+          "RH",
+          "Operating temperature",
+          "Dimension",
+          "Weight",
+          "1160 kg"
+        ],
+        "row_values": [
+          "Helium",
+          "W21,8x1/14“",
+          "W30x2 15,9 / 20,1",
+          "ISO 5145 No.30",
+          "-20°C…+65°C",
+          "1900 x 1000 x 770 mm",
+          "790 kg",
+          "Approval"
+        ],
+        "units": [
+          "kg"
+        ],
+        "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.51326844,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "05b118c5-d7c8-49f6-b16c-fcc2fbb74d72",
+        "filename": "0169-0003_aerotest-simultan_6a4b02a2b8-fb5f057ec3.md",
+        "title": "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "compressed air"
+        ],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS\nDocument section: AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS / Web page content\nTable: Technical data\nRow: 300 bar\nPressure gauge: 0 - 400 bar\nOutlet: 9 mm quick connector for measuring device\nOverpressure valve: Set to 10⁺² bar\nAdapter 1: Inlet\nInternal thread G5/8–200 bar: Outlet\nInternal thread G5/8–300 bar for pressure reducer: Adapter 2\nInlet: Internal thread G5/8-200 bar\nOutlet: Internal thread G5/8-300 bar for pressure reducer\nMeasuring device: Length × Width (mm):\n100 × 38: Height including Dräger tube holder (mm):\n230: Connection for compressed air supply\n9 mm plug-in nipple: Inlet pressure\nFactory-set on delivery:: 8,5 bar\nVolume flow: CO and CO₂ tubes:\n0,2 l/min: Impactor and H₂O tubes:\n4 l/min: AEROTEST ALPHA\nCarrying case: Length × Width × Height (mm)\n350 × 300 × 85: Color\nBlack: Weight with contents\nCa. 3 kg: Pressure reducer\nFootnotes: 0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+        "page": null,
+        "section": [
+          "AEROTEST SIMULTAN · Air and Gas Measurement | BAUER KOMPRESS",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "300 bar",
+        "headers": [
+          "Pressure gauge",
+          "Outlet",
+          "Overpressure valve",
+          "Adapter 1",
+          "Internal thread G5/8–200 bar",
+          "Internal thread G5/8–300 bar for pressure reducer",
+          "Inlet",
+          "Outlet",
+          "Measuring device",
+          "100 × 38",
+          "230",
+          "9 mm plug-in nipple",
+          "Factory-set on delivery:",
+          "Volume flow",
+          "0,2 l/min",
+          "4 l/min",
+          "Carrying case",
+          "350 × 300 × 85",
+          "Black",
+          "Ca. 3 kg"
+        ],
+        "row_values": [
+          "0 - 400 bar",
+          "9 mm quick connector for measuring device",
+          "Set to 10⁺² bar",
+          "Inlet",
+          "Outlet",
+          "Adapter 2",
+          "Internal thread G5/8-200 bar",
+          "Internal thread G5/8-300 bar for pressure reducer",
+          "Length × Width (mm):",
+          "Height including Dräger tube holder (mm):",
+          "Connection for compressed air supply",
+          "Inlet pressure",
+          "8,5 bar",
+          "CO and CO₂ tubes:",
+          "Impactor and H₂O tubes:",
+          "AEROTEST ALPHA",
+          "Length × Width × Height (mm)",
+          "Color",
+          "Weight with contents",
+          "Pressure reducer"
+        ],
+        "units": [
+          "bar",
+          "l/min",
+          "kg"
+        ],
+        "footnotes": "0 - 400 bar\n9 mm quick connector for measuring device\n9 mm plug-in nipple\n4 l/min\n9 mm quick connector",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.51300403,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "ccbcada7-30ae-4bcb-a59b-5de46de0c53e",
+        "filename": "0144-Data_Sheet_Helium_HP_Storage_200_300_bar_EN-020e54fa5a.md",
+        "title": "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [],
+        "content": "Document: Data_Sheet_Helium_HP_Storage_200_300_bar_EN\nDocument section: Data_Sheet_Helium_HP_Storage_200_300_bar_EN / Page 1\nTable: Technical Data Sheet\nHeaders and units: High-pressure storage cylinder battery | Helium | Data Sheet Helium HP Storage 200_300 bar EN.docx | Page 1/1 | Stand: 10.02.2026 | High Pressure Storage Battery 200 / 300 bar | High pressure storage system for helium | Transportable in accordance with the TPED | Model | No. of | cylinders | Geometrical | total volume | Litre | Max. working | pressure 1 | bar | Version\nRow: N45579\nValues: 12 | 600 | 200\nFootnotes: 1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "page": 1,
+        "section": [
+          "Data_Sheet_Helium_HP_Storage_200_300_bar_EN",
+          "Page 1"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data Sheet",
+        "row_label": "N45579",
+        "headers": [
+          "High-pressure storage cylinder battery",
+          "Helium",
+          "Data Sheet Helium HP Storage 200_300 bar EN.docx",
+          "Page 1/1",
+          "Stand: 10.02.2026",
+          "High Pressure Storage Battery 200 / 300 bar",
+          "High pressure storage system for helium",
+          "Transportable in accordance with the TPED",
+          "Model",
+          "No. of",
+          "cylinders",
+          "Geometrical",
+          "total volume",
+          "Litre",
+          "Max. working",
+          "pressure 1",
+          "bar",
+          "Version"
+        ],
+        "row_values": [
+          "12",
+          "600",
+          "200"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "1 The pressure given is valid for the safety valve setting (eg. at the compressor).",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.50969551,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
+        "title": "High-pressure-accessories-catalogue_EN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: High-pressure-accessories-catalogue_EN\nDocument section: High-pressure-accessories-catalogue_EN / Page 41\nTable: TECHNICAL DATA\nRow: 2750 l/min\nP = 200 bar: 3500 l/min\nP = 300 bar: 3700 l/min\nBAUER KOMPRESSOREN: HIGH-PRESSURE ACCESSORIES CATALOGUE | 81\n80 | HIGH-PRESSURE ACCESSORIES CATALOGUE: BAUER KOMPRESSOREN\nFootnotes: 80 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+        "page": 41,
+        "section": [
+          "High-pressure-accessories-catalogue_EN",
+          "Page 41"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "2750 l/min",
+        "headers": [
+          "P = 200 bar",
+          "P = 300 bar",
+          "BAUER KOMPRESSOREN",
+          "80 | HIGH-PRESSURE ACCESSORIES CATALOGUE"
+        ],
+        "row_values": [
+          "3500 l/min",
+          "3700 l/min",
+          "HIGH-PRESSURE ACCESSORIES CATALOGUE | 81",
+          "BAUER KOMPRESSOREN"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": "80 | HIGH-PRESSURE ACCESSORIES CATALOGUE",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.47720588,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "dd9fa54d-fc6a-425e-947d-b5d4d4642068",
+        "filename": "0122-bauer_amfile_5-01e0b02709.md",
+        "title": "bauer_amfile_5",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [],
+        "component_categories": [],
+        "standards": [],
+        "content": "Document: bauer_amfile_5\nng automatic shutoff when final pressure is reached\n› Trolley\n› Telescopic intake tube (standard with OCEANUS-B) or intake manifold for attaching a suction hose\nOCEANUS seen from rear with 300 bar\nfilling hose",
+        "page": 21,
+        "section": [
+          "bauer_amfile_5",
+          "Page 21"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.388125,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "filename": "0196-0030_b-safe_ae238602bf-9028a63e42.md",
+        "title": "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SAFE"
+        ],
+        "media": [
+          "breathing air"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN\nDocument section: B-SAFE · Filling and Safety | BAUER KOMPRESSOREN / Web page content\nTable: Technical data\nRow: maximal 10\nOperating temperature: +5 – +45° C\nDimensions (L × W × H): 175 cm × 60 cm × 135 cm\nFilling chamber dimensions: 130 cm × 40 cm × 70 cm\nB-SAFE ECO: Medium\nAtemluft: Maximum operating pressure\n410 bar: Filling pressures (up to 2)\n225/330 bar: Weight\nca. 450 kg: Number of filling stations\n6: Operating temperature\n+5 – +45° C: Dimensions (L × W × H)\n175 cm × 60 cm × 135 cm: Details & Features\nThe B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.: The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.\nSafety cell: The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.\nSafety doors: The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.\nFilling control: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nFilling options: The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.\nOptions: Proportional valve\nFor sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.: Scope of delivery\nScope of delivery B-SAFE 300 with filling hoses: Safety cell with explosion-proof, automatically locking doors\nHolding device for 6 pressure cylinders (optionally up to 10): Available proportional valve (20-50 bar/min) or solenoid valve\nFootnotes: 6 to 10 filling connections available\n20 – 50 bar/min",
+        "page": null,
+        "section": [
+          "B-SAFE · Filling and Safety | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical data",
+        "row_label": "maximal 10",
+        "headers": [
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Filling chamber dimensions",
+          "B-SAFE ECO",
+          "Atemluft",
+          "410 bar",
+          "225/330 bar",
+          "ca. 450 kg",
+          "6",
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "The B-SAFE 300 is a fully enclosed high-pressure filling chamber designed for the simultaneous filling of up to ten breathing air cylinders at pressures of up to 410 bar. Its rugged design and lateral pressure relief ensure maximum safety – without requiring additional protective measures in the room. Operation is via a touchscreen control panel, optionally with a proportional valve for standards-compliant filling of lightweight cylinders.",
+          "Safety cell",
+          "Safety doors",
+          "Filling control",
+          "Filling options",
+          "Options",
+          "For sensitive composite cylinders, the B-SAFE 300 can be equipped with an electronically controlled proportional valve. It allows a defined, medium filling speed between 20 and 50 bar/min, thus preventing pressure surges and time-consuming repressurizing.",
+          "Scope of delivery B-SAFE 300 with filling hoses",
+          "Holding device for 6 pressure cylinders (optionally up to 10)"
+        ],
+        "row_values": [
+          "+5 – +45° C",
+          "175 cm × 60 cm × 135 cm",
+          "130 cm × 40 cm × 70 cm",
+          "Medium",
+          "Maximum operating pressure",
+          "Filling pressures (up to 2)",
+          "Weight",
+          "Number of filling stations",
+          "Operating temperature",
+          "Dimensions (L × W × H)",
+          "Details & Features",
+          "The B-SAFE ECO is a compact safety chamber designed for direct compressor connection, offering maximum safety with minimal space requirements. Equipped with a mechanical door lock, modern venting technology, and internal pressure relief, it is ideal for container-based and stationary installations. It accommodates up to six breathing air cylinders.",
+          "The B-SAFE features an extremely robust steel safety cell that reliably protects against the consequences of bursting cylinders or rupturing filling hoses. Controlled air release to the housing side reduces the risk for operators. Both versions are portable and suitable for mobile use in vehicles. Forklift recesses on all housing sides enable easy handling.",
+          "The explosion-proof doors of the B-SAFE reliably secure the filling area. On the B-SAFE 300, the lock engages automatically during filling to prevent incorrect operation. The B-SAFE ECO is equipped with a mechanical safety lock that also prevents opening during operation.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "The B-SAFE 300 is equipped with a user-friendly touchscreen control with plain text display of all operating parameters. The B-SAFE ECO is manually operated and equipped with three pressure gauges for pressure control. Both versions provide safe and efficient control of the filling process.",
+          "Proportional valve",
+          "Scope of delivery",
+          "Safety cell with explosion-proof, automatically locking doors",
+          "Available proportional valve (20-50 bar/min) or solenoid valve"
+        ],
+        "units": [
+          "bar",
+          "kg"
+        ],
+        "footnotes": "6 to 10 filling connections available\n20 – 50 bar/min",
+        "source_type": "public_document",
+        "channels": [
+          "lexical"
+        ],
+        "score": 0.34649802,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "424554c7-5eb8-40cd-8ad5-6a899586069b",
+        "filename": "0071-B-SELECT_en-f40d0389e3.md",
+        "title": "B-SELECT_en",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-SELECT"
+        ],
+        "media": [],
+        "component_categories": [
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: B-SELECT_en\nl with a repeat accuracy of ±5 bar, regardless\nof the storage or cylinder pressure. This variant is low-maintenance and ideal when precise control behaviour and\na reproducible fast filling process are paramount.\nNote: B-SELECT is only available for systems with a fully automatic operating mode!\nSubject to technical changes without prior notice.\nB-SELECT with pressure maintaining valve",
+        "page": 2,
+        "section": [
+          "B-SELECT_en",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.34225962,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "e755f3ad-7b90-438a-92cc-89e5712044bf",
+        "filename": "0081-bauer_amfile_13-e7e9162a14.md",
+        "title": "bauer_amfile_13",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-CONTROL MICRO",
+          "B-KOOL",
+          "B-DETECTION PLUS",
+          "B-SELECT",
+          "PE 850-VE",
+          "B-CONTROL SMART",
+          "PE 850"
+        ],
+        "media": [],
+        "component_categories": [
+          "compressor",
+          "dryer",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: bauer_amfile_13\ng with the B-APP\n› B-KOOL refrigeration dryer1\n› Gas measurement system B-DETECTION PLUS\n› B-AEROGUARD CO2 reduction system\n› BAUER high pressure storage system\n› Automatic selector unit B-SELECT\n› External BAUER filling panel B-FILL\nFEATURES\n› Optional Super Silent housing to minimise noise\n› Demand-driven electronic compressor control\nunit: B-CONTROL MICRO\n› Low-maintenance: no V-belt adjustment\nnecessary\nPE 850-VE with B-CONTROL MICRO control unit and optional\nSuper Silent housing\n1 Not available for PE 850-VE.\nB-CONTROL SMART\n2 | FEATURES AND HIGHLIGHTS | POSEIDON EDITION\nBAUER KOMPRESSOREN",
+        "page": 2,
+        "section": [
+          "bauer_amfile_13",
+          "Page 2"
+        ],
+        "chunk_kind": "prose",
+        "table_title": null,
+        "row_label": null,
+        "headers": [],
+        "row_values": [],
+        "units": [],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.34136775,
+        "metadata": {
+          "parser": "structure_aware_prose",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [
+          "b select"
+        ],
+        "standards": [],
+        "number_units": [
+          "300 bar"
+        ],
+        "quoted_phrases": [],
+        "table_intent": true,
+        "document_lookup": false
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 30,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 3,
+      "elapsed_ms": 825.01
+    }
+  },
+  "completed_at": "2026-07-23T14:29:41.862682+00:00",
+  "case_id": "B20",
+  "split": "development",
+  "category": "exact_product_limit",
+  "repetition": 1,
+  "sequence_in_pair": 1,
+  "pair_order": [
+    "v2",
+    "v1"
+  ]
+}

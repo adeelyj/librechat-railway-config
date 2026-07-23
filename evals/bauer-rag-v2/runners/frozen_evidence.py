@@ -10,6 +10,7 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (  # noqa: E402
     EVAL_ROOT,
+    case_prompt,
     create_run_directory,
     extract_text,
     load_json,
@@ -109,7 +110,7 @@ def main() -> None:
     )
     write_run_metadata(run_dir, run)
     for case_id, retrieval in latest_v2.items():
-        prompt = evidence_prompt(cases[case_id]["prompt_en"], retrieval["results"])
+        prompt = evidence_prompt(case_prompt(cases[case_id]), retrieval["results"])
         for repetition in range(1, args.repetitions + 1):
             item: dict[str, Any] = {
                 "case_id": case_id,

@@ -1,0 +1,1619 @@
+{
+  "system": "v2",
+  "path": "/query_v2",
+  "http_status": 200,
+  "elapsed_ms": 1081.86,
+  "unauthorized_result_count": 0,
+  "results": [
+    {
+      "citation_id": "V2-1",
+      "file_id": "f01eb444-1340-4df3-b917-0de93574875e",
+      "filename": "0188-0022_b-kool1_0358ce6a4f-f9f75b95db.md",
+      "title": "B-KOOL · Air and gas purification | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "compressed air",
+        "nitrogen",
+        "nitrox",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: B-KOOL III\nMedium: Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon\nDimension (L × W × H): 792 × 550 × 390 mm\nWeight approx.: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+      "page": null,
+      "section": [
+        "B-KOOL · Air and gas purification | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "B-KOOL III",
+      "headers": [
+        "Medium",
+        "Dimension (L × W × H)",
+        "Weight approx.",
+        "Ambient temperature",
+        "Cryogen",
+        "High pressure air inlet temperature",
+        "Maximum operating pressure",
+        "Minimum operating pressure",
+        "Maximum flow rate",
+        "Power supply",
+        "Power consumption"
+      ],
+      "row_values": [
+        "Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon",
+        "792 × 550 × 390 mm",
+        "58 kg",
+        "+5 °C to +45 °C",
+        "R 290 (Propan)",
+        "max. 60 °C",
+        "350 bar / 550 bar",
+        "100 bar",
+        "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+        "200 – 240 VAC, 50 Hz / 60 Hz",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz"
+      ],
+      "units": [
+        "kg",
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.40119048,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-2",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrogen",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve",
+        "sensor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 33\nTable: TECHNICAL DATA\nHeaders and units: GB 23.0-30 | atm. | BK 26 SERIES, MODEL GB, 120 - 330 bar | GB 26.1-75 | atm.\nRow: 1.2 (abs)\nValues: 330 | 4780 | 5 | 1485 | 75 | 3100 | 6850\nFootnotes: 1 Volume flow rate according to ISO 1217; valid for air and nitrogen.\n2 Shut-down pressure (sensor setting)\n3 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.\n25 - 110 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability for argon and other gases on request.\n90 - 330 BAR",
+      "page": 33,
+      "section": [
+        "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "Page 33"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "1.2 (abs)",
+      "headers": [
+        "GB 23.0-30",
+        "atm.",
+        "BK 26 SERIES, MODEL GB, 120 - 330 bar",
+        "GB 26.1-75",
+        "atm."
+      ],
+      "row_values": [
+        "330",
+        "4780",
+        "5",
+        "1485",
+        "75",
+        "3100",
+        "6850"
+      ],
+      "units": [],
+      "footnotes": "1 Volume flow rate according to ISO 1217; valid for air and nitrogen.\n2 Shut-down pressure (sensor setting)\n3 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.\n25 - 110 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability for argon and other gases on request.\n90 - 330 BAR",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.37684332,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-3",
+      "file_id": "f01eb444-1340-4df3-b917-0de93574875e",
+      "filename": "0188-0022_b-kool1_0358ce6a4f-f9f75b95db.md",
+      "title": "B-KOOL · Air and gas purification | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "helium",
+        "argon"
+      ],
+      "component_categories": [],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+      "page": null,
+      "section": [
+        "B-KOOL · Air and gas purification | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "58 kg",
+      "headers": [
+        "Ambient temperature",
+        "Cryogen",
+        "High pressure air inlet temperature",
+        "Maximum operating pressure",
+        "Minimum operating pressure",
+        "Maximum flow rate",
+        "Power supply",
+        "Power consumption"
+      ],
+      "row_values": [
+        "+5 °C to +45 °C",
+        "R 290 (Propan)",
+        "max. 60 °C",
+        "350 bar / 550 bar",
+        "100 bar",
+        "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+        "200 – 240 VAC, 50 Hz / 60 Hz",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.37563966,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-4",
+      "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+      "filename": "0187-0021_b-kool_c5e62182b0-d01c99958a.md",
+      "title": "B-KOOL · Air purification | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "compressed air",
+        "nitrogen",
+        "nitrox",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: B-KOOL · Air purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: B-KOOL III\nMedium: Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon\nDimension (L × W × H): 792 × 550 × 390 mm\nWeight approx.: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+      "page": null,
+      "section": [
+        "B-KOOL · Air purification | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "B-KOOL III",
+      "headers": [
+        "Medium",
+        "Dimension (L × W × H)",
+        "Weight approx.",
+        "Ambient temperature",
+        "Cryogen",
+        "High pressure air inlet temperature",
+        "Maximum operating pressure",
+        "Minimum operating pressure",
+        "Maximum flow rate",
+        "Power supply",
+        "Power consumption"
+      ],
+      "row_values": [
+        "Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon",
+        "792 × 550 × 390 mm",
+        "58 kg",
+        "+5 °C to +45 °C",
+        "R 290 (Propan)",
+        "max. 60 °C",
+        "350 bar / 550 bar",
+        "100 bar",
+        "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+        "200 – 240 VAC, 50 Hz / 60 Hz",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz"
+      ],
+      "units": [
+        "kg",
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.37520704,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-5",
+      "file_id": "70a56262-2415-44fa-8b3e-45831dda1dfb",
+      "filename": "0223-0057_fcc6_2b3480eeeb-07dcf15595.md",
+      "title": "FCC 6 Gas Controller · Air and Gas Distribution | BAUER KOMP",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [],
+      "media": [
+        "nitrogen",
+        "helium"
+      ],
+      "component_categories": [
+        "compressor",
+        "filter",
+        "valve",
+        "control"
+      ],
+      "standards": [],
+      "content": "Document: FCC 6 Gas Controller · Air and Gas Distribution | BAUER KOMP\nDocument section: FCC 6 Gas Controller · Air and Gas Distribution | BAUER KOMP / Web page content\nTable: Technical Data\nRow: FCC 6\n5 - 400: 1, 2, 4, 6 or 8\n77 - 110: 49 x 52 x 140\nEuromap 62, OPC-UA: Details & feature\nThe sixth generation of BAUER controllers offers exceptionally user-friendly and intuitive operation. This control panel ensures stable and consistent processing conditions. The precisely regulated nitrogen pressure profile injected into the melt guarantees a repeatable hollow section within the plastic part.: Smart Interface\n& Advanced Control: The FCC 6 features a high-performance PLC enabling fully digital closed-loop regulation. Its 10.4\" touchscreen provides an intuitive and secure user experience:\nPassword protection with 3 user levels: 7-step pressure and time sequencing with ramp control\nAutomatic cleaning cycle with clogged-injector detection: Leak detection\nInerting step before plastic injection (OXIPURGE): Self-calibration based on valve response time\nSeamless Industry 4.0 integration via OPC-UA: High-Precision\nProportional Valve: 25 µm integrated inlet and outlet filters\nQuick-connect fittings: Inlet purge valve and pressure gauge\nAccuracy ± 1.25 %: Operation range from 5 to 400 bar\nEasy-to-replace maintenance kit: System concept G60V\nThe plug-and-play solution combines all the components necessary for helium recovery in a compact housing. All controls are ergonomically arranged and accessible from the front.: The compressors are cooled directly with ambient air, allowing the heat generated to be dissipated easily and efficiently. The compressor system is designed for intermittent operation and is therefore suitable for small volumes of helium in clinics, laboratories, and other medical facilities.\nOptions: Sequential piloting\nAdds an additional connector on the rear of the FCC 6 for controlling up to four distributors on the hydraulic pump. This enables direct actuation of tool components - such as opening or closing overflow cavities - directly from the controller.: Integrated Volume\nEach valve is supplied by its own independent nitrogen storage volume. The system calculates pressure variations to provide precise gas-consumption monitoring per part—ideal for process optimization.: 2 IMM (Dual Injection Moulding Machine Communication)\nAdds a second communication interface (dual Euromap 62) to allow simultaneous communication with two injection moulding machines. The valves are symmetrically assigned to IMM1 and IMM2, reducing system investment when both machines are located close to each other.: Integrated Volume\nEach valve is supplied by its own independent nitrogen storage volume. The system calculates pressure variations to provide precise gas-consumption monitoring per part—ideal for process optimization.: Downloads\nProduct Brochure Gas Injection Technology EN: (4.45 MB)\nFootnotes: 1 to 8 valves\n5 to 400 bar\n3 available options\n5 - 400\n77 - 110\n49 x 52 x 140\n25 µm integrated inlet and outlet filters\n2 IMM (Dual Injection Moulding Machine Communication)",
+      "page": null,
+      "section": [
+        "FCC 6 Gas Controller · Air and Gas Distribution | BAUER KOMP",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "FCC 6",
+      "headers": [
+        "5 - 400",
+        "77 - 110",
+        "Euromap 62, OPC-UA",
+        "The sixth generation of BAUER controllers offers exceptionally user-friendly and intuitive operation. This control panel ensures stable and consistent processing conditions. The precisely regulated nitrogen pressure profile injected into the melt guarantees a repeatable hollow section within the plastic part.",
+        "& Advanced Control",
+        "Password protection with 3 user levels",
+        "Automatic cleaning cycle with clogged-injector detection",
+        "Inerting step before plastic injection (OXIPURGE)",
+        "Seamless Industry 4.0 integration via OPC-UA",
+        "Proportional Valve",
+        "Quick-connect fittings",
+        "Accuracy ± 1.25 %",
+        "Easy-to-replace maintenance kit",
+        "The plug-and-play solution combines all the components necessary for helium recovery in a compact housing. All controls are ergonomically arranged and accessible from the front.",
+        "Options",
+        "Adds an additional connector on the rear of the FCC 6 for controlling up to four distributors on the hydraulic pump. This enables direct actuation of tool components - such as opening or closing overflow cavities - directly from the controller.",
+        "Each valve is supplied by its own independent nitrogen storage volume. The system calculates pressure variations to provide precise gas-consumption monitoring per part—ideal for process optimization.",
+        "Adds a second communication interface (dual Euromap 62) to allow simultaneous communication with two injection moulding machines. The valves are symmetrically assigned to IMM1 and IMM2, reducing system investment when both machines are located close to each other.",
+        "Each valve is supplied by its own independent nitrogen storage volume. The system calculates pressure variations to provide precise gas-consumption monitoring per part—ideal for process optimization.",
+        "Product Brochure Gas Injection Technology EN"
+      ],
+      "row_values": [
+        "1, 2, 4, 6 or 8",
+        "49 x 52 x 140",
+        "Details & feature",
+        "Smart Interface",
+        "The FCC 6 features a high-performance PLC enabling fully digital closed-loop regulation. Its 10.4\" touchscreen provides an intuitive and secure user experience:",
+        "7-step pressure and time sequencing with ramp control",
+        "Leak detection",
+        "Self-calibration based on valve response time",
+        "High-Precision",
+        "25 µm integrated inlet and outlet filters",
+        "Inlet purge valve and pressure gauge",
+        "Operation range from 5 to 400 bar",
+        "System concept G60V",
+        "The compressors are cooled directly with ambient air, allowing the heat generated to be dissipated easily and efficiently. The compressor system is designed for intermittent operation and is therefore suitable for small volumes of helium in clinics, laboratories, and other medical facilities.",
+        "Sequential piloting",
+        "Integrated Volume",
+        "2 IMM (Dual Injection Moulding Machine Communication)",
+        "Integrated Volume",
+        "Downloads",
+        "(4.45 MB)"
+      ],
+      "units": [
+        "bar"
+      ],
+      "footnotes": "1 to 8 valves\n5 to 400 bar\n3 available options\n5 - 400\n77 - 110\n49 x 52 x 140\n25 µm integrated inlet and outlet filters\n2 IMM (Dual Injection Moulding Machine Communication)",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3742278,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-6",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+      "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "VERTICUS SERIES"
+      ],
+      "media": [
+        "argon"
+      ],
+      "component_categories": [
+        "compressor",
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 25\nTable: TECHNICAL DATA\nHeaders and units: F.A.D. ¹ | Max. operating | ­pressure2 | No. of | stages | Speed | approx. | Motor- | power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | MIN-VERTICUS & VERTICUS SERIES, 90 - 140 l/min, 90 - 230 bar, ARGON\nRow: G 100-3-MV\nValues: 90 | 5.4 | 3.2 | 230 | 3350 | 3 | 900 | 3 | 320 | 710\nFootnotes: 1 Volume flow rate according to ISO 1217; valid for argon. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability for other gases on request.\n90 - 350 BAR",
+      "page": 25,
+      "section": [
+        "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "Page 25"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "G 100-3-MV",
+      "headers": [
+        "F.A.D. ¹",
+        "Max. operating",
+        "­pressure2",
+        "No. of",
+        "stages",
+        "Speed",
+        "approx.",
+        "Motor-",
+        "power",
+        "Net weight approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs",
+        "MIN-VERTICUS & VERTICUS SERIES, 90 - 140 l/min, 90 - 230 bar, ARGON"
+      ],
+      "row_values": [
+        "90",
+        "5.4",
+        "3.2",
+        "230",
+        "3350",
+        "3",
+        "900",
+        "3",
+        "320",
+        "710"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "lbs"
+      ],
+      "footnotes": "1 Volume flow rate according to ISO 1217; valid for argon. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability for other gases on request.\n90 - 350 BAR",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.3735348,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-7",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "breathing air",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\n0,0: Extended life time at continuous operating mode\nExtended life time at 30 min. intermittent operating mode: Extended life time at 15 min. intermittent operating mode\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "page": 12,
+      "section": [
+        "2026_04_Accessory_Systems_EN_N39608_sc",
+        "Page 12"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "100 bar",
+      "headers": [
+        "Permissible free air delivery, compressor",
+        "200 - 650 l/min (according to ISO 1217, air)",
+        "Power supply",
+        "200 - 240 VAC 60 Hz (single phase)",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "15",
+        "Ambient temperature [°C]",
+        "WITH B-KOOL III",
+        "30",
+        "40",
+        "50",
+        "12,0",
+        "8,0",
+        "4,0",
+        "0,0",
+        "Extended life time at 30 min. intermittent operating mode",
+        "12,0",
+        "8,0",
+        "4,0"
+      ],
+      "row_values": [
+        "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+        "200 - 420 l/min (helium and argon)",
+        "200 - 240 VAC 50 Hz (single phase)",
+        "Power consumption",
+        "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+        "20",
+        "EXTENDED LIFE TIME",
+        "25",
+        "35",
+        "45",
+        "55",
+        "10,0",
+        "6,0",
+        "2,0",
+        "Extended life time at continuous operating mode",
+        "Extended life time at 15 min. intermittent operating mode",
+        "10,0",
+        "6,0",
+        "2,0"
+      ],
+      "units": [
+        "l/min",
+        "bar"
+      ],
+      "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.35091725,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-8",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+      "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+      "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "breathing air",
+        "compressed air",
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "compressor"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: 350 bar/550 bar\nMin. operating pressure compressed air: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\n0,0: Extended life time at continuous operating mode\nExtended life time at 30 min. intermittent operating mode: Extended life time at 15 min. intermittent operating mode\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "page": 12,
+      "section": [
+        "2026_04_Accessory_Systems_EN_N39608_sc",
+        "Page 12"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "350 bar/550 bar",
+      "headers": [
+        "Min. operating pressure compressed air",
+        "Permissible free air delivery, compressor",
+        "200 - 650 l/min (according to ISO 1217, air)",
+        "Power supply",
+        "200 - 240 VAC 60 Hz (single phase)",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "15",
+        "Ambient temperature [°C]",
+        "WITH B-KOOL III",
+        "30",
+        "40",
+        "50",
+        "12,0",
+        "8,0",
+        "4,0",
+        "0,0",
+        "Extended life time at 30 min. intermittent operating mode",
+        "12,0",
+        "8,0",
+        "4,0"
+      ],
+      "row_values": [
+        "100 bar",
+        "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+        "200 - 420 l/min (helium and argon)",
+        "200 - 240 VAC 50 Hz (single phase)",
+        "Power consumption",
+        "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+        "20",
+        "EXTENDED LIFE TIME",
+        "25",
+        "35",
+        "45",
+        "55",
+        "10,0",
+        "6,0",
+        "2,0",
+        "Extended life time at continuous operating mode",
+        "Extended life time at 15 min. intermittent operating mode",
+        "10,0",
+        "6,0",
+        "2,0"
+      ],
+      "units": [
+        "l/min",
+        "bar"
+      ],
+      "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.34967532,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-9",
+      "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+      "filename": "0187-0021_b-kool_c5e62182b0-d01c99958a.md",
+      "title": "B-KOOL · Air purification | BAUER KOMPRESSOREN",
+      "language": "en",
+      "publication_date": null,
+      "certificates": [],
+      "product_families": [
+        "B-KOOL"
+      ],
+      "media": [
+        "helium",
+        "argon"
+      ],
+      "component_categories": [],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: B-KOOL · Air purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+      "page": null,
+      "section": [
+        "B-KOOL · Air purification | BAUER KOMPRESSOREN",
+        "Web page content"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "Technical Data",
+      "row_label": "58 kg",
+      "headers": [
+        "Ambient temperature",
+        "Cryogen",
+        "High pressure air inlet temperature",
+        "Maximum operating pressure",
+        "Minimum operating pressure",
+        "Maximum flow rate",
+        "Power supply",
+        "Power consumption"
+      ],
+      "row_values": [
+        "+5 °C to +45 °C",
+        "R 290 (Propan)",
+        "max. 60 °C",
+        "350 bar / 550 bar",
+        "100 bar",
+        "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+        "200 – 240 VAC, 50 Hz / 60 Hz",
+        "max. 550 W at 50 Hz, 600 W at 60 Hz"
+      ],
+      "units": [
+        "bar",
+        "l/min"
+      ],
+      "footnotes": null,
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.34922969,
+      "metadata": {
+        "parser": "key_value_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    },
+    {
+      "citation_id": "V2-10",
+      "file_id": "9f7e9334-3f49-493e-b720-75c2d7c52d5c",
+      "filename": "0062-2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc-51f5cf81ca.md",
+      "title": "2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc",
+      "language": "en",
+      "publication_date": "2026-04-01",
+      "certificates": [],
+      "product_families": [
+        "MINI-VERTICUS 90",
+        "VERTICUS 90",
+        "VERTICUS IND"
+      ],
+      "media": [
+        "helium",
+        "argon"
+      ],
+      "component_categories": [
+        "valve"
+      ],
+      "standards": [
+        "ISO 1217"
+      ],
+      "content": "Document: 2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc\nDocument section: 2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc / Page 8\nTable: TECHNICAL DATA\nHeaders and units: F.A.D.¹ | Max. operating pressure² | No. of | stages | Speed | approx. | Motor­ | output | Net weight | approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | Ibs | MINI-VERTICUS 90 - 230 bar\nRow: G 100-3-MV\nValues: 90 | 5.4 | 3.2 | 230 | 3350 | 3 | 900 | 3 | 320 | 710\nFootnotes: 8 | MINI-VERTICUS & VERTICUS\n1 Volume flow rate in accordance with ISO 1217, valid for argon or helium.\n2 Max. operating pressure = max. pressure setting for safety valve; shutdown pressure is lower.",
+      "page": 8,
+      "section": [
+        "2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc",
+        "Page 8"
+      ],
+      "chunk_kind": "table_row",
+      "table_title": "TECHNICAL DATA",
+      "row_label": "G 100-3-MV",
+      "headers": [
+        "F.A.D.¹",
+        "Max. operating pressure²",
+        "No. of",
+        "stages",
+        "Speed",
+        "approx.",
+        "Motor­",
+        "output",
+        "Net weight",
+        "approx.",
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg",
+        "Ibs",
+        "MINI-VERTICUS 90 - 230 bar"
+      ],
+      "row_values": [
+        "90",
+        "5.4",
+        "3.2",
+        "230",
+        "3350",
+        "3",
+        "900",
+        "3",
+        "320",
+        "710"
+      ],
+      "units": [
+        "l/min",
+        "m³/h",
+        "cfm",
+        "bar",
+        "psig",
+        "rpm",
+        "kW",
+        "kg"
+      ],
+      "footnotes": "8 | MINI-VERTICUS & VERTICUS\n1 Volume flow rate in accordance with ISO 1217, valid for argon or helium.\n2 Max. operating pressure = max. pressure setting for safety valve; shutdown pressure is lower.",
+      "source_type": "public_document",
+      "channels": [
+        "exact"
+      ],
+      "score": 0.34785714,
+      "metadata": {
+        "parser": "flattened_technical_table",
+        "extractor_version": "bauer-deterministic-v2.1",
+        "reranker": "deterministic-multilingual-fallback-v1"
+      },
+      "route": "v2"
+    }
+  ],
+  "raw_response": {
+    "route": "v2",
+    "index_version": "bauer-rag-v2-2026-07",
+    "results": [
+      {
+        "citation_id": "V2-1",
+        "file_id": "f01eb444-1340-4df3-b917-0de93574875e",
+        "filename": "0188-0022_b-kool1_0358ce6a4f-f9f75b95db.md",
+        "title": "B-KOOL · Air and gas purification | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "compressed air",
+          "nitrogen",
+          "nitrox",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: B-KOOL III\nMedium: Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon\nDimension (L × W × H): 792 × 550 × 390 mm\nWeight approx.: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "page": null,
+        "section": [
+          "B-KOOL · Air and gas purification | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "B-KOOL III",
+        "headers": [
+          "Medium",
+          "Dimension (L × W × H)",
+          "Weight approx.",
+          "Ambient temperature",
+          "Cryogen",
+          "High pressure air inlet temperature",
+          "Maximum operating pressure",
+          "Minimum operating pressure",
+          "Maximum flow rate",
+          "Power supply",
+          "Power consumption"
+        ],
+        "row_values": [
+          "Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon",
+          "792 × 550 × 390 mm",
+          "58 kg",
+          "+5 °C to +45 °C",
+          "R 290 (Propan)",
+          "max. 60 °C",
+          "350 bar / 550 bar",
+          "100 bar",
+          "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+          "200 – 240 VAC, 50 Hz / 60 Hz",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz"
+        ],
+        "units": [
+          "kg",
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.40119048,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-2",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrogen",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve",
+          "sensor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 33\nTable: TECHNICAL DATA\nHeaders and units: GB 23.0-30 | atm. | BK 26 SERIES, MODEL GB, 120 - 330 bar | GB 26.1-75 | atm.\nRow: 1.2 (abs)\nValues: 330 | 4780 | 5 | 1485 | 75 | 3100 | 6850\nFootnotes: 1 Volume flow rate according to ISO 1217; valid for air and nitrogen.\n2 Shut-down pressure (sensor setting)\n3 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.\n25 - 110 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability for argon and other gases on request.\n90 - 330 BAR",
+        "page": 33,
+        "section": [
+          "2026-04_Compressors_for_Industry_EN_N39771_sc",
+          "Page 33"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "1.2 (abs)",
+        "headers": [
+          "GB 23.0-30",
+          "atm.",
+          "BK 26 SERIES, MODEL GB, 120 - 330 bar",
+          "GB 26.1-75",
+          "atm."
+        ],
+        "row_values": [
+          "330",
+          "4780",
+          "5",
+          "1485",
+          "75",
+          "3100",
+          "6850"
+        ],
+        "units": [],
+        "footnotes": "1 Volume flow rate according to ISO 1217; valid for air and nitrogen.\n2 Shut-down pressure (sensor setting)\n3 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower.\n25 - 110 BAR\n1 Volume flow rate according to ISO 1217; valid for helium. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability for argon and other gases on request.\n90 - 330 BAR",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.37684332,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-3",
+        "file_id": "f01eb444-1340-4df3-b917-0de93574875e",
+        "filename": "0188-0022_b-kool1_0358ce6a4f-f9f75b95db.md",
+        "title": "B-KOOL · Air and gas purification | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "helium",
+          "argon"
+        ],
+        "component_categories": [],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air and gas purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "page": null,
+        "section": [
+          "B-KOOL · Air and gas purification | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "58 kg",
+        "headers": [
+          "Ambient temperature",
+          "Cryogen",
+          "High pressure air inlet temperature",
+          "Maximum operating pressure",
+          "Minimum operating pressure",
+          "Maximum flow rate",
+          "Power supply",
+          "Power consumption"
+        ],
+        "row_values": [
+          "+5 °C to +45 °C",
+          "R 290 (Propan)",
+          "max. 60 °C",
+          "350 bar / 550 bar",
+          "100 bar",
+          "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+          "200 – 240 VAC, 50 Hz / 60 Hz",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.37563966,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-4",
+        "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+        "filename": "0187-0021_b-kool_c5e62182b0-d01c99958a.md",
+        "title": "B-KOOL · Air purification | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "compressed air",
+          "nitrogen",
+          "nitrox",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: B-KOOL · Air purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: B-KOOL III\nMedium: Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon\nDimension (L × W × H): 792 × 550 × 390 mm\nWeight approx.: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "page": null,
+        "section": [
+          "B-KOOL · Air purification | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "B-KOOL III",
+        "headers": [
+          "Medium",
+          "Dimension (L × W × H)",
+          "Weight approx.",
+          "Ambient temperature",
+          "Cryogen",
+          "High pressure air inlet temperature",
+          "Maximum operating pressure",
+          "Minimum operating pressure",
+          "Maximum flow rate",
+          "Power supply",
+          "Power consumption"
+        ],
+        "row_values": [
+          "Compressed Air, Nitrogen, Nitrox (up to 40% O2), Helium, Argon",
+          "792 × 550 × 390 mm",
+          "58 kg",
+          "+5 °C to +45 °C",
+          "R 290 (Propan)",
+          "max. 60 °C",
+          "350 bar / 550 bar",
+          "100 bar",
+          "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+          "200 – 240 VAC, 50 Hz / 60 Hz",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz"
+        ],
+        "units": [
+          "kg",
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.37520704,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-5",
+        "file_id": "70a56262-2415-44fa-8b3e-45831dda1dfb",
+        "filename": "0223-0057_fcc6_2b3480eeeb-07dcf15595.md",
+        "title": "FCC 6 Gas Controller · Air and Gas Distribution | BAUER KOMP",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [],
+        "media": [
+          "nitrogen",
+          "helium"
+        ],
+        "component_categories": [
+          "compressor",
+          "filter",
+          "valve",
+          "control"
+        ],
+        "standards": [],
+        "content": "Document: FCC 6 Gas Controller · Air and Gas Distribution | BAUER KOMP\nDocument section: FCC 6 Gas Controller · Air and Gas Distribution | BAUER KOMP / Web page content\nTable: Technical Data\nRow: FCC 6\n5 - 400: 1, 2, 4, 6 or 8\n77 - 110: 49 x 52 x 140\nEuromap 62, OPC-UA: Details & feature\nThe sixth generation of BAUER controllers offers exceptionally user-friendly and intuitive operation. This control panel ensures stable and consistent processing conditions. The precisely regulated nitrogen pressure profile injected into the melt guarantees a repeatable hollow section within the plastic part.: Smart Interface\n& Advanced Control: The FCC 6 features a high-performance PLC enabling fully digital closed-loop regulation. Its 10.4\" touchscreen provides an intuitive and secure user experience:\nPassword protection with 3 user levels: 7-step pressure and time sequencing with ramp control\nAutomatic cleaning cycle with clogged-injector detection: Leak detection\nInerting step before plastic injection (OXIPURGE): Self-calibration based on valve response time\nSeamless Industry 4.0 integration via OPC-UA: High-Precision\nProportional Valve: 25 µm integrated inlet and outlet filters\nQuick-connect fittings: Inlet purge valve and pressure gauge\nAccuracy ± 1.25 %: Operation range from 5 to 400 bar\nEasy-to-replace maintenance kit: System concept G60V\nThe plug-and-play solution combines all the components necessary for helium recovery in a compact housing. All controls are ergonomically arranged and accessible from the front.: The compressors are cooled directly with ambient air, allowing the heat generated to be dissipated easily and efficiently. The compressor system is designed for intermittent operation and is therefore suitable for small volumes of helium in clinics, laboratories, and other medical facilities.\nOptions: Sequential piloting\nAdds an additional connector on the rear of the FCC 6 for controlling up to four distributors on the hydraulic pump. This enables direct actuation of tool components - such as opening or closing overflow cavities - directly from the controller.: Integrated Volume\nEach valve is supplied by its own independent nitrogen storage volume. The system calculates pressure variations to provide precise gas-consumption monitoring per part—ideal for process optimization.: 2 IMM (Dual Injection Moulding Machine Communication)\nAdds a second communication interface (dual Euromap 62) to allow simultaneous communication with two injection moulding machines. The valves are symmetrically assigned to IMM1 and IMM2, reducing system investment when both machines are located close to each other.: Integrated Volume\nEach valve is supplied by its own independent nitrogen storage volume. The system calculates pressure variations to provide precise gas-consumption monitoring per part—ideal for process optimization.: Downloads\nProduct Brochure Gas Injection Technology EN: (4.45 MB)\nFootnotes: 1 to 8 valves\n5 to 400 bar\n3 available options\n5 - 400\n77 - 110\n49 x 52 x 140\n25 µm integrated inlet and outlet filters\n2 IMM (Dual Injection Moulding Machine Communication)",
+        "page": null,
+        "section": [
+          "FCC 6 Gas Controller · Air and Gas Distribution | BAUER KOMP",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "FCC 6",
+        "headers": [
+          "5 - 400",
+          "77 - 110",
+          "Euromap 62, OPC-UA",
+          "The sixth generation of BAUER controllers offers exceptionally user-friendly and intuitive operation. This control panel ensures stable and consistent processing conditions. The precisely regulated nitrogen pressure profile injected into the melt guarantees a repeatable hollow section within the plastic part.",
+          "& Advanced Control",
+          "Password protection with 3 user levels",
+          "Automatic cleaning cycle with clogged-injector detection",
+          "Inerting step before plastic injection (OXIPURGE)",
+          "Seamless Industry 4.0 integration via OPC-UA",
+          "Proportional Valve",
+          "Quick-connect fittings",
+          "Accuracy ± 1.25 %",
+          "Easy-to-replace maintenance kit",
+          "The plug-and-play solution combines all the components necessary for helium recovery in a compact housing. All controls are ergonomically arranged and accessible from the front.",
+          "Options",
+          "Adds an additional connector on the rear of the FCC 6 for controlling up to four distributors on the hydraulic pump. This enables direct actuation of tool components - such as opening or closing overflow cavities - directly from the controller.",
+          "Each valve is supplied by its own independent nitrogen storage volume. The system calculates pressure variations to provide precise gas-consumption monitoring per part—ideal for process optimization.",
+          "Adds a second communication interface (dual Euromap 62) to allow simultaneous communication with two injection moulding machines. The valves are symmetrically assigned to IMM1 and IMM2, reducing system investment when both machines are located close to each other.",
+          "Each valve is supplied by its own independent nitrogen storage volume. The system calculates pressure variations to provide precise gas-consumption monitoring per part—ideal for process optimization.",
+          "Product Brochure Gas Injection Technology EN"
+        ],
+        "row_values": [
+          "1, 2, 4, 6 or 8",
+          "49 x 52 x 140",
+          "Details & feature",
+          "Smart Interface",
+          "The FCC 6 features a high-performance PLC enabling fully digital closed-loop regulation. Its 10.4\" touchscreen provides an intuitive and secure user experience:",
+          "7-step pressure and time sequencing with ramp control",
+          "Leak detection",
+          "Self-calibration based on valve response time",
+          "High-Precision",
+          "25 µm integrated inlet and outlet filters",
+          "Inlet purge valve and pressure gauge",
+          "Operation range from 5 to 400 bar",
+          "System concept G60V",
+          "The compressors are cooled directly with ambient air, allowing the heat generated to be dissipated easily and efficiently. The compressor system is designed for intermittent operation and is therefore suitable for small volumes of helium in clinics, laboratories, and other medical facilities.",
+          "Sequential piloting",
+          "Integrated Volume",
+          "2 IMM (Dual Injection Moulding Machine Communication)",
+          "Integrated Volume",
+          "Downloads",
+          "(4.45 MB)"
+        ],
+        "units": [
+          "bar"
+        ],
+        "footnotes": "1 to 8 valves\n5 to 400 bar\n3 available options\n5 - 400\n77 - 110\n49 x 52 x 140\n25 µm integrated inlet and outlet filters\n2 IMM (Dual Injection Moulding Machine Communication)",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3742278,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-6",
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "title": "2026-04_Compressors_for_Industry_EN_N39771_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "VERTICUS SERIES"
+        ],
+        "media": [
+          "argon"
+        ],
+        "component_categories": [
+          "compressor",
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_Compressors_for_Industry_EN_N39771_sc\nDocument section: 2026-04_Compressors_for_Industry_EN_N39771_sc / Page 25\nTable: TECHNICAL DATA\nHeaders and units: F.A.D. ¹ | Max. operating | ­pressure2 | No. of | stages | Speed | approx. | Motor- | power | Net weight approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | lbs | MIN-VERTICUS & VERTICUS SERIES, 90 - 140 l/min, 90 - 230 bar, ARGON\nRow: G 100-3-MV\nValues: 90 | 5.4 | 3.2 | 230 | 3350 | 3 | 900 | 3 | 320 | 710\nFootnotes: 1 Volume flow rate according to ISO 1217; valid for argon. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability for other gases on request.\n90 - 350 BAR",
+        "page": 25,
+        "section": [
+          "2026-04_Compressors_for_Industry_EN_N39771_sc",
+          "Page 25"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "G 100-3-MV",
+        "headers": [
+          "F.A.D. ¹",
+          "Max. operating",
+          "­pressure2",
+          "No. of",
+          "stages",
+          "Speed",
+          "approx.",
+          "Motor-",
+          "power",
+          "Net weight approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs",
+          "MIN-VERTICUS & VERTICUS SERIES, 90 - 140 l/min, 90 - 230 bar, ARGON"
+        ],
+        "row_values": [
+          "90",
+          "5.4",
+          "3.2",
+          "230",
+          "3350",
+          "3",
+          "900",
+          "3",
+          "320",
+          "710"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "lbs"
+        ],
+        "footnotes": "1 Volume flow rate according to ISO 1217; valid for argon. Different ambient conditions will result in differing performance values.\n2 Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. Values and availability for other gases on request.\n90 - 350 BAR",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.3735348,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-7",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "breathing air",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\n0,0: Extended life time at continuous operating mode\nExtended life time at 30 min. intermittent operating mode: Extended life time at 15 min. intermittent operating mode\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "page": 12,
+        "section": [
+          "2026_04_Accessory_Systems_EN_N39608_sc",
+          "Page 12"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "100 bar",
+        "headers": [
+          "Permissible free air delivery, compressor",
+          "200 - 650 l/min (according to ISO 1217, air)",
+          "Power supply",
+          "200 - 240 VAC 60 Hz (single phase)",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz",
+          "15",
+          "Ambient temperature [°C]",
+          "WITH B-KOOL III",
+          "30",
+          "40",
+          "50",
+          "12,0",
+          "8,0",
+          "4,0",
+          "0,0",
+          "Extended life time at 30 min. intermittent operating mode",
+          "12,0",
+          "8,0",
+          "4,0"
+        ],
+        "row_values": [
+          "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+          "200 - 420 l/min (helium and argon)",
+          "200 - 240 VAC 50 Hz (single phase)",
+          "Power consumption",
+          "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+          "20",
+          "EXTENDED LIFE TIME",
+          "25",
+          "35",
+          "45",
+          "55",
+          "10,0",
+          "6,0",
+          "2,0",
+          "Extended life time at continuous operating mode",
+          "Extended life time at 15 min. intermittent operating mode",
+          "10,0",
+          "6,0",
+          "2,0"
+        ],
+        "units": [
+          "l/min",
+          "bar"
+        ],
+        "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.35091725,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-8",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "title": "2026_04_Accessory_Systems_EN_N39608_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "breathing air",
+          "compressed air",
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "compressor"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026_04_Accessory_Systems_EN_N39608_sc\nDocument section: 2026_04_Accessory_Systems_EN_N39608_sc / Page 12\nTable: TECHNICAL DATA\nRow: 350 bar/550 bar\nMin. operating pressure compressed air: 100 bar\nPermissible free air delivery, compressor: 200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)\n200 - 650 l/min (according to ISO 1217, air): 200 - 420 l/min (helium and argon)\nPower supply: 200 - 240 VAC 50 Hz (single phase)\n200 - 240 VAC 60 Hz (single phase): Power consumption\nmax. 550 W at 50 Hz, 600 W at 60 Hz: EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES\n15: 20\nAmbient temperature [°C]: EXTENDED LIFE TIME\nWITH B-KOOL III: 25\n30: 35\n40: 45\n50: 55\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\n0,0: Extended life time at continuous operating mode\nExtended life time at 30 min. intermittent operating mode: Extended life time at 15 min. intermittent operating mode\n12,0: 10,0\n8,0: 6,0\n4,0: 2,0\nFootnotes: 12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "page": 12,
+        "section": [
+          "2026_04_Accessory_Systems_EN_N39608_sc",
+          "Page 12"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "350 bar/550 bar",
+        "headers": [
+          "Min. operating pressure compressed air",
+          "Permissible free air delivery, compressor",
+          "200 - 650 l/min (according to ISO 1217, air)",
+          "Power supply",
+          "200 - 240 VAC 60 Hz (single phase)",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz",
+          "15",
+          "Ambient temperature [°C]",
+          "WITH B-KOOL III",
+          "30",
+          "40",
+          "50",
+          "12,0",
+          "8,0",
+          "4,0",
+          "0,0",
+          "Extended life time at 30 min. intermittent operating mode",
+          "12,0",
+          "8,0",
+          "4,0"
+        ],
+        "row_values": [
+          "100 bar",
+          "200 - 700 l/min (10 l cylinder filling from 0-200 bar, breathing air)",
+          "200 - 420 l/min (helium and argon)",
+          "200 - 240 VAC 50 Hz (single phase)",
+          "Power consumption",
+          "EXTENDED LIFE TIME WITH B-KOOL AT VARIOUS OPERATING MODES",
+          "20",
+          "EXTENDED LIFE TIME",
+          "25",
+          "35",
+          "45",
+          "55",
+          "10,0",
+          "6,0",
+          "2,0",
+          "Extended life time at continuous operating mode",
+          "Extended life time at 15 min. intermittent operating mode",
+          "10,0",
+          "6,0",
+          "2,0"
+        ],
+        "units": [
+          "l/min",
+          "bar"
+        ],
+        "footnotes": "12 | AIR AND GAS TREATMENT | ACCESSORY SYSTEMS",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.34967532,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-9",
+        "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+        "filename": "0187-0021_b-kool_c5e62182b0-d01c99958a.md",
+        "title": "B-KOOL · Air purification | BAUER KOMPRESSOREN",
+        "language": "en",
+        "publication_date": null,
+        "certificates": [],
+        "product_families": [
+          "B-KOOL"
+        ],
+        "media": [
+          "helium",
+          "argon"
+        ],
+        "component_categories": [],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: B-KOOL · Air purification | BAUER KOMPRESSOREN\nDocument section: B-KOOL · Air purification | BAUER KOMPRESSOREN / Web page content\nTable: Technical Data\nRow: 58 kg\nAmbient temperature: +5 °C to +45 °C\nCryogen: R 290 (Propan)\nHigh pressure air inlet temperature: max. 60 °C\nMaximum operating pressure: 350 bar / 550 bar\nMinimum operating pressure: 100 bar\nMaximum flow rate: 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)\nPower supply: 200 – 240 VAC, 50 Hz / 60 Hz\nPower consumption: max. 550 W at 50 Hz, 600 W at 60 Hz",
+        "page": null,
+        "section": [
+          "B-KOOL · Air purification | BAUER KOMPRESSOREN",
+          "Web page content"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "Technical Data",
+        "row_label": "58 kg",
+        "headers": [
+          "Ambient temperature",
+          "Cryogen",
+          "High pressure air inlet temperature",
+          "Maximum operating pressure",
+          "Minimum operating pressure",
+          "Maximum flow rate",
+          "Power supply",
+          "Power consumption"
+        ],
+        "row_values": [
+          "+5 °C to +45 °C",
+          "R 290 (Propan)",
+          "max. 60 °C",
+          "350 bar / 550 bar",
+          "100 bar",
+          "200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), 200–420 l/min (helium & argon)",
+          "200 – 240 VAC, 50 Hz / 60 Hz",
+          "max. 550 W at 50 Hz, 600 W at 60 Hz"
+        ],
+        "units": [
+          "bar",
+          "l/min"
+        ],
+        "footnotes": null,
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.34922969,
+        "metadata": {
+          "parser": "key_value_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      },
+      {
+        "citation_id": "V2-10",
+        "file_id": "9f7e9334-3f49-493e-b720-75c2d7c52d5c",
+        "filename": "0062-2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc-51f5cf81ca.md",
+        "title": "2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc",
+        "language": "en",
+        "publication_date": "2026-04-01",
+        "certificates": [],
+        "product_families": [
+          "MINI-VERTICUS 90",
+          "VERTICUS 90",
+          "VERTICUS IND"
+        ],
+        "media": [
+          "helium",
+          "argon"
+        ],
+        "component_categories": [
+          "valve"
+        ],
+        "standards": [
+          "ISO 1217"
+        ],
+        "content": "Document: 2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc\nDocument section: 2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc / Page 8\nTable: TECHNICAL DATA\nHeaders and units: F.A.D.¹ | Max. operating pressure² | No. of | stages | Speed | approx. | Motor­ | output | Net weight | approx. | l/min | m³/h | cfm | bar | psig | rpm | kW | kg | Ibs | MINI-VERTICUS 90 - 230 bar\nRow: G 100-3-MV\nValues: 90 | 5.4 | 3.2 | 230 | 3350 | 3 | 900 | 3 | 320 | 710\nFootnotes: 8 | MINI-VERTICUS & VERTICUS\n1 Volume flow rate in accordance with ISO 1217, valid for argon or helium.\n2 Max. operating pressure = max. pressure setting for safety valve; shutdown pressure is lower.",
+        "page": 8,
+        "section": [
+          "2026-04_MINI_VERTICUS_VERTICUS_IND_EN_N42254_sc",
+          "Page 8"
+        ],
+        "chunk_kind": "table_row",
+        "table_title": "TECHNICAL DATA",
+        "row_label": "G 100-3-MV",
+        "headers": [
+          "F.A.D.¹",
+          "Max. operating pressure²",
+          "No. of",
+          "stages",
+          "Speed",
+          "approx.",
+          "Motor­",
+          "output",
+          "Net weight",
+          "approx.",
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg",
+          "Ibs",
+          "MINI-VERTICUS 90 - 230 bar"
+        ],
+        "row_values": [
+          "90",
+          "5.4",
+          "3.2",
+          "230",
+          "3350",
+          "3",
+          "900",
+          "3",
+          "320",
+          "710"
+        ],
+        "units": [
+          "l/min",
+          "m³/h",
+          "cfm",
+          "bar",
+          "psig",
+          "rpm",
+          "kW",
+          "kg"
+        ],
+        "footnotes": "8 | MINI-VERTICUS & VERTICUS\n1 Volume flow rate in accordance with ISO 1217, valid for argon or helium.\n2 Max. operating pressure = max. pressure setting for safety valve; shutdown pressure is lower.",
+        "source_type": "public_document",
+        "channels": [
+          "exact"
+        ],
+        "score": 0.34785714,
+        "metadata": {
+          "parser": "flattened_technical_table",
+          "extractor_version": "bauer-deterministic-v2.1",
+          "reranker": "deterministic-multilingual-fallback-v1"
+        }
+      }
+    ],
+    "degraded": false,
+    "safe_refusal": null,
+    "debug": {
+      "analysis": {
+        "identifiers": [],
+        "number_units": [],
+        "quoted_phrases": [],
+        "table_intent": true
+      },
+      "channel_counts": {
+        "exact": 20,
+        "lexical": 1,
+        "vector": 30
+      },
+      "channel_errors": {},
+      "fused_count": 30,
+      "reranker": {
+        "mode": "fusion_plus_deterministic_fallback",
+        "fallback_reason": "remote_reranker_not_configured"
+      },
+      "minimum_evidence_score": 0.08,
+      "below_threshold_count": 1,
+      "elapsed_ms": 824.94
+    }
+  },
+  "completed_at": "2026-07-23T14:08:26.389046+00:00",
+  "case_id": "B19",
+  "split": "development",
+  "category": "exact_product_limit",
+  "repetition": 1,
+  "sequence_in_pair": 2,
+  "pair_order": [
+    "v1",
+    "v2"
+  ]
+}

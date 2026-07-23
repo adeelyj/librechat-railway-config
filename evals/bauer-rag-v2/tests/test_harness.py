@@ -27,6 +27,12 @@ score = load_score_module()
 
 
 class EvaluationHarnessTests(unittest.TestCase):
+    def test_case_prompt_supports_english_and_german_cases(self):
+        self.assertEqual(common.case_prompt({"id": "EN", "prompt_en": "Question"}), "Question")
+        self.assertEqual(common.case_prompt({"id": "DE", "prompt_de": "Frage"}), "Frage")
+        with self.assertRaisesRegex(ValueError, "has no prompt"):
+            common.case_prompt({"id": "missing"})
+
     def test_http_runner_uses_browser_user_agent_required_by_librechat(self):
         captured = {}
 
