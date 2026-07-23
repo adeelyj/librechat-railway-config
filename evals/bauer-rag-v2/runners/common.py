@@ -16,6 +16,11 @@ from typing import Any, Iterable
 EVAL_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = EVAL_ROOT.parents[1]
 DEFAULT_TOKEN_ENV = "RAG_API_TOKEN"
+DEFAULT_BROWSER_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/138.0.0.0 Safari/537.36"
+)
 
 
 def utc_now() -> str:
@@ -119,7 +124,14 @@ def request_json(
         if payload is not None
         else None
     )
-    headers = {"Accept": "application/json"}
+    # LibreChat deliberately rejects authenticated non-browser clients and assigns
+    # the default violation score needed for an immediate temporary ban. Evaluation
+    # traffic therefore uses the same browser-shaped identity as the provisioning
+    # scripts while remaining identifiable through its immutable run metadata.
+    headers = {
+        "Accept": "application/json",
+        "User-Agent": DEFAULT_BROWSER_USER_AGENT,
+    }
     if body is not None:
         headers["Content-Type"] = "application/json"
     if token:

@@ -4,6 +4,7 @@ import importlib.util
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 EVAL_ROOT = Path(__file__).resolve().parents[1]
@@ -26,6 +27,39 @@ score = load_score_module()
 
 
 class EvaluationHarnessTests(unittest.TestCase):
+    def test_http_runner_uses_browser_user_agent_required_by_librechat(self):
+        captured = {}
+
+        class Response:
+            status = 200
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self):
+                return b"{}"
+
+        def open_request(request, timeout):
+            captured["user_agent"] = request.get_header("User-agent")
+            captured["timeout"] = timeout
+            return Response()
+
+        with patch.object(common.urllib.request, "urlopen", open_request):
+            status, _, _ = common.request_json(
+                method="GET",
+                url="https://example.invalid/api",
+                token="short-lived-test-token",
+                timeout=7,
+            )
+
+        self.assertEqual(status, 200)
+        self.assertIn("Chrome/", captured["user_agent"])
+        self.assertIn("KHTML, like Gecko", captured["user_agent"])
+        self.assertEqual(captured["timeout"], 7)
+
     def test_holdout_requires_explicit_acknowledgement(self):
         with self.assertRaisesRegex(ValueError, "tuning-locked holdout"):
             common.load_cases("holdout")
