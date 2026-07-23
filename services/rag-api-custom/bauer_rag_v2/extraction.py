@@ -262,6 +262,13 @@ def _page_at(lines: list[str], index: int) -> int | None:
     return None
 
 
+def _page_marker_at(lines: list[str], index: int) -> int | None:
+    for position in range(index, -1, -1):
+        if PAGE_RE.match(lines[position]) or MARKDOWN_PAGE_RE.match(lines[position]):
+            return position
+    return None
+
+
 def _section_at(lines: list[str], index: int) -> tuple[str, ...]:
     headings: dict[int, str] = {}
     for position in range(0, index + 1):
@@ -417,8 +424,19 @@ def _parse_flat_tables(
             if line.strip() and not NUMBER_RE.match(line.strip())
         ]
         headers = tuple(header_candidates[-20:])
-        units = _unique(value for value in headers if UNIT_RE.match(value))
         page = _page_at(lines, row_start)
+        page_marker = _page_marker_at(lines, row_start)
+        unit_start = max(
+            technical_index + 1,
+            page_marker + 1 if page_marker is not None else 0,
+        )
+        units = _unique(
+            value
+            for value in (
+                line.strip() for line in lines[unit_start:row_start]
+            )
+            if UNIT_RE.match(value)
+        )
         section = _section_at(lines, row_start)
         table_title = _table_title(lines, technical_index + 1)
         footnotes = _table_footnotes(lines, row_start)
@@ -682,7 +700,7 @@ def _split_prose(
     chunks: list[ExtractedChunk] = []
     buffer: list[tuple[int, str]] = []
 
-    def flush() -> None:
+    def flush(*, retain_overlap: bool = True) -> None:
         nonlocal buffer
         if not buffer:
             return
@@ -706,7 +724,7 @@ def _split_prose(
                 metadata={"parser": "structure_aware_prose", "extractor_version": EXTRACTOR_VERSION},
             )
         )
-        if len(text) > overlap_chars:
+        if retain_overlap and len(text) > overlap_chars:
             overlap = text[-overlap_chars:]
             buffer = [(buffer[-1][0], overlap)]
         else:
@@ -717,7 +735,9 @@ def _split_prose(
             continue
         value = line.rstrip()
         if (PAGE_RE.match(value) or MARKDOWN_PAGE_RE.match(value) or HEADING_RE.match(value)) and buffer:
-            flush()
+            # Do not carry overlap across a page or section boundary. Retaining
+            # the previous line index attributed page N+1 content to page N.
+            flush(retain_overlap=False)
         projected = sum(len(item[1]) + 1 for item in buffer) + len(value)
         if projected > max_chars and buffer:
             flush()

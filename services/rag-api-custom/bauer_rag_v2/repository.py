@@ -576,6 +576,136 @@ def _maximum_pressure_bar(content: str) -> float:
     return max((*ranges, *singles), default=0.0)
 
 
+def _pressure_evidence_sort_key(candidate: Candidate) -> tuple[Any, ...]:
+    publication = int((candidate.publication_date or "0000-00-00").replace("-", ""))
+    return (
+        -float(candidate.metadata.get("pressure_extremum_bar") or 0.0),
+        candidate.page is None,
+        -publication,
+        candidate.filename,
+        candidate.page or 0,
+        candidate.chunk_id,
+    )
+
+
+def _is_pressure_evidence_candidate(candidate: Candidate) -> bool:
+    normalized = re.sub(r"\s+", " ", candidate.content.casefold())
+    if candidate.chunk_kind == "table_row":
+        return bool(
+            re.match(
+                r"^(?:BM|I|K|GIB|GI|PE)[\s-]*[0-9]",
+                candidate.row_label or "",
+                re.IGNORECASE,
+            )
+            and (
+                "operating pressure" in normalized
+                or "working pressure" in normalized
+                or "operating pres-" in normalized
+            )
+        )
+    if any(
+        marker in normalized
+        for marker in (
+            "performance overview",
+            "compressors air cooled",
+            "compressors water cooled",
+            "booster air cooled",
+            "booster water cooled",
+        )
+    ):
+        return True
+    return "pressure range" in normalized and any(
+        marker in normalized
+        for marker in (
+            "compressor units",
+            "compressors are",
+            "compressor blocks",
+            "series compressors",
+            "booster",
+        )
+    )
+
+
+def _select_pressure_evidence(
+    candidates: list[Candidate],
+    *,
+    limit: int,
+) -> list[Candidate]:
+    if not candidates or limit <= 0:
+        return []
+    global_maximum = max(
+        float(candidate.metadata.get("pressure_extremum_bar") or 0.0)
+        for candidate in candidates
+    )
+    compressor_overviews = sorted(
+        (
+            candidate
+            for candidate in candidates
+            if "compressors air cooled" in candidate.content.casefold()
+            or "compressors water cooled" in candidate.content.casefold()
+        ),
+        key=_pressure_evidence_sort_key,
+    )
+    booster_overviews = sorted(
+        (
+            candidate
+            for candidate in candidates
+            if "booster air cooled" in candidate.content.casefold()
+            or "booster water cooled" in candidate.content.casefold()
+        ),
+        key=_pressure_evidence_sort_key,
+    )
+    primary = sorted(
+        (
+            candidate
+            for candidate in candidates
+            if float(candidate.metadata.get("pressure_extremum_bar") or 0.0)
+            == global_maximum
+        ),
+        key=_pressure_evidence_sort_key,
+    )
+    boosters = sorted(
+        (
+            candidate
+            for candidate in candidates
+            if "booster" in candidate.content.casefold()
+        ),
+        key=_pressure_evidence_sort_key,
+    )
+    qualifications = sorted(
+        (
+            candidate
+            for candidate in candidates
+            if "safety valve" in candidate.content.casefold()
+            and any(
+                term in candidate.content.casefold()
+                for term in ("shutdown pressure", "shut-down pressure", "final pressure")
+            )
+        ),
+        key=_pressure_evidence_sort_key,
+    )
+    all_candidates = sorted(candidates, key=_pressure_evidence_sort_key)
+    selected: list[Candidate] = []
+    seen: set[str] = set()
+    pools = (
+        compressor_overviews[: min(2, limit)],
+        booster_overviews[: min(2, limit)],
+        qualifications[: min(5, limit)],
+        primary[: min(8, limit)],
+        boosters[: min(4, limit)],
+        all_candidates,
+    )
+    for pool in pools:
+        for candidate in pool:
+            if candidate.location_key in seen:
+                continue
+            seen.add(candidate.location_key)
+            selected.append(candidate)
+            if len(selected) == limit:
+                return selected
+    return selected
+
+
 async def _pressure_extremum_search(
     *,
     namespace: str,
@@ -597,15 +727,17 @@ async def _pressure_extremum_search(
               AND document.namespace = $1
               AND document.index_version = $2
               AND document.file_id = ANY($3::text[])
-              AND chunk.chunk_kind = 'table_row'
-              AND chunk.row_label ~* '^(?:BM|I|K|GIB|GI|PE)[[:space:]]*[0-9]'
-              AND chunk.search_text ILIKE '%operating%'
+              AND chunk.search_text ILIKE '%bar%'
               AND (
-                    chunk.search_text ILIKE '%pressure%'
-                 OR chunk.search_text ILIKE '%pres-%'
+                    'compressor' = ANY(document.component_categories)
+                 OR 'booster' = ANY(document.component_categories)
               )
-              AND 'compressor' = ANY(document.component_categories)
-            LIMIT 1000
+            ORDER BY
+                document.publication_date DESC NULLS LAST,
+                CASE WHEN chunk.page IS NULL THEN 1 ELSE 0 END,
+                chunk.page NULLS LAST,
+                chunk.ordinal
+            LIMIT 2000
             """,
             namespace,
             index_version,
@@ -614,7 +746,7 @@ async def _pressure_extremum_search(
     candidates = []
     for row in rows:
         maximum = _maximum_pressure_bar(row["content"])
-        if maximum <= 0:
+        if maximum < 400:
             continue
         candidate = _candidate_from_row(
             row,
@@ -622,16 +754,9 @@ async def _pressure_extremum_search(
             1.0 + min(maximum / 10_000.0, 0.1),
         )
         candidate.metadata["pressure_extremum_bar"] = maximum
-        candidates.append(candidate)
-    candidates.sort(
-        key=lambda item: (
-            -float(item.metadata["pressure_extremum_bar"]),
-            item.file_id,
-            item.page or 0,
-            item.chunk_id,
-        )
-    )
-    return candidates[:limit]
+        if _is_pressure_evidence_candidate(candidate):
+            candidates.append(candidate)
+    return _select_pressure_evidence(candidates, limit=limit)
 
 
 async def exact_search(

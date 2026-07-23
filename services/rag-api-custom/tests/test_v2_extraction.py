@@ -78,6 +78,26 @@ class V2ExtractionTests(unittest.TestCase):
         self.assertEqual(rows[0].page, 3)
         self.assertIn("Technical Data", rows[0].section_path)
         self.assertIn("Headers and units:", rows[0].content)
+        self.assertIn("l/min", rows[1].units)
+        self.assertIn("bar", rows[1].units)
+
+    def test_prose_overlap_never_crosses_page_boundary(self):
+        parsed = self.parse(
+            """# Product overview
+## Page 30
+Previous page material with a 950 l/min range.
+## Page 31
+Pressure range: 30 - 525 bar
+Charging rate: 600 - 6,800 l/min
+K 22 - K 28 SERIES
+"""
+        )
+        page_31 = next(
+            chunk for chunk in parsed.chunks if "600 - 6,800 l/min" in chunk.content
+        )
+        self.assertEqual(page_31.page, 31)
+        self.assertIn("Page 31", page_31.section_path)
+        self.assertNotIn("Previous page material", page_31.content)
 
     def test_markdown_pipe_table_becomes_one_independent_chunk_per_row(self):
         parsed = self.parse(

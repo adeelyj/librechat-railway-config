@@ -43,10 +43,17 @@ class V2FusionTests(unittest.TestCase):
         self.assertIn("525 bar", analysis.number_units)
         self.assertIn("k 28", analysis.quoted_phrases)
         self.assertTrue(analysis.table_intent)
+        self.assertFalse(analysis.citation_intent)
 
     def test_query_analysis_preserves_single_letter_and_punctuated_model(self):
         analysis = analyze_query("Find Bauer model I 15.11-11-V")
         self.assertIn("i 15 11 11 v", analysis.identifiers)
+
+    def test_query_analysis_detects_citation_location_intent(self):
+        analysis = analyze_query(
+            "Find model I 15.11-11-V and cite the exact source page."
+        )
+        self.assertTrue(analysis.citation_intent)
 
     def test_query_analysis_extracts_standard_without_broad_exact_tokens(self):
         analysis = analyze_query(
@@ -105,7 +112,30 @@ class V2FusionTests(unittest.TestCase):
         row.fusion_score = 0.04
         ranked = deterministic_rerank(analysis, [prose, row])
         self.assertEqual(ranked[0].chunk_id, "row")
-        self.assertEqual(ranked[0].metadata["reranker"], "deterministic-multilingual-fallback-v1")
+        self.assertEqual(ranked[0].metadata["reranker"], "deterministic-multilingual-fallback-v2")
+
+    def test_citation_intent_prefers_versioned_page_addressable_source(self):
+        analysis = analyze_query(
+            "Find model I 15.11-11-V and cite the exact technical-data table."
+        )
+        web = candidate(
+            "web",
+            "I 15.11-11-V 420 l/min 525 bar 4 stages 11 kW",
+            kind="table_row",
+            page=None,
+        )
+        web.publication_date = None
+        brochure = candidate(
+            "brochure",
+            "I 15.11-11-V 420 l/min 525 bar 4 stages 11 kW",
+            kind="table_row",
+            page=23,
+        )
+        brochure.publication_date = "2026-04-01"
+        web.fusion_score = 0.16
+        brochure.fusion_score = 0.04
+        ranked = deterministic_rerank(analysis, [web, brochure])
+        self.assertEqual(ranked[0].chunk_id, "brochure")
 
     def test_evidence_cap_limits_each_file_and_fills_from_others(self):
         candidates = [candidate(name, name) for name in ("a-1", "a-2", "a-3", "b-1", "c-1")]
@@ -115,6 +145,25 @@ class V2FusionTests(unittest.TestCase):
         self.assertEqual(
             [item.chunk_id for item in selected],
             ["a-1", "a-2", "b-1", "c-1"],
+        )
+
+    def test_evidence_cap_can_require_distinct_pages_within_file(self):
+        candidates = [
+            candidate("page-1-a", "a", page=1),
+            candidate("page-1-b", "b", page=1),
+            candidate("page-2", "c", page=2),
+        ]
+        for item in candidates:
+            item.file_id = "file-a"
+        selected = limit_candidates_per_file(
+            candidates,
+            top_n=3,
+            max_per_file=3,
+            max_per_page=1,
+        )
+        self.assertEqual(
+            [item.chunk_id for item in selected],
+            ["page-1-a", "page-2"],
         )
 
     def test_minimum_score_removes_weak_or_non_finite_evidence(self):

@@ -277,7 +277,12 @@ async def query_v2(request: Request, body: QueryV2Body):
     selected = limit_candidates_per_file(
         filtered,
         top_n=body.k,
-        max_per_file=MAX_EVIDENCE_PER_FILE,
+        max_per_file=(
+            max(MAX_EVIDENCE_PER_FILE, 3)
+            if analysis.pressure_extremum
+            else MAX_EVIDENCE_PER_FILE
+        ),
+        max_per_page=1 if analysis.pressure_extremum else None,
     )
     evidence = [
         _candidate_evidence(candidate, rank)
@@ -314,6 +319,7 @@ async def query_v2(request: Request, body: QueryV2Body):
                 "table_intent": analysis.table_intent,
                 "document_lookup": analysis.document_lookup,
                 "pressure_extremum": analysis.pressure_extremum,
+                "citation_intent": analysis.citation_intent,
             },
             "channel_counts": {
                 channel: len(results) for channel, results in channel_results.items()

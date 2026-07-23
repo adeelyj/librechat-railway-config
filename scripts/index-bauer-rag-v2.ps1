@@ -7,7 +7,7 @@ param(
     [string]$ManifestPath = (Join-Path $PSScriptRoot '..\evals\bauer-rag-v2\baselines\corpus-manifest.json'),
     [string]$Namespace,
     [string]$V2AgentStatePath = (Join-Path $PSScriptRoot '..\tmp\bauer-rag-v2-agent.json'),
-    [string]$IndexVersion = 'bauer-rag-v2-2026-07',
+    [string]$IndexVersion = 'bauer-rag-v2-2026-07-r2',
     [string]$EmbeddingVersion = 'local/embed-engineering-1024',
     [Guid]$ResumeRunId,
     [switch]$Activate,

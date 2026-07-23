@@ -115,6 +115,11 @@ PRESSURE_EXTREMUM_RE = re.compile(
     r".{0,80}\b(?:operating pressure|working pressure|pressure|betriebsdruck|druck)\b",
     re.IGNORECASE | re.DOTALL,
 )
+CITATION_INTENT_RE = re.compile(
+    r"\b(?:cite|citation|source(?:\s+page|\s+section)?|exact\s+(?:page|section)|"
+    r"beleg|quelle|quellenangabe|seite|abschnitt)\b",
+    re.IGNORECASE,
+)
 
 
 @dataclass(frozen=True)
@@ -129,6 +134,7 @@ class QueryAnalysis:
     table_intent: bool
     document_lookup: bool
     pressure_extremum: bool
+    citation_intent: bool
 
     @property
     def exact_terms(self) -> tuple[str, ...]:
@@ -237,6 +243,7 @@ def analyze_query(query: str) -> QueryAnalysis:
         table_intent=bool(TABLE_INTENT_RE.search(query)),
         document_lookup=bool(DOCUMENT_LOOKUP_RE.search(query)),
         pressure_extremum=bool(PRESSURE_EXTREMUM_RE.search(query)),
+        citation_intent=bool(CITATION_INTENT_RE.search(query)),
     )
 
 
@@ -270,14 +277,23 @@ def limit_candidates_per_file(
     *,
     top_n: int,
     max_per_file: int = 2,
+    max_per_page: int | None = None,
 ) -> list[Candidate]:
     selected: list[Candidate] = []
     per_file: dict[str, int] = {}
+    per_page: dict[tuple[str, str], int] = {}
     for candidate in candidates:
         if per_file.get(candidate.file_id, 0) >= max_per_file:
             continue
+        page_key = (candidate.file_id, str(candidate.page or ""))
+        if (
+            max_per_page is not None
+            and per_page.get(page_key, 0) >= max_per_page
+        ):
+            continue
         selected.append(candidate)
         per_file[candidate.file_id] = per_file.get(candidate.file_id, 0) + 1
+        per_page[page_key] = per_page.get(page_key, 0) + 1
         if len(selected) == top_n:
             break
     return selected
@@ -338,15 +354,29 @@ def deterministic_rerank(
             and "exact" in candidate.channels
             else 0.0
         )
+        citation_location_bonus = (
+            0.12
+            if analysis.citation_intent and candidate.page is not None
+            else 0.0
+        )
+        versioned_source_bonus = (
+            0.04
+            if analysis.citation_intent
+            and candidate.page is not None
+            and candidate.publication_date
+            else 0.0
+        )
         candidate.rerank_score = (
             overlap * 0.55
             + min(identifier_hits, 2) * 0.16
             + min(number_hits, 2) * 0.05
             + table_bonus
             + document_bonus
+            + citation_location_bonus
+            + versioned_source_bonus
         )
         candidate.final_score = candidate.fusion_score + candidate.rerank_score
-        candidate.metadata["reranker"] = "deterministic-multilingual-fallback-v1"
+        candidate.metadata["reranker"] = "deterministic-multilingual-fallback-v2"
         reranked.append(candidate)
     reranked.sort(
         key=lambda item: (-item.final_score, -item.fusion_score, item.file_id, item.chunk_id)

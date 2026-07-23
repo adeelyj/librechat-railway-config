@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-23T14:58:14.914115+00:00",
+  "generated_at": "2026-07-23T19:34:31.941767+00:00",
   "corpus": "D:\\02_Code\\LibreChat_Setup\\tmp\\corpora\\bauer-kompressoren",
   "manifest_file_count": 373,
   "authorization_namespace": "agent_Z8A2LtQWLeP4KuUDbvqZL",
   "totals": {
     "documents": 373,
-    "chunks": 6111,
-    "entities": 30899,
+    "chunks": 5968,
+    "entities": 29875,
     "documents_with_publication_date": 84,
     "documents_with_media": 290,
     "documents_with_component_categories": 365,
     "documents_with_document_number": 28,
     "documents_with_certificate": 57,
-    "prose_chunks": 4468,
+    "prose_chunks": 4325,
     "table_row_chunks": 1643,
     "table_rows_with_footnotes": 1258
   },
@@ -29,17 +29,17 @@
     "public_document": 373
   },
   "entity_kinds": {
-    "document_number": 5048,
-    "address": 639,
-    "component_category": 8801,
-    "standard": 1340,
-    "model": 4659,
-    "pressure": 4329,
-    "capacity": 1116,
-    "revision": 950,
-    "medium": 3278,
-    "certificate": 381,
-    "part_number": 358
+    "document_number": 4794,
+    "address": 655,
+    "component_category": 8562,
+    "standard": 1350,
+    "model": 4474,
+    "pressure": 4165,
+    "capacity": 1075,
+    "revision": 923,
+    "medium": 3172,
+    "certificate": 370,
+    "part_number": 335
   },
   "table_parsers": {
     "identifier_table": 453,
@@ -56,10 +56,55 @@
       "expected_location": {
         "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
         "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
-        "page": 23,
-        "section": "Technical Data – Air Cooled Compressor Units",
-        "table": "VERTICUS SERIES, 310 - 510 l/min, 420 - 525 bar",
+        "page": 6,
+        "section": "Page 6",
+        "table": null,
         "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B06",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "expected_location": {
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "page": 7,
+        "section": "Page 7",
+        "table": null,
+        "row": null
+      },
+      "checks": {
+        "file_present": true,
+        "filename_exact": true,
+        "page_present": true,
+        "section_present": true,
+        "table_present": true,
+        "row_present": true,
+        "row_structured": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B06",
+      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "expected_location": {
+        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
+        "page": 23,
+        "section": "Page 23",
+        "table": "TECHNICAL DATA",
+        "row": null,
+        "requires_footnotes": true
       },
       "checks": {
         "file_present": true,
@@ -79,7 +124,7 @@
         "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
         "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
         "page": 23,
-        "section": "Technical Data – Air Cooled Compressor Units",
+        "section": "Page 23",
         "table": "VERTICUS SERIES",
         "row": "I 15.11-11-V",
         "requires_footnotes": true
@@ -366,7 +411,7 @@
         "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
         "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
         "page": 23,
-        "section": "Technical Data – Air Cooled Compressor Units",
+        "section": "Page 23",
         "table": "VERTICUS SERIES",
         "row": "I 15.11-11-V",
         "requires_footnotes": true
@@ -384,13 +429,13 @@
     },
     {
       "case_id": "B19",
-      "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+      "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
       "expected_location": {
-        "file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
-        "filename": "0187-0021_b-kool_c5e62182b0-d01c99958a.md",
-        "page": null,
-        "section": "Technical Data",
-        "table": "B-KOOL Refrigeration dryer",
+        "file_id": "5e8cac30-ee93-44be-b0f9-96dc10bdc23c",
+        "filename": "0066-2026_04_Accessory_Systems_EN_N39608_sc-898645140e.md",
+        "page": 12,
+        "section": "Page 12",
+        "table": "TECHNICAL DATA",
         "row": "B-KOOL III"
       },
       "checks": {
@@ -499,9 +544,10 @@
         "file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
         "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md",
         "page": 4,
-        "section": "Intake pre-filter",
+        "section": "Page 4",
         "table": "Use / Order number",
-        "row": "N7698"
+        "row": "N7698",
+        "requires_units": false
       },
       "checks": {
         "file_present": true,
@@ -538,12 +584,12 @@
     },
     {
       "case_id": "B29",
-      "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
+      "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
       "expected_location": {
-        "file_id": "59f025ac-c227-49e2-a190-99cc4c5ac49c",
-        "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md",
-        "page": 20,
-        "section": "K 22 – K 28 Series",
+        "file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+        "filename": "0056-2025-06_Product_overview_EN_N37488_sc-32c67ebad8.md",
+        "page": 31,
+        "section": "Page 31",
         "table": null,
         "row": null
       },
@@ -780,8 +826,8 @@
       "passed": true
     }
   ],
-  "gold_evidence_passed": 33,
-  "gold_evidence_total": 33,
+  "gold_evidence_passed": 35,
+  "gold_evidence_total": 35,
   "critical_failures": [],
   "passed": true
 }

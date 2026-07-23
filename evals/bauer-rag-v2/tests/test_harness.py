@@ -137,6 +137,41 @@ class EvaluationHarnessTests(unittest.TestCase):
         self.assertGreater(item["duplicate_rate"], 0)
         self.assertEqual(report["authorization_violations"], 0)
 
+    def test_table_integrity_allows_explicitly_unitless_identifier_rows(self):
+        observations = [
+            {
+                "case_id": "X",
+                "system": "v2",
+                "repetition": 1,
+                "elapsed_ms": 10,
+                "results": [
+                    {
+                        "file_id": "gold",
+                        "content": "Use: large blocks; Order number: N7698",
+                        "table_title": "Use / Order number",
+                        "row_label": "N7698",
+                        "headers": ["Use", "Order number"],
+                        "row_values": ["Large blocks", "N7698"],
+                        "units": [],
+                    }
+                ],
+            }
+        ]
+        gold = {
+            "X": {
+                "required_evidence": [
+                    {
+                        "file_id": "gold",
+                        "table": "Use / Order number",
+                        "row": "N7698",
+                        "requires_units": False,
+                    }
+                ]
+            }
+        }
+        report = score.retrieval_metrics(observations, gold, {"gold"})
+        self.assertEqual(report["observations"][0]["table_integrity"], 1)
+
     def test_answer_metrics_detect_unsupported_identifier_and_number(self):
         observations = [
             {

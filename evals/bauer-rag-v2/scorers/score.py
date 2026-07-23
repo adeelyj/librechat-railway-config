@@ -157,12 +157,16 @@ def retrieval_metrics(
         table_integrity = []
         for item in table_items:
             match = next((result for result in results if location_match(result, item)), None)
+            requires_units = item.get(
+                "requires_units",
+                bool(item.get("table")),
+            )
             table_integrity.append(
                 bool(
                     match
                     and match.get("headers")
                     and match.get("row_values")
-                    and match.get("units")
+                    and (not requires_units or match.get("units"))
                     and (
                         not item.get("requires_footnotes")
                         or match.get("footnotes")
