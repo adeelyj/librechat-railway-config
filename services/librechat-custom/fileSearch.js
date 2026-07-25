@@ -5,12 +5,15 @@ const { generateShortLivedToken, logAxiosError } = require('@librechat/api');
 const { Tools, EToolResources } = require('librechat-data-provider');
 const { filterFilesByAgentAccess } = require('~/server/services/Files/permissions');
 const { getFiles } = require('~/models');
+const { createV3AuthorizationContext } = require('./v3Authorization');
 const {
   buildFileSearchContext,
   createBatchGroups,
   createBatchQueryBody,
   createV2QueryBody,
+  createV3AnswerBody,
   normalizeBatchResults,
+  normalizeV3Answer,
   selectFileSearchRoute,
 } = require('./fileSearchBatch');
 
@@ -83,10 +86,6 @@ const createFileSearchTool = async ({ userId, files, entity_id, fileCitations = 
       if (files.length === 0) {
         return ['No files to search. Instruct the user to add files for the search.', undefined];
       }
-      const jwtToken = generateShortLivedToken(userId);
-      if (!jwtToken) {
-        return ['There was an error authenticating the file search request.', undefined];
-      }
 
       let groups;
       try {
@@ -96,42 +95,152 @@ const createFileSearchTool = async ({ userId, files, entity_id, fileCitations = 
         return [`File search could not start: ${error.message}`, undefined];
       }
 
+      const agentRoute = selectFileSearchRoute(entity_id);
+      if (agentRoute === 'v3') {
+        // A V3 answer is valid only for the evidence package V3 validated. Do not
+        // mix uncompiled conversation-file results into the same final answer.
+        groups = groups.filter((group) => group.entity_id === entity_id);
+        if (groups.length === 0) {
+          return [
+            'No V3-indexed Agent documents are available. Conversation uploads are not mixed into a validated V3 answer.',
+            undefined,
+          ];
+        }
+      }
+
       const queryPromises = groups.map(async (group) => {
         const route = selectFileSearchRoute(group.entity_id);
-        const path = route === 'v2' ? '/query_v2' : '/query_multiple';
+        const path =
+          route === 'v3' ? '/v3/answer' : route === 'v2' ? '/query_v2' : '/query_multiple';
         const body =
-          route === 'v2' ? createV2QueryBody(group, query) : createBatchQueryBody(group, query);
-        logger.debug(`[${Tools.file_search}] RAG API ${path}`, {
+          route === 'v3'
+            ? createV3AnswerBody(query)
+            : route === 'v2'
+              ? createV2QueryBody(group, query)
+              : createBatchQueryBody(group, query);
+        logger.debug(`[${Tools.file_search}] evidence route ${path}`, {
           retrievalRoute: route,
-          fileCount: body.file_ids.length,
-          entity_id: body.entity_id,
-          k: body.k,
+          fileCount: group.files.length,
+          entity_id: group.entity_id,
+          k: body.k ?? body.top_k,
         });
 
         try {
-          return await axios.post(`${process.env.RAG_API_URL}${path}`, body, {
+          let token;
+          let baseUrl;
+          if (route === 'v3') {
+            token = createV3AuthorizationContext({
+              userId,
+              agentId: group.entity_id,
+              sourceIds: group.files.map((file) => file.file_id),
+            });
+            baseUrl = process.env.BAUER_V3_API_URL;
+            if (!baseUrl) {
+              throw new Error('BAUER_V3_API_URL is not configured');
+            }
+          } else {
+            token = generateShortLivedToken(userId);
+            baseUrl = process.env.RAG_API_URL;
+            if (!token) {
+              throw new Error('could not create the RAG authorization token');
+            }
+          }
+          const response = await axios.post(`${baseUrl}${path}`, body, {
             headers: {
-              Authorization: `Bearer ${jwtToken}`,
+              Authorization: `Bearer ${token}`,
               'Content-Type': 'application/json',
             },
           });
+          return { route, response, authorizedFiles: group.files };
         } catch (error) {
           if (error?.response?.status === 404) {
-            return { data: [] };
+            return { route, response: { data: [] } };
           }
-          logAxiosError({
-            message: `Error encountered in \`file_search\` while querying ${path}`,
-            error,
-          });
+          if (route === 'v3') {
+            logger.error(`[${Tools.file_search}] V3 evidence request failed`, {
+              retrievalRoute: 'v3',
+              status: error?.response?.status ?? null,
+              errorType: error?.name ?? 'Error',
+            });
+          } else {
+            logAxiosError({
+              message: `Error encountered in \`file_search\` while querying ${path}`,
+              error,
+            });
+          }
           return null;
         }
       });
 
-      const responses = (await Promise.all(queryPromises)).filter((result) => result !== null);
-      if (responses.length === 0) {
+      const routedResponses = (await Promise.all(queryPromises)).filter(
+        (result) => result !== null,
+      );
+      if (routedResponses.length === 0) {
         return ['No results found or errors occurred while searching the files.', undefined];
       }
 
+      const v3Response = routedResponses.find((item) => item.route === 'v3');
+      if (v3Response) {
+        const final = normalizeV3Answer(
+          v3Response.response,
+          v3Response.authorizedFiles,
+        );
+        if (!final?.accepted) {
+          logger.warn(
+            `[${Tools.file_search}] Rejected V3 answer outside the authorized evidence scope`,
+            {
+              retrievalRoute: 'v3',
+              droppedUnauthorized: final?.droppedUnauthorized ?? 0,
+            },
+          );
+          return [
+            'The V3 answer was rejected because its evidence did not match the server-authorized file scope.',
+            undefined,
+          ];
+        }
+        const sources = final.evidence.map((item) => ({
+          type: 'file',
+          fileId: item.file_id,
+          content: item.content,
+          fileName: item.filename,
+          relevance: item.score,
+          pages: item.page ? [item.page] : [],
+          pageRelevance: item.page ? { [item.page]: item.score } : {},
+          metadata: {
+            retrievalRoute: 'v3',
+            releaseId: final.release_id,
+            citationId: item.citation_id,
+            evidenceId: item.evidence_id,
+            sourceVersionId: item.source_version_id,
+            sourceSha256: item.source_sha256,
+            sourceType: item.source_type,
+            channels: item.channels,
+            tableHeaders: item.table_headers,
+            tableRowValues: item.table_values,
+            unit: item.unit,
+            footnotes: item.footnotes,
+          },
+        }));
+        return [
+          final.answer,
+          {
+            [Tools.file_search]: {
+              sources,
+              fileCitations,
+              bauerV3: {
+                status: final.status,
+                releaseId: final.release_id,
+                repairAttempted: final.repair_attempted,
+                validationPassed: final.validation?.valid === true,
+                directFinal: true,
+                finalAnswer: final.answer,
+              },
+            },
+          },
+        ];
+      }
+
+      const responses = routedResponses.map((item) => item.response);
       const { results: formattedResults, droppedUnauthorized } = normalizeBatchResults(
         responses,
         files,
@@ -211,7 +320,7 @@ Use the EXACT anchor markers shown below (copy them verbatim) immediately after 
 - Multi-file: "Multiple sources confirm... \\ue200\\ue202turn0file0\\ue202turn0file1\\ue201"
 
 **CRITICAL:** Output these escape sequences EXACTLY as shown (e.g., \\ue202turn0file0). DO NOT substitute with other characters like † or similar symbols.
-**ALWAYS mention the filename in your text before the citation marker. For Bauer RAG V2 results, also copy the adjacent [V2-N] Evidence ID so the exact passage remains auditable. NEVER use markdown links or footnotes.**`
+**ALWAYS mention the filename in your text before the citation marker. For Bauer RAG V2 results, also copy the adjacent [V2-N] Evidence ID so the exact passage remains auditable. When the tool returns a Bauer RAG V3 validated final answer, reproduce that answer verbatim and do not add, remove, paraphrase, or combine engineering claims. NEVER use markdown links or footnotes.**`
           : ''
       }`,
       schema: fileSearchJsonSchema,

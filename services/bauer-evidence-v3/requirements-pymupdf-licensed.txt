@@ -1,0 +1,3 @@
+# PyMuPDF is AGPL/commercial dual-licensed. Do not include it in a proprietary deployment
+# until Bauer/RapidDraft has approved the applicable commercial or open-source license path.
+pymupdf==1.28.0

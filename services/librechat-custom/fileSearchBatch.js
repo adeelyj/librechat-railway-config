@@ -2,6 +2,8 @@ const DEFAULT_BATCH_K = 10;
 const MAX_BATCH_FILES = 1000;
 const MAX_VISIBLE_USER_FILES = 10;
 const MAX_VISIBLE_FILENAME_CHARS = 160;
+const V3_ANSWERED_STATUSES = new Set(['answered', 'answered_after_repair']);
+const V3_REFUSAL_STATUSES = new Set(['refused_no_evidence', 'refused_after_validation']);
 
 const parseIdAllowlist = (value) =>
   new Set(
@@ -102,17 +104,102 @@ const createBatchQueryBody = (group, query, k = DEFAULT_BATCH_K) => {
   return body;
 };
 
-const selectFileSearchRoute = (entityId, allowlistValue = process.env.RAG_V2_AGENT_IDS) => {
+const selectFileSearchRoute = (
+  entityId,
+  v2AllowlistValue = process.env.RAG_V2_AGENT_IDS,
+  v3AllowlistValue = process.env.BAUER_V3_AGENT_IDS,
+) => {
   if (!entityId) {
     return 'v1';
   }
-  return parseIdAllowlist(allowlistValue).has(entityId) ? 'v2' : 'v1';
+  if (parseIdAllowlist(v3AllowlistValue).has(entityId)) {
+    return 'v3';
+  }
+  return parseIdAllowlist(v2AllowlistValue).has(entityId) ? 'v2' : 'v1';
 };
 
 const createV2QueryBody = (group, query, k = 8) => {
   const body = createBatchQueryBody(group, query, k);
   body.debug = false;
   return body;
+};
+
+const createV3AnswerBody = (query, topK = 8) => ({
+  query,
+  top_k: topK,
+});
+
+const normalizeV3Answer = (response, files) => {
+  const body = response?.data;
+  if (!body || typeof body.answer !== 'string' || typeof body.status !== 'string') {
+    return null;
+  }
+  const answer = body.answer.trim();
+  const releaseId = typeof body.release_id === 'string' ? body.release_id.trim() : '';
+  const answered = V3_ANSWERED_STATUSES.has(body.status);
+  const refused = V3_REFUSAL_STATUSES.has(body.status);
+  if (
+    (!answered && !refused) ||
+    answer.length === 0 ||
+    releaseId.length === 0 ||
+    (answered && body.validation?.valid !== true)
+  ) {
+    return {
+      accepted: false,
+      droppedUnauthorized: 0,
+      status: body.status,
+      release_id: releaseId,
+      answer: '',
+      evidence: [],
+    };
+  }
+  const allowedFiles = new Map(uniqueFiles(files).map((file) => [file.file_id, file]));
+  const evidence = [];
+  let droppedUnauthorized = 0;
+  for (const item of Array.isArray(body.evidence) ? body.evidence : []) {
+    const fileId = item?.external_file_id;
+    if (!fileId || !allowedFiles.has(fileId)) {
+      droppedUnauthorized += 1;
+      continue;
+    }
+    evidence.push({
+      file_id: fileId,
+      filename: item.title || allowedFiles.get(fileId)?.filename || fileId,
+      content: String(item.content ?? ''),
+      page: Number.isInteger(item.page_number) ? item.page_number : null,
+      citation_id: item.citation_id,
+      evidence_id: item.evidence_id,
+      source_version_id: item.source_version_id,
+      source_sha256: item.source_sha256,
+      source_type: item.source_type,
+      channels: Array.isArray(item.channels) ? item.channels : [],
+      table_headers: Array.isArray(item.table_headers) ? item.table_headers : [],
+      table_values: Array.isArray(item.table_values) ? item.table_values : [],
+      unit: item.unit || null,
+      footnotes: Array.isArray(item.footnotes) ? item.footnotes : [],
+      score: Number(item.score) || 0,
+    });
+  }
+  if (droppedUnauthorized > 0 || (answered && evidence.length === 0)) {
+    return {
+      accepted: false,
+      droppedUnauthorized,
+      status: body.status,
+      release_id: body.release_id,
+      answer: '',
+      evidence: [],
+    };
+  }
+  return {
+    accepted: true,
+    droppedUnauthorized: 0,
+    status: body.status,
+    release_id: releaseId,
+    answer,
+    repair_attempted: body.repair_attempted === true,
+    validation: body.validation ?? null,
+    evidence,
+  };
 };
 
 const normalizeBatchResults = (responses, files, maxResults = DEFAULT_BATCH_K) => {
@@ -233,7 +320,9 @@ module.exports = {
   createBatchGroups,
   createBatchQueryBody,
   createV2QueryBody,
+  createV3AnswerBody,
   normalizeBatchResults,
+  normalizeV3Answer,
   parseIdAllowlist,
   partitionFiles,
   sanitizeVisibleFilename,

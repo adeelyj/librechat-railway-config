@@ -8,7 +8,9 @@ const {
   createBatchGroups,
   createBatchQueryBody,
   createV2QueryBody,
+  createV3AnswerBody,
   normalizeBatchResults,
+  normalizeV3Answer,
   parseIdAllowlist,
   sanitizeVisibleFilename,
   selectFileSearchRoute,
@@ -118,6 +120,17 @@ test('only allow-listed Agent namespaces select the V2 route', () => {
   assert.equal(selectFileSearchRoute(undefined, 'agent-v2'), 'v1');
 });
 
+test('V3 Agent allow-list is additive and takes precedence over V2', () => {
+  assert.equal(selectFileSearchRoute('agent-v3', 'agent-v2', 'agent-v3'), 'v3');
+  assert.equal(selectFileSearchRoute('agent-v2', 'agent-v2', 'agent-v3'), 'v2');
+  assert.equal(selectFileSearchRoute('agent-v1', 'agent-v2', 'agent-v3'), 'v1');
+  assert.equal(selectFileSearchRoute('shared', 'shared', 'shared'), 'v3');
+  assert.deepEqual(createV3AnswerBody('BM 40 pressure'), {
+    query: 'BM 40 pressure',
+    top_k: 8,
+  });
+});
+
 test('V2 query bodies stay bounded and never request debug output', () => {
   const group = {
     files: [{ file_id: 'kb-1' }, { file_id: 'kb-2' }],
@@ -186,4 +199,142 @@ test('V2 responses are allow-listed and preserve provenance fields', () => {
   assert.deepEqual(results[0].product_families, ['K 28']);
   assert.deepEqual(results[0].row_values, ['K 28', '525 bar']);
   assert.match(results[0].footnotes, /Maximum allowable/);
+});
+
+test('V3 validated answers require every evidence item to remain in server scope', () => {
+  const files = [{ file_id: 'allowed', filename: 'bm40.pdf', fromAgent: true }];
+  const response = {
+    data: {
+      status: 'answered',
+      answer: 'BM 40 supports 350 bar [E-ONE].',
+      release_id: 'release-v3',
+      repair_attempted: false,
+      validation: { valid: true },
+      evidence: [
+        {
+          citation_id: 'E-ONE',
+          evidence_id: 'evidence-one',
+          external_file_id: 'allowed',
+          source_version_id: 'source-version',
+          source_sha256: 'ab'.repeat(32),
+          title: 'BM 40',
+          content: 'Maximum pressure: 350 bar',
+          page_number: 4,
+          source_type: 'pdf',
+          channels: ['exact', 'table'],
+          table_headers: ['Model', 'Pressure'],
+          table_values: ['BM 40', '350 bar'],
+          unit: 'bar',
+          footnotes: [],
+          score: 0.98,
+        },
+      ],
+    },
+  };
+  const accepted = normalizeV3Answer(response, files);
+  assert.equal(accepted.accepted, true);
+  assert.equal(accepted.release_id, 'release-v3');
+  assert.equal(accepted.evidence[0].file_id, 'allowed');
+
+  response.data.evidence.push({
+    ...response.data.evidence[0],
+    external_file_id: 'forbidden',
+  });
+  const rejected = normalizeV3Answer(response, files);
+  assert.equal(rejected.accepted, false);
+  assert.equal(rejected.droppedUnauthorized, 1);
+  assert.equal(rejected.answer, '');
+});
+
+test('V3 validation uses only the signed Agent group, never conversation uploads', () => {
+  const files = [
+    { file_id: 'agent-source', filename: 'bauer.pdf', fromAgent: true },
+    { file_id: 'conversation-upload', filename: 'claim.pdf', fromAgent: false },
+  ];
+  const agentGroup = createBatchGroups(files, 'agent-v3').find(
+    (group) => group.entity_id === 'agent-v3',
+  );
+  const response = {
+    data: {
+      status: 'answered',
+      answer: 'The upload claims 999 bar [E-UPLOAD].',
+      release_id: 'release-v3',
+      validation: { valid: true },
+      evidence: [
+        {
+          citation_id: 'E-UPLOAD',
+          evidence_id: 'evidence-upload',
+          external_file_id: 'conversation-upload',
+          source_version_id: 'source-version',
+          title: 'Uncompiled upload',
+          content: '999 bar',
+        },
+      ],
+    },
+  };
+
+  const rejected = normalizeV3Answer(response, agentGroup.files);
+  assert.equal(rejected.accepted, false);
+  assert.equal(rejected.droppedUnauthorized, 1);
+});
+
+test('V3 answered statuses fail closed without an explicit passing validation', () => {
+  const files = [{ file_id: 'allowed', filename: 'bm40.pdf', fromAgent: true }];
+  const evidence = [
+    {
+      citation_id: 'E-ONE',
+      evidence_id: 'evidence-one',
+      external_file_id: 'allowed',
+      source_version_id: 'source-version',
+      title: 'BM 40',
+      content: 'Maximum pressure: 350 bar',
+    },
+  ];
+  const base = {
+    status: 'answered',
+    answer: 'BM 40 supports 350 bar [E-ONE].',
+    release_id: 'release-v3',
+    evidence,
+  };
+
+  assert.equal(normalizeV3Answer({ data: base }, files).accepted, false);
+  assert.equal(
+    normalizeV3Answer({ data: { ...base, validation: { valid: false } } }, files).accepted,
+    false,
+  );
+  assert.equal(
+    normalizeV3Answer({ data: { ...base, validation: { valid: true }, answer: '  ' } }, files)
+      .accepted,
+    false,
+  );
+});
+
+test('V3 normalization accepts only explicit deterministic refusal statuses', () => {
+  const files = [{ file_id: 'allowed', filename: 'bm40.pdf', fromAgent: true }];
+  const refused = normalizeV3Answer(
+    {
+      data: {
+        status: 'refused_no_evidence',
+        answer: 'I cannot confirm the answer because no authorized evidence was found.',
+        release_id: 'release-v3',
+        evidence: [],
+        validation: null,
+      },
+    },
+    files,
+  );
+  assert.equal(refused.accepted, true);
+
+  const unknown = normalizeV3Answer(
+    {
+      data: {
+        status: 'partially_answered',
+        answer: 'Maybe 350 bar.',
+        release_id: 'release-v3',
+        evidence: [],
+      },
+    },
+    files,
+  );
+  assert.equal(unknown.accepted, false);
 });

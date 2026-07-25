@@ -1,0 +1,3 @@
+# OCR stays in the worker image only. Models must be checksum-pinned and either
+# baked into an immutable image or mounted read-only; jobs never download them.
+rapidocr-onnxruntime==1.4.4

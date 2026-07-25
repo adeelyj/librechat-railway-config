@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "suite_key": "bauer-v3-development",
+  "suite_version": "draft-1",
+  "split": "development",
+  "gold_status": "draft",
+  "authorization_scope": {
+    "tenant_id": "",
+    "knowledge_base_id": "",
+    "allowed_release_ids": [],
+    "allowed_source_ids": []
+  },
+  "metadata": {},
+  "extraction_targets": [],
+  "table_targets": [],
+  "queries": []
+}

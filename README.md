@@ -138,6 +138,57 @@ Agent provisioning, Railway configuration, and deployment actions require separa
 
 Generated corpora, manifests, dependencies, and resume state live under `tmp/` and are intentionally ignored by Git.
 
+### Bauer RAG V3 evidence-platform candidate
+
+The additive `codex/bauer-rag-v3` implementation introduces a separate source-native evidence
+platform under `services/bauer-evidence-v3`. It compiles immutable original files into
+page-addressable blocks, structured tables/cells, typed facts, provenance, QA records, and
+release-specific exact/lexical/vector/navigation projections. The frozen source contract identifies
+373 selected originals (166 PDF and 207 HTML), 177 duplicate aliases accounting for all 550
+reviewed inputs, and 503,391,181 selected bytes. Its SHA-256 is
+`40049a12aacb198018a633905d793c8ef9011403f3fdbcd34ed7fe0792ab2580`. It must be verified against
+the original corpus and bound to the target release before the immutable manifest is created.
+
+The V3 API pins one active release, or one deployment-fixed `ready` shadow candidate, applies
+tenant/KB/Agent/source authorization before fusion, generates the answer, validates important
+claims, permits one grounded repair, and otherwise refuses. Canonical extraction/table evaluation
+uses a separate reader-only database connection and a release-pinned snapshot; it does not depend
+on an answer model.
+
+LibreChat has a separate V3 Agent allow-list and signs a short-lived server-derived authorization
+context. V3 selection is additive: explicitly listed V3 Agent IDs use V3, the existing private V2
+allow-list continues to use V2, and all remaining Agents continue to use V1.
+
+An allow-listed V3 Agent is sealed to `file_search` only with `toolEnd` and a direct-final boundary:
+no connected Agents, subagents, graph edges, or extra tools are allowed. LibreChat suppresses the
+routing model's text/reasoning and returns exactly one validated V3 tool answer; invalid or multiple
+completions fail closed. V1 and V2 are unchanged.
+
+The isolated database is currently schema version 10. Exact, non-owner reader, ingester,
+evaluator, independent-reviewer, and release-admin tiers separate serving, compilation,
+evaluation persistence, gold attestation, and control-plane authority. Production activation
+requires the reviewer tier to bind an immutable decision to the exact gold-manifest hash and the
+hash of the independently signed review packet; neither the evaluator nor release control can
+manufacture that attestation. Authorization and validator outcomes are logged as structured,
+body-free events, and valid in-scope authorization decisions are also written to an RLS-protected
+append-only audit table. Production workers require checksum-pinned OCR model files plus explicit
+languages, confidence, and render DPI.
+
+Portable interim extraction fixtures now cover B08, B11, B20, and B21 and are bound to three
+original identities in the frozen source contract. A real compile of the 109-page high-pressure
+accessories catalogue passes with zero extraction-quality issues while retaining the B-SELECT
+5-by-2 flow table on physical page 41. These checks are development evidence, not a V3 benchmark
+or independent Bauer review.
+
+V3 is not deployed or promoted by this source change. No V3 candidate release, benchmark, Railway
+deployment, or live V3 Agent route exists yet. Remaining external gates include real PostgreSQL/RLS
+verification, managed database and mirrored object stores, pinned model/OCR assets, the full
+373-source build, real-corpus execution and source review of the difficult fixtures,
+fixed-candidate V2/V3 shadow comparison, independent Bauer gold signoff, and separate explicit
+deployment/activation approval. See
+[`docs/bauer-rag-v3-architecture.md`](docs/bauer-rag-v3-architecture.md) and
+[`docs/bauer-rag-v3-runbook.md`](docs/bauer-rag-v3-runbook.md).
+
 Typical validation after the initial import:
 
 ```powershell

@@ -1,0 +1,319 @@
+{
+  "benchmark_eligible": false,
+  "bundle_kind": "portable_interim_synthetic_extraction_fixture",
+  "cases": [
+    {
+      "additional_source_expectations": [
+        {
+          "expectations": {
+            "facts": [
+              {
+                "predicate": "operating_pressure",
+                "subject": "B-SELECT",
+                "unit": "bar",
+                "values": [
+                  414,
+                  420
+                ]
+              }
+            ],
+            "tables": [
+              {
+                "label": "B-SELECT selector technical data",
+                "source_coordinate_required": true
+              }
+            ],
+            "verbatim_review_requirements": [
+              "Capture the documented selector function verbatim from physical page 41 before Bauer sign-off."
+            ]
+          },
+          "provenance": {
+            "locator_kind": "pdf_physical_page_selector_panel",
+            "physical_page": 41,
+            "source_coordinate_required": true
+          },
+          "source_identity": {
+            "declared_media_type": "application/pdf",
+            "expected_sha256": "8544a5e175835974659166d9e4dc483ed0650aa3e6b77538a001536f2154881f",
+            "external_file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+            "logical_path": "bauer_index/raw_docs/High-pressure-accessories-catalogue_EN.pdf"
+          }
+        }
+      ],
+      "case_id": "B08",
+      "expectations": {
+        "cross_source_checks": [
+          {
+            "kind": "dryer_pressure_vs_selector_operating_pressure",
+            "required_source_count": 2
+          }
+        ],
+        "facts": [
+          {
+            "predicate": "max_operating_pressure",
+            "subject": "B-KOOL Refrigeration dryer",
+            "values": [
+              {
+                "unit": "bar",
+                "value": 350
+              },
+              {
+                "unit": "bar",
+                "value": 550
+              }
+            ]
+          },
+          {
+            "predicate": "compatible_product_family",
+            "values": [
+              "MINI-VERTICUS",
+              "VERTICUS"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "label": "B-KOOL Refrigeration dryer",
+            "required_columns": [
+              "model",
+              "max operating pressure"
+            ],
+            "source_coordinate_required": true
+          }
+        ],
+        "verbatim_review_requirements": [
+          "Capture the B-KOOL cartridge-life claim verbatim from the original HTML before Bauer sign-off."
+        ]
+      },
+      "fixture_status": "interim_synthetic_not_benchmark",
+      "provenance": {
+        "locator_kind": "html_dom_table_and_nearby_product_copy",
+        "physical_page": null,
+        "source_coordinate_required": true
+      },
+      "source_identity": {
+        "declared_media_type": "text/html",
+        "expected_sha256": "d01c99958a3c729ed5a095b74022d5e72f54cd26220e0d398f37d58a3f73b511",
+        "external_file_id": "325180ba-e63d-43c0-b494-1e2a38b165f9",
+        "logical_path": "bauer_index/raw_html/0021_b-kool_c5e62182b0.html"
+      }
+    },
+    {
+      "case_id": "B11",
+      "expectations": {
+        "decision_checks": [
+          {
+            "documented_limit": {
+              "medium": "Nitrox",
+              "unit": "bar",
+              "value": 200
+            },
+            "kind": "safety_limit",
+            "requested_condition": {
+              "cylinder_medium": "Nitrox",
+              "unit": "bar",
+              "value": 300
+            },
+            "required_outcome": "not_supported_by_documented_limit"
+          }
+        ],
+        "facts": [
+          {
+            "predicate": "documented_pressure_limit",
+            "subject": "Breathing air",
+            "unit": "bar",
+            "value": 300
+          },
+          {
+            "predicate": "documented_pressure_limit",
+            "subject": "Nitrox",
+            "unit": "bar",
+            "value": 200
+          }
+        ],
+        "negative_constraints": [
+          "Do not infer that a 300 bar breathing-air limit makes a 300 bar Nitrox cylinder compatible."
+        ],
+        "tables": [
+          {
+            "label": "B-SAFE documented breathing-air and Nitrox limits",
+            "source_coordinate_required": true
+          }
+        ]
+      },
+      "fixture_status": "interim_synthetic_not_benchmark",
+      "provenance": {
+        "locator_kind": "html_documented_medium_pressure_limits",
+        "physical_page": null,
+        "source_coordinate_required": true
+      },
+      "source_identity": {
+        "declared_media_type": "text/html",
+        "expected_sha256": "9028a63e42a9c17ca30353e60fe9cb0e05b8486b565fcf544acc936593876f7f",
+        "external_file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "logical_path": "bauer_index/raw_html/0030_b-safe_ae238602bf.html"
+      }
+    },
+    {
+      "case_id": "B20",
+      "expectations": {
+        "facts": [
+          {
+            "predicate": "operating_pressure",
+            "subject": "B-SELECT",
+            "unit": "bar",
+            "values": [
+              414,
+              420
+            ]
+          },
+          {
+            "predicate": "adjustment_range",
+            "subject": "B-SELECT",
+            "unit": "bar",
+            "values": [
+              {
+                "maximum": 414,
+                "minimum": 100
+              },
+              {
+                "maximum": 420,
+                "minimum": 100
+              }
+            ]
+          },
+          {
+            "predicate": "flow",
+            "subject": "B-SELECT",
+            "unit": "l/min",
+            "values_by_setting": {
+              "200": 3500,
+              "300": 3700,
+              "50": 2750
+            }
+          }
+        ],
+        "structural_checks": [
+          {
+            "expected_count": 3,
+            "kind": "documented_product_functions",
+            "subject": "B-SELECT"
+          }
+        ],
+        "tables": [
+          {
+            "label": "B-SELECT technical data and function panel",
+            "required_columns": [
+              "operating pressure",
+              "adjustment range",
+              "flow"
+            ],
+            "source_coordinate_required": true
+          }
+        ],
+        "verbatim_review_requirements": [
+          "Capture all three documented B-SELECT function descriptions verbatim from physical page 41 before Bauer sign-off."
+        ]
+      },
+      "fixture_status": "interim_synthetic_not_benchmark",
+      "provenance": {
+        "locator_kind": "pdf_physical_page_table_and_function_panel",
+        "physical_page": 41,
+        "source_coordinate_required": true
+      },
+      "source_identity": {
+        "declared_media_type": "application/pdf",
+        "expected_sha256": "8544a5e175835974659166d9e4dc483ed0650aa3e6b77538a001536f2154881f",
+        "external_file_id": "e6b0da74-33b2-4eea-b1af-01779ca70fe5",
+        "logical_path": "bauer_index/raw_docs/High-pressure-accessories-catalogue_EN.pdf"
+      }
+    },
+    {
+      "case_id": "B21",
+      "expectations": {
+        "contradiction_checks": [
+          {
+            "do_not_conflate": [
+              "headline application pressure",
+              "B-SAFE 300 maximum operating pressure",
+              "B-SAFE 300 filling pressure"
+            ],
+            "kind": "headline_vs_later_technical_data"
+          }
+        ],
+        "facts": [
+          {
+            "predicate": "headline_pressure",
+            "subject": "Breathing air",
+            "unit": "bar",
+            "value": 300
+          },
+          {
+            "predicate": "headline_pressure",
+            "subject": "Nitrox",
+            "unit": "bar",
+            "value": 200
+          },
+          {
+            "predicate": "medium",
+            "subject": "B-SAFE 300",
+            "values": [
+              "Air",
+              "Nitrox"
+            ]
+          },
+          {
+            "predicate": "max_operating_pressure",
+            "subject": "B-SAFE 300",
+            "unit": "bar",
+            "value": 410
+          },
+          {
+            "predicate": "filling_pressure",
+            "subject": "B-SAFE 300",
+            "unit": "bar",
+            "values": [
+              225,
+              330
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "label": "B-SAFE headline pressure region",
+            "source_coordinate_required": true
+          },
+          {
+            "label": "B-SAFE 300 later technical data",
+            "required_columns": [
+              "medium",
+              "max operating pressure",
+              "filling pressure"
+            ],
+            "source_coordinate_required": true
+          }
+        ]
+      },
+      "fixture_status": "interim_synthetic_not_benchmark",
+      "provenance": {
+        "locator_kind": "html_headline_and_later_technical_data_regions",
+        "physical_page": null,
+        "source_coordinate_required": true
+      },
+      "source_identity": {
+        "declared_media_type": "text/html",
+        "expected_sha256": "9028a63e42a9c17ca30353e60fe9cb0e05b8486b565fcf544acc936593876f7f",
+        "external_file_id": "8f7af4a4-94b1-42a8-89ce-ba54960eb2b0",
+        "logical_path": "bauer_index/raw_html/0030_b-safe_ae238602bf.html"
+      }
+    }
+  ],
+  "limitations": [
+    "This portable fixture is not an observation from a built V3 release.",
+    "It contains no tenant, knowledge-base, release, search-unit, evidence, or evaluation-run UUID binding.",
+    "It is not a real-corpus benchmark result and must not be represented as one.",
+    "Verbatim requirements remain open until original-source review and independent Bauer sign-off."
+  ],
+  "review_status": "interim_codex_reviewed_requires_bauer_signoff",
+  "schema_version": 1
+}
