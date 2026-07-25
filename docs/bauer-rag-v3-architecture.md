@@ -130,6 +130,7 @@ low-quality pages cannot be silently skipped.
 stateDiagram-v2
     [*] --> Draft
     Draft --> Building
+    Draft --> Failed
     Building --> Validating: source/evidence complete
     Building --> Failed
     Validating --> Ready: QA + verified development evaluation

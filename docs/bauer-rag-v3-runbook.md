@@ -1,8 +1,9 @@
 # Bauer RAG V3 runbook
 
 Date: 2026-07-25
-Status: local implementation only. No V3 Railway service, database migration, candidate knowledge
-release, benchmark, live Agent route, deployment, or activation has been produced by this work.
+Status: local implementation only. No V3 Railway service or migration has been applied to a real
+PostgreSQL instance, and no candidate knowledge release, benchmark, live Agent route, deployment,
+or activation has been produced by this work.
 
 ## Non-negotiable safety boundary
 

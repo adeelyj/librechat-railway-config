@@ -50,17 +50,17 @@ release, or change live traffic.
 
 ### Execute and persist a candidate run
 
-Both evaluator modes verify that every response stayed on the selected release and within the
+All evaluator modes verify that every response stayed on the selected release and within the
 manifest's source scope. They persist the immutable suite, cases, run, and per-case results in the
 existing PostgreSQL evaluation tables. The persistence login must be a non-owner member of
 `bauer_rag_v3_evaluator`; the evaluator sets the tenant and principal RLS context in every
 transaction.
 
-When `extraction_targets` or `table_targets` are present, either mode also opens the separate
+When `extraction_targets` or `table_targets` are present, any mode also opens the separate
 `BAUER_V3_EVAL_QUERY_DATABASE_URL` reader connection and captures canonical observations in one
 `REPEATABLE READ, READ ONLY` transaction. The login must be reader-only
-(ingester/evaluator/admin membership is refused), and every query is explicitly pinned to the
-manifest tenant, knowledge base, release, and source IDs in addition to PostgreSQL RLS. The
+(ingester/evaluator/reviewer/admin membership is refused), and every query is explicitly pinned to
+the manifest tenant, knowledge base, release, and source IDs in addition to PostgreSQL RLS. The
 evaluator persistence connection is never used to read canonical evidence.
 
 The three target modes are mutually exclusive:

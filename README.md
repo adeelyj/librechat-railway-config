@@ -164,8 +164,8 @@ no connected Agents, subagents, graph edges, or extra tools are allowed. LibreCh
 routing model's text/reasoning and returns exactly one validated V3 tool answer; invalid or multiple
 completions fail closed. V1 and V2 are unchanged.
 
-The isolated database is currently schema version 10. Exact, non-owner reader, ingester,
-evaluator, independent-reviewer, and release-admin tiers separate serving, compilation,
+The checked-in isolated-database migration set targets schema version 10. Exact, non-owner reader,
+ingester, evaluator, independent-reviewer, and release-admin tiers separate serving, compilation,
 evaluation persistence, gold attestation, and control-plane authority. Production activation
 requires the reviewer tier to bind an immutable decision to the exact gold-manifest hash and the
 hash of the independently signed review packet; neither the evaluator nor release control can

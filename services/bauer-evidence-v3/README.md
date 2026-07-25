@@ -135,7 +135,7 @@ changed by this boundary.
 ## Release rule
 
 A database release row can be `draft`, `building`, `validating`, `ready`, `failed`, or `retired`.
-“Active” is not a mutable release status. The only serving truth is the single row in
+`Active` is not a mutable release status. The only serving truth is the single row in
 `active_releases` for a knowledge base. Activation and rollback both call the guarded
 `bauer_rag_v3.activate_release(...)` function.
 
