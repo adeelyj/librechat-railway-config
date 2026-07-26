@@ -78,7 +78,10 @@ class OpenAICompatibleModelGateway:
             "Preserve all mandatory constraints. Attach the stable citation in the same sentence "
             "as every important number, identifier, quotation, or engineering claim. If evidence "
             "is insufficient, say that it cannot be confirmed. Never treat navigation summaries "
-            "as factual support."
+            "as factual support. Every factual sentence must end with one or more supplied stable "
+            "citation IDs. A refusal must be a short standalone sentence without an adversative "
+            "such as 'but' or 'however'. Do not use quotation marks unless the quoted words occur "
+            "verbatim in the cited evidence. Return only the answer, with no validation commentary."
         )
         repair = ""
         if request.previous_answer is not None:
@@ -92,7 +95,10 @@ class OpenAICompatibleModelGateway:
             ]
             repair = (
                 "\n\nThe previous answer failed deterministic validation. Repair it once without "
-                "adding evidence or dropping constraints.\nPrevious answer:\n"
+                "adding evidence or dropping constraints. Return only the repaired answer. End "
+                "every factual sentence with its supplied citation. Keep any refusal as a separate "
+                "standalone sentence, and do not use quotation marks unless they are verbatim from "
+                "the cited evidence.\nPrevious answer:\n"
                 f"{request.previous_answer}\nViolations:\n"
                 f"{json.dumps(compact_violations, ensure_ascii=False)}"
             )

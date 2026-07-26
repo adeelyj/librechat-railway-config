@@ -53,7 +53,8 @@ _IDENTIFIER_RE = re.compile(
     re.IGNORECASE,
 )
 _SAFE_REFUSAL_RE = re.compile(
-    r"\b(?:not established|not found|no compatible|no matching|insufficient evidence|"
+    r"\b(?:not established|not found|not supported|unsupported|does not support|"
+    r"not documented|no evidence|no compatible|no matching|insufficient evidence|"
     r"cannot confirm|cannot determine|unable to confirm|nicht belegt|nicht gefunden|"
     r"nicht bestätigt|keine ausreichenden belege|kein kompatib\w*)\b",
     re.IGNORECASE,
@@ -75,11 +76,17 @@ _NON_CLAIM_TERMS = frozenset(
         "based",
         "be",
         "by",
+        "claim",
+        "condition",
+        "confirmed",
+        "data",
         "das",
         "dem",
         "den",
         "der",
         "die",
+        "documented",
+        "documentation",
         "ein",
         "eine",
         "einer",
@@ -93,11 +100,17 @@ _NON_CLAIM_TERMS = frozenset(
         "is",
         "it",
         "its",
+        "listed",
         "mit",
         "of",
         "on",
         "or",
         "provided",
+        "question",
+        "requested",
+        "reported",
+        "states",
+        "whether",
         "supplied",
         "that",
         "the",
@@ -149,6 +162,19 @@ def validate_answer(
         for value in values
         for term in _claim_terms(value)
     }
+    package_support_terms = {
+        term
+        for citation in package.citations
+        for term in _claim_terms(citation.support_text)
+    }
+    constraint_terms.update(
+        _claim_terms(package.question).intersection(package_support_terms)
+    )
+    question_important_claims = {
+        normalize_text(match.group(0))
+        for pattern in (_HIGH_RISK_NUMBER_RE, _IDENTIFIER_RE)
+        for match in pattern.finditer(package.question)
+    }
     for sentence in sentences:
         sentence_citations = [
             match.group(1).upper() for match in _CITATION_RE.finditer(sentence)
@@ -173,6 +199,12 @@ def validate_answer(
         )
         for code, raw_claim in important_claims:
             normalized_claim = normalize_text(raw_claim)
+            if (
+                is_refusal_sentence
+                and normalized_claim
+                and normalized_claim in question_important_claims
+            ):
+                continue
             if not sentence_citations:
                 violations.append(
                     ValidationViolation(

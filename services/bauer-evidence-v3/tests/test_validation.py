@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import unittest
+from dataclasses import replace
 
 from bauer_evidence_v3.evidence import EvidenceCitation, EvidencePackage
 from bauer_evidence_v3.planner import analyze_query
@@ -189,6 +190,74 @@ class ValidatorTests(unittest.TestCase):
         codes = {item.code for item in result.violations}
         self.assertIn("factual_claim_without_adjacent_citation", codes)
         self.assertIn("forbidden_claim_value", codes)
+
+    def test_safe_refusal_may_repeat_question_value_without_claiming_it(self) -> None:
+        plan = analyze_query(
+            "Is a 300 bar Nitrox cylinder supported by B-SAFE?",
+        )
+        package = EvidencePackage(
+            release_id=self.package.release_id,
+            tenant_id=self.package.tenant_id,
+            knowledge_base_id=self.package.knowledge_base_id,
+            question="Is a 300 bar Nitrox cylinder supported by B-SAFE?",
+            citations=self.package.citations,
+            truncated=False,
+        )
+        result = validate_answer(
+            answer="The requested 300 bar Nitrox condition is not supported.",
+            package=package,
+            plan=plan,
+        )
+        self.assertTrue(result.valid)
+        self.assertTrue(result.safe_refusal_detected)
+
+    def test_question_terms_are_context_only_when_present_in_evidence(self) -> None:
+        product_context = replace(
+            self.citation,
+            citation_id="E-111111111111",
+            evidence_id="product-context",
+            content="B-SAFE product overview.",
+            table_headers=(),
+            table_values=(),
+        )
+        supported_context = EvidencePackage(
+            release_id=self.package.release_id,
+            tenant_id=self.package.tenant_id,
+            knowledge_base_id=self.package.knowledge_base_id,
+            question="What is documented for B-SAFE model BM 40?",
+            citations=(self.citation, product_context),
+            truncated=False,
+        )
+        valid = validate_answer(
+            answer=(
+                "For B-SAFE, model BM 40 has a maximum operating pressure of 350 bar "
+                "[E-ABCDEF123456]."
+            ),
+            package=supported_context,
+            plan=analyze_query(supported_context.question),
+        )
+        self.assertTrue(valid.valid)
+
+        unsupported_context = EvidencePackage(
+            release_id=self.package.release_id,
+            tenant_id=self.package.tenant_id,
+            knowledge_base_id=self.package.knowledge_base_id,
+            question="Is BM 40 suitable for explosive atmospheres?",
+            citations=self.package.citations,
+            truncated=False,
+        )
+        invalid = validate_answer(
+            answer=(
+                "BM 40 is suitable for explosive atmospheres "
+                "[E-ABCDEF123456]."
+            ),
+            package=unsupported_context,
+            plan=analyze_query(unsupported_context.question),
+        )
+        self.assertIn(
+            "unsupported_factual_claim",
+            {item.code for item in invalid.violations},
+        )
 
 
 if __name__ == "__main__":
