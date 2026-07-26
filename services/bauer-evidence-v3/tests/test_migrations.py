@@ -36,7 +36,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
         discovered = MIGRATIONS.discover_migrations(MIGRATIONS_DIR)
         self.assertEqual(
             [migration.version for migration in discovered],
-            list(range(1, 18)),
+            list(range(1, 19)),
         )
         self.assertEqual(
             [migration.filename for migration in discovered],
@@ -58,6 +58,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
                 "015_release_membership_registration.sql",
                 "016_reader_rls_scope_sets.sql",
                 "017_authorization_audit_scope_set.sql",
+                "018_materialize_reader_scope_dependencies.sql",
             ],
         )
         for migration in discovered:
@@ -586,6 +587,26 @@ class MigrationStructureTests(unittest.TestCase):
         self.assertNotIn(
             "from unnest(target_source_ids)",
             audit_sql,
+        )
+
+    def test_nested_reader_scopes_are_materialized_once(self):
+        scope_sql = " ".join(
+            self.files[
+                "018_materialize_reader_scope_dependencies.sql"
+            ].casefold().split()
+        )
+        for requirement in (
+            "with readable_kbs as materialized",
+            "with readable_sources as materialized",
+            "readable_releases as materialized",
+            "join readable_sources",
+            "join readable_releases",
+        ):
+            self.assertIn(requirement, scope_sql)
+        self.assertNotIn(
+            "artifact.source_id = any "
+            "(bauer_rag_v3.readable_source_ids())",
+            scope_sql,
         )
 
     def test_hardened_reader_cannot_read_control_or_gold_tables(self):
