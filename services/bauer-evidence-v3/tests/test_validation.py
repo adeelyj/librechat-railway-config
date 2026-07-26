@@ -197,6 +197,40 @@ class ValidatorTests(unittest.TestCase):
 
         self.assertTrue(result.valid)
 
+    def test_cited_source_reference_wording_is_not_an_engineering_claim(
+        self,
+    ) -> None:
+        pressure_variant = replace(
+            self.citation,
+            citation_id="E-111111111111",
+            evidence_id="pressure-variant",
+            content=(
+                "Group: VERTICUS I 420 - 525 bar; model "
+                "I 15.11-11-V; maximum operating pressure 525; motor "
+                "power 11."
+            ),
+            table_headers=(),
+            table_values=(),
+        )
+        package = replace(
+            self.package,
+            question=(
+                "Report the technical-data table for I 15.11-11-V."
+            ),
+            citations=(pressure_variant,),
+        )
+        result = validate_answer(
+            answer=(
+                "The technical-data table lists a maximum operating "
+                "pressure of 525, depending on the pressure group "
+                "[E-111111111111]."
+            ),
+            package=package,
+            plan=analyze_query(package.question),
+        )
+
+        self.assertTrue(result.valid)
+
     def test_cited_two_value_comparison_allows_relational_language(
         self,
     ) -> None:
