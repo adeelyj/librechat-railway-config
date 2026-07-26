@@ -81,7 +81,9 @@ class OpenAICompatibleModelGateway:
             "as factual support. Every factual sentence must end with one or more supplied stable "
             "citation IDs. A refusal must be a short standalone sentence without an adversative "
             "such as 'but' or 'however'. Do not use quotation marks unless the quoted words occur "
-            "verbatim in the cited evidence. Return only the answer, with no validation commentary."
+            "verbatim in the cited evidence. Use complete prose sentences, not Markdown tables, "
+            "lists, headings, labels, or sentence fragments. Return only the answer, with no "
+            "validation commentary."
         )
         repair = ""
         if request.previous_answer is not None:
@@ -98,7 +100,8 @@ class OpenAICompatibleModelGateway:
                 "adding evidence or dropping constraints. Return only the repaired answer. End "
                 "every factual sentence with its supplied citation. Keep any refusal as a separate "
                 "standalone sentence, and do not use quotation marks unless they are verbatim from "
-                "the cited evidence.\nPrevious answer:\n"
+                "the cited evidence. Use complete prose sentences only; do not use Markdown tables, "
+                "lists, headings, labels, or fragments.\nPrevious answer:\n"
                 f"{request.previous_answer}\nViolations:\n"
                 f"{json.dumps(compact_violations, ensure_ascii=False)}"
             )

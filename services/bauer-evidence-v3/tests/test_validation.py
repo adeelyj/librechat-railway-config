@@ -259,6 +259,55 @@ class ValidatorTests(unittest.TestCase):
             {item.code for item in invalid.violations},
         )
 
+    def test_citation_uses_retrieved_support_from_same_source_only(self) -> None:
+        same_source_detail = replace(
+            self.citation,
+            citation_id="E-222222222222",
+            evidence_id="same-source-detail",
+            content="The motor output is 11 kW.",
+            table_headers=("Motor output",),
+            table_values=("11 kW",),
+        )
+        other_source_detail = replace(
+            self.citation,
+            citation_id="E-333333333333",
+            evidence_id="other-source-detail",
+            source_document_id="other-source",
+            content="The motor output is 15 kW.",
+            table_headers=("Motor output",),
+            table_values=("15 kW",),
+        )
+        package = EvidencePackage(
+            release_id=self.package.release_id,
+            tenant_id=self.package.tenant_id,
+            knowledge_base_id=self.package.knowledge_base_id,
+            question="What are the pressure and motor output for BM 40?",
+            citations=(self.citation, same_source_detail, other_source_detail),
+            truncated=False,
+        )
+        same_source = validate_answer(
+            answer=(
+                "BM 40 has a maximum pressure of 350 bar and motor output "
+                "of 11 kW [E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(package.question),
+        )
+        self.assertTrue(same_source.valid)
+
+        cross_source = validate_answer(
+            answer=(
+                "BM 40 has a maximum pressure of 350 bar and motor output "
+                "of 15 kW [E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(package.question),
+        )
+        self.assertIn(
+            "unsupported_number",
+            {item.code for item in cross_source.violations},
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

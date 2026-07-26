@@ -179,10 +179,15 @@ def validate_answer(
         sentence_citations = [
             match.group(1).upper() for match in _CITATION_RE.finditer(sentence)
         ]
-        cited_support = "\n".join(
-            citation_map[citation].support_text
+        cited_source_document_ids = {
+            citation_map[citation].source_document_id
             for citation in sentence_citations
             if citation in citation_map
+        }
+        cited_support = "\n".join(
+            citation.support_text
+            for citation in package.citations
+            if citation.source_document_id in cited_source_document_ids
         )
         normalized_support = normalize_text(cited_support)
         uncited_sentence = _CITATION_RE.sub("", sentence)
