@@ -10,7 +10,9 @@ from unittest.mock import patch
 SERVICE_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SERVICE_ROOT))
 
+from bauer_evidence_v3.auth import AuthorizationContext  # noqa: E402
 from bauer_evidence_v3.evaluation import (  # noqa: E402
+    AnswerServiceEvaluationTarget,
     EvaluationManifestError,
     EvaluationObservations,
     EvaluationRequest,
@@ -688,6 +690,89 @@ class HttpTargetTests(unittest.TestCase):
         self.assertEqual(
             request["headers"]["authorization"],
             "Bearer rotated-token",
+        )
+
+
+class DirectTargetSourceScopeTests(unittest.TestCase):
+    def test_case_source_scope_is_parsed_and_must_stay_within_manifest(self):
+        payload = manifest_payload(
+            cases=[
+                {
+                    "case_id": "source-specific",
+                    "prompt": {"mode": "query", "query": "pressure"},
+                    "authorization_scope": {
+                        "allowed_source_ids": [SOURCE_ID],
+                    },
+                }
+            ]
+        )
+        manifest = parse_evaluation_manifest(
+            payload,
+            expected_split="development",
+        )
+        self.assertEqual(
+            manifest.cases[0].authorized_source_ids,
+            (SOURCE_ID,),
+        )
+
+        payload["queries"][0]["authorization_scope"][
+            "allowed_source_ids"
+        ] = [OTHER_SOURCE_ID]
+        with self.assertRaisesRegex(
+            EvaluationManifestError,
+            "exceeds the manifest source scope",
+        ):
+            parse_evaluation_manifest(
+                payload,
+                expected_split="development",
+            )
+
+    def test_direct_target_narrows_authorization_for_each_case(self):
+        class AnswerService:
+            def __init__(self):
+                self.authorizations = []
+
+            def retrieve_pinned(self, *, authorization, question, top_k):
+                self.authorizations.append(authorization)
+                return type(
+                    "Run",
+                    (),
+                    {
+                        "release_id": RELEASE_ID,
+                        "results": (),
+                    },
+                )()
+
+        service = AnswerService()
+        target = AnswerServiceEvaluationTarget(
+            answer_service=service,
+            authorization=AuthorizationContext(
+                tenant_id=TENANT_ID,
+                knowledge_base_id=KB_ID,
+                user_id="evaluator",
+                agent_id="direct",
+                audience="test",
+                issued_at=1,
+                expires_at=2,
+                authorized_source_ids=(SOURCE_ID, OTHER_SOURCE_ID),
+            ),
+        )
+        asyncio.run(
+            target.execute(
+                EvaluationRequest(
+                    case_key="source-specific",
+                    mode="query",
+                    question="pressure",
+                    mandatory_constraints={},
+                    forbidden_claim_values=(),
+                    top_k=3,
+                    authorized_source_ids=(SOURCE_ID,),
+                )
+            )
+        )
+        self.assertEqual(
+            service.authorizations[0].authorized_source_ids,
+            (SOURCE_ID,),
         )
 
 

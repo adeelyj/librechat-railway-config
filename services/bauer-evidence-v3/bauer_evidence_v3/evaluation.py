@@ -21,7 +21,7 @@ import time
 import uuid
 from collections import Counter
 from collections.abc import Awaitable, Callable, Mapping, Sequence
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict, dataclass, field, replace
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Protocol
@@ -103,6 +103,7 @@ class EvaluationCase:
     required_answer_substrings: tuple[str, ...]
     forbidden_answer_substrings: tuple[str, ...]
     hard_failure_codes: tuple[str, ...]
+    authorized_source_ids: tuple[str, ...]
     metadata: Mapping[str, Any] = field(default_factory=dict)
 
     @property
@@ -121,6 +122,9 @@ class EvaluationCase:
     @property
     def expected_payload(self) -> dict[str, Any]:
         return {
+            "authorization": {
+                "allowed_source_ids": list(self.authorized_source_ids),
+            },
             "retrieval": {
                 "required_evidence_ids": list(self.required_evidence_ids),
                 "forbidden_evidence_ids": list(self.forbidden_evidence_ids),
@@ -160,6 +164,7 @@ class EvaluationRequest:
     mandatory_constraints: Mapping[str, str | tuple[str, ...]]
     forbidden_claim_values: tuple[str, ...]
     top_k: int
+    authorized_source_ids: tuple[str, ...] | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -437,6 +442,7 @@ def parse_evaluation_manifest(
             eval_suite_id=eval_suite_id,
             split=split,
             position=index,
+            allowed_source_ids=set(scope.allowed_source_ids),
         )
         for index, raw_case in enumerate(raw_cases)
     )
@@ -491,10 +497,25 @@ class AnswerServiceEvaluationTarget:
         self,
         request: EvaluationRequest,
     ) -> EvaluationTargetResult:
+        requested_sources = (
+            self._authorization.authorized_source_ids
+            if request.authorized_source_ids is None
+            else request.authorized_source_ids
+        )
+        if not set(requested_sources).issubset(
+            self._authorization.authorized_source_ids
+        ):
+            raise EvaluationTargetError(
+                "evaluation request source scope exceeds target authorization"
+            )
+        authorization = replace(
+            self._authorization,
+            authorized_source_ids=tuple(sorted(set(requested_sources))),
+        )
         if request.mode == "query":
             run = await asyncio.to_thread(
                 self._answer_service.retrieve_pinned,
-                authorization=self._authorization,
+                authorization=authorization,
                 question=request.question,
                 top_k=request.top_k,
             )
@@ -519,7 +540,7 @@ class AnswerServiceEvaluationTarget:
             )
 
         result = await self._answer_service.answer(
-            authorization=self._authorization,
+            authorization=authorization,
             question=request.question,
             mandatory_constraints=dict(request.mandatory_constraints),
             forbidden_claim_values=request.forbidden_claim_values,
@@ -826,6 +847,7 @@ class EvaluationRunner:
             mandatory_constraints=case.mandatory_constraints,
             forbidden_claim_values=case.forbidden_claim_values,
             top_k=case.top_k,
+            authorized_source_ids=case.authorized_source_ids,
         )
         start = time.perf_counter()
         target_error: str | None = None
@@ -972,7 +994,7 @@ def _score_case(
     persisted_evidence_ids: list[str] = []
     authorization_violations: list[dict[str, str]] = []
     malformed_evidence_ids: list[str] = []
-    allowed_sources = set(manifest.scope.allowed_source_ids)
+    allowed_sources = set(case.authorized_source_ids)
     for position, raw_evidence in enumerate(response.evidence, start=1):
         evidence = _mapping(raw_evidence, f"target evidence {position}")
         evidence_id = str(evidence.get("evidence_id") or "").strip()
@@ -1362,6 +1384,7 @@ def _parse_case(
     eval_suite_id: str,
     split: str,
     position: int,
+    allowed_source_ids: set[str],
 ) -> EvaluationCase:
     case = _mapping(raw_case, f"queries[{position}]")
     case_key = _text(
@@ -1474,6 +1497,28 @@ def _parse_case(
     metadata = canonicalize_mapping(
         _mapping(case.get("metadata", {}), f"{case_key}.metadata")
     )
+    case_scope = _mapping(
+        case.get("authorization_scope", {}),
+        f"{case_key}.authorization_scope",
+    )
+    raw_case_sources = case_scope.get("allowed_source_ids")
+    authorized_source_ids = tuple(
+        sorted(
+            allowed_source_ids
+            if raw_case_sources is None
+            else set(
+                _text_list(
+                    raw_case_sources,
+                    f"{case_key}.authorization_scope.allowed_source_ids",
+                )
+            )
+        )
+    )
+    if not set(authorized_source_ids).issubset(allowed_source_ids):
+        raise EvaluationManifestError(
+            f"{case_key}.authorization_scope.allowed_source_ids "
+            "exceeds the manifest source scope"
+        )
     required_evidence_ids = tuple(
         _text_list(
             retrieval.get("required_evidence_ids", []),
@@ -1540,6 +1585,7 @@ def _parse_case(
             )
         ),
         hard_failure_codes=hard_failure_codes,
+        authorized_source_ids=authorized_source_ids,
         metadata=metadata,
     )
 
