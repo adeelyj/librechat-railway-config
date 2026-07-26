@@ -224,6 +224,19 @@ class RetrievalAndAnsweringTests(unittest.TestCase):
         self.assertNotIn("GIVE THE FREE AIR DELIVERY", plan.identifiers)
         self.assertNotIn("NUMBER OF STAGES", plan.identifiers)
 
+    def test_planner_recognizes_bounded_catalog_product_identifiers(
+        self,
+    ) -> None:
+        plan = analyze_query(
+            "Compare B-KOOL with B-SELECT and reconcile B-SAFE data."
+        )
+
+        self.assertEqual(
+            plan.identifiers,
+            ("B-KOOL", "B-SELECT", "B-SAFE"),
+        )
+        self.assertEqual(plan.channels[0], RetrievalChannel.EXACT)
+
     def test_planner_preserves_numeric_comparators_ranges_and_default_equality(
         self,
     ) -> None:

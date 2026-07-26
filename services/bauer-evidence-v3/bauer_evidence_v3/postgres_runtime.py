@@ -40,6 +40,39 @@ _PHYSICAL_PAGE_PATTERN = re.compile(
     r"\bphysical\s+page\s+([1-9][0-9]{0,5})\b",
     flags=re.IGNORECASE,
 )
+_CATALOG_IDENTIFIER_PATTERN = re.compile(
+    r"^B-[A-Z][A-Z0-9]{1,29}(?:-[A-Z0-9]{1,20})*$",
+    flags=re.IGNORECASE,
+)
+_CONTEXT_TERM_PATTERN = re.compile(r"[a-z0-9]+", flags=re.IGNORECASE)
+_CONTEXT_STOP_TERMS = frozenset(
+    {
+        "all",
+        "and",
+        "any",
+        "both",
+        "cite",
+        "distinct",
+        "documented",
+        "exact",
+        "files",
+        "from",
+        "later",
+        "not",
+        "only",
+        "preserve",
+        "report",
+        "source",
+        "sources",
+        "summarize",
+        "that",
+        "the",
+        "three",
+        "using",
+        "values",
+        "with",
+    }
+)
 
 
 class PostgresRuntimeError(RuntimeError):
@@ -136,6 +169,29 @@ def _requested_physical_pages(plan: QueryPlan) -> frozenset[int]:
     return frozenset(
         int(match.group(1))
         for match in _PHYSICAL_PAGE_PATTERN.finditer(plan.query)
+    )
+
+
+def _catalog_identifiers(plan: QueryPlan) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(
+            normalized
+            for identifier in plan.identifiers
+            if _CATALOG_IDENTIFIER_PATTERN.fullmatch(identifier)
+            for normalized in (normalize_text(identifier),)
+            if normalized
+        )
+    )
+
+
+def _identifier_context_terms(plan: QueryPlan) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(
+            term
+            for token in plan.tokens
+            for term in _CONTEXT_TERM_PATTERN.findall(token.casefold())
+            if len(term) > 1 and term not in _CONTEXT_STOP_TERMS
+        )
     )
 
 
@@ -422,6 +478,133 @@ WHERE unit.release_id = request.release_id
 ORDER BY raw_score DESC, evidence_id
 LIMIT %s
 """
+
+
+_IDENTIFIER_CONTEXT_SQL = (
+    "/* v3:channel:identifier_context */\n"
+    + _AUTHORIZED_UNITS_CTE
+    + """
+, context_query AS (
+    SELECT
+        %s::text[] AS identifiers,
+        %s::text[] AS query_terms,
+        %s::boolean AS structured_intent
+),
+anchor_pages AS MATERIALIZED (
+    SELECT
+        authorized_units.source_document_id,
+        authorized_units.source_version_id,
+        authorized_units.page_number,
+        array_agg(
+            DISTINCT identifier
+            ORDER BY identifier
+        ) AS anchor_identifiers
+    FROM authorized_units
+    CROSS JOIN context_query
+    CROSS JOIN LATERAL unnest(
+        context_query.identifiers
+    ) AS identifier
+    WHERE position(
+        identifier IN lower(
+            concat_ws(
+                ' ',
+                authorized_units.search_text,
+                authorized_units.display_text,
+                authorized_units.unit_metadata::text
+            )
+        )
+    ) > 0
+    GROUP BY
+        authorized_units.source_document_id,
+        authorized_units.source_version_id,
+        authorized_units.page_number
+),
+scored_context AS (
+    SELECT
+        authorized_units.*,
+        anchor_pages.anchor_identifiers,
+        (
+            SELECT count(*)::integer
+            FROM unnest(context_query.identifiers) AS identifier
+            WHERE position(
+                identifier IN lower(
+                    concat_ws(
+                        ' ',
+                        authorized_units.search_text,
+                        authorized_units.display_text,
+                        authorized_units.unit_metadata::text
+                    )
+                )
+            ) > 0
+        ) AS identifier_hits,
+        (
+            SELECT count(*)::integer
+            FROM unnest(context_query.query_terms) AS query_term
+            WHERE position(
+                query_term IN lower(
+                    concat_ws(
+                        ' ',
+                        authorized_units.search_text,
+                        authorized_units.display_text,
+                        authorized_units.unit_metadata::text
+                    )
+                )
+            ) > 0
+        ) AS query_term_hits,
+        authorized_units.search_text ~ '[0-9]' AS has_number,
+        context_query.structured_intent
+    FROM authorized_units
+    JOIN anchor_pages
+      ON anchor_pages.source_document_id =
+         authorized_units.source_document_id
+     AND anchor_pages.source_version_id =
+         authorized_units.source_version_id
+     AND anchor_pages.page_number = authorized_units.page_number
+    CROSS JOIN context_query
+)
+SELECT
+    scored_context.*,
+    least(
+        1.0,
+        0.30
+        + CASE
+              WHEN scored_context.identifier_hits > 0 THEN 0.60
+              ELSE 0.0
+          END
+        + least(scored_context.query_term_hits, 4) * 0.08
+        + CASE
+              WHEN scored_context.structured_intent
+                   AND scored_context.has_number
+              THEN 0.18
+              ELSE 0.0
+          END
+        + CASE
+              WHEN scored_context.structured_intent
+                   AND scored_context.unit_type IN (
+                       'fact',
+                       'table_row',
+                       'table_cell'
+                   )
+              THEN 0.05
+              ELSE 0.0
+          END
+    )::double precision AS raw_score,
+    'exact'::text AS channel,
+    'identifier_context:'
+        || array_to_string(
+            scored_context.anchor_identifiers,
+            ','
+        ) AS reason,
+    scored_context.unit_metadata ->> 'unit' AS channel_unit
+FROM scored_context
+ORDER BY
+    raw_score DESC,
+    scored_context.source_document_id,
+    scored_context.page_number,
+    scored_context.evidence_id
+LIMIT %s
+"""
+)
 
 
 def _fact_sql(superlative: str | None) -> str:
@@ -1738,6 +1921,8 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             )
         channel_limit = min(max(plan.top_k * 4, 20), 80)
         requested_physical_pages = _requested_physical_pages(plan)
+        catalog_identifiers = _catalog_identifiers(plan)
+        identifier_context_terms = _identifier_context_terms(plan)
         required_numeric_groups = _required_numeric_groups(plan)
         forbidden_numeric_constraints = [
             _numeric_constraint_document(constraint)
@@ -1798,6 +1983,28 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                         _EXACT_SQL,
                         (*base_parameters, list(terms), channel_limit),
                     )
+                    if catalog_identifiers:
+                        context_limit = min(
+                            max(plan.top_k * 10, 40),
+                            160,
+                        )
+                        rows.extend(
+                            self._fetchall(
+                                connection,
+                                _IDENTIFIER_CONTEXT_SQL,
+                                (
+                                    *base_parameters,
+                                    list(catalog_identifiers),
+                                    list(identifier_context_terms),
+                                    bool(
+                                        plan.table_intent
+                                        or RetrievalChannel.FACT
+                                        in plan.channels
+                                    ),
+                                    context_limit,
+                                ),
+                            )
+                        )
                 elif channel is RetrievalChannel.FACT:
                     rows = self._fetchall(
                         connection,
@@ -2112,11 +2319,6 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             evidence = evidence_by_id[evidence_id]
             location = (
                 evidence.source_version_id,
-                evidence.coordinate.page_number,
-                evidence.coordinate.block_id,
-                evidence.coordinate.table_id,
-                evidence.coordinate.row_index,
-                evidence.coordinate.cell_id,
                 normalize_text(evidence.content),
             )
             if location in seen_locations:
@@ -2138,10 +2340,75 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                     reasons=tuple(dict.fromkeys(reasons[evidence_id])),
                 )
             )
+        ranked_results = list(
+            PostgresEvidenceIndex._balance_catalog_identifier_context(
+                plan,
+                ranked_results,
+            )
+        )
         return PostgresEvidenceIndex._limit_with_unit_diversity(
             plan,
             ranked_results,
             unit_type_by_id,
+        )
+
+    @staticmethod
+    def _balance_catalog_identifier_context(
+        plan: QueryPlan,
+        ranked_results: Sequence[RetrievalResult],
+    ) -> tuple[RetrievalResult, ...]:
+        """Keep multi-product catalogue comparisons balanced across anchors."""
+
+        identifiers = _catalog_identifiers(plan)
+        if (
+            len(identifiers) < 2
+            or len(ranked_results) <= plan.top_k
+            or plan.top_k < len(identifiers)
+        ):
+            return tuple(ranked_results)
+
+        buckets: dict[str, list[RetrievalResult]] = {
+            identifier: [] for identifier in identifiers
+        }
+        for item in ranked_results:
+            contexts = {
+                context
+                for reason in item.reasons
+                if reason.startswith("identifier_context:")
+                for context in reason.removeprefix(
+                    "identifier_context:"
+                ).split(",")
+                if context
+            }
+            for identifier in identifiers:
+                if identifier in contexts:
+                    buckets[identifier].append(item)
+
+        if any(not buckets[identifier] for identifier in identifiers):
+            return tuple(ranked_results)
+
+        quota = max(1, plan.top_k // len(identifiers))
+        selected_ids: set[str] = set()
+        for identifier in identifiers:
+            added = 0
+            for item in buckets[identifier]:
+                evidence_id = item.evidence.evidence_id
+                if evidence_id in selected_ids:
+                    continue
+                selected_ids.add(evidence_id)
+                added += 1
+                if added >= quota:
+                    break
+
+        for item in ranked_results:
+            if len(selected_ids) >= plan.top_k:
+                break
+            selected_ids.add(item.evidence.evidence_id)
+
+        return tuple(
+            item
+            for item in ranked_results
+            if item.evidence.evidence_id in selected_ids
         )
 
     @staticmethod

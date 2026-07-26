@@ -731,6 +731,119 @@ class PostgresRuntimeTests(unittest.TestCase):
             {"prose-0", "prose-1", "prose-2", "prose-3", "prose-4"},
         )
 
+    def test_catalog_identifier_context_balances_multi_product_results(self):
+        second_source = "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+        context_rows = []
+        for index in range(6):
+            context_rows.append(
+                {
+                    **evidence_row(
+                        f"kool-{index}",
+                        channel="exact",
+                        unit_type=(
+                            "fact" if index > 0 else "paragraph"
+                        ),
+                        score=1.0 - (index * 0.01),
+                        content=f"B-KOOL context row {index}: 350 bar.",
+                    ),
+                    "reason": "identifier_context:b-kool",
+                }
+            )
+        for index in range(6):
+            context_rows.append(
+                {
+                    **evidence_row(
+                        f"select-{index}",
+                        channel="exact",
+                        unit_type=(
+                            "fact" if index > 0 else "paragraph"
+                        ),
+                        score=0.5 - (index * 0.01),
+                        content=(
+                            f"B-SELECT context row {index}: 414 bar."
+                        ),
+                        source_id=second_source,
+                        external_file_id="file-public-b",
+                    ),
+                    "reason": "identifier_context:b-select",
+                }
+            )
+        connection = FakeConnection(
+            {"identifier_context": context_rows}
+        )
+        results = self.make_index(connection).retrieve(
+            analyze_query(
+                "Compare the B-KOOL table with B-SELECT technical data.",
+                top_k=4,
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset(
+                {SOURCE_ID, second_source}
+            ),
+        )
+
+        self.assertEqual(len(results), 4)
+        self.assertEqual(
+            {
+                item.evidence.source_document_id:
+                    sum(
+                        result.evidence.source_document_id
+                        == item.evidence.source_document_id
+                        for result in results
+                    )
+                for item in results
+            },
+            {SOURCE_ID: 2, second_source: 2},
+        )
+        context_sql, parameters = next(
+            (sql, parameters)
+            for sql, parameters in connection.executions
+            if "v3:channel:identifier_context" in sql
+        )
+        self.assertEqual(parameters[8], ["b-kool", "b-select"])
+        self.assertIn("technical", parameters[9])
+        self.assertTrue(parameters[10])
+        lowered = context_sql.casefold()
+        self.assertIn("anchor_pages as materialized", lowered)
+        self.assertIn(
+            "source_row.external_file_id = any (%s::text[])",
+            lowered,
+        )
+        self.assertIn(
+            "identifier_context:",
+            lowered,
+        )
+
+    def test_fusion_deduplicates_identical_content_across_locations(self):
+        first = evidence_row(
+            "duplicate-a",
+            channel="lexical",
+            unit_type="paragraph",
+            score=1.0,
+            content="Maximum operating pressure: 410 bar.",
+            page=1,
+        )
+        second = evidence_row(
+            "duplicate-b",
+            channel="lexical",
+            unit_type="paragraph",
+            score=0.9,
+            content="Maximum operating pressure: 410 bar.",
+            page=2,
+        )
+        results = self.make_index(
+            FakeConnection({"lexical": [first, second]})
+        ).retrieve(
+            analyze_query("maximum operating pressure"),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset({SOURCE_ID}),
+        )
+
+        self.assertEqual(
+            [item.evidence.evidence_id for item in results],
+            ["duplicate-a"],
+        )
+
     def test_explicit_physical_page_filters_every_retrieval_channel(self):
         page_40 = evidence_row(
             "page-40",

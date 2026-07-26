@@ -83,6 +83,7 @@ _IDENTIFIER_RE = re.compile(
     rf"(?:DOC-|SYN-){_PREFIXED_CODE_TOKEN}"
     rf"|I\s+{_PREFIXED_CODE_TOKEN}"
     rf"|(?:BM|PE|GIB|GI)\s*{_PREFIXED_CODE_TOKEN}"
+    rf"|B-[A-Z][A-Z0-9]{{1,29}}(?:-[A-Z0-9]{{1,20}})*"
     rf"|N{_PREFIXED_CODE_TOKEN}"
     rf"|(?=[A-Z0-9._/+_-]{{3,40}}\b)"
     rf"(?=[A-Z0-9._/+_-]*[A-Z])"
