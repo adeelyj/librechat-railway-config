@@ -394,6 +394,11 @@ class PostgresReleaseAdminTests(unittest.TestCase):
             queued["payload"]["compiler_fingerprint"],
             COMPILER_SHA,
         )
+        self.assertEqual(queued["payload"]["ocr_version"], "ocr-v1")
+        self.assertEqual(
+            queued["payload"]["fact_model_version"],
+            "facts-v2",
+        )
         self.assertIn(SOURCE_VERSION_ID, queued["idempotency_key"])
         self.assertFalse(
             any(

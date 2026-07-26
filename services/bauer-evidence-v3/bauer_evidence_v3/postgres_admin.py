@@ -682,6 +682,10 @@ class PostgresReleaseAdmin:
                 release.get("compiler_fingerprint"),
                 "stored compiler_fingerprint",
             )
+            ocr_version = _nullable_text(release.get("ocr_version"))
+            fact_model_version = _nullable_text(
+                release.get("fact_model_version")
+            )
             kb_id = _required_uuid(release.get("kb_id"), "stored kb_id")
 
         enqueued: list[Mapping[str, Any]] = []
@@ -701,6 +705,8 @@ class PostgresReleaseAdmin:
                     "declared_media_type": request.declared_media_type,
                     "category_path": list(request.category_path),
                     "compiler_fingerprint": compiler_fingerprint,
+                    "ocr_version": ocr_version,
+                    "fact_model_version": fact_model_version,
                 }
             )
             enqueued.append(
