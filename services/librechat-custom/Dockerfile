@@ -14,5 +14,4 @@ COPY fileSearch.js /app/api/app/clients/tools/util/fileSearch.js
 COPY bauerV3FinalBoundary.js /app/api/server/services/Endpoints/agents/bauerV3FinalBoundary.js
 COPY patchBauerV3FinalBoundary.js /tmp/patchBauerV3FinalBoundary.js
 RUN node /tmp/patchBauerV3FinalBoundary.js /app/api/server/services/Endpoints/agents/initialize.js \
-    && rm /tmp/patchBauerV3FinalBoundary.js \
     && echo "3586ebdfefdc44c07eac5d5b4b2ff94988a02a03911cb54202377bf2ccc77d85  /app/api/server/services/Endpoints/agents/initialize.js" | sha256sum -c -
