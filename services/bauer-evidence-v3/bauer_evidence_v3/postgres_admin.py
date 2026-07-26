@@ -1084,12 +1084,17 @@ class PostgresReleaseAdmin:
         connection: Any,
         release_id: str,
     ) -> None:
+        # The caller already holds a FOR UPDATE lock on the release row.
+        # activate_release() must acquire that same row lock before it can
+        # change the active pointer, so this read is race-safe without taking
+        # a lock on active_releases.  Keeping it as a plain SELECT also
+        # preserves the runtime admin's deliberate read-only privilege on the
+        # pointer table.
         active = connection.execute(
             """
             SELECT 1
             FROM bauer_rag_v3.active_releases AS active
             WHERE active.release_id = %s::uuid
-            FOR SHARE
             """,
             (release_id,),
         ).fetchone()

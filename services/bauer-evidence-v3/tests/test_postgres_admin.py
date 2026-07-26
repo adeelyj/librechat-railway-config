@@ -558,6 +558,12 @@ class PostgresReleaseAdminTests(unittest.TestCase):
                         for sql, _params in connection.calls
                     )
                 )
+                pointer_read_sql = next(
+                    sql
+                    for sql, _params in connection.calls
+                    if "FROM bauer_rag_v3.active_releases AS active" in sql
+                )
+                self.assertNotIn("FOR SHARE", pointer_read_sql)
 
     def test_dead_letter_replay_is_scoped_to_a_context_actor(self):
         job_queue = FakeJobQueue()
