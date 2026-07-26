@@ -36,7 +36,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
         discovered = MIGRATIONS.discover_migrations(MIGRATIONS_DIR)
         self.assertEqual(
             [migration.version for migration in discovered],
-            list(range(1, 16)),
+            list(range(1, 17)),
         )
         self.assertEqual(
             [migration.filename for migration in discovered],
@@ -56,6 +56,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
                 "013_qa_guard_lock_authority.sql",
                 "014_immutable_release_membership.sql",
                 "015_release_membership_registration.sql",
+                "016_reader_rls_scope_sets.sql",
             ],
         )
         for migration in discovered:
@@ -526,6 +527,43 @@ class MigrationStructureTests(unittest.TestCase):
             "grant update on bauer_rag_v3.knowledge_releases",
             registration_sql,
         )
+
+    def test_reader_scope_sets_preserve_acl_rules_and_replace_hot_policies(self):
+        scope_sql = " ".join(
+            self.files["016_reader_rls_scope_sets.sql"].casefold().split()
+        )
+        for helper in (
+            "current_knowledge_base_id()",
+            "readable_kb_ids()",
+            "readable_source_ids()",
+            "readable_release_ids()",
+            "readable_artifact_set_ids()",
+            "readable_nav_node_ids()",
+        ):
+            self.assertIn(
+                f"create or replace function bauer_rag_v3.{helper}",
+                scope_sql,
+            )
+            self.assertIn(
+                f"revoke all on function bauer_rag_v3.{helper} from public",
+                scope_sql,
+            )
+            self.assertIn(
+                f"grant execute on function bauer_rag_v3.{helper} "
+                "to bauer_rag_v3_reader",
+                scope_sql,
+            )
+        for requirement in (
+            "security definer",
+            "grant_row.permission in ('read', 'ingest', 'admin')",
+            "source_row.visibility = 'inherited'",
+            "grant_row.permission in ('read', 'admin')",
+            "alter policy search_unit_read",
+            "alter policy provenance_access",
+            "alter policy table_cell_access",
+            "alter policy nav_edge_read",
+        ):
+            self.assertIn(requirement, scope_sql)
 
     def test_hardened_reader_cannot_read_control_or_gold_tables(self):
         roles_sql = self.files["010_runtime_role_hardening.sql"].casefold()

@@ -30,7 +30,7 @@ the V2 Markdown derivatives as V3 source truth.
   extraction/table capture, authorization checks, and immutable PostgreSQL run records.
 - `postgres_review.py` and `gold_review_cli.py`: exact-reviewer, one-time independent gold
   attestation bound to the immutable suite manifest and signed review-packet hashes.
-- `migrations`: isolated `bauer_rag_v3` schema through version 15, RLS, least-privilege runtime
+- `migrations`: isolated `bauer_rag_v3` schema through version 16, RLS, least-privilege runtime
   roles, append-only authorization audit, release activation gate, and indexes.
 
 ## Runtime roles
