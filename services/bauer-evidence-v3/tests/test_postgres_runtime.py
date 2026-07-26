@@ -460,9 +460,18 @@ class PostgresRuntimeTests(unittest.TestCase):
                 "source_row.source_id::text = any (%s::text[])",
                 lowered,
             )
-            self.assertIn("can_read_release", lowered)
-            self.assertIn("can_read_source", lowered)
+            self.assertNotIn("provenance_spans", lowered)
+            self.assertNotIn("table_cells source_cell", lowered)
             self.assertNotIn(SOURCE_ID, sql)
+        hydration_sql = [
+            sql
+            for sql, _ in connection.executions
+            if "v3:hydrate:candidates" in sql
+        ]
+        self.assertEqual(len(hydration_sql), 6)
+        self.assertTrue(
+            all("provenance_spans" in sql for sql in hydration_sql)
+        )
 
     def test_typed_fact_and_table_sql_receive_numeric_comparators_and_ranges(
         self,

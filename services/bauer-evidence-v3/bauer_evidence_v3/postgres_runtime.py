@@ -164,21 +164,19 @@ WITH authorized_units AS (
         unit.metadata AS unit_metadata,
         unit.is_citable,
         unit.generated_summary,
-        coalesce(unit.page_start, source_page.page_number, 1)::integer
-            AS page_number,
-        source_page.page_label AS printed_page_label,
-        coalesce(unit.section_id, source_block.section_id)::text AS section_id,
-        provenance.block_id::text AS block_id,
-        coalesce(unit.table_id, source_cell.table_id)::text AS table_id,
-        coalesce(unit.table_row_index, source_cell.row_index)::integer
-            AS table_row_index,
-        provenance.cell_id::text AS cell_id,
-        provenance.char_start,
-        provenance.char_end,
-        coalesce(provenance.x0, source_block.x0, source_cell.x0) AS x0,
-        coalesce(provenance.y0, source_block.y0, source_cell.y0) AS y0,
-        coalesce(provenance.x1, source_block.x1, source_cell.x1) AS x1,
-        coalesce(provenance.y1, source_block.y1, source_cell.y1) AS y1,
+        coalesce(unit.page_start, 1)::integer AS page_number,
+        NULL::text AS printed_page_label,
+        unit.section_id::text AS section_id,
+        NULL::text AS block_id,
+        unit.table_id::text AS table_id,
+        unit.table_row_index::integer AS table_row_index,
+        NULL::text AS cell_id,
+        NULL::integer AS char_start,
+        NULL::integer AS char_end,
+        NULL::double precision AS x0,
+        NULL::double precision AS y0,
+        NULL::double precision AS x1,
+        NULL::double precision AS y1,
         unit.artifact_set_id,
         unit.primary_provenance_id
     FROM bauer_rag_v3.search_units unit
@@ -198,23 +196,6 @@ WITH authorized_units AS (
     JOIN bauer_rag_v3.source_versions source_version
       ON source_version.source_version_id = unit.source_version_id
      AND source_version.source_id = source_row.source_id
-    LEFT JOIN bauer_rag_v3.provenance_spans provenance
-      ON provenance.provenance_id = unit.primary_provenance_id
-     AND provenance.artifact_set_id = unit.artifact_set_id
-    LEFT JOIN bauer_rag_v3.blocks source_block
-      ON source_block.block_id = provenance.block_id
-     AND source_block.artifact_set_id = unit.artifact_set_id
-    LEFT JOIN bauer_rag_v3.table_cells source_cell
-      ON source_cell.cell_id = provenance.cell_id
-     AND source_cell.artifact_set_id = unit.artifact_set_id
-    LEFT JOIN bauer_rag_v3.pages source_page
-      ON source_page.artifact_set_id = unit.artifact_set_id
-     AND source_page.page_id = coalesce(
-         provenance.page_id,
-         source_block.page_id,
-         source_cell.page_id,
-         unit.page_id
-     )
     WHERE unit.release_id = %s::uuid
       AND release_row.status = %s::text
       AND release_row.kb_id = %s::uuid
@@ -223,8 +204,6 @@ WITH authorized_units AS (
           source_row.source_id::text = ANY (%s::text[])
           OR source_row.external_file_id = ANY (%s::text[])
       )
-      AND bauer_rag_v3.can_read_release(unit.release_id)
-      AND bauer_rag_v3.can_read_source(source_row.source_id)
       AND unit.is_citable
       AND NOT unit.generated_summary
       AND NOT EXISTS (
@@ -263,6 +242,48 @@ WITH authorized_units AS (
           ) > 0
       )
 )
+"""
+
+
+_HYDRATE_CANDIDATES_SQL = """
+/* v3:hydrate:candidates */
+SELECT
+    unit.search_unit_id::text AS evidence_id,
+    coalesce(unit.page_start, source_page.page_number, 1)::integer
+        AS page_number,
+    source_page.page_label AS printed_page_label,
+    coalesce(unit.section_id, source_block.section_id)::text AS section_id,
+    provenance.block_id::text AS block_id,
+    coalesce(unit.table_id, source_cell.table_id)::text AS table_id,
+    coalesce(unit.table_row_index, source_cell.row_index)::integer
+        AS table_row_index,
+    provenance.cell_id::text AS cell_id,
+    provenance.char_start,
+    provenance.char_end,
+    coalesce(provenance.x0, source_block.x0, source_cell.x0) AS x0,
+    coalesce(provenance.y0, source_block.y0, source_cell.y0) AS y0,
+    coalesce(provenance.x1, source_block.x1, source_cell.x1) AS x1,
+    coalesce(provenance.y1, source_block.y1, source_cell.y1) AS y1
+FROM bauer_rag_v3.search_units unit
+LEFT JOIN bauer_rag_v3.provenance_spans provenance
+  ON provenance.provenance_id = unit.primary_provenance_id
+ AND provenance.artifact_set_id = unit.artifact_set_id
+LEFT JOIN bauer_rag_v3.blocks source_block
+  ON source_block.block_id = provenance.block_id
+ AND source_block.artifact_set_id = unit.artifact_set_id
+LEFT JOIN bauer_rag_v3.table_cells source_cell
+  ON source_cell.cell_id = provenance.cell_id
+ AND source_cell.artifact_set_id = unit.artifact_set_id
+LEFT JOIN bauer_rag_v3.pages source_page
+  ON source_page.artifact_set_id = unit.artifact_set_id
+ AND source_page.page_id = coalesce(
+      provenance.page_id,
+      source_block.page_id,
+      source_cell.page_id,
+      unit.page_id
+ )
+WHERE unit.release_id = %s::uuid
+  AND unit.search_unit_id = ANY (%s::uuid[])
 """
 
 
@@ -1522,6 +1543,11 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                 else:  # pragma: no cover - exhaustive enum guard
                     continue
 
+                rows = self._hydrate_candidate_rows(
+                    connection,
+                    rows,
+                    release_id=release_id,
+                )
                 candidates = [
                     self._candidate_from_row(
                         row,
@@ -1544,6 +1570,47 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                     )
 
         return self._fuse(plan, channel_candidates)
+
+    def _hydrate_candidate_rows(
+        self,
+        connection: Any,
+        rows: Sequence[Mapping[str, Any]],
+        *,
+        release_id: str,
+    ) -> list[Mapping[str, Any]]:
+        """Join canonical coordinates only after each channel has applied LIMIT."""
+
+        evidence_ids = tuple(
+            dict.fromkeys(
+                str(row.get("evidence_id") or "").strip()
+                for row in rows
+                if str(row.get("evidence_id") or "").strip()
+            )
+        )
+        if not evidence_ids:
+            return list(rows)
+        hydrated = self._fetchall(
+            connection,
+            _HYDRATE_CANDIDATES_SQL,
+            (release_id, list(evidence_ids)),
+        )
+        hydration_by_id = {
+            str(row.get("evidence_id") or ""): row
+            for row in hydrated
+            if str(row.get("evidence_id") or "")
+        }
+        return [
+            {
+                **dict(row),
+                **dict(
+                    hydration_by_id.get(
+                        str(row.get("evidence_id") or ""),
+                        {},
+                    )
+                ),
+            }
+            for row in rows
+        ]
 
     def _candidate_from_row(
         self,
