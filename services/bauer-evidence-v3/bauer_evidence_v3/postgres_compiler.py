@@ -33,6 +33,7 @@ from .projections import ProjectionBundle
 
 
 DATABASE_ID_NAMESPACE = uuid.UUID("a33db731-3cb8-5f31-80d4-8cd6b294a764")
+COMPILER_RELEASE_LOCK_SEED = 72_897_565_840_948
 _SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 _SOURCE_TYPES = {
     "pdf",
@@ -525,6 +526,18 @@ class PostgresCompilerPersistence:
         release_id: str,
         context: CompilerPersistenceContext,
     ) -> None:
+        # A row-level FOR UPDATE lock would require granting the compiler an
+        # UPDATE capability on the release-control table. Keep lifecycle
+        # mutation admin-only and serialize compilation for this release with
+        # a transaction-scoped, namespaced advisory lock instead.
+        connection.execute(
+            """
+            SELECT pg_advisory_xact_lock(
+                hashtextextended(%s, %s)
+            )
+            """,
+            (release_id, COMPILER_RELEASE_LOCK_SEED),
+        )
         cursor = connection.execute(
             """
             SELECT release.status,
@@ -537,7 +550,6 @@ class PostgresCompilerPersistence:
              WHERE release.release_id = %s::uuid
                AND release.kb_id = %s::uuid
                AND kb.tenant_id = %s::uuid
-             FOR UPDATE
             """,
             (release_id, kb_id, tenant_id),
         )

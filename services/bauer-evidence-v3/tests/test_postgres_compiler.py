@@ -268,6 +268,15 @@ class PostgresCompilerPersistenceTests(unittest.TestCase):
             connection.calls[2][1],
             ('["30000000-0000-0000-0000-000000000001"]',),
         )
+        release_lock = connection.calls[3]
+        release_read = connection.calls[4]
+        self.assertIn("pg_advisory_xact_lock", release_lock[0])
+        self.assertIn("hashtextextended", release_lock[0])
+        self.assertIn(
+            "FROM bauer_rag_v3.knowledge_releases AS release",
+            release_read[0],
+        )
+        self.assertNotIn("FOR UPDATE", release_read[0])
         sql = "\n".join(statement for statement, _ in connection.calls)
         for table in (
             "objects",
