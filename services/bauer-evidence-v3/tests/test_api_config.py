@@ -91,7 +91,7 @@ class ConfigurationTests(unittest.TestCase):
         summary = str(settings.public_summary())
         self.assertNotIn("abcdefghijklmnopqrstuvwxyz", summary)
         self.assertNotIn("auth_keyring", summary)
-        self.assertEqual(settings.expected_migration_version, 13)
+        self.assertEqual(settings.expected_migration_version, 14)
         self.assertEqual(settings.build_commit, "unknown")
 
     def test_build_commit_is_validated_and_railway_metadata_is_supported(self) -> None:
@@ -126,7 +126,7 @@ class ConfigurationTests(unittest.TestCase):
         ):
             with self.assertRaisesRegex(
                 ConfigurationError,
-                "must be 1024 for schema version 13",
+                "must be 1024 for schema version 14",
             ):
                 Settings.from_environment()
 

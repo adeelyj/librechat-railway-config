@@ -170,6 +170,8 @@ ingest capability; it does not widen the compiler's object grants.
 Migration 013 preserves the compiler-QA guard's release-lifecycle row lock through a trigger-only,
 schema-owner execution boundary. Runtime groups cannot execute that function directly, and the
 ingester remains unable to update release-control rows.
+Migration 014 makes release membership append-only for the compiler: retries use insert-or-ignore
+plus an exact RLS-protected identity check, and the ingester's former no-op update grant is revoked.
 
 Authorization decisions and final validator dispositions are emitted as structured, body-free
 logs and bounded OTLP metrics. In-scope authorization decisions are also appended through a

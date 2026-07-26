@@ -308,6 +308,15 @@ class PostgresCompilerPersistenceTests(unittest.TestCase):
                 if "UPDATE bauer_rag_v3.artifact_sets" in statement
             ),
         )
+        release_membership_insert = next(
+            statement
+            for statement, _ in connection.calls
+            if statement.startswith(
+                "INSERT INTO bauer_rag_v3.release_sources"
+            )
+        )
+        self.assertIn("ON CONFLICT (release_id, source_id) DO NOTHING", release_membership_insert)
+        self.assertNotIn("DO UPDATE", release_membership_insert)
         source_upsert = next(
             statement
             for statement, _ in connection.calls

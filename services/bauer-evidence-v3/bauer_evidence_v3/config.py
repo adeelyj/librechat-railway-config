@@ -149,7 +149,7 @@ class Settings:
     mirror_s3_access_key_id: str = field(default="", repr=False)
     mirror_s3_secret_access_key: str = field(default="", repr=False)
     allow_in_memory: bool = False
-    expected_migration_version: int = 13
+    expected_migration_version: int = 14
     build_commit: str = "unknown"
     port: int = 8000
     worker_id: str = ""
@@ -217,7 +217,7 @@ class Settings:
                 _uuid(principal_id, name="BAUER_V3_PRINCIPAL_IDS_JSON item")
             if self.embedding_dimensions != 1_024:
                 raise ConfigurationError(
-                    "BAUER_V3_EMBEDDING_DIMENSIONS must be 1024 for schema version 13"
+                    "BAUER_V3_EMBEDDING_DIMENSIONS must be 1024 for schema version 14"
                 )
         if self.service_role == "api" and not self.allow_in_memory:
             if not self.allowed_agent_ids:
@@ -568,7 +568,7 @@ class Settings:
             allow_in_memory=_boolean(os.getenv("BAUER_V3_ALLOW_IN_MEMORY")),
             expected_migration_version=_positive_int(
                 os.getenv("BAUER_V3_EXPECTED_MIGRATION_VERSION"),
-                default=13,
+                default=14,
                 name="BAUER_V3_EXPECTED_MIGRATION_VERSION",
             ),
             build_commit=(

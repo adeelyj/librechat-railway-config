@@ -36,7 +36,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
         discovered = MIGRATIONS.discover_migrations(MIGRATIONS_DIR)
         self.assertEqual(
             [migration.version for migration in discovered],
-            list(range(1, 14)),
+            list(range(1, 15)),
         )
         self.assertEqual(
             [migration.filename for migration in discovered],
@@ -54,6 +54,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
                 "011_rls_policy_role_scoping.sql",
                 "012_source_upsert_rls.sql",
                 "013_qa_guard_lock_authority.sql",
+                "014_immutable_release_membership.sql",
             ],
         )
         for migration in discovered:
@@ -471,6 +472,19 @@ class MigrationStructureTests(unittest.TestCase):
             guard_sql,
         )
         self.assertNotIn("grant ", guard_sql)
+
+    def test_release_membership_update_privilege_is_revoked(self):
+        membership_sql = " ".join(
+            self.files[
+                "014_immutable_release_membership.sql"
+            ].casefold().split()
+        )
+        self.assertIn(
+            "revoke update on bauer_rag_v3.release_sources "
+            "from bauer_rag_v3_ingester",
+            membership_sql,
+        )
+        self.assertNotIn("grant ", membership_sql)
 
     def test_hardened_reader_cannot_read_control_or_gold_tables(self):
         roles_sql = self.files["010_runtime_role_hardening.sql"].casefold()

@@ -1556,7 +1556,7 @@ class PostgresCompilerPersistence:
         ordinal: int,
         reused: bool,
     ) -> None:
-        cursor = connection.execute(
+        inserted = connection.execute(
             """
             INSERT INTO bauer_rag_v3.release_sources AS membership (
                 kb_id, release_id, source_id, source_version_id,
@@ -1566,12 +1566,7 @@ class PostgresCompilerPersistence:
                 %s::uuid, %s::uuid, %s::uuid, %s::uuid,
                 %s::uuid, %s, %s
             )
-            ON CONFLICT (release_id, source_id) DO UPDATE
-                SET added_at = membership.added_at
-              WHERE membership.kb_id = EXCLUDED.kb_id
-                AND membership.source_version_id = EXCLUDED.source_version_id
-                AND membership.artifact_set_id = EXCLUDED.artifact_set_id
-                AND membership.ordinal = EXCLUDED.ordinal
+            ON CONFLICT (release_id, source_id) DO NOTHING
             RETURNING membership.source_id::text
             """,
             (
@@ -1583,8 +1578,30 @@ class PostgresCompilerPersistence:
                 ordinal,
                 "reused" if reused else "compiled",
             ),
-        )
-        if cursor.fetchone() is None:
+        ).fetchone()
+        if inserted is not None:
+            return
+        existing = connection.execute(
+            """
+            SELECT 1
+            FROM bauer_rag_v3.release_sources AS membership
+            WHERE membership.kb_id = %s::uuid
+              AND membership.release_id = %s::uuid
+              AND membership.source_id = %s::uuid
+              AND membership.source_version_id = %s::uuid
+              AND membership.artifact_set_id = %s::uuid
+              AND membership.ordinal = %s
+            """,
+            (
+                kb_id,
+                release_id,
+                source_id,
+                source_version_id,
+                artifact_id,
+                ordinal,
+            ),
+        ).fetchone()
+        if existing is None:
             raise PersistenceInvariantError(
                 "release already contains incompatible source membership"
             )
