@@ -350,7 +350,10 @@ class PostgresRuntimeTests(unittest.TestCase):
         ]
         self.assertTrue(channel_calls)
         for sql, parameters in channel_calls:
-            if "v3:channel:lexical" in sql:
+            if (
+                "v3:channel:lexical" in sql
+                or "v3:channel:semantic" in sql
+            ):
                 self.assertIn(
                     "release_row.status = request.release_status",
                     sql,
@@ -475,7 +478,7 @@ class PostgresRuntimeTests(unittest.TestCase):
                     lowered,
                 )
                 self.assertIn("as materialized", lowered)
-            elif channel == "lexical":
+            elif channel in {"lexical", "semantic"}:
                 self.assertIn(
                     "unit.release_id = request.release_id",
                     lowered,
@@ -484,17 +487,28 @@ class PostgresRuntimeTests(unittest.TestCase):
                     "kb.tenant_id = request.tenant_id",
                     lowered,
                 )
-                self.assertIn(
-                    "source_scope.source_id::text = any "
-                    "(request.source_ids)",
-                    lowered,
-                )
                 self.assertIn("matched_units as materialized", lowered)
-                self.assertIn(
-                    "order by raw_score desc, unit.search_unit_id "
-                    "limit %s",
-                    lowered,
-                )
+                if channel == "lexical":
+                    self.assertIn(
+                        "source_scope.source_id::text = any "
+                        "(request.source_ids)",
+                        lowered,
+                    )
+                    self.assertIn(
+                        "order by raw_score desc, unit.search_unit_id "
+                        "limit %s",
+                        lowered,
+                    )
+                else:
+                    self.assertIn(
+                        "nearest_units as materialized",
+                        lowered,
+                    )
+                    self.assertIn(
+                        "order by unit.embedding <=> "
+                        "semantic_query.query_embedding limit %s",
+                        lowered,
+                    )
             else:
                 self.assertIn("unit.release_id = %s::uuid", lowered)
                 self.assertIn("kb.tenant_id = %s::uuid", lowered)
@@ -785,7 +799,10 @@ class PostgresRuntimeTests(unittest.TestCase):
                 {"medium": ["nitrogen", "air"]},
             )
             self.assertEqual(parameters[7], ["oxygen"])
-            if "v3:channel:lexical" in sql:
+            if (
+                "v3:channel:lexical" in sql
+                or "v3:channel:semantic" in sql
+            ):
                 self.assertIn(
                     "jsonb_each(request.mandatory_text_constraints)",
                     sql,
