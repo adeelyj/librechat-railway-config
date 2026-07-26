@@ -36,7 +36,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
         discovered = MIGRATIONS.discover_migrations(MIGRATIONS_DIR)
         self.assertEqual(
             [migration.version for migration in discovered],
-            list(range(1, 15)),
+            list(range(1, 16)),
         )
         self.assertEqual(
             [migration.filename for migration in discovered],
@@ -55,6 +55,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
                 "012_source_upsert_rls.sql",
                 "013_qa_guard_lock_authority.sql",
                 "014_immutable_release_membership.sql",
+                "015_release_membership_registration.sql",
             ],
         )
         for migration in discovered:
@@ -485,6 +486,46 @@ class MigrationStructureTests(unittest.TestCase):
             membership_sql,
         )
         self.assertNotIn("grant ", membership_sql)
+
+    def test_release_membership_registration_is_the_only_ingester_write_path(self):
+        registration_sql = " ".join(
+            self.files[
+                "015_release_membership_registration.sql"
+            ].casefold().split()
+        )
+        function_sql = registration_sql.split(
+            "create or replace function "
+            "bauer_rag_v3.register_release_source_membership",
+            maxsplit=1,
+        )[1].split("revoke all", maxsplit=1)[0]
+        for requirement in (
+            "security definer",
+            "set search_path = bauer_rag_v3, pg_temp",
+            "current_setting('app.knowledge_base_id', true)",
+            "bauer_rag_v3.current_tenant_id() is null",
+            "cardinality(bauer_rag_v3.current_principal_ids()) = 0",
+            "not bauer_rag_v3.can_write_release(target_release_id)",
+            "not bauer_rag_v3.can_write_source(target_source_id)",
+            "on conflict (release_id, source_id) do nothing",
+            "release already contains incompatible source membership",
+        ):
+            self.assertIn(requirement, function_sql)
+        self.assertIn(
+            "grant execute on function "
+            "bauer_rag_v3.register_release_source_membership( "
+            "uuid, uuid, uuid, uuid, uuid, integer, boolean ) "
+            "to bauer_rag_v3_ingester",
+            registration_sql,
+        )
+        self.assertIn(
+            "revoke insert, update on bauer_rag_v3.release_sources "
+            "from bauer_rag_v3_ingester",
+            registration_sql,
+        )
+        self.assertNotIn(
+            "grant update on bauer_rag_v3.knowledge_releases",
+            registration_sql,
+        )
 
     def test_hardened_reader_cannot_read_control_or_gold_tables(self):
         roles_sql = self.files["010_runtime_role_hardening.sql"].casefold()

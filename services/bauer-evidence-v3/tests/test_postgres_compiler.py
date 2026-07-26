@@ -170,7 +170,7 @@ def inserted_handler(sql, params):
         return FakeCursor((1, 1, 1, 1, 1, 4, 5, 0, 1, 4))
     if "UPDATE bauer_rag_v3.artifact_sets AS artifact" in sql:
         return FakeCursor((params[2],))
-    if "INSERT INTO bauer_rag_v3.release_sources AS membership" in sql:
+    if "register_release_source_membership" in sql:
         return FakeCursor((params[2],))
     if "INSERT INTO bauer_rag_v3.nav_nodes AS existing_node" in sql:
         return FakeCursor((params[0],))
@@ -292,7 +292,6 @@ class PostgresCompilerPersistenceTests(unittest.TestCase):
             "provenance_spans",
             "facts",
             "fact_provenance",
-            "release_sources",
             "search_units",
             "exact_terms",
             "nav_nodes",
@@ -308,15 +307,23 @@ class PostgresCompilerPersistenceTests(unittest.TestCase):
                 if "UPDATE bauer_rag_v3.artifact_sets" in statement
             ),
         )
-        release_membership_insert = next(
+        release_membership_registration = next(
             statement
             for statement, _ in connection.calls
-            if statement.startswith(
-                "INSERT INTO bauer_rag_v3.release_sources"
+            if "register_release_source_membership" in statement
+        )
+        self.assertIn(
+            "SELECT bauer_rag_v3.register_release_source_membership",
+            release_membership_registration,
+        )
+        self.assertFalse(
+            any(
+                statement.startswith(
+                    "INSERT INTO bauer_rag_v3.release_sources"
+                )
+                for statement, _ in connection.calls
             )
         )
-        self.assertIn("ON CONFLICT (release_id, source_id) DO NOTHING", release_membership_insert)
-        self.assertNotIn("DO UPDATE", release_membership_insert)
         source_upsert = next(
             statement
             for statement, _ in connection.calls
@@ -566,7 +573,7 @@ class PostgresCompilerPersistenceTests(unittest.TestCase):
                 and "FOR UPDATE" in sql
             ):
                 return FakeCursor((ARTIFACT_ID, "valid", 1, {}))
-            if "INSERT INTO bauer_rag_v3.release_sources AS membership" in sql:
+            if "register_release_source_membership" in sql:
                 return FakeCursor((params[2],))
             if "INSERT INTO bauer_rag_v3.nav_nodes AS existing_node" in sql:
                 return FakeCursor((params[0],))

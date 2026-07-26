@@ -40,7 +40,7 @@ the V1/V2 database without confirming the target and rollback snapshot.
 ```text
 BAUER_V3_ENVIRONMENT=production
 BAUER_V3_DATABASE_URL=<private PostgreSQL DSN>
-BAUER_V3_EXPECTED_MIGRATION_VERSION=14
+BAUER_V3_EXPECTED_MIGRATION_VERSION=15
 BAUER_V3_BUILD_COMMIT=<lowercase Git commit; Railway commit metadata is the fallback>
 ```
 
@@ -158,6 +158,9 @@ isolated schema owner. Runtime groups retain no direct execution right, and the 
 no release-table update grant.
 Migration 014 removes the compiler's obsolete `UPDATE` privilege on immutable release membership;
 idempotent retries use insert-or-ignore followed by an exact RLS-protected identity check.
+Migration 015 moves that insert/verify operation behind one context-validating, schema-owner
+function so PostgreSQL can take the parent release key-share lock without any compiler update grant
+on `knowledge_releases`; direct membership inserts and updates are revoked.
 
 Migration 010 also creates the RLS-protected, append-only `authorization_audit` table and a
 scope-checking function callable by the API reader. Valid in-scope authorization decisions are

@@ -1556,18 +1556,17 @@ class PostgresCompilerPersistence:
         ordinal: int,
         reused: bool,
     ) -> None:
-        inserted = connection.execute(
+        cursor = connection.execute(
             """
-            INSERT INTO bauer_rag_v3.release_sources AS membership (
-                kb_id, release_id, source_id, source_version_id,
-                artifact_set_id, ordinal, action
+            SELECT bauer_rag_v3.register_release_source_membership(
+                %s::uuid,
+                %s::uuid,
+                %s::uuid,
+                %s::uuid,
+                %s::uuid,
+                %s,
+                %s
             )
-            VALUES (
-                %s::uuid, %s::uuid, %s::uuid, %s::uuid,
-                %s::uuid, %s, %s
-            )
-            ON CONFLICT (release_id, source_id) DO NOTHING
-            RETURNING membership.source_id::text
             """,
             (
                 kb_id,
@@ -1576,34 +1575,13 @@ class PostgresCompilerPersistence:
                 source_version_id,
                 artifact_id,
                 ordinal,
-                "reused" if reused else "compiled",
+                reused,
             ),
-        ).fetchone()
-        if inserted is not None:
-            return
-        existing = connection.execute(
-            """
-            SELECT 1
-            FROM bauer_rag_v3.release_sources AS membership
-            WHERE membership.kb_id = %s::uuid
-              AND membership.release_id = %s::uuid
-              AND membership.source_id = %s::uuid
-              AND membership.source_version_id = %s::uuid
-              AND membership.artifact_set_id = %s::uuid
-              AND membership.ordinal = %s
-            """,
-            (
-                kb_id,
-                release_id,
-                source_id,
-                source_version_id,
-                artifact_id,
-                ordinal,
-            ),
-        ).fetchone()
-        if existing is None:
+        )
+        row = cursor.fetchone()
+        if row is None or str(_row_field(row, "source_id", 0)) != source_id:
             raise PersistenceInvariantError(
-                "release already contains incompatible source membership"
+                "release membership registration did not return the source"
             )
 
     def _rebuild_release_projection(

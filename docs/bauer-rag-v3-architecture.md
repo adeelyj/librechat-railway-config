@@ -172,6 +172,9 @@ schema-owner execution boundary. Runtime groups cannot execute that function dir
 ingester remains unable to update release-control rows.
 Migration 014 makes release membership append-only for the compiler: retries use insert-or-ignore
 plus an exact RLS-protected identity check, and the ingester's former no-op update grant is revoked.
+Migration 015 exposes that operation only through a tenant/KB/source/release-validating
+security-definer function. It lets PostgreSQL take the parent release key-share lock while the
+ingester retains no update authority on release lifecycle or direct membership-write privilege.
 
 Authorization decisions and final validator dispositions are emitted as structured, body-free
 logs and bounded OTLP metrics. In-scope authorization decisions are also appended through a
