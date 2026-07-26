@@ -805,6 +805,11 @@ class PostgresRuntimeTests(unittest.TestCase):
         self.assertTrue(parameters[10])
         lowered = context_sql.casefold()
         self.assertIn("anchor_pages as materialized", lowered)
+        self.assertIn("ranked_anchor_pages as materialized", lowered)
+        self.assertIn(
+            "ranked_anchor_pages.anchor_rank = 1",
+            lowered,
+        )
         self.assertIn(
             "source_row.external_file_id = any (%s::text[])",
             lowered,
@@ -843,6 +848,69 @@ class PostgresRuntimeTests(unittest.TestCase):
             [item.evidence.evidence_id for item in results],
             ["duplicate-a"],
         )
+
+    def test_catalog_prose_reservation_prefers_query_coverage(self):
+        structured = [
+            {
+                **evidence_row(
+                    f"structured-{index}",
+                    channel="exact",
+                    unit_type="fact",
+                    score=1.0 - (index * 0.01),
+                    content=f"B-SAFE technical fact {index}: 410 bar.",
+                ),
+                "reason": "identifier_context:b-safe",
+            }
+            for index in range(4)
+        ]
+        irrelevant = {
+            **evidence_row(
+                "prose-video",
+                channel="exact",
+                unit_type="paragraph",
+                score=0.8,
+                content="B-SAFE product video.",
+            ),
+            "reason": "identifier_context:b-safe",
+        }
+        headline = {
+            **evidence_row(
+                "prose-headline",
+                channel="exact",
+                unit_type="paragraph",
+                score=0.1,
+                content=(
+                    "Safety filling cell for breathing air applications "
+                    "up to 300 bar and Nitrox applications up to 200 bar."
+                ),
+            ),
+            "reason": "identifier_context:b-safe",
+        }
+        results = self.make_index(
+            FakeConnection(
+                {
+                    "identifier_context": [
+                        *structured,
+                        irrelevant,
+                        headline,
+                    ]
+                }
+            )
+        ).retrieve(
+            analyze_query(
+                "Reconcile the B-SAFE headline application pressures "
+                "for breathing air and Nitrox.",
+                top_k=4,
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset({SOURCE_ID}),
+        )
+
+        selected = {
+            item.evidence.evidence_id for item in results
+        }
+        self.assertIn("prose-headline", selected)
+        self.assertNotIn("prose-video", selected)
 
     def test_explicit_physical_page_filters_every_retrieval_channel(self):
         page_40 = evidence_row(

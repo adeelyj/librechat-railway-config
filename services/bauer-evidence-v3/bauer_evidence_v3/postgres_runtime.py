@@ -490,15 +490,12 @@ _IDENTIFIER_CONTEXT_SQL = (
         %s::text[] AS query_terms,
         %s::boolean AS structured_intent
 ),
-anchor_pages AS MATERIALIZED (
+anchor_occurrences AS MATERIALIZED (
     SELECT
         authorized_units.source_document_id,
         authorized_units.source_version_id,
         authorized_units.page_number,
-        array_agg(
-            DISTINCT identifier
-            ORDER BY identifier
-        ) AS anchor_identifiers
+        identifier
     FROM authorized_units
     CROSS JOIN context_query
     CROSS JOIN LATERAL unnest(
@@ -517,7 +514,76 @@ anchor_pages AS MATERIALIZED (
     GROUP BY
         authorized_units.source_document_id,
         authorized_units.source_version_id,
-        authorized_units.page_number
+        authorized_units.page_number,
+        identifier
+),
+ranked_anchor_pages AS MATERIALIZED (
+    SELECT
+        anchor_occurrences.*,
+        row_number() OVER (
+            PARTITION BY anchor_occurrences.identifier
+            ORDER BY
+                sum(page_term_hits.query_term_hits) DESC,
+                count(*) FILTER (
+                    WHERE page_unit.unit_type IN (
+                        'fact',
+                        'table_row',
+                        'table_cell'
+                    )
+                ) DESC,
+                count(*) FILTER (
+                    WHERE page_unit.search_text ~ '[0-9]'
+                ) DESC,
+                count(*) DESC,
+                anchor_occurrences.source_document_id,
+                anchor_occurrences.page_number
+        ) AS anchor_rank
+    FROM anchor_occurrences
+    JOIN authorized_units AS page_unit
+      ON page_unit.source_document_id =
+         anchor_occurrences.source_document_id
+     AND page_unit.source_version_id =
+         anchor_occurrences.source_version_id
+     AND page_unit.page_number =
+         anchor_occurrences.page_number
+    CROSS JOIN context_query
+    CROSS JOIN LATERAL (
+        SELECT count(*)::integer AS query_term_hits
+        FROM unnest(
+            context_query.query_terms
+        ) AS query_term
+        WHERE position(
+            query_term IN lower(
+                concat_ws(
+                    ' ',
+                    page_unit.search_text,
+                    page_unit.display_text,
+                    page_unit.unit_metadata::text
+                )
+            )
+        ) > 0
+    ) AS page_term_hits
+    GROUP BY
+        anchor_occurrences.source_document_id,
+        anchor_occurrences.source_version_id,
+        anchor_occurrences.page_number,
+        anchor_occurrences.identifier
+),
+anchor_pages AS MATERIALIZED (
+    SELECT
+        ranked_anchor_pages.source_document_id,
+        ranked_anchor_pages.source_version_id,
+        ranked_anchor_pages.page_number,
+        array_agg(
+            ranked_anchor_pages.identifier
+            ORDER BY ranked_anchor_pages.identifier
+        ) AS anchor_identifiers
+    FROM ranked_anchor_pages
+    WHERE ranked_anchor_pages.anchor_rank = 1
+    GROUP BY
+        ranked_anchor_pages.source_document_id,
+        ranked_anchor_pages.source_version_id,
+        ranked_anchor_pages.page_number
 ),
 scored_context AS (
     SELECT
@@ -598,6 +664,16 @@ SELECT
     scored_context.unit_metadata ->> 'unit' AS channel_unit
 FROM scored_context
 ORDER BY
+    scored_context.identifier_hits DESC,
+    scored_context.query_term_hits DESC,
+    scored_context.has_number DESC,
+    (
+        scored_context.unit_type IN (
+            'fact',
+            'table_row',
+            'table_cell'
+        )
+    ) DESC,
     raw_score DESC,
     scored_context.source_document_id,
     scored_context.page_number,
@@ -2430,6 +2506,21 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             if unit_type_by_id.get(item.evidence.evidence_id)
             not in _STRUCTURED_TYPES
         ]
+        context_terms = _identifier_context_terms(plan)
+        if _catalog_identifiers(plan) and context_terms:
+            original_rank = {
+                item.evidence.evidence_id: rank
+                for rank, item in enumerate(ranked_results)
+            }
+            unstructured.sort(
+                key=lambda item: (
+                    -sum(
+                        term in normalize_text(item.evidence.content)
+                        for term in context_terms
+                    ),
+                    original_rank[item.evidence.evidence_id],
+                )
+            )
         structured_present = any(
             unit_type_by_id.get(item.evidence.evidence_id)
             in _STRUCTURED_TYPES
