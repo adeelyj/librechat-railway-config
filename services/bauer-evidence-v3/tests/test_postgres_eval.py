@@ -566,6 +566,10 @@ class PostgresEvaluationObservationSourceTests(unittest.TestCase):
             "table_row.metadata ->> 'canonical_order'",
             extraction_statement,
         )
+        self.assertIn(
+            "table_row.metadata ->> 'parser_id' = 'html_source'",
+            extraction_statement,
+        )
         self.assertIn("UNION ALL", extraction_statement)
         self.assertEqual(extraction["facts"][0]["fact_id"], FACT_ID)
         self.assertTrue(

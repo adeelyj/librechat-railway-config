@@ -388,6 +388,8 @@ class PostgresEvaluationObservationSource:
                          AND segment_row.table_id = table_row.table_id
                         WHERE table_row.artifact_set_id =
                             member.artifact_set_id
+                          AND table_row.metadata ->> 'parser_id' =
+                              'html_source'
                     ) AS ordered_item
                 ) AS reading_order_checks,
                 (
@@ -427,6 +429,8 @@ class PostgresEvaluationObservationSource:
                                  table_row.table_id
                             WHERE table_row.artifact_set_id =
                                 member.artifact_set_id
+                              AND table_row.metadata ->> 'parser_id' =
+                                  'html_source'
                         ) AS item
                     ) AS ordered_item
                     WHERE ordered_item.item_order =
