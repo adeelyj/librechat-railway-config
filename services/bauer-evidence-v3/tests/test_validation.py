@@ -231,6 +231,45 @@ class ValidatorTests(unittest.TestCase):
 
         self.assertTrue(result.valid)
 
+    def test_dash_ranges_and_single_digit_number_words_are_canonical(
+        self,
+    ) -> None:
+        citation = replace(
+            self.citation,
+            content=(
+                "Group: VERTICUS I 350 - 420 bar; number of stages: 4."
+            ),
+            table_headers=(),
+            table_values=(),
+        )
+        package = replace(self.package, citations=(citation,))
+        valid = validate_answer(
+            answer=(
+                "The group is 350\u2013420 bar and the number of stages is "
+                "four [E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(
+                "Report the pressure group and number of stages."
+            ),
+        )
+        self.assertTrue(valid.valid)
+
+        wrong_word = validate_answer(
+            answer=(
+                "The group is 350\u2013420 bar and the number of stages is "
+                "five [E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(
+                "Report the pressure group and number of stages."
+            ),
+        )
+        self.assertIn(
+            "unsupported_factual_claim",
+            {item.code for item in wrong_word.violations},
+        )
+
     def test_cited_two_value_comparison_allows_relational_language(
         self,
     ) -> None:

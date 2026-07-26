@@ -78,6 +78,18 @@ _NUMERIC_COMPARISON_TERMS = frozenset(
         "lower",
     }
 )
+_NUMBER_WORD_TERMS = {
+    "zero": "0",
+    "one": "1",
+    "two": "2",
+    "three": "3",
+    "four": "4",
+    "five": "5",
+    "six": "6",
+    "seven": "7",
+    "eight": "8",
+    "nine": "9",
+}
 _NON_CLAIM_TERMS = frozenset(
     {
         "a",
@@ -212,7 +224,7 @@ def validate_answer(
         _claim_terms(package.question).intersection(package_support_terms)
     )
     question_important_claims = {
-        normalize_text(match.group(0))
+        _support_comparison_text(match.group(0))
         for pattern in (_HIGH_RISK_NUMBER_RE, _IDENTIFIER_RE)
         for match in pattern.finditer(package.question)
     }
@@ -231,6 +243,7 @@ def validate_answer(
             if citation.source_document_id in cited_source_document_ids
         )
         normalized_support = normalize_text(cited_support)
+        comparable_support = _support_comparison_text(cited_support)
         uncited_sentence = _CITATION_RE.sub("", sentence)
         is_refusal_sentence = _is_safe_refusal_sentence(uncited_sentence)
 
@@ -244,7 +257,7 @@ def validate_answer(
             for match in _IDENTIFIER_RE.finditer(uncited_sentence)
         )
         for code, raw_claim in important_claims:
-            normalized_claim = normalize_text(raw_claim)
+            normalized_claim = _support_comparison_text(raw_claim)
             if (
                 is_refusal_sentence
                 and normalized_claim
@@ -261,7 +274,7 @@ def validate_answer(
                         sentence,
                     )
                 )
-            elif not normalized_claim or normalized_claim not in normalized_support:
+            elif not normalized_claim or normalized_claim not in comparable_support:
                 violations.append(
                     ValidationViolation(
                         code,
@@ -448,8 +461,15 @@ def _claim_terms(value: str) -> set[str]:
     # this broad substantive-term comparison.
     normalized = normalize_text(value).replace("-", " ")
     return {
-        token
+        _NUMBER_WORD_TERMS.get(token, token)
         for token in _WORD_RE.findall(normalized)
         if token not in _NON_CLAIM_TERMS
         and (len(token) >= 3 or any(character.isdigit() for character in token))
     }
+
+
+def _support_comparison_text(value: str) -> str:
+    # Source tables and generated prose may render the same numeric range or
+    # identifier with different dash glyphs.  Collapse only dash punctuation;
+    # digits, units, letters, and ordering remain exact.
+    return normalize_text(re.sub(r"[-\u2010-\u2015]+", " ", value))
