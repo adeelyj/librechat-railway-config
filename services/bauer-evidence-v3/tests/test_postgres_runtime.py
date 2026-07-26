@@ -452,14 +452,30 @@ class PostgresRuntimeTests(unittest.TestCase):
                 "navigation",
             },
         )
-        for sql in channel_sql.values():
+        for channel, sql in channel_sql.items():
             lowered = sql.casefold()
-            self.assertIn("unit.release_id = %s::uuid", lowered)
-            self.assertIn("kb.tenant_id = %s::uuid", lowered)
-            self.assertIn(
-                "source_row.source_id::text = any (%s::text[])",
-                lowered,
-            )
+            if channel == "exact":
+                self.assertIn(
+                    "exact_term.release_id = request.release_id",
+                    lowered,
+                )
+                self.assertIn(
+                    "kb.tenant_id = request.tenant_id",
+                    lowered,
+                )
+                self.assertIn(
+                    "source_row.source_id::text = any "
+                    "(request.source_ids)",
+                    lowered,
+                )
+                self.assertIn("as materialized", lowered)
+            else:
+                self.assertIn("unit.release_id = %s::uuid", lowered)
+                self.assertIn("kb.tenant_id = %s::uuid", lowered)
+                self.assertIn(
+                    "source_row.source_id::text = any (%s::text[])",
+                    lowered,
+                )
             self.assertNotIn("provenance_spans", lowered)
             self.assertNotIn("table_cells source_cell", lowered)
             self.assertNotIn(SOURCE_ID, sql)

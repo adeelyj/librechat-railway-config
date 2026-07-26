@@ -287,68 +287,141 @@ WHERE unit.release_id = %s::uuid
 """
 
 
-_EXACT_SQL = (
-    "/* v3:channel:exact */\n"
-    + _AUTHORIZED_UNITS_CTE
-    + """
-, query_terms AS (
+_EXACT_SQL = """
+/* v3:channel:exact */
+WITH request_scope AS (
+    SELECT
+        %s::uuid AS release_id,
+        %s::text AS release_status,
+        %s::uuid AS knowledge_base_id,
+        %s::uuid AS tenant_id,
+        %s::text[] AS source_ids,
+        %s::text[] AS external_file_ids,
+        %s::jsonb AS mandatory_text_constraints,
+        %s::text[] AS forbidden_claim_values
+),
+query_terms AS (
     SELECT unnest(%s::text[]) AS term
+),
+matched_units AS MATERIALIZED (
+    SELECT
+        exact_term.search_unit_id,
+        min(query_term.term) AS matched_term
+    FROM bauer_rag_v3.exact_terms exact_term
+    CROSS JOIN request_scope request
+    JOIN query_terms query_term
+      ON query_term.term = exact_term.normalized_term
+    WHERE exact_term.release_id = request.release_id
+    GROUP BY exact_term.search_unit_id
 )
 SELECT
-    authorized_units.*,
-    CASE
-        WHEN EXISTS (
-            SELECT 1
-            FROM bauer_rag_v3.exact_terms exact_term
-            JOIN query_terms query_term
-              ON exact_term.normalized_term = query_term.term
-            WHERE exact_term.release_id::text = authorized_units.release_id
-              AND exact_term.search_unit_id::text =
-                  authorized_units.evidence_id
-        ) THEN 1.0
-        ELSE 0.8
-    END::double precision AS raw_score,
+    unit.search_unit_id::text AS evidence_id,
+    unit.release_id::text AS release_id,
+    kb.tenant_id::text AS tenant_id,
+    kb.kb_id::text AS knowledge_base_id,
+    source_row.source_id::text AS source_document_id,
+    source_row.external_file_id,
+    source_row.source_type,
+    source_version.source_version_id::text AS source_version_id,
+    source_version.sha256::text AS source_sha256,
+    coalesce(
+        source_version.discovered_metadata ->> 'title',
+        source_version.filename
+    ) AS title,
+    source_version.discovered_metadata AS source_metadata,
+    unit.unit_type,
+    unit.display_text,
+    unit.search_text,
+    unit.metadata AS unit_metadata,
+    unit.is_citable,
+    unit.generated_summary,
+    coalesce(unit.page_start, 1)::integer AS page_number,
+    NULL::text AS printed_page_label,
+    unit.section_id::text AS section_id,
+    NULL::text AS block_id,
+    unit.table_id::text AS table_id,
+    unit.table_row_index::integer AS table_row_index,
+    NULL::text AS cell_id,
+    NULL::integer AS char_start,
+    NULL::integer AS char_end,
+    NULL::double precision AS x0,
+    NULL::double precision AS y0,
+    NULL::double precision AS x1,
+    NULL::double precision AS y1,
+    unit.artifact_set_id,
+    unit.primary_provenance_id,
+    1.0::double precision AS raw_score,
     'exact'::text AS channel,
-    'exact:' || coalesce(
-        (
-            SELECT min(query_term.term)
-            FROM query_terms query_term
-            WHERE position(
-                query_term.term IN lower(authorized_units.search_text)
-            ) > 0
-               OR EXISTS (
-                   SELECT 1
-                   FROM bauer_rag_v3.exact_terms exact_term
-                   WHERE exact_term.release_id::text =
-                       authorized_units.release_id
-                     AND exact_term.search_unit_id::text =
-                       authorized_units.evidence_id
-                     AND exact_term.normalized_term = query_term.term
-               )
-        ),
-        'term'
-    ) AS reason,
+    'exact:' || matched.matched_term AS reason,
     NULL::text AS channel_unit
-FROM authorized_units
-WHERE EXISTS (
-    SELECT 1
-    FROM query_terms query_term
-    WHERE position(
-        query_term.term IN lower(authorized_units.search_text)
-    ) > 0
-       OR EXISTS (
-           SELECT 1
-           FROM bauer_rag_v3.exact_terms exact_term
-           WHERE exact_term.release_id::text = authorized_units.release_id
-             AND exact_term.search_unit_id::text =
-                 authorized_units.evidence_id
-             AND exact_term.normalized_term = query_term.term
-       )
-)
+FROM matched_units matched
+JOIN bauer_rag_v3.search_units unit
+  ON unit.search_unit_id = matched.search_unit_id
+CROSS JOIN request_scope request
+JOIN bauer_rag_v3.release_sources member
+  ON member.release_id = unit.release_id
+ AND member.source_id = unit.source_id
+ AND member.source_version_id = unit.source_version_id
+ AND member.artifact_set_id = unit.artifact_set_id
+JOIN bauer_rag_v3.knowledge_releases release_row
+  ON release_row.release_id = unit.release_id
+ AND release_row.kb_id = unit.kb_id
+JOIN bauer_rag_v3.knowledge_bases kb
+  ON kb.kb_id = release_row.kb_id
+JOIN bauer_rag_v3.sources source_row
+  ON source_row.source_id = unit.source_id
+ AND source_row.kb_id = kb.kb_id
+JOIN bauer_rag_v3.source_versions source_version
+  ON source_version.source_version_id = unit.source_version_id
+ AND source_version.source_id = source_row.source_id
+WHERE unit.release_id = request.release_id
+  AND release_row.status = request.release_status
+  AND release_row.kb_id = request.knowledge_base_id
+  AND kb.tenant_id = request.tenant_id
+  AND (
+      source_row.source_id::text = ANY (request.source_ids)
+      OR source_row.external_file_id = ANY (request.external_file_ids)
+  )
+  AND unit.is_citable
+  AND NOT unit.generated_summary
+  AND NOT EXISTS (
+      SELECT 1
+      FROM jsonb_each(request.mandatory_text_constraints)
+          AS required_constraint(constraint_name, allowed_values)
+      WHERE NOT EXISTS (
+          SELECT 1
+          FROM jsonb_array_elements_text(
+              required_constraint.allowed_values
+          ) AS allowed_value(value)
+          WHERE position(
+              allowed_value.value IN lower(
+                  concat_ws(
+                      ' ',
+                      unit.search_text,
+                      unit.display_text,
+                      unit.metadata::text
+                  )
+              )
+          ) > 0
+      )
+  )
+  AND NOT EXISTS (
+      SELECT 1
+      FROM unnest(request.forbidden_claim_values) AS forbidden_value(value)
+      WHERE position(
+          forbidden_value.value IN lower(
+              concat_ws(
+                  ' ',
+                  unit.search_text,
+                  unit.display_text,
+                  unit.metadata::text
+              )
+          )
+      ) > 0
+  )
 ORDER BY raw_score DESC, evidence_id
 LIMIT %s
 """
-)
 
 
 def _fact_sql(superlative: str | None) -> str:
