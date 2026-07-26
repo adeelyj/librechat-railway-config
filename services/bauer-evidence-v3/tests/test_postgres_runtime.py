@@ -666,6 +666,49 @@ class PostgresRuntimeTests(unittest.TestCase):
             {"prose-0", "prose-1", "prose-2", "prose-3", "prose-4"},
         )
 
+    def test_explicit_physical_page_filters_every_retrieval_channel(self):
+        page_40 = evidence_row(
+            "page-40",
+            channel="lexical",
+            unit_type="paragraph",
+            score=1.0,
+            content="Operating pressure: 350 bar.",
+            page=40,
+        )
+        page_41 = evidence_row(
+            "page-41",
+            channel="lexical",
+            unit_type="paragraph",
+            score=0.5,
+            content="Operating pressure: 414/420 bar.",
+            page=41,
+        )
+        connection = FakeConnection(
+            {
+                "lexical": [page_40, page_41],
+                "semantic": [
+                    {**page_40, "channel": "semantic"},
+                    {**page_41, "channel": "semantic"},
+                ],
+            }
+        )
+        results = self.make_index(
+            connection,
+            embedding_provider=FixedEmbedding(),
+        ).retrieve(
+            analyze_query(
+                "For the catalogue physical page 41, find operating "
+                "pressure."
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset({SOURCE_ID}),
+        )
+
+        self.assertEqual(
+            [item.evidence.evidence_id for item in results],
+            ["page-41"],
+        )
+
     def test_mandatory_and_forbidden_constraints_are_sql_prefilters(self):
         connection = FakeConnection()
         plan = analyze_query(

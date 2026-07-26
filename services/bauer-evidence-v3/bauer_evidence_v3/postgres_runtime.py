@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 import uuid
 from collections import defaultdict
 from contextlib import contextmanager
@@ -35,6 +36,10 @@ _CHANNEL_WEIGHT = {
     RetrievalChannel.NAVIGATION: 0.7,
 }
 _STRUCTURED_TYPES = {"fact", "table_row", "table_cell"}
+_PHYSICAL_PAGE_PATTERN = re.compile(
+    r"\bphysical\s+page\s+([1-9][0-9]{0,5})\b",
+    flags=re.IGNORECASE,
+)
 
 
 class PostgresRuntimeError(RuntimeError):
@@ -124,6 +129,13 @@ def _json_parameter(value: object) -> str:
         ensure_ascii=False,
         sort_keys=True,
         separators=(",", ":"),
+    )
+
+
+def _requested_physical_pages(plan: QueryPlan) -> frozenset[int]:
+    return frozenset(
+        int(match.group(1))
+        for match in _PHYSICAL_PAGE_PATTERN.finditer(plan.query)
     )
 
 
@@ -1379,6 +1391,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                 f"at most {MAX_AUTHORIZED_SOURCES} authorized sources are allowed"
             )
         channel_limit = min(max(plan.top_k * 4, 20), 80)
+        requested_physical_pages = _requested_physical_pages(plan)
         required_numeric_groups = _required_numeric_groups(plan)
         forbidden_numeric_constraints = [
             _numeric_constraint_document(constraint)
@@ -1518,6 +1531,13 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                     )
                     for row in rows
                 ]
+                if requested_physical_pages:
+                    candidates = [
+                        candidate
+                        for candidate in candidates
+                        if candidate.evidence.coordinate.page_number
+                        in requested_physical_pages
+                    ]
                 if candidates:
                     channel_candidates[channel] = self._dedupe_channel(
                         candidates
