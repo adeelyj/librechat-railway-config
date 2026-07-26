@@ -151,6 +151,7 @@ _NON_CLAIM_TERMS = frozenset(
         "report",
         "reports",
         "reported",
+        "same",
         "show",
         "shown",
         "shows",
@@ -460,8 +461,17 @@ def _claim_terms(value: str) -> set[str]:
     # identifiers and high-risk values are validated independently before
     # this broad substantive-term comparison.
     normalized = normalize_text(value).replace("-", " ")
+    normalized = re.sub(
+        r"\bmotor outputs?\b",
+        "motor power",
+        normalized,
+    )
     return {
-        _NUMBER_WORD_TERMS.get(token, token)
+        (
+            "group"
+            if token == "groups"
+            else _NUMBER_WORD_TERMS.get(token, token)
+        )
         for token in _WORD_RE.findall(normalized)
         if token not in _NON_CLAIM_TERMS
         and (len(token) >= 3 or any(character.isdigit() for character in token))

@@ -270,6 +270,34 @@ class ValidatorTests(unittest.TestCase):
             {item.code for item in wrong_word.violations},
         )
 
+    def test_motor_output_and_group_plural_use_bounded_domain_aliases(
+        self,
+    ) -> None:
+        citation = replace(
+            self.citation,
+            content=(
+                "Pressure group: VERTICUS I 420 - 525 bar; motor "
+                "power: 11."
+            ),
+            table_headers=(),
+            table_values=(),
+        )
+        package = replace(
+            self.package,
+            question="Report the motor output for the pressure groups.",
+            citations=(citation,),
+        )
+        result = validate_answer(
+            answer=(
+                "The same pressure group has a motor output of 11 "
+                "[E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(package.question),
+        )
+
+        self.assertTrue(result.valid)
+
     def test_cited_two_value_comparison_allows_relational_language(
         self,
     ) -> None:
