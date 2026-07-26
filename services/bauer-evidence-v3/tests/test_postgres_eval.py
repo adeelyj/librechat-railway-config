@@ -553,6 +553,20 @@ class PostgresEvaluationObservationSourceTests(unittest.TestCase):
         extraction = observations.extraction[0]
         self.assertEqual(extraction["source_id"], SOURCE_ID)
         self.assertEqual(extraction["source_version_id"], SOURCE_VERSION_ID)
+        extraction_statement = next(
+            statement
+            for statement, _ in connection.calls
+            if "artifact.quality_summary" in statement
+        )
+        self.assertIn(
+            "JOIN bauer_rag_v3.table_segments AS segment_row",
+            extraction_statement,
+        )
+        self.assertIn(
+            "table_row.metadata ->> 'canonical_order'",
+            extraction_statement,
+        )
+        self.assertIn("UNION ALL", extraction_statement)
         self.assertEqual(extraction["facts"][0]["fact_id"], FACT_ID)
         self.assertTrue(
             extraction["facts"][0]["source_coordinate_resolvable"]

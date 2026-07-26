@@ -362,25 +362,75 @@ class PostgresEvaluationObservationSource:
                 ) AS resolvable_evidence_count,
                 (
                     SELECT count(*)
-                    FROM bauer_rag_v3.blocks AS ordered_block
-                    WHERE ordered_block.artifact_set_id =
-                        member.artifact_set_id
+                    FROM (
+                        SELECT
+                            block_row.page_id,
+                            block_row.reading_order AS item_order
+                        FROM bauer_rag_v3.blocks AS block_row
+                        WHERE block_row.artifact_set_id =
+                            member.artifact_set_id
+                        UNION ALL
+                        SELECT DISTINCT
+                            segment_row.page_id,
+                            CASE
+                                WHEN table_row.metadata ->>
+                                    'canonical_order' ~ '^[0-9]+$'
+                                THEN (
+                                    table_row.metadata ->>
+                                    'canonical_order'
+                                )::integer
+                                ELSE -1
+                            END AS item_order
+                        FROM bauer_rag_v3.tables AS table_row
+                        JOIN bauer_rag_v3.table_segments AS segment_row
+                          ON segment_row.artifact_set_id =
+                             table_row.artifact_set_id
+                         AND segment_row.table_id = table_row.table_id
+                        WHERE table_row.artifact_set_id =
+                            member.artifact_set_id
+                    ) AS ordered_item
                 ) AS reading_order_checks,
                 (
                     SELECT count(*)
                     FROM (
                         SELECT
-                            block_row.reading_order,
+                            item.page_id,
+                            item.item_order,
                             row_number() OVER (
-                                PARTITION BY block_row.page_id
-                                ORDER BY block_row.reading_order
+                                PARTITION BY item.page_id
+                                ORDER BY item.item_order
                             ) - 1 AS expected_order
-                        FROM bauer_rag_v3.blocks AS block_row
-                        WHERE block_row.artifact_set_id =
-                            member.artifact_set_id
-                    ) AS ordered_block
-                    WHERE ordered_block.reading_order =
-                        ordered_block.expected_order
+                        FROM (
+                            SELECT
+                                block_row.page_id,
+                                block_row.reading_order AS item_order
+                            FROM bauer_rag_v3.blocks AS block_row
+                            WHERE block_row.artifact_set_id =
+                                member.artifact_set_id
+                            UNION ALL
+                            SELECT DISTINCT
+                                segment_row.page_id,
+                                CASE
+                                    WHEN table_row.metadata ->>
+                                        'canonical_order' ~ '^[0-9]+$'
+                                    THEN (
+                                        table_row.metadata ->>
+                                        'canonical_order'
+                                    )::integer
+                                    ELSE -1
+                                END AS item_order
+                            FROM bauer_rag_v3.tables AS table_row
+                            JOIN bauer_rag_v3.table_segments AS segment_row
+                              ON segment_row.artifact_set_id =
+                                 table_row.artifact_set_id
+                             AND segment_row.table_id =
+                                 table_row.table_id
+                            WHERE table_row.artifact_set_id =
+                                member.artifact_set_id
+                        ) AS item
+                    ) AS ordered_item
+                    WHERE ordered_item.item_order =
+                        ordered_item.expected_order
                 ) AS reading_order_passes
             FROM bauer_rag_v3.release_sources AS member
             JOIN bauer_rag_v3.knowledge_releases AS release_row
