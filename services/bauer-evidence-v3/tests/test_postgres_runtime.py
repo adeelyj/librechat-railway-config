@@ -535,6 +535,83 @@ class PostgresRuntimeTests(unittest.TestCase):
                 self.assertNotIn("numeric_values", fact_sql)
                 self.assertNotIn("fact.numeric_value = value::numeric", fact_sql)
 
+    def test_multi_value_query_retrieves_across_units_and_all_channels(self):
+        connection = FakeConnection()
+        self.make_index(
+            connection,
+            embedding_provider=FixedEmbedding(),
+        ).retrieve(
+            analyze_query(
+                "Compare breathing-air 300 bar with Nitrox 200 bar."
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset({SOURCE_ID}),
+        )
+
+        channel_calls = [
+            (sql, parameters)
+            for sql, parameters in connection.executions
+            if "v3:channel:" in sql
+        ]
+        self.assertEqual(
+            {
+                channel
+                for sql, _ in channel_calls
+                for channel in (
+                    "exact",
+                    "fact",
+                    "table",
+                    "lexical",
+                    "semantic",
+                    "navigation",
+                )
+                if f"v3:channel:{channel}" in sql
+            },
+            {"exact", "fact", "table", "lexical", "semantic"},
+        )
+        fact_parameters = next(
+            parameters
+            for sql, parameters in channel_calls
+            if "v3:channel:fact" in sql
+        )
+        groups = json.loads(fact_parameters[8])
+        self.assertEqual(len(groups), 1)
+        self.assertEqual(groups[0]["name"], "query")
+        self.assertEqual(
+            {
+                (item["comparator"], item["lower_value"], item["unit"])
+                for item in groups[0]["alternatives"]
+            },
+            {("eq", "300", "bar"), ("eq", "200", "bar")},
+        )
+
+    def test_explicit_numeric_filters_stay_on_structured_channels(self):
+        connection = FakeConnection()
+        self.make_index(
+            connection,
+            embedding_provider=FixedEmbedding(),
+        ).retrieve(
+            analyze_query(
+                "Find pressure data",
+                mandatory_constraints={"pressure": ("300 bar",)},
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset({SOURCE_ID}),
+        )
+
+        channel_sql = [
+            sql
+            for sql, _ in connection.executions
+            if "v3:channel:" in sql
+        ]
+        self.assertEqual(len(channel_sql), 2)
+        self.assertTrue(
+            all(
+                "v3:channel:fact" in sql or "v3:channel:table" in sql
+                for sql in channel_sql
+            )
+        )
+
     def test_mandatory_and_forbidden_constraints_are_sql_prefilters(self):
         connection = FakeConnection()
         plan = analyze_query(

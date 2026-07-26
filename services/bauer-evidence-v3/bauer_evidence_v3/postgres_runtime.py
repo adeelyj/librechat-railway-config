@@ -85,13 +85,24 @@ def _numeric_constraint_document(
 
 
 def _required_numeric_groups(plan: QueryPlan) -> list[dict[str, object]]:
-    groups: list[dict[str, object]] = [
-        {
-            "name": f"query:{index}",
-            "alternatives": [_numeric_constraint_document(constraint)],
-        }
-        for index, constraint in enumerate(plan.numeric_constraints)
-    ]
+    groups: list[dict[str, object]] = []
+    if plan.numeric_constraints:
+        # Numeric values mentioned in an ordinary query are retrieval clues,
+        # not a demand that every value occur in one evidence unit.  A
+        # comparison or catalogue question commonly spans multiple rows or
+        # paragraphs, so model those mentions as alternatives within one
+        # query group.  Explicit mandatory_numeric_constraints below remain
+        # independent groups and therefore retain their all-groups-required
+        # semantics in the typed fact/table SQL.
+        groups.append(
+            {
+                "name": "query",
+                "alternatives": [
+                    _numeric_constraint_document(constraint)
+                    for constraint in plan.numeric_constraints
+                ],
+            }
+        )
     groups.extend(
         {
             "name": name,
@@ -1385,7 +1396,8 @@ class PostgresEvidenceIndex(_PostgresAdapter):
         )
         channel_candidates: dict[RetrievalChannel, list[_Candidate]] = {}
         structured_constraint_filter = bool(
-            required_numeric_groups or forbidden_numeric_constraints
+            plan.mandatory_numeric_constraints
+            or forbidden_numeric_constraints
         )
         channels = (
             tuple(
