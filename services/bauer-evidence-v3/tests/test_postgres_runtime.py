@@ -350,10 +350,16 @@ class PostgresRuntimeTests(unittest.TestCase):
         ]
         self.assertTrue(channel_calls)
         for sql, parameters in channel_calls:
-            self.assertIn(
-                "release_row.status = %s::text",
-                sql,
-            )
+            if "v3:channel:lexical" in sql:
+                self.assertIn(
+                    "release_row.status = request.release_status",
+                    sql,
+                )
+            else:
+                self.assertIn(
+                    "release_row.status = %s::text",
+                    sql,
+                )
             self.assertEqual(parameters[1], "validating")
 
         with self.assertRaisesRegex(ValueError, "ready or validating"):
@@ -469,6 +475,26 @@ class PostgresRuntimeTests(unittest.TestCase):
                     lowered,
                 )
                 self.assertIn("as materialized", lowered)
+            elif channel == "lexical":
+                self.assertIn(
+                    "unit.release_id = request.release_id",
+                    lowered,
+                )
+                self.assertIn(
+                    "kb.tenant_id = request.tenant_id",
+                    lowered,
+                )
+                self.assertIn(
+                    "source_scope.source_id::text = any "
+                    "(request.source_ids)",
+                    lowered,
+                )
+                self.assertIn("matched_units as materialized", lowered)
+                self.assertIn(
+                    "order by raw_score desc, unit.search_unit_id "
+                    "limit %s",
+                    lowered,
+                )
             else:
                 self.assertIn("unit.release_id = %s::uuid", lowered)
                 self.assertIn("kb.tenant_id = %s::uuid", lowered)
@@ -759,8 +785,18 @@ class PostgresRuntimeTests(unittest.TestCase):
                 {"medium": ["nitrogen", "air"]},
             )
             self.assertEqual(parameters[7], ["oxygen"])
-            self.assertIn("jsonb_each(%s::jsonb)", sql)
-            self.assertIn("unnest(%s::text[])", sql)
+            if "v3:channel:lexical" in sql:
+                self.assertIn(
+                    "jsonb_each(request.mandatory_text_constraints)",
+                    sql,
+                )
+                self.assertIn(
+                    "unnest(request.forbidden_claim_values)",
+                    sql,
+                )
+            else:
+                self.assertIn("jsonb_each(%s::jsonb)", sql)
+                self.assertIn("unnest(%s::text[])", sql)
             self.assertIn("unit.metadata::text", sql)
 
     def test_numeric_mandatory_alternatives_and_forbidden_values_are_typed(

@@ -746,40 +746,166 @@ LIMIT %s
 )
 
 
-_LEXICAL_SQL = (
-    "/* v3:channel:lexical */\n"
-    + _AUTHORIZED_UNITS_CTE
-    + """
-, lexical_query AS (
+_LEXICAL_SQL = """
+/* v3:channel:lexical */
+WITH request_scope AS (
+    SELECT
+        %s::uuid AS release_id,
+        %s::text AS release_status,
+        %s::uuid AS knowledge_base_id,
+        %s::uuid AS tenant_id,
+        %s::text[] AS source_ids,
+        %s::text[] AS external_file_ids,
+        %s::jsonb AS mandatory_text_constraints,
+        %s::text[] AS forbidden_claim_values
+),
+lexical_query AS (
     SELECT %s::text AS query_text
+),
+matched_units AS MATERIALIZED (
+    SELECT
+        unit.search_unit_id,
+        greatest(
+            ts_rank_cd(
+                unit.search_vector,
+                websearch_to_tsquery('simple', lexical_query.query_text)
+            ),
+            similarity(
+                lower(unit.search_text),
+                lexical_query.query_text
+            )
+        )::double precision AS raw_score
+    FROM bauer_rag_v3.search_units unit
+    JOIN bauer_rag_v3.sources source_scope
+      ON source_scope.source_id = unit.source_id
+     AND source_scope.kb_id = unit.kb_id
+    CROSS JOIN request_scope request
+    CROSS JOIN lexical_query
+    WHERE unit.release_id = request.release_id
+      AND (
+          source_scope.source_id::text = ANY (request.source_ids)
+          OR source_scope.external_file_id =
+              ANY (request.external_file_ids)
+      )
+      AND unit.is_citable
+      AND NOT unit.generated_summary
+      AND NOT EXISTS (
+          SELECT 1
+          FROM jsonb_each(request.mandatory_text_constraints)
+              AS required_constraint(constraint_name, allowed_values)
+          WHERE NOT EXISTS (
+              SELECT 1
+              FROM jsonb_array_elements_text(
+                  required_constraint.allowed_values
+              ) AS allowed_value(value)
+              WHERE position(
+                  allowed_value.value IN lower(
+                      concat_ws(
+                          ' ',
+                          unit.search_text,
+                          unit.display_text,
+                          unit.metadata::text
+                      )
+                  )
+              ) > 0
+          )
+      )
+      AND NOT EXISTS (
+          SELECT 1
+          FROM unnest(request.forbidden_claim_values)
+              AS forbidden_value(value)
+          WHERE position(
+              forbidden_value.value IN lower(
+                  concat_ws(
+                      ' ',
+                      unit.search_text,
+                      unit.display_text,
+                      unit.metadata::text
+                  )
+              )
+          ) > 0
+      )
+      AND (
+          unit.search_vector @@
+              websearch_to_tsquery('simple', lexical_query.query_text)
+          OR similarity(
+              lower(unit.search_text),
+              lexical_query.query_text
+          ) > 0.05
+      )
+    ORDER BY raw_score DESC, unit.search_unit_id
+    LIMIT %s
 )
 SELECT
-    authorized_units.*,
-    greatest(
-        ts_rank_cd(
-            authorized_units.search_vector,
-            websearch_to_tsquery('simple', lexical_query.query_text)
-        ),
-        similarity(
-            lower(authorized_units.search_text),
-            lexical_query.query_text
-        )
-    )::double precision AS raw_score,
+    unit.search_unit_id::text AS evidence_id,
+    unit.release_id::text AS release_id,
+    kb.tenant_id::text AS tenant_id,
+    kb.kb_id::text AS knowledge_base_id,
+    source_row.source_id::text AS source_document_id,
+    source_row.external_file_id,
+    source_row.source_type,
+    source_version.source_version_id::text AS source_version_id,
+    source_version.sha256::text AS source_sha256,
+    coalesce(
+        source_version.discovered_metadata ->> 'title',
+        source_version.filename
+    ) AS title,
+    source_version.discovered_metadata AS source_metadata,
+    unit.unit_type,
+    unit.display_text,
+    unit.search_text,
+    unit.metadata AS unit_metadata,
+    unit.is_citable,
+    unit.generated_summary,
+    coalesce(unit.page_start, 1)::integer AS page_number,
+    NULL::text AS printed_page_label,
+    unit.section_id::text AS section_id,
+    NULL::text AS block_id,
+    unit.table_id::text AS table_id,
+    unit.table_row_index::integer AS table_row_index,
+    NULL::text AS cell_id,
+    NULL::integer AS char_start,
+    NULL::integer AS char_end,
+    NULL::double precision AS x0,
+    NULL::double precision AS y0,
+    NULL::double precision AS x1,
+    NULL::double precision AS y1,
+    unit.artifact_set_id,
+    unit.primary_provenance_id,
+    matched.raw_score,
     'lexical'::text AS channel,
     'fts_trigram'::text AS reason,
-    authorized_units.unit_metadata ->> 'unit' AS channel_unit
-FROM authorized_units
-CROSS JOIN lexical_query
-WHERE authorized_units.search_vector @@
-          websearch_to_tsquery('simple', lexical_query.query_text)
-   OR similarity(
-          lower(authorized_units.search_text),
-          lexical_query.query_text
-      ) > 0.05
-ORDER BY raw_score DESC, evidence_id
-LIMIT %s
+    unit.metadata ->> 'unit' AS channel_unit
+FROM matched_units matched
+JOIN bauer_rag_v3.search_units unit
+  ON unit.search_unit_id = matched.search_unit_id
+CROSS JOIN request_scope request
+JOIN bauer_rag_v3.release_sources member
+  ON member.release_id = unit.release_id
+ AND member.source_id = unit.source_id
+ AND member.source_version_id = unit.source_version_id
+ AND member.artifact_set_id = unit.artifact_set_id
+JOIN bauer_rag_v3.knowledge_releases release_row
+  ON release_row.release_id = unit.release_id
+ AND release_row.kb_id = unit.kb_id
+JOIN bauer_rag_v3.knowledge_bases kb
+  ON kb.kb_id = release_row.kb_id
+JOIN bauer_rag_v3.sources source_row
+  ON source_row.source_id = unit.source_id
+ AND source_row.kb_id = kb.kb_id
+JOIN bauer_rag_v3.source_versions source_version
+  ON source_version.source_version_id = unit.source_version_id
+ AND source_version.source_id = source_row.source_id
+WHERE unit.release_id = request.release_id
+  AND release_row.status = request.release_status
+  AND release_row.kb_id = request.knowledge_base_id
+  AND kb.tenant_id = request.tenant_id
+  AND (
+      source_row.source_id::text = ANY (request.source_ids)
+      OR source_row.external_file_id = ANY (request.external_file_ids)
+  )
+ORDER BY matched.raw_score DESC, evidence_id
 """
-)
 
 
 _SEMANTIC_SQL = (
