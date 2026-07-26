@@ -167,6 +167,9 @@ granted execution rights on write or control-plane predicates.
 Migration 012 makes the source-registry write predicate safe for both the initial insert and its
 identity-verifying conflict retry by checking the proposed/existing row's tenant and knowledge-base
 ingest capability; it does not widen the compiler's object grants.
+Migration 013 preserves the compiler-QA guard's release-lifecycle row lock through a trigger-only,
+schema-owner execution boundary. Runtime groups cannot execute that function directly, and the
+ingester remains unable to update release-control rows.
 
 Authorization decisions and final validator dispositions are emitted as structured, body-free
 logs and bounded OTLP metrics. In-scope authorization decisions are also appended through a

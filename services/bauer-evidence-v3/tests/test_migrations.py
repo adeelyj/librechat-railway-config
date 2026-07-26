@@ -36,7 +36,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
         discovered = MIGRATIONS.discover_migrations(MIGRATIONS_DIR)
         self.assertEqual(
             [migration.version for migration in discovered],
-            list(range(1, 13)),
+            list(range(1, 14)),
         )
         self.assertEqual(
             [migration.filename for migration in discovered],
@@ -53,6 +53,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
                 "010_runtime_role_hardening.sql",
                 "011_rls_policy_role_scoping.sql",
                 "012_source_upsert_rls.sql",
+                "013_qa_guard_lock_authority.sql",
             ],
         )
         for migration in discovered:
@@ -446,6 +447,30 @@ class MigrationStructureTests(unittest.TestCase):
             maxsplit=1,
         )[1]
         self.assertNotIn("can_write_source(source_id)", policy_definition)
+
+    def test_compiler_qa_guard_locks_release_as_schema_owner(self):
+        guard_sql = " ".join(
+            self.files["013_qa_guard_lock_authority.sql"].casefold().split()
+        )
+        self.assertIn(
+            "alter function bauer_rag_v3.guard_compiler_qa_mutation() "
+            "security definer",
+            guard_sql,
+        )
+        self.assertIn(
+            "alter function bauer_rag_v3.guard_compiler_qa_mutation() "
+            "set search_path = bauer_rag_v3, pg_temp",
+            guard_sql,
+        )
+        self.assertIn(
+            "revoke all on function "
+            "bauer_rag_v3.guard_compiler_qa_mutation() from public, "
+            "bauer_rag_v3_reader, bauer_rag_v3_ingester, "
+            "bauer_rag_v3_evaluator, bauer_rag_v3_reviewer, "
+            "bauer_rag_v3_admin",
+            guard_sql,
+        )
+        self.assertNotIn("grant ", guard_sql)
 
     def test_hardened_reader_cannot_read_control_or_gold_tables(self):
         roles_sql = self.files["010_runtime_role_hardening.sql"].casefold()
