@@ -40,7 +40,7 @@ the V1/V2 database without confirming the target and rollback snapshot.
 ```text
 BAUER_V3_ENVIRONMENT=production
 BAUER_V3_DATABASE_URL=<private PostgreSQL DSN>
-BAUER_V3_EXPECTED_MIGRATION_VERSION=11
+BAUER_V3_EXPECTED_MIGRATION_VERSION=12
 BAUER_V3_BUILD_COMMIT=<lowercase Git commit; Railway commit metadata is the fallback>
 ```
 
@@ -149,6 +149,10 @@ Migration 011 scopes every RLS policy to the runtime group that owns the matchin
 so a reader query never evaluates write or control-plane predicates. The ingester cannot mutate
 release lifecycle, active pointers, ACLs, review decisions, or evaluation gold. None of these
 migrations creates login passwords.
+
+Migration 012 preserves the source registry's idempotent upsert path by expressing its RLS update
+check directly as the current tenant plus ingest/admin permission on the row's knowledge base. It
+does not add any table, function, or role grant.
 
 Migration 010 also creates the RLS-protected, append-only `authorization_audit` table and a
 scope-checking function callable by the API reader. Valid in-scope authorization decisions are

@@ -36,7 +36,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
         discovered = MIGRATIONS.discover_migrations(MIGRATIONS_DIR)
         self.assertEqual(
             [migration.version for migration in discovered],
-            list(range(1, 12)),
+            list(range(1, 13)),
         )
         self.assertEqual(
             [migration.filename for migration in discovered],
@@ -52,6 +52,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
                 "009_runtime_roles.sql",
                 "010_runtime_role_hardening.sql",
                 "011_rls_policy_role_scoping.sql",
+                "012_source_upsert_rls.sql",
             ],
         )
         for migration in discovered:
@@ -423,6 +424,28 @@ class MigrationStructureTests(unittest.TestCase):
         }
         for policy_key, expected_targets in expected_sensitive_scopes.items():
             self.assertEqual(altered[policy_key], expected_targets)
+
+    def test_source_upsert_policy_uses_row_kb_capability(self):
+        source_policy_sql = " ".join(
+            self.files["012_source_upsert_rls.sql"].casefold().split()
+        )
+        self.assertIn(
+            "alter policy source_write on bauer_rag_v3.sources "
+            "to bauer_rag_v3_ingester",
+            source_policy_sql,
+        )
+        self.assertEqual(
+            source_policy_sql.count(
+                "tenant_id = bauer_rag_v3.current_tenant_id() "
+                "and bauer_rag_v3.can_ingest_kb(kb_id)"
+            ),
+            2,
+        )
+        policy_definition = source_policy_sql.split(
+            "alter policy source_write",
+            maxsplit=1,
+        )[1]
+        self.assertNotIn("can_write_source(source_id)", policy_definition)
 
     def test_hardened_reader_cannot_read_control_or_gold_tables(self):
         roles_sql = self.files["010_runtime_role_hardening.sql"].casefold()

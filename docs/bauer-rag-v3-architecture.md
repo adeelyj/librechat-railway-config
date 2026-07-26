@@ -164,6 +164,9 @@ manufacture or rewrite, evaluation evidence or review attestations.
 Schema migration 011 scopes every RLS policy to those runtime groups. Write and admin `FOR ALL`
 policies therefore do not participate in ordinary reader `SELECT` queries, and the reader is not
 granted execution rights on write or control-plane predicates.
+Migration 012 makes the source-registry write predicate safe for both the initial insert and its
+identity-verifying conflict retry by checking the proposed/existing row's tenant and knowledge-base
+ingest capability; it does not widen the compiler's object grants.
 
 Authorization decisions and final validator dispositions are emitted as structured, body-free
 logs and bounded OTLP metrics. In-scope authorization decisions are also appended through a
