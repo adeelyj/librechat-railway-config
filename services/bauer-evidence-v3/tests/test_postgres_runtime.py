@@ -612,6 +612,60 @@ class PostgresRuntimeTests(unittest.TestCase):
             )
         )
 
+    def test_multi_value_results_reserve_room_for_source_prose(self):
+        fact_rows = [
+            evidence_row(
+                f"fact-{index:02d}",
+                channel="fact",
+                unit_type="fact",
+                score=1.0,
+                content=f"Structured pressure fact {index}: 300 bar.",
+            )
+            for index in range(24)
+        ]
+        prose_rows = [
+            evidence_row(
+                f"prose-{index}",
+                channel="lexical",
+                unit_type="paragraph",
+                score=0.9,
+                content=(
+                    f"Relevant source context {index}: breathing air "
+                    "300 bar and Nitrox 200 bar."
+                ),
+            )
+            for index in range(4)
+        ]
+        connection = FakeConnection(
+            {
+                "fact": fact_rows,
+                "table": [],
+                "lexical": prose_rows,
+                "semantic": [],
+            }
+        )
+        results = self.make_index(
+            connection,
+            embedding_provider=FixedEmbedding(),
+        ).retrieve(
+            analyze_query(
+                "Compare breathing-air 300 bar with Nitrox 200 bar.",
+                top_k=20,
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset({SOURCE_ID}),
+        )
+
+        self.assertEqual(len(results), 20)
+        self.assertEqual(
+            {
+                item.evidence.evidence_id
+                for item in results
+                if item.evidence.evidence_id.startswith("prose-")
+            },
+            {"prose-0", "prose-1", "prose-2", "prose-3"},
+        )
+
     def test_mandatory_and_forbidden_constraints_are_sql_prefilters(self):
         connection = FakeConnection()
         plan = analyze_query(

@@ -1689,7 +1689,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                 evidence_id,
             ),
         )
-        results: list[RetrievalResult] = []
+        ranked_results: list[RetrievalResult] = []
         seen_locations: set[tuple[object, ...]] = set()
         for evidence_id in ordered:
             evidence = evidence_by_id[evidence_id]
@@ -1713,7 +1713,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             )
             if not projected.is_citable or projected.generated_summary:
                 continue
-            results.append(
+            ranked_results.append(
                 RetrievalResult(
                     evidence=projected,
                     score=fused[evidence_id],
@@ -1721,9 +1721,58 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                     reasons=tuple(dict.fromkeys(reasons[evidence_id])),
                 )
             )
-            if len(results) >= plan.top_k:
+        return PostgresEvidenceIndex._limit_with_unit_diversity(
+            plan,
+            ranked_results,
+            unit_type_by_id,
+        )
+
+    @staticmethod
+    def _limit_with_unit_diversity(
+        plan: QueryPlan,
+        ranked_results: Sequence[RetrievalResult],
+        unit_type_by_id: Mapping[str, str],
+    ) -> tuple[RetrievalResult, ...]:
+        """Prevent structured rows from starving relevant source prose."""
+
+        if len(ranked_results) <= plan.top_k:
+            return tuple(ranked_results)
+        if plan.top_k < 4:
+            return tuple(ranked_results[: plan.top_k])
+
+        unstructured = [
+            item
+            for item in ranked_results
+            if unit_type_by_id.get(item.evidence.evidence_id)
+            not in _STRUCTURED_TYPES
+        ]
+        structured_present = any(
+            unit_type_by_id.get(item.evidence.evidence_id)
+            in _STRUCTURED_TYPES
+            for item in ranked_results
+        )
+        if not unstructured or not structured_present:
+            return tuple(ranked_results[: plan.top_k])
+
+        reserve_count = min(
+            len(unstructured),
+            max(1, plan.top_k // 5),
+        )
+        pending = {
+            item.evidence.evidence_id
+            for item in unstructured[:reserve_count]
+        }
+        selected: list[RetrievalResult] = []
+        for item in ranked_results:
+            evidence_id = item.evidence.evidence_id
+            if evidence_id in pending:
+                selected.append(item)
+                pending.remove(evidence_id)
+            elif len(selected) < plan.top_k - len(pending):
+                selected.append(item)
+            if len(selected) >= plan.top_k and not pending:
                 break
-        return tuple(results)
+        return tuple(selected[: plan.top_k])
 
     def _vector_literal(self, values: Sequence[float]) -> str:
         vector = tuple(float(value) for value in values)
