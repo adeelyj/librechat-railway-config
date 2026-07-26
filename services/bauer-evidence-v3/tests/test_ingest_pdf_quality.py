@@ -141,6 +141,26 @@ class PdfAndQualityTests(unittest.TestCase):
             {issue.code for issue in result.quality.issues},
         )
 
+    def test_pdf_native_adapter_clips_boxes_to_the_physical_page(self) -> None:
+        adapter = _FakePyMuPdf()
+        adapter.document.pages[0]._blocks[0]["bbox"] = (-25, 10, 125, 18)
+        adapter.document.pages[0]._tables[0].bbox = (110, 20, 120, 80)
+        with patch(
+            "bauer_evidence_v3.ingest.parsers.pdf._load_pymupdf",
+            return_value=adapter,
+        ):
+            result = compile_source(
+                b"%PDF-1.7\nfake",
+                source_name="manual.pdf",
+                enforce_gate=False,
+            )
+
+        self.assertEqual(
+            result.document.pages[0].blocks[0].bbox,
+            (0.0, 0.1, 1.0, 0.18),
+        )
+        self.assertIsNone(result.document.pages[0].tables[0].bbox)
+
     def test_gate_rejects_quarantine_and_character_damage(self) -> None:
         good = compile_source(b"Good evidence", source_name="good.txt")
         block = good.document.pages[0].blocks[0]
@@ -164,6 +184,44 @@ class PdfAndQualityTests(unittest.TestCase):
             "replacement_characters",
             {issue.code for issue in report.issues},
         )
+
+    def test_rejected_ocr_page_is_warning_when_document_has_other_evidence(
+        self,
+    ) -> None:
+        good = compile_source(b"Good evidence", source_name="good.txt")
+        first_page = good.document.pages[0]
+        unresolved_page = replace(
+            first_page,
+            page_id=stable_id(
+                "page",
+                good.document.source_sha256,
+                "page:1",
+                "",
+            ),
+            index=1,
+            blocks=(),
+            tables=(),
+            source_locator="page:1",
+            ocr_needed=True,
+            signals=(
+                ("ocr_accepted", "false"),
+                ("ocr_average_confidence", "0.50"),
+            ),
+        )
+        document = replace(
+            good.document,
+            pages=(first_page, unresolved_page),
+        )
+
+        report = evaluate_document(document, source_size=13)
+
+        self.assertEqual(report.status, "warning")
+        issue = next(item for item in report.issues if item.code == "ocr_needed")
+        self.assertEqual(issue.severity, "warning")
+
+        single_page = replace(document, pages=(replace(unresolved_page, index=0),))
+        single_report = evaluate_document(single_page, source_size=13)
+        self.assertEqual(single_report.status, "quarantine")
 
     def test_quality_detects_overlapping_table_spans(self) -> None:
         result = compile_source(

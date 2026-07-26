@@ -67,6 +67,31 @@ class ProjectionTests(unittest.TestCase):
             all(fact.provenance_evidence_ids for fact in bundle.facts)
         )
 
+    def test_unitless_numeric_table_cells_have_stable_fact_ids(self) -> None:
+        bundle = self.project(
+            """
+            <main><table>
+              <tr><th>Model</th><th>Cylinders</th></tr>
+              <tr><td>PE 100</td><td>4</td></tr>
+            </table></main>
+            """
+        )
+        self.assertEqual(
+            [(fact.numeric_value, fact.normalized_unit) for fact in bundle.facts],
+            [("4", None)],
+        )
+        self.assertTrue(bundle.facts[0].fact_id.startswith("fact_"))
+
+    def test_degenerate_html_table_is_retained_as_text_not_quarantined(self) -> None:
+        bundle = self.project(
+            """
+            <main>
+              <table><tr><td>Decorative but source-native title</td></tr></table>
+            </main>
+            """
+        )
+        self.assertEqual(bundle.evidence[0].content, "Decorative but source-native title")
+
     def test_identifier_terms_and_external_authorization_alias_are_preserved(self) -> None:
         bundle = self.project(
             """

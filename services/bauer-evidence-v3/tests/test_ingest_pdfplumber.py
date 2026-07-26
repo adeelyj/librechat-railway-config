@@ -31,6 +31,9 @@ class FakeDegenerateTable:
     def extract(self):
         return [["Decorative title box"]]
 
+class FakeOutsideTable(FakeTable):
+    bbox = (110, 10, 120, 80)
+
 
 class FakePage:
     width = 100
@@ -91,6 +94,22 @@ class PdfPlumberTests(unittest.TestCase):
         self.assertEqual(value.group, "B-SAFE 300")
         self.assertEqual(table.bbox, (0.0, 0.1, 1.0, 0.8))
         self.assertEqual(table.source_locator, "page:0/table:1")
+
+    def test_outside_native_table_has_no_false_page_coordinate(self) -> None:
+        page = FakePage()
+        page.find_tables = lambda: [FakeOutsideTable()]
+        pdf = FakePdf()
+        pdf.pages = [page]
+        adapter = FakePdfPlumber()
+        adapter.open = lambda *_args, **_kwargs: pdf
+        payload = b"%PDF-1.7 fake"
+        probe = probe_source(payload, source_name="manual.pdf")
+        with patch(
+            "bauer_evidence_v3.ingest.parsers.pdfplumber._load_pdfplumber",
+            return_value=adapter,
+        ):
+            document = PdfPlumberParser().parse(payload, ParseContext(probe))
+        self.assertIsNone(document.pages[0].tables[0].bbox)
 
 
 if __name__ == "__main__":

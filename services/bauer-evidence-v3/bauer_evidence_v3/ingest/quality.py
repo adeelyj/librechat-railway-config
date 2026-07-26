@@ -443,6 +443,9 @@ def evaluate_document(
             f"source:{document.source_name}",
         )
 
+    document_has_canonical_evidence = any(
+        page.blocks or page.tables for page in document.pages
+    )
     for expected_index, page in enumerate(document.pages):
         page_location = page.source_locator or f"page:{expected_index}"
         _validate_provenance(
@@ -474,11 +477,25 @@ def evaluate_document(
                 page_location,
             )
         if page.ocr_needed:
+            page_signals = dict(page.signals)
+            ocr_attempted_but_rejected = (
+                page_signals.get("ocr_accepted") == "false"
+            )
             _issue(
                 issues,
                 "ocr_needed",
-                "quarantine",
-                "native PDF evidence is insufficient; OCR is required",
+                (
+                    "warning"
+                    if ocr_attempted_but_rejected
+                    and document_has_canonical_evidence
+                    else "quarantine"
+                ),
+                (
+                    "OCR was attempted but the page remained below the "
+                    "acceptance threshold"
+                    if ocr_attempted_but_rejected
+                    else "native PDF evidence is insufficient; OCR is required"
+                ),
                 page_location,
             )
         if len(page.blocks) > policy.max_blocks_per_page:

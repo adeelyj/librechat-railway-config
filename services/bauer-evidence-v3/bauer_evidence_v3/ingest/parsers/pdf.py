@@ -51,13 +51,17 @@ def _normalized_bbox(
     bbox = _sequence_bbox(value)
     if bbox is None or width <= 0 or height <= 0:
         return None
+    normalized = (
+        bbox[0] / width,
+        bbox[1] / height,
+        bbox[2] / width,
+        bbox[3] / height,
+    )
+    clipped = tuple(min(1.0, max(0.0, coordinate)) for coordinate in normalized)
+    if clipped[0] >= clipped[2] or clipped[1] >= clipped[3]:
+        return None
     return rounded_bbox(
-        (
-            bbox[0] / width,
-            bbox[1] / height,
-            bbox[2] / width,
-            bbox[3] / height,
-        )
+        clipped
     )
 
 

@@ -708,7 +708,7 @@ def _facts_from_row(
             evidence.evidence_id,
             predicate,
             str(numeric),
-            normalized_unit or "",
+            normalized_unit or "unitless",
         )
         facts.append(
             TypedFact(

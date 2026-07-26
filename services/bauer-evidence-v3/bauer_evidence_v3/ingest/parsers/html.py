@@ -240,6 +240,16 @@ class HtmlParser:
                 if table is not None:
                     tables.append(table)
                     order += 1
+                else:
+                    text = _visible_text(node)
+                    if text:
+                        add_block(
+                            node,
+                            "paragraph",
+                            text,
+                            tag="table",
+                            degenerate_table=True,
+                        )
                 return
             if node.tag in {"h1", "h2", "h3", "h4", "h5", "h6"}:
                 text = _visible_text(node)
@@ -367,7 +377,11 @@ class HtmlParser:
                 column_count = max(column_count, column)
                 row_count = max(row_count, row_index + row_span)
 
-        if not placed or column_count == 0:
+        if (
+            not placed
+            or row_count < 2
+            or column_count < 2
+        ):
             return None
 
         caption_node = next(

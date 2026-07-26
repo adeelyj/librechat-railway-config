@@ -41,7 +41,11 @@ def _bbox(
         return None
     if width <= 0 or height <= 0:
         return None
-    return rounded_bbox((x0 / width, y0 / height, x1 / width, y1 / height))
+    normalized = (x0 / width, y0 / height, x1 / width, y1 / height)
+    clipped = tuple(min(1.0, max(0.0, coordinate)) for coordinate in normalized)
+    if clipped[0] >= clipped[2] or clipped[1] >= clipped[3]:
+        return None
+    return rounded_bbox(clipped)
 
 
 @dataclass(frozen=True, slots=True)
