@@ -65,6 +65,19 @@ _ADVERSATIVE_RE = re.compile(
     r"\b(?:but|however|yet|nevertheless|though|aber|jedoch|dennoch)\b",
     re.IGNORECASE,
 )
+_NUMERIC_COMPARISON_TERMS = frozenset(
+    {
+        "above",
+        "below",
+        "exceed",
+        "exceeded",
+        "exceeds",
+        "higher",
+        "limit",
+        "limits",
+        "lower",
+    }
+)
 _NON_CLAIM_TERMS = frozenset(
     {
         "a",
@@ -146,6 +159,7 @@ _NON_CLAIM_TERMS = frozenset(
         "was",
         "were",
         "with",
+        "which",
         "zum",
         "zur",
     }
@@ -269,6 +283,12 @@ def validate_answer(
                 )
 
         claim_terms = _claim_terms(uncited_sentence).difference(constraint_terms)
+        if len(extract_numeric_mentions(uncited_sentence)) >= 2:
+            # Comparisons derived from two explicitly cited technical values
+            # may use ordinary relational language even when the source table
+            # only presents the values.  The numbers and units remain subject
+            # to the stricter high-risk checks above.
+            claim_terms.difference_update(_NUMERIC_COMPARISON_TERMS)
         if claim_terms and not is_refusal_sentence:
             if not sentence_citations:
                 violations.append(
@@ -419,7 +439,11 @@ def _is_safe_refusal_sentence(sentence: str) -> bool:
 
 
 def _claim_terms(value: str) -> set[str]:
-    normalized = normalize_text(value)
+    # Treat hyphenated prose compounds as the same words as source text that
+    # uses spaces (for example "free-air" versus "free air").  Product
+    # identifiers and high-risk values are validated independently before
+    # this broad substantive-term comparison.
+    normalized = normalize_text(value).replace("-", " ")
     return {
         token
         for token in _WORD_RE.findall(normalized)

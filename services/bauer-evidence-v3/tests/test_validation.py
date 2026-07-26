@@ -174,6 +174,74 @@ class ValidatorTests(unittest.TestCase):
             {item.code for item in cited_but_unsupported.violations},
         )
 
+    def test_prose_hyphenation_and_relative_clauses_match_source_terms(
+        self,
+    ) -> None:
+        citation = replace(
+            self.citation,
+            content=(
+                "The free air delivery for model BM 40 is 420 l/min."
+            ),
+            table_headers=("Model", "Free air delivery"),
+            table_values=("BM 40", "420 l/min"),
+        )
+        package = replace(self.package, citations=(citation,))
+        result = validate_answer(
+            answer=(
+                "The free-air delivery, which is documented for BM 40, "
+                "is 420 l/min [E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query("What is the free-air delivery for BM 40?"),
+        )
+
+        self.assertTrue(result.valid)
+
+    def test_cited_two_value_comparison_allows_relational_language(
+        self,
+    ) -> None:
+        citation = replace(
+            self.citation,
+            content=(
+                "B-SAFE supports breathing air up to 300 bar and Nitrox "
+                "up to 200 bar."
+            ),
+            table_headers=("Medium", "Maximum operating pressure"),
+            table_values=("Breathing air 300 bar", "Nitrox 200 bar"),
+        )
+        package = replace(
+            self.package,
+            question=(
+                "Is a 300 bar Nitrox cylinder supported by B-SAFE?"
+            ),
+            citations=(citation,),
+        )
+        result = validate_answer(
+            answer=(
+                "The requested 300 bar Nitrox condition exceeds the "
+                "documented limit of 200 bar [E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(package.question),
+        )
+
+        self.assertTrue(result.valid)
+        unsupported_without_two_values = validate_answer(
+            answer=(
+                "The BM 40 exceeds the documented limit "
+                "[E-ABCDEF123456]."
+            ),
+            package=self.package,
+            plan=analyze_query("Does BM 40 exceed the limit?"),
+        )
+        self.assertIn(
+            "unsupported_factual_claim",
+            {
+                item.code
+                for item in unsupported_without_two_values.violations
+            },
+        )
+
     def test_refusal_phrase_cannot_mask_a_later_unsupported_assertion(self) -> None:
         plan = analyze_query(
             "Is oxygen supported?",
