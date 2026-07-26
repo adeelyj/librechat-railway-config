@@ -36,7 +36,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
         discovered = MIGRATIONS.discover_migrations(MIGRATIONS_DIR)
         self.assertEqual(
             [migration.version for migration in discovered],
-            list(range(1, 11)),
+            list(range(1, 12)),
         )
         self.assertEqual(
             [migration.filename for migration in discovered],
@@ -51,6 +51,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
                 "008_indexes.sql",
                 "009_runtime_roles.sql",
                 "010_runtime_role_hardening.sql",
+                "011_rls_policy_role_scoping.sql",
             ],
         )
         for migration in discovered:
@@ -357,6 +358,71 @@ class MigrationStructureTests(unittest.TestCase):
             "to bauer_rag_v3_reader",
             " ".join(roles_sql.split()),
         )
+
+    def test_every_rls_policy_is_scoped_to_runtime_group_roles(self):
+        policy_sources = "\n".join(
+            (
+                self.files["007_rls_roles.sql"],
+                self.files["010_runtime_role_hardening.sql"],
+            )
+        ).casefold()
+        scoping_sql = self.files["011_rls_policy_role_scoping.sql"].casefold()
+        created = {
+            (policy, table)
+            for policy, table in re.findall(
+                r"create\s+policy\s+([a-z0-9_]+)\s+"
+                r"on\s+bauer_rag_v3\.([a-z0-9_]+)",
+                policy_sources,
+            )
+        }
+        altered = {
+            (policy, table): tuple(
+                role.strip()
+                for role in role_list.split(",")
+            )
+            for policy, table, role_list in re.findall(
+                r"alter\s+policy\s+([a-z0-9_]+)\s+"
+                r"on\s+bauer_rag_v3\.([a-z0-9_]+)\s+"
+                r"to\s+([^;]+);",
+                scoping_sql,
+            )
+        }
+        self.assertEqual(set(altered), created)
+        allowed_roles = {
+            "bauer_rag_v3_reader",
+            "bauer_rag_v3_ingester",
+            "bauer_rag_v3_evaluator",
+            "bauer_rag_v3_reviewer",
+            "bauer_rag_v3_admin",
+        }
+        for targets in altered.values():
+            self.assertTrue(targets)
+            self.assertTrue(set(targets) <= allowed_roles)
+            self.assertNotIn("public", targets)
+
+        expected_sensitive_scopes = {
+            ("kb_read", "knowledge_bases"): ("bauer_rag_v3_reader",),
+            ("kb_admin_write", "knowledge_bases"): ("bauer_rag_v3_admin",),
+            ("source_read", "sources"): ("bauer_rag_v3_reader",),
+            ("source_write", "sources"): ("bauer_rag_v3_ingester",),
+            ("release_write", "knowledge_releases"): ("bauer_rag_v3_admin",),
+            ("job_read", "jobs"): ("bauer_rag_v3_ingester",),
+            ("job_write", "jobs"): ("bauer_rag_v3_ingester",),
+            ("review_decision_write", "review_decisions"): (
+                "bauer_rag_v3_evaluator",
+            ),
+            ("eval_run_write", "eval_runs"): ("bauer_rag_v3_evaluator",),
+            (
+                "independent_gold_attestation_read",
+                "independent_gold_attestations",
+            ): ("bauer_rag_v3_reviewer", "bauer_rag_v3_admin"),
+            (
+                "authorization_audit_admin_read",
+                "authorization_audit",
+            ): ("bauer_rag_v3_admin",),
+        }
+        for policy_key, expected_targets in expected_sensitive_scopes.items():
+            self.assertEqual(altered[policy_key], expected_targets)
 
     def test_hardened_reader_cannot_read_control_or_gold_tables(self):
         roles_sql = self.files["010_runtime_role_hardening.sql"].casefold()

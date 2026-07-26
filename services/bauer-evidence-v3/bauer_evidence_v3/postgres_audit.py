@@ -53,7 +53,7 @@ FROM recorded
 
 
 class PostgresAuthorizationAuditSink:
-    """Append authorized scope decisions through migration 010's function.
+    """Append authorized scope decisions through the hardened audit function.
 
     Invalid or deployment-mismatched signed contexts remain in structured
     process logs because they cannot safely establish another tenant's

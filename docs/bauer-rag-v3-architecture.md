@@ -161,6 +161,10 @@ manifest-bound independent decision but cannot run evaluations or activate a rel
 control uses the parallel admin group for explicit control-plane work and can inspect, but not
 manufacture or rewrite, evaluation evidence or review attestations.
 
+Schema migration 011 scopes every RLS policy to those runtime groups. Write and admin `FOR ALL`
+policies therefore do not participate in ordinary reader `SELECT` queries, and the reader is not
+granted execution rights on write or control-plane predicates.
+
 Authorization decisions and final validator dispositions are emitted as structured, body-free
 logs and bounded OTLP metrics. In-scope authorization decisions are also appended through a
 scope-checking security-definer function to the RLS-protected `authorization_audit` table. The

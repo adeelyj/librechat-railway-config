@@ -40,7 +40,7 @@ the V1/V2 database without confirming the target and rollback snapshot.
 ```text
 BAUER_V3_ENVIRONMENT=production
 BAUER_V3_DATABASE_URL=<private PostgreSQL DSN>
-BAUER_V3_EXPECTED_MIGRATION_VERSION=10
+BAUER_V3_EXPECTED_MIGRATION_VERSION=11
 BAUER_V3_BUILD_COMMIT=<lowercase Git commit; Railway commit metadata is the fallback>
 ```
 
@@ -144,9 +144,11 @@ rewrite them. The reviewer is a fifth parallel tier that can create one immutabl
 to the exact gold-manifest digest and signed review-packet digest, but cannot run evaluations or
 activate a release. Migration 009 creates the runtime group roles; migration 010 removes the broad
 bootstrap grants, makes all five groups `NOLOGIN`, and grants only the serving, compiler/queue,
-evaluation-persistence, independent-review, or control-plane surface required by each role. The
-ingester cannot mutate release lifecycle, active pointers, ACLs, review decisions, or evaluation
-gold. Neither migration creates login passwords.
+evaluation-persistence, independent-review, or control-plane surface required by each role.
+Migration 011 scopes every RLS policy to the runtime group that owns the matching table capability,
+so a reader query never evaluates write or control-plane predicates. The ingester cannot mutate
+release lifecycle, active pointers, ACLs, review decisions, or evaluation gold. None of these
+migrations creates login passwords.
 
 Migration 010 also creates the RLS-protected, append-only `authorization_audit` table and a
 scope-checking function callable by the API reader. Valid in-scope authorization decisions are
