@@ -600,7 +600,7 @@ class PostgresRuntimeTests(unittest.TestCase):
                 self.assertNotIn("numeric_values", fact_sql)
                 self.assertNotIn("fact.numeric_value = value::numeric", fact_sql)
 
-    def test_multi_value_query_retrieves_across_units_and_all_channels(self):
+    def test_multi_value_query_retrieves_across_relevant_channels(self):
         connection = FakeConnection()
         self.make_index(
             connection,
@@ -632,7 +632,7 @@ class PostgresRuntimeTests(unittest.TestCase):
                 )
                 if f"v3:channel:{channel}" in sql
             },
-            {"exact", "fact", "table", "lexical", "semantic"},
+            {"fact", "table", "lexical", "semantic"},
         )
         fact_parameters = next(
             parameters

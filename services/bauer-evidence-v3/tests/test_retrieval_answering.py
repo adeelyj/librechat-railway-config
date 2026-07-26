@@ -207,6 +207,23 @@ class RetrievalAndAnsweringTests(unittest.TestCase):
         self.assertIn(RetrievalChannel.TABLE, plan.channels)
         self.assertEqual(plan.superlative, "maximum")
 
+    def test_planner_does_not_extend_prefixed_identifier_into_prose(
+        self,
+    ) -> None:
+        plan = analyze_query(
+            "Find the Bauer model I 15.11-11-V in the uploaded documents. "
+            "Give the free air delivery, maximum operating pressure, number "
+            "of stages, and motor output."
+        )
+
+        self.assertEqual(plan.identifiers, ("I 15.11-11-V",))
+        self.assertNotIn(
+            "I 15.11-11-V IN THE UPLOADED DOCUMENTS",
+            plan.identifiers,
+        )
+        self.assertNotIn("GIVE THE FREE AIR DELIVERY", plan.identifiers)
+        self.assertNotIn("NUMBER OF STAGES", plan.identifiers)
+
     def test_planner_preserves_numeric_comparators_ranges_and_default_equality(
         self,
     ) -> None:

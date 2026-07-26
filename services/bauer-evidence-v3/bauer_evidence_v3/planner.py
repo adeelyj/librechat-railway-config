@@ -73,12 +73,22 @@ class QueryPlan:
 
 
 _QUOTED_RE = re.compile(r"[\"“„](.{2,200}?)[\"”]", re.DOTALL)
+_PREFIXED_CODE_TOKEN = (
+    r"(?=[A-Z0-9._/+_-]{2,39}\b)"
+    r"(?=[A-Z0-9._/+_-]*\d)"
+    r"[A-Z0-9][A-Z0-9._/+_-]*"
+)
 _IDENTIFIER_RE = re.compile(
-    r"\b(?:"
-    r"(?:N|DOC-|SYN-|I\s+|BM\s*|PE\s*|GIB\s*|GI\s*)[A-Z0-9][A-Z0-9._/+ -]{1,38}"
-    r"|(?=[A-Z0-9._/+_-]{3,40}\b)(?=[A-Z0-9._/+_-]*[A-Z])"
-    r"(?=[A-Z0-9._/+_-]*\d)[A-Z0-9][A-Z0-9._/+_-]*"
-    r")\b",
+    rf"\b(?:"
+    rf"(?:DOC-|SYN-){_PREFIXED_CODE_TOKEN}"
+    rf"|I\s+{_PREFIXED_CODE_TOKEN}"
+    rf"|(?:BM|PE|GIB|GI)\s*{_PREFIXED_CODE_TOKEN}"
+    rf"|N{_PREFIXED_CODE_TOKEN}"
+    rf"|(?=[A-Z0-9._/+_-]{{3,40}}\b)"
+    rf"(?=[A-Z0-9._/+_-]*[A-Z])"
+    rf"(?=[A-Z0-9._/+_-]*\d)"
+    rf"[A-Z0-9][A-Z0-9._/+_-]*"
+    rf")\b",
     re.IGNORECASE,
 )
 _NUMBER_PATTERN = r"\d+(?:[.,]\d+)?"
