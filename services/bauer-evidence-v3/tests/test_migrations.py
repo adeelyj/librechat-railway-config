@@ -36,7 +36,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
         discovered = MIGRATIONS.discover_migrations(MIGRATIONS_DIR)
         self.assertEqual(
             [migration.version for migration in discovered],
-            list(range(1, 17)),
+            list(range(1, 18)),
         )
         self.assertEqual(
             [migration.filename for migration in discovered],
@@ -57,6 +57,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
                 "014_immutable_release_membership.sql",
                 "015_release_membership_registration.sql",
                 "016_reader_rls_scope_sets.sql",
+                "017_authorization_audit_scope_set.sql",
             ],
         )
         for migration in discovered:
@@ -564,6 +565,28 @@ class MigrationStructureTests(unittest.TestCase):
             "alter policy nav_edge_read",
         ):
             self.assertIn(requirement, scope_sql)
+
+    def test_authorization_audit_checks_complete_scope_sets_once(self):
+        audit_sql = " ".join(
+            self.files[
+                "017_authorization_audit_scope_set.sql"
+            ].casefold().split()
+        )
+        for requirement in (
+            "create or replace function "
+            "bauer_rag_v3.record_authorization_audit(",
+            "readable_kb_scope := bauer_rag_v3.readable_kb_ids()",
+            "readable_release_scope := "
+            "bauer_rag_v3.readable_release_ids()",
+            "readable_source_scope := "
+            "bauer_rag_v3.readable_source_ids()",
+            "target_source_ids <@ readable_source_scope",
+        ):
+            self.assertIn(requirement, audit_sql)
+        self.assertNotIn(
+            "from unnest(target_source_ids)",
+            audit_sql,
+        )
 
     def test_hardened_reader_cannot_read_control_or_gold_tables(self):
         roles_sql = self.files["010_runtime_role_hardening.sql"].casefold()

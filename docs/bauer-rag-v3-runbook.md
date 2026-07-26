@@ -40,7 +40,7 @@ the V1/V2 database without confirming the target and rollback snapshot.
 ```text
 BAUER_V3_ENVIRONMENT=production
 BAUER_V3_DATABASE_URL=<private PostgreSQL DSN>
-BAUER_V3_EXPECTED_MIGRATION_VERSION=16
+BAUER_V3_EXPECTED_MIGRATION_VERSION=17
 BAUER_V3_BUILD_COMMIT=<lowercase Git commit; Railway commit metadata is the fallback>
 ```
 
