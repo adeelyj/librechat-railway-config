@@ -634,7 +634,7 @@ class PostgresRuntimeTests(unittest.TestCase):
                     "300 bar and Nitrox 200 bar."
                 ),
             )
-            for index in range(4)
+            for index in range(5)
         ]
         connection = FakeConnection(
             {
@@ -663,7 +663,7 @@ class PostgresRuntimeTests(unittest.TestCase):
                 for item in results
                 if item.evidence.evidence_id.startswith("prose-")
             },
-            {"prose-0", "prose-1", "prose-2", "prose-3"},
+            {"prose-0", "prose-1", "prose-2", "prose-3", "prose-4"},
         )
 
     def test_mandatory_and_forbidden_constraints_are_sql_prefilters(self):

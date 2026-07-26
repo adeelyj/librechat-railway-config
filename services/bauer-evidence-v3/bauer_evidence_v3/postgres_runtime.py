@@ -1756,7 +1756,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
 
         reserve_count = min(
             len(unstructured),
-            max(1, plan.top_k // 5),
+            max(1, plan.top_k // 4),
         )
         pending = {
             item.evidence.evidence_id
