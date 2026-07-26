@@ -26,6 +26,7 @@ from bauer_evidence_v3.ingest.ocr import (  # noqa: E402
     RapidOcrEngine,
     apply_page_ocr,
 )
+from bauer_evidence_v3.ingest.quality import evaluate_document  # noqa: E402
 from bauer_evidence_v3.ingest.render import PageRender  # noqa: E402
 
 
@@ -241,6 +242,82 @@ class OcrTests(unittest.TestCase):
             ["BM 40", "350 bar"],
         )
         self.assertEqual(engine.languages, ("de", "en"))
+
+    def test_accepted_ocr_discards_only_replacement_damaged_native_blocks(
+        self,
+    ) -> None:
+        compiled = compile_source(
+            b"Native first page",
+            source_name="mixed.txt",
+            enforce_gate=False,
+        )
+        page = compiled.document.pages[0]
+        valid = page.blocks[0]
+        damaged_text = "damaged \ufffd native text"
+        damaged_locator = "page:0/damaged"
+        damaged = replace(
+            valid,
+            block_id=stable_id(
+                "block",
+                compiled.document.source_sha256,
+                damaged_locator,
+                damaged_text,
+            ),
+            order=1,
+            text=damaged_text,
+            source_locator=damaged_locator,
+        )
+        deficient = replace(
+            page,
+            blocks=(valid, damaged),
+            ocr_needed=True,
+        )
+        document = replace(compiled.document, pages=(deficient,))
+
+        enriched = apply_page_ocr(
+            document,
+            page_images={0: b"rendered-page"},
+            engine=FakeOcr(),
+        )
+
+        self.assertEqual(
+            [block.text for block in enriched.pages[0].blocks],
+            ["Native first page", "BM 40", "350 bar"],
+        )
+        self.assertEqual(
+            dict(enriched.pages[0].signals)[
+                "ocr_discarded_replacement_block_count"
+            ],
+            "1",
+        )
+
+    def test_accepted_ocr_does_not_hide_replacement_damaged_table_cells(
+        self,
+    ) -> None:
+        payload = (
+            "<table><tr><th>Part</th><th>Value</th></tr>"
+            "<tr><td>P1</td><td>\ufffd</td></tr></table>"
+        ).encode()
+        compiled = compile_source(
+            payload,
+            source_name="damaged.html",
+            enforce_gate=False,
+        )
+        page = replace(compiled.document.pages[0], ocr_needed=True)
+        document = replace(compiled.document, pages=(page,))
+
+        enriched = apply_page_ocr(
+            document,
+            page_images={0: b"rendered-page"},
+            engine=FakeOcr(),
+        )
+        report = evaluate_document(enriched, source_size=len(payload))
+
+        self.assertEqual(report.status, "quarantine")
+        self.assertIn(
+            "replacement_characters",
+            {issue.code for issue in report.issues},
+        )
 
     def test_low_confidence_result_remains_quarantined(self) -> None:
         class LowConfidence(FakeOcr):

@@ -200,6 +200,15 @@ def apply_page_ocr(
             bool(result.words)
             and result.average_confidence >= minimum_average_confidence
         )
+        retained_native_blocks = page.blocks
+        discarded_replacement_block_count = 0
+        if accepted:
+            retained_native_blocks = tuple(
+                block for block in page.blocks if "\ufffd" not in block.text
+            )
+            discarded_replacement_block_count = (
+                len(page.blocks) - len(retained_native_blocks)
+            )
         ocr_blocks: list[Block] = []
         if accepted:
             for index, word in enumerate(result.words):
@@ -233,12 +242,15 @@ def apply_page_ocr(
                 "ocr_word_count": len(result.words),
                 "ocr_average_confidence": result.average_confidence,
                 "ocr_accepted": accepted,
+                "ocr_discarded_replacement_block_count": (
+                    discarded_replacement_block_count
+                ),
             }
         )
         pages.append(
             replace(
                 page,
-                blocks=page.blocks + tuple(ocr_blocks),
+                blocks=retained_native_blocks + tuple(ocr_blocks),
                 ocr_needed=not accepted,
                 signals=attribute_items(signals),
             )
