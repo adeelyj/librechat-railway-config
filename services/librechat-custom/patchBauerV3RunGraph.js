@@ -2,32 +2,32 @@ const crypto = require('node:crypto');
 const fs = require('node:fs');
 
 const EXPECTED_UPSTREAM_SHA256 =
-  '0de9951b68e5d0b718915c81625fe4570315a509a3eb49d4f847ff528ef078a7';
+  '4d326d04da6a1dd5fc4dcd799ea4cc9a4f15c44da1b4a79101f648b7a9719bdf';
 
 const before = [
-  "  const graphConfig: RunConfig['graphConfig'] = {",
-  '    signal,',
-  '    agents: agentInputs,',
-  '    edges: agents[0].edges,',
-  '  };',
+  '\tconst graphConfig = {',
+  '\t\tsignal,',
+  '\t\tagents: agentInputs,',
+  '\t\tedges: agents[0].edges',
+  '\t};',
 ].join('\n');
 
 const after = [
-  '  const bauerV3DirectFinal =',
-  '    agents.length === 1 &&',
-  '    (agents[0] as RunAgent & { bauerV3DirectFinal?: boolean }).bauerV3DirectFinal === true;',
-  "  const graphConfig: RunConfig['graphConfig'] = {",
-  '    signal,',
-  '    agents: agentInputs,',
-  '    edges: agents[0].edges,',
-  '    ...(bauerV3DirectFinal ? { toolEnd: true } : {}),',
-  '  };',
+  '\tconst bauerV3DirectFinal = agents.length === 1 && agents[0].bauerV3DirectFinal === true;',
+  '\tconst graphConfig = {',
+  '\t\tsignal,',
+  '\t\tagents: agentInputs,',
+  '\t\tedges: agents[0].edges,',
+  '\t\t...bauerV3DirectFinal ? { toolEnd: true } : {}',
+  '\t};',
 ].join('\n');
 
 const replaceExactlyOnce = (source, target, replacement) => {
   const first = source.indexOf(target);
   if (first < 0 || source.indexOf(target, first + target.length) >= 0) {
-    throw new Error(`expected one upstream run-graph patch anchor, found ${first < 0 ? 0 : 'multiple'}`);
+    throw new Error(
+      `expected one upstream run-graph bundle patch anchor, found ${first < 0 ? 0 : 'multiple'}`,
+    );
   }
   return `${source.slice(0, first)}${replacement}${source.slice(first + target.length)}`;
 };
@@ -40,7 +40,7 @@ const patchFile = (target) => {
   const actual = sha256(source);
   if (actual !== EXPECTED_UPSTREAM_SHA256) {
     throw new Error(
-      `refusing to patch unexpected LibreChat run.ts: expected ${EXPECTED_UPSTREAM_SHA256}, got ${actual}`,
+      `refusing to patch unexpected LibreChat API bundle: expected ${EXPECTED_UPSTREAM_SHA256}, got ${actual}`,
     );
   }
   fs.writeFileSync(target, patchSource(source), 'utf8');
@@ -49,7 +49,7 @@ const patchFile = (target) => {
 if (require.main === module) {
   const target = process.argv[2];
   if (!target) {
-    throw new Error('usage: node patchBauerV3RunGraph.js <run.ts>');
+    throw new Error('usage: node patchBauerV3RunGraph.js <index.cjs>');
   }
   patchFile(target);
 }
