@@ -36,7 +36,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
         discovered = MIGRATIONS.discover_migrations(MIGRATIONS_DIR)
         self.assertEqual(
             [migration.version for migration in discovered],
-            list(range(1, 20)),
+            list(range(1, 21)),
         )
         self.assertEqual(
             [migration.filename for migration in discovered],
@@ -60,6 +60,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
                 "017_authorization_audit_scope_set.sql",
                 "018_materialize_reader_scope_dependencies.sql",
                 "019_initplan_reader_scope_policies.sql",
+                "020_fact_provenance_lookup_index.sql",
             ],
         )
         for migration in discovered:
@@ -656,6 +657,26 @@ class MigrationStructureTests(unittest.TestCase):
         self.assertNotIn(
             "app.authorized_source_ids",
             scope_sql,
+        )
+
+    def test_fact_retrieval_has_provenance_lookup_index(self):
+        index_sql = " ".join(
+            self.files[
+                "020_fact_provenance_lookup_index.sql"
+            ].casefold().split()
+        )
+        self.assertIn(
+            "create index if not exists ix_v3_fact_provenance_lookup",
+            index_sql,
+        )
+        self.assertIn(
+            "on bauer_rag_v3.facts "
+            "( artifact_set_id, primary_provenance_id )",
+            index_sql,
+        )
+        self.assertIn(
+            "where verification_status <> 'rejected'",
+            index_sql,
         )
 
     def test_hardened_reader_cannot_read_control_or_gold_tables(self):
