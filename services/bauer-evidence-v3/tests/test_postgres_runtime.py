@@ -1091,6 +1091,98 @@ class PostgresRuntimeTests(unittest.TestCase):
         )
         self.assertEqual(parameters[14], 3)
 
+    def test_single_b_safe_table_reserves_named_product_concepts(self):
+        context_rows = [
+            {
+                **evidence_row(
+                    f"noise-{index}",
+                    channel="exact",
+                    unit_type="table_row",
+                    score=1.0 - (index * 0.01),
+                    content=(
+                        f"Group: B-SAFE ECO; Dimension row {index}: "
+                        f"{100 + index} cm."
+                    ),
+                ),
+                "reason": "identifier_context:b-safe",
+            }
+            for index in range(8)
+        ]
+        expected_rows = (
+            (
+                "headline",
+                (
+                    "Safety filling cell for breathing air "
+                    "applications up to 300 bar and Nitrox "
+                    "applications up to 200 bar."
+                ),
+                "paragraph",
+            ),
+            (
+                "medium",
+                "Group: B-SAFE 300; Medium: Air, Nitrox.",
+                "table_row",
+            ),
+            (
+                "maximum",
+                (
+                    "Group: B-SAFE 300; Maximum operating "
+                    "pressure: 410 bar."
+                ),
+                "table_row",
+            ),
+            (
+                "filling",
+                (
+                    "Group: B-SAFE ECO; Filling pressures: "
+                    "225/330 bar."
+                ),
+                "table_row",
+            ),
+        )
+        for index, (suffix, content, unit_type) in enumerate(
+            expected_rows
+        ):
+            reason = (
+                "table:typed"
+                if suffix == "medium"
+                else "identifier_context:b-safe"
+            )
+            context_rows.append(
+                {
+                    **evidence_row(
+                        f"b-safe-{suffix}",
+                        channel="exact",
+                        unit_type=unit_type,
+                        score=0.40 - (index * 0.01),
+                        content=content,
+                    ),
+                    "reason": reason,
+                }
+            )
+
+        results = self.make_index(
+            FakeConnection(
+                {"identifier_context": context_rows}
+            )
+        ).retrieve(
+            analyze_query(
+                "Reconcile the B-SAFE headline application "
+                "pressures with the later B-SAFE 300 technical "
+                "data for medium, maximum operating pressure, "
+                "and filling pressure.",
+                top_k=8,
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset({SOURCE_ID}),
+        )
+
+        selected = {
+            item.evidence.evidence_id for item in results
+        }
+        for suffix, _, _ in expected_rows:
+            self.assertIn(f"b-safe-{suffix}", selected)
+
     def test_catalog_prose_reservation_prefers_query_coverage(self):
         structured = [
             {

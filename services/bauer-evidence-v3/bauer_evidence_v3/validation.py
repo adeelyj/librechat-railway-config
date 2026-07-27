@@ -99,8 +99,10 @@ _NUMBER_WORD_TERMS = {
     "nine": "9",
 }
 _CLAIM_TERM_ALIASES = {
+    "applications": "application",
     "groups": "group",
     "media": "medium",
+    "pressures": "pressure",
 }
 _NON_CLAIM_TERMS = frozenset(
     {
@@ -144,6 +146,7 @@ _NON_CLAIM_TERMS = frozenset(
         "für",
         "has",
         "have",
+        "headline",
         "indicate",
         "indicated",
         "indicates",
@@ -159,6 +162,8 @@ _NON_CLAIM_TERMS = frozenset(
         "or",
         "provided",
         "question",
+        "range",
+        "ranges",
         "requested",
         "note",
         "noted",

@@ -2678,15 +2678,15 @@ class PostgresEvidenceIndex(_PostgresAdapter):
         """Keep multi-product catalogue comparisons balanced across anchors."""
 
         identifiers = _catalog_identifiers(plan)
-        single_b_select_table = (
-            identifiers == ("b-select",)
+        single_catalog_table = (
+            len(identifiers) == 1
             and (
                 plan.table_intent
                 or "function" in plan.normalized_query
             )
         )
         if (
-            (len(identifiers) < 2 and not single_b_select_table)
+            (len(identifiers) < 2 and not single_catalog_table)
             or len(ranked_results) <= plan.top_k
             or plan.top_k < len(identifiers)
         ):
@@ -2779,9 +2779,12 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                     in normalize_text(item.evidence.content)
                     for item in source_items
                 )
-                if single_b_select_table:
+                if single_catalog_table:
                     source_cost[(identifier, source_id)] = (
-                        -int(function_present),
+                        -int(
+                            "function" in plan.normalized_query
+                            and function_present
+                        ),
                         -min(len(covered_query_terms), 50),
                         -min(len(numeric_tokens), 20),
                         -min(structured_count, 20),
@@ -2864,15 +2867,27 @@ class PostgresEvidenceIndex(_PostgresAdapter):
         for identifier in identifiers:
             added = 0
             assigned_source = assigned_sources.get(identifier)
-            candidates = [
-                item
-                for item in buckets[identifier]
-                if (
-                    assigned_source is None
-                    or item.evidence.source_document_id
+            candidates = (
+                [
+                    item
+                    for item in ranked_results
+                    if item.evidence.source_document_id
                     == assigned_source
+                ]
+                if (
+                    single_catalog_table
+                    and assigned_source is not None
                 )
-            ]
+                else [
+                    item
+                    for item in buckets[identifier]
+                    if (
+                        assigned_source is None
+                        or item.evidence.source_document_id
+                        == assigned_source
+                    )
+                ]
+            )
             priority: list[RetrievalResult] = []
             if (
                 family_context_requested
@@ -2906,9 +2921,53 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                 )
                 if function_item is not None:
                     priority.append(function_item)
-            for concept in ("operating", "adjust"):
+            for concept in (
+                "medium",
+                "operating",
+                "filling",
+                "application",
+                "adjust",
+            ):
                 if concept not in plan.normalized_query:
                     continue
+
+                def concept_priority(
+                    item: RetrievalResult,
+                ) -> tuple[int, int, int, int, int]:
+                    normalized_content = normalize_text(
+                        item.evidence.content
+                    )
+                    label_present = (
+                        f"column 1 {concept}"
+                        in normalized_content
+                        or normalized_content.startswith(concept)
+                    )
+                    bar_count = (
+                        0
+                        if concept == "medium"
+                        else sum(
+                            token.endswith(":bar")
+                            for token in _numeric_evidence_tokens(
+                                item.evidence.content
+                            )
+                        )
+                    )
+                    return (
+                        -int(label_present),
+                        -int(
+                            unit_type_by_id.get(
+                                item.evidence.evidence_id
+                            )
+                            in _STRUCTURED_TYPES
+                        ),
+                        -bar_count,
+                        -sum(
+                            term in normalized_content
+                            for term in query_terms
+                        ),
+                        result_rank[item.evidence.evidence_id],
+                    )
+
                 concept_item = min(
                     (
                         item
@@ -2917,27 +2976,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                             item.evidence.content
                         )
                     ),
-                    key=lambda item: (
-                        -sum(
-                            token.endswith(":bar")
-                            for token in _numeric_evidence_tokens(
-                                item.evidence.content
-                            )
-                        ),
-                        -sum(
-                            term
-                            in normalize_text(
-                                item.evidence.content
-                            )
-                            for term in query_terms
-                        ),
-                        -len(
-                            _raw_numeric_evidence_tokens(
-                                item.evidence.content
-                            )
-                        ),
-                        result_rank[item.evidence.evidence_id],
-                    ),
+                    key=concept_priority,
                     default=None,
                 )
                 if concept_item is not None:

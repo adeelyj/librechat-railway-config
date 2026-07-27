@@ -143,6 +143,34 @@ class ValidatorTests(unittest.TestCase):
             {item.code for item in unsupported_medium.violations},
         )
 
+    def test_application_inflection_and_range_framing_are_relational(
+        self,
+    ) -> None:
+        citation = replace(
+            self.citation,
+            content=(
+                "Breathing air applications up to 300 bar; "
+                "filling pressures: 225/330 bar."
+            ),
+            table_headers=(),
+            table_values=(),
+        )
+        package = replace(self.package, citations=(citation,))
+        result = validate_answer(
+            answer=(
+                "The headline application pressure is 300 bar, "
+                "and the filling-pressure range is 225/330 bar "
+                "[E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(
+                "Reconcile the headline application pressure "
+                "with the filling-pressure range."
+            ),
+        )
+
+        self.assertTrue(result.valid)
+
     def test_wrong_evidence_value_and_unknown_citation_are_rejected(self) -> None:
         plan = analyze_query("What is the pressure for BM 40?")
         result = validate_answer(
