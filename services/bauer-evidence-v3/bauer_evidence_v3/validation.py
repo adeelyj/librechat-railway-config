@@ -102,7 +102,6 @@ _NUMBER_WORD_TERMS = {
 _CLAIM_TERM_ALIASES = {
     "applications": "application",
     "groups": "group",
-    "installed": "installation",
     "media": "medium",
     "pressures": "pressure",
 }

@@ -544,40 +544,49 @@ class ValidatorTests(unittest.TestCase):
         self.assertTrue(result.valid)
         self.assertTrue(result.safe_refusal_detected)
 
-    def test_installed_matches_installation_without_weakening_compatibility(
+    def test_integration_relationship_cannot_be_paraphrased_or_broadened(
         self,
     ) -> None:
-        installation = replace(
+        integration = replace(
             self.citation,
             content=(
-                "B-KOOL installation directly on top of PE-VE, "
-                "MINI-VERTICUS, and VERTICUS units; also available "
-                "as a standalone version."
+                "B-KOOL can be integrated directly on top of PE-VE, "
+                "MINI-VERTICUS, and VERTICUS units - or available as "
+                "a standalone version."
             ),
             table_headers=(),
             table_values=(),
         )
-        question = "Which units allow the documented B-KOOL installation?"
+        question = "Which units allow the documented B-KOOL integration?"
         package = EvidencePackage(
             release_id=self.package.release_id,
             tenant_id=self.package.tenant_id,
             knowledge_base_id=self.package.knowledge_base_id,
             question=question,
-            citations=(installation,),
+            citations=(integration,),
             truncated=False,
         )
         plan = analyze_query(question)
 
         valid = validate_answer(
             answer=(
-                "B-KOOL is installed directly on top of PE-VE, "
+                "B-KOOL can be integrated directly on top of PE-VE, "
                 "MINI-VERTICUS, and VERTICUS units "
                 "[E-ABCDEF123456]."
             ),
             package=package,
             plan=plan,
         )
-        invalid = validate_answer(
+        installed = validate_answer(
+            answer=(
+                "B-KOOL can be installed directly on top of PE-VE, "
+                "MINI-VERTICUS, and VERTICUS units "
+                "[E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=plan,
+        )
+        compatible = validate_answer(
             answer=(
                 "B-KOOL is compatible with PE-VE, MINI-VERTICUS, "
                 "and VERTICUS units [E-ABCDEF123456]."
@@ -587,10 +596,11 @@ class ValidatorTests(unittest.TestCase):
         )
 
         self.assertTrue(valid.valid)
-        self.assertIn(
-            "unsupported_factual_claim",
-            {item.code for item in invalid.violations},
-        )
+        for result in (installed, compatible):
+            self.assertIn(
+                "unsupported_factual_claim",
+                {item.code for item in result.violations},
+            )
 
     def test_question_terms_are_context_only_when_present_in_evidence(self) -> None:
         product_context = replace(
