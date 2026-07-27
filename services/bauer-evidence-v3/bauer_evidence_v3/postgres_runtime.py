@@ -45,6 +45,10 @@ _CATALOG_IDENTIFIER_PATTERN = re.compile(
     flags=re.IGNORECASE,
 )
 _CONTEXT_TERM_PATTERN = re.compile(r"[a-z0-9]+", flags=re.IGNORECASE)
+_CATALOG_FAMILY_EVIDENCE_PATTERN = re.compile(
+    r"\b(?:PE-VE|MINI-VERTICUS|VERTICUS)\b",
+    flags=re.IGNORECASE,
+)
 _CONTEXT_STOP_TERMS = frozenset(
     {
         "all",
@@ -521,7 +525,9 @@ ranked_anchor_pages AS MATERIALIZED (
     SELECT
         anchor_occurrences.*,
         row_number() OVER (
-            PARTITION BY anchor_occurrences.identifier
+            PARTITION BY
+                anchor_occurrences.identifier,
+                anchor_occurrences.source_document_id
             ORDER BY
                 sum(page_term_hits.query_term_hits) DESC,
                 count(*) FILTER (
@@ -2420,6 +2426,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             PostgresEvidenceIndex._balance_catalog_identifier_context(
                 plan,
                 ranked_results,
+                unit_type_by_id,
             )
         )
         return PostgresEvidenceIndex._limit_with_unit_diversity(
@@ -2432,6 +2439,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
     def _balance_catalog_identifier_context(
         plan: QueryPlan,
         ranked_results: Sequence[RetrievalResult],
+        unit_type_by_id: Mapping[str, str],
     ) -> tuple[RetrievalResult, ...]:
         """Keep multi-product catalogue comparisons balanced across anchors."""
 
@@ -2463,11 +2471,123 @@ class PostgresEvidenceIndex(_PostgresAdapter):
         if any(not buckets[identifier] for identifier in identifiers):
             return tuple(ranked_results)
 
+        result_rank = {
+            item.evidence.evidence_id: rank
+            for rank, item in enumerate(ranked_results)
+        }
+        source_options: dict[str, list[str]] = {}
+        source_best_rank: dict[tuple[str, str], int] = {}
+        for identifier in identifiers:
+            options: list[str] = []
+            for item in buckets[identifier]:
+                source_id = item.evidence.source_document_id
+                source_best_rank.setdefault(
+                    (identifier, source_id),
+                    result_rank[item.evidence.evidence_id],
+                )
+                if source_id not in options:
+                    options.append(source_id)
+            source_options[identifier] = options[:8]
+
+        best_assignment: tuple[int, tuple[str, ...]] | None = None
+
+        def visit_sources(
+            index: int,
+            used_sources: frozenset[str],
+            score: int,
+            assignment: tuple[str, ...],
+        ) -> None:
+            nonlocal best_assignment
+            if index >= len(identifiers):
+                candidate = (score, assignment)
+                if best_assignment is None or candidate < best_assignment:
+                    best_assignment = candidate
+                return
+            identifier = identifiers[index]
+            for source_id in source_options[identifier]:
+                if source_id in used_sources:
+                    continue
+                visit_sources(
+                    index + 1,
+                    used_sources.union({source_id}),
+                    score
+                    + source_best_rank[(identifier, source_id)],
+                    (*assignment, source_id),
+                )
+
+        visit_sources(0, frozenset(), 0, ())
+        assigned_sources = (
+            dict(zip(identifiers, best_assignment[1]))
+            if best_assignment is not None
+            else {}
+        )
+
         quota = max(1, plan.top_k // len(identifiers))
         selected_ids: set[str] = set()
+        query_terms = _identifier_context_terms(plan)
+        family_context_requested = (
+            "famil" in plan.normalized_query
+            or "compatible" in plan.normalized_query
+        )
         for identifier in identifiers:
             added = 0
-            for item in buckets[identifier]:
+            assigned_source = assigned_sources.get(identifier)
+            candidates = [
+                item
+                for item in buckets[identifier]
+                if (
+                    assigned_source is None
+                    or item.evidence.source_document_id
+                    == assigned_source
+                )
+            ]
+            priority: list[RetrievalResult] = []
+            if family_context_requested:
+                family_item = next(
+                    (
+                        item
+                        for item in candidates
+                        if _CATALOG_FAMILY_EVIDENCE_PATTERN.search(
+                            item.evidence.content
+                        )
+                    ),
+                    None,
+                )
+                if family_item is not None:
+                    priority.append(family_item)
+            structured_item = next(
+                (
+                    item
+                    for item in candidates
+                    if unit_type_by_id.get(
+                        item.evidence.evidence_id
+                    )
+                    in _STRUCTURED_TYPES
+                ),
+                None,
+            )
+            if structured_item is not None:
+                priority.append(structured_item)
+            if query_terms:
+                priority.append(
+                    min(
+                        candidates,
+                        key=lambda item: (
+                            -sum(
+                                term
+                                in normalize_text(
+                                    item.evidence.content
+                                )
+                                for term in query_terms
+                            ),
+                            result_rank[
+                                item.evidence.evidence_id
+                            ],
+                        ),
+                    )
+                )
+            priority.extend(candidates)
+            for item in priority:
                 evidence_id = item.evidence.evidence_id
                 if evidence_id in selected_ids:
                     continue
@@ -2533,6 +2653,11 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             len(unstructured),
             max(1, plan.top_k // 4),
         )
+        if _catalog_identifiers(plan) and plan.top_k >= 8:
+            reserve_count = min(
+                len(unstructured),
+                max(3, reserve_count),
+            )
         pending = {
             item.evidence.evidence_id
             for item in unstructured[:reserve_count]

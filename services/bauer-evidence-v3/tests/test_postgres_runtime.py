@@ -744,7 +744,14 @@ class PostgresRuntimeTests(unittest.TestCase):
                             "fact" if index > 0 else "paragraph"
                         ),
                         score=1.0 - (index * 0.01),
-                        content=f"B-KOOL context row {index}: 350 bar.",
+                        content=(
+                            "Can be integrated on MINI-VERTICUS and "
+                            "VERTICUS units."
+                            if index == 5
+                            else (
+                                f"B-KOOL context row {index}: 350 bar."
+                            )
+                        ),
                     ),
                     "reason": "identifier_context:b-kool",
                 }
@@ -768,12 +775,30 @@ class PostgresRuntimeTests(unittest.TestCase):
                     "reason": "identifier_context:b-select",
                 }
             )
+        for index in range(3):
+            context_rows.append(
+                {
+                    **evidence_row(
+                        f"kool-cross-source-{index}",
+                        channel="exact",
+                        unit_type="fact",
+                        score=1.2 - (index * 0.01),
+                        content=(
+                            f"Incidental B-KOOL catalogue row {index}."
+                        ),
+                        source_id=second_source,
+                        external_file_id="file-public-b",
+                    ),
+                    "reason": "identifier_context:b-kool",
+                }
+            )
         connection = FakeConnection(
             {"identifier_context": context_rows}
         )
         results = self.make_index(connection).retrieve(
             analyze_query(
-                "Compare the B-KOOL table with B-SELECT technical data.",
+                "Compare the B-KOOL table and compatible product "
+                "families with B-SELECT technical data.",
                 top_k=4,
             ),
             release_id=RELEASE_ID,
@@ -795,6 +820,12 @@ class PostgresRuntimeTests(unittest.TestCase):
             },
             {SOURCE_ID: 2, second_source: 2},
         )
+        self.assertIn(
+            "kool-5",
+            {
+                item.evidence.evidence_id for item in results
+            },
+        )
         context_sql, parameters = next(
             (sql, parameters)
             for sql, parameters in connection.executions
@@ -808,6 +839,10 @@ class PostgresRuntimeTests(unittest.TestCase):
         self.assertIn("ranked_anchor_pages as materialized", lowered)
         self.assertIn(
             "ranked_anchor_pages.anchor_rank = 1",
+            lowered,
+        )
+        self.assertIn(
+            "anchor_occurrences.source_document_id",
             lowered,
         )
         self.assertIn(
