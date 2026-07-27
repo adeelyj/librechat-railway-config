@@ -44,6 +44,10 @@ _CATALOG_IDENTIFIER_PATTERN = re.compile(
     r"^B-[A-Z][A-Z0-9]{1,29}(?:-[A-Z0-9]{1,20})*$",
     flags=re.IGNORECASE,
 )
+_CATALOG_IDENTIFIER_FIND_PATTERN = re.compile(
+    r"\bB-[A-Z][A-Z0-9]{1,29}(?:-[A-Z0-9]{1,20})*\b",
+    flags=re.IGNORECASE,
+)
 _CONTEXT_TERM_PATTERN = re.compile(r"[a-z0-9]+", flags=re.IGNORECASE)
 _CATALOG_FAMILY_EVIDENCE_PATTERN = re.compile(
     r"\b(?:PE-VE|MINI-VERTICUS|VERTICUS)\b",
@@ -199,6 +203,76 @@ def _catalog_identifiers(plan: QueryPlan) -> tuple[str, ...]:
             for normalized in (normalize_text(identifier),)
             if normalized
         )
+    )
+
+
+def _discovered_catalog_identifiers(
+    plan: QueryPlan,
+    channel_candidates: Mapping[
+        RetrievalChannel,
+        Sequence[_Candidate],
+    ],
+) -> tuple[str, ...]:
+    """Promote consistently retrieved product names for discovery queries."""
+
+    if plan.identifiers:
+        return ()
+    discovery_cues = (
+        "do not know",
+        "find",
+        "identify",
+        "locate",
+        "which",
+        "what",
+    )
+    if not any(cue in plan.normalized_query for cue in discovery_cues):
+        return ()
+
+    occurrence_count: dict[str, int] = defaultdict(int)
+    channel_count: dict[str, set[RetrievalChannel]] = defaultdict(set)
+    best_rank: dict[str, int] = {}
+    for channel in (
+        RetrievalChannel.FACT,
+        RetrievalChannel.TABLE,
+        RetrievalChannel.LEXICAL,
+        RetrievalChannel.SEMANTIC,
+        RetrievalChannel.NAVIGATION,
+    ):
+        for rank, candidate in enumerate(
+            channel_candidates.get(channel, ())[:20],
+            start=1,
+        ):
+            terms = {
+                match.group(0).upper()
+                for match in _CATALOG_IDENTIFIER_FIND_PATTERN.finditer(
+                    " ".join(
+                        (
+                            candidate.evidence.title,
+                            candidate.evidence.content,
+                        )
+                    )
+                )
+            }
+            for term in terms:
+                occurrence_count[term] += 1
+                channel_count[term].add(channel)
+                best_rank[term] = min(best_rank.get(term, rank), rank)
+
+    eligible = [
+        term
+        for term, count in occurrence_count.items()
+        if count >= 2 or len(channel_count[term]) >= 2
+    ]
+    return tuple(
+        sorted(
+            eligible,
+            key=lambda term: (
+                -len(channel_count[term]),
+                -occurrence_count[term],
+                best_rank[term],
+                term,
+            ),
+        )[:4]
     )
 
 
@@ -373,7 +447,32 @@ SELECT
     coalesce(provenance.x0, source_block.x0, source_cell.x0) AS x0,
     coalesce(provenance.y0, source_block.y0, source_cell.y0) AS y0,
     coalesce(provenance.x1, source_block.x1, source_cell.x1) AS x1,
-    coalesce(provenance.y1, source_block.y1, source_cell.y1) AS y1
+    coalesce(provenance.y1, source_block.y1, source_cell.y1) AS y1,
+    coalesce(
+        source_section.metadata -> 'canonical_path',
+        CASE
+            WHEN coalesce(
+                unit.page_start,
+                source_page.page_number
+            ) IS NOT NULL
+            THEN jsonb_build_array(
+                'Page ' || coalesce(
+                    unit.page_start,
+                    source_page.page_number
+                )::text
+            )
+            ELSE '[]'::jsonb
+        END
+    ) AS section_path,
+    coalesce(
+        nullif(source_table.title, ''),
+        nullif(source_table.caption, '')
+    ) AS table_title,
+    structured_row.row_label,
+    structured_row.table_headers,
+    structured_row.table_values,
+    structured_row.table_units,
+    structured_row.footnotes
 FROM bauer_rag_v3.search_units unit
 LEFT JOIN bauer_rag_v3.provenance_spans provenance
   ON provenance.provenance_id = unit.primary_provenance_id
@@ -392,6 +491,101 @@ LEFT JOIN bauer_rag_v3.pages source_page
       source_cell.page_id,
       unit.page_id
  )
+LEFT JOIN bauer_rag_v3.tables source_table
+  ON source_table.artifact_set_id = unit.artifact_set_id
+ AND source_table.table_id = coalesce(
+      unit.table_id,
+      source_cell.table_id
+ )
+LEFT JOIN bauer_rag_v3.sections source_section
+  ON source_section.artifact_set_id = unit.artifact_set_id
+ AND source_section.section_id = coalesce(
+      unit.section_id,
+      source_block.section_id,
+      source_table.section_id
+ )
+LEFT JOIN LATERAL (
+    SELECT
+        (
+            array_agg(
+                table_cell.raw_text
+                ORDER BY
+                    CASE table_cell.cell_role
+                        WHEN 'row_header' THEN 0
+                        WHEN 'stub' THEN 1
+                        WHEN 'body' THEN 2
+                        ELSE 3
+                    END,
+                    table_cell.column_index,
+                    table_cell.cell_id
+            ) FILTER (
+                WHERE table_cell.row_index =
+                      unit.table_row_index
+                  AND nullif(table_cell.raw_text, '') IS NOT NULL
+            )
+        )[1] AS row_label,
+        coalesce(
+            jsonb_agg(
+                table_cell.raw_text
+                ORDER BY
+                    table_cell.row_index,
+                    table_cell.column_index,
+                    table_cell.cell_id
+            ) FILTER (
+                WHERE (
+                    table_cell.cell_role = 'header'
+                    OR table_cell.row_index <
+                       source_table.header_row_count
+                )
+                  AND nullif(table_cell.raw_text, '') IS NOT NULL
+            ),
+            '[]'::jsonb
+        ) AS table_headers,
+        coalesce(
+            jsonb_agg(
+                table_cell.raw_text
+                ORDER BY
+                    table_cell.column_index,
+                    table_cell.cell_id
+            ) FILTER (
+                WHERE table_cell.row_index =
+                      unit.table_row_index
+                  AND table_cell.cell_role <> 'note'
+                  AND nullif(table_cell.raw_text, '') IS NOT NULL
+            ),
+            '[]'::jsonb
+        ) AS table_values,
+        coalesce(
+            jsonb_agg(DISTINCT coalesce(
+                table_cell.unit_ucum,
+                table_cell.unit_raw
+            )) FILTER (
+                WHERE table_cell.row_index =
+                      unit.table_row_index
+                  AND coalesce(
+                      table_cell.unit_ucum,
+                      table_cell.unit_raw
+                  ) IS NOT NULL
+            ),
+            '[]'::jsonb
+        ) AS table_units,
+        coalesce(
+            jsonb_agg(
+                table_cell.raw_text
+                ORDER BY
+                    table_cell.row_index,
+                    table_cell.column_index,
+                    table_cell.cell_id
+            ) FILTER (
+                WHERE table_cell.cell_role = 'note'
+                  AND nullif(table_cell.raw_text, '') IS NOT NULL
+            ),
+            '[]'::jsonb
+        ) AS footnotes
+    FROM bauer_rag_v3.table_cells table_cell
+    WHERE table_cell.artifact_set_id = unit.artifact_set_id
+      AND table_cell.table_id = source_table.table_id
+) structured_row ON TRUE
 WHERE unit.release_id = %s::uuid
   AND unit.search_unit_id = ANY (%s::uuid[])
 """
@@ -896,9 +1090,9 @@ LIMIT %s
 
 def _fact_sql(superlative: str | None) -> str:
     if superlative == "maximum":
-        ordering = "fact.numeric_value DESC NULLS LAST, raw_score DESC"
+        ordering = "raw_score DESC, fact.numeric_value DESC NULLS LAST"
     elif superlative == "minimum":
-        ordering = "fact.numeric_value ASC NULLS LAST, raw_score DESC"
+        ordering = "raw_score DESC, fact.numeric_value ASC NULLS LAST"
     else:
         ordering = "raw_score DESC, fact.fact_id"
     allow_extremum = "TRUE" if superlative else "FALSE"
@@ -2244,6 +2438,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             else plan.channels
         )
 
+        fusion_plan = plan
         with self._read_transaction(
             authorized_source_ids=sources
         ) as connection:
@@ -2422,7 +2617,76 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                         candidates
                     )
 
-        return self._fuse(plan, channel_candidates)
+            discovered_identifiers = _discovered_catalog_identifiers(
+                plan,
+                channel_candidates,
+            )
+            if discovered_identifiers:
+                context_limit = min(
+                    max(plan.top_k * 60, 80),
+                    480,
+                )
+                rows = self._fetchall(
+                    connection,
+                    _IDENTIFIER_CONTEXT_SQL,
+                    (
+                        [
+                            normalize_text(identifier)
+                            for identifier in discovered_identifiers
+                        ],
+                        release_id,
+                        list(sources),
+                        list(sources),
+                        *base_parameters,
+                        list(_identifier_context_terms(plan)),
+                        bool(
+                            plan.table_intent
+                            or RetrievalChannel.FACT in plan.channels
+                        ),
+                        3,
+                        context_limit,
+                    ),
+                )
+                rows = self._hydrate_candidate_rows(
+                    connection,
+                    rows,
+                    release_id=release_id,
+                )
+                discovered_candidates = [
+                    self._candidate_from_row(
+                        row,
+                        expected_channel=RetrievalChannel.EXACT,
+                        release_id=release_id,
+                        authorized_sources=frozenset(sources),
+                    )
+                    for row in rows
+                ]
+                if discovered_candidates:
+                    channel_candidates[RetrievalChannel.EXACT] = (
+                        self._dedupe_channel(
+                            [
+                                *channel_candidates.get(
+                                    RetrievalChannel.EXACT,
+                                    (),
+                                ),
+                                *discovered_candidates,
+                            ]
+                        )
+                    )
+                    fusion_plan = replace(
+                        plan,
+                        identifiers=discovered_identifiers,
+                        channels=tuple(
+                            dict.fromkeys(
+                                (
+                                    RetrievalChannel.EXACT,
+                                    *plan.channels,
+                                )
+                            )
+                        ),
+                    )
+
+        return self._fuse(fusion_plan, channel_candidates)
 
     def _hydrate_candidate_rows(
         self,
@@ -2490,10 +2754,19 @@ class PostgresEvidenceIndex(_PostgresAdapter):
 
         unit_metadata = _json_object(row.get("unit_metadata"))
         source_metadata = _json_object(row.get("source_metadata"))
+        section_path = _text_tuple(row.get("section_path"))
+        table_headers = _text_tuple(row.get("table_headers"))
+        table_values = _text_tuple(row.get("table_values"))
+        table_units = _text_tuple(row.get("table_units"))
+        hydrated_footnotes = _text_tuple(row.get("footnotes"))
         metadata = {
             **source_metadata,
             **unit_metadata,
             "external_file_id": external_file_id,
+            "section_path": section_path,
+            "table_title": _optional_text(row.get("table_title")),
+            "row_label": _optional_text(row.get("row_label")),
+            "table_units": table_units,
         }
         bbox = _bounding_box(row)
         coordinate = SourceCoordinate(
@@ -2537,17 +2810,24 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                 or source_metadata.get("language")
             ),
             table_headers=_text_tuple(
-                unit_metadata.get("table_headers")
+                table_headers
+                or unit_metadata.get("table_headers")
                 or unit_metadata.get("headers")
             ),
             table_values=_text_tuple(
-                unit_metadata.get("table_values")
+                table_values
+                or unit_metadata.get("table_values")
                 or unit_metadata.get("values")
             ),
             unit=_optional_text(
-                row.get("channel_unit") or unit_metadata.get("unit")
+                row.get("channel_unit")
+                or unit_metadata.get("unit")
+                or (table_units[0] if table_units else None)
             ),
-            footnotes=_text_tuple(unit_metadata.get("footnotes")),
+            footnotes=_text_tuple(
+                hydrated_footnotes
+                or unit_metadata.get("footnotes")
+            ),
             is_citable=bool(row.get("is_citable", True)),
             generated_summary=bool(row.get("generated_summary", False)),
             metadata=metadata,
@@ -2602,7 +2882,15 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             weight = _CHANNEL_WEIGHT[channel]
             for rank, candidate in enumerate(ranking, start=1):
                 evidence_id = candidate.evidence.evidence_id
-                evidence_by_id[evidence_id] = candidate.evidence
+                current_evidence = evidence_by_id.get(evidence_id)
+                evidence_by_id[evidence_id] = (
+                    candidate.evidence
+                    if current_evidence is None
+                    else PostgresEvidenceIndex._merge_evidence(
+                        current_evidence,
+                        candidate.evidence,
+                    )
+                )
                 unit_type_by_id[evidence_id] = candidate.unit_type
                 fused[evidence_id] += weight / (20.0 + rank)
                 fused[evidence_id] += (
@@ -2667,6 +2955,44 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             plan,
             ranked_results,
             unit_type_by_id,
+        )
+
+    @staticmethod
+    def _merge_evidence(
+        current: EvidenceItem,
+        candidate: EvidenceItem,
+    ) -> EvidenceItem:
+        """Retain the richest canonical projection seen across channels."""
+
+        return replace(
+            current,
+            language=current.language or candidate.language,
+            table_headers=current.table_headers or candidate.table_headers,
+            table_values=current.table_values or candidate.table_values,
+            unit=current.unit or candidate.unit,
+            footnotes=current.footnotes or candidate.footnotes,
+            metadata={
+                **candidate.metadata,
+                **current.metadata,
+                "section_path": (
+                    current.metadata.get("section_path")
+                    or candidate.metadata.get("section_path")
+                    or ()
+                ),
+                "table_title": (
+                    current.metadata.get("table_title")
+                    or candidate.metadata.get("table_title")
+                ),
+                "row_label": (
+                    current.metadata.get("row_label")
+                    or candidate.metadata.get("row_label")
+                ),
+                "table_units": (
+                    current.metadata.get("table_units")
+                    or candidate.metadata.get("table_units")
+                    or ()
+                ),
+            },
         )
 
     @staticmethod

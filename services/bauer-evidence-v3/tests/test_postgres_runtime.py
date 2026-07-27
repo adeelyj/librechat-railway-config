@@ -10,7 +10,10 @@ from pathlib import Path
 SERVICE_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SERVICE_ROOT))
 
-from bauer_evidence_v3.planner import analyze_query  # noqa: E402
+from bauer_evidence_v3.planner import (  # noqa: E402
+    RetrievalChannel,
+    analyze_query,
+)
 from bauer_evidence_v3.models import ReleaseStatus  # noqa: E402
 from bauer_evidence_v3.postgres_runtime import (  # noqa: E402
     PostgresCandidateReleaseRegistry,
@@ -18,6 +21,7 @@ from bauer_evidence_v3.postgres_runtime import (  # noqa: E402
     PostgresReleaseRegistry,
     PostgresValidationReleaseRegistry,
     _numeric_evidence_tokens,
+    _discovered_catalog_identifiers,
 )
 from bauer_evidence_v3.releases import ReleaseError  # noqa: E402
 
@@ -180,6 +184,29 @@ def evidence_row(
         "block_id": None,
         "table_id": TABLE_ID if "table" in unit_type else None,
         "table_row_index": 4 if unit_type == "table_row" else None,
+        "section_path": ["Technical Data"],
+        "table_title": (
+            "VERTICUS SERIES" if "table" in unit_type else None
+        ),
+        "row_label": (
+            "I 15.11-11-V" if "table" in unit_type else None
+        ),
+        "table_headers": (
+            ["Model", "Maximum pressure"]
+            if "table" in unit_type
+            else []
+        ),
+        "table_values": (
+            ["I 15.11-11-V", "525 bar"]
+            if "table" in unit_type
+            else []
+        ),
+        "table_units": ["bar"] if "table" in unit_type else [],
+        "footnotes": (
+            ["Final pressure depends on configuration."]
+            if "table" in unit_type
+            else []
+        ),
         "cell_id": None,
         "char_start": None,
         "char_end": None,
@@ -204,6 +231,121 @@ class PostgresRuntimeTests(unittest.TestCase):
             ),
             frozenset({"414:bar", "420:bar"}),
         )
+
+    def test_product_discovery_requires_repeated_cross_channel_identifiers(self):
+        plan = analyze_query(
+            "I do not know the product name. Find the system."
+        )
+        kool = evidence_row(
+            "kool",
+            channel="lexical",
+            unit_type="paragraph",
+            score=0.8,
+            content="The B-KOOL refrigeration dryer saves cartridges.",
+        )
+        select = evidence_row(
+            "select",
+            channel="table",
+            unit_type="table_row",
+            score=0.7,
+            content="The B-SELECT automatic selector supports storage.",
+        )
+        candidates = {
+            RetrievalChannel.LEXICAL: [
+                PostgresEvidenceIndex._candidate_from_row(
+                    self.make_index(FakeConnection()),
+                    kool,
+                    expected_channel=RetrievalChannel.LEXICAL,
+                    release_id=RELEASE_ID,
+                    authorized_sources=frozenset({SOURCE_ID}),
+                ),
+                PostgresEvidenceIndex._candidate_from_row(
+                    self.make_index(FakeConnection()),
+                    {**kool, "evidence_id": "kool-2"},
+                    expected_channel=RetrievalChannel.LEXICAL,
+                    release_id=RELEASE_ID,
+                    authorized_sources=frozenset({SOURCE_ID}),
+                ),
+            ],
+            RetrievalChannel.TABLE: [
+                PostgresEvidenceIndex._candidate_from_row(
+                    self.make_index(FakeConnection()),
+                    select,
+                    expected_channel=RetrievalChannel.TABLE,
+                    release_id=RELEASE_ID,
+                    authorized_sources=frozenset({SOURCE_ID}),
+                )
+            ],
+        }
+        self.assertEqual(
+            _discovered_catalog_identifiers(plan, candidates),
+            ("B-KOOL",),
+        )
+
+    def test_product_discovery_expands_retrieved_catalog_identifiers(self):
+        lexical = evidence_row(
+            "lexical-kool",
+            channel="lexical",
+            unit_type="paragraph",
+            score=0.8,
+            content=(
+                "The B-KOOL refrigeration dryer extends cartridge life."
+            ),
+        )
+        semantic = {
+            **evidence_row(
+                "semantic-kool",
+                channel="semantic",
+                unit_type="paragraph",
+                score=0.7,
+                content=(
+                    "B-KOOL can be integrated with VERTICUS systems."
+                ),
+            ),
+            "channel": "semantic",
+        }
+        context = {
+            **evidence_row(
+                "context-kool",
+                channel="exact",
+                unit_type="table_row",
+                score=1.0,
+                content="B-KOOL III maximum operating pressure: 500 bar.",
+            ),
+            "reason": "identifier_context:b-kool",
+        }
+        connection = FakeConnection(
+            {
+                "lexical": [lexical],
+                "semantic": [semantic],
+                "identifier_context": [context],
+            }
+        )
+
+        results = self.make_index(
+            connection,
+            embedding_provider=FixedEmbedding(),
+        ).retrieve(
+            analyze_query(
+                "I do not know the product name. Find the refrigeration "
+                "dryer that extends cartridge life.",
+                top_k=4,
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset({SOURCE_ID}),
+        )
+
+        self.assertIn(
+            "context-kool",
+            {item.evidence.evidence_id for item in results},
+        )
+        context_calls = [
+            parameters
+            for sql, parameters in connection.executions
+            if "v3:channel:identifier_context" in sql
+        ]
+        self.assertEqual(len(context_calls), 1)
+        self.assertEqual(context_calls[0][0], ["b-kool"])
 
     def make_registry(self, connection):
         return PostgresReleaseRegistry(
@@ -445,6 +587,22 @@ class PostgresRuntimeTests(unittest.TestCase):
             results[0].evidence.table_values,
             ("I 15.11-11-V", "525 bar"),
         )
+        self.assertEqual(
+            results[0].evidence.metadata["section_path"],
+            ("Technical Data",),
+        )
+        self.assertEqual(
+            results[0].evidence.metadata["table_title"],
+            "VERTICUS SERIES",
+        )
+        self.assertEqual(
+            results[0].evidence.metadata["row_label"],
+            "I 15.11-11-V",
+        )
+        self.assertEqual(
+            results[0].evidence.metadata["table_units"],
+            ("bar",),
+        )
 
         channel_sql = {
             channel: sql
@@ -536,6 +694,15 @@ class PostgresRuntimeTests(unittest.TestCase):
         self.assertEqual(len(hydration_sql), 6)
         self.assertTrue(
             all("provenance_spans" in sql for sql in hydration_sql)
+        )
+        self.assertTrue(
+            all("sections source_section" in sql for sql in hydration_sql)
+        )
+        self.assertTrue(
+            all("tables source_table" in sql for sql in hydration_sql)
+        )
+        self.assertTrue(
+            all("table_cells table_cell" in sql for sql in hydration_sql)
         )
 
     def test_typed_fact_and_table_sql_receive_numeric_comparators_and_ranges(

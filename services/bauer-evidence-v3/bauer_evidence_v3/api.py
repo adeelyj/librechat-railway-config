@@ -301,6 +301,18 @@ def create_app(
                     "page_number": item.evidence.coordinate.page_number,
                     "printed_page_label": item.evidence.coordinate.printed_page_label,
                     "coordinate": asdict(item.evidence.coordinate),
+                    "section_path": list(
+                        item.evidence.metadata.get("section_path", ())
+                    ),
+                    "table_title": item.evidence.metadata.get("table_title"),
+                    "row_label": item.evidence.metadata.get("row_label"),
+                    "table_headers": list(item.evidence.table_headers),
+                    "table_values": list(item.evidence.table_values),
+                    "unit": item.evidence.unit,
+                    "units": list(
+                        item.evidence.metadata.get("table_units", ())
+                    ),
+                    "footnotes": list(item.evidence.footnotes),
                     "is_citable": item.evidence.is_citable,
                     "generated_summary": item.evidence.generated_summary,
                     "score": item.score,

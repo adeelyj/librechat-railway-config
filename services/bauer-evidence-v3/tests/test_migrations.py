@@ -36,7 +36,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
         discovered = MIGRATIONS.discover_migrations(MIGRATIONS_DIR)
         self.assertEqual(
             [migration.version for migration in discovered],
-            list(range(1, 19)),
+            list(range(1, 20)),
         )
         self.assertEqual(
             [migration.filename for migration in discovered],
@@ -59,6 +59,7 @@ class MigrationDiscoveryTests(unittest.TestCase):
                 "016_reader_rls_scope_sets.sql",
                 "017_authorization_audit_scope_set.sql",
                 "018_materialize_reader_scope_dependencies.sql",
+                "019_initplan_reader_scope_policies.sql",
             ],
         )
         for migration in discovered:
@@ -606,6 +607,54 @@ class MigrationStructureTests(unittest.TestCase):
         self.assertNotIn(
             "artifact.source_id = any "
             "(bauer_rag_v3.readable_source_ids())",
+            scope_sql,
+        )
+
+    def test_reader_policies_use_uncorrelated_scope_initplans(self):
+        scope_sql = " ".join(
+            self.files[
+                "019_initplan_reader_scope_policies.sql"
+            ].casefold().split()
+        )
+        scope_sql_without_spaces = scope_sql.replace(" ", "")
+        for policy in (
+            "kb_read",
+            "source_read",
+            "source_version_read",
+            "release_read",
+            "active_release_read",
+            "release_source_read",
+            "artifact_read",
+            "page_access",
+            "section_access",
+            "block_access",
+            "table_access",
+            "table_segment_access",
+            "table_cell_access",
+            "provenance_access",
+            "entity_access",
+            "entity_mention_access",
+            "fact_access",
+            "fact_provenance_access",
+            "search_unit_read",
+            "exact_term_read",
+            "nav_node_read",
+            "nav_edge_read",
+        ):
+            self.assertIn(f"alter policy {policy}", scope_sql)
+        for helper in (
+            "readable_kb_ids()",
+            "readable_source_ids()",
+            "readable_release_ids()",
+            "readable_artifact_set_ids()",
+            "readable_nav_node_ids()",
+        ):
+            self.assertIn(
+                f"selectunnest(bauer_rag_v3.{helper})",
+                scope_sql_without_spaces,
+            )
+        self.assertNotIn(
+            "app.authorized_source_ids",
             scope_sql,
         )
 

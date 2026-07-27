@@ -317,6 +317,16 @@ class ApiTests(unittest.TestCase):
             title="Technical data",
             content="BM 40 has a maximum pressure of 350 bar.",
             coordinate=SourceCoordinate(page_number=4),
+            table_headers=("Model", "Maximum pressure"),
+            table_values=("BM 40", "350"),
+            unit="bar",
+            footnotes=("At 20 C ambient temperature.",),
+            metadata={
+                "section_path": ("Technical Data",),
+                "table_title": "BM series 40 bar",
+                "row_label": "BM 40",
+                "table_units": ("bar",),
+            },
         )
         index = InMemoryEvidenceIndex()
         index.add(
@@ -430,6 +440,20 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(result["source_sha256"], "ab" * 32)
         self.assertEqual(result["source_type"], "public_document")
         self.assertEqual(result["coordinate"]["page_number"], 4)
+        self.assertEqual(
+            result["table_headers"],
+            ["Model", "Maximum pressure"],
+        )
+        self.assertEqual(result["table_values"], ["BM 40", "350"])
+        self.assertEqual(result["unit"], "bar")
+        self.assertEqual(
+            result["footnotes"],
+            ["At 20 C ambient temperature."],
+        )
+        self.assertEqual(result["section_path"], ["Technical Data"])
+        self.assertEqual(result["table_title"], "BM series 40 bar")
+        self.assertEqual(result["row_label"], "BM 40")
+        self.assertEqual(result["units"], ["bar"])
         self.assertIsNone(result["external_file_id"])
         self.assertTrue(result["is_citable"])
         self.assertFalse(result["generated_summary"])
