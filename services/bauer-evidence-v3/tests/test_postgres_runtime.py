@@ -17,6 +17,7 @@ from bauer_evidence_v3.postgres_runtime import (  # noqa: E402
     PostgresEvidenceIndex,
     PostgresReleaseRegistry,
     PostgresValidationReleaseRegistry,
+    _numeric_evidence_tokens,
 )
 from bauer_evidence_v3.releases import ReleaseError  # noqa: E402
 
@@ -196,6 +197,14 @@ def evidence_row(
 
 
 class PostgresRuntimeTests(unittest.TestCase):
+    def test_shared_unit_numeric_tokens_preserve_each_value(self):
+        self.assertEqual(
+            _numeric_evidence_tokens(
+                "Operating pressure: 414/420 bar."
+            ),
+            frozenset({"414:bar", "420:bar"}),
+        )
+
     def make_registry(self, connection):
         return PostgresReleaseRegistry(
             None,
@@ -835,6 +844,7 @@ class PostgresRuntimeTests(unittest.TestCase):
         self.assertIn("technical", parameters[12])
         self.assertTrue(parameters[13])
         self.assertEqual(parameters[14], 3)
+        self.assertEqual(parameters[15], 240)
         lowered = context_sql.casefold()
         self.assertIn("candidate_pages as materialized", lowered)
         self.assertIn("from bauer_rag_v3.exact_terms", lowered)
@@ -860,11 +870,17 @@ class PostgresRuntimeTests(unittest.TestCase):
             "scored_context.has_structured_pressure desc",
             lowered,
         )
+        self.assertIn(
+            "scored_context.has_catalog_family desc",
+            lowered,
+        )
         self.assertLess(
+            lowered.index(
+                "scored_context.has_catalog_family desc"
+            ),
             lowered.index(
                 "scored_context.has_structured_pressure desc"
             ),
-            lowered.index("scored_context.identifier_hits desc"),
         )
 
     def test_fusion_deduplicates_identical_content_across_locations(self):

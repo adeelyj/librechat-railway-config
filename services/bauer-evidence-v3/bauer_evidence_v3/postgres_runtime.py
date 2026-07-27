@@ -54,6 +54,12 @@ _NUMERIC_EVIDENCE_TOKEN_PATTERN = re.compile(
     r"(bar|l/min|l\s+min-1|m3/h|kw|rpm)\b",
     flags=re.IGNORECASE,
 )
+_SHARED_NUMERIC_EVIDENCE_TOKEN_PATTERN = re.compile(
+    r"(?<![A-Za-z])(\d+(?:[.,]\d+)?)\s*/\s*"
+    r"(\d+(?:[.,]\d+)?)\s*"
+    r"(bar|l/min|l\s+min-1|m3/h|kw|rpm)\b",
+    flags=re.IGNORECASE,
+)
 _RAW_NUMERIC_EVIDENCE_TOKEN_PATTERN = re.compile(
     r"(?<![A-Za-z])\d+(?:[.,]\d+)?(?![A-Za-z])"
 )
@@ -208,13 +214,30 @@ def _identifier_context_terms(plan: QueryPlan) -> tuple[str, ...]:
 
 
 def _numeric_evidence_tokens(content: str) -> frozenset[str]:
-    return frozenset(
+    tokens = {
         (
             f"{match.group(1).replace(',', '.').casefold()}:"
             f"{match.group(2).casefold()}"
         )
         for match in _NUMERIC_EVIDENCE_TOKEN_PATTERN.finditer(content)
-    )
+    }
+    for match in _SHARED_NUMERIC_EVIDENCE_TOKEN_PATTERN.finditer(
+        content
+    ):
+        normalized_unit = match.group(3).casefold()
+        tokens.update(
+            {
+                (
+                    f"{match.group(1).replace(',', '.').casefold()}:"
+                    f"{normalized_unit}"
+                ),
+                (
+                    f"{match.group(2).replace(',', '.').casefold()}:"
+                    f"{normalized_unit}"
+                ),
+            }
+        )
+    return frozenset(tokens)
 
 
 def _raw_numeric_evidence_tokens(content: str) -> frozenset[str]:
@@ -769,6 +792,41 @@ scored_context AS (
                 )
             ) > 0
         ) AS has_structured_pressure,
+        (
+            EXISTS (
+                SELECT 1
+                FROM unnest(
+                    context_scoring.query_terms
+                ) AS context_term
+                WHERE context_term IN (
+                    'compatible',
+                    'families',
+                    'family'
+                )
+            )
+            AND (
+                position(
+                    'verticus' IN lower(
+                        concat_ws(
+                            ' ',
+                            authorized_units.search_text,
+                            authorized_units.display_text,
+                            authorized_units.unit_metadata::text
+                        )
+                    )
+                ) > 0
+                OR position(
+                    'pe-ve' IN lower(
+                        concat_ws(
+                            ' ',
+                            authorized_units.search_text,
+                            authorized_units.display_text,
+                            authorized_units.unit_metadata::text
+                        )
+                    )
+                ) > 0
+            )
+        ) AS has_catalog_family,
         context_scoring.structured_intent
     FROM authorized_units
     JOIN anchor_pages
@@ -815,6 +873,7 @@ SELECT
     scored_context.unit_metadata ->> 'unit' AS channel_unit
 FROM scored_context
 ORDER BY
+    scored_context.has_catalog_family DESC,
     scored_context.has_structured_pressure DESC,
     scored_context.query_term_hits DESC,
     scored_context.identifier_hits DESC,
@@ -2212,9 +2271,21 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                         (*base_parameters, list(terms), channel_limit),
                     )
                     if catalog_identifiers:
+                        family_context_requested = (
+                            "famil" in plan.normalized_query
+                            or "compatible" in plan.normalized_query
+                        )
                         context_limit = min(
-                            max(plan.top_k * 20, 80),
-                            160,
+                            max(
+                                plan.top_k
+                                * (
+                                    60
+                                    if family_context_requested
+                                    else 20
+                                ),
+                                80,
+                            ),
+                            480 if family_context_requested else 160,
                         )
                         anchor_page_limit = (
                             3
@@ -2686,11 +2757,15 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                     for term in query_terms
                     if term in normalize_text(item.evidence.content)
                 }
-                family_present = family_context_requested and any(
-                    _CATALOG_FAMILY_EVIDENCE_PATTERN.search(
-                        item.evidence.content
+                family_present = (
+                    family_context_requested
+                    and identifier == "b-kool"
+                    and any(
+                        _CATALOG_FAMILY_EVIDENCE_PATTERN.search(
+                            item.evidence.content
+                        )
+                        for item in source_items
                     )
-                    for item in source_items
                 )
                 structured_count = sum(
                     unit_type_by_id.get(
@@ -2713,10 +2788,23 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                         source_best_rank[(identifier, source_id)],
                     )
                 else:
-                    pressure_token_count = sum(
-                        token.endswith(":bar")
-                        for token in numeric_tokens
-                    )
+                    pressure_tokens = {
+                        token
+                        for item in source_items
+                        if (
+                            "operating"
+                            not in plan.normalized_query
+                            or "operating"
+                            in normalize_text(
+                                item.evidence.content
+                            )
+                        )
+                        for token in _numeric_evidence_tokens(
+                            item.evidence.content
+                        )
+                        if token.endswith(":bar")
+                    }
+                    pressure_token_count = len(pressure_tokens)
                     context_quality = min(
                         (structured_count * 10)
                         + len(covered_query_terms),
@@ -2786,7 +2874,10 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                 )
             ]
             priority: list[RetrievalResult] = []
-            if family_context_requested:
+            if (
+                family_context_requested
+                and identifier == "b-kool"
+            ):
                 family_item = next(
                     (
                         item
@@ -2828,6 +2919,12 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                     ),
                     key=lambda item: (
                         -sum(
+                            token.endswith(":bar")
+                            for token in _numeric_evidence_tokens(
+                                item.evidence.content
+                            )
+                        ),
+                        -sum(
                             term
                             in normalize_text(
                                 item.evidence.content
@@ -2845,6 +2942,33 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                 )
                 if concept_item is not None:
                     priority.append(concept_item)
+            anchor_item = min(
+                (
+                    item
+                    for item in candidates
+                    if identifier in normalize_text(
+                        item.evidence.content
+                    )
+                ),
+                key=lambda item: (
+                    -int(
+                        normalize_text(
+                            item.evidence.content
+                        ).strip()
+                        == identifier
+                    ),
+                    len(item.evidence.content),
+                    -sum(
+                        term
+                        in normalize_text(item.evidence.content)
+                        for term in query_terms
+                    ),
+                    result_rank[item.evidence.evidence_id],
+                ),
+                default=None,
+            )
+            if anchor_item is not None:
+                priority.append(anchor_item)
             structured_items = [
                 item
                 for item in candidates

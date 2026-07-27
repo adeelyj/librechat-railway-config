@@ -45,6 +45,13 @@ _HIGH_RISK_NUMBER_RE = re.compile(
     r"(?:bar(?:g)?|psi(?:g)?|mpa|kpa|pa|l/min|m[³3]/h|cfm|kw|w|rpm|ppm|%|°c)\b",
     re.IGNORECASE,
 )
+_SHARED_UNIT_GROUP_RE = re.compile(
+    r"\b(?P<first>\d+(?:[.,]\d+)?)\s*/\s*"
+    r"(?P<second>\d+(?:[.,]\d+)?)\s*"
+    r"(?P<unit>bar(?:g)?|psi(?:g)?|mpa|kpa|pa|l/min|m[³3]/h|"
+    r"cfm|kw|w|rpm|ppm|%|°c)\b",
+    re.IGNORECASE,
+)
 _IDENTIFIER_RE = re.compile(
     r"\b(?:SYN-[A-Z0-9-]+|DOC-[A-Z0-9-]+|N\d{4,7}(?:[_-]\d+)?|"
     r"(?:BM|K|GIB|GI|PE)\s+[A-Z0-9][A-Z0-9./_-]*|"
@@ -91,17 +98,24 @@ _NUMBER_WORD_TERMS = {
     "eight": "8",
     "nine": "9",
 }
+_CLAIM_TERM_ALIASES = {
+    "groups": "group",
+    "media": "medium",
+}
 _NON_CLAIM_TERMS = frozenset(
     {
         "a",
         "an",
         "and",
+        "applies",
+        "apply",
         "are",
         "as",
         "at",
         "based",
         "be",
         "being",
+        "bauer",
         "by",
         "claim",
         "condition",
@@ -162,6 +176,9 @@ _NON_CLAIM_TERMS = frozenset(
         "state",
         "stated",
         "states",
+        "support",
+        "supported",
+        "supports",
         "whether",
         "supplied",
         "table",
@@ -171,6 +188,10 @@ _NON_CLAIM_TERMS = frozenset(
         "this",
         "to",
         "und",
+        "value",
+        "values",
+        "variant",
+        "variants",
         "vom",
         "von",
         "was",
@@ -462,16 +483,16 @@ def _claim_terms(value: str) -> set[str]:
     # identifiers and high-risk values are validated independently before
     # this broad substantive-term comparison.
     normalized = normalize_text(value).replace("-", " ")
+    normalized = re.sub(r"(?<=\d)/(?=\d)", " ", normalized)
     normalized = re.sub(
         r"\bmotor outputs?\b",
         "motor power",
         normalized,
     )
     return {
-        (
-            "group"
-            if token == "groups"
-            else _NUMBER_WORD_TERMS.get(token, token)
+        _CLAIM_TERM_ALIASES.get(
+            token,
+            _NUMBER_WORD_TERMS.get(token, token),
         )
         for token in _WORD_RE.findall(normalized)
         if token not in _NON_CLAIM_TERMS
@@ -483,4 +504,12 @@ def _support_comparison_text(value: str) -> str:
     # Source tables and generated prose may render the same numeric range or
     # identifier with different dash glyphs.  Collapse only dash punctuation;
     # digits, units, letters, and ordering remain exact.
-    return normalize_text(re.sub(r"[-\u2010-\u2015]+", " ", value))
+    normalized = normalize_text(re.sub(r"[-\u2010-\u2015]+", " ", value))
+    return _SHARED_UNIT_GROUP_RE.sub(
+        lambda match: (
+            f"{match.group(0)} "
+            f"{match.group('first')} {match.group('unit')} "
+            f"{match.group('second')} {match.group('unit')}"
+        ),
+        normalized,
+    )

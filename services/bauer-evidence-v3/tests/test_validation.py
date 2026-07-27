@@ -57,6 +57,92 @@ class ValidatorTests(unittest.TestCase):
             {item.code for item in uncited.violations},
         )
 
+    def test_shared_unit_group_supports_each_explicit_value(self) -> None:
+        citation = replace(
+            self.citation,
+            content="Operating pressure: 414/420 bar.",
+            table_headers=(),
+            table_values=(),
+        )
+        package = replace(self.package, citations=(citation,))
+        result = validate_answer(
+            answer=(
+                "The operating-pressure variants are 414 bar and "
+                "420 bar [E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(
+                "What are the operating-pressure variants?"
+            ),
+        )
+
+        self.assertTrue(result.valid)
+
+    def test_footnote_marker_relationship_uses_source_labels(self) -> None:
+        citation = replace(
+            self.citation,
+            content=(
+                "Effective free air delivery ¹: 420; "
+                "maximum operating pressure ²: 525."
+            ),
+            table_headers=(),
+            table_values=(),
+        )
+        package = replace(self.package, citations=(citation,))
+        result = validate_answer(
+            answer=(
+                "Footnote ¹ applies to the free-air delivery values "
+                "and footnote ² applies to the maximum operating "
+                "pressure values [E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(
+                "Preserve the footnote labels for the technical values."
+            ),
+        )
+
+        self.assertTrue(result.valid)
+
+    def test_medium_plural_and_support_verb_preserve_object_checks(
+        self,
+    ) -> None:
+        citation = replace(
+            self.citation,
+            content=(
+                "B-SAFE medium: Nitrox; maximum application "
+                "pressure: 200 bar."
+            ),
+            table_headers=(),
+            table_values=(),
+        )
+        package = replace(self.package, citations=(citation,))
+        valid = validate_answer(
+            answer=(
+                "B-SAFE supports Nitrox as the listed media at "
+                "200 bar [E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(
+                "Which media does B-SAFE support?"
+            ),
+        )
+        unsupported_medium = validate_answer(
+            answer=(
+                "B-SAFE supports Argon up to 200 bar "
+                "[E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=analyze_query(
+                "Does B-SAFE support Argon?"
+            ),
+        )
+
+        self.assertTrue(valid.valid)
+        self.assertIn(
+            "unsupported_factual_claim",
+            {item.code for item in unsupported_medium.violations},
+        )
+
     def test_wrong_evidence_value_and_unknown_citation_are_rejected(self) -> None:
         plan = analyze_query("What is the pressure for BM 40?")
         result = validate_answer(
