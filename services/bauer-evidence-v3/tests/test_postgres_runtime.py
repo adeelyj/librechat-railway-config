@@ -232,10 +232,28 @@ class PostgresRuntimeTests(unittest.TestCase):
         )
         terms = _lexical_query_terms(plan)
         self.assertLessEqual(len(terms), 8)
-        self.assertIn("bm", terms)
-        self.assertIn("free-air-delivery", terms)
-        self.assertIn("motor-power", terms)
-        self.assertIn("800", terms)
+        self.assertIn("bm series", terms)
+        self.assertIn("free air delivery", terms)
+        self.assertIn("motor power", terms)
+        self.assertIn("800 l/min", terms)
+
+    def test_lexical_query_terms_keep_compound_product_anchors(self):
+        plan = analyze_query(
+            "Find an automatic priority valve at 420 bar and a "
+            "refrigeration dryer at 500 bar."
+        )
+        terms = _lexical_query_terms(plan)
+        self.assertIn("automatic selector unit", terms)
+        self.assertIn("refrigeration dryer", terms)
+        self.assertIn("420 bar", terms)
+        self.assertIn("500 bar", terms)
+
+    def test_k_series_range_is_recognized_as_exact_identifiers(self):
+        plan = analyze_query(
+            "Show the K 22–K 28 series from the product overview."
+        )
+        self.assertEqual(plan.identifiers, ("K 22", "K 28"))
+        self.assertEqual(plan.channels[0], RetrievalChannel.EXACT)
 
     def test_shared_unit_numeric_tokens_preserve_each_value(self):
         self.assertEqual(
@@ -638,7 +656,6 @@ class PostgresRuntimeTests(unittest.TestCase):
                 "table",
                 "lexical",
                 "semantic",
-                "navigation",
             },
         )
         for channel, sql in channel_sql.items():
@@ -713,7 +730,7 @@ class PostgresRuntimeTests(unittest.TestCase):
             for sql, _ in connection.executions
             if "v3:hydrate:candidates" in sql
         ]
-        self.assertEqual(len(hydration_sql), 6)
+        self.assertEqual(len(hydration_sql), 5)
         self.assertTrue(
             all("provenance_spans" in sql for sql in hydration_sql)
         )

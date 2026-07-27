@@ -82,6 +82,7 @@ _IDENTIFIER_RE = re.compile(
     rf"\b(?:"
     rf"(?:DOC-|SYN-){_PREFIXED_CODE_TOKEN}"
     rf"|I\s+{_PREFIXED_CODE_TOKEN}"
+    rf"|K\s+{_PREFIXED_CODE_TOKEN}"
     rf"|(?:BM|PE|GIB|GI)\s*{_PREFIXED_CODE_TOKEN}"
     rf"|B-[A-Z][A-Z0-9]{{1,29}}(?:-[A-Z0-9]{{1,20}})*"
     rf"|N{_PREFIXED_CODE_TOKEN}"
@@ -471,7 +472,9 @@ def analyze_query(
     if table_intent or numeric_constraints:
         channels.append(RetrievalChannel.TABLE)
     channels.extend((RetrievalChannel.LEXICAL, RetrievalChannel.SEMANTIC))
-    if navigation_intent:
+    if navigation_intent and not (
+        identifiers or numbers or table_intent
+    ):
         channels.append(RetrievalChannel.NAVIGATION)
 
     normalized_constraints: dict[str, tuple[str, ...]] = {}

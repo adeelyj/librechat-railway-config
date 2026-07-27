@@ -34,7 +34,8 @@ class OpenAICompatibleEmbeddingProvider:
         self.model = model
         self.dimensions = dimensions
         self.timeout_seconds = timeout_seconds
-        self.client = client
+        self._owns_client = client is None
+        self.client = client or httpx.Client(timeout=self.timeout_seconds)
 
     def embed(self, text: str) -> tuple[float, ...]:
         return self.embed_many((text,))[0]
@@ -55,20 +56,12 @@ class OpenAICompatibleEmbeddingProvider:
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
         }
-        if self.client is None:
-            with httpx.Client(timeout=self.timeout_seconds) as client:
-                response = client.post(
-                    f"{self.base_url}/embeddings",
-                    headers=headers,
-                    json=payload,
-                )
-        else:
-            response = self.client.post(
-                f"{self.base_url}/embeddings",
-                headers=headers,
-                json=payload,
-                timeout=self.timeout_seconds,
-            )
+        response = self.client.post(
+            f"{self.base_url}/embeddings",
+            headers=headers,
+            json=payload,
+            timeout=self.timeout_seconds,
+        )
         try:
             response.raise_for_status()
             body = response.json()
@@ -95,6 +88,10 @@ class OpenAICompatibleEmbeddingProvider:
         if any(vector is None for vector in ordered):
             raise EmbeddingGatewayError("embedding results are incomplete")
         return tuple(vector for vector in ordered if vector is not None)
+
+    def close(self) -> None:
+        if self._owns_client:
+            self.client.close()
 
     @staticmethod
     def _validate_input(text: str) -> str:

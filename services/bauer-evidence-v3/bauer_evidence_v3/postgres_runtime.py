@@ -118,6 +118,24 @@ _CONTEXT_STOP_TERMS = frozenset(
         "with",
     }
 )
+_LEXICAL_PHRASES = (
+    ("automatic priority valve", "automatic selector unit"),
+    ("maximum operating pressure", "maximum allowable working pressure"),
+    ("shutdown pressure", "shut down pressure"),
+    ("refrigeration dryer", "refrigeration dryer"),
+    ("filter-cartridge", "filter cartridge"),
+    ("free-air-delivery", "free air delivery"),
+    ("motor-power", "motor power"),
+    ("product overview", "product overview"),
+    ("product families", "product families"),
+    ("bm series", "bm series"),
+    ("mini-verticus", "mini verticus"),
+)
+_PRODUCT_RANGE_PATTERN = re.compile(
+    r"\b([a-z]{1,8})\s+(\d+(?:[.-]\d+)?)\s+"
+    r"\1\s+(\d+(?:[.-]\d+)?)\s+series\b",
+    flags=re.IGNORECASE,
+)
 
 
 class PostgresRuntimeError(RuntimeError):
@@ -347,6 +365,29 @@ def _raw_numeric_evidence_tokens(content: str) -> frozenset[str]:
 
 
 def _lexical_query_terms(plan: QueryPlan) -> tuple[str, ...]:
+    anchors: list[str] = [
+        search_phrase
+        for query_phrase, search_phrase in _LEXICAL_PHRASES
+        if query_phrase in plan.normalized_query
+    ]
+    anchors.extend(
+        normalize_text(identifier)
+        for identifier in plan.identifiers
+    )
+    for match in _PRODUCT_RANGE_PATTERN.finditer(plan.normalized_query):
+        family = match.group(1)
+        anchors.extend(
+            (
+                f"{family} {match.group(2)}",
+                f"{family} {match.group(3)}",
+            )
+        )
+    anchors.extend(
+        normalize_text(mention.raw)
+        for mention in plan.numeric_mentions
+        if mention.unit is not None
+    )
+
     weighted: list[tuple[int, int, str]] = []
     for position, value in enumerate(plan.tokens):
         normalized = normalize_text(value).strip(".")
@@ -354,9 +395,13 @@ def _lexical_query_terms(plan: QueryPlan) -> tuple[str, ...]:
             not normalized
             or normalized in _LEXICAL_NOISE_TERMS
             or (
+                normalized.isdigit()
+                and len(normalized) == 1
+            )
+            or (
                 len(normalized) < 3
                 and not any(ch.isdigit() for ch in normalized)
-                and normalized not in {"bm", "gi", "pe"}
+                and normalized not in {"bm", "gi", "k", "pe"}
             )
         ):
             continue
@@ -381,7 +426,10 @@ def _lexical_query_terms(plan: QueryPlan) -> tuple[str, ...]:
         value
         for _score, _position, value in sorted(weighted, reverse=True)
     ]
-    return tuple(dict.fromkeys(ordered))[:8] or (plan.normalized_query,)
+    return (
+        tuple(dict.fromkeys((*anchors, *ordered)))[:8]
+        or (plan.normalized_query,)
+    )
 
 
 _AUTHORIZED_UNITS_CTE = """
@@ -1151,11 +1199,28 @@ LIMIT %s
 
 def _fact_sql(superlative: str | None) -> str:
     if superlative == "maximum":
-        ordering = "raw_score DESC, fact.numeric_value DESC NULLS LAST"
+        fact_choice_ordering = (
+            "fact_relevance DESC, "
+            "fact_numeric_value DESC NULLS LAST, fact_id"
+        )
+        result_ordering = (
+            "raw_score DESC, fact_numeric_value DESC NULLS LAST, evidence_id"
+        )
     elif superlative == "minimum":
-        ordering = "raw_score DESC, fact.numeric_value ASC NULLS LAST"
+        fact_choice_ordering = (
+            "fact_relevance DESC, "
+            "fact_numeric_value ASC NULLS LAST, fact_id"
+        )
+        result_ordering = (
+            "raw_score DESC, fact_numeric_value ASC NULLS LAST, evidence_id"
+        )
     else:
-        ordering = "raw_score DESC, fact.fact_id"
+        fact_choice_ordering = (
+            "fact_relevance DESC, fact_id"
+        )
+        result_ordering = (
+            "raw_score DESC, evidence_id"
+        )
     allow_extremum = "TRUE" if superlative else "FALSE"
     return (
         "/* v3:channel:fact */\n"
@@ -1167,42 +1232,101 @@ def _fact_sql(superlative: str | None) -> str:
         %s::jsonb AS forbidden_numeric_constraints,
         %s::text[] AS query_tokens,
         %s::text AS query_text
-)
-SELECT
-    authorized_units.*,
-    CASE
-        WHEN jsonb_array_length(
-            fact_query.required_numeric_groups
-        ) > 0 THEN 1.0
-        ELSE greatest(
-            similarity(
-                lower(fact.subject_key || ' ' || fact.predicate),
-                fact_query.query_text
-            ),
+),
+scored_facts AS MATERIALIZED (
+    SELECT
+        authorized_units.*,
+        least(
+            1.0,
             0.05
-        )
-    END::double precision AS raw_score,
-    'fact'::text AS channel,
-    'fact:' || fact.predicate AS reason,
-    coalesce(fact.unit_ucum, fact.unit_raw) AS channel_unit
-FROM authorized_units
-JOIN bauer_rag_v3.facts fact
-  ON fact.artifact_set_id = authorized_units.artifact_set_id
- AND fact.primary_provenance_id =
-     authorized_units.primary_provenance_id
-CROSS JOIN fact_query
-WHERE authorized_units.unit_type = 'fact'
-  AND fact.verification_status <> 'rejected'
-  AND NOT EXISTS (
-      SELECT 1
-      FROM jsonb_array_elements(
-          fact_query.required_numeric_groups
-      ) AS required_group(value)
-      WHERE NOT EXISTS (
+            + least(
+                (
+                    SELECT count(DISTINCT token)::integer
+                    FROM unnest(fact_query.query_tokens) token
+                    WHERE (
+                        length(token) >= 3
+                        OR token IN ('bm', 'gi', 'gib', 'k', 'pe')
+                    )
+                      AND position(
+                          token IN lower(
+                              fact.subject_key || ' ' || fact.predicate
+                          )
+                      ) > 0
+                ),
+                8
+            )::double precision * 0.10
+            + CASE
+                  WHEN jsonb_array_length(
+                      fact_query.required_numeric_groups
+                  ) > 0
+                  THEN 0.15
+                  ELSE 0.0
+              END
+        )::double precision AS fact_relevance,
+        fact.numeric_value AS fact_numeric_value,
+        fact.unit_ucum AS fact_unit_ucum,
+        fact.unit_raw AS fact_unit_raw,
+        fact.predicate AS fact_predicate,
+        fact.fact_id
+    FROM authorized_units
+    JOIN bauer_rag_v3.facts fact
+      ON fact.artifact_set_id = authorized_units.artifact_set_id
+     AND fact.primary_provenance_id =
+         authorized_units.primary_provenance_id
+    CROSS JOIN fact_query
+    WHERE authorized_units.unit_type = 'fact'
+      AND fact.verification_status <> 'rejected'
+      AND NOT EXISTS (
+          SELECT 1
+          FROM jsonb_array_elements(
+              fact_query.required_numeric_groups
+          ) AS required_group(value)
+          WHERE NOT EXISTS (
+              SELECT 1
+              FROM jsonb_to_recordset(
+                  required_group.value -> 'alternatives'
+              ) AS required_constraint(
+                  comparator text,
+                  lower_value numeric,
+                  upper_value numeric,
+                  unit text
+              )
+              WHERE fact.numeric_value IS NOT NULL
+                AND (
+                    required_constraint.unit IS NULL
+                    OR lower(
+                        coalesce(fact.unit_ucum, fact.unit_raw, '')
+                    ) = required_constraint.unit
+                )
+                AND CASE required_constraint.comparator
+                    WHEN 'eq' THEN
+                        fact.numeric_value =
+                            required_constraint.lower_value
+                    WHEN 'gt' THEN
+                        fact.numeric_value >
+                            required_constraint.lower_value
+                    WHEN 'gte' THEN
+                        fact.numeric_value >=
+                            required_constraint.lower_value
+                    WHEN 'lt' THEN
+                        fact.numeric_value <
+                            required_constraint.lower_value
+                    WHEN 'lte' THEN
+                        fact.numeric_value <=
+                            required_constraint.lower_value
+                    WHEN 'between' THEN
+                        fact.numeric_value BETWEEN
+                            required_constraint.lower_value
+                            AND required_constraint.upper_value
+                    ELSE FALSE
+                END
+          )
+      )
+      AND NOT EXISTS (
           SELECT 1
           FROM jsonb_to_recordset(
-              required_group.value -> 'alternatives'
-          ) AS required_constraint(
+              fact_query.forbidden_numeric_constraints
+          ) AS forbidden_constraint(
               comparator text,
               lower_value numeric,
               upper_value numeric,
@@ -1210,81 +1334,73 @@ WHERE authorized_units.unit_type = 'fact'
           )
           WHERE fact.numeric_value IS NOT NULL
             AND (
-                required_constraint.unit IS NULL
-                OR lower(coalesce(fact.unit_ucum, fact.unit_raw, '')) =
-                    required_constraint.unit
+                forbidden_constraint.unit IS NULL
+                OR lower(
+                    coalesce(fact.unit_ucum, fact.unit_raw, '')
+                ) = forbidden_constraint.unit
             )
-            AND CASE required_constraint.comparator
+            AND CASE forbidden_constraint.comparator
                 WHEN 'eq' THEN
-                    fact.numeric_value = required_constraint.lower_value
+                    fact.numeric_value =
+                        forbidden_constraint.lower_value
                 WHEN 'gt' THEN
-                    fact.numeric_value > required_constraint.lower_value
+                    fact.numeric_value >
+                        forbidden_constraint.lower_value
                 WHEN 'gte' THEN
-                    fact.numeric_value >= required_constraint.lower_value
+                    fact.numeric_value >=
+                        forbidden_constraint.lower_value
                 WHEN 'lt' THEN
-                    fact.numeric_value < required_constraint.lower_value
+                    fact.numeric_value <
+                        forbidden_constraint.lower_value
                 WHEN 'lte' THEN
-                    fact.numeric_value <= required_constraint.lower_value
+                    fact.numeric_value <=
+                        forbidden_constraint.lower_value
                 WHEN 'between' THEN
                     fact.numeric_value BETWEEN
-                        required_constraint.lower_value
-                        AND required_constraint.upper_value
+                        forbidden_constraint.lower_value
+                        AND forbidden_constraint.upper_value
                 ELSE FALSE
             END
       )
-  )
-  AND NOT EXISTS (
-      SELECT 1
-      FROM jsonb_to_recordset(
-          fact_query.forbidden_numeric_constraints
-      ) AS forbidden_constraint(
-          comparator text,
-          lower_value numeric,
-          upper_value numeric,
-          unit text
+      AND (
+          EXISTS (
+              SELECT 1
+              FROM unnest(fact_query.query_tokens) token
+              WHERE (
+                  length(token) >= 3
+                  OR token IN ('bm', 'gi', 'gib', 'k', 'pe')
+              )
+                AND position(
+                    token IN lower(
+                        fact.subject_key || ' ' || fact.predicate
+                    )
+                ) > 0
+          )
+          OR (
+              {allow_extremum}
+              AND similarity(
+                  lower(fact.subject_key || ' ' || fact.predicate),
+                  fact_query.query_text
+              ) > 0.02
+          )
       )
-      WHERE fact.numeric_value IS NOT NULL
-        AND (
-            forbidden_constraint.unit IS NULL
-            OR lower(coalesce(fact.unit_ucum, fact.unit_raw, '')) =
-                forbidden_constraint.unit
-        )
-        AND CASE forbidden_constraint.comparator
-            WHEN 'eq' THEN
-                fact.numeric_value = forbidden_constraint.lower_value
-            WHEN 'gt' THEN
-                fact.numeric_value > forbidden_constraint.lower_value
-            WHEN 'gte' THEN
-                fact.numeric_value >= forbidden_constraint.lower_value
-            WHEN 'lt' THEN
-                fact.numeric_value < forbidden_constraint.lower_value
-            WHEN 'lte' THEN
-                fact.numeric_value <= forbidden_constraint.lower_value
-            WHEN 'between' THEN
-                fact.numeric_value BETWEEN
-                    forbidden_constraint.lower_value
-                    AND forbidden_constraint.upper_value
-            ELSE FALSE
-        END
-  )
-  AND (
-      jsonb_array_length(fact_query.required_numeric_groups) > 0
-      OR EXISTS (
-          SELECT 1
-          FROM unnest(fact_query.query_tokens) token
-          WHERE position(
-              token IN lower(fact.subject_key || ' ' || fact.predicate)
-          ) > 0
-      )
-      OR (
-          {allow_extremum}
-          AND similarity(
-              lower(fact.subject_key || ' ' || fact.predicate),
-              fact_query.query_text
-          ) > 0.02
-      )
-  )
-ORDER BY {ordering}
+),
+ranked_facts AS (
+    SELECT DISTINCT ON (evidence_id)
+        scored_facts.*,
+        fact_relevance AS raw_score,
+        'fact'::text AS channel,
+        'fact:' || fact_predicate AS reason,
+        coalesce(fact_unit_ucum, fact_unit_raw) AS channel_unit
+    FROM scored_facts
+    ORDER BY
+        evidence_id,
+        {fact_choice_ordering}
+)
+SELECT
+    ranked_facts.*
+FROM ranked_facts
+ORDER BY {result_ordering}
 LIMIT %s
 """
     )
@@ -1486,11 +1602,76 @@ WITH request_scope AS (
 ),
 lexical_query AS (
     SELECT
-        %s::text AS query_text,
-        websearch_to_tsquery(
+        query_input.query_text,
+        query_input.query_terms,
+        to_tsquery(
             'simple',
-            array_to_string(%s::text[], ' OR ')
+            array_to_string(
+                ARRAY(
+                    SELECT plainto_tsquery(
+                        'simple',
+                        query_term
+                    )::text
+                    FROM unnest(query_input.query_terms) query_term
+                ),
+                ' | '
+            )
         ) AS token_query
+    FROM (
+        SELECT
+            %s::text AS query_text,
+            %s::text[] AS query_terms
+    ) query_input
+),
+source_scores AS MATERIALIZED (
+    SELECT
+        member.source_id,
+        member.source_version_id,
+        ts_rank_cd(
+            to_tsvector(
+                'simple',
+                regexp_replace(
+                    lower(
+                        concat_ws(
+                            ' ',
+                            source_version.filename,
+                            source_version.discovered_metadata ->> 'title'
+                        )
+                    ),
+                    '[_/.-]+',
+                    ' ',
+                    'g'
+                )
+            ),
+            lexical_query.token_query
+        )::double precision AS title_score,
+        (
+            SELECT count(*)::integer
+            FROM unnest(lexical_query.query_terms) query_term
+            WHERE to_tsvector(
+                'simple',
+                regexp_replace(
+                    lower(
+                        concat_ws(
+                            ' ',
+                            source_version.filename,
+                            source_version.discovered_metadata ->> 'title'
+                        )
+                    ),
+                    '[_/.-]+',
+                    ' ',
+                    'g'
+                )
+            ) @@ plainto_tsquery('simple', query_term)
+        ) AS title_term_hits
+    FROM bauer_rag_v3.release_sources member
+    JOIN bauer_rag_v3.source_versions source_version
+      ON source_version.source_version_id =
+         member.source_version_id
+     AND source_version.source_id = member.source_id
+    CROSS JOIN request_scope request
+    CROSS JOIN lexical_query
+    WHERE member.release_id = request.release_id
 ),
 fts_units AS MATERIALIZED (
     SELECT
@@ -1500,11 +1681,40 @@ fts_units AS MATERIALIZED (
         unit.search_text,
         unit.display_text,
         unit.metadata,
-        ts_rank_cd(
-            unit.search_vector,
-            lexical_query.token_query
+        (
+            ts_rank_cd(
+                unit.search_vector,
+                lexical_query.token_query
+            )
+            + least(source_scores.title_score, 1.0) * 1.5
+            + least(source_scores.title_term_hits, 4) * 0.50
+            + least(
+                (
+                    SELECT count(*)::integer
+                    FROM unnest(
+                        lexical_query.query_terms
+                    ) query_term
+                    WHERE unit.search_vector @@
+                          plainto_tsquery('simple', query_term)
+                ),
+                8
+            ) * 0.25
+            + CASE
+                  WHEN lexical_query.query_text LIKE
+                       '%%shutdown pressure%%'
+                   AND unit.search_vector @@
+                       plainto_tsquery(
+                           'simple',
+                           'shut down pressure'
+                       )
+                  THEN 2.0
+                  ELSE 0.0
+              END
         )::double precision AS raw_score
     FROM bauer_rag_v3.search_units unit
+    JOIN source_scores
+      ON source_scores.source_id = unit.source_id
+     AND source_scores.source_version_id = unit.source_version_id
     CROSS JOIN request_scope request
     CROSS JOIN lexical_query
     WHERE unit.release_id = request.release_id
@@ -1512,16 +1722,28 @@ fts_units AS MATERIALIZED (
       AND NOT unit.generated_summary
       AND unit.search_vector @@ lexical_query.token_query
 ),
+source_ranked_units AS MATERIALIZED (
+    SELECT
+        candidate.*,
+        row_number() OVER (
+            PARTITION BY candidate.source_id
+            ORDER BY
+                candidate.raw_score DESC,
+                candidate.search_unit_id
+        ) AS source_rank
+    FROM fts_units candidate
+),
 matched_units AS MATERIALIZED (
     SELECT
         candidate.search_unit_id,
         candidate.raw_score
-    FROM fts_units candidate
+    FROM source_ranked_units candidate
     JOIN bauer_rag_v3.sources source_scope
       ON source_scope.source_id = candidate.source_id
      AND source_scope.kb_id = candidate.kb_id
     CROSS JOIN request_scope request
-    WHERE (
+    WHERE candidate.source_rank <= 5
+      AND (
           source_scope.source_id::text = ANY (request.source_ids)
           OR source_scope.external_file_id =
               ANY (request.external_file_ids)
