@@ -19,4 +19,5 @@ RUN node /tmp/patchBauerV3FinalBoundary.js /app/api/server/services/Endpoints/ag
 RUN node /tmp/patchBauerV3RunGraph.js /app/packages/api/src/agents/run.ts \
     && echo "47ee73d480aa79c7597b7d50b96a2ce39c918473b2e6a6525ac73599c92d556f  /app/packages/api/src/agents/run.ts" | sha256sum -c - \
     && cd /app/packages/api \
-    && npm run build
+    && npm run clean \
+    && node ./node_modules/tsdown/dist/run.mjs
