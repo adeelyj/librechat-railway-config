@@ -136,6 +136,10 @@ _PRODUCT_RANGE_PATTERN = re.compile(
     r"\1\s+(\d+(?:[.-]\d+)?)\s+series\b",
     flags=re.IGNORECASE,
 )
+_NAMED_FAMILY_PATTERN = re.compile(
+    r"\b(bm|gi|gib|pe)\s+series\b",
+    flags=re.IGNORECASE,
+)
 
 
 class PostgresRuntimeError(RuntimeError):
@@ -247,6 +251,23 @@ def _catalog_identifiers(plan: QueryPlan) -> tuple[str, ...]:
     )
 
 
+def _is_product_discovery_query(plan: QueryPlan) -> bool:
+    discovery_cues = (
+        "do not know",
+        "don't know",
+        "unknown product",
+        "product name",
+        "identify the product",
+        "find the product",
+        "which product",
+        "what product",
+    )
+    return (
+        not plan.identifiers
+        and any(cue in plan.normalized_query for cue in discovery_cues)
+    )
+
+
 def _discovered_catalog_identifiers(
     plan: QueryPlan,
     channel_candidates: Mapping[
@@ -256,22 +277,18 @@ def _discovered_catalog_identifiers(
 ) -> tuple[str, ...]:
     """Promote consistently retrieved product names for discovery queries."""
 
-    if plan.identifiers:
-        return ()
-    discovery_cues = (
-        "do not know",
-        "find",
-        "identify",
-        "locate",
-        "which",
-        "what",
-    )
-    if not any(cue in plan.normalized_query for cue in discovery_cues):
+    if not _is_product_discovery_query(plan):
         return ()
 
     occurrence_count: dict[str, int] = defaultdict(int)
     channel_count: dict[str, set[RetrievalChannel]] = defaultdict(set)
     best_rank: dict[str, int] = {}
+    context_relevance: dict[str, int] = defaultdict(int)
+    query_terms = tuple(
+        term
+        for term in _identifier_context_terms(plan)
+        if len(term) >= 4
+    )
     for channel in (
         RetrievalChannel.FACT,
         RetrievalChannel.TABLE,
@@ -280,24 +297,48 @@ def _discovered_catalog_identifiers(
         RetrievalChannel.NAVIGATION,
     ):
         for rank, candidate in enumerate(
-            channel_candidates.get(channel, ())[:20],
+            channel_candidates.get(channel, ())[:80],
             start=1,
         ):
+            candidate_text = " ".join(
+                (
+                    candidate.evidence.title,
+                    " ".join(
+                        str(value)
+                        for value in candidate.evidence.metadata.get(
+                            "section_path",
+                            (),
+                        )
+                    ),
+                    str(
+                        candidate.evidence.metadata.get("table_title")
+                        or ""
+                    ),
+                    str(
+                        candidate.evidence.metadata.get("row_label")
+                        or ""
+                    ),
+                    candidate.evidence.content,
+                )
+            )
             terms = {
                 match.group(0).upper()
                 for match in _CATALOG_IDENTIFIER_FIND_PATTERN.finditer(
-                    " ".join(
-                        (
-                            candidate.evidence.title,
-                            candidate.evidence.content,
-                        )
-                    )
+                    candidate_text
                 )
             }
             for term in terms:
                 occurrence_count[term] += 1
                 channel_count[term].add(channel)
                 best_rank[term] = min(best_rank.get(term, rank), rank)
+                context_relevance[term] = max(
+                    context_relevance[term],
+                    _identifier_local_context_relevance(
+                        candidate_text,
+                        term,
+                        query_terms,
+                    ),
+                )
 
     eligible = [
         term
@@ -308,12 +349,50 @@ def _discovered_catalog_identifiers(
         sorted(
             eligible,
             key=lambda term: (
+                -context_relevance[term],
                 -len(channel_count[term]),
                 -occurrence_count[term],
                 best_rank[term],
                 term,
             ),
-        )[:4]
+        )[:2]
+    )
+
+
+def _identifier_local_context_relevance(
+    content: str,
+    identifier: str,
+    query_terms: Sequence[str],
+    *,
+    radius: int = 320,
+) -> int:
+    """Score query concepts near a discovered identifier, not boilerplate."""
+
+    normalized_content = normalize_text(content)
+    normalized_identifier = normalize_text(identifier)
+    positions: list[int] = []
+    offset = 0
+    while normalized_identifier:
+        position = normalized_content.find(normalized_identifier, offset)
+        if position < 0:
+            break
+        positions.append(position)
+        offset = position + len(normalized_identifier)
+    if not positions:
+        return 0
+    return max(
+        sum(
+            query_term
+            in normalized_content[
+                max(0, position - radius):
+                min(
+                    len(normalized_content),
+                    position + len(normalized_identifier) + radius,
+                )
+            ]
+            for query_term in query_terms
+        )
+        for position in positions
     )
 
 
@@ -324,6 +403,17 @@ def _identifier_context_terms(plan: QueryPlan) -> tuple[str, ...]:
             for token in plan.tokens
             for term in _CONTEXT_TERM_PATTERN.findall(token.casefold())
             if len(term) > 1 and term not in _CONTEXT_STOP_TERMS
+        )
+    )
+
+
+def _named_family_terms(plan: QueryPlan) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(
+            match.group(1).casefold()
+            for match in _NAMED_FAMILY_PATTERN.finditer(
+                plan.normalized_query
+            )
         )
     )
 
@@ -1690,15 +1780,35 @@ fts_units AS MATERIALIZED (
             + least(source_scores.title_term_hits, 4) * 0.50
             + least(
                 (
-                    SELECT count(*)::integer
+                    SELECT coalesce(
+                        sum(
+                            CASE
+                                WHEN query_term ~ '[[:alpha:]]'
+                                 AND position(' ' IN query_term) > 0
+                                THEN least(
+                                    cardinality(
+                                        regexp_split_to_array(
+                                            query_term,
+                                            '[[:space:]]+'
+                                        )
+                                    ) * 2.0,
+                                    6.0
+                                )
+                                WHEN position(' ' IN query_term) > 0
+                                THEN 0.50
+                                ELSE 0.25
+                            END
+                        ),
+                        0.0
+                    )
                     FROM unnest(
                         lexical_query.query_terms
                     ) query_term
                     WHERE unit.search_vector @@
                           plainto_tsquery('simple', query_term)
                 ),
-                8
-            ) * 0.25
+                8.0
+            )
             + CASE
                   WHEN lexical_query.query_text LIKE
                        '%%shutdown pressure%%'
@@ -2699,11 +2809,16 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             raise ValueError(
                 f"at most {MAX_AUTHORIZED_SOURCES} authorized sources are allowed"
             )
-        channel_limit = min(max(plan.top_k * 4, 20), 80)
+        channel_limit = (
+            80
+            if _is_product_discovery_query(plan)
+            else min(max(plan.top_k * 4, 20), 80)
+        )
         requested_physical_pages = _requested_physical_pages(plan)
         catalog_identifiers = _catalog_identifiers(plan)
         identifier_context_terms = _identifier_context_terms(plan)
         required_numeric_groups = _required_numeric_groups(plan)
+        named_family_terms = _named_family_terms(plan)
         forbidden_numeric_constraints = [
             _numeric_constraint_document(constraint)
             for constraint in plan.forbidden_numeric_constraints
@@ -2905,6 +3020,37 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                     )
                     for row in rows
                 ]
+                if (
+                    named_family_terms
+                    and channel
+                    in {
+                        RetrievalChannel.FACT,
+                        RetrievalChannel.TABLE,
+                        RetrievalChannel.SEMANTIC,
+                        RetrievalChannel.NAVIGATION,
+                    }
+                ):
+                    candidates = [
+                        candidate
+                        for candidate in candidates
+                        if all(
+                            term
+                            in normalize_text(
+                                " ".join(
+                                    (
+                                        candidate.evidence.title,
+                                        candidate.evidence.content,
+                                        json.dumps(
+                                            candidate.evidence.metadata,
+                                            ensure_ascii=False,
+                                            sort_keys=True,
+                                        ),
+                                    )
+                                )
+                            )
+                            for term in named_family_terms
+                        )
+                    ]
                 if requested_physical_pages:
                     candidates = [
                         candidate
@@ -2923,8 +3069,8 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             )
             if discovered_identifiers:
                 context_limit = min(
-                    max(plan.top_k * 60, 80),
-                    480,
+                    max(plan.top_k * 8, 40),
+                    120,
                 )
                 rows = self._fetchall(
                     connection,
@@ -3815,6 +3961,18 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             len(unstructured),
             max(1, plan.top_k // 4),
         )
+        if (
+            plan.superlative is not None
+            and not plan.table_intent
+            and any(
+                cue in plan.normalized_query
+                for cue in ("distinguish", "difference", "explain")
+            )
+        ):
+            reserve_count = min(
+                len(unstructured),
+                max(reserve_count, plan.top_k // 2),
+            )
         if _catalog_identifiers(plan) and plan.top_k >= 8:
             reserve_count = min(
                 len(unstructured),

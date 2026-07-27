@@ -21,6 +21,7 @@ from bauer_evidence_v3.postgres_runtime import (  # noqa: E402
     PostgresReleaseRegistry,
     PostgresValidationReleaseRegistry,
     _lexical_query_terms,
+    _named_family_terms,
     _numeric_evidence_tokens,
     _discovered_catalog_identifiers,
 )
@@ -255,6 +256,22 @@ class PostgresRuntimeTests(unittest.TestCase):
         self.assertEqual(plan.identifiers, ("K 22", "K 28"))
         self.assertEqual(plan.channels[0], RetrievalChannel.EXACT)
 
+    def test_named_family_terms_ignore_generic_series_language(self):
+        self.assertEqual(
+            _named_family_terms(
+                analyze_query(
+                    "Compare the BM series at 40 bar and 100 bar."
+                )
+            ),
+            ("bm",),
+        )
+        self.assertEqual(
+            _named_family_terms(
+                analyze_query("Compare the product series.")
+            ),
+            (),
+        )
+
     def test_shared_unit_numeric_tokens_preserve_each_value(self):
         self.assertEqual(
             _numeric_evidence_tokens(
@@ -311,6 +328,107 @@ class PostgresRuntimeTests(unittest.TestCase):
         self.assertEqual(
             _discovered_catalog_identifiers(plan, candidates),
             ("B-KOOL",),
+        )
+
+    def test_product_discovery_ignores_broad_what_questions(self):
+        plan = analyze_query(
+            "What is the highest documented compressor pressure?"
+        )
+        kool = evidence_row(
+            "kool",
+            channel="lexical",
+            unit_type="paragraph",
+            score=0.8,
+            content="The B-KOOL refrigeration dryer supports 500 bar.",
+        )
+        candidates = {
+            RetrievalChannel.LEXICAL: [
+                PostgresEvidenceIndex._candidate_from_row(
+                    self.make_index(FakeConnection()),
+                    kool,
+                    expected_channel=RetrievalChannel.LEXICAL,
+                    release_id=RELEASE_ID,
+                    authorized_sources=frozenset({SOURCE_ID}),
+                ),
+                PostgresEvidenceIndex._candidate_from_row(
+                    self.make_index(FakeConnection()),
+                    {**kool, "evidence_id": "kool-2"},
+                    expected_channel=RetrievalChannel.LEXICAL,
+                    release_id=RELEASE_ID,
+                    authorized_sources=frozenset({SOURCE_ID}),
+                ),
+            ]
+        }
+        self.assertEqual(
+            _discovered_catalog_identifiers(plan, candidates),
+            (),
+        )
+
+    def test_product_discovery_scores_query_terms_near_identifier(self):
+        plan = analyze_query(
+            "I do not know the product names. Find a refrigeration "
+            "dryer that extends filter cartridge life and an automatic "
+            "priority valve for a compressor and storage system."
+        )
+        remote_boilerplate = " unrelated boilerplate" * 50
+        rows = [
+            evidence_row(
+                "kool-1",
+                channel="lexical",
+                unit_type="paragraph",
+                score=0.9,
+                content=(
+                    "B-KOOL is a refrigeration dryer that extends filter "
+                    "cartridge life."
+                    f"{remote_boilerplate} B-APP"
+                ),
+            ),
+            evidence_row(
+                "kool-2",
+                channel="lexical",
+                unit_type="paragraph",
+                score=0.8,
+                content=(
+                    "B-KOOL supports the refrigeration dryer function."
+                    f"{remote_boilerplate} B-APP"
+                ),
+            ),
+            evidence_row(
+                "select-1",
+                channel="lexical",
+                unit_type="paragraph",
+                score=0.7,
+                content=(
+                    "B-SELECT is an automatic priority valve for a "
+                    "compressor and storage system."
+                ),
+            ),
+            evidence_row(
+                "select-2",
+                channel="lexical",
+                unit_type="paragraph",
+                score=0.6,
+                content=(
+                    "B-SELECT controls filling priority from storage."
+                ),
+            ),
+        ]
+        candidates = {
+            RetrievalChannel.LEXICAL: [
+                PostgresEvidenceIndex._candidate_from_row(
+                    self.make_index(FakeConnection()),
+                    row,
+                    expected_channel=RetrievalChannel.LEXICAL,
+                    release_id=RELEASE_ID,
+                    authorized_sources=frozenset({SOURCE_ID}),
+                )
+                for row in rows
+            ]
+        }
+
+        self.assertEqual(
+            _discovered_catalog_identifiers(plan, candidates),
+            ("B-KOOL", "B-SELECT"),
         )
 
     def test_product_discovery_expands_retrieved_catalog_identifiers(self):
@@ -370,6 +488,12 @@ class PostgresRuntimeTests(unittest.TestCase):
             "context-kool",
             {item.evidence.evidence_id for item in results},
         )
+        lexical_parameters = next(
+            parameters
+            for sql, parameters in connection.executions
+            if "v3:channel:lexical" in sql
+        )
+        self.assertEqual(lexical_parameters[-1], 80)
         context_calls = [
             parameters
             for sql, parameters in connection.executions
@@ -696,6 +820,10 @@ class PostgresRuntimeTests(unittest.TestCase):
                         lowered,
                     )
                     self.assertIn(
+                        "when query_term ~ '[[:alpha:]]'",
+                        lowered,
+                    )
+                    self.assertIn(
                         "unit.search_vector @@ lexical_query.token_query",
                         lowered,
                     )
@@ -937,6 +1065,60 @@ class PostgresRuntimeTests(unittest.TestCase):
         )
 
         self.assertEqual(len(results), 20)
+        self.assertEqual(
+            {
+                item.evidence.evidence_id
+                for item in results
+                if item.evidence.evidence_id.startswith("prose-")
+            },
+            {"prose-0", "prose-1", "prose-2", "prose-3", "prose-4"},
+        )
+
+    def test_explained_superlative_reserves_half_for_source_context(self):
+        fact_rows = [
+            evidence_row(
+                f"fact-{index:02d}",
+                channel="fact",
+                unit_type="fact",
+                score=1.0,
+                content=f"Maximum operating pressure fact {index}.",
+            )
+            for index in range(20)
+        ]
+        prose_rows = [
+            evidence_row(
+                f"prose-{index}",
+                channel="lexical",
+                unit_type="paragraph",
+                score=0.9,
+                content=(
+                    f"Source context {index} distinguishes maximum "
+                    "operating pressure from shutdown pressure."
+                ),
+            )
+            for index in range(5)
+        ]
+        connection = FakeConnection(
+            {
+                "fact": fact_rows,
+                "lexical": prose_rows,
+                "semantic": [],
+            }
+        )
+        results = self.make_index(
+            connection,
+            embedding_provider=FixedEmbedding(),
+        ).retrieve(
+            analyze_query(
+                "What is the highest maximum operating pressure? "
+                "Explain the difference from shutdown pressure.",
+                top_k=10,
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset({SOURCE_ID}),
+        )
+
+        self.assertEqual(len(results), 10)
         self.assertEqual(
             {
                 item.evidence.evidence_id
