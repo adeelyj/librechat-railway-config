@@ -483,6 +483,19 @@ def _is_safe_refusal_sentence(sentence: str) -> bool:
     )
 
 
+def extract_safe_refusal_sentences(answer: str) -> tuple[str, ...]:
+    sentences = (
+        sentence.strip()
+        for sentence in _SENTENCE_RE.split(answer)
+        if sentence.strip()
+    )
+    return tuple(
+        _CITATION_RE.sub("", sentence).strip()
+        for sentence in sentences
+        if _is_safe_refusal_sentence(_CITATION_RE.sub("", sentence))
+    )
+
+
 def _claim_terms(value: str) -> set[str]:
     # Treat hyphenated prose compounds as the same words as source text that
     # uses spaces (for example "free-air" versus "free air").  Product

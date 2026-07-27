@@ -398,6 +398,43 @@ class RetrievalAndAnsweringTests(unittest.TestCase):
         self.assertIn("failed deterministic claim validation", result.answer)
         self.assertEqual(len(model.requests), 2)
 
+    def test_failed_paraphrase_uses_validated_extractive_fallback(self) -> None:
+        from bauer_evidence_v3.ids import sha256_json
+
+        citation = f"E-{sha256_json('table-a')[:12].upper()}"
+        model = SequenceModelGateway(
+            [
+                "The compressor is rated for 525 bar.",
+                (
+                    "The I 15.11-11-V model is rated for 525 bar "
+                    f"[{citation}]. "
+                    "The requested 999 bar condition is not supported."
+                ),
+            ]
+        )
+        service = AnswerService(
+            releases=self.releases,
+            index=self.index,
+            model=model,
+        )
+        result = asyncio.run(
+            service.answer(
+                authorization=self.authorization,
+                question=(
+                    "Does I 15.11-11-V support 999 bar? "
+                    "State its documented maximum pressure."
+                ),
+            )
+        )
+
+        self.assertEqual(result.status, "answered_after_repair")
+        self.assertTrue(result.validation.valid)
+        self.assertTrue(result.validation.safe_refusal_detected)
+        self.assertIn("525 bar", result.answer)
+        self.assertIn("999 bar", result.answer)
+        self.assertNotIn("rated", result.answer)
+        self.assertEqual(len(model.requests), 2)
+
     def test_no_authorized_evidence_never_calls_model(self) -> None:
         model = SequenceModelGateway(["must not be used"])
         service = AnswerService(releases=self.releases, index=self.index, model=model)

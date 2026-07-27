@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+import re
 from dataclasses import dataclass
 from typing import Protocol
 
@@ -9,7 +10,15 @@ from .evidence import EvidencePackage, build_evidence_package
 from .generation import GenerationRequest, ModelGateway
 from .planner import QueryPlan, analyze_query
 from .retrieval import RetrievalResult
-from .validation import ValidationResult, validate_answer
+from .validation import (
+    ValidationResult,
+    extract_safe_refusal_sentences,
+    validate_answer,
+)
+
+
+_CITATION_RE = re.compile(r"\[(E-[A-F0-9]{12})\]", re.IGNORECASE)
+_SENTENCE_RE = re.compile(r"(?<=[.!?])\s+|\n+")
 
 
 @dataclass(frozen=True, slots=True)
@@ -143,6 +152,26 @@ class AnswerService:
                 validation=repaired_validation,
                 repair_attempted=True,
             )
+        fallback = _build_extractive_fallback(
+            repaired_answer,
+            package=package,
+        )
+        if fallback:
+            fallback_validation = validate_answer(
+                answer=fallback,
+                package=package,
+                plan=plan,
+            )
+            if fallback_validation.valid:
+                return AnswerResult(
+                    status="answered_after_repair",
+                    answer=fallback,
+                    release_id=release_id,
+                    plan=plan,
+                    evidence=package,
+                    validation=fallback_validation,
+                    repair_attempted=True,
+                )
         return AnswerResult(
             status="refused_after_validation",
             answer=(
@@ -199,3 +228,39 @@ class AnswerService:
             authorized_source_ids=frozenset(authorization.authorized_source_ids),
         )
         return release.release_id, results
+
+
+def _build_extractive_fallback(
+    repaired_answer: str,
+    *,
+    package: EvidencePackage,
+) -> str:
+    citation_map = {
+        citation.citation_id.upper(): citation
+        for citation in package.citations
+    }
+    cited_ids = tuple(
+        dict.fromkeys(
+            match.group(1).upper()
+            for match in _CITATION_RE.finditer(repaired_answer)
+            if match.group(1).upper() in citation_map
+        )
+    )
+    parts: list[str] = []
+    for citation_id in cited_ids:
+        citation = citation_map[citation_id]
+        for raw_segment in _SENTENCE_RE.split(citation.content):
+            segment = " ".join(raw_segment.split()).rstrip(" .!?")
+            if segment:
+                parts.append(
+                    f"Evidence states: {segment} [{citation_id}]."
+                )
+    for refusal in extract_safe_refusal_sentences(repaired_answer):
+        normalized = refusal.strip()
+        if normalized:
+            parts.append(
+                normalized
+                if normalized.endswith((".", "!", "?"))
+                else f"{normalized}."
+            )
+    return " ".join(parts)
