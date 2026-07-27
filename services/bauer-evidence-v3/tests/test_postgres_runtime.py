@@ -831,14 +831,17 @@ class PostgresRuntimeTests(unittest.TestCase):
             for sql, parameters in connection.executions
             if "v3:channel:identifier_context" in sql
         )
-        self.assertEqual(parameters[8], ["b-kool", "b-select"])
-        self.assertIn("technical", parameters[9])
-        self.assertTrue(parameters[10])
+        self.assertEqual(parameters[0], ["b-kool", "b-select"])
+        self.assertIn("technical", parameters[12])
+        self.assertTrue(parameters[13])
+        self.assertEqual(parameters[14], 3)
         lowered = context_sql.casefold()
+        self.assertIn("candidate_pages as materialized", lowered)
+        self.assertIn("from bauer_rag_v3.exact_terms", lowered)
         self.assertIn("anchor_pages as materialized", lowered)
         self.assertIn("ranked_anchor_pages as materialized", lowered)
         self.assertIn(
-            "ranked_anchor_pages.anchor_rank = 1",
+            "ranked_anchor_pages.anchor_rank <=",
             lowered,
         )
         self.assertIn(
@@ -852,6 +855,16 @@ class PostgresRuntimeTests(unittest.TestCase):
         self.assertIn(
             "identifier_context:",
             lowered,
+        )
+        self.assertIn(
+            "scored_context.has_structured_pressure desc",
+            lowered,
+        )
+        self.assertLess(
+            lowered.index(
+                "scored_context.has_structured_pressure desc"
+            ),
+            lowered.index("scored_context.identifier_hits desc"),
         )
 
     def test_fusion_deduplicates_identical_content_across_locations(self):
@@ -883,6 +896,184 @@ class PostgresRuntimeTests(unittest.TestCase):
             [item.evidence.evidence_id for item in results],
             ["duplicate-a"],
         )
+
+    def test_catalog_balance_preserves_distinct_numeric_variants(self):
+        second_source = "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+        context_rows = [
+            {
+                **evidence_row(
+                    "kool-family",
+                    channel="exact",
+                    unit_type="paragraph",
+                    score=1.0,
+                    content=(
+                        "B-KOOL supports MINI-VERTICUS and VERTICUS."
+                    ),
+                ),
+                "reason": "identifier_context:b-kool",
+            },
+            {
+                **evidence_row(
+                    "kool-350",
+                    channel="exact",
+                    unit_type="fact",
+                    score=0.99,
+                    content="B-KOOL maximum pressure: 350 bar.",
+                ),
+                "reason": "identifier_context:b-kool",
+            },
+            {
+                **evidence_row(
+                    "kool-550",
+                    channel="exact",
+                    unit_type="fact",
+                    score=0.98,
+                    content="B-KOOL maximum pressure: 550 bar.",
+                ),
+                "reason": "identifier_context:b-kool",
+            },
+        ]
+        for index in range(5):
+            context_rows.append(
+                {
+                    **evidence_row(
+                        f"select-420-{index}",
+                        channel="exact",
+                        unit_type="fact",
+                        score=0.90 - (index * 0.01),
+                        content=(
+                            "B-SELECT operating pressure: 420 bar; "
+                            f"variant note {index}."
+                        ),
+                        source_id=second_source,
+                        external_file_id="file-public-b",
+                    ),
+                    "reason": "identifier_context:b-select",
+                }
+            )
+        context_rows.append(
+            {
+                **evidence_row(
+                    "select-414",
+                    channel="exact",
+                    unit_type="fact",
+                    score=0.10,
+                    content="B-SELECT operating pressure: 414 bar.",
+                    source_id=second_source,
+                    external_file_id="file-public-b",
+                ),
+                "reason": "identifier_context:b-select",
+            }
+        )
+
+        connection = FakeConnection(
+            {"identifier_context": context_rows}
+        )
+        results = self.make_index(connection).retrieve(
+            analyze_query(
+                "Compare the B-KOOL table and compatible product "
+                "families with B-SELECT technical data.",
+                top_k=8,
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset(
+                {SOURCE_ID, second_source}
+            ),
+        )
+
+        selected = {
+            item.evidence.evidence_id for item in results
+        }
+        self.assertIn("select-414", selected)
+        self.assertIn("select-420-0", selected)
+        self.assertIn("kool-350", selected)
+        self.assertIn("kool-550", selected)
+
+    def test_single_b_select_table_prefers_complete_typed_source(self):
+        complete_source = "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+        context_rows = [
+            {
+                **evidence_row(
+                    f"noisy-{index}",
+                    channel="exact",
+                    unit_type="paragraph",
+                    score=1.0 - (index * 0.01),
+                    content=f"B-SELECT summary {index}: 420 bar.",
+                ),
+                "reason": "identifier_context:b-select",
+            }
+            for index in range(6)
+        ]
+        complete_values = (
+            ("function", "B-SELECT documented functions.", "paragraph"),
+            ("pressure-414", "Operating pressure: 414 bar.", "fact"),
+            ("pressure-420", "Operating pressure: 420 bar.", "fact"),
+            ("adjustment", "Adjustment range starts at 100 bar.", "table_row"),
+            ("flow-50", "At 50 bar the flow is 2,750 l/min.", "table_row"),
+            ("flow-200", "At 200 bar the flow is 3,500 l/min.", "table_row"),
+            ("flow-300", "At 300 bar the flow is 3,700 l/min.", "table_row"),
+            ("table-title", "B-SELECT technical-data table.", "paragraph"),
+            ("row-note", "Preserve distinct product rows.", "paragraph"),
+        )
+        for index, (suffix, content, unit_type) in enumerate(
+            complete_values
+        ):
+            context_rows.append(
+                {
+                    **evidence_row(
+                        f"complete-{suffix}",
+                        channel="exact",
+                        unit_type=unit_type,
+                        score=0.50 - (index * 0.01),
+                        content=content,
+                        source_id=complete_source,
+                        external_file_id="file-public-b",
+                    ),
+                    "reason": "identifier_context:b-select",
+                }
+            )
+
+        connection = FakeConnection(
+            {"identifier_context": context_rows}
+        )
+        results = self.make_index(connection).retrieve(
+            analyze_query(
+                "From the B-SELECT technical-data table and function "
+                "panel, report both operating pressures, adjustment "
+                "ranges, flows, and documented functions.",
+                top_k=8,
+            ),
+            release_id=RELEASE_ID,
+            authorized_source_ids=frozenset(
+                {SOURCE_ID, complete_source}
+            ),
+        )
+
+        combined = "\n".join(
+            item.evidence.content for item in results
+        )
+        self.assertEqual(
+            {
+                item.evidence.source_document_id for item in results
+            },
+            {complete_source},
+        )
+        for expected in (
+            "414",
+            "420",
+            "100",
+            "2,750",
+            "3,500",
+            "3,700",
+            "functions",
+        ):
+            self.assertIn(expected, combined)
+        _, parameters = next(
+            (sql, parameters)
+            for sql, parameters in connection.executions
+            if "v3:channel:identifier_context" in sql
+        )
+        self.assertEqual(parameters[14], 3)
 
     def test_catalog_prose_reservation_prefers_query_coverage(self):
         structured = [

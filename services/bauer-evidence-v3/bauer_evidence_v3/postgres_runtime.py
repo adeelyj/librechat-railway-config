@@ -49,6 +49,14 @@ _CATALOG_FAMILY_EVIDENCE_PATTERN = re.compile(
     r"\b(?:PE-VE|MINI-VERTICUS|VERTICUS)\b",
     flags=re.IGNORECASE,
 )
+_NUMERIC_EVIDENCE_TOKEN_PATTERN = re.compile(
+    r"(?<![A-Za-z])(\d+(?:[.,]\d+)?)\s*"
+    r"(bar|l/min|l\s+min-1|m3/h|kw|rpm)\b",
+    flags=re.IGNORECASE,
+)
+_RAW_NUMERIC_EVIDENCE_TOKEN_PATTERN = re.compile(
+    r"(?<![A-Za-z])\d+(?:[.,]\d+)?(?![A-Za-z])"
+)
 _CONTEXT_STOP_TERMS = frozenset(
     {
         "all",
@@ -195,6 +203,25 @@ def _identifier_context_terms(plan: QueryPlan) -> tuple[str, ...]:
             for token in plan.tokens
             for term in _CONTEXT_TERM_PATTERN.findall(token.casefold())
             if len(term) > 1 and term not in _CONTEXT_STOP_TERMS
+        )
+    )
+
+
+def _numeric_evidence_tokens(content: str) -> frozenset[str]:
+    return frozenset(
+        (
+            f"{match.group(1).replace(',', '.').casefold()}:"
+            f"{match.group(2).casefold()}"
+        )
+        for match in _NUMERIC_EVIDENCE_TOKEN_PATTERN.finditer(content)
+    )
+
+
+def _raw_numeric_evidence_tokens(content: str) -> frozenset[str]:
+    return frozenset(
+        token.replace(",", ".")
+        for token in _RAW_NUMERIC_EVIDENCE_TOKEN_PATTERN.findall(
+            content
         )
     )
 
@@ -484,42 +511,144 @@ LIMIT %s
 """
 
 
-_IDENTIFIER_CONTEXT_SQL = (
-    "/* v3:channel:identifier_context */\n"
-    + _AUTHORIZED_UNITS_CTE
-    + """
-, context_query AS (
+_IDENTIFIER_CONTEXT_AUTHORIZED_UNITS_CTE = _AUTHORIZED_UNITS_CTE.replace(
+    "      AND unit.is_citable",
+    """
+      AND EXISTS (
+          SELECT 1
+          FROM candidate_pages candidate_page
+          WHERE candidate_page.source_document_id =
+                unit.source_id::text
+            AND candidate_page.source_version_id =
+                unit.source_version_id::text
+            AND candidate_page.page_number =
+                coalesce(unit.page_start, 1)
+      )
+      AND unit.is_citable
+""",
+    1,
+).replace(
+    "WITH authorized_units AS (",
+    """
+WITH context_query AS (
     SELECT
         %s::text[] AS identifiers,
-        %s::text[] AS query_terms,
-        %s::boolean AS structured_intent
+        %s::uuid AS release_id,
+        %s::text[] AS source_ids,
+        %s::text[] AS external_file_ids
+),
+candidate_sources AS MATERIALIZED (
+    SELECT
+        exact_term.source_id::text AS source_document_id,
+        exact_term.source_version_id::text AS source_version_id,
+        catalog_identifier.identifier
+    FROM bauer_rag_v3.exact_terms exact_term
+    JOIN bauer_rag_v3.sources source_row
+      ON source_row.source_id = exact_term.source_id
+    CROSS JOIN context_query
+    JOIN LATERAL unnest(
+        context_query.identifiers
+    ) AS catalog_identifier(identifier)
+      ON position(
+          catalog_identifier.identifier
+          IN exact_term.normalized_term
+      ) > 0
+    WHERE exact_term.release_id = context_query.release_id
+      AND (
+          exact_term.source_id::text = ANY (
+              context_query.source_ids
+          )
+          OR source_row.external_file_id = ANY (
+              context_query.external_file_ids
+          )
+      )
+    GROUP BY
+        exact_term.source_id,
+        exact_term.source_version_id,
+        catalog_identifier.identifier
+    UNION
+    SELECT
+        unit.source_id::text AS source_document_id,
+        unit.source_version_id::text AS source_version_id,
+        catalog_identifier.identifier
+    FROM bauer_rag_v3.search_units unit
+    JOIN bauer_rag_v3.sources source_row
+      ON source_row.source_id = unit.source_id
+    CROSS JOIN context_query
+    JOIN LATERAL unnest(
+        context_query.identifiers
+    ) AS catalog_identifier(identifier)
+      ON unit.search_text ILIKE (
+          '%%' || catalog_identifier.identifier || '%%'
+      )
+    WHERE unit.release_id = context_query.release_id
+      AND (
+          unit.source_id::text = ANY (
+              context_query.source_ids
+          )
+          OR source_row.external_file_id = ANY (
+              context_query.external_file_ids
+          )
+      )
+      AND unit.is_citable
+      AND NOT unit.generated_summary
+    GROUP BY
+        unit.source_id,
+        unit.source_version_id,
+        catalog_identifier.identifier
 ),
 anchor_occurrences AS MATERIALIZED (
     SELECT
-        authorized_units.source_document_id,
-        authorized_units.source_version_id,
-        authorized_units.page_number,
-        identifier
-    FROM authorized_units
-    CROSS JOIN context_query
-    CROSS JOIN LATERAL unnest(
-        context_query.identifiers
-    ) AS identifier
+        candidate_source.source_document_id,
+        candidate_source.source_version_id,
+        coalesce(unit.page_start, 1)::integer AS page_number,
+        candidate_source.identifier
+    FROM candidate_sources candidate_source
+    JOIN bauer_rag_v3.search_units unit
+      ON unit.source_id::text =
+         candidate_source.source_document_id
+     AND unit.source_version_id::text =
+         candidate_source.source_version_id
     WHERE position(
-        identifier IN lower(
+        candidate_source.identifier IN lower(
             concat_ws(
                 ' ',
-                authorized_units.search_text,
-                authorized_units.display_text,
-                authorized_units.unit_metadata::text
+                unit.search_text,
+                unit.display_text,
+                unit.metadata::text
             )
         )
     ) > 0
+      AND unit.is_citable
+      AND NOT unit.generated_summary
     GROUP BY
-        authorized_units.source_document_id,
-        authorized_units.source_version_id,
-        authorized_units.page_number,
-        identifier
+        candidate_source.source_document_id,
+        candidate_source.source_version_id,
+        coalesce(unit.page_start, 1),
+        candidate_source.identifier
+),
+candidate_pages AS MATERIALIZED (
+    SELECT DISTINCT
+        anchor_occurrences.source_document_id,
+        anchor_occurrences.source_version_id,
+        anchor_occurrences.page_number
+    FROM anchor_occurrences
+),
+authorized_units AS (
+""",
+    1,
+)
+
+
+_IDENTIFIER_CONTEXT_SQL = (
+    "/* v3:channel:identifier_context */\n"
+    + _IDENTIFIER_CONTEXT_AUTHORIZED_UNITS_CTE
+    + """
+, context_scoring AS (
+    SELECT
+        %s::text[] AS query_terms,
+        %s::boolean AS structured_intent,
+        %s::integer AS anchor_page_limit
 ),
 ranked_anchor_pages AS MATERIALIZED (
     SELECT
@@ -552,11 +681,11 @@ ranked_anchor_pages AS MATERIALIZED (
          anchor_occurrences.source_version_id
      AND page_unit.page_number =
          anchor_occurrences.page_number
-    CROSS JOIN context_query
+    CROSS JOIN context_scoring
     CROSS JOIN LATERAL (
         SELECT count(*)::integer AS query_term_hits
         FROM unnest(
-            context_query.query_terms
+            context_scoring.query_terms
         ) AS query_term
         WHERE position(
             query_term IN lower(
@@ -585,7 +714,9 @@ anchor_pages AS MATERIALIZED (
             ORDER BY ranked_anchor_pages.identifier
         ) AS anchor_identifiers
     FROM ranked_anchor_pages
-    WHERE ranked_anchor_pages.anchor_rank = 1
+    CROSS JOIN context_scoring
+    WHERE ranked_anchor_pages.anchor_rank <=
+          context_scoring.anchor_page_limit
     GROUP BY
         ranked_anchor_pages.source_document_id,
         ranked_anchor_pages.source_version_id,
@@ -597,7 +728,7 @@ scored_context AS (
         anchor_pages.anchor_identifiers,
         (
             SELECT count(*)::integer
-            FROM unnest(context_query.identifiers) AS identifier
+            FROM unnest(anchor_pages.anchor_identifiers) AS identifier
             WHERE position(
                 identifier IN lower(
                     concat_ws(
@@ -611,7 +742,7 @@ scored_context AS (
         ) AS identifier_hits,
         (
             SELECT count(*)::integer
-            FROM unnest(context_query.query_terms) AS query_term
+            FROM unnest(context_scoring.query_terms) AS query_term
             WHERE position(
                 query_term IN lower(
                     concat_ws(
@@ -624,7 +755,21 @@ scored_context AS (
             ) > 0
         ) AS query_term_hits,
         authorized_units.search_text ~ '[0-9]' AS has_number,
-        context_query.structured_intent
+        (
+            context_scoring.structured_intent
+            AND authorized_units.search_text ~ '[0-9]'
+            AND position(
+                'bar' IN lower(
+                    concat_ws(
+                        ' ',
+                        authorized_units.search_text,
+                        authorized_units.display_text,
+                        authorized_units.unit_metadata::text
+                    )
+                )
+            ) > 0
+        ) AS has_structured_pressure,
+        context_scoring.structured_intent
     FROM authorized_units
     JOIN anchor_pages
       ON anchor_pages.source_document_id =
@@ -632,7 +777,7 @@ scored_context AS (
      AND anchor_pages.source_version_id =
          authorized_units.source_version_id
      AND anchor_pages.page_number = authorized_units.page_number
-    CROSS JOIN context_query
+    CROSS JOIN context_scoring
 )
 SELECT
     scored_context.*,
@@ -670,8 +815,9 @@ SELECT
     scored_context.unit_metadata ->> 'unit' AS channel_unit
 FROM scored_context
 ORDER BY
-    scored_context.identifier_hits DESC,
+    scored_context.has_structured_pressure DESC,
     scored_context.query_term_hits DESC,
+    scored_context.identifier_hits DESC,
     scored_context.has_number DESC,
     (
         scored_context.unit_type IN (
@@ -2067,22 +2213,39 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                     )
                     if catalog_identifiers:
                         context_limit = min(
-                            max(plan.top_k * 10, 40),
+                            max(plan.top_k * 20, 80),
                             160,
+                        )
+                        anchor_page_limit = (
+                            3
+                            if (
+                                "b-select"
+                                in catalog_identifiers
+                                and (
+                                    plan.table_intent
+                                    or "function"
+                                    in plan.normalized_query
+                                )
+                            )
+                            else 1
                         )
                         rows.extend(
                             self._fetchall(
                                 connection,
                                 _IDENTIFIER_CONTEXT_SQL,
                                 (
-                                    *base_parameters,
                                     list(catalog_identifiers),
+                                    release_id,
+                                    list(sources),
+                                    list(sources),
+                                    *base_parameters,
                                     list(identifier_context_terms),
                                     bool(
                                         plan.table_intent
                                         or RetrievalChannel.FACT
                                         in plan.channels
                                     ),
+                                    anchor_page_limit,
                                     context_limit,
                                 ),
                             )
@@ -2444,8 +2607,15 @@ class PostgresEvidenceIndex(_PostgresAdapter):
         """Keep multi-product catalogue comparisons balanced across anchors."""
 
         identifiers = _catalog_identifiers(plan)
+        single_b_select_table = (
+            identifiers == ("b-select",)
+            and (
+                plan.table_intent
+                or "function" in plan.normalized_query
+            )
+        )
         if (
-            len(identifiers) < 2
+            (len(identifiers) < 2 and not single_b_select_table)
             or len(ranked_results) <= plan.top_k
             or plan.top_k < len(identifiers)
         ):
@@ -2475,8 +2645,17 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             item.evidence.evidence_id: rank
             for rank, item in enumerate(ranked_results)
         }
+        query_terms = _identifier_context_terms(plan)
+        family_context_requested = (
+            "famil" in plan.normalized_query
+            or "compatible" in plan.normalized_query
+        )
         source_options: dict[str, list[str]] = {}
         source_best_rank: dict[tuple[str, str], int] = {}
+        source_cost: dict[
+            tuple[str, str],
+            tuple[int, int, int, int, int],
+        ] = {}
         for identifier in identifiers:
             options: list[str] = []
             for item in buckets[identifier]:
@@ -2488,13 +2667,78 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                 if source_id not in options:
                     options.append(source_id)
             source_options[identifier] = options[:8]
+            for source_id in source_options[identifier]:
+                source_items = [
+                    item
+                    for item in buckets[identifier]
+                    if item.evidence.source_document_id == source_id
+                ]
+                numeric_tokens = {
+                    token
+                    for item in source_items
+                    for token in _numeric_evidence_tokens(
+                        item.evidence.content
+                    )
+                }
+                covered_query_terms = {
+                    term
+                    for item in source_items
+                    for term in query_terms
+                    if term in normalize_text(item.evidence.content)
+                }
+                family_present = family_context_requested and any(
+                    _CATALOG_FAMILY_EVIDENCE_PATTERN.search(
+                        item.evidence.content
+                    )
+                    for item in source_items
+                )
+                structured_count = sum(
+                    unit_type_by_id.get(
+                        item.evidence.evidence_id
+                    )
+                    in _STRUCTURED_TYPES
+                    for item in source_items
+                )
+                function_present = any(
+                    "function"
+                    in normalize_text(item.evidence.content)
+                    for item in source_items
+                )
+                if single_b_select_table:
+                    source_cost[(identifier, source_id)] = (
+                        -int(function_present),
+                        -min(len(covered_query_terms), 50),
+                        -min(len(numeric_tokens), 20),
+                        -min(structured_count, 20),
+                        source_best_rank[(identifier, source_id)],
+                    )
+                else:
+                    pressure_token_count = sum(
+                        token.endswith(":bar")
+                        for token in numeric_tokens
+                    )
+                    context_quality = min(
+                        (structured_count * 10)
+                        + len(covered_query_terms),
+                        1_000,
+                    )
+                    source_cost[(identifier, source_id)] = (
+                        -int(family_present),
+                        -min(pressure_token_count, 20),
+                        -min(len(numeric_tokens), 20),
+                        -context_quality,
+                        source_best_rank[(identifier, source_id)],
+                    )
 
-        best_assignment: tuple[int, tuple[str, ...]] | None = None
+        best_assignment: tuple[
+            tuple[int, int, int, int, int],
+            tuple[str, ...],
+        ] | None = None
 
         def visit_sources(
             index: int,
             used_sources: frozenset[str],
-            score: int,
+            score: tuple[int, int, int, int, int],
             assignment: tuple[str, ...],
         ) -> None:
             nonlocal best_assignment
@@ -2510,12 +2754,17 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                 visit_sources(
                     index + 1,
                     used_sources.union({source_id}),
-                    score
-                    + source_best_rank[(identifier, source_id)],
+                    tuple(
+                        current + cost
+                        for current, cost in zip(
+                            score,
+                            source_cost[(identifier, source_id)],
+                        )
+                    ),
                     (*assignment, source_id),
                 )
 
-        visit_sources(0, frozenset(), 0, ())
+        visit_sources(0, frozenset(), (0, 0, 0, 0, 0), ())
         assigned_sources = (
             dict(zip(identifiers, best_assignment[1]))
             if best_assignment is not None
@@ -2524,11 +2773,6 @@ class PostgresEvidenceIndex(_PostgresAdapter):
 
         quota = max(1, plan.top_k // len(identifiers))
         selected_ids: set[str] = set()
-        query_terms = _identifier_context_terms(plan)
-        family_context_requested = (
-            "famil" in plan.normalized_query
-            or "compatible" in plan.normalized_query
-        )
         for identifier in identifiers:
             added = 0
             assigned_source = assigned_sources.get(identifier)
@@ -2555,19 +2799,148 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                 )
                 if family_item is not None:
                     priority.append(family_item)
-            structured_item = next(
-                (
-                    item
-                    for item in candidates
-                    if unit_type_by_id.get(
+            if "function" in plan.normalized_query:
+                function_item = min(
+                    (
+                        item
+                        for item in candidates
+                        if "function" in normalize_text(
+                            item.evidence.content
+                        )
+                    ),
+                    key=lambda item: result_rank[
                         item.evidence.evidence_id
-                    )
-                    in _STRUCTURED_TYPES
-                ),
-                None,
+                    ],
+                    default=None,
+                )
+                if function_item is not None:
+                    priority.append(function_item)
+            for concept in ("operating", "adjust"):
+                if concept not in plan.normalized_query:
+                    continue
+                concept_item = min(
+                    (
+                        item
+                        for item in candidates
+                        if concept in normalize_text(
+                            item.evidence.content
+                        )
+                    ),
+                    key=lambda item: (
+                        -sum(
+                            term
+                            in normalize_text(
+                                item.evidence.content
+                            )
+                            for term in query_terms
+                        ),
+                        -len(
+                            _raw_numeric_evidence_tokens(
+                                item.evidence.content
+                            )
+                        ),
+                        result_rank[item.evidence.evidence_id],
+                    ),
+                    default=None,
+                )
+                if concept_item is not None:
+                    priority.append(concept_item)
+            structured_items = [
+                item
+                for item in candidates
+                if unit_type_by_id.get(
+                    item.evidence.evidence_id
+                )
+                in _STRUCTURED_TYPES
+            ]
+            structured_items.sort(
+                key=lambda item: (
+                    -sum(
+                        term
+                        in normalize_text(item.evidence.content)
+                        for term in query_terms
+                    ),
+                    result_rank[item.evidence.evidence_id],
+                )
             )
-            if structured_item is not None:
-                priority.append(structured_item)
+            seen_numeric_tokens: set[str] = set()
+            structured_priority_added = False
+            for item in structured_items:
+                numeric_tokens = _numeric_evidence_tokens(
+                    item.evidence.content
+                )
+                if (
+                    not structured_priority_added
+                    or (
+                        numeric_tokens
+                        and not numeric_tokens.issubset(
+                            seen_numeric_tokens
+                        )
+                    )
+                ):
+                    priority.append(item)
+                    structured_priority_added = True
+                    seen_numeric_tokens.update(numeric_tokens)
+            if "pressure" in plan.normalized_query:
+                pressure_items = [
+                    (
+                        max(
+                            float(token.removesuffix(":bar"))
+                            for token in _numeric_evidence_tokens(
+                                item.evidence.content
+                            )
+                            if token.endswith(":bar")
+                        ),
+                        item,
+                    )
+                    for item in candidates
+                    if any(
+                        token.endswith(":bar")
+                        for token in _numeric_evidence_tokens(
+                            item.evidence.content
+                        )
+                    )
+                ]
+                pressure_items.sort(
+                    key=lambda value: (
+                        -value[0],
+                        -len(
+                            _raw_numeric_evidence_tokens(
+                                value[1].evidence.content
+                            )
+                        ),
+                        -sum(
+                            term
+                            in normalize_text(
+                                value[1].evidence.content
+                            )
+                            for term in query_terms
+                        ),
+                        result_rank[value[1].evidence.evidence_id],
+                    )
+                )
+                seen_pressure_tokens = {
+                    token
+                    for item in priority
+                    for token in _numeric_evidence_tokens(
+                        item.evidence.content
+                    )
+                    if token.endswith(":bar")
+                }
+                for _, item in pressure_items:
+                    pressure_tokens = {
+                        token
+                        for token in _numeric_evidence_tokens(
+                            item.evidence.content
+                        )
+                        if token.endswith(":bar")
+                    }
+                    if pressure_tokens.issubset(
+                        seen_pressure_tokens
+                    ):
+                        continue
+                    priority.append(item)
+                    seen_pressure_tokens.update(pressure_tokens)
             if query_terms:
                 priority.append(
                     min(
