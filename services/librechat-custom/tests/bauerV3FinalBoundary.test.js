@@ -80,7 +80,8 @@ test('allow-listed V3 Agents end on file_search and materialize only validated t
     }),
     true,
   );
-  assert.equal(primaryConfig.toolEnd, true);
+  assert.equal(primaryConfig.bauerV3DirectFinal, true);
+  assert.equal(primaryConfig.toolEnd, undefined);
   await eventHandlers.on_message_delta.handle();
   await eventHandlers.on_reasoning_delta.handle();
   boundary.sealGraph({ primaryConfig, agentConfigs: new Map() });
@@ -225,7 +226,7 @@ test('non-V3 Agents retain normal callbacks and client behavior', async () => {
     false,
   );
   assert.equal(eventHandlers.on_message_delta, originalMessageHandler);
-  assert.equal(primaryConfig.toolEnd, undefined);
+  assert.equal(primaryConfig.bauerV3DirectFinal, undefined);
   await boundary.toolEndCallback({}, {});
   assert.equal(baseCalled, true);
 

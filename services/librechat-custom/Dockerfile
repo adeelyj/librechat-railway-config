@@ -13,5 +13,10 @@ COPY v3Authorization.js /app/api/app/clients/tools/util/v3Authorization.js
 COPY fileSearch.js /app/api/app/clients/tools/util/fileSearch.js
 COPY bauerV3FinalBoundary.js /app/api/server/services/Endpoints/agents/bauerV3FinalBoundary.js
 COPY patchBauerV3FinalBoundary.js /tmp/patchBauerV3FinalBoundary.js
+COPY patchBauerV3RunGraph.js /tmp/patchBauerV3RunGraph.js
 RUN node /tmp/patchBauerV3FinalBoundary.js /app/api/server/services/Endpoints/agents/initialize.js \
     && echo "3586ebdfefdc44c07eac5d5b4b2ff94988a02a03911cb54202377bf2ccc77d85  /app/api/server/services/Endpoints/agents/initialize.js" | sha256sum -c -
+RUN node /tmp/patchBauerV3RunGraph.js /app/packages/api/src/agents/run.ts \
+    && echo "47ee73d480aa79c7597b7d50b96a2ce39c918473b2e6a6525ac73599c92d556f  /app/packages/api/src/agents/run.ts" | sha256sum -c - \
+    && cd /app/packages/api \
+    && npm run build

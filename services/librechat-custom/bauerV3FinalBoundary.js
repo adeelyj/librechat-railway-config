@@ -107,7 +107,10 @@ const createBauerV3FinalBoundary = ({
       throw new Error('Bauer V3 final boundary requires an initialized Agent and handlers');
     }
 
-    primaryConfig.toolEnd = true;
+    // `@librechat/api` intentionally propagates this private marker to the
+    // standard graph's `toolEnd` option. Keep the marker V3-specific so no
+    // persisted or unrelated Agent field can opt into the direct-final path.
+    primaryConfig.bauerV3DirectFinal = true;
     eventHandlers.on_message_delta = { handle: async () => {} };
     eventHandlers.on_reasoning_delta = { handle: async () => {} };
     return true;
