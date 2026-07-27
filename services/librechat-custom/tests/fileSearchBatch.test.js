@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const {
   MAX_BATCH_FILES,
   MAX_VISIBLE_USER_FILES,
+  MAX_V3_QUERY_CHARS,
   buildFileSearchContext,
   createBatchGroups,
   createBatchQueryBody,
@@ -12,6 +13,7 @@ const {
   normalizeBatchResults,
   normalizeV3Answer,
   parseIdAllowlist,
+  resolveV3RequestQuery,
   sanitizeVisibleFilename,
   selectFileSearchRoute,
 } = require('../fileSearchBatch');
@@ -129,6 +131,45 @@ test('V3 Agent allow-list is additive and takes precedence over V2', () => {
     query: 'BM 40 pressure',
     top_k: 8,
   });
+});
+
+test('V3 uses the complete original request while V1/V2 retain the tool query', () => {
+  const original =
+    'Compare B-KOOL and B-SELECT, preserving every requested pressure and product row.';
+  assert.equal(
+    resolveV3RequestQuery({
+      route: 'v3',
+      toolQuery: 'B-KOOL pressure',
+      requestBody: { text: `  ${original}  ` },
+    }),
+    original,
+  );
+  assert.equal(
+    resolveV3RequestQuery({
+      route: 'v2',
+      toolQuery: 'B-KOOL pressure',
+      requestBody: { text: original },
+    }),
+    'B-KOOL pressure',
+  );
+  assert.throws(
+    () =>
+      resolveV3RequestQuery({
+        route: 'v3',
+        toolQuery: 'shortened',
+        requestBody: {},
+      }),
+    /original user request/,
+  );
+  assert.throws(
+    () =>
+      resolveV3RequestQuery({
+        route: 'v3',
+        toolQuery: 'shortened',
+        requestBody: { text: 'x'.repeat(MAX_V3_QUERY_CHARS + 1) },
+      }),
+    /at most 4000/,
+  );
 });
 
 test('V2 query bodies stay bounded and never request debug output', () => {

@@ -14,6 +14,7 @@ const {
   createV3AnswerBody,
   normalizeBatchResults,
   normalizeV3Answer,
+  resolveV3RequestQuery,
   selectFileSearchRoute,
 } = require('./fileSearchBatch');
 
@@ -77,10 +78,17 @@ const primeFiles = async (options) => {
  * @param {string} options.userId
  * @param {Array<{ file_id: string; filename: string; fromAgent?: boolean }>} options.files
  * @param {string} [options.entity_id]
+ * @param {ServerRequest} [options.req]
  * @param {boolean} [options.fileCitations=false] - Whether to include citation instructions
  * @returns
  */
-const createFileSearchTool = async ({ userId, files, entity_id, fileCitations = false }) => {
+const createFileSearchTool = async ({
+  userId,
+  files,
+  entity_id,
+  req,
+  fileCitations = false,
+}) => {
   return tool(
     async ({ query }) => {
       if (files.length === 0) {
@@ -96,6 +104,11 @@ const createFileSearchTool = async ({ userId, files, entity_id, fileCitations = 
       }
 
       const agentRoute = selectFileSearchRoute(entity_id);
+      const effectiveQuery = resolveV3RequestQuery({
+        route: agentRoute,
+        toolQuery: query,
+        requestBody: req?.body,
+      });
       if (agentRoute === 'v3') {
         // A V3 answer is valid only for the evidence package V3 validated. Do not
         // mix uncompiled conversation-file results into the same final answer.
@@ -114,7 +127,7 @@ const createFileSearchTool = async ({ userId, files, entity_id, fileCitations = 
           route === 'v3' ? '/v3/answer' : route === 'v2' ? '/query_v2' : '/query_multiple';
         const body =
           route === 'v3'
-            ? createV3AnswerBody(query)
+            ? createV3AnswerBody(effectiveQuery)
             : route === 'v2'
               ? createV2QueryBody(group, query)
               : createBatchQueryBody(group, query);

@@ -2,6 +2,7 @@ const DEFAULT_BATCH_K = 10;
 const MAX_BATCH_FILES = 1000;
 const MAX_VISIBLE_USER_FILES = 10;
 const MAX_VISIBLE_FILENAME_CHARS = 160;
+const MAX_V3_QUERY_CHARS = 4000;
 const V3_ANSWERED_STATUSES = new Set(['answered', 'answered_after_repair']);
 const V3_REFUSAL_STATUSES = new Set(['refused_no_evidence', 'refused_after_validation']);
 
@@ -128,6 +129,23 @@ const createV3AnswerBody = (query, topK = 8) => ({
   query,
   top_k: topK,
 });
+
+const resolveV3RequestQuery = ({ route, toolQuery, requestBody }) => {
+  if (route !== 'v3') {
+    return toolQuery;
+  }
+  const originalUserText =
+    typeof requestBody?.text === 'string' ? requestBody.text.trim() : '';
+  if (!originalUserText) {
+    throw new Error('V3 file_search requires the original user request');
+  }
+  if (originalUserText.length > MAX_V3_QUERY_CHARS) {
+    throw new Error(
+      `V3 file_search supports at most ${MAX_V3_QUERY_CHARS} query characters`,
+    );
+  }
+  return originalUserText;
+};
 
 const normalizeV3Answer = (response, files) => {
   const body = response?.data;
@@ -316,6 +334,7 @@ module.exports = {
   DEFAULT_BATCH_K,
   MAX_BATCH_FILES,
   MAX_VISIBLE_USER_FILES,
+  MAX_V3_QUERY_CHARS,
   buildFileSearchContext,
   createBatchGroups,
   createBatchQueryBody,
@@ -325,6 +344,7 @@ module.exports = {
   normalizeV3Answer,
   parseIdAllowlist,
   partitionFiles,
+  resolveV3RequestQuery,
   sanitizeVisibleFilename,
   selectFileSearchRoute,
 };
