@@ -501,6 +501,7 @@ class PostgresRuntimeTests(unittest.TestCase):
         ]
         self.assertEqual(len(context_calls), 1)
         self.assertEqual(context_calls[0][0], ["b-kool"])
+        self.assertIn("refrigeration dryer", context_calls[0][12])
 
     def make_registry(self, connection):
         return PostgresReleaseRegistry(

@@ -286,7 +286,7 @@ def _discovered_catalog_identifiers(
     context_relevance: dict[str, int] = defaultdict(int)
     query_terms = tuple(
         term
-        for term in _identifier_context_terms(plan)
+        for term in _identifier_relevance_terms(plan)
         if len(term) >= 4
     )
     for channel in (
@@ -519,6 +519,19 @@ def _lexical_query_terms(plan: QueryPlan) -> tuple[str, ...]:
     return (
         tuple(dict.fromkeys((*anchors, *ordered)))[:8]
         or (plan.normalized_query,)
+    )
+
+
+def _identifier_relevance_terms(plan: QueryPlan) -> tuple[str, ...]:
+    """Keep strong multiword anchors when ranking identifier context."""
+
+    return tuple(
+        dict.fromkeys(
+            (
+                *_lexical_query_terms(plan),
+                *_identifier_context_terms(plan),
+            )
+        )
     )
 
 
@@ -2816,7 +2829,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
         )
         requested_physical_pages = _requested_physical_pages(plan)
         catalog_identifiers = _catalog_identifiers(plan)
-        identifier_context_terms = _identifier_context_terms(plan)
+        identifier_context_terms = _identifier_relevance_terms(plan)
         required_numeric_groups = _required_numeric_groups(plan)
         named_family_terms = _named_family_terms(plan)
         forbidden_numeric_constraints = [
@@ -3084,7 +3097,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                         list(sources),
                         list(sources),
                         *base_parameters,
-                        list(_identifier_context_terms(plan)),
+                        list(identifier_context_terms),
                         bool(
                             plan.table_intent
                             or RetrievalChannel.FACT in plan.channels
@@ -3488,7 +3501,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             item.evidence.evidence_id: rank
             for rank, item in enumerate(ranked_results)
         }
-        query_terms = _identifier_context_terms(plan)
+        query_terms = _identifier_relevance_terms(plan)
         family_context_requested = (
             "famil" in plan.normalized_query
             or "compatible" in plan.normalized_query
@@ -3934,7 +3947,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
             if unit_type_by_id.get(item.evidence.evidence_id)
             not in _STRUCTURED_TYPES
         ]
-        context_terms = _identifier_context_terms(plan)
+        context_terms = _identifier_relevance_terms(plan)
         if _catalog_identifiers(plan) and context_terms:
             original_rank = {
                 item.evidence.evidence_id: rank
