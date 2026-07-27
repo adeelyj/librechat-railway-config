@@ -62,7 +62,8 @@ _IDENTIFIER_RE = re.compile(
 _SAFE_REFUSAL_RE = re.compile(
     r"\b(?:not established|not found|not supported|unsupported|does not support|"
     r"does not establish|does not contain|not present|"
-    r"not documented|no evidence|no compatible|no matching|insufficient evidence|"
+    r"not documented|no evidence|no (?:specific )?mention|"
+    r"no compatible|no matching|insufficient evidence|"
     r"cannot confirm|cannot determine|unable to confirm|nicht belegt|nicht gefunden|"
     r"nicht bestätigt|keine ausreichenden belege|kein kompatib\w*)\b",
     re.IGNORECASE,

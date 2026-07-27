@@ -519,6 +519,31 @@ class ValidatorTests(unittest.TestCase):
         self.assertTrue(result.valid)
         self.assertTrue(result.safe_refusal_detected)
 
+    def test_safe_refusal_accepts_no_specific_mention_wording(self) -> None:
+        question = (
+            "Does B-SAFE establish a 375 bar filling pressure for Argon?"
+        )
+        plan = analyze_query(question)
+        package = EvidencePackage(
+            release_id=self.package.release_id,
+            tenant_id=self.package.tenant_id,
+            knowledge_base_id=self.package.knowledge_base_id,
+            question=question,
+            citations=self.package.citations,
+            truncated=False,
+        )
+        result = validate_answer(
+            answer=(
+                "No specific mention of Argon or a 375 bar filling pressure "
+                "is provided."
+            ),
+            package=package,
+            plan=plan,
+        )
+
+        self.assertTrue(result.valid)
+        self.assertTrue(result.safe_refusal_detected)
+
     def test_question_terms_are_context_only_when_present_in_evidence(self) -> None:
         product_context = replace(
             self.citation,
