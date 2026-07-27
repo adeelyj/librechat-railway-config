@@ -544,6 +544,54 @@ class ValidatorTests(unittest.TestCase):
         self.assertTrue(result.valid)
         self.assertTrue(result.safe_refusal_detected)
 
+    def test_installed_matches_installation_without_weakening_compatibility(
+        self,
+    ) -> None:
+        installation = replace(
+            self.citation,
+            content=(
+                "B-KOOL installation directly on top of PE-VE, "
+                "MINI-VERTICUS, and VERTICUS units; also available "
+                "as a standalone version."
+            ),
+            table_headers=(),
+            table_values=(),
+        )
+        question = "Which units allow the documented B-KOOL installation?"
+        package = EvidencePackage(
+            release_id=self.package.release_id,
+            tenant_id=self.package.tenant_id,
+            knowledge_base_id=self.package.knowledge_base_id,
+            question=question,
+            citations=(installation,),
+            truncated=False,
+        )
+        plan = analyze_query(question)
+
+        valid = validate_answer(
+            answer=(
+                "B-KOOL is installed directly on top of PE-VE, "
+                "MINI-VERTICUS, and VERTICUS units "
+                "[E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=plan,
+        )
+        invalid = validate_answer(
+            answer=(
+                "B-KOOL is compatible with PE-VE, MINI-VERTICUS, "
+                "and VERTICUS units [E-ABCDEF123456]."
+            ),
+            package=package,
+            plan=plan,
+        )
+
+        self.assertTrue(valid.valid)
+        self.assertIn(
+            "unsupported_factual_claim",
+            {item.code for item in invalid.violations},
+        )
+
     def test_question_terms_are_context_only_when_present_in_evidence(self) -> None:
         product_context = replace(
             self.citation,
