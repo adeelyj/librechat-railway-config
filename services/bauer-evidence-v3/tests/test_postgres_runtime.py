@@ -20,6 +20,7 @@ from bauer_evidence_v3.postgres_runtime import (  # noqa: E402
     PostgresEvidenceIndex,
     PostgresReleaseRegistry,
     PostgresValidationReleaseRegistry,
+    _lexical_query_terms,
     _numeric_evidence_tokens,
     _discovered_catalog_identifiers,
 )
@@ -224,6 +225,18 @@ def evidence_row(
 
 
 class PostgresRuntimeTests(unittest.TestCase):
+    def test_lexical_query_terms_are_bounded_and_prefer_specific_anchors(self):
+        plan = analyze_query(
+            "Compare the Bauer BM series at 40 bar and 100 bar. "
+            "Report free-air-delivery and motor-power around 800 l/min."
+        )
+        terms = _lexical_query_terms(plan)
+        self.assertLessEqual(len(terms), 8)
+        self.assertIn("bm", terms)
+        self.assertIn("free-air-delivery", terms)
+        self.assertIn("motor-power", terms)
+        self.assertIn("800", terms)
+
     def test_shared_unit_numeric_tokens_preserve_each_value(self):
         self.assertEqual(
             _numeric_evidence_tokens(
@@ -662,7 +675,16 @@ class PostgresRuntimeTests(unittest.TestCase):
                         lowered,
                     )
                     self.assertIn(
-                        "order by raw_score desc, unit.search_unit_id "
+                        "fts_units as materialized",
+                        lowered,
+                    )
+                    self.assertIn(
+                        "unit.search_vector @@ lexical_query.token_query",
+                        lowered,
+                    )
+                    self.assertIn(
+                        "order by candidate.raw_score desc, "
+                        "candidate.search_unit_id "
                         "limit %s",
                         lowered,
                     )
@@ -1496,7 +1518,10 @@ class PostgresRuntimeTests(unittest.TestCase):
             else:
                 self.assertIn("jsonb_each(%s::jsonb)", sql)
                 self.assertIn("unnest(%s::text[])", sql)
-            self.assertIn("unit.metadata::text", sql)
+            if "v3:channel:lexical" in sql:
+                self.assertIn("candidate.metadata::text", sql)
+            else:
+                self.assertIn("unit.metadata::text", sql)
 
     def test_numeric_mandatory_alternatives_and_forbidden_values_are_typed(
         self,

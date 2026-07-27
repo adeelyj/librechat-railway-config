@@ -67,6 +67,29 @@ _SHARED_NUMERIC_EVIDENCE_TOKEN_PATTERN = re.compile(
 _RAW_NUMERIC_EVIDENCE_TOKEN_PATTERN = re.compile(
     r"(?<![A-Za-z])\d+(?:[.,]\d+)?(?![A-Za-z])"
 )
+
+_LEXICAL_NOISE_TERMS = frozenset(
+    {
+        "approximately",
+        "based",
+        "both",
+        "cite",
+        "documents",
+        "each",
+        "exact",
+        "explain",
+        "find",
+        "give",
+        "only",
+        "public",
+        "report",
+        "requirement",
+        "source",
+        "sources",
+        "supporting",
+        "uploaded",
+    }
+)
 _CONTEXT_STOP_TERMS = frozenset(
     {
         "all",
@@ -321,6 +344,44 @@ def _raw_numeric_evidence_tokens(content: str) -> frozenset[str]:
             content
         )
     )
+
+
+def _lexical_query_terms(plan: QueryPlan) -> tuple[str, ...]:
+    weighted: list[tuple[int, int, str]] = []
+    for position, value in enumerate(plan.tokens):
+        normalized = normalize_text(value).strip(".")
+        if (
+            not normalized
+            or normalized in _LEXICAL_NOISE_TERMS
+            or (
+                len(normalized) < 3
+                and not any(ch.isdigit() for ch in normalized)
+                and normalized not in {"bm", "gi", "pe"}
+            )
+        ):
+            continue
+        score = len(normalized)
+        if any(ch.isdigit() for ch in normalized):
+            score += 100
+        if "-" in normalized or "/" in normalized:
+            score += 80
+        if normalized in {"bm", "gi", "gib", "pe"}:
+            score += 90
+        if normalized in {
+            "capacity",
+            "delivery",
+            "medium",
+            "power",
+            "pressure",
+            "temperature",
+        }:
+            score += 50
+        weighted.append((score, -position, normalized))
+    ordered = [
+        value
+        for _score, _position, value in sorted(weighted, reverse=True)
+    ]
+    return tuple(dict.fromkeys(ordered))[:8] or (plan.normalized_query,)
 
 
 _AUTHORIZED_UNITS_CTE = """
@@ -1424,35 +1485,47 @@ WITH request_scope AS (
         %s::text[] AS forbidden_claim_values
 ),
 lexical_query AS (
-    SELECT %s::text AS query_text
+    SELECT
+        %s::text AS query_text,
+        websearch_to_tsquery(
+            'simple',
+            array_to_string(%s::text[], ' OR ')
+        ) AS token_query
 ),
-matched_units AS MATERIALIZED (
+fts_units AS MATERIALIZED (
     SELECT
         unit.search_unit_id,
-        greatest(
-            ts_rank_cd(
-                unit.search_vector,
-                websearch_to_tsquery('simple', lexical_query.query_text)
-            ),
-            similarity(
-                lower(unit.search_text),
-                lexical_query.query_text
-            )
+        unit.source_id,
+        unit.kb_id,
+        unit.search_text,
+        unit.display_text,
+        unit.metadata,
+        ts_rank_cd(
+            unit.search_vector,
+            lexical_query.token_query
         )::double precision AS raw_score
     FROM bauer_rag_v3.search_units unit
-    JOIN bauer_rag_v3.sources source_scope
-      ON source_scope.source_id = unit.source_id
-     AND source_scope.kb_id = unit.kb_id
     CROSS JOIN request_scope request
     CROSS JOIN lexical_query
     WHERE unit.release_id = request.release_id
-      AND (
+      AND unit.is_citable
+      AND NOT unit.generated_summary
+      AND unit.search_vector @@ lexical_query.token_query
+),
+matched_units AS MATERIALIZED (
+    SELECT
+        candidate.search_unit_id,
+        candidate.raw_score
+    FROM fts_units candidate
+    JOIN bauer_rag_v3.sources source_scope
+      ON source_scope.source_id = candidate.source_id
+     AND source_scope.kb_id = candidate.kb_id
+    CROSS JOIN request_scope request
+    WHERE (
           source_scope.source_id::text = ANY (request.source_ids)
           OR source_scope.external_file_id =
               ANY (request.external_file_ids)
       )
-      AND unit.is_citable
-      AND NOT unit.generated_summary
       AND NOT EXISTS (
           SELECT 1
           FROM jsonb_each(request.mandatory_text_constraints)
@@ -1466,9 +1539,9 @@ matched_units AS MATERIALIZED (
                   allowed_value.value IN lower(
                       concat_ws(
                           ' ',
-                          unit.search_text,
-                          unit.display_text,
-                          unit.metadata::text
+                          candidate.search_text,
+                          candidate.display_text,
+                          candidate.metadata::text
                       )
                   )
               ) > 0
@@ -1482,23 +1555,23 @@ matched_units AS MATERIALIZED (
               forbidden_value.value IN lower(
                   concat_ws(
                       ' ',
-                      unit.search_text,
-                      unit.display_text,
-                      unit.metadata::text
+                      candidate.search_text,
+                      candidate.display_text,
+                      candidate.metadata::text
                   )
               )
           ) > 0
       )
-      AND (
-          unit.search_vector @@
-              websearch_to_tsquery('simple', lexical_query.query_text)
-          OR similarity(
-              lower(unit.search_text),
-              lexical_query.query_text
-          ) > 0.05
-      )
-    ORDER BY raw_score DESC, unit.search_unit_id
+    ORDER BY candidate.raw_score DESC, candidate.search_unit_id
     LIMIT %s
+),
+selected_units AS MATERIALIZED (
+    SELECT
+        unit.*,
+        matched.raw_score
+    FROM matched_units matched
+    JOIN bauer_rag_v3.search_units unit
+      ON unit.search_unit_id = matched.search_unit_id
 )
 SELECT
     unit.search_unit_id::text AS evidence_id,
@@ -1536,13 +1609,11 @@ SELECT
     NULL::double precision AS y1,
     unit.artifact_set_id,
     unit.primary_provenance_id,
-    matched.raw_score,
+    unit.raw_score,
     'lexical'::text AS channel,
-    'fts_trigram'::text AS reason,
+    'fts_ranked'::text AS reason,
     unit.metadata ->> 'unit' AS channel_unit
-FROM matched_units matched
-JOIN bauer_rag_v3.search_units unit
-  ON unit.search_unit_id = matched.search_unit_id
+FROM selected_units unit
 CROSS JOIN request_scope request
 JOIN bauer_rag_v3.release_sources member
   ON member.release_id = unit.release_id
@@ -1568,7 +1639,7 @@ WHERE unit.release_id = request.release_id
       source_row.source_id::text = ANY (request.source_ids)
       OR source_row.external_file_id = ANY (request.external_file_ids)
   )
-ORDER BY matched.raw_score DESC, evidence_id
+ORDER BY unit.raw_score DESC, evidence_id
 """
 
 
@@ -1658,6 +1729,14 @@ matched_units AS MATERIALIZED (
       )
     ORDER BY raw_score DESC, unit.search_unit_id
     LIMIT %s
+),
+selected_units AS MATERIALIZED (
+    SELECT
+        unit.*,
+        matched.raw_score
+    FROM matched_units matched
+    JOIN bauer_rag_v3.search_units unit
+      ON unit.search_unit_id = matched.search_unit_id
 )
 SELECT
     unit.search_unit_id::text AS evidence_id,
@@ -1695,13 +1774,11 @@ SELECT
     NULL::double precision AS y1,
     unit.artifact_set_id,
     unit.primary_provenance_id,
-    matched.raw_score,
+    unit.raw_score,
     'semantic'::text AS channel,
     'vector_cosine'::text AS reason,
     unit.metadata ->> 'unit' AS channel_unit
-FROM matched_units matched
-JOIN bauer_rag_v3.search_units unit
-  ON unit.search_unit_id = matched.search_unit_id
+FROM selected_units unit
 CROSS JOIN request_scope request
 JOIN bauer_rag_v3.release_sources member
   ON member.release_id = unit.release_id
@@ -1727,7 +1804,7 @@ WHERE unit.release_id = request.release_id
       source_row.source_id::text = ANY (request.source_ids)
       OR source_row.external_file_id = ANY (request.external_file_ids)
   )
-ORDER BY matched.raw_score DESC, evidence_id
+ORDER BY unit.raw_score DESC, evidence_id
 """
 
 
@@ -2556,6 +2633,7 @@ class PostgresEvidenceIndex(_PostgresAdapter):
                         (
                             *base_parameters,
                             plan.normalized_query,
+                            list(_lexical_query_terms(plan)),
                             channel_limit,
                         ),
                     )
