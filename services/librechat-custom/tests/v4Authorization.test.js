@@ -43,3 +43,42 @@ test('V4 authorization fails closed when V4 signing material is absent', () => {
     /at least 32 bytes/,
   );
 });
+
+test('V4 authorization may reuse the sealed V3 key with a distinct audience', () => {
+  const previousKeyId = process.env.BAUER_V3_AUTH_KEY_ID;
+  const previousSigningKey = process.env.BAUER_V3_AUTH_SIGNING_KEY;
+  process.env.BAUER_V3_AUTH_KEY_ID = 'shared-current';
+  process.env.BAUER_V3_AUTH_SIGNING_KEY =
+    'shared-bauer-signing-key-material-000001';
+  try {
+    const token = createV4AuthorizationContext({
+      userId: 'user-1',
+      agentId: 'agent-v4',
+      sourceIds: ['file-a'],
+      tenantId: 'tenant-v4',
+      knowledgeBaseId: 'kb-v4',
+      audience: 'bauer-evidence-v4',
+      nowSeconds: 2000,
+      ttlSeconds: 120,
+    });
+    const claims = JSON.parse(
+      Buffer.from(token.split('.')[1], 'base64url').toString('utf8'),
+    );
+    const header = JSON.parse(
+      Buffer.from(token.split('.')[0], 'base64url').toString('utf8'),
+    );
+    assert.equal(header.kid, 'shared-current');
+    assert.equal(claims.audience, 'bauer-evidence-v4');
+  } finally {
+    if (previousKeyId === undefined) {
+      delete process.env.BAUER_V3_AUTH_KEY_ID;
+    } else {
+      process.env.BAUER_V3_AUTH_KEY_ID = previousKeyId;
+    }
+    if (previousSigningKey === undefined) {
+      delete process.env.BAUER_V3_AUTH_SIGNING_KEY;
+    } else {
+      process.env.BAUER_V3_AUTH_SIGNING_KEY = previousSigningKey;
+    }
+  }
+});

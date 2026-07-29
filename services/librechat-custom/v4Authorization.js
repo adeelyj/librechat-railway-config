@@ -14,8 +14,12 @@ const createV4AuthorizationContext = ({
   tenantId = process.env.BAUER_V4_TENANT_ID,
   knowledgeBaseId = process.env.BAUER_V4_KB_ID,
   audience = process.env.BAUER_V4_AUTH_AUDIENCE || 'bauer-evidence-v4',
-  keyId = process.env.BAUER_V4_AUTH_KEY_ID,
-  signingKey = process.env.BAUER_V4_AUTH_SIGNING_KEY,
+  keyId =
+    process.env.BAUER_V4_AUTH_KEY_ID ||
+    process.env.BAUER_V3_AUTH_KEY_ID,
+  signingKey =
+    process.env.BAUER_V4_AUTH_SIGNING_KEY ||
+    process.env.BAUER_V3_AUTH_SIGNING_KEY,
 }) =>
   createV3AuthorizationContext({
     userId,
