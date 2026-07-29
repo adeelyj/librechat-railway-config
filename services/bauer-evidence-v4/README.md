@@ -60,12 +60,18 @@ python services\bauer-evidence-v4\scripts\verify_answering.py `
   --source-root 'D:\02_Code\Bauer Kompressoren Demo'
 ```
 
-The PostgreSQL contract is split into five reversible migrations under
+The PostgreSQL contract is split into six reversible migrations under
 `migrations/`, with matching scripts under `rollbacks/`. It provides logical
 V4 isolation, append-only source/release membership, canonical and disposable
 projection storage, exact embedding-cache identities, PostgreSQL job leases,
 body-free authorization audit, fixed release selection, five non-privileged
-runtime roles, and row-level security.
+runtime roles, row-level security, and deployment artifact persistence.
+
+For scan-only PDFs, the worker evaluates both native V4 candidates first. If both are empty, it may
+invoke the pinned, already-proven V3 OCR engine and translate the result into the V4 canonical
+contract. The adapter preserves physical/printed pages, bounding boxes, table cells, typed facts,
+and source locators, then applies the normal V4 quality gate. OCR is a representation fallback, not
+another retrieval channel.
 
 The Fedora runner is deliberately scoped to a generated disposable database
 and owner. In apply mode it performs two complete forward/rollback cycles,

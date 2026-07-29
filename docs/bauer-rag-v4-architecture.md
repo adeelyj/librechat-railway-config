@@ -1,6 +1,6 @@
 # Bauer RAG V4 architecture
 
-Status: local/Fedora proposal under implementation; not deployed to Railway or LibreChat.
+Status: authorized private shadow under deployment; not production-promoted.
 
 ## Provenance
 
@@ -73,5 +73,8 @@ Representation gates must pass on the reviewed difficult-document fixtures befor
 tuned. Candidate Recall@10 must pass before a reranker is selected. Evidence coverage must pass
 before answer behavior is tuned.
 
-The locked holdout is outside local V4 development. Railway and LibreChat remain outside scope
-until the WP8 pre-Railway checkpoint receives explicit authorization.
+The locked holdout remains outside V4 development. The WP8 checkpoint received one private-shadow
+batch authorization. That authorization covers the isolated V4 schema/object prefix, fixed
+373-source candidate, reused private API/worker/migrator capacity, one private LibreChat Agent,
+the authenticated four-version development regression, and documentation. It does not authorize
+an active-release pointer, public promotion, ONIX deployment, or any V1/V2/V3 mutation.
