@@ -414,6 +414,12 @@ class CoverageEngine:
 
     @staticmethod
     def _value_priority(field_name: str, value: str) -> int:
+        if (
+            field_name == "pressure_definition_evidence"
+            and "maximum allowable working pressure" in value.casefold()
+            and "lower" in value.casefold()
+        ):
+            return 1000
         if field_name not in {
             "compressor_pressure_evidence",
             "booster_pressure_evidence",

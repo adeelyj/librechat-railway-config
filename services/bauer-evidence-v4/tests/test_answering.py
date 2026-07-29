@@ -319,6 +319,13 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         "booster_pressure_evidence",
         booster_value,
     ) == 1520
+    assert CoverageEngine._value_priority(
+        "pressure_definition_evidence",
+        (
+            "Maximum allowable working pressure = max. setting safety valve; "
+            "final pressure (shut-down pressure) lower"
+        ),
+    ) == 1000
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(

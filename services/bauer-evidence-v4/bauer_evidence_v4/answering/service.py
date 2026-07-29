@@ -63,7 +63,7 @@ class AnswerService:
         # Coverage remains bounded to at most two claim-sized supports per
         # field, so this wider rerank window cannot become answer material by
         # itself.
-        reranked = self.reranker.rerank(candidate_set, limit=25)
+        reranked = self.reranker.rerank(candidate_set, limit=40)
         if reranked.original_question != question:
             raise AssertionError("reranking changed the original question")
         evidence = EvidenceMaterializer(self.source_registry).materialize(
