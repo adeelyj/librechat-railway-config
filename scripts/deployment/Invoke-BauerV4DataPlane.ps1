@@ -58,15 +58,25 @@ function Start-PrivateTunnel {
     $start.RedirectStandardError = $true
     $process = [Diagnostics.Process]::new()
     $process.StartInfo = $start
-    $null = $process.Start()
-    $process | Add-Member -NotePropertyName BauerStdout `
-        -NotePropertyValue $process.StandardOutput.ReadToEndAsync()
-    $process | Add-Member -NotePropertyName BauerStderr `
-        -NotePropertyValue $process.StandardError.ReadToEndAsync()
+    if (-not $process.Start()) {
+        throw 'Private database tunnel process did not start.'
+    }
+    $stdoutTask = $process.StandardOutput.ReadToEndAsync()
+    $stderrTask = $process.StandardError.ReadToEndAsync()
+    $tunnel = [pscustomobject]@{
+        Process = $process
+        StdOutTask = $stdoutTask
+        StdErrTask = $stderrTask
+    }
     $deadline = [DateTime]::UtcNow.AddSeconds(45)
     while ([DateTime]::UtcNow -lt $deadline) {
         if ($process.HasExited) {
-            throw 'Private database tunnel exited before readiness.'
+            $exitCode = $process.ExitCode
+            Stop-PrivateTunnel -Tunnel $tunnel
+            throw (
+                'Private database tunnel exited before readiness ' +
+                "(exit $exitCode; output suppressed)."
+            )
         }
         $client = [Net.Sockets.TcpClient]::new()
         try {
@@ -74,30 +84,74 @@ function Start-PrivateTunnel {
                 $client.ConnectAsync('127.0.0.1', $Port).Wait(500) -and
                 $client.Connected
             ) {
-                return $process
+                return $tunnel
             }
         }
         catch {}
         finally { $client.Dispose() }
         Start-Sleep -Milliseconds 250
     }
+    Stop-PrivateTunnel -Tunnel $tunnel
     throw 'Private database tunnel did not become ready.'
 }
 
 function Stop-PrivateTunnel {
-    param($Process)
-    if ($null -eq $Process) { return }
+    param($Tunnel)
+    if ($null -eq $Tunnel) { return }
+    $process = $Tunnel.Process
     try {
-        if (-not $Process.HasExited) {
-            $Process.Kill()
-            $null = $Process.WaitForExit(5000)
+        $rootId = $null
+        try { $rootId = $process.Id } catch {}
+        if ($null -ne $rootId) {
+            $all = @(
+                Get-CimInstance Win32_Process -ErrorAction SilentlyContinue
+            )
+            $parents = @([int]$rootId)
+            $descendants = [Collections.Generic.List[object]]::new()
+            while ($parents.Count -gt 0) {
+                $next = @(
+                    $all | Where-Object {
+                        $parents -contains [int]$_.ParentProcessId
+                    }
+                )
+                if ($next.Count -eq 0) { break }
+                foreach ($child in $next) {
+                    if (
+                        @(
+                            $descendants | Where-Object {
+                                [int]$_.ProcessId -eq
+                                    [int]$child.ProcessId
+                            }
+                        ).Count -eq 0
+                    ) {
+                        $descendants.Add($child)
+                    }
+                }
+                $parents = @($next.ProcessId)
+            }
+            foreach (
+                $child in @(
+                    $descendants | Sort-Object ProcessId -Descending
+                )
+            ) {
+                Stop-Process -Id ([int]$child.ProcessId) -Force `
+                    -ErrorAction SilentlyContinue
+            }
         }
-        foreach ($name in @('BauerStdout', 'BauerStderr')) {
-            $task = $Process.PSObject.Properties[$name].Value
-            if ($task.Wait(5000)) { $null = $task.Result }
+        if (-not $process.HasExited) {
+            $process.Kill()
+            $null = $process.WaitForExit(5000)
+        }
+        foreach ($task in @($Tunnel.StdOutTask, $Tunnel.StdErrTask)) {
+            if ($null -ne $task -and $task.Wait(5000)) {
+                $null = $task.Result
+            }
         }
     }
-    finally { $Process.Dispose() }
+    catch {
+        # The exact tunnel process tree may already have exited.
+    }
+    finally { $process.Dispose() }
 }
 
 function Convert-SecureString {
@@ -140,11 +194,25 @@ function Invoke-Child {
         $raw = $stdout.Result
         $null = $stderr.Result
         if ($process.ExitCode -ne 0) {
-            $failure = $raw | ConvertFrom-Json
+            $errorType = 'suppressed'
+            $errorFingerprint = 'absent'
+            try {
+                $failure = $raw | ConvertFrom-Json
+                if ($null -ne $failure.PSObject.Properties['error_type']) {
+                    $errorType = [string]$failure.error_type
+                }
+                if (
+                    $null -ne
+                        $failure.PSObject.Properties['error_fingerprint']
+                ) {
+                    $errorFingerprint = [string]$failure.error_fingerprint
+                }
+            }
+            catch {}
             throw (
                 'V4 data plane failed: {0} ({1})' -f
-                [string]$failure.error_type,
-                [string]$failure.error_fingerprint
+                $errorType,
+                $errorFingerprint
             )
         }
         return $raw | ConvertFrom-Json
@@ -208,7 +276,7 @@ try {
     } | ConvertTo-Json -Compress
 }
 finally {
-    Stop-PrivateTunnel -Process $tunnel
+    Stop-PrivateTunnel -Tunnel $tunnel
     $requestJson = $null
     $request = $null
     $ownerPassword = $null

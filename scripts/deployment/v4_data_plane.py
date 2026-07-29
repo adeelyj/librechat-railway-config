@@ -46,7 +46,7 @@ def _digest(value: str) -> str:
 
 def _load_request() -> dict[str, Any]:
     try:
-        value = json.load(sys.stdin)
+        value = json.loads(sys.stdin.buffer.read().decode("utf-8-sig"))
     except json.JSONDecodeError as exc:
         raise DataPlaneError("stdin must contain JSON") from exc
     if not isinstance(value, dict):
@@ -433,20 +433,22 @@ def _mark_ready(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--operation",
-        choices=("Setup", "Status", "MarkReady"),
-    )
-    arguments = parser.parse_args()
-    request = _load_request()
-    if (
-        arguments.operation is not None
-        and arguments.operation.lower().replace("markready", "mark-ready")
-        != request["operation"]
-    ):
-        raise DataPlaneError("operation argument does not match stdin")
     try:
+        parser = argparse.ArgumentParser()
+        parser.add_argument(
+            "--operation",
+            choices=("Setup", "Status", "MarkReady"),
+        )
+        arguments = parser.parse_args()
+        request = _load_request()
+        if (
+            arguments.operation is not None
+            and arguments.operation.lower().replace(
+                "markready", "mark-ready"
+            )
+            != request["operation"]
+        ):
+            raise DataPlaneError("operation argument does not match stdin")
         import psycopg
 
         with psycopg.connect(_dsn(request), autocommit=True) as connection:
