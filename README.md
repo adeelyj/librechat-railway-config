@@ -91,6 +91,35 @@ $credential = Import-Clixml 'D:\02_Code\auth\auth\librechat\testing-admin.creden
 
 The root `Dockerfile` and `railway.json` are thin deployment wrappers for Railway GitHub auto-deploy; the service implementation remains under `services/bauer-twin-api`.
 
+## Pinned LibreChat and RAG runtime overlays
+
+The stock LibreChat `file_search` implementation lists every Agent-attached filename in hidden model instructions and sends one RAG request per file. The pinned overlays under `services/librechat-custom` and `services/rag-api-custom` replace that behaviour without changing stored files, chunks, or embeddings:
+
+- Agent knowledge-base filenames stay server-side; the model sees only a compact document count.
+- Conversation-specific attachments remain visible to the model, with control characters removed and a display cap.
+- LibreChat resolves Agent permissions in MongoDB before creating the allow-listed file set.
+- One `/query_multiple` request searches the normal Agent corpus and returns globally ranked chunks.
+- The RAG overlay preserves the optional Agent namespace check and rejects oversized batches.
+- LibreChat drops any returned chunk whose `file_id` is outside the authorized request set.
+
+Both Dockerfiles pin immutable upstream image digests and refuse unreviewed source drift. Their `UPSTREAM.md` files record the corresponding commits and upgrade procedure.
+
+Run the local, dependency-free tests:
+
+```powershell
+node --test services\librechat-custom\tests\fileSearchBatch.test.js
+python -m unittest discover -s services\rag-api-custom\tests -v
+```
+
+Deploy each overlay from its own directory so Railway uses the local `railway.json` and Dockerfile:
+
+```powershell
+railway up services\rag-api-custom --path-as-root --service "RAG API" --environment testing
+railway up services\librechat-custom --path-as-root --service LibreChat --environment testing
+```
+
+Deploy the RAG overlay first. Restore the previously recorded Railway deployment or pinned upstream image to roll back; no database migration is involved.
+
 Generated corpora, manifests, dependencies, and resume state live under `tmp/` and are intentionally ignored by Git.
 
 Typical validation after the initial import:
