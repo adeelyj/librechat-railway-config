@@ -655,7 +655,7 @@ def _reset_build(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
             """,
             (
                 _digest(
-                    "canonical-compiler-v4.1-cell-provenance"
+                    "canonical-compiler-v4.2-cell-provenance-ocr-fallback"
                 ),
                 request["release_id"],
             ),
