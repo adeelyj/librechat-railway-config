@@ -349,9 +349,8 @@ class CandidateGenerator:
         *,
         limit: int = 50,
     ) -> CandidateSet:
-        subquestions = (
+        subquestions = request.subquestions or (
             Subquestion("whole_question", request.question),
-            *request.subquestions,
         )
         all_hits: list[ChannelHit] = []
         channels: tuple[CandidateChannel, ...] = (
