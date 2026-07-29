@@ -188,7 +188,8 @@ class CoverageEngine:
                 (abs(anchor - position), anchor, position)
                 for anchor in anchor_positions
                 for position in positions
-                if abs(anchor - position) <= limit - 80
+                if position >= anchor
+                and position - anchor <= limit - 80
             ]
             if not pairs:
                 return ""
@@ -218,14 +219,13 @@ class CoverageEngine:
     def _positions(value: str, needle: str) -> tuple[int, ...]:
         if not needle:
             return ()
-        positions: list[int] = []
-        start = 0
-        while True:
-            position = value.find(needle, start)
-            if position < 0:
-                return tuple(positions)
-            positions.append(position)
-            start = position + max(len(needle), 1)
+        return tuple(
+            match.start()
+            for match in re.finditer(
+                rf"(?<![a-z0-9]){re.escape(needle)}(?![a-z0-9])",
+                value,
+            )
+        )
 
     @staticmethod
     def _relevant(plan: TaskPlan, context: EvidenceContext) -> bool:

@@ -218,6 +218,16 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
     )
     assert "B-SELECT" in nearby
     assert "420 bar" in nearby
+    assert CoverageEngine._bounded_snippet(
+        "Flow rate: 850 l/min. Optional automatic selector unit B-SELECT.",
+        ("flow",),
+        anchor_terms=("B-SELECT",),
+    ) == ""
+    assert CoverageEngine._bounded_snippet(
+        "B-SELECT pressure regulator with stable overflow pressure.",
+        ("flow",),
+        anchor_terms=("B-SELECT",),
+    ) == ""
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(
