@@ -1,6 +1,7 @@
 # Bauer RAG V4 architecture
 
-Status: authorized private shadow under deployment; not production-promoted.
+Status: implemented and deployed as an authorized private shadow; not
+production-promoted.
 
 ## Provenance
 
@@ -44,7 +45,9 @@ Rules enforced by tests:
 - contracts import no LibreChat, ONIX, MongoDB, adapter, or storage module;
 - adapters may import contracts but not canonical or database internals;
 - the request contains no client-selectable release ID;
-- `question` is required immutable data and is never replaced by `search_hint`;
+- `question` is required immutable data and is never replaced by
+  `search_hint`; requirement-derived candidates fill the reranking window
+  before hint-only expansion;
 - a `complete` response cannot hide missing required fields;
 - every supported coverage item resolves to a citation in the same response.
 
@@ -73,8 +76,15 @@ Representation gates must pass on the reviewed difficult-document fixtures befor
 tuned. Candidate Recall@10 must pass before a reranker is selected. Evidence coverage must pass
 before answer behavior is tuned.
 
-The locked holdout remains outside V4 development. The WP8 checkpoint received one private-shadow
-batch authorization. That authorization covers the isolated V4 schema/object prefix, fixed
+The benchmark harness is restricted to the public B01-B30 development manifest and records
+`locked_holdout_opened: false`. The wider implementation task's holdout process boundary was,
+however, contaminated by accidental exposure to combined gold/holdout-linked entries. No result
+from this task is valid sealed-holdout evidence. Production promotion requires a freshly resealed
+holdout and an independent evaluation.
+
+The single private-shadow batch authorization covered the isolated V4 schema/object prefix, fixed
 373-source candidate, reused private API/worker/migrator capacity, one private LibreChat Agent,
-the authenticated four-version development regression, and documentation. It does not authorize
-an active-release pointer, public promotion, ONIX deployment, or any V1/V2/V3 mutation.
+the authenticated four-version development regression, and documentation. It did not authorize
+an active-release pointer, public promotion, ONIX deployment, or any V1/V2/V3 mutation. The
+private-shadow deployment uses backend commit
+`1f37865c8ee00a3b5c5ad139ac5ab2d7b1a4fe3f`; the active-release pointer remains empty.

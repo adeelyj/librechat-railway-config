@@ -1,7 +1,11 @@
 # Bauer RAG V4 private-shadow runbook
 
-Status: authorized private shadow. V4 is not the active production release and the locked holdout
-remains closed.
+Status: implemented authorized private shadow. V4 is available through its private LibreChat
+Agent, but it is not the active production release.
+
+Holdout warning: the development benchmark harness reads only B01-B30 and reports
+`locked_holdout_opened: false`, but the wider implementation task's holdout process boundary was
+contaminated. Promotion requires a freshly resealed holdout and an independent evaluation.
 
 ## Fixed deployment identity
 
@@ -14,6 +18,10 @@ remains closed.
 | Public release ID | `bauer-rag-v4-private-20260729-r1` |
 | Private LibreChat Agent | `agent_TEEBDBmMxnQwL10UjILhw` |
 | Agent name | `Bauer Kompressoren - RAG V4 Private Shadow` |
+| Backend commit | `1f37865c8ee00a3b5c5ad139ac5ab2d7b1a4fe3f` |
+| Backend deployment | `c2bf14c8-3e71-4d21-b85a-67f122a03ffc` |
+| LibreChat overlay commit | `6982ac9483e649ab83141104c69331e56a8aaa38` |
+| LibreChat deployment | `34c6ab45-1a12-4d34-9552-0240e7022487` |
 | Source membership | 373 exact protected Bauer file IDs |
 | Object prefix | isolated `v4/` prefix in the reused private bucket |
 
@@ -105,16 +113,28 @@ destructive teardown only. They are not the normal application rollback.
 
 The authenticated regression uses exactly one browser-shaped login, normal in-session token
 refresh, a fresh deleted conversation per observation, the same 30 public development prompts, and
-all four protected/private Agents. It records 120 exact visible outputs. The locked holdout is
-never read.
+all four protected/private Agents. It records 120 exact visible outputs. The regression harness
+does not read the holdout.
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass `
   -File scripts\deployment\Invoke-BauerV4ShadowRegression.ps1 `
   -V3AgentId agent_DzeT_ugU3tuZC_VCKB8Bh `
   -V4AgentId agent_TEEBDBmMxnQwL10UjILhw `
-  -DeployedCommit <exact-deployed-commit>
+  -LibreChatOverlayCommit 6982ac9483e649ab83141104c69331e56a8aaa38 `
+  -V4BackendCommit 1f37865c8ee00a3b5c5ad139ac5ab2d7b1a4fe3f `
+  -OutputPath <development-benchmark-output>
 ```
 
-The output and score are development evidence, not production promotion. Any measured V4 defect is
-repaired in representation first, then candidate retrieval, then reranking, then coverage/answering.
+Score the output only with the source-controlled public-development scorer:
+
+```powershell
+python scripts\deployment\score_v4_public_development.py `
+  --benchmark <development-benchmark-output> `
+  --output <development-score-output>
+```
+
+The scorer contains only B01-B30 public-development expectations and does not read the combined
+gold or holdout files. The output and score are development evidence, not production promotion.
+Any measured V4 defect is repaired in representation first, then candidate retrieval, then
+reranking, then coverage/answering.
