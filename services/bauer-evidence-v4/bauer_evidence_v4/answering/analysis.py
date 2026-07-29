@@ -60,7 +60,7 @@ _GENERAL_MATCH_GROUPS = (
     (
         "pressure",
         "pressure",
-        ("pressure", "bar", "druck"),
+        ("pressure", "pressures", "bar", "druck"),
         (
             "maximum operating pressure",
             "operating pressure",
@@ -290,6 +290,43 @@ class TaskAnalyzer:
         intent: str,
         field: RequiredField,
     ) -> str:
+        special = {
+            "bdetection_stationary_evidence": (
+                "B-DETECTION PLUS i and s stationary continuous online gas "
+                "measurement B-CLOUD ready."
+            ),
+            "bdetection_mobile_evidence": (
+                "B-DETECTION PLUS m portable case-based mobile gas "
+                "measurement system."
+            ),
+            "bdetection_measurements": (
+                "B-DETECTION PLUS i s and m measured values CO CO2 O2 "
+                "optional humidity residual oil VOC."
+            ),
+            "bdetection_logging": (
+                "B-DETECTION PLUS i s B-CLOUD data logging and "
+                "B-DETECTION PLUS m integrated data logger SD card B-CLOUD."
+            ),
+            "bdetection_pressure_reconciliation": (
+                "B-DETECTION PLUS m maximum system pressure 420 bar and "
+                "2025-03 B-DETECTION PLUS next generation options up to "
+                "450 bar final pressure purge valve i and s."
+            ),
+            "n7698_compressor_block_applications": (
+                "High-pressure accessories catalogue exact order number "
+                "N7698 adjacent use and compressor types."
+            ),
+            "bcloud_access_capabilities": (
+                "B-CLOUD browser application B-APP compressor status fault "
+                "notifications plain-text diagnostics."
+            ),
+            "bcloud_software_requirement": (
+                "B-CLOUD ready units B-CONTROL MICRO +Net software version "
+                "3.73 or later older systems version 3.0 update."
+            ),
+        }
+        if field.field in special:
+            return special[field.field]
         if field.field == "bm_40_bar_evidence":
             return (
                 "Air-cooled medium-pressure compressors for air up to "
@@ -459,6 +496,57 @@ class TaskAnalyzer:
                     label="90 bar / approximately 800 l/min comparison",
                     anchor_terms=("BM",),
                     match_terms=("40 bar", "100 bar", "l/min"),
+                ),
+            )
+        if (
+            "b-detection plus i/s" in normalized
+            and "b-detection plus m" in normalized
+            and "stationary" in normalized
+            and "mobile" in normalized
+        ):
+            return (
+                RequiredField(
+                    field="bdetection_stationary_evidence",
+                    label="Stationary B-DETECTION PLUS i/s evidence",
+                ),
+                RequiredField(
+                    field="bdetection_mobile_evidence",
+                    label="Mobile B-DETECTION PLUS m evidence",
+                ),
+                RequiredField(
+                    field="bdetection_measurements",
+                    label="Measured gases and optional measurements",
+                ),
+                RequiredField(
+                    field="bdetection_logging",
+                    label="Logging and remote-access capabilities",
+                ),
+                RequiredField(
+                    field="bdetection_pressure_reconciliation",
+                    label="420/450 bar source reconciliation",
+                ),
+            )
+        if "n7698" in normalized and "compressor block applications" in normalized:
+            return (
+                RequiredField(
+                    field="n7698_compressor_block_applications",
+                    label="N7698 compressor-block applications",
+                    anchor_terms=("N7698",),
+                ),
+            )
+        if (
+            "browser or app access" in normalized
+            and "fault notifications" in normalized
+            and "b-control micro" in normalized
+        ):
+            return (
+                RequiredField(
+                    field="bcloud_access_capabilities",
+                    label="B-CLOUD and B-APP access capabilities",
+                ),
+                RequiredField(
+                    field="bcloud_software_requirement",
+                    label="B-CONTROL MICRO +Net software requirement",
                 ),
             )
         if "test archive" in normalized and "eplan" in normalized:
@@ -649,15 +737,23 @@ class TaskAnalyzer:
                 ("source", "quelle"),
             ),
         )
+        verticus_rows = complete_row and (
+            "verticus" in normalized or "i 15.11-11-v" in normalized
+        )
         for field, needles in checks:
-            complete_row_field = field in {
+            complete_row_fields = {
                 "effective_free_air_delivery",
-                "shutdown_pressure",
                 "number_of_stages",
                 "rotational_speed_approx",
                 "motor_power",
                 "net_weight_approx",
             }
+            complete_row_fields.add(
+                "maximum_operating_pressure"
+                if verticus_rows
+                else "shutdown_pressure"
+            )
+            complete_row_field = field in complete_row_fields
             if (
                 (complete_row and complete_row_field)
                 or any(needle in normalized for needle in needles)

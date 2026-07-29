@@ -273,6 +273,16 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         "Operating pressure: 414/420 bar; "
         "Adjustment range: Pressure relief valve: 100–414/420 bar"
     )
+    paired_pressure = CoverageEngine._concise_value(
+        "B-KOOL III Maximum operating pressure: 350 bar / 550 bar",
+        product_plan.fields[0].__class__(
+            field="topic_1_pressure",
+            label="B-KOOL III pressure",
+            anchor_terms=("B-KOOL III",),
+            match_terms=("maximum operating pressure", "pressure"),
+        ),
+    )
+    assert paired_pressure == "Maximum operating pressure: 350 bar / 550 bar"
     concise_functions = CoverageEngine._concise_value(
         (
             "B-SELECT performs 3 important functions: "
@@ -361,6 +371,66 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         comparison_plan.original_question not in subquestion.text
         for subquestion in comparison_plan.subquestions
     )
+    bdetection_plan = analyzer.analyze(
+        (
+            "Compare B-DETECTION PLUS i/s with B-DETECTION PLUS m for a "
+            "stationary fire-brigade filling station. Explain which is "
+            "stationary and which is mobile, what they measure, their "
+            "logging capabilities, and reconcile 420 bar with 450 bar."
+        )
+    )
+    assert [field.field for field in bdetection_plan.fields] == [
+        "bdetection_stationary_evidence",
+        "bdetection_mobile_evidence",
+        "bdetection_measurements",
+        "bdetection_logging",
+        "bdetection_pressure_reconciliation",
+    ]
+    n7698_plan = analyzer.analyze(
+        (
+            "Find the catalogue entry with order number N7698. Return the "
+            "compressor block applications attached to that exact order "
+            "number and cite the catalogue location."
+        )
+    )
+    assert [field.field for field in n7698_plan.fields] == [
+        "n7698_compressor_block_applications"
+    ]
+    bcloud_plan = analyzer.analyze(
+        (
+            "Which Bauer system provides browser or app access to compressor "
+            "status and fault notifications, and what software condition is "
+            "documented for compatible B-CONTROL MICRO units?"
+        )
+    )
+    assert [field.field for field in bcloud_plan.fields] == [
+        "bcloud_access_capabilities",
+        "bcloud_software_requirement",
+    ]
+    b18_plan = analyzer.analyze(
+        (
+            "The model I 15.11-11-V appears in more than one VERTICUS "
+            "pressure table. Return both rows, clearly separating the "
+            "420 bar and 525 bar variants and preserving footnotes 1 and 2."
+        )
+    )
+    assert "maximum_operating_pressure" in {
+        field.field for field in b18_plan.fields
+    }
+    assert "shutdown_pressure" not in {
+        field.field for field in b18_plan.fields
+    }
+    b19_plan = analyzer.analyze(
+        (
+            "What are the documented maximum operating pressures and maximum "
+            "flow rates for B-KOOL III? State the separate helium and argon "
+            "flow range and cite the technical data."
+        )
+    )
+    assert [field.field for field in b19_plan.fields] == [
+        "topic_1_pressure",
+        "topic_1_flow",
+    ]
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(
@@ -419,6 +489,30 @@ def test_bm_family_comparison_uses_complete_overview_ranges(
         "0025_bm-series-100_7acdece303.html",
         "0027_bm-series-40_e0b4c6a9a3.html",
     }
+
+
+def test_verticus_duplicate_rows_use_operating_pressure_not_shutdown(
+    answer_fixture: tuple,
+) -> None:
+    service, scope, _ = answer_fixture
+    response = service.answer(
+        request_id="request-verticus-duplicate-rows",
+        trace_id="trace-verticus-duplicate-rows",
+        question=(
+            "The model I 15.11-11-V appears in more than one VERTICUS "
+            "pressure table. Return both rows, clearly separating the "
+            "420 bar and 525 bar variants and preserving footnotes 1 and 2."
+        ),
+        search_hint=None,
+        locale="en",
+        scope=scope,
+    )
+    assert response.status == "complete"
+    assert response.validation["passed"] is True
+    assert "VERTICUS I 350 - 420 bar: 420 bar" in response.answer
+    assert "VERTICUS I 420 - 525 bar: 525 bar" in response.answer
+    assert "ISO 1217" in response.answer
+    assert "shutdown pressure is lower" in response.answer
 
 
 def test_direct_v4_answers_are_complete_grounded_and_cited(

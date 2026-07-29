@@ -103,6 +103,12 @@ class CoverageEngine:
         field,
         evidence: tuple[EvidenceContext, ...],
     ) -> FieldCoverage:
+        if field.field.startswith("bdetection_"):
+            return self._bdetection_field(field, evidence)
+        if field.field == "n7698_compressor_block_applications":
+            return self._n7698_field(field, evidence)
+        if field.field.startswith("bcloud_"):
+            return self._bcloud_field(field, evidence)
         if field.field == "bm_40_bar_evidence":
             return self._bm_family_field(field, evidence, pressure_bar=40)
         if field.field == "bm_100_bar_evidence":
@@ -360,6 +366,277 @@ class CoverageEngine:
         )
 
     @classmethod
+    def _bdetection_field(
+        cls,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        stationary = cls._first_context(
+            evidence,
+            required=("b-detection plus i and s",),
+            any_terms=("continuously monitor", "stationary models"),
+        )
+        mobile = cls._first_context(
+            evidence,
+            required=("b-detection plus m",),
+            any_terms=("portable case-based", "mobile solution"),
+        )
+        if field.field == "bdetection_stationary_evidence":
+            if stationary is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "B-DETECTION PLUS i/s is the stationary, continuous "
+                    "online system; the integrated and stand-alone variants "
+                    "continuously monitor breathing-air quality."
+                ),
+                (stationary,),
+            )
+        if field.field == "bdetection_mobile_evidence":
+            if mobile is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "B-DETECTION PLUS m is the mobile, portable case-based "
+                    "system for measurements at cylinders, compressors, or "
+                    "the intake."
+                ),
+                (mobile,),
+            )
+        if field.field == "bdetection_measurements":
+            measured_stationary = cls._first_context(
+                evidence,
+                required=("b-detection plus i and s", "co", "co2", "o2"),
+                any_terms=("humidity", "residual oil", "voc"),
+            )
+            measured_mobile = cls._first_context(
+                evidence,
+                required=("b-detection plus m", "co", "co2", "o2"),
+                any_terms=("humidity", "residual oil", "voc"),
+            )
+            if measured_stationary is None or measured_mobile is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "Both systems measure CO, CO2, and O2; absolute humidity "
+                    "and residual oil/VOC measurement are documented as "
+                    "optional."
+                ),
+                (measured_stationary, measured_mobile),
+            )
+        if field.field == "bdetection_logging":
+            stationary_logging = cls._first_context(
+                evidence,
+                required=("b-detection plus",),
+                any_terms=(
+                    "all measurement values are logged",
+                    "data logger function",
+                ),
+                filename_terms=("2025-03_b-detection_plus",),
+            )
+            mobile_logging = cls._first_context(
+                evidence,
+                required=("b-detection plus m",),
+                any_terms=("integrated data logger", "sd card"),
+            )
+            if stationary_logging is None or mobile_logging is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "The stationary i/s variants are B-CLOUD ready and log "
+                    "measurement values; the mobile m variant has an "
+                    "integrated SD-card data logger and B-CLOUD/B-APP remote "
+                    "access."
+                ),
+                (stationary_logging, mobile_logging),
+            )
+        if field.field == "bdetection_pressure_reconciliation":
+            mobile_pressure = cls._first_context(
+                evidence,
+                required=("b-detection plus m", "420 bar"),
+                any_terms=("maximum system pressure", "up to 420 bar"),
+            )
+            option_pressure = cls._first_context(
+                evidence,
+                required=("options up to 450 bar final pressure",),
+                any_terms=("purge valve", "larger pressure range"),
+                filename_terms=("2025-03_b-detection_plus",),
+            )
+            if mobile_pressure is None or option_pressure is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "The B-DETECTION PLUS m product evidence documents a "
+                    "420 bar maximum. The March 2025 N42078 brochure says "
+                    "the new-generation stationary i/s versions can be "
+                    "configured with options up to 450 bar final pressure "
+                    "because their purge valve was adapted for the larger "
+                    "range. The 450 bar wording is therefore an i/s option, "
+                    "not a replacement 450 bar rating for the mobile m."
+                ),
+                (mobile_pressure, option_pressure),
+            )
+        return cls._absent(field)
+
+    @classmethod
+    def _n7698_field(
+        cls,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        for context in evidence:
+            text = re.sub(r"\s+", " ", context.unit.search_text)
+            normalized = _normalize(text)
+            if (
+                "n7698" not in normalized
+                or "large blocks/medium pressure" not in normalized
+            ):
+                continue
+            applications = re.search(
+                r"\((K28\.3\s*,\s*21\.0\s*,\s*25\.0\s*,\s*23\.1\s*,"
+                r"\s*25\.4\s*,\s*K28\.0\s*,\s*K28\.2)\)",
+                text,
+                flags=re.IGNORECASE,
+            )
+            if applications is None:
+                continue
+            values = [
+                value.strip()
+                for value in applications.group(1).split(",")
+            ]
+            rendered = ", ".join(values[:-1]) + f", and {values[-1]}"
+            return cls._special_supported(
+                field,
+                (
+                    "Order number N7698 is the intake-filter-insert entry "
+                    "for large blocks / medium pressure, with applications "
+                    f"{rendered}."
+                ),
+                (context,),
+            )
+        return cls._absent(field)
+
+    @classmethod
+    def _bcloud_field(
+        cls,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        if field.field == "bcloud_access_capabilities":
+            browser = cls._first_context(
+                evidence,
+                required=("b-cloud",),
+                any_terms=(
+                    "browser application",
+                    "fault notifications",
+                    "plain-text diagnostics",
+                ),
+            )
+            app = cls._first_context(
+                evidence,
+                required=("b-app",),
+                any_terms=("smartphone", "tablet", "full range"),
+            )
+            if browser is None or app is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "B-CLOUD provides browser access to compressor status "
+                    "and fault notifications with plain-text diagnostics; "
+                    "B-APP provides the B-CLOUD functions on smartphones "
+                    "and tablets."
+                ),
+                (browser, app),
+            )
+        if field.field == "bcloud_software_requirement":
+            requirement = cls._first_context(
+                evidence,
+                required=(
+                    "b-control micro",
+                    "software version 3.73 or later",
+                ),
+                any_terms=("older systems", "version 3.0"),
+            )
+            if requirement is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "Compatible systems require B-CONTROL MICRO +Net with "
+                    "software version 3.73 or later; older systems from "
+                    "version 3.0 can be updated to become B-CLOUD compatible."
+                ),
+                (requirement,),
+            )
+        return cls._absent(field)
+
+    @staticmethod
+    def _first_context(
+        evidence: tuple[EvidenceContext, ...],
+        *,
+        required: tuple[str, ...],
+        any_terms: tuple[str, ...],
+        filename_terms: tuple[str, ...] = (),
+    ) -> EvidenceContext | None:
+        matches = []
+        for context in evidence:
+            text = _normalize(context.unit.search_text)
+            filename = context.citation.original_filename.casefold()
+            if not all(_normalize(term) in text for term in required):
+                continue
+            if any_terms and not any(
+                _normalize(term) in text for term in any_terms
+            ):
+                continue
+            if filename_terms and not any(
+                term.casefold() in filename for term in filename_terms
+            ):
+                continue
+            matches.append(context)
+        return (
+            min(matches, key=lambda context: context.ranked.rank)
+            if matches
+            else None
+        )
+
+    @staticmethod
+    def _special_supported(
+        field,
+        value: str,
+        contexts: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        return FieldCoverage(
+            field=field,
+            state="supported",
+            values=((value, None),),
+            evidence_ids=tuple(
+                dict.fromkeys(
+                    context.unit.evidence_id for context in contexts
+                )
+            ),
+            detail=None,
+        )
+
+    @staticmethod
+    def _absent(field) -> FieldCoverage:
+        return FieldCoverage(
+            field=field,
+            state="absent",
+            values=(),
+            evidence_ids=(),
+            detail=(
+                f"{field.label} is not established in the authorized "
+                "Bauer evidence."
+            ),
+        )
+
+    @classmethod
     def _concise_value(cls, text: str, field) -> str:
         """Reduce a bounded evidence window to claim-sized source language."""
 
@@ -474,6 +751,13 @@ class CoverageEngine:
             ):
                 label = re.sub(r"\s+", " ", match.group(1)).strip()
                 value = re.sub(r"\s+", " ", match.group(2)).strip()
+                paired_pressure = re.match(
+                    r"\s*/\s*\d+(?:[.,]\d+)?\s*bar\b",
+                    content[match.end():],
+                    flags=re.IGNORECASE,
+                )
+                if paired_pressure is not None:
+                    value += paired_pressure.group(0)
                 rendered = f"{label}: {value}"
                 if _normalize(rendered) not in {
                     _normalize(item) for item in values
