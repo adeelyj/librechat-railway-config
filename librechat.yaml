@@ -33,6 +33,16 @@ registration:
   socialLogins: []
 
 mcpServers:
+  rapiddraft-erp-plm:
+    type: streamable-http
+    url: "${RAPIDDRAFT_SEARCH_MCP_URL}"
+    headers:
+      Authorization: "Bearer ${RAPIDDRAFT_SEARCH_API_KEY}"
+    requiresOAuth: false
+    serverInstructions: true
+    startup: true
+    chatMenu: false
+    timeout: 60000
   bauer-twin:
     type: streamable-http
     url: "${BAUER_TWIN_MCP_URL}"
