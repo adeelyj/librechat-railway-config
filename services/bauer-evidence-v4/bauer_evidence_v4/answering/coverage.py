@@ -7,8 +7,19 @@ from dataclasses import dataclass
 from .models import EvidenceContext, FieldCoverage, TaskPlan
 
 
+_DASH_TRANSLATION = str.maketrans(
+    {
+        character: "-"
+        for character in "\u00ad\u2010\u2011\u2012\u2013\u2014\u2015\u2212"
+    }
+)
+
+
 def _normalize(value: str) -> str:
-    folded = unicodedata.normalize("NFKD", value).casefold()
+    folded = unicodedata.normalize(
+        "NFKD",
+        value.translate(_DASH_TRANSLATION),
+    ).casefold()
     return "".join(
         character for character in folded if not unicodedata.combining(character)
     )

@@ -12,6 +12,7 @@ from bauer_evidence_v4.answering import (
     TaskAnalyzer,
 )
 from bauer_evidence_v4.answering.models import AnswerDraft, Claim
+from bauer_evidence_v4.answering.coverage import _normalize as normalize_coverage
 from bauer_evidence_v4.answering.render import GroundedAnswerBuilder
 from bauer_evidence_v4.answering.validation import (
     AnswerValidator,
@@ -197,6 +198,7 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
     assert "effective_free_air_delivery" in {
         field.field for field in two_rows.fields
     }
+    assert normalize_coverage("B\u2011SELECT") == normalize_coverage("B-SELECT")
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(
