@@ -261,7 +261,8 @@ def create_router(
         LOGGER.info(
             (
                 "v4_answer_request request_id=%s question_sha256=%s "
-                "question_chars=%d search_hint_sha256=%s"
+                "question_chars=%d search_hint_sha256=%s "
+                "authorized_source_count=%d authorized_sources_sha256=%s"
             ),
             body.request_id,
             hashlib.sha256(body.question.encode("utf-8")).hexdigest(),
@@ -271,6 +272,10 @@ def create_router(
                 if body.search_hint
                 else "none"
             ),
+            len(requested_sources),
+            hashlib.sha256(
+                "\n".join(sorted(requested_sources)).encode("utf-8")
+            ).hexdigest(),
         )
         result = await run_in_threadpool(
             loaded.service.answer,
