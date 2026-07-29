@@ -228,6 +228,14 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         ("flow",),
         anchor_terms=("B-SELECT",),
     ) == ""
+    assert CoverageEngine._positions(
+        "the teams work syn- over the long term",
+        "syn-",
+    ) == ()
+    assert CoverageEngine._positions(
+        "record SYN-BK-N2-420-500 is synthetic",
+        "syn-",
+    )
     concise_flow = CoverageEngine._concise_value(
         (
             "B-SELECT Flow rate at: P = 50 bar 2750 l/min "

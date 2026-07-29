@@ -509,6 +509,16 @@ class CoverageEngine:
     def _positions(value: str, needle: str) -> tuple[int, ...]:
         if not needle:
             return ()
+        if needle == "syn-":
+            return tuple(
+                match.start()
+                for match in re.finditer(
+                    r"(?<![a-z0-9])syn-(?:[a-z0-9]+-)+[a-z0-9]+"
+                    r"(?![a-z0-9])",
+                    value,
+                    flags=re.IGNORECASE,
+                )
+            )
         return tuple(
             match.start()
             for match in re.finditer(
