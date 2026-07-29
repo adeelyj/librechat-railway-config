@@ -315,6 +315,10 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         "BOOSTER WATER COOLED: 25–520 bar; "
         "GIB Series | BK 23 – BK 52: 90–520 bar"
     )
+    assert CoverageEngine._value_priority(
+        "booster_pressure_evidence",
+        booster_value,
+    ) == 1520
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(

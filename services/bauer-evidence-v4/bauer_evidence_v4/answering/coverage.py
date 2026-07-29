@@ -427,7 +427,14 @@ class CoverageEngine:
             )
         ]
         if range_maxima:
-            return max(range_maxima)
+            priority = max(range_maxima)
+            if (
+                field_name == "booster_pressure_evidence"
+                and "BOOSTER AIR COOLED" in value.upper()
+                and "BOOSTER WATER COOLED" in value.upper()
+            ):
+                priority += 1000
+            return priority
         pressures = [
             int(match)
             for match in re.findall(r"\b(\d{2,3})\s*bar\b", value)
