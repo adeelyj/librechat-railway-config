@@ -2,6 +2,15 @@ from __future__ import annotations
 
 from types import SimpleNamespace
 
+from bauer_evidence_v3.ingest.canonical import (
+    Block,
+    Cell,
+    Document,
+    Page,
+    Table,
+)
+
+from bauer_evidence_v4.deployment.ocr_fallback import compile_ocr_fallback
 from bauer_evidence_v4.deployment.worker import _failure_code
 
 
@@ -22,3 +31,113 @@ def test_failure_code_sanitizes_and_bounds_unknown_exception_types() -> None:
     assert len(value) <= 128
     assert value
     assert all(character.isalnum() or character in "_.:-" for character in value)
+
+
+def test_ocr_fallback_translates_page_table_and_typed_fact_provenance() -> None:
+    source_sha = "ab" * 32
+    table = Table(
+        table_id="table_v3",
+        page_index=0,
+        order=1,
+        row_count=2,
+        column_count=2,
+        cells=(
+            Cell(
+                cell_id="cell_header_model",
+                row=0,
+                column=0,
+                text="Model",
+                source_locator="page:0/table:0/cell:0:0",
+                parser_id="pdfplumber_native",
+                role="header",
+            ),
+            Cell(
+                cell_id="cell_header_pressure",
+                row=0,
+                column=1,
+                text="Pressure bar",
+                source_locator="page:0/table:0/cell:0:1",
+                parser_id="pdfplumber_native",
+                role="header",
+            ),
+            Cell(
+                cell_id="cell_model",
+                row=1,
+                column=0,
+                text="BM 40",
+                source_locator="page:0/table:0/cell:1:0",
+                parser_id="pdfplumber_native",
+                role="row_header",
+            ),
+            Cell(
+                cell_id="cell_pressure",
+                row=1,
+                column=1,
+                text="350",
+                source_locator="page:0/table:0/cell:1:1",
+                parser_id="pdfplumber_native",
+                role="body",
+            ),
+        ),
+        source_locator="page:0/table:0",
+        parser_id="pdfplumber_native",
+        caption="Technical data",
+    )
+    source = Document(
+        document_id="document_v3",
+        source_sha256=source_sha,
+        source_name="scan.pdf",
+        media_type="application/pdf",
+        parser_id="pdfplumber_native",
+        parser_version="1",
+        pages=(
+            Page(
+                page_id="page_v3",
+                index=0,
+                blocks=(
+                    Block(
+                        block_id="block_v3",
+                        page_index=0,
+                        order=0,
+                        kind="ocr_word",
+                        text="BM 40 technical data",
+                        source_locator="page:0/ocr:word:0",
+                        parser_id="rapidocr",
+                    ),
+                ),
+                tables=(table,),
+                source_locator="page:0",
+                parser_id="pdfplumber_native",
+                printed_label="1",
+                signals=(("ocr_accepted", "true"),),
+            ),
+        ),
+        title="BM 40",
+        language="en",
+    )
+
+    class FakeCompiler:
+        ocr_engine = SimpleNamespace(engine_version="test-ocr")
+
+        @staticmethod
+        def compile(*_args, **_kwargs):
+            return SimpleNamespace(
+                document=source,
+                quality=SimpleNamespace(status="warning"),
+            )
+
+    document = compile_ocr_fallback(
+        FakeCompiler(),
+        b"%PDF-test",
+        source_path="scan.pdf",
+        declared_media_type="application/pdf",
+    )
+    assert document.parser_id == "v3_ocr_adapter"
+    assert document.page_count == 1
+    assert document.blocks[0].kind == "paragraph"
+    assert document.tables[0].cells[-1].unit_ucum == "bar"
+    assert document.facts[0].subject == "BM 40"
+    assert document.facts[0].numeric_value is not None
+    assert document.facts[0].provenance_ids == (
+        document.tables[0].cells[-1].cell_id,
+    )

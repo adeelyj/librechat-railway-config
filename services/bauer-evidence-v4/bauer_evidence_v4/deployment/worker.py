@@ -13,9 +13,11 @@ from bauer_evidence_v3.object_store import S3ObjectStore
 
 from ..canonical.models import canonical_data
 from ..compilation import CanonicalCompiler
+from ..compilation.quality import evaluate_document
 from ..indexing import ProjectionBuilder
 from ..retrieval.candidate_generation import HashingDenseEncoder
 from .config import V4Settings
+from .ocr_fallback import compile_ocr_fallback
 
 
 LOGGER = logging.getLogger(__name__)
@@ -68,6 +70,7 @@ def _s3_client(settings: V4Settings):
 @dataclass(slots=True)
 class V4CompilerWorker:
     settings: V4Settings
+    ocr_compiler: Any | None = field(default=None, repr=False)
     source_store: Any = field(init=False, repr=False)
     artifact_store: Any = field(init=False, repr=False)
     compiler: CanonicalCompiler = field(init=False, repr=False)
@@ -212,7 +215,31 @@ class V4CompilerWorker:
             declared_media_type=str(media_type),
             enforce_gate=False,
         )
-        if result.document is None or result.status != "published":
+        if result.document is not None and result.status == "published":
+            document = result.document
+            quality = next(
+                candidate.quality
+                for candidate in result.candidates
+                if candidate.parser_id == result.selected_parser_id
+            )
+        elif (
+            str(media_type) == "application/pdf"
+            and self.ocr_compiler is not None
+        ):
+            document = compile_ocr_fallback(
+                self.ocr_compiler,
+                payload,
+                source_path=str(original_filename),
+                declared_media_type=str(media_type),
+            )
+            quality = evaluate_document(document)
+            if quality.status not in {"pass", "warning"}:
+                codes = sorted(issue.code for issue in quality.issues)
+                raise RuntimeError(
+                    "OCR canonical fallback quarantined source: "
+                    + ",".join(codes[:12])
+                )
+        else:
             codes = sorted(
                 {
                     issue.code
@@ -224,13 +251,7 @@ class V4CompilerWorker:
                 "canonical compiler quarantined source: "
                 + ",".join(codes[:12])
             )
-        document = result.document
         projections = self.projections.build(document)
-        selected = next(
-            candidate
-            for candidate in result.candidates
-            if candidate.parser_id == result.selected_parser_id
-        )
         artifact = {
             "schema_version": 1,
             "release_id": self.settings.candidate_release_id,
@@ -241,12 +262,12 @@ class V4CompilerWorker:
                 canonical_data(projection) for projection in projections
             ],
             "quality": {
-                "status": selected.quality.status,
-                "semantic_score": selected.quality.semantic_score,
-                "metrics": dict(selected.quality.metrics),
+                "status": quality.status,
+                "semantic_score": quality.semantic_score,
+                "metrics": dict(quality.metrics),
                 "issues": [
                     canonical_data(issue)
-                    for issue in selected.quality.issues
+                    for issue in quality.issues
                 ],
             },
         }
@@ -296,8 +317,8 @@ class V4CompilerWorker:
                         [canonical_data(item) for item in projections]
                     ),
                     f"{document.parser_id}:{document.parser_version}",
-                    selected.quality.status,
-                    json.dumps(dict(selected.quality.metrics)),
+                    quality.status,
+                    json.dumps(dict(quality.metrics)),
                 ),
             )
             connection.execute(

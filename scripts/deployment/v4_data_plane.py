@@ -368,6 +368,25 @@ def _status(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
             (request["release_id"],),
         ).fetchall()
     ]
+    dead_by_media_type = {
+        str(media_type): int(count)
+        for media_type, count in connection.execute(
+            """
+            SELECT version.media_type, count(*)
+            FROM bauer_rag_v4.compilation_jobs AS job
+            JOIN bauer_rag_v4.release_sources AS member
+              ON member.release_id = job.release_id
+             AND member.source_id = job.source_id
+            JOIN bauer_rag_v4.source_versions AS version
+              ON version.source_version_id = member.source_version_id
+            WHERE job.release_id = %s
+              AND job.status = 'dead'
+            GROUP BY version.media_type
+            ORDER BY version.media_type
+            """,
+            (request["release_id"],),
+        ).fetchall()
+    }
     duplicate_metrics = connection.execute(
         """
         WITH content_groups AS (
@@ -451,6 +470,7 @@ def _status(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
         "counts": counts,
         "jobs": jobs,
         "dead_job_failures": failures,
+        "dead_jobs_by_media_type": dead_by_media_type,
         "duplicate_source_metrics": {
             "content_groups": int(duplicate_metrics[0]),
             "content_sources": int(duplicate_metrics[1]),

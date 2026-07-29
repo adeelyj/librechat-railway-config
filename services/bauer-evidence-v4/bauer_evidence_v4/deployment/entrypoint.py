@@ -17,6 +17,37 @@ from .worker import V4CompilerWorker
 LOGGER = logging.getLogger(__name__)
 
 
+def _build_ocr_fallback(settings: V3Settings):
+    if not settings.ocr_enabled:
+        return None
+    if (
+        settings.ocr_detection_model is None
+        or settings.ocr_recognition_model is None
+        or settings.ocr_classification_model is None
+    ):
+        raise RuntimeError("enabled OCR is missing a pinned model path")
+    from bauer_evidence_v3.ingest.ocr import RapidOcrEngine
+    from bauer_evidence_v3.ingest.pipeline import Compiler
+    from bauer_evidence_v3.ingest.render import PdfPlumberPageRenderer
+
+    return Compiler(
+        ocr_engine=RapidOcrEngine(
+            detection_model=settings.ocr_detection_model,
+            detection_model_sha256=settings.ocr_detection_model_sha256,
+            recognition_model=settings.ocr_recognition_model,
+            recognition_model_sha256=settings.ocr_recognition_model_sha256,
+            classification_model=settings.ocr_classification_model,
+            classification_model_sha256=(
+                settings.ocr_classification_model_sha256
+            ),
+        ),
+        page_renderer=PdfPlumberPageRenderer(),
+        ocr_languages=settings.ocr_languages,
+        ocr_minimum_confidence=settings.ocr_minimum_confidence,
+        ocr_render_dpi=settings.ocr_render_dpi,
+    )
+
+
 def main() -> int:
     if len(sys.argv) != 2 or sys.argv[1] not in {
         "api",
@@ -55,7 +86,10 @@ def main() -> int:
         )
         return 0
     if command == "worker":
-        worker = V4CompilerWorker(v4)
+        worker = V4CompilerWorker(
+            v4,
+            ocr_compiler=_build_ocr_fallback(v3),
+        )
 
         def stop(signum, _frame):
             LOGGER.info(
