@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 
@@ -428,8 +429,8 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         )
     )
     assert [field.field for field in b19_plan.fields] == [
-        "topic_1_pressure",
-        "topic_1_flow",
+        "bkool_iii_pressure",
+        "bkool_iii_flow",
     ]
 
 
@@ -513,6 +514,45 @@ def test_verticus_duplicate_rows_use_operating_pressure_not_shutdown(
     assert "VERTICUS I 420 - 525 bar: 525 bar" in response.answer
     assert "ISO 1217" in response.answer
     assert "shutdown pressure is lower" in response.answer
+
+
+def test_bkool_iii_uses_complete_current_technical_row() -> None:
+    plan = TaskAnalyzer().analyze(
+        (
+            "What are the documented maximum operating pressures and maximum "
+            "flow rates for B-KOOL III? State the separate helium and argon "
+            "flow range and cite the technical data."
+        )
+    )
+    context = SimpleNamespace(
+        ranked=SimpleNamespace(rank=1),
+        citation=SimpleNamespace(
+            original_filename="0021_b-kool_c5e62182b0.html"
+        ),
+        unit=SimpleNamespace(
+            evidence_id="evidence-bkool-iii",
+            search_text=(
+                "Technical Data Model designation B-KOOL III "
+                "Maximum operating pressure: 350 bar / 550 bar "
+                "Maximum flow rate: 200–700 l/min for 10 l cylinder "
+                "filling from 0–200 bar; 200–650 l/min according to "
+                "ISO 1217 for air; 200–420 l/min for helium and argon."
+            ),
+        ),
+    )
+    coverage = [
+        CoverageEngine._bkool_iii_field(field, (context,))
+        for field in plan.fields
+    ]
+    assert all(item.state == "supported" for item in coverage)
+    rendered = " ".join(
+        value for item in coverage for value, _ in item.values
+    )
+    assert "350 bar / 550 bar" in rendered
+    assert "200–700 l/min" in rendered
+    assert "200–650 l/min" in rendered
+    assert "200–420 l/min" in rendered
+    assert "500 bar" not in rendered
 
 
 def test_direct_v4_answers_are_complete_grounded_and_cited(

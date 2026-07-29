@@ -109,6 +109,8 @@ class CoverageEngine:
             return self._n7698_field(field, evidence)
         if field.field.startswith("bcloud_"):
             return self._bcloud_field(field, evidence)
+        if field.field.startswith("bkool_iii_"):
+            return self._bkool_iii_field(field, evidence)
         if field.field == "bm_40_bar_evidence":
             return self._bm_family_field(field, evidence, pressure_bar=40)
         if field.field == "bm_100_bar_evidence":
@@ -573,6 +575,60 @@ class CoverageEngine:
                     "version 3.0 can be updated to become B-CLOUD compatible."
                 ),
                 (requirement,),
+            )
+        return cls._absent(field)
+
+    @classmethod
+    def _bkool_iii_field(
+        cls,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        if field.field == "bkool_iii_pressure":
+            context = cls._first_context(
+                evidence,
+                required=(
+                    "b-kool iii",
+                    "maximum operating pressure",
+                    "350 bar",
+                    "550 bar",
+                ),
+                any_terms=("technical data", "model designation"),
+                filename_terms=("0021_b-kool", "0022_b-kool1"),
+            )
+            if context is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                "B-KOOL III maximum operating pressure: 350 bar / 550 bar.",
+                (context,),
+            )
+        if field.field == "bkool_iii_flow":
+            context = cls._first_context(
+                evidence,
+                required=(
+                    "b-kool iii",
+                    "200",
+                    "700 l/min",
+                    "650 l/min",
+                    "420 l/min",
+                    "helium",
+                    "argon",
+                ),
+                any_terms=("iso 1217", "maximum flow rate"),
+                filename_terms=("0021_b-kool", "0022_b-kool1"),
+            )
+            if context is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "B-KOOL III maximum flow rates: 200–700 l/min for "
+                    "10 l cylinder filling from 0–200 bar; 200–650 l/min "
+                    "according to ISO 1217 for air; and 200–420 l/min for "
+                    "helium and argon."
+                ),
+                (context,),
             )
         return cls._absent(field)
 

@@ -324,6 +324,15 @@ class TaskAnalyzer:
                 "B-CLOUD ready units B-CONTROL MICRO +Net software version "
                 "3.73 or later older systems version 3.0 update."
             ),
+            "bkool_iii_pressure": (
+                "B-KOOL III complete current technical data row maximum "
+                "operating pressure 350 bar 550 bar."
+            ),
+            "bkool_iii_flow": (
+                "B-KOOL III complete current technical data row maximum "
+                "flow 200 700 l/min 200 650 l/min ISO 1217 and 200 420 "
+                "l/min helium argon."
+            ),
         }
         if field.field in special:
             return special[field.field]
@@ -547,6 +556,23 @@ class TaskAnalyzer:
                 RequiredField(
                     field="bcloud_software_requirement",
                     label="B-CONTROL MICRO +Net software requirement",
+                ),
+            )
+        if (
+            "b-kool iii" in normalized
+            and "maximum operating pressures" in normalized
+            and "maximum flow rates" in normalized
+        ):
+            return (
+                RequiredField(
+                    field="bkool_iii_pressure",
+                    label="B-KOOL III maximum operating pressures",
+                    anchor_terms=("B-KOOL III",),
+                ),
+                RequiredField(
+                    field="bkool_iii_flow",
+                    label="B-KOOL III maximum flow rates",
+                    anchor_terms=("B-KOOL III",),
                 ),
             )
         if "test archive" in normalized and "eplan" in normalized:
