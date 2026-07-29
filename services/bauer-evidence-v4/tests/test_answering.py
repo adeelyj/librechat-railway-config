@@ -162,9 +162,15 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         "Find B-SELECT and report its operating pressure and functions."
     )
     assert product_plan.intent == "general"
-    assert [field.field for field in product_plan.fields] == ["topic_1"]
-    assert product_plan.fields[0].anchor_terms == ("B-SELECT",)
-    assert product_plan.fields[0].match_terms
+    assert [field.field for field in product_plan.fields] == [
+        "topic_1_pressure",
+        "topic_1_functions",
+    ]
+    assert all(
+        field.anchor_terms == ("B-SELECT",)
+        for field in product_plan.fields
+    )
+    assert all(field.match_terms for field in product_plan.fields)
     assert all(field.field != "source" for field in product_plan.fields)
 
     absence_plan = analyzer.analyze(

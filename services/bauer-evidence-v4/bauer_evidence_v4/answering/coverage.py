@@ -118,7 +118,7 @@ class CoverageEngine:
                 continue
             snippet = self._bounded_snippet(
                 text,
-                field.anchor_terms + field.match_terms,
+                field.match_terms or field.anchor_terms,
             )
             snippet_key = _normalize(snippet)
             if not snippet or snippet_key in seen:
@@ -131,7 +131,7 @@ class CoverageEngine:
                     context.unit.evidence_id,
                 )
             )
-            if len(support) >= 3:
+            if len(support) >= 2:
                 break
         if not support:
             return FieldCoverage(

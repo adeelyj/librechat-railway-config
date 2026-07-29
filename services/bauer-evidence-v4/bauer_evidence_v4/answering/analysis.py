@@ -58,6 +58,8 @@ _GENERAL_PRODUCT_NAMES = (
 
 _GENERAL_MATCH_GROUPS = (
     (
+        "pressure",
+        "pressure",
         ("pressure", "bar", "druck"),
         (
             "maximum operating pressure",
@@ -68,6 +70,8 @@ _GENERAL_MATCH_GROUPS = (
         ),
     ),
     (
+        "flow",
+        "flow or delivery",
         ("flow", "capacity", "delivery", "l/min", "förderleistung"),
         (
             "flow",
@@ -78,37 +82,78 @@ _GENERAL_MATCH_GROUPS = (
         ),
     ),
     (
+        "power",
+        "motor-power",
         ("power", "kw", "motor"),
         ("motor power", "motor output", "kw"),
     ),
     (
+        "functions",
+        "functions or applications",
         (
+            "capabilities",
+            "capability",
             "function",
+            "functions",
             "automatic",
             "control",
+            "logging",
+            "logs",
+            "measure",
+            "measurement",
+            "measurements",
+            "measures",
+            "mobile",
             "monitor",
+            "monitoring",
             "browser",
             "app",
             "notification",
+            "notifications",
             "application",
+            "applications",
+            "stationary",
         ),
         (
+            "capability",
             "function",
             "automatic",
             "control",
+            "data logger",
+            "logging",
+            "measuring",
+            "mobile",
             "monitor",
             "browser",
             "app",
             "notification",
             "application",
+            "portable",
+            "stationary",
         ),
     ),
     (
-        ("footnote", "limitation", "difference", "conflict", "reconcile"),
+        "limitations",
+        "limitations or source distinctions",
         (
+            "compatible",
+            "compatibility",
+            "conflict",
+            "difference",
+            "footnote",
+            "footnotes",
+            "limit",
+            "limitation",
+            "limitations",
+            "limits",
+            "reconcile",
+        ),
+        (
+            "breathing air",
             "footnote",
             "limitation",
             "maximum allowable working pressure",
+            "nitrox",
             "shutdown pressure",
             "safety valve",
         ),
@@ -387,6 +432,12 @@ class TaskAnalyzer:
         for product in _GENERAL_PRODUCT_NAMES:
             if _normalize(product) not in normalized:
                 continue
+            if any(
+                _normalize(product) in _normalize(label)
+                and _normalize(product) != _normalize(label)
+                for label, _ in topics
+            ):
+                continue
             anchor = product
             if product == "B-SAFE 300":
                 anchor = "B-SAFE"
@@ -401,24 +452,39 @@ class TaskAnalyzer:
             seen_anchors.add(normalized_anchors)
             deduplicated_topics.append((label, anchors))
 
-        match_terms = tuple(
-            dict.fromkeys(
-                term
-                for triggers, terms in _GENERAL_MATCH_GROUPS
-                if any(trigger in normalized for trigger in triggers)
-                for term in terms
+        aspects = tuple(
+            (slug, label, terms)
+            for slug, label, triggers, terms in _GENERAL_MATCH_GROUPS
+            if any(
+                re.search(rf"\b{re.escape(trigger)}\b", normalized)
+                for trigger in triggers
             )
         )
         if deduplicated_topics:
-            return tuple(
-                RequiredField(
-                    field=f"topic_{index + 1}",
-                    label=f"{label} evidence",
-                    anchor_terms=anchors,
-                    match_terms=match_terms,
+            fields: list[RequiredField] = []
+            for index, (topic_label, anchors) in enumerate(
+                deduplicated_topics,
+                start=1,
+            ):
+                if not aspects:
+                    fields.append(
+                        RequiredField(
+                            field=f"topic_{index}",
+                            label=f"{topic_label} evidence",
+                            anchor_terms=anchors,
+                        )
+                    )
+                    continue
+                fields.extend(
+                    RequiredField(
+                        field=f"topic_{index}_{slug}",
+                        label=f"{topic_label} {aspect_label} evidence",
+                        anchor_terms=anchors,
+                        match_terms=terms,
+                    )
+                    for slug, aspect_label, terms in aspects
                 )
-                for index, (label, anchors) in enumerate(deduplicated_topics)
-            )
+            return tuple(fields)
 
         query_terms = tuple(
             dict.fromkeys(
