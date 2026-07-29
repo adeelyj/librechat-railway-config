@@ -269,7 +269,20 @@ class TaskAnalyzer:
         subquestions = tuple(
             Subquestion(
                 subquestion_id=f"field_{index + 1}_{field.field}",
-                text=f"{question} Requested field: {field.label}.",
+                text=(
+                    "Search evidence for "
+                    f"{field.label}. Required terms: "
+                    + " ".join(
+                        dict.fromkeys(
+                            (
+                                *field.anchor_terms,
+                                *field.match_terms,
+                            )
+                        )
+                    )
+                    if intent == "general"
+                    else f"{question} Requested field: {field.label}."
+                ),
             )
             for index, field in enumerate(fields)
         )
@@ -354,9 +367,12 @@ class TaskAnalyzer:
                     label="Booster pressure evidence",
                     match_terms=(
                         "booster",
+                        "pressure range",
                         "operating pressure",
                         "shutdown pressure",
                         "final pressure",
+                        "air cooled",
+                        "water cooled",
                     ),
                 ),
                 RequiredField(

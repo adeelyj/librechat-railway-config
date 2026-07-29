@@ -373,13 +373,52 @@ class CandidateGenerator:
                     )
                 )
         merged = self._union(all_hits)
+        ordered = sorted(
+            merged,
+            key=lambda item: (
+                -item.candidate_score,
+                item.item.projection.projection_id,
+            ),
+        )
+        by_key = {
+            candidate.item.canonical_key: candidate
+            for candidate in ordered
+        }
+        protected_keys: list[tuple[str, ...]] = []
+        protected_seen: set[tuple[str, ...]] = set()
+        quota = max(1, min(3, limit // max(len(channels), 1)))
+        for subquestion in subquestions:
+            for channel in channels:
+                for hit in all_hits:
+                    key = hit.item.canonical_key
+                    if (
+                        hit.subquestion_id != subquestion.subquestion_id
+                        or hit.channel != channel.channel
+                        or hit.rank > quota
+                        or key in protected_seen
+                    ):
+                        continue
+                    protected_seen.add(key)
+                    protected_keys.append(key)
+        protected = [
+            by_key[key]
+            for key in protected_keys
+            if key in by_key
+        ]
+        protected.sort(
+            key=lambda item: (
+                -item.candidate_score,
+                item.item.projection.projection_id,
+            )
+        )
         candidates = tuple(
-            sorted(
-                merged,
-                key=lambda item: (
-                    -item.candidate_score,
-                    item.item.projection.projection_id,
-                ),
+            (
+                protected
+                + [
+                    candidate
+                    for candidate in ordered
+                    if candidate.item.canonical_key not in protected_seen
+                ]
             )[:limit]
         )
         if any(

@@ -331,6 +331,38 @@ def test_per_subquestion_retrieval_preserves_both_needs(
     )
 
 
+def test_candidate_union_preserves_each_channel_head_per_subquestion(
+    retrieval_fixture: tuple,
+) -> None:
+    generator, scope, _ = retrieval_fixture
+    subquestions = (
+        Subquestion("row", CASES["B16"][0]),
+        Subquestion("document", CASES["B23"][0]),
+    )
+    result = generator.retrieve(
+        _request(
+            "Return the requested row and document.",
+            scope,
+            subquestions=subquestions,
+        ),
+        limit=20,
+    )
+    selected = {
+        candidate.item.canonical_key for candidate in result.candidates
+    }
+    for subquestion in subquestions:
+        for channel in (generator.exact, generator.lexical, generator.dense):
+            head = channel.search(
+                subquestion.text,
+                subquestion_id=subquestion.subquestion_id,
+                scope=scope,
+                constraints=(),
+                limit=1,
+            )
+            if head:
+                assert head[0].item.canonical_key in selected
+
+
 def test_structured_constraints_apply_inside_every_channel(
     retrieval_fixture: tuple,
 ) -> None:

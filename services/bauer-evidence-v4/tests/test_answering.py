@@ -276,6 +276,45 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         "Filling of the diving cylinders from the compressor; "
         "Refilling the storage bottle battery"
     )
+    b06_plan = analyzer.analyze(
+        (
+            "What is the highest documented maximum operating pressure "
+            "for a Bauer compressor? Distinguish compressors from boosters "
+            "and explain shutdown pressure."
+        )
+    )
+    assert all(
+        b06_plan.original_question not in subquestion.text
+        for subquestion in b06_plan.subquestions
+    )
+    compressor_value = CoverageEngine._concise_value(
+        (
+            "Content: COMPRESSORS AIR COOLED | 30 - 525 BAR "
+            "I Series | MINI-VERTICUS 90 - 420 bar "
+            "I Series | VERTICUS 90 - 525 bar "
+            "I Series | K 22 - K 28 90 - 525 bar"
+        ),
+        b06_plan.fields[0],
+    )
+    assert compressor_value == (
+        "Highest compressor maximum operating pressure: 525 bar; "
+        "I Series | VERTICUS: 90–525 bar; "
+        "I Series | K 22 - K 28: 90–525 bar"
+    )
+    booster_value = CoverageEngine._concise_value(
+        (
+            "Content: BOOSTER AIR COOLED | 25 - 420 BAR "
+            "GIB Series | VERTICUS 90 - 365 bar "
+            "BOOSTER WATER COOLED | 25 - 520 BAR "
+            "GIB Series | BK 23 – BK 52 90 - 520 bar"
+        ),
+        b06_plan.fields[1],
+    )
+    assert booster_value == (
+        "BOOSTER AIR COOLED: 25–420 bar; "
+        "BOOSTER WATER COOLED: 25–520 bar; "
+        "GIB Series | BK 23 – BK 52: 90–520 bar"
+    )
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(

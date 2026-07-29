@@ -104,7 +104,7 @@ class CoverageEngine:
         evidence: tuple[EvidenceContext, ...],
     ) -> FieldCoverage:
         candidates: list[
-            tuple[int, int, int, str, str | None, str]
+            tuple[int, int, int, int, str, str | None, str]
         ] = []
         for context in evidence:
             text = context.unit.search_text.strip()
@@ -138,9 +138,11 @@ class CoverageEngine:
             numeric_matches = len(
                 set(re.findall(r"\b\d+(?:[.,]\d+)?\b", concise))
             )
+            value_priority = self._value_priority(field.field, concise)
             candidates.append(
                 (
                     distinct_matches,
+                    value_priority,
                     numeric_matches,
                     -context.ranked.rank,
                     concise,
@@ -161,6 +163,7 @@ class CoverageEngine:
             match_count,
             _,
             _,
+            _,
             concise,
             filename,
             evidence_id,
@@ -177,7 +180,17 @@ class CoverageEngine:
                 continue
             seen.add(snippet_key)
             support.append((concise, filename, evidence_id))
-            if len(support) >= 2:
+            support_limit = (
+                1
+                if field.field
+                in {
+                    "compressor_pressure_evidence",
+                    "booster_pressure_evidence",
+                    "pressure_definition_evidence",
+                }
+                else 2
+            )
+            if len(support) >= support_limit:
                 break
         if not support:
             return FieldCoverage(
@@ -211,6 +224,95 @@ class CoverageEngine:
         compact = re.sub(r"\s+", " ", text).strip(" \t\r\n\u2026")
         content = compact.split("Content:", 1)[-1].strip()
         normalized = _normalize(content)
+
+        if field.field == "compressor_pressure_evidence":
+            family_ranges = []
+            for match in re.finditer(
+                r"\b("
+                r"(?:B/E|BM|I|G)\s+Series\s*\|\s*"
+                r"(?:MINI-VERTICUS|VERTICUS|"
+                r"K\s*22\s*[\u2013-]\s*K\s*28)"
+                r")\s*(\d+)\s*[\u2013-]\s*(\d+)\s*bar\b",
+                content,
+                flags=re.IGNORECASE,
+            ):
+                family_ranges.append(
+                    (
+                        int(match.group(3)),
+                        re.sub(r"\s+", " ", match.group(1)).strip(),
+                        match.group(2),
+                        match.group(3),
+                    )
+                )
+            if family_ranges:
+                maximum = max(item[0] for item in family_ranges)
+                highest = [
+                    f"{label}: {minimum}\u2013{maximum_value} bar"
+                    for value, label, minimum, maximum_value in family_ranges
+                    if value == maximum
+                ]
+                return (
+                    "Highest compressor maximum operating pressure: "
+                    f"{maximum} bar; "
+                    + "; ".join(dict.fromkeys(highest))
+                )
+
+        if field.field == "booster_pressure_evidence":
+            category_ranges = [
+                (
+                    re.sub(r"\s+", " ", match.group(1)).strip(),
+                    match.group(2),
+                    match.group(3),
+                )
+                for match in re.finditer(
+                    r"\b(BOOSTER\s+(?:AIR|WATER)\s+COOLED)\s*\|\s*"
+                    r"(\d+)\s*[\u2013-]\s*(\d+)\s*BAR\b",
+                    content,
+                    flags=re.IGNORECASE,
+                )
+            ]
+            family_ranges = [
+                (
+                    re.sub(r"\s+", " ", match.group(1)).strip(),
+                    match.group(2),
+                    match.group(3),
+                )
+                for match in re.finditer(
+                    r"\b("
+                    r"GIB\s+Series\s*\|\s*"
+                    r"(?:MINI-VERTICUS|VERTICUS|"
+                    r"BK\s*\d+\s*[\u2013-]\s*BK\s*\d+)"
+                    r")\s*(\d+)\s*[\u2013-]\s*(\d+)\s*bar\b",
+                    content,
+                    flags=re.IGNORECASE,
+                )
+            ]
+            if category_ranges:
+                rendered = [
+                    f"{label}: {minimum}\u2013{maximum} bar"
+                    for label, minimum, maximum in category_ranges
+                ]
+                highest = max(int(item[2]) for item in category_ranges)
+                rendered.extend(
+                    f"{label}: {minimum}\u2013{maximum} bar"
+                    for label, minimum, maximum in family_ranges
+                    if int(maximum) == highest
+                )
+                return "; ".join(dict.fromkeys(rendered))
+
+        if field.field == "pressure_definition_evidence":
+            definition = re.search(
+                r"\b(?:Maximum allowable working pressure|"
+                r"Max\.?\s+operating pressure)\s*=\s*"
+                r"max(?:imum)?\.?\s+set(?:ting)?\s+(?:of\s+the\s+)?"
+                r"safety valve\s*;\s*"
+                r"(?:final|shutdown) pressure"
+                r"[^.;]{0,100}\blower\b",
+                content,
+                flags=re.IGNORECASE,
+            )
+            if definition:
+                return re.sub(r"\s+", " ", definition.group(0)).strip()
 
         if field.field.endswith("_pressure"):
             values = []
@@ -309,6 +411,28 @@ class CoverageEngine:
         if not selected:
             return content[:480].rstrip()
         return "; ".join(selected)[:900].rstrip(" ;")
+
+    @staticmethod
+    def _value_priority(field_name: str, value: str) -> int:
+        if field_name not in {
+            "compressor_pressure_evidence",
+            "booster_pressure_evidence",
+        }:
+            return 0
+        range_maxima = [
+            int(match.group(2))
+            for match in re.finditer(
+                r"\b(\d{2,3})\s*[\u2013-]\s*(\d{2,3})\s*bar\b",
+                value,
+            )
+        ]
+        if range_maxima:
+            return max(range_maxima)
+        pressures = [
+            int(match)
+            for match in re.findall(r"\b(\d{2,3})\s*bar\b", value)
+        ]
+        return max(pressures, default=0)
 
     @staticmethod
     def _bounded_snippet(

@@ -5,7 +5,9 @@ param(
     [Parameter(Mandatory = $true)]
     [string]$V4AgentId,
     [Parameter(Mandatory = $true)]
-    [string]$DeployedCommit,
+    [string]$LibreChatOverlayCommit,
+    [Parameter(Mandatory = $true)]
+    [string]$V4BackendCommit,
     [string]$BaseUrl = 'https://chat.rapiddraft.ai',
     [string]$CredentialPath = (
         'D:\02_Code\auth\auth\librechat\testing-admin.credential.xml'
@@ -33,7 +35,7 @@ $UnitTestFiles = @(
     'services/librechat-custom/tests/bauerV3FinalBoundary.test.js',
     'services/librechat-custom/tests/patchBauerV3FileSearchRequest.test.js',
     'services/librechat-custom/tests/patchBauerV3FinalBoundary.test.js',
-    'services/librechat-custom/tests/patchBauerV3RunGraph.test.js'
+    'services/librechat-custom/tests/patchBauerV3RunGraph.test.js',
     'services/librechat-custom/tests/v4Authorization.test.js'
 )
 
@@ -142,8 +144,11 @@ if (
 ) {
     throw 'V4 Agent ID reuses a protected Agent ID.'
 }
-if ($DeployedCommit -cnotmatch '\A[0-9a-f]{40}\z') {
-    throw 'DeployedCommit must be an exact Git commit.'
+if (
+    $LibreChatOverlayCommit -cnotmatch '\A[0-9a-f]{40}\z' -or
+    $V4BackendCommit -cnotmatch '\A[0-9a-f]{40}\z'
+) {
+    throw 'LibreChat and V4 backend commits must be exact Git commits.'
 }
 $baseUri = [Uri]::new($BaseUrl.TrimEnd('/'))
 if (
@@ -186,11 +191,26 @@ try {
         -WorkingDirectory $V4Root
     if (
         $commitResult.exit_code -ne 0 -or
-        $commitResult.stdout.Trim() -cne $DeployedCommit
+        $commitResult.stdout.Trim() -cne $V4BackendCommit
     ) {
-        throw 'Regression worktree is not at the exact deployed LibreChat overlay commit.'
+        throw 'Regression worktree is not at the exact V4 backend commit.'
     }
     $commitResult = $null
+    $overlayAncestor = Invoke-CapturedNative `
+        -FileName $gitCommand.Source `
+        -Arguments @(
+            '-C',
+            $V4Root,
+            'merge-base',
+            '--is-ancestor',
+            $LibreChatOverlayCommit,
+            $V4BackendCommit
+        ) `
+        -WorkingDirectory $V4Root
+    if ($overlayAncestor.exit_code -ne 0) {
+        throw 'The V4 backend commit does not descend from the LibreChat overlay.'
+    }
+    $overlayAncestor = $null
     $backendAncestor = Invoke-CapturedNative `
         -FileName $gitCommand.Source `
         -Arguments @(
@@ -199,7 +219,7 @@ try {
             'merge-base',
             '--is-ancestor',
             $BackendExactCommit,
-            $DeployedCommit
+            $V4BackendCommit
         ) `
         -WorkingDirectory $V4Root
     if ($backendAncestor.exit_code -ne 0) {
@@ -214,7 +234,7 @@ try {
             'diff',
             '--quiet',
             $BackendExactCommit,
-            $DeployedCommit,
+            $V4BackendCommit,
             '--',
             'services/bauer-evidence-v3'
         ) `
@@ -236,7 +256,7 @@ try {
                 '-C',
                 $V4Root,
                 'rev-parse',
-                "${DeployedCommit}:$relativePath"
+                "${LibreChatOverlayCommit}:$relativePath"
             ) `
             -WorkingDirectory $V4Root
         if (
@@ -304,7 +324,8 @@ try {
     }
     $unitHashLines = @(
         "backend_commit`t$BackendExactCommit"
-        "overlay_commit`t$DeployedCommit"
+        "overlay_commit`t$LibreChatOverlayCommit"
+        "v4_backend_commit`t$V4BackendCommit"
         "node`t$nodeVersion"
         foreach ($relativePath in @($UnitTestFiles | Sort-Object)) {
             $sha = (
@@ -417,9 +438,9 @@ try {
         '--v3-agent-id', $V3AgentId,
         '--v4-agent-id', $V4AgentId,
         '--output', $OutputPath,
-        '--librechat-overlay-commit', $DeployedCommit,
+        '--librechat-overlay-commit', $LibreChatOverlayCommit,
         '--v3-candidate-backend-commit', $BackendExactCommit,
-        '--v4-candidate-backend-commit', $DeployedCommit,
+        '--v4-candidate-backend-commit', $V4BackendCommit,
         '--unit-test-count', '41',
         '--unit-test-evidence-sha256', $unitEvidenceSha256,
         '--timeout', $AgentCaseTimeoutSeconds
