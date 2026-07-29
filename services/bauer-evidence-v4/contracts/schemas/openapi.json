@@ -98,7 +98,7 @@
         "additionalProperties": false,
         "properties": {
           "signed_scope": {
-            "maxLength": 16384,
+            "maxLength": 65536,
             "minLength": 32,
             "title": "Signed Scope",
             "type": "string"

@@ -69,6 +69,11 @@ def load_release(settings: V4Settings) -> LoadedRelease:
             FROM bauer_rag_v4.resolve_pinned_release_sources()
             """
         ).fetchall()
+        if not source_rows:
+            raise RuntimeError(
+                "the V4 candidate has no release sources authorized for the "
+                "configured principal"
+            )
         source_uuid_by_external_id = {
             str(external): str(source_id)
             for source_id, external in source_rows

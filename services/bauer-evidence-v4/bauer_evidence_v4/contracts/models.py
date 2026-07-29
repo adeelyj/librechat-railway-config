@@ -40,7 +40,10 @@ class TypedConstraint(ContractModel):
 
 
 class AuthorizationEnvelope(ContractModel):
-    signed_scope: str = Field(min_length=32, max_length=16384)
+    # A sealed 373-source LibreChat scope is approximately 16.4 KiB. Keep
+    # enough headroom for the contract's bounded 1,000-source authorization
+    # list while retaining an explicit request-size limit.
+    signed_scope: str = Field(min_length=32, max_length=65536)
 
 
 class V4AnswerRequest(ContractModel):

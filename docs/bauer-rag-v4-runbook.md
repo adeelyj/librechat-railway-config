@@ -98,7 +98,7 @@ Rollback does not require deleting V4 data:
 4. Leave the V4 schema and objects in place for evidence preservation. The active pointer remains
    empty, so retained V4 data cannot become production-active.
 
-Database rollback scripts exist for all six V4 migrations and are for an explicitly scheduled
+Database rollback scripts exist for all seven V4 migrations and are for an explicitly scheduled
 destructive teardown only. They are not the normal application rollback.
 
 ## Development regression

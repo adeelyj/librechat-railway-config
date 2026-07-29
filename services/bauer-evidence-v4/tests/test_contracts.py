@@ -75,6 +75,17 @@ class ContractTests(unittest.TestCase):
         )
         self.assertNotEqual(request.immutable_original_question, request.search_hint)
 
+    def test_signed_scope_accepts_the_sealed_373_source_envelope_size(self) -> None:
+        request = V4AnswerRequest(
+            request_id="request-373",
+            question="Find the exact Bauer evidence.",
+            client=ClientContext(type="librechat", instance="testing"),
+            authorization=AuthorizationEnvelope(signed_scope="x" * 16422),
+        )
+        self.assertEqual(len(request.authorization.signed_scope), 16422)
+        with self.assertRaises(ValidationError):
+            AuthorizationEnvelope(signed_scope="x" * 65537)
+
     def test_contracts_reject_unknown_fields(self) -> None:
         with self.assertRaises(ValidationError):
             V4AnswerRequest.model_validate(
