@@ -18,3 +18,19 @@ python -m unittest discover -s services\bauer-evidence-v4\tests -p 'test_*.py' -
 
 The original `question` is immutable request data. `search_hint` is optional derived data and may
 only influence candidate generation.
+
+The canonical compiler is under `bauer_evidence_v4/canonical` and
+`bauer_evidence_v4/compilation`. It evaluates independent HTML/PDF parser candidates against
+semantic quality gates, reconstructs table grids and inherited header paths, attaches units,
+qualifiers, sections, captions, and footnotes, emits typed facts with exact provenance, and
+quarantines unresolved sources.
+
+Verify the unlocked difficult-document compiler suite:
+
+```powershell
+$env:PYTHONPATH=(Resolve-Path 'services\bauer-evidence-v4').Path
+python -m pytest services\bauer-evidence-v4\tests evals\bauer-rag-v4\tests -q
+python services\bauer-evidence-v4\scripts\verify_compiler_fixtures.py `
+  --fixture evals\bauer-rag-v4\fixtures\difficult-documents.json `
+  --source-root 'D:\02_Code\Bauer Kompressoren Demo'
+```
