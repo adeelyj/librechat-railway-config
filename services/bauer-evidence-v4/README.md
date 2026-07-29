@@ -32,6 +32,7 @@ $env:PYTHONPATH=(Resolve-Path 'services\bauer-evidence-v4').Path
 python -m pytest services\bauer-evidence-v4\tests evals\bauer-rag-v4\tests -q
 python services\bauer-evidence-v4\scripts\verify_compiler_fixtures.py `
   --fixture evals\bauer-rag-v4\fixtures\difficult-documents.json `
+  --gates evals\bauer-rag-v4\gates\development-gates.json `
   --source-root 'D:\02_Code\Bauer Kompressoren Demo'
 ```
 
