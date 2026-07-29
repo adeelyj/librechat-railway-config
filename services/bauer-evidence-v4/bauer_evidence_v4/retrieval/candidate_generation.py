@@ -5,7 +5,7 @@ import math
 import re
 import unicodedata
 from collections import Counter, defaultdict
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from typing import Iterable, Protocol
 
 from .models import (
@@ -401,7 +401,7 @@ class CandidateGenerator:
                     protected_seen.add(key)
                     protected_keys.append(key)
         protected = [
-            by_key[key]
+            replace(by_key[key], preserved_channel_head=True)
             for key in protected_keys
             if key in by_key
         ]

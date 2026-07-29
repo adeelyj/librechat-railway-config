@@ -92,6 +92,7 @@ class TransparentFeatureReranker:
         ("group_match", 18.0),
         ("intent", 16.0),
         ("lexical_coverage", 24.0),
+        ("preserved_channel_head", 30.0),
         ("scope_penalty", -40.0),
         ("subject_coverage", 30.0),
     )
@@ -240,6 +241,9 @@ class TransparentFeatureReranker:
             "group_match": group_match,
             "intent": intent,
             "lexical_coverage": lexical_coverage,
+            "preserved_channel_head": float(
+                candidate.preserved_channel_head
+            ),
             "scope_penalty": scope_penalty,
             "subject_coverage": subject_coverage,
         }

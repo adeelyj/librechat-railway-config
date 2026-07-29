@@ -361,6 +361,12 @@ def test_candidate_union_preserves_each_channel_head_per_subquestion(
             )
             if head:
                 assert head[0].item.canonical_key in selected
+                assert next(
+                    candidate
+                    for candidate in result.candidates
+                    if candidate.item.canonical_key
+                    == head[0].item.canonical_key
+                ).preserved_channel_head
 
 
 def test_structured_constraints_apply_inside_every_channel(

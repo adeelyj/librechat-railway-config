@@ -107,6 +107,7 @@ class Candidate:
     channels: tuple[str, ...]
     subquestion_ids: tuple[str, ...]
     channel_scores: tuple[tuple[str, float], ...]
+    preserved_channel_head: bool = False
 
 
 @dataclass(frozen=True, slots=True)
