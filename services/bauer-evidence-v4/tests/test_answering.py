@@ -236,6 +236,15 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         "record SYN-BK-N2-420-500 is synthetic",
         "syn-",
     )
+    assert CoverageEngine._bounded_snippet(
+        "The teams work syn- over the long term.",
+        ("SYN-",),
+        anchor_terms=("SYN-",),
+    ) == ""
+    assert CoverageEngine._concise_value(
+        "The teams work syn- over the long term.",
+        synthetic_plan.fields[0],
+    ) == ""
     concise_flow = CoverageEngine._concise_value(
         (
             "B-SELECT Flow rate at: P = 50 bar 2750 l/min "

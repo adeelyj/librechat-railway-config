@@ -110,11 +110,13 @@ class CoverageEngine:
             text = context.unit.search_text.strip()
             normalized = _normalize(text)
             if field.anchor_terms and not all(
-                _normalize(term) in normalized for term in field.anchor_terms
+                self._positions(normalized, _normalize(term))
+                for term in field.anchor_terms
             ):
                 continue
             if field.match_terms and not any(
-                _normalize(term) in normalized for term in field.match_terms
+                self._positions(normalized, _normalize(term))
+                for term in field.match_terms
             ):
                 continue
             snippet = self._bounded_snippet(
@@ -396,8 +398,8 @@ class CoverageEngine:
                 for term in terms
             ):
                 continue
-            if field.anchor_terms and not any(
-                _normalize(anchor) in normalized
+            if field.anchor_terms and not all(
+                cls._positions(normalized, _normalize(anchor))
                 for anchor in field.anchor_terms
             ):
                 continue
@@ -409,7 +411,7 @@ class CoverageEngine:
             if len(selected) >= 4:
                 break
         if not selected:
-            return content[:480].rstrip()
+            return "" if terms else content[:480].rstrip()
         return "; ".join(selected)[:900].rstrip(" ;")
 
     @staticmethod
@@ -473,6 +475,10 @@ class CoverageEngine:
                 _normalize(term),
             )
         ]
+        if terms and not positions:
+            return ""
+        if anchor_terms and not anchor_positions:
+            return ""
         if anchor_positions and terms:
             pairs = [
                 (abs(anchor - position), anchor, position)
