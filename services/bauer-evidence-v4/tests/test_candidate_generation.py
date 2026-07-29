@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from dataclasses import replace
 from pathlib import Path
 
 import pytest
@@ -15,6 +16,7 @@ from bauer_evidence_v4.retrieval import (
     StructuredConstraint,
     Subquestion,
 )
+from bauer_evidence_v4.retrieval.candidate_generation import _EXACT_RE
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
@@ -192,6 +194,45 @@ def test_all_three_candidate_families_contribute(
     assert counts["exact"] > 0
     assert counts["lexical"] > 0
     assert counts["dense"] > 0
+
+
+def test_exact_channel_recognizes_bauer_product_codes_not_numeric_prose(
+    retrieval_fixture: tuple,
+) -> None:
+    _, scope, items = retrieval_fixture
+    base = next(
+        item
+        for item in items
+        if item.tenant_id == scope.tenant_id
+        and item.authorization_source_id
+        in scope.authorized_external_source_ids
+    )
+    projection = replace(
+        base.projection,
+        projection_id="projection_b_select_regression",
+        search_text=(
+            "Document title: B-SELECT. B-SELECT is an automatic selector "
+            "unit with documented flow rates at 50, 200, and 300 bar."
+        ),
+        exact_terms=(),
+    )
+    generator = CandidateGenerator((replace(base, projection=projection),))
+    query = (
+        "Find B-SELECT and report flow rates at 50, 200, and 300 bar."
+    )
+    assert [match.group(0) for match in _EXACT_RE.finditer(query)] == [
+        "B-SELECT"
+    ]
+    hits = generator.exact.search(
+        query,
+        subquestion_id="product",
+        scope=scope,
+        constraints=(),
+        limit=10,
+    )
+    assert [hit.item.projection.projection_id for hit in hits] == [
+        "projection_b_select_regression"
+    ]
 
 
 def test_each_channel_filters_tenant_kb_release_and_source_scope(

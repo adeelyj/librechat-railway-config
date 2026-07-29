@@ -25,9 +25,9 @@ _EXACT_RE = re.compile(
     r"\b(?:"
     r"N\d{4,}|"
     r"[A-Z]{1,6}(?:[\s.-]?\d)+(?:[./-][A-Z0-9.]+)*|"
-    r"(?:ISO|EN)\s+\d{3,5}(?:-\d+)?"
-    r")\b",
-    re.IGNORECASE,
+    r"(?:ISO|EN)\s+\d{3,5}(?:-\d+)?|"
+    r"B-[A-Z][A-Z0-9-]*(?:\s+(?:PLUS(?:\s+(?:i/s|m))?|III|300))?"
+    r")\b"
 )
 _SYNONYMS = {
     "förderleistung": ("effective", "free", "air", "delivery"),
@@ -158,6 +158,10 @@ class ExactStructuredChannel:
                 continue
             projection = item.projection
             terms = {_normalize(term) for term in projection.exact_terms}
+            terms.update(
+                _normalize(match.group(0))
+                for match in _EXACT_RE.finditer(projection.search_text)
+            )
             matched = query_identifiers & terms
             score = 20.0 * len(matched)
             document_number = _normalize(
