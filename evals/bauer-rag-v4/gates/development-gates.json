@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "gate_manifest_id": "bauer-rag-v4-development-gates-20260729",
+  "split": "development",
+  "locked_holdout_opened": false,
+  "source_contract_sha256": "40049a12aacb198018a633905d793c8ef9011403f3fdbcd34ed7fe0792ab2580",
+  "minimums": {
+    "source_contract_match": {
+      "matched": 373,
+      "unexpected": 0
+    },
+    "golden_document_metadata_fields": 1.0,
+    "golden_exact_identifiers_retained": 1.0,
+    "golden_table_header_unit_association": 0.95,
+    "golden_caption_section_footnote_association": 0.95,
+    "numeric_looking_golden_cells_typed": 0.98,
+    "exact_metadata_retrieval": 1.0,
+    "table_integrity": 0.9,
+    "recall_at_5": 0.9,
+    "recall_at_10": 0.95,
+    "claim_correctness": 0.8,
+    "constraint_compliance": 0.95,
+    "safe_refusal_accuracy": 0.9,
+    "high_severity_citation_correctness": 1.0,
+    "unauthorized_evidence_returned": 0,
+    "multi_part_requested_field_coverage": 0.9,
+    "question_preservation": 1.0,
+    "end_to_end_p50_seconds": 30,
+    "end_to_end_p95_seconds": 90,
+    "unhandled_request_failures": 0
+  },
+  "policy": {
+    "candidate_generation_must_pass_before_reranking": true,
+    "representation_must_pass_before_retrieval": true,
+    "no_evidence_dump_fallback": true,
+    "release_readiness_requires_named_suite_digest": true
+  }
+}

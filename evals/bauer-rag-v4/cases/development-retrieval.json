@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "suite_id": "bauer-rag-v4-public-development-retrieval-20260729",
+  "split": "development",
+  "locked_holdout_opened": false,
+  "cases": [
+    {
+      "case_id": "B07",
+      "locale": "en",
+      "category": "exact_table",
+      "question": "Find the Bauer model I 15.11-11-V in the uploaded documents. Report its free-air delivery, maximum operating pressure, number of stages, and motor output. Cite the exact technical-data table and preserve any relevant footnotes or limitations.",
+      "relevant": {
+        "projection_type": "table_row",
+        "subject": "I 15.11-11-V"
+      },
+      "requested_fields": [
+        "effective_free_air_delivery",
+        "maximum_operating_pressure",
+        "number_of_stages",
+        "motor_power",
+        "footnotes"
+      ]
+    },
+    {
+      "case_id": "B13",
+      "locale": "en",
+      "category": "exact_certificate",
+      "question": "Find the English EN ISO 3834-2 certificate for Bauer Kompressoren in Munich. Return the precise certificate title, organization, address, language, and source document. Do not substitute an ISO 9001 or ISO 14001 certificate.",
+      "relevant": {
+        "projection_type": "metadata",
+        "search_text_contains": "File Number: 216."
+      },
+      "requested_fields": [
+        "certificate_title",
+        "organization",
+        "address",
+        "language",
+        "source_document"
+      ],
+      "negative_constraints": [
+        "ISO 9001",
+        "ISO 14001",
+        "file 215"
+      ]
+    },
+    {
+      "case_id": "B16",
+      "locale": "en",
+      "category": "exact_table",
+      "question": "In the BM series 40 bar technical table, give the complete row for model BM 6.1/40-11, including effective free air delivery, shutdown pressure, stages, speed, motor power, and weight.",
+      "relevant": {
+        "projection_type": "table_row",
+        "subject": "BM 6.1/40-11"
+      },
+      "requested_fields": [
+        "effective_free_air_delivery",
+        "shutdown_pressure",
+        "number_of_stages",
+        "rotational_speed_approx",
+        "motor_power",
+        "net_weight_approx"
+      ]
+    },
+    {
+      "case_id": "B17",
+      "locale": "en",
+      "category": "exact_table",
+      "question": "In the BM series 100 bar 50 Hz technical table, give the complete row for BM 6.1/100-15 and preserve the table units.",
+      "relevant": {
+        "projection_type": "table_row",
+        "subject": "BM 6.1/100-15",
+        "group": "BM series 100 bar – 50 Hz"
+      },
+      "requested_fields": [
+        "effective_free_air_delivery",
+        "shutdown_pressure",
+        "number_of_stages",
+        "rotational_speed_approx",
+        "motor_power",
+        "net_weight_approx"
+      ]
+    },
+    {
+      "case_id": "B23",
+      "locale": "en",
+      "category": "exact_document_number",
+      "question": "Find document N47183 and identify its title, language, subject, and source filename.",
+      "relevant": {
+        "projection_type": "metadata",
+        "document_number": "N47183"
+      },
+      "requested_fields": [
+        "title",
+        "language",
+        "subject",
+        "source_filename"
+      ]
+    },
+    {
+      "case_id": "B29",
+      "locale": "en",
+      "category": "exact_pressure",
+      "question": "What free-air-delivery, motor-power, and pressure range is documented for the K 22–K 28 series on the product overview page? Keep this family-level range separate from individual model rows.",
+      "relevant": {
+        "projection_type": "fact",
+        "subject": "K 22 – K 28 SERIES"
+      },
+      "requested_fields": [
+        "charging_rate",
+        "motor_power",
+        "pressure_range"
+      ],
+      "negative_constraints": [
+        "PE-VE INDUSTRY",
+        "individual model rows"
+      ]
+    },
+    {
+      "case_id": "B30",
+      "locale": "de",
+      "category": "bilingual_table",
+      "question": "Welche Förderleistung, Abschaltdruck, Stufenzahl und Motorleistung hat das Modell BM 6.1/40-11 laut technischer Tabelle? Nenne die Einheiten und die Quelle.",
+      "relevant": {
+        "projection_type": "table_row",
+        "subject": "BM 6.1/40-11"
+      },
+      "requested_fields": [
+        "effective_free_air_delivery",
+        "shutdown_pressure",
+        "number_of_stages",
+        "motor_power",
+        "source"
+      ]
+    }
+  ]
+}
