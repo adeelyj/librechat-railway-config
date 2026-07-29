@@ -10,6 +10,7 @@ from bauer_evidence_v4.compilation import (
     CanonicalCompiler,
     CompilationQuarantined,
 )
+from bauer_evidence_v4.compilation.html import HtmlDomParser
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
@@ -69,6 +70,25 @@ def test_all_difficult_documents_pass_semantic_compiler_gates(
         )
         assert selected.quality.status in {"pass", "warning"}
         assert not selected.quality.issues
+
+
+def test_repeated_equal_numeric_cells_keep_distinct_provenance_facts() -> None:
+    source = b"""
+    <html lang="en"><head><title>Repeated values</title></head><body>
+      <table>
+        <tr><th>Model</th><th>Value</th><th>Value</th></tr>
+        <tr><th>A</th><td>5</td><td>5</td></tr>
+      </table>
+    </body></html>
+    """
+    document = HtmlDomParser().parse(
+        source,
+        source_path="repeated-values.html",
+    )
+    facts = document.facts
+    assert len(facts) == 2
+    assert len({fact.fact_id for fact in facts}) == 2
+    assert len({fact.provenance_ids for fact in facts}) == 2
 
 
 def test_table_grids_have_inherited_headers_units_footnotes_and_typed_facts(

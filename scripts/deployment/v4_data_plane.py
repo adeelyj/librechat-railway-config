@@ -56,6 +56,7 @@ def _load_request() -> dict[str, Any]:
         "setup",
         "status",
         "retry-dead",
+        "reset-build",
         "mark-ready",
     }:
         raise DataPlaneError("unsupported operation")
@@ -564,12 +565,99 @@ def _retry_dead(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
     return result
 
 
+def _reset_build(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
+    release = connection.execute(
+        """
+        SELECT status
+        FROM bauer_rag_v4.knowledge_releases
+        WHERE release_id = %s
+        """,
+        (request["release_id"],),
+    ).fetchone()
+    if release is None or str(release[0]) != "building":
+        raise DataPlaneError("only a building release can be reset")
+    pointer_count = connection.execute(
+        """
+        SELECT count(*)
+        FROM bauer_rag_v4.active_release_pointers
+        WHERE release_id = %s
+        """,
+        (request["release_id"],),
+    ).fetchone()[0]
+    if int(pointer_count) != 0:
+        raise DataPlaneError("a pointed release cannot be reset")
+    with connection.transaction():
+        for table in (
+            "compiled_artifacts",
+            "search_projections",
+            "canonical_facts",
+            "canonical_cells",
+            "canonical_tables",
+            "canonical_blocks",
+            "canonical_documents",
+        ):
+            connection.execute(
+                f"DELETE FROM bauer_rag_v4.{table} WHERE release_id = %s",
+                (request["release_id"],),
+            )
+        connection.execute(
+            """
+            DELETE FROM bauer_rag_v4.embedding_cache
+            WHERE tenant_id = %s
+              AND knowledge_base_id = %s
+            """,
+            (
+                request["tenant_id"],
+                request["knowledge_base_id"],
+            ),
+        )
+        connection.execute(
+            """
+            UPDATE bauer_rag_v4.compilation_jobs
+            SET status = 'queued',
+                attempts = 0,
+                available_at = clock_timestamp(),
+                leased_by = NULL,
+                lease_expires_at = NULL,
+                error_code = NULL,
+                error_fingerprint = NULL,
+                updated_at = clock_timestamp()
+            WHERE release_id = %s
+            """,
+            (request["release_id"],),
+        )
+        connection.execute(
+            """
+            UPDATE bauer_rag_v4.knowledge_releases
+            SET compiler_identity_sha256 = %s
+            WHERE release_id = %s
+              AND status = 'building'
+            """,
+            (
+                _digest(
+                    "canonical-compiler-v4.1-cell-provenance"
+                ),
+                request["release_id"],
+            ),
+        )
+    result = _status(connection, request)
+    result["build_reset_performed"] = True
+    result["orphaned_candidate_objects_deleted"] = False
+    return result
+
+
 def main() -> int:
     try:
         parser = argparse.ArgumentParser()
         parser.add_argument(
             "--operation",
-            choices=("Setup", "Status", "RetryDead", "MarkReady"),
+            choices=(
+                "Setup",
+                "Status",
+                "RetryDead",
+                "ResetBuild",
+                "MarkReady",
+            ),
         )
         arguments = parser.parse_args()
         request = _load_request()
@@ -578,6 +666,7 @@ def main() -> int:
             and arguments.operation.lower()
             .replace("markready", "mark-ready")
             .replace("retrydead", "retry-dead")
+            .replace("resetbuild", "reset-build")
             != request["operation"]
         ):
             raise DataPlaneError("operation argument does not match stdin")
@@ -590,6 +679,8 @@ def main() -> int:
                 result = _mark_ready(connection, request)
             elif request["operation"] == "retry-dead":
                 result = _retry_dead(connection, request)
+            elif request["operation"] == "reset-build":
+                result = _reset_build(connection, request)
             else:
                 result = _status(connection, request)
         print(json.dumps(result, sort_keys=True, separators=(",", ":")))

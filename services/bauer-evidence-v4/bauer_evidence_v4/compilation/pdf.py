@@ -469,6 +469,7 @@ class PdfLayoutParser:
                                 fact_id=stable_id(
                                     "fact",
                                     table_id,
+                                    cell.cell_id,
                                     subject,
                                     predicate,
                                     text,
