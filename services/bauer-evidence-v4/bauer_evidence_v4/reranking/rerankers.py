@@ -18,9 +18,9 @@ _EXACT_RE = re.compile(
     r"\b(?:"
     r"N\d{4,}|"
     r"[A-Z]{1,6}(?:[\s.-]?\d)+(?:[./-][A-Z0-9.]+)*|"
-    r"(?:ISO|EN)\s+\d{3,5}(?:-\d+)?"
-    r")\b",
-    re.IGNORECASE,
+    r"(?:ISO|EN)\s+\d{3,5}(?:-\d+)?|"
+    r"B-[A-Z][A-Z0-9-]*(?:\s+(?:PLUS(?:\s+(?:i/s|m))?|III|300))?"
+    r")\b"
 )
 _SYNONYMS = {
     "förderleistung": ("effective", "free", "air", "delivery"),
@@ -166,6 +166,10 @@ class TransparentFeatureReranker:
         projection_exact = {
             _normalize(term) for term in projection.exact_terms
         }
+        projection_exact.update(
+            _normalize(match.group(0))
+            for match in _EXACT_RE.finditer(projection.search_text)
+        )
         exact_identifier = min(
             1.0,
             float(len(query_exact & projection_exact)),
@@ -339,6 +343,10 @@ class LocalInteractionReranker:
         projection_exact = {
             _normalize(term) for term in projection.exact_terms
         }
+        projection_exact.update(
+            _normalize(match.group(0))
+            for match in _EXACT_RE.finditer(projection.search_text)
+        )
         return {
             "candidate": min(1.0, candidate.candidate_score * 20),
             "exact_identifier": float(bool(query_exact & projection_exact)),

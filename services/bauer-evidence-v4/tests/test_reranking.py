@@ -13,6 +13,7 @@ from bauer_evidence_v4.reranking import (
     TransparentFeatureReranker,
     select_smallest_passing,
 )
+from bauer_evidence_v4.reranking.rerankers import _EXACT_RE
 from bauer_evidence_v4.retrieval import (
     AuthorizedScope,
     CandidateGenerator,
@@ -161,6 +162,15 @@ def test_reranker_benchmark_and_smallest_passing_selection(
     )
     assert selected.model_id == "transparent-linear-v1"
     assert selected.complexity_units == 1
+
+
+def test_reranker_exactness_rejects_numeric_prose_fragments() -> None:
+    query = (
+        "Find B-SELECT and report flow rates at 50, 200, and 300 bar."
+    )
+    assert [match.group(0) for match in _EXACT_RE.finditer(query)] == [
+        "B-SELECT"
+    ]
 
 
 def test_selected_reranker_passes_each_named_case_at_five(
