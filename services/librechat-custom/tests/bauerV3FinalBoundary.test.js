@@ -5,6 +5,7 @@ const {
   DETERMINISTIC_BOUNDARY_REFUSAL,
   createBauerV3FinalBoundary,
   extractDirectFinal,
+  extractV4DirectFinal,
 } = require('../bauerV3FinalBoundary');
 
 const RELEASE_ID = '40000000-0000-4000-8000-000000000003';
@@ -27,6 +28,28 @@ const validOutput = () => ({
         releaseId: RELEASE_ID,
         status: 'answered',
         validationPassed: true,
+      },
+    },
+  },
+});
+
+const validV4Output = ({
+  status = 'complete',
+  answer = 'BM 40 supports 350 bar [citation-one].',
+  supportedCoverage = 1,
+} = {}) => ({
+  artifact: {
+    file_search: {
+      bauerV4: {
+        directFinal: true,
+        finalAnswer: answer,
+        releaseId: 'bauer-rag-v4-private-20260729-r1',
+        status,
+        validationPassed: status !== 'refused',
+        coverage: Array.from({ length: supportedCoverage }, (_, index) => ({
+          field: `field-${index}`,
+          state: 'supported',
+        })),
       },
     },
   },
@@ -163,6 +186,98 @@ test('multiple V3 tool completions fail closed instead of choosing by race order
   assert.deepEqual((await client.sendCompletion()).completion, [
     { type: 'text', text: DETERMINISTIC_BOUNDARY_REFUSAL },
   ]);
+});
+
+test('V4 permits iterative file searches and materializes the strongest validated result', async () => {
+  const contentParts = [
+    { type: 'text', text: 'Untrusted model text' },
+    { type: 'tool_call', tool_call: { id: 'call-1', name: 'file_search' } },
+    { type: 'tool_call', tool_call: { id: 'call-2', name: 'file_search' } },
+  ];
+  const boundary = createBauerV3FinalBoundary({
+    contentParts,
+    v3AgentIds: 'agent-v3',
+    v4AgentIds: 'agent-v4',
+    baseToolEndCallback: async () => {},
+  });
+  const primaryConfig = {
+    id: 'agent-v4',
+    tools: ['file_search'],
+    edges: [],
+  };
+  const eventHandlers = {};
+  assert.equal(
+    boundary.activate({
+      agentId: 'agent-v4',
+      appConfig: appConfig(),
+      primaryConfig,
+      eventHandlers,
+    }),
+    true,
+  );
+  assert.equal(primaryConfig.bauerV3DirectFinal, undefined);
+  boundary.sealGraph({ primaryConfig, agentConfigs: new Map() });
+
+  await boundary.toolEndCallback(
+    {
+      output: validV4Output({
+        status: 'partial',
+        answer: 'Partial answer.',
+        supportedCoverage: 2,
+      }),
+    },
+    {},
+  );
+  await boundary.toolEndCallback(
+    { output: validV4Output({ answer: 'Complete validated answer.' }) },
+    {},
+  );
+  const client = {
+    contentParts,
+    options: { req: { config: appConfig() } },
+    async sendCompletion() {
+      return { completion: [...this.contentParts] };
+    },
+  };
+  boundary.wrapClient(client);
+  assert.deepEqual((await client.sendCompletion()).completion, [
+    { type: 'tool_call', tool_call: { id: 'call-1', name: 'file_search' } },
+    { type: 'tool_call', tool_call: { id: 'call-2', name: 'file_search' } },
+    { type: 'text', text: 'Complete validated answer.' },
+  ]);
+});
+
+test('V4 direct-final envelopes reject unvalidated claims but allow deterministic refusal', () => {
+  const valid = validV4Output();
+  assert.equal(extractV4DirectFinal(valid)?.status, 'complete');
+  valid.artifact.file_search.bauerV4.validationPassed = false;
+  assert.equal(extractV4DirectFinal(valid), null);
+
+  const refusal = validV4Output({
+    status: 'refused',
+    answer: 'The available evidence could not be validated safely.',
+    supportedCoverage: 0,
+  });
+  assert.equal(extractV4DirectFinal(refusal)?.status, 'refused');
+});
+
+test('an Agent cannot occupy both V3 and V4 private namespaces', () => {
+  const boundary = createBauerV3FinalBoundary({
+    contentParts: [],
+    v3AgentIds: 'shared-agent',
+    v4AgentIds: 'shared-agent',
+    baseToolEndCallback: async () => {},
+  });
+  assert.throws(
+    () =>
+      boundary.activate({
+        agentId: 'shared-agent',
+        appConfig: appConfig(),
+        primaryConfig: { tools: ['file_search'], edges: [] },
+        eventHandlers: {},
+      }),
+    /both V3 and V4/,
+  );
 });
 
 test('V3 direct-final graph refuses connected agents and extra tools', () => {

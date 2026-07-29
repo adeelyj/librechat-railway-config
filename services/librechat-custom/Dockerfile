@@ -11,6 +11,7 @@ RUN echo "0d4758dab28293fc3f68914183acb495e3880fa53401017ce4587b56ad1bd922  /app
 
 COPY fileSearchBatch.js /app/api/app/clients/tools/util/fileSearchBatch.js
 COPY v3Authorization.js /app/api/app/clients/tools/util/v3Authorization.js
+COPY v4Authorization.js /app/api/app/clients/tools/util/v4Authorization.js
 COPY fileSearch.js /app/api/app/clients/tools/util/fileSearch.js
 COPY bauerV3FinalBoundary.js /app/api/server/services/Endpoints/agents/bauerV3FinalBoundary.js
 COPY patchBauerV3FinalBoundary.js /tmp/patchBauerV3FinalBoundary.js

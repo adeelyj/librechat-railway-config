@@ -1,5 +1,12 @@
 const V3_ANSWERED_STATUSES = new Set(['answered', 'answered_after_repair']);
 const V3_REFUSAL_STATUSES = new Set(['refused_no_evidence', 'refused_after_validation']);
+const V4_STATUSES = new Set(['complete', 'partial', 'not_found', 'refused']);
+const V4_STATUS_RANK = new Map([
+  ['refused', 0],
+  ['not_found', 1],
+  ['partial', 2],
+  ['complete', 3],
+]);
 const DETERMINISTIC_BOUNDARY_REFUSAL =
   'I could not produce a validated Bauer answer for this request.';
 const UUID_PATTERN =
@@ -34,6 +41,50 @@ const extractDirectFinal = (output) => {
   }
 
   return { answer, releaseId, status };
+};
+
+const extractV4DirectFinal = (output) => {
+  const envelope = output?.artifact?.file_search?.bauerV4;
+  if (!envelope || envelope.directFinal !== true) {
+    return null;
+  }
+  const status = typeof envelope.status === 'string' ? envelope.status : '';
+  const answer = typeof envelope.finalAnswer === 'string' ? envelope.finalAnswer.trim() : '';
+  const releaseId = typeof envelope.releaseId === 'string' ? envelope.releaseId.trim() : '';
+  if (
+    !V4_STATUSES.has(status) ||
+    !answer ||
+    !releaseId ||
+    releaseId.length > 256 ||
+    /[\u0000-\u001f\u007f]/.test(releaseId) ||
+    (status !== 'refused' && envelope.validationPassed !== true)
+  ) {
+    return null;
+  }
+  const supportedCoverage = Array.isArray(envelope.coverage)
+    ? envelope.coverage.filter((item) => item?.state === 'supported').length
+    : 0;
+  return { answer, releaseId, status, supportedCoverage };
+};
+
+const selectV4Final = (current, candidate) => {
+  if (!candidate) {
+    return current;
+  }
+  if (!current) {
+    return candidate;
+  }
+  const currentRank = V4_STATUS_RANK.get(current.status) ?? -1;
+  const candidateRank = V4_STATUS_RANK.get(candidate.status) ?? -1;
+  if (candidateRank !== currentRank) {
+    return candidateRank > currentRank ? candidate : current;
+  }
+  if (candidate.supportedCoverage !== current.supportedCoverage) {
+    return candidate.supportedCoverage > current.supportedCoverage ? candidate : current;
+  }
+  // Equal-quality later calls may carry a better search hint while the full
+  // immutable question remains unchanged, so retain the later validated answer.
+  return candidate;
 };
 
 const configuredToolNames = (primaryConfig) => {
@@ -73,6 +124,7 @@ const createBauerV3FinalBoundary = ({
   baseToolEndCallback,
   contentParts,
   v3AgentIds = process.env.BAUER_V3_AGENT_IDS,
+  v4AgentIds = process.env.BAUER_V4_AGENT_IDS,
 }) => {
   if (typeof baseToolEndCallback !== 'function') {
     throw new TypeError('baseToolEndCallback must be a function');
@@ -83,8 +135,10 @@ const createBauerV3FinalBoundary = ({
 
   const state = {
     enabled: false,
+    mode: null,
     final: null,
     toolEndCount: 0,
+    validV4Count: 0,
     wrapped: false,
   };
 
@@ -94,12 +148,25 @@ const createBauerV3FinalBoundary = ({
       return;
     }
     state.toolEndCount += 1;
-    state.final =
-      state.toolEndCount === 1 ? extractDirectFinal(data?.output) : null;
+    if (state.mode === 'v4') {
+      const candidate = extractV4DirectFinal(data?.output);
+      if (candidate) {
+        state.validV4Count += 1;
+        state.final = selectV4Final(state.final, candidate);
+      }
+      return;
+    }
+    state.final = state.toolEndCount === 1 ? extractDirectFinal(data?.output) : null;
   };
 
   const activate = ({ agentId, appConfig, primaryConfig, eventHandlers }) => {
-    state.enabled = parseIdAllowlist(v3AgentIds).has(agentId);
+    const isV3 = parseIdAllowlist(v3AgentIds).has(agentId);
+    const isV4 = parseIdAllowlist(v4AgentIds).has(agentId);
+    if (isV3 && isV4) {
+      throw new Error('A Bauer Agent cannot be allow-listed for both V3 and V4');
+    }
+    state.mode = isV4 ? 'v4' : isV3 ? 'v3' : null;
+    state.enabled = state.mode !== null;
     if (!state.enabled) {
       return false;
     }
@@ -111,7 +178,9 @@ const createBauerV3FinalBoundary = ({
     // single standard graph AgentInputs object's `toolEnd` option. Keep the
     // marker V3-specific so no persisted or unrelated Agent field can opt into
     // the direct-final path.
-    primaryConfig.bauerV3DirectFinal = true;
+    if (state.mode === 'v3') {
+      primaryConfig.bauerV3DirectFinal = true;
+    }
     eventHandlers.on_message_delta = { handle: async () => {} };
     eventHandlers.on_reasoning_delta = { handle: async () => {} };
     return true;
@@ -131,12 +200,12 @@ const createBauerV3FinalBoundary = ({
       (Array.isArray(primaryConfig?.subagentAgentConfigs) &&
         primaryConfig.subagentAgentConfigs.length > 0)
     ) {
-      throw new Error('Bauer V3 direct-final Agent must not use connected agents or subagents');
+      throw new Error('Bauer direct-final Agent must not use connected agents or subagents');
     }
 
     const tools = configuredToolNames(primaryConfig);
     if (!tools.has('file_search') || [...tools].some((name) => name !== 'file_search')) {
-      throw new Error('Bauer V3 direct-final Agent must expose only the file_search tool');
+      throw new Error('Bauer direct-final Agent must expose only the file_search tool');
     }
   };
 
@@ -145,12 +214,12 @@ const createBauerV3FinalBoundary = ({
       return;
     }
     if (!client || typeof client.sendCompletion !== 'function') {
-      throw new TypeError('Bauer V3 final boundary requires an AgentClient');
+      throw new TypeError('Bauer final boundary requires an AgentClient');
     }
     const request = client.options?.req;
     const requestConfig = request?.config;
     if (!request || !requestConfig || typeof requestConfig !== 'object') {
-      throw new TypeError('Bauer V3 final boundary requires request-local app configuration');
+      throw new TypeError('Bauer final boundary requires request-local app configuration');
     }
     const endpoints = requestConfig.endpoints;
     const agentsEndpoint = endpoints?.agents;
@@ -171,17 +240,18 @@ const createBauerV3FinalBoundary = ({
     }
     state.wrapped = true;
     const originalSendCompletion = client.sendCompletion;
-    client.resumeCompletion = async function rejectBauerV3Resume() {
-      throw new Error('Bauer V3 direct-final runs cannot resume from a tool-approval checkpoint');
+    client.resumeCompletion = async function rejectBauerResume() {
+      throw new Error('Bauer direct-final runs cannot resume from a tool-approval checkpoint');
     };
     client.sendCompletion = async function sendBauerV3Completion(...args) {
       const result = await Reflect.apply(originalSendCompletion, this, args);
       const target = Array.isArray(this.contentParts) ? this.contentParts : contentParts;
       const toolParts = target.filter((part) => part?.type === 'tool_call');
-      const finalText =
-        state.toolEndCount === 1 && state.final?.answer
-          ? state.final.answer
-          : DETERMINISTIC_BOUNDARY_REFUSAL;
+      const validFinal =
+        state.mode === 'v4'
+          ? state.validV4Count >= 1 && state.final?.answer
+          : state.toolEndCount === 1 && state.final?.answer;
+      const finalText = validFinal ? state.final.answer : DETERMINISTIC_BOUNDARY_REFUSAL;
       target.splice(
         0,
         target.length,
@@ -210,5 +280,7 @@ module.exports = {
   DETERMINISTIC_BOUNDARY_REFUSAL,
   createBauerV3FinalBoundary,
   extractDirectFinal,
+  extractV4DirectFinal,
   parseIdAllowlist,
+  selectV4Final,
 };

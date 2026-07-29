@@ -1,3 +1,4 @@
+const crypto = require('node:crypto');
 const axios = require('axios');
 const { logger } = require('@librechat/data-schemas');
 const { tool } = require('@librechat/agents/langchain/tools');
@@ -6,15 +7,18 @@ const { Tools, EToolResources } = require('librechat-data-provider');
 const { filterFilesByAgentAccess } = require('~/server/services/Files/permissions');
 const { getFiles } = require('~/models');
 const { createV3AuthorizationContext } = require('./v3Authorization');
+const { createV4AuthorizationContext } = require('./v4Authorization');
 const {
   buildFileSearchContext,
   createBatchGroups,
   createBatchQueryBody,
   createV2QueryBody,
   createV3AnswerBody,
+  createV4AnswerBody,
   normalizeBatchResults,
   normalizeV3Answer,
-  resolveV3RequestQuery,
+  normalizeV4Answer,
+  resolveOriginalQuestion,
   selectFileSearchRoute,
 } = require('./fileSearchBatch');
 
@@ -104,18 +108,18 @@ const createFileSearchTool = async ({
       }
 
       const agentRoute = selectFileSearchRoute(entity_id);
-      const effectiveQuery = resolveV3RequestQuery({
+      const originalQuestion = resolveOriginalQuestion({
         route: agentRoute,
         toolQuery: query,
         requestBody: req?.body,
       });
-      if (agentRoute === 'v3') {
-        // A V3 answer is valid only for the evidence package V3 validated. Do not
-        // mix uncompiled conversation-file results into the same final answer.
+      if (agentRoute === 'v3' || agentRoute === 'v4') {
+        // A validated Bauer answer is valid only for its fixed-release Agent
+        // evidence package. Never mix conversation uploads into that answer.
         groups = groups.filter((group) => group.entity_id === entity_id);
         if (groups.length === 0) {
           return [
-            'No V3-indexed Agent documents are available. Conversation uploads are not mixed into a validated V3 answer.',
+            `No ${agentRoute.toUpperCase()}-indexed Agent documents are available. Conversation uploads are not mixed into a validated Bauer answer.`,
             undefined,
           ];
         }
@@ -124,24 +128,35 @@ const createFileSearchTool = async ({
       const queryPromises = groups.map(async (group) => {
         const route = selectFileSearchRoute(group.entity_id);
         const path =
-          route === 'v3' ? '/v3/answer' : route === 'v2' ? '/query_v2' : '/query_multiple';
-        const body =
-          route === 'v3'
-            ? createV3AnswerBody(effectiveQuery)
-            : route === 'v2'
-              ? createV2QueryBody(group, query)
-              : createBatchQueryBody(group, query);
-        logger.debug(`[${Tools.file_search}] evidence route ${path}`, {
-          retrievalRoute: route,
-          fileCount: group.files.length,
-          entity_id: group.entity_id,
-          k: body.k ?? body.top_k,
-        });
+          route === 'v4'
+            ? '/v4/answer'
+            : route === 'v3'
+              ? '/v3/answer'
+              : route === 'v2'
+                ? '/query_v2'
+                : '/query_multiple';
 
         try {
           let token;
           let baseUrl;
-          if (route === 'v3') {
+          let body;
+          if (route === 'v4') {
+            token = createV4AuthorizationContext({
+              userId,
+              agentId: group.entity_id,
+              sourceIds: group.files.map((file) => file.file_id),
+            });
+            baseUrl = process.env.BAUER_V4_API_URL;
+            if (!baseUrl) {
+              throw new Error('BAUER_V4_API_URL is not configured');
+            }
+            body = createV4AnswerBody({
+              question: originalQuestion,
+              searchHint: query,
+              signedScope: token,
+              requestId: `lc-v4-${crypto.randomUUID()}`,
+            });
+          } else if (route === 'v3') {
             token = createV3AuthorizationContext({
               userId,
               agentId: group.entity_id,
@@ -151,13 +166,24 @@ const createFileSearchTool = async ({
             if (!baseUrl) {
               throw new Error('BAUER_V3_API_URL is not configured');
             }
+            body = createV3AnswerBody(originalQuestion);
           } else {
             token = generateShortLivedToken(userId);
             baseUrl = process.env.RAG_API_URL;
             if (!token) {
               throw new Error('could not create the RAG authorization token');
             }
+            body =
+              route === 'v2'
+                ? createV2QueryBody(group, query)
+                : createBatchQueryBody(group, query);
           }
+          logger.debug(`[${Tools.file_search}] evidence route ${path}`, {
+            retrievalRoute: route,
+            fileCount: group.files.length,
+            entity_id: group.entity_id,
+            k: body.k ?? body.top_k ?? null,
+          });
           const response = await axios.post(`${baseUrl}${path}`, body, {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -169,9 +195,9 @@ const createFileSearchTool = async ({
           if (error?.response?.status === 404) {
             return { route, response: { data: [] } };
           }
-          if (route === 'v3') {
-            logger.error(`[${Tools.file_search}] V3 evidence request failed`, {
-              retrievalRoute: 'v3',
+          if (route === 'v3' || route === 'v4') {
+            logger.error(`[${Tools.file_search}] ${route.toUpperCase()} evidence request failed`, {
+              retrievalRoute: route,
               status: error?.response?.status ?? null,
               errorType: error?.name ?? 'Error',
             });
@@ -190,6 +216,75 @@ const createFileSearchTool = async ({
       );
       if (routedResponses.length === 0) {
         return ['No results found or errors occurred while searching the files.', undefined];
+      }
+
+      const v4Response = routedResponses.find((item) => item.route === 'v4');
+      if (v4Response) {
+        const final = normalizeV4Answer(
+          v4Response.response,
+          v4Response.authorizedFiles,
+        );
+        if (!final?.accepted) {
+          logger.warn(
+            `[${Tools.file_search}] Rejected V4 answer outside the authorized evidence scope`,
+            {
+              retrievalRoute: 'v4',
+              droppedUnauthorized: final?.droppedUnauthorized ?? 0,
+            },
+          );
+          return [
+            'The V4 answer was rejected because it failed validation or its evidence did not match the server-authorized file scope.',
+            undefined,
+          ];
+        }
+        const sources = final.citations.map((item) => ({
+          type: 'file',
+          fileId: item.file_id,
+          content: item.content,
+          fileName: item.filename,
+          relevance: 1,
+          pages: item.page ? [item.page] : [],
+          pageRelevance: item.page ? { [item.page]: 1 } : {},
+          metadata: {
+            retrievalRoute: 'v4',
+            releaseId: final.release_id,
+            citationId: item.citation_id,
+            evidenceId: item.evidence_id,
+            sourceVersionId: item.source_version_id,
+            documentNumber: item.document_number,
+            printedPage: item.printed_page,
+            sectionPath: item.section_path,
+            tableId: item.table_id,
+            rowIndex: item.row_index,
+            columnIndex: item.column_index,
+            tableTitle: item.table_title,
+            headerPath: item.header_path,
+            rawValue: item.raw_value,
+            normalizedValue: item.normalized_value,
+            rawUnit: item.raw_unit,
+            normalizedUnit: item.normalized_unit,
+            qualifier: item.qualifier,
+            footnotes: item.footnotes,
+          },
+        }));
+        return [
+          final.answer,
+          {
+            [Tools.file_search]: {
+              sources,
+              fileCitations,
+              bauerV4: {
+                status: final.status,
+                releaseId: final.release_id,
+                validationPassed: final.validation?.passed === true,
+                coverage: final.coverage,
+                notFound: final.not_found,
+                directFinal: true,
+                finalAnswer: final.answer,
+              },
+            },
+          },
+        ];
       }
 
       const v3Response = routedResponses.find((item) => item.route === 'v3');

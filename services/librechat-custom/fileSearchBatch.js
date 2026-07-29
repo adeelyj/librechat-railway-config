@@ -3,8 +3,10 @@ const MAX_BATCH_FILES = 1000;
 const MAX_VISIBLE_USER_FILES = 10;
 const MAX_VISIBLE_FILENAME_CHARS = 160;
 const MAX_V3_QUERY_CHARS = 4000;
+const MAX_V4_QUESTION_CHARS = 4000;
 const V3_ANSWERED_STATUSES = new Set(['answered', 'answered_after_repair']);
 const V3_REFUSAL_STATUSES = new Set(['refused_no_evidence', 'refused_after_validation']);
+const V4_STATUSES = new Set(['complete', 'partial', 'not_found', 'refused']);
 
 const parseIdAllowlist = (value) =>
   new Set(
@@ -109,9 +111,13 @@ const selectFileSearchRoute = (
   entityId,
   v2AllowlistValue = process.env.RAG_V2_AGENT_IDS,
   v3AllowlistValue = process.env.BAUER_V3_AGENT_IDS,
+  v4AllowlistValue = process.env.BAUER_V4_AGENT_IDS,
 ) => {
   if (!entityId) {
     return 'v1';
+  }
+  if (parseIdAllowlist(v4AllowlistValue).has(entityId)) {
+    return 'v4';
   }
   if (parseIdAllowlist(v3AllowlistValue).has(entityId)) {
     return 'v3';
@@ -130,22 +136,52 @@ const createV3AnswerBody = (query, topK = 8) => ({
   top_k: topK,
 });
 
-const resolveV3RequestQuery = ({ route, toolQuery, requestBody }) => {
-  if (route !== 'v3') {
+const createV4AnswerBody = ({
+  question,
+  searchHint,
+  signedScope,
+  requestId,
+  locale = 'de-DE',
+  clientInstance = 'railway-testing',
+}) => ({
+  schema_version: '4.0',
+  request_id: requestId,
+  question,
+  search_hint:
+    typeof searchHint === 'string' && searchHint.trim()
+      ? searchHint.trim()
+      : null,
+  conversation_context: [],
+  locale,
+  client: {
+    type: 'librechat',
+    instance: clientInstance,
+  },
+  authorization: {
+    signed_scope: signedScope,
+  },
+  typed_constraints: [],
+});
+
+const resolveOriginalQuestion = ({ route, toolQuery, requestBody }) => {
+  if (route !== 'v3' && route !== 'v4') {
     return toolQuery;
   }
   const originalUserText =
     typeof requestBody?.text === 'string' ? requestBody.text.trim() : '';
   if (!originalUserText) {
-    throw new Error('V3 file_search requires the original user request');
+    throw new Error(`${route.toUpperCase()} file_search requires the original user request`);
   }
-  if (originalUserText.length > MAX_V3_QUERY_CHARS) {
+  const maximum = route === 'v4' ? MAX_V4_QUESTION_CHARS : MAX_V3_QUERY_CHARS;
+  if (originalUserText.length > maximum) {
     throw new Error(
-      `V3 file_search supports at most ${MAX_V3_QUERY_CHARS} query characters`,
+      `${route.toUpperCase()} file_search supports at most ${maximum} query characters`,
     );
   }
   return originalUserText;
 };
+
+const resolveV3RequestQuery = resolveOriginalQuestion;
 
 const normalizeV3Answer = (response, files) => {
   const body = response?.data;
@@ -217,6 +253,96 @@ const normalizeV3Answer = (response, files) => {
     repair_attempted: body.repair_attempted === true,
     validation: body.validation ?? null,
     evidence,
+  };
+};
+
+const normalizeV4Answer = (response, files) => {
+  const body = response?.data;
+  const status = typeof body?.status === 'string' ? body.status : '';
+  const answer = typeof body?.answer === 'string' ? body.answer.trim() : '';
+  const releaseId =
+    typeof body?.release?.public_id === 'string' ? body.release.public_id.trim() : '';
+  const validated = body?.validation?.passed === true;
+  if (
+    !V4_STATUSES.has(status) ||
+    !answer ||
+    !releaseId ||
+    (status !== 'refused' && !validated)
+  ) {
+    return {
+      accepted: false,
+      droppedUnauthorized: 0,
+      status,
+      release_id: releaseId,
+      answer: '',
+      citations: [],
+    };
+  }
+
+  const allowedFiles = new Map(uniqueFiles(files).map((file) => [file.file_id, file]));
+  const citations = [];
+  let droppedUnauthorized = 0;
+  for (const item of Array.isArray(body.citations) ? body.citations : []) {
+    const fileId = item?.coordinate?.source_id;
+    if (!fileId || !allowedFiles.has(fileId)) {
+      droppedUnauthorized += 1;
+      continue;
+    }
+    citations.push({
+      file_id: fileId,
+      filename:
+        item.original_filename ||
+        item.source_title ||
+        allowedFiles.get(fileId)?.filename ||
+        fileId,
+      content: String(item.excerpt ?? ''),
+      page: Number.isInteger(item?.coordinate?.page) ? item.coordinate.page : null,
+      printed_page: item?.coordinate?.printed_page ?? null,
+      citation_id: item.citation_id,
+      evidence_id: item.evidence_id,
+      source_version_id: item?.coordinate?.source_version_id,
+      document_number: item.document_number ?? null,
+      section_path: Array.isArray(item?.coordinate?.section_path)
+        ? item.coordinate.section_path
+        : [],
+      table_id: item?.coordinate?.table_id ?? null,
+      row_index: Number.isInteger(item?.coordinate?.row_index)
+        ? item.coordinate.row_index
+        : null,
+      column_index: Number.isInteger(item?.coordinate?.column_index)
+        ? item.coordinate.column_index
+        : null,
+      table_title: item.table_title ?? null,
+      header_path: Array.isArray(item.header_path) ? item.header_path : [],
+      raw_value: item.raw_value ?? null,
+      normalized_value: item.normalized_value ?? null,
+      raw_unit: item.raw_unit ?? null,
+      normalized_unit: item.normalized_unit ?? null,
+      qualifier: item.qualifier ?? null,
+      footnotes: Array.isArray(item.footnotes) ? item.footnotes : [],
+    });
+  }
+  const requiresCitations = status === 'complete' || status === 'partial';
+  if (droppedUnauthorized > 0 || (requiresCitations && citations.length === 0)) {
+    return {
+      accepted: false,
+      droppedUnauthorized,
+      status,
+      release_id: releaseId,
+      answer: '',
+      citations: [],
+    };
+  }
+  return {
+    accepted: true,
+    droppedUnauthorized: 0,
+    status,
+    release_id: releaseId,
+    answer,
+    coverage: Array.isArray(body.coverage) ? body.coverage : [],
+    not_found: Array.isArray(body.not_found) ? body.not_found : [],
+    validation: body.validation ?? null,
+    citations,
   };
 };
 
@@ -335,15 +461,19 @@ module.exports = {
   MAX_BATCH_FILES,
   MAX_VISIBLE_USER_FILES,
   MAX_V3_QUERY_CHARS,
+  MAX_V4_QUESTION_CHARS,
   buildFileSearchContext,
   createBatchGroups,
   createBatchQueryBody,
   createV2QueryBody,
   createV3AnswerBody,
+  createV4AnswerBody,
   normalizeBatchResults,
   normalizeV3Answer,
+  normalizeV4Answer,
   parseIdAllowlist,
   partitionFiles,
+  resolveOriginalQuestion,
   resolveV3RequestQuery,
   sanitizeVisibleFilename,
   selectFileSearchRoute,

@@ -5,15 +5,19 @@ const {
   MAX_BATCH_FILES,
   MAX_VISIBLE_USER_FILES,
   MAX_V3_QUERY_CHARS,
+  MAX_V4_QUESTION_CHARS,
   buildFileSearchContext,
   createBatchGroups,
   createBatchQueryBody,
   createV2QueryBody,
   createV3AnswerBody,
+  createV4AnswerBody,
   normalizeBatchResults,
   normalizeV3Answer,
+  normalizeV4Answer,
   parseIdAllowlist,
   resolveV3RequestQuery,
+  resolveOriginalQuestion,
   sanitizeVisibleFilename,
   selectFileSearchRoute,
 } = require('../fileSearchBatch');
@@ -133,6 +137,17 @@ test('V3 Agent allow-list is additive and takes precedence over V2', () => {
   });
 });
 
+test('V4 Agent allow-list is additive and takes precedence over V1/V2/V3', () => {
+  assert.equal(
+    selectFileSearchRoute('agent-v4', 'agent-v2', 'agent-v3', 'agent-v4'),
+    'v4',
+  );
+  assert.equal(
+    selectFileSearchRoute('shared', 'shared', 'shared', 'shared'),
+    'v4',
+  );
+});
+
 test('V3 uses the complete original request while V1/V2 retain the tool query', () => {
   const original =
     'Compare B-KOOL and B-SELECT, preserving every requested pressure and product row.';
@@ -167,6 +182,39 @@ test('V3 uses the complete original request while V1/V2 retain the tool query', 
         route: 'v3',
         toolQuery: 'shortened',
         requestBody: { text: 'x'.repeat(MAX_V3_QUERY_CHARS + 1) },
+      }),
+    /at most 4000/,
+  );
+});
+
+test('V4 keeps the full question separate from the optional search hint', () => {
+  const question =
+    'Compare every requested pressure and product row, and identify unresolved fields.';
+  assert.equal(
+    resolveOriginalQuestion({
+      route: 'v4',
+      toolQuery: 'pressure product rows',
+      requestBody: { text: `  ${question}  ` },
+    }),
+    question,
+  );
+  const body = createV4AnswerBody({
+    question,
+    searchHint: 'pressure product rows',
+    signedScope: 'signed-scope-value-that-is-long-enough',
+    requestId: 'lc-v4-00000001',
+  });
+  assert.equal(body.question, question);
+  assert.equal(body.search_hint, 'pressure product rows');
+  assert.equal(body.schema_version, '4.0');
+  assert.equal(body.client.type, 'librechat');
+  assert.equal(body.authorization.signed_scope, 'signed-scope-value-that-is-long-enough');
+  assert.throws(
+    () =>
+      resolveOriginalQuestion({
+        route: 'v4',
+        toolQuery: 'short',
+        requestBody: { text: 'x'.repeat(MAX_V4_QUESTION_CHARS + 1) },
       }),
     /at most 4000/,
   );
@@ -347,6 +395,89 @@ test('V3 answered statuses fail closed without an explicit passing validation', 
     normalizeV3Answer({ data: { ...base, validation: { valid: true }, answer: '  ' } }, files)
       .accepted,
     false,
+  );
+});
+
+test('V4 answers preserve coverage and require authorized citation coordinates', () => {
+  const files = [{ file_id: 'allowed', filename: 'bm40.pdf', fromAgent: true }];
+  const response = {
+    data: {
+      status: 'complete',
+      answer: 'Requested technical data:\n- maximum pressure: 350 bar [citation-one]',
+      release: { public_id: 'bauer-rag-v4-private-20260729-r1' },
+      validation: { passed: true },
+      coverage: [
+        {
+          field: 'maximum_pressure',
+          state: 'supported',
+          citation_ids: ['citation-one'],
+        },
+      ],
+      not_found: [],
+      citations: [
+        {
+          citation_id: 'citation-one',
+          evidence_id: 'projection-one',
+          source_title: 'BM 40',
+          original_filename: 'bm40.pdf',
+          excerpt: 'BM 40 maximum pressure 350 bar',
+          coordinate: {
+            source_id: 'allowed',
+            source_version_id: 'source-version-one',
+            page: 4,
+            section_path: ['Technical data'],
+          },
+          header_path: ['Maximum pressure'],
+          raw_value: '350 bar',
+          raw_unit: 'bar',
+        },
+      ],
+    },
+  };
+  const accepted = normalizeV4Answer(response, files);
+  assert.equal(accepted.accepted, true);
+  assert.equal(accepted.release_id, 'bauer-rag-v4-private-20260729-r1');
+  assert.equal(accepted.coverage[0].state, 'supported');
+  assert.equal(accepted.citations[0].file_id, 'allowed');
+  assert.equal(accepted.citations[0].page, 4);
+
+  response.data.citations[0].coordinate.source_id = 'forbidden';
+  const rejected = normalizeV4Answer(response, files);
+  assert.equal(rejected.accepted, false);
+  assert.equal(rejected.droppedUnauthorized, 1);
+});
+
+test('V4 non-refusal answers fail closed without passing validation', () => {
+  const files = [{ file_id: 'allowed', filename: 'bm40.pdf', fromAgent: true }];
+  const base = {
+    status: 'not_found',
+    answer: 'No matching authorized evidence was found.',
+    release: { public_id: 'bauer-rag-v4-private-20260729-r1' },
+    citations: [],
+    coverage: [{ field: 'maximum_pressure', state: 'absent' }],
+    not_found: ['maximum_pressure'],
+  };
+  assert.equal(normalizeV4Answer({ data: base }, files).accepted, false);
+  assert.equal(
+    normalizeV4Answer(
+      { data: { ...base, validation: { passed: true } } },
+      files,
+    ).accepted,
+    true,
+  );
+  assert.equal(
+    normalizeV4Answer(
+      {
+        data: {
+          ...base,
+          status: 'refused',
+          answer: 'The available evidence could not be validated safely.',
+          validation: { passed: false },
+        },
+      },
+      files,
+    ).accepted,
+    true,
   );
 });
 
