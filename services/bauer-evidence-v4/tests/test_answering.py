@@ -724,6 +724,32 @@ def test_named_answer_semantics_and_constraints(
     assert "0027_bm-series-40_e0b4c6a9a3.html" in b30
 
 
+def test_search_hint_cannot_displace_b06_requirements(
+    answer_fixture: tuple,
+) -> None:
+    service, scope, _ = answer_fixture
+    response = service.answer(
+        request_id="semantic-B06-bad-hint",
+        trace_id="semantic-trace-B06-bad-hint",
+        question=(
+            "What is the highest documented maximum operating pressure "
+            "for a Bauer compressor? Distinguish compressors from boosters "
+            "and explain shutdown pressure."
+        ),
+        search_hint=(
+            "helium recovery MINI-VERTICUS 90-350 bar brochure "
+            "GIB 420 bar"
+        ),
+        locale="en",
+        scope=scope,
+    )
+    assert response.status == "complete"
+    assert response.validation["passed"] is True
+    assert "525 bar" in response.answer
+    assert "350 bar" not in response.answer
+    assert "shutdown pressure" in response.answer
+
+
 def test_authorization_negative_returns_no_evidence(
     answer_fixture: tuple,
 ) -> None:

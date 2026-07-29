@@ -291,7 +291,17 @@ def test_original_question_is_separate_from_search_hint(
 ) -> None:
     generator, scope, _ = retrieval_fixture
     question = CASES["B30"][0]
-    hint = "BM technical data English table"
+    hint = "unrelated helium recovery marketing brochure"
+    original_heads = {
+        channel.search(
+            question,
+            subquestion_id="whole_question",
+            scope=scope,
+            constraints=(),
+            limit=1,
+        )[0].item.canonical_key
+        for channel in (generator.exact, generator.lexical, generator.dense)
+    }
     result = generator.retrieve(
         _request(question, scope, search_hint=hint),
         limit=10,
@@ -299,6 +309,19 @@ def test_original_question_is_separate_from_search_hint(
     assert result.original_question == question
     assert result.search_hint == hint
     assert question not in {hint}
+    candidates = {
+        candidate.item.canonical_key: candidate
+        for candidate in result.candidates
+    }
+    assert original_heads <= set(candidates)
+    assert all(
+        candidates[key].preserved_channel_head for key in original_heads
+    )
+    assert all(
+        not candidate.preserved_channel_head
+        for candidate in result.candidates
+        if candidate.subquestion_ids == ("search_hint",)
+    )
 
 
 def test_per_subquestion_retrieval_preserves_both_needs(

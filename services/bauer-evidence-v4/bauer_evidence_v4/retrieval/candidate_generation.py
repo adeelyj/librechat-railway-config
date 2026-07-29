@@ -358,15 +358,25 @@ class CandidateGenerator:
             self.lexical,
             self.dense,
         )
+        requirement_hits: list[ChannelHit] = []
         for subquestion in subquestions:
-            query = subquestion.text
-            if request.search_hint:
-                query = f"{query} {request.search_hint}"
+            for channel in channels:
+                requirement_hits.extend(
+                    channel.search(
+                        subquestion.text,
+                        subquestion_id=subquestion.subquestion_id,
+                        scope=request.scope,
+                        constraints=request.constraints,
+                        limit=self.channel_limit,
+                    )
+                )
+        all_hits.extend(requirement_hits)
+        if request.search_hint:
             for channel in channels:
                 all_hits.extend(
                     channel.search(
-                        query,
-                        subquestion_id=subquestion.subquestion_id,
+                        request.search_hint,
+                        subquestion_id="search_hint",
                         scope=request.scope,
                         constraints=request.constraints,
                         limit=self.channel_limit,
@@ -389,7 +399,7 @@ class CandidateGenerator:
         quota = max(1, min(3, limit // max(len(channels), 1)))
         for subquestion in subquestions:
             for channel in channels:
-                for hit in all_hits:
+                for hit in requirement_hits:
                     key = hit.item.canonical_key
                     if (
                         hit.subquestion_id != subquestion.subquestion_id
@@ -457,8 +467,11 @@ class CandidateGenerator:
                     "scores": defaultdict(float),
                 },
             )
+            hint_weight = (
+                0.25 if hit.subquestion_id == "search_hint" else 1.0
+            )
             state["rrf"] = float(state["rrf"]) + (
-                channel_weights[hit.channel] / (60 + hit.rank)
+                hint_weight * channel_weights[hit.channel] / (60 + hit.rank)
             )
             state["channels"].add(hit.channel)  # type: ignore[union-attr]
             state["subquestions"].add(hit.subquestion_id)  # type: ignore[union-attr]
