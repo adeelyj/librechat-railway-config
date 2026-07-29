@@ -51,6 +51,10 @@ class EvidenceMaterializer:
     def _one(self, ranked) -> EvidenceContext:
         projection = ranked.candidate.item.projection
         document = self.registry.document(projection.source_sha256)
+        evidence_text, canonical_evidence_ids = self._expanded_evidence(
+            projection,
+            document,
+        )
         external_source_id = self.registry.external_source_id(
             projection.source_sha256
         )
@@ -67,7 +71,7 @@ class EvidenceMaterializer:
             section_path=list(projection.section_path),
             table_id=projection.table_id,
             row_index=projection.row_index,
-            source_span=",".join(projection.canonical_evidence_ids)[:512],
+            source_span=",".join(canonical_evidence_ids)[:512],
         )
         table = next(
             (
@@ -120,7 +124,7 @@ class EvidenceMaterializer:
             normalized_unit=projection.unit_ucum,
             qualifier=dict(projection.qualifiers).get("group"),
             footnotes=footnotes,
-            excerpt=projection.search_text[:8000],
+            excerpt=evidence_text[:8000],
         )
         metadata = DocumentMetadataContract(
             original_filename=document.source_filename,
@@ -150,10 +154,10 @@ class EvidenceMaterializer:
             }[projection.projection_type],
             release_public_id=ranked.candidate.item.release_id,
             coordinate=coordinate,
-            search_text=projection.search_text,
+            search_text=evidence_text,
             metadata=metadata,
             citation=citation,
-            canonical_record_ids=list(projection.canonical_evidence_ids),
+            canonical_record_ids=list(canonical_evidence_ids),
             authorization_source_id=external_source_id,
         )
         return EvidenceContext(
@@ -161,6 +165,54 @@ class EvidenceMaterializer:
             unit=unit,
             citation=citation,
             values=self._values(projection, document, table, row_cells),
+        )
+
+    @staticmethod
+    def _expanded_evidence(
+        projection,
+        document: CanonicalDocument,
+    ) -> tuple[str, tuple[str, ...]]:
+        """Join a split passage to an immediately following source list.
+
+        PDF reading order can place a list in the next bounded projection even
+        when the preceding canonical block ends with its list-introducing
+        colon. This reconstruction is coordinate-bound, deterministic, and
+        uses only adjacent canonical blocks from the same page and section.
+        """
+
+        evidence_ids = tuple(projection.canonical_evidence_ids)
+        if (
+            projection.projection_type != "passage"
+            or not evidence_ids
+            or not projection.search_text.rstrip().endswith(":")
+        ):
+            return projection.search_text, evidence_ids
+        index_by_id = {
+            block.block_id: index
+            for index, block in enumerate(document.blocks)
+        }
+        final_index = index_by_id.get(evidence_ids[-1])
+        if final_index is None:
+            return projection.search_text, evidence_ids
+        additions = []
+        addition_ids = []
+        for block in document.blocks[final_index + 1:]:
+            if (
+                block.provenance.physical_page != projection.physical_page
+                or block.section_path != projection.section_path
+            ):
+                break
+            if not block.text.lstrip().startswith(("›", "•")):
+                break
+            additions.append(block.text)
+            addition_ids.append(block.block_id)
+            if len(additions) >= 6:
+                break
+        if not additions:
+            return projection.search_text, evidence_ids
+        return (
+            f"{projection.search_text} {' '.join(additions)}",
+            evidence_ids + tuple(addition_ids),
         )
 
     def _values(

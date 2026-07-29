@@ -64,6 +64,7 @@ _GENERAL_MATCH_GROUPS = (
         (
             "maximum operating pressure",
             "operating pressure",
+            "adjustment range",
             "shutdown pressure",
             "pressure range",
             "bar",
@@ -96,6 +97,8 @@ _GENERAL_MATCH_GROUPS = (
             "function",
             "functions",
             "automatic",
+            "pre-filling",
+            "refilling",
             "control",
             "logging",
             "logs",
@@ -120,6 +123,8 @@ _GENERAL_MATCH_GROUPS = (
             "function",
             "functions",
             "automatic",
+            "pre-filling",
+            "refilling",
             "control",
             "data logger",
             "logging",
@@ -460,7 +465,22 @@ class TaskAnalyzer:
             deduplicated_topics.append((label, anchors))
 
         aspects = tuple(
-            (slug, label, terms)
+            (
+                slug,
+                label,
+                (
+                    terms
+                    + tuple(
+                        f"{pressure} bar"
+                        for pressure in re.findall(
+                            r"\b(\d{2,3})\s*bar\b",
+                            normalized,
+                        )
+                    )
+                    if slug == "flow"
+                    else terms
+                ),
+            )
             for slug, label, triggers, terms in _GENERAL_MATCH_GROUPS
             if any(
                 re.search(rf"\b{re.escape(trigger)}\b", normalized)

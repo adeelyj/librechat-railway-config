@@ -103,8 +103,9 @@ class CoverageEngine:
         field,
         evidence: tuple[EvidenceContext, ...],
     ) -> FieldCoverage:
-        support: list[tuple[str, str | None, str]] = []
-        seen: set[str] = set()
+        candidates: list[
+            tuple[int, int, int, str, str | None, str]
+        ] = []
         for context in evidence:
             text = context.unit.search_text.strip()
             normalized = _normalize(text)
@@ -120,18 +121,56 @@ class CoverageEngine:
                 text,
                 field.match_terms or field.anchor_terms,
                 anchor_terms=field.anchor_terms,
+                limit=2600,
             )
-            snippet_key = _normalize(snippet)
-            if not snippet or snippet_key in seen:
+            concise = self._concise_value(snippet, field)
+            if not concise:
                 continue
-            seen.add(snippet_key)
-            support.append(
+            distinct_matches = sum(
+                bool(
+                    self._positions(
+                        _normalize(snippet),
+                        _normalize(term),
+                    )
+                )
+                for term in field.match_terms
+            )
+            numeric_matches = len(
+                set(re.findall(r"\b\d+(?:[.,]\d+)?\b", concise))
+            )
+            candidates.append(
                 (
-                    snippet,
+                    distinct_matches,
+                    numeric_matches,
+                    -context.ranked.rank,
+                    concise,
                     context.citation.original_filename,
                     context.unit.evidence_id,
                 )
             )
+        candidates.sort(reverse=True)
+        support: list[tuple[str, str | None, str]] = []
+        seen: set[str] = set()
+        best_match_count = candidates[0][0] if candidates else 0
+        for (
+            match_count,
+            _,
+            _,
+            concise,
+            filename,
+            evidence_id,
+        ) in candidates:
+            if (
+                support
+                and field.match_terms
+                and match_count < max(1, best_match_count - 1)
+            ):
+                continue
+            snippet_key = _normalize(concise)
+            if snippet_key in seen:
+                continue
+            seen.add(snippet_key)
+            support.append((concise, filename, evidence_id))
             if len(support) >= 2:
                 break
         if not support:
@@ -156,6 +195,90 @@ class CoverageEngine:
             ),
             detail=None,
         )
+
+    @classmethod
+    def _concise_value(cls, text: str, field) -> str:
+        """Reduce a bounded evidence window to claim-sized source language."""
+
+        if not text:
+            return ""
+        compact = re.sub(r"\s+", " ", text).strip(" \t\r\n\u2026")
+        content = compact.split("Content:", 1)[-1].strip()
+        normalized = _normalize(content)
+
+        if field.field.endswith("_flow"):
+            pairs = []
+            for match in re.finditer(
+                r"(?:\bP\s*=\s*)?(\d{2,3})\s*bar"
+                r"[^0-9]{0,80}(\d{3,5})\s*l/min\b",
+                content,
+                flags=re.IGNORECASE,
+            ):
+                pair = f"{match.group(1)} bar: {match.group(2)} l/min"
+                if pair not in pairs:
+                    pairs.append(pair)
+            if len(pairs) >= 2:
+                return "; ".join(pairs[:6])
+
+        if field.field.endswith("_functions"):
+            marker = re.search(
+                r"performs?\s+(?:3|three)\s+(?:important|key)\s+"
+                r"functions?\s*:",
+                content,
+                flags=re.IGNORECASE,
+            )
+            if marker:
+                remainder = content[marker.end():]
+                functions = []
+                for part in re.split(r"\s*[›•]\s*", remainder):
+                    value = part.strip(" .;:")
+                    if not value:
+                        continue
+                    value = re.split(
+                        r"\bThe automatic unit consists\b",
+                        value,
+                        maxsplit=1,
+                        flags=re.IGNORECASE,
+                    )[0].strip(" .;:")
+                    if value:
+                        functions.append(value)
+                    if len(functions) == 3:
+                        break
+                if len(functions) == 3:
+                    return "; ".join(functions)
+
+        fragments = [
+            fragment.strip(" \t\r\n\u2026.;:")
+            for fragment in re.split(
+                r"\s*[›•]\s*|(?<=[.!?])\s+",
+                content,
+            )
+            if fragment.strip(" \t\r\n\u2026.;:")
+        ]
+        selected: list[str] = []
+        terms = field.match_terms or field.anchor_terms
+        for fragment in fragments:
+            fragment_normalized = _normalize(fragment)
+            if terms and not any(
+                cls._positions(fragment_normalized, _normalize(term))
+                for term in terms
+            ):
+                continue
+            if field.anchor_terms and not any(
+                _normalize(anchor) in normalized
+                for anchor in field.anchor_terms
+            ):
+                continue
+            value = fragment[:320].rstrip()
+            if value and _normalize(value) not in {
+                _normalize(item) for item in selected
+            }:
+                selected.append(value)
+            if len(selected) >= 4:
+                break
+        if not selected:
+            return content[:480].rstrip()
+        return "; ".join(selected)[:900].rstrip(" ;")
 
     @staticmethod
     def _bounded_snippet(

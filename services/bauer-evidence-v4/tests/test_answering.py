@@ -228,6 +228,42 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         ("flow",),
         anchor_terms=("B-SELECT",),
     ) == ""
+    concise_flow = CoverageEngine._concise_value(
+        (
+            "B-SELECT Flow rate at: P = 50 bar 2750 l/min "
+            "P = 200 bar 3500 l/min P = 300 bar 3700 l/min"
+        ),
+        product_plan.fields[0].__class__(
+            field="topic_1_flow",
+            label="B-SELECT flow",
+            anchor_terms=("B-SELECT",),
+            match_terms=("flow", "50 bar", "200 bar", "300 bar"),
+        ),
+    )
+    assert concise_flow == (
+        "50 bar: 2750 l/min; 200 bar: 3500 l/min; "
+        "300 bar: 3700 l/min"
+    )
+    concise_functions = CoverageEngine._concise_value(
+        (
+            "B-SELECT performs 3 important functions: "
+            "› Pre-filling of the cylinders from storage "
+            "› Filling of the diving cylinders from the compressor "
+            "› Refilling the storage bottle battery "
+            "The automatic unit consists of a pressure retention valve."
+        ),
+        product_plan.fields[0].__class__(
+            field="topic_1_functions",
+            label="B-SELECT functions",
+            anchor_terms=("B-SELECT",),
+            match_terms=("functions", "pre-filling", "refilling"),
+        ),
+    )
+    assert concise_functions == (
+        "Pre-filling of the cylinders from storage; "
+        "Filling of the diving cylinders from the compressor; "
+        "Refilling the storage bottle battery"
+    )
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(
