@@ -594,7 +594,8 @@ class PdfLayoutParser:
                         review_status="candidate",
                     )
                 )
-        return facts
+        by_id = {fact.fact_id: fact for fact in facts}
+        return [by_id[key] for key in sorted(by_id)]
 
 
 @dataclass(frozen=True, slots=True)
