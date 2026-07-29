@@ -1,0 +1,580 @@
+{
+  "schema_version": 1,
+  "suite": "bauer-rag-v4-difficult-documents",
+  "source_contract_sha256": "40049a12aacb198018a633905d793c8ef9011403f3fdbcd34ed7fe0792ab2580",
+  "split": "development",
+  "locked_holdout_opened": false,
+  "review": {
+    "engineering_review": "complete",
+    "bauer_owner_review": "required",
+    "status": "codex_reviewed_requires_bauer_signoff",
+    "reviewed_at": "2026-07-29",
+    "method": [
+      "verified selected original bytes against the frozen 373-source contract",
+      "reviewed native text for every selected source",
+      "rendered and visually reviewed every referenced PDF page",
+      "compared expected relationships with the corrected public development observations"
+    ]
+  },
+  "parser_variants": [
+    "html_dom_grid",
+    "pdf_native_text_with_coordinates",
+    "pdf_visual_layout_review"
+  ],
+  "documents": [
+    {
+      "fixture_id": "verticus-i-technical-data",
+      "case_ids": [
+        "B07"
+      ],
+      "source": {
+        "logical_path": "bauer_index/raw_html/0205_verticus-i-series_2e921bd912.html",
+        "media_type": "text/html",
+        "sha256": "e301b7a3aefb71f2d07ca270f00c9d0e645ee2bf6e90f671913b2fe6f2abbb0a",
+        "byte_size": 991963,
+        "external_file_id": "2d6d8bc8-a742-465a-8b3e-9bfb61f1fcd7"
+      },
+      "expected_metadata": {
+        "title": "VERTICUS series · Air-cooled compressors | BAUER KOMPRESSORE",
+        "language": "en"
+      },
+      "expected_tables": [
+        {
+          "caption": "High-pressure compressor VERTICUS, 310 – 610 l/min, 90 – 525 bar",
+          "section_path": [
+            "VERTICUS series",
+            "Technical Data",
+            "High-pressure compressor VERTICUS, 310 – 610 l/min, 90 – 525 bar"
+          ],
+          "source_locator": {
+            "kind": "html_dom",
+            "page_index": 0,
+            "table_line": 8641
+          },
+          "headers": [
+            {
+              "label": "Model designation",
+              "units": []
+            },
+            {
+              "label": "Effective free air delivery",
+              "qualifier": "1",
+              "units": [
+                "l/min",
+                "m³/h",
+                "cfm"
+              ]
+            },
+            {
+              "label": "Maximum operating pressure",
+              "qualifier": "2",
+              "units": [
+                "bar",
+                "psig"
+              ]
+            },
+            {
+              "label": "Number of stages",
+              "units": []
+            },
+            {
+              "label": "Rotational speed approx.",
+              "units": [
+                "rpm"
+              ]
+            },
+            {
+              "label": "Motor power",
+              "units": [
+                "kW"
+              ]
+            },
+            {
+              "label": "Net weight approx.",
+              "units": [
+                "kg",
+                "lbs"
+              ]
+            }
+          ],
+          "rows": [
+            {
+              "group": "VERTICUS I 350 - 420 bar",
+              "model": "I 15.11-11-V",
+              "values": {
+                "effective_free_air_delivery": {
+                  "l/min": 420,
+                  "m³/h": 25.2,
+                  "cfm": 15
+                },
+                "maximum_operating_pressure": {
+                  "bar": 420,
+                  "psig": 6100
+                },
+                "number_of_stages": 4,
+                "rotational_speed_approx": {
+                  "rpm": 1320
+                },
+                "motor_power": {
+                  "kW": 11
+                },
+                "net_weight_approx": {
+                  "kg": 426,
+                  "lbs": 939
+                }
+              }
+            },
+            {
+              "group": "VERTICUS I 420 - 525 bar",
+              "model": "I 15.11-11-V",
+              "values": {
+                "effective_free_air_delivery": {
+                  "l/min": 420,
+                  "m³/h": 25.2,
+                  "cfm": 15
+                },
+                "maximum_operating_pressure": {
+                  "bar": 525,
+                  "psig": 7600
+                },
+                "number_of_stages": 4,
+                "rotational_speed_approx": {
+                  "rpm": 1320
+                },
+                "motor_power": {
+                  "kW": 11
+                },
+                "net_weight_approx": {
+                  "kg": 426,
+                  "lbs": 939
+                }
+              }
+            }
+          ],
+          "footnotes": [
+            {
+              "marker": "1",
+              "text": "Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions."
+            },
+            {
+              "marker": "2",
+              "text": "Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower."
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        "Do not collapse the 420 bar and 525 bar group variants into one row.",
+        "Do not report maximum operating pressure as shutdown pressure."
+      ]
+    },
+    {
+      "fixture_id": "english-en-iso-3834-2-certificate",
+      "case_ids": [
+        "B13"
+      ],
+      "source": {
+        "logical_path": "bauer_index/raw_html/0035_certificate-download_e42c3f318d.html",
+        "media_type": "text/html",
+        "sha256": "d4cc35ee9f6af76832ecdd6632abc84e6a92c95aeeabb57ec980e1aa8c30313a",
+        "byte_size": 629156,
+        "external_file_id": "c8ceb8e3-45e7-4290-8a70-12191643fdfa"
+      },
+      "expected_metadata": {
+        "title": "Download Certificates from BAUER KOMPRESSOREN Easily",
+        "language": "en"
+      },
+      "expected_records": [
+        {
+          "record_type": "download",
+          "title": "EN ISO 3834-2 Certificate: BAUER KOMPRESSOREN GmbH, Stäblistr. 8, 81477 Munich",
+          "organization": "BAUER KOMPRESSOREN GmbH",
+          "address": "Stäblistr. 8, 81477 Munich",
+          "language": "en",
+          "file_number": "216",
+          "file_size": "231.71 kB",
+          "download_path": "/en_en/amfile/file/download/file/216/",
+          "source_locator": {
+            "kind": "html_dom",
+            "character_offset": 417928,
+            "css_class": "am-fileline"
+          }
+        }
+      ],
+      "linked_sources": [
+        {
+          "logical_path": "bauer_index/raw_docs/bauer_amfile_216.pdf",
+          "media_type": "application/pdf",
+          "sha256": "1d4691de1400363b8fd8a624b3345aa1913069e18e0a400b0c136cfdc2479001",
+          "byte_size": 237276,
+          "external_file_id": "50a078af-39d0-4244-bc9d-b10e3671dcfc",
+          "physical_page": 1,
+          "visual_review": "pass",
+          "expected_facts": {
+            "display_title": "CERTIFICATE",
+            "certificate_number": "TÜV SÜD-MUC-WD-3112378.2015.005",
+            "organization": "Bauer Kompressoren GmbH",
+            "address_lines": [
+              "Stäblistraße 8",
+              "DE - 81477 München"
+            ],
+            "standard": "EN ISO 3834-2",
+            "language": "en",
+            "contract": "4243762",
+            "valid_until": "December 15, 2026",
+            "issued_at": "Munich, October 29, 2025"
+          }
+        }
+      ],
+      "negative_constraints": [
+        "Do not substitute an ISO 9001 certificate.",
+        "Do not substitute an ISO 14001 certificate.",
+        "Do not select the German EN ISO 3834-2 certificate file 215."
+      ]
+    },
+    {
+      "fixture_id": "bm-40-technical-data",
+      "case_ids": [
+        "B16",
+        "B30"
+      ],
+      "source": {
+        "logical_path": "bauer_index/raw_html/0027_bm-series-40_e0b4c6a9a3.html",
+        "media_type": "text/html",
+        "sha256": "922108b2847b76e76574be387832f93db6a1d765689f22594c007beb1553bc65",
+        "byte_size": 916737,
+        "external_file_id": "5538605f-ad45-43f3-b551-74bc96c7d662"
+      },
+      "expected_metadata": {
+        "title": "BM series (40 bar) · Air-cooled compressors | BAUER KOMPRESS",
+        "language": "en"
+      },
+      "expected_tables": [
+        {
+          "caption": "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar",
+          "section_path": [
+            "BM series (40 bar)",
+            "Technical Data",
+            "Medium-pressure compressor BM series, 660 - 7390 l/min, 40 bar"
+          ],
+          "source_locator": {
+            "kind": "html_dom",
+            "page_index": 0,
+            "table_line": 8637
+          },
+          "headers": [
+            {
+              "label": "Model designation",
+              "units": []
+            },
+            {
+              "label": "Effective free air delivery",
+              "qualifier": "1",
+              "units": [
+                "l/min",
+                "m³/h",
+                "cfm"
+              ]
+            },
+            {
+              "label": "Shutdown pressure",
+              "qualifier": "2",
+              "units": [
+                "bar",
+                "psig"
+              ]
+            },
+            {
+              "label": "Number of stages",
+              "units": []
+            },
+            {
+              "label": "Rotational speed approx.",
+              "units": [
+                "rpm"
+              ]
+            },
+            {
+              "label": "Motor power",
+              "units": [
+                "kW"
+              ]
+            },
+            {
+              "label": "Net weight approx.",
+              "units": [
+                "kg",
+                "lbs"
+              ]
+            }
+          ],
+          "rows": [
+            {
+              "group": "BM series 40 bar – 50 Hz",
+              "model": "BM 6.1/40-11",
+              "values": {
+                "effective_free_air_delivery": {
+                  "l/min": 660,
+                  "m³/h": 39.6,
+                  "cfm": 23.3
+                },
+                "shutdown_pressure": {
+                  "bar": 40,
+                  "psig": 580
+                },
+                "number_of_stages": 3,
+                "rotational_speed_approx": {
+                  "rpm": 1470
+                },
+                "motor_power": {
+                  "kW": 11
+                },
+                "net_weight_approx": {
+                  "kg": 425,
+                  "lbs": 935
+                }
+              }
+            }
+          ],
+          "footnotes": [
+            {
+              "marker": "1",
+              "text": "Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions."
+            },
+            {
+              "marker": "2",
+              "text": "Max. shutdown pressure. Safety valve set pressure 10% higher."
+            }
+          ]
+        }
+      ],
+      "language_expectations": {
+        "de_query_must_match_en_evidence": true,
+        "term_hints": {
+          "Förderleistung": "Effective free air delivery",
+          "Abschaltdruck": "Shutdown pressure",
+          "Stufenzahl": "Number of stages",
+          "Motorleistung": "Motor power"
+        }
+      }
+    },
+    {
+      "fixture_id": "bm-100-technical-data",
+      "case_ids": [
+        "B17"
+      ],
+      "source": {
+        "logical_path": "bauer_index/raw_html/0025_bm-series-100_7acdece303.html",
+        "media_type": "text/html",
+        "sha256": "2f5ad06e14fdadb86b650aa887627e32c1c79e6663179267c70792f65e819a6e",
+        "byte_size": 917224,
+        "external_file_id": "a286ab71-15a3-488d-9405-dba4a07e291f"
+      },
+      "expected_metadata": {
+        "title": "BM series (100 bar) · Air-cooled compressors | BAUER KOMPRES",
+        "language": "en"
+      },
+      "expected_tables": [
+        {
+          "caption": "Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar",
+          "section_path": [
+            "BM series (100 bar)",
+            "Technical Data",
+            "Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar"
+          ],
+          "group": "BM series 100 bar – 50 Hz",
+          "source_locator": {
+            "kind": "html_dom",
+            "page_index": 0,
+            "table_line": 8637,
+            "table_ordinal": 1
+          },
+          "headers": [
+            {
+              "label": "Model designation",
+              "units": []
+            },
+            {
+              "label": "Effective free air delivery",
+              "qualifier": "1",
+              "units": [
+                "l/min",
+                "m³/h",
+                "cfm"
+              ]
+            },
+            {
+              "label": "Shutdown pressure",
+              "qualifier": "2",
+              "units": [
+                "bar",
+                "psig"
+              ]
+            },
+            {
+              "label": "Number of stages",
+              "units": []
+            },
+            {
+              "label": "Rotational speed approx.",
+              "units": [
+                "rpm"
+              ]
+            },
+            {
+              "label": "Motor power",
+              "units": [
+                "kW"
+              ]
+            },
+            {
+              "label": "Net weight approx.",
+              "units": [
+                "kg",
+                "lbs"
+              ]
+            }
+          ],
+          "rows": [
+            {
+              "group": "BM series 100 bar – 50 Hz",
+              "model": "BM 6.1/100-15",
+              "values": {
+                "effective_free_air_delivery": {
+                  "l/min": 630,
+                  "m³/h": 37.8,
+                  "cfm": 22.2
+                },
+                "shutdown_pressure": {
+                  "bar": 100,
+                  "psig": 1450
+                },
+                "number_of_stages": 3,
+                "rotational_speed_approx": {
+                  "rpm": 1470
+                },
+                "motor_power": {
+                  "kW": 15
+                },
+                "net_weight_approx": {
+                  "kg": 425,
+                  "lbs": 935
+                }
+              }
+            }
+          ],
+          "footnotes": [
+            {
+              "marker": "1",
+              "text": "Free air delivery according to ISO 1217, power consumption at maximum final pressure under defined conditions."
+            },
+            {
+              "marker": "2",
+              "text": "Max. shutdown pressure. Safety valve set pressure 10% higher."
+            }
+          ]
+        }
+      ],
+      "adjudication": {
+        "status": "resolved_for_fixture",
+        "rule": "Use the exact requested group in the current product page; do not mix identically named rows from other groups or older overview documents.",
+        "conflicting_observation": {
+          "logical_path": "bauer_index/raw_docs/2026-04_Compressors_for_Industry_EN_N39771_sc.pdf",
+          "physical_page": 21,
+          "reported_motor_power_kW": 11,
+          "reported_weight_kg": 435,
+          "reported_weight_lbs": 960
+        }
+      }
+    },
+    {
+      "fixture_id": "b-detection-sensor-calibration-n47183",
+      "case_ids": [
+        "B23"
+      ],
+      "source": {
+        "logical_path": "bauer_index/raw_docs/2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc.pdf",
+        "media_type": "application/pdf",
+        "sha256": "496bbb4b6fdf63d11f91be7e298dacd33149d3a10e7320aa0c999845aaf6eda9",
+        "byte_size": 1005839,
+        "external_file_id": "567623f2-34d9-4bd6-b768-bf7b848ed92b",
+        "page_count": 12
+      },
+      "expected_metadata": {
+        "document_number": "N47183",
+        "title": "BAUER B-DETECTION - THE NEXT GENERATION - SENSOR CALIBRATION",
+        "language": "en",
+        "subject": "Sensor calibration for BAUER B-DETECTION in Sports & Safety",
+        "source_filename": "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc.pdf"
+      },
+      "expected_regions": [
+        {
+          "physical_page": 1,
+          "region": "cover_title",
+          "text_lines": [
+            "BAUER B-DETECTION",
+            "THE NEXT GENERATION",
+            "SENSOR CALIBRATION",
+            "SPORTS & SAFETY"
+          ],
+          "visual_review": "pass"
+        }
+      ],
+      "negative_constraints": [
+        "The PDF metadata dictionary is not a substitute for the visible cover title.",
+        "Do not return the V2 Markdown derivative filename as the source filename."
+      ]
+    },
+    {
+      "fixture_id": "product-overview-k22-k28-range",
+      "case_ids": [
+        "B29"
+      ],
+      "source": {
+        "logical_path": "bauer_index/raw_docs/2025-06_Product_overview_EN_N37488_sc.pdf",
+        "media_type": "application/pdf",
+        "sha256": "32c67ebad88d47f35ada52c7f3d1106d38429475f23a4eb4302e77e9c378efcf",
+        "byte_size": 12930644,
+        "external_file_id": "6875988e-4124-42b7-97be-f3b964922a3e",
+        "page_count": 54
+      },
+      "expected_metadata": {
+        "document_number": "N37488",
+        "title": "Product Overview",
+        "language": "en"
+      },
+      "expected_regions": [
+        {
+          "physical_page": 31,
+          "printed_page": "31",
+          "region": "K 22 – K 28 SERIES",
+          "visual_review": "pass",
+          "family_level_facts": [
+            {
+              "predicate": "pressure_range",
+              "minimum": 30,
+              "maximum": 525,
+              "unit": "bar"
+            },
+            {
+              "predicate": "charging_rate",
+              "minimum": 600,
+              "maximum": 6800,
+              "unit": "l/min"
+            },
+            {
+              "predicate": "motor_power",
+              "minimum": 22,
+              "maximum": 110,
+              "unit": "kW"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        "Do not substitute the PE-VE INDUSTRY range on the lower half of the same page.",
+        "Do not convert this family-level range into an individual-model row."
+      ]
+    }
+  ]
+}
