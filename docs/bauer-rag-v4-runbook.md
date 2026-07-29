@@ -93,7 +93,7 @@ Rollback does not require deleting V4 data:
    while retaining V1/V2/V3 behavior.
 2. Restore private API deployment `13e2235d-a8c4-4103-bdb8-1f624a716026` to return to the frozen
    V3-only API image.
-3. If needed, restore worker deployment `7369b37b-bd55-4d62-87a0-8139edef6357`; a ready V4 release
+3. If needed, restore worker deployment `250827d4-dcfc-4e39-a149-53bc0a290223`; a ready V4 release
    has no claimable compilation jobs.
 4. Leave the V4 schema and objects in place for evidence preservation. The active pointer remains
    empty, so retained V4 data cannot become production-active.
@@ -118,4 +118,3 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
 
 The output and score are development evidence, not production promotion. Any measured V4 defect is
 repaired in representation first, then candidate retrieval, then reranking, then coverage/answering.
-
