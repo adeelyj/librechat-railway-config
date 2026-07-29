@@ -139,7 +139,7 @@ def _migration_files(root: Path) -> tuple[list[Path], list[Path]]:
     migrations = sorted((root / "migrations").glob("*.sql"))
     rollbacks = sorted((root / "rollbacks").glob("*.down.sql"))
     versions = [path.name[:3] for path in migrations]
-    if versions != ["001", "002", "003", "004", "005"]:
+    if versions != ["001", "002", "003", "004", "005", "006"]:
         raise RehearsalError("unexpected migration sequence")
     if [path.name[:3] for path in rollbacks] != versions:
         raise RehearsalError("rollback sequence does not match migrations")
@@ -794,7 +794,7 @@ SELECT json_build_object(
         )
     )
     expected = {
-        "migration_count": 5,
+        "migration_count": 6,
         "canonical_document_count": representative["document_count"],
         "projection_count": representative["document_count"],
         "active_release_count": 0,
