@@ -111,6 +111,8 @@ class CoverageEngine:
             return self._bcloud_field(field, evidence)
         if field.field.startswith("bkool_iii_"):
             return self._bkool_iii_field(field, evidence)
+        if field.field.startswith("bsafe_"):
+            return self._bsafe_field(field, evidence)
         if field.field == "bm_40_bar_evidence":
             return self._bm_family_field(field, evidence, pressure_bar=40)
         if field.field == "bm_100_bar_evidence":
@@ -629,6 +631,68 @@ class CoverageEngine:
                     "helium and argon."
                 ),
                 (context,),
+            )
+        return cls._absent(field)
+
+    @classmethod
+    def _bsafe_field(
+        cls,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        headline = cls._first_context(
+            evidence,
+            required=(
+                "b-safe",
+                "breathing air applications up to 300 bar",
+                "nitrox applications up to 200 bar",
+            ),
+            any_terms=("safety filling", "b-safe 300"),
+            filename_terms=("0030_b-safe",),
+        )
+        if field.field == "bsafe_nitrox_300_decision":
+            if headline is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "No. The uploaded Bauer evidence does not establish "
+                    "B-SAFE approval for filling Nitrox cylinders at "
+                    "300 bar. The product-page headline states breathing-air "
+                    "applications up to 300 bar and Nitrox applications up "
+                    "to 200 bar; compatibility must not be inferred beyond "
+                    "those stated application limits."
+                ),
+                (headline,),
+            )
+        if field.field == "bsafe_wording_reconciliation":
+            technical = cls._first_context(
+                evidence,
+                required=(
+                    "b-safe 300",
+                    "mediumair, nitrox",
+                    "maximum operating pressure410 bar",
+                    "filling pressures",
+                    "225/330 bar",
+                ),
+                any_terms=("technical data", "variable pressure increase"),
+                filename_terms=("0030_b-safe",),
+            )
+            if headline is None or technical is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "The page headline gives application limits of 300 bar "
+                    "for breathing air and 200 bar for Nitrox. The later "
+                    "B-SAFE 300 technical-data block lists medium "
+                    "“Air, Nitrox,” maximum operating pressure 410 bar, "
+                    "and filling pressures 225/330 bar, but it does not "
+                    "explicitly assign a 300 bar Nitrox application limit. "
+                    "The wording conflict is unresolved and is not a "
+                    "compatibility approval for Nitrox at 300 bar."
+                ),
+                (headline, technical),
             )
         return cls._absent(field)
 

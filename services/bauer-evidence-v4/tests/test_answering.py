@@ -432,6 +432,26 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         "bkool_iii_pressure",
         "bkool_iii_flow",
     ]
+    b11_plan = analyzer.analyze(
+        (
+            "Can B-SAFE be used to fill Nitrox cylinders at 300 bar? "
+            "Answer yes or no based only on the uploaded Bauer "
+            "documentation."
+        )
+    )
+    assert [field.field for field in b11_plan.fields] == [
+        "bsafe_nitrox_300_decision"
+    ]
+    b21_plan = analyzer.analyze(
+        (
+            "Reconcile the B-SAFE page headline that states breathing-air "
+            "use up to 300 bar and Nitrox use up to 200 bar with the later "
+            "B-SAFE 300 technical-data values."
+        )
+    )
+    assert [field.field for field in b21_plan.fields] == [
+        "bsafe_wording_reconciliation"
+    ]
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(
@@ -553,6 +573,60 @@ def test_bkool_iii_uses_complete_current_technical_row() -> None:
     assert "200–650 l/min" in rendered
     assert "200–420 l/min" in rendered
     assert "500 bar" not in rendered
+
+
+def test_bsafe_nitrox_limit_is_not_silently_approved() -> None:
+    analyzer = TaskAnalyzer()
+    context = SimpleNamespace(
+        ranked=SimpleNamespace(rank=1),
+        citation=SimpleNamespace(
+            original_filename="0030_b-safe_ae238602bf.html"
+        ),
+        unit=SimpleNamespace(
+            evidence_id="evidence-bsafe",
+            search_text=(
+                "B-SAFE Safety filling cell for breathing air applications "
+                "up to 300 bar and Nitrox applications up to 200 bar. "
+                "B-SAFE 300 Technical data MediumAir, Nitrox Maximum "
+                "operating pressure410 bar Filling pressures 225/330 bar "
+                "Variable pressure increase20–50 bar/min."
+            ),
+        ),
+    )
+    decision = analyzer.analyze(
+        (
+            "Can B-SAFE be used to fill Nitrox cylinders at 300 bar? "
+            "Answer yes or no based only on the uploaded Bauer "
+            "documentation."
+        )
+    )
+    decision_coverage = CoverageEngine._bsafe_field(
+        decision.fields[0],
+        (context,),
+    )
+    assert decision_coverage.state == "supported"
+    assert decision_coverage.values[0][0].startswith("No.")
+    assert "Nitrox applications up to 200 bar" in (
+        decision_coverage.values[0][0]
+    )
+    reconciliation = analyzer.analyze(
+        (
+            "Reconcile the B-SAFE page headline that states breathing-air "
+            "use up to 300 bar and Nitrox use up to 200 bar with the later "
+            "B-SAFE 300 technical-data values."
+        )
+    )
+    reconciliation_coverage = CoverageEngine._bsafe_field(
+        reconciliation.fields[0],
+        (context,),
+    )
+    assert reconciliation_coverage.state == "supported"
+    assert "maximum operating pressure 410 bar" in (
+        reconciliation_coverage.values[0][0]
+    )
+    assert "not a compatibility approval" in (
+        reconciliation_coverage.values[0][0]
+    )
 
 
 def test_direct_v4_answers_are_complete_grounded_and_cited(

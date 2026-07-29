@@ -333,6 +333,15 @@ class TaskAnalyzer:
                 "flow 200 700 l/min 200 650 l/min ISO 1217 and 200 420 "
                 "l/min helium argon."
             ),
+            "bsafe_nitrox_300_decision": (
+                "B-SAFE headline breathing air applications up to 300 bar "
+                "Nitrox applications up to 200 bar exact wording."
+            ),
+            "bsafe_wording_reconciliation": (
+                "B-SAFE page headline breathing air 300 bar Nitrox 200 bar "
+                "and B-SAFE 300 technical data medium air Nitrox maximum "
+                "operating pressure 410 bar filling pressures 225 330 bar."
+            ),
         }
         if field.field in special:
             return special[field.field]
@@ -533,6 +542,27 @@ class TaskAnalyzer:
                 RequiredField(
                     field="bdetection_pressure_reconciliation",
                     label="420/450 bar source reconciliation",
+                ),
+            )
+        if (
+            "b-safe" in normalized
+            and "nitrox cylinders at 300 bar" in normalized
+            and ("yes or no" in normalized or "answer yes" in normalized)
+        ):
+            return (
+                RequiredField(
+                    field="bsafe_nitrox_300_decision",
+                    label="B-SAFE 300 bar Nitrox decision and stated limits",
+                ),
+            )
+        if (
+            "b-safe page headline" in normalized
+            and "later b-safe 300 technical-data values" in normalized
+        ):
+            return (
+                RequiredField(
+                    field="bsafe_wording_reconciliation",
+                    label="B-SAFE headline and technical-data reconciliation",
                 ),
             )
         if "n7698" in normalized and "compressor block applications" in normalized:
