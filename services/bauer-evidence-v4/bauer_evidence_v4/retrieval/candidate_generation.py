@@ -429,13 +429,23 @@ class CandidateGenerator:
                 item.item.projection.projection_id,
             )
         )
+        unprotected = [
+            candidate
+            for candidate in ordered
+            if candidate.item.canonical_key not in protected_seen
+        ]
         candidates = tuple(
             (
                 protected
                 + [
                     candidate
-                    for candidate in ordered
-                    if candidate.item.canonical_key not in protected_seen
+                    for candidate in unprotected
+                    if candidate.subquestion_ids != ("search_hint",)
+                ]
+                + [
+                    candidate
+                    for candidate in unprotected
+                    if candidate.subquestion_ids == ("search_hint",)
                 ]
             )[:limit]
         )

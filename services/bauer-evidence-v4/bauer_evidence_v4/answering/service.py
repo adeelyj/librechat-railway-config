@@ -1,13 +1,13 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 
 from ..contracts.models import (
     CoverageItem,
     ReleaseContract,
     V4AnswerResponse,
 )
-from ..reranking import TransparentFeatureReranker
+from ..reranking import RerankResult, TransparentFeatureReranker
 from ..retrieval import (
     AuthorizedScope,
     CandidateGenerator,
@@ -63,7 +63,7 @@ class AnswerService:
         # Coverage remains bounded to at most two claim-sized supports per
         # field, so this wider rerank window cannot become answer material by
         # itself.
-        reranked = self.reranker.rerank(candidate_set, limit=40)
+        reranked = self._rerank_requirements_first(candidate_set, limit=40)
         if reranked.original_question != question:
             raise AssertionError("reranking changed the original question")
         evidence = EvidenceMaterializer(self.source_registry).materialize(
@@ -138,6 +138,47 @@ class AnswerService:
                 "reranker_identity": reranked.model_identity,
             },
         )
+
+    def _rerank_requirements_first(
+        self,
+        candidate_set,
+        *,
+        limit: int,
+    ) -> RerankResult:
+        requirement_candidates = tuple(
+            candidate
+            for candidate in candidate_set.candidates
+            if candidate.subquestion_ids != ("search_hint",)
+        )
+        hint_candidates = tuple(
+            candidate
+            for candidate in candidate_set.candidates
+            if candidate.subquestion_ids == ("search_hint",)
+        )
+        if not requirement_candidates:
+            return self.reranker.rerank(candidate_set, limit=limit)
+        primary = self.reranker.rerank(
+            replace(
+                candidate_set,
+                candidates=requirement_candidates,
+            ),
+            limit=limit,
+        )
+        remaining = limit - len(primary.ranked)
+        if remaining <= 0 or not hint_candidates:
+            return primary
+        expansion = self.reranker.rerank(
+            replace(candidate_set, candidates=hint_candidates),
+            limit=remaining,
+        )
+        ranked = primary.ranked + tuple(
+            replace(
+                item,
+                rank=len(primary.ranked) + offset,
+            )
+            for offset, item in enumerate(expansion.ranked, start=1)
+        )
+        return replace(primary, ranked=ranked)
 
     @staticmethod
     def _refused(
