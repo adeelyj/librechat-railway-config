@@ -1,0 +1,12 @@
+DROP FUNCTION IF EXISTS bauer_rag_v4.record_authorization_audit(text, text, text, integer);
+DROP FUNCTION IF EXISTS bauer_rag_v4.requeue_expired_jobs();
+DROP FUNCTION IF EXISTS bauer_rag_v4.fail_compilation_job(uuid, text, text, text);
+DROP FUNCTION IF EXISTS bauer_rag_v4.claim_compilation_job(text, integer);
+DROP TABLE IF EXISTS bauer_rag_v4.review_attestations;
+DROP TABLE IF EXISTS bauer_rag_v4.evaluation_runs;
+DROP TABLE IF EXISTS bauer_rag_v4.authorization_audit;
+DROP TABLE IF EXISTS bauer_rag_v4.compilation_jobs;
+DROP FUNCTION IF EXISTS bauer_rag_v4.current_release_id();
+DROP FUNCTION IF EXISTS bauer_rag_v4.current_principal_id();
+DROP FUNCTION IF EXISTS bauer_rag_v4.current_knowledge_base_id();
+DROP FUNCTION IF EXISTS bauer_rag_v4.current_tenant_id();

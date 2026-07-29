@@ -58,3 +58,34 @@ python services\bauer-evidence-v4\scripts\verify_answering.py `
   --gates evals\bauer-rag-v4\gates\development-gates.json `
   --source-root 'D:\02_Code\Bauer Kompressoren Demo'
 ```
+
+The PostgreSQL contract is split into five reversible migrations under
+`migrations/`, with matching scripts under `rollbacks/`. It provides logical
+V4 isolation, append-only source/release membership, canonical and disposable
+projection storage, exact embedding-cache identities, PostgreSQL job leases,
+body-free authorization audit, fixed release selection, five non-privileged
+runtime roles, and row-level security.
+
+The Fedora runner is deliberately scoped to a generated disposable database
+and owner. In apply mode it performs two complete forward/rollback cycles,
+injects an atomic migration failure, materializes three public representative
+compilations, exercises positive and negative RLS, release pinning, API
+fail-closed recovery, worker retry/lease recovery, and audit redaction, then
+removes the database and all rehearsal roles:
+
+```powershell
+$env:PYTHONPATH=(Resolve-Path 'services\bauer-evidence-v4').Path
+python services\bauer-evidence-v4\scripts\build_representative_rehearsal.py `
+  --fixture evals\bauer-rag-v4\fixtures\difficult-documents.json `
+  --source-root 'D:\02_Code\Bauer Kompressoren Demo' `
+  --output tmp\v4-development\wp8-representative-compilation.json
+
+python services\bauer-evidence-v4\scripts\fedora_rehearsal.py `
+  --mode apply `
+  --run-id <unique-run-id> `
+  --service-root services\bauer-evidence-v4 `
+  --representative tmp\v4-development\wp8-representative-compilation.json `
+  --output tmp\v4-development\wp8-fedora-postgresql.json `
+  --ssh-target <fedora-ssh-target> `
+  --ssh-key <scoped-key-path>
+```
