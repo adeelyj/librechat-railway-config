@@ -343,6 +343,24 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
             "final pressure (shut-down pressure) lower"
         ),
     ) == 1000
+    comparison_plan = analyzer.analyze(
+        (
+            "Compare the Bauer BM series at 40 bar and 100 bar. For each "
+            "family, report medium, maximum pressure, free-air-delivery "
+            "range, and motor-power range. Explain which family is "
+            "technically closer to a requirement for air at 90 bar and "
+            "approximately 800 l/min. Cite both product sources."
+        )
+    )
+    assert [field.field for field in comparison_plan.fields] == [
+        "bm_40_bar_evidence",
+        "bm_100_bar_evidence",
+        "bm_90_bar_800_l_min_fit",
+    ]
+    assert all(
+        comparison_plan.original_question not in subquestion.text
+        for subquestion in comparison_plan.subquestions
+    )
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(
@@ -367,6 +385,40 @@ def test_general_absence_is_explicit_and_has_no_source_only_success(
     )
     assert response.coverage[0].field == "topic_1"
     assert response.coverage[0].state == "absent"
+
+
+def test_bm_family_comparison_uses_complete_overview_ranges(
+    answer_fixture: tuple,
+) -> None:
+    service, scope, _ = answer_fixture
+    response = service.answer(
+        request_id="request-bm-family-comparison",
+        trace_id="trace-bm-family-comparison",
+        question=(
+            "Compare the Bauer BM series at 40 bar and 100 bar. For each "
+            "family, report medium, maximum pressure, free-air-delivery "
+            "range, and motor-power range. Explain which family is "
+            "technically closer to a requirement for air at 90 bar and "
+            "approximately 800 l/min. Cite both product sources."
+        ),
+        search_hint=None,
+        locale="en",
+        scope=scope,
+    )
+    assert response.status == "complete"
+    assert response.validation["passed"] is True
+    assert "660\u20137390 l/min" in response.answer
+    assert "11\u2013110 kW" in response.answer
+    assert "630\u20137300 l/min" in response.answer
+    assert "15\u2013132 kW" in response.answer
+    assert "BM series 100 bar is technically closer" in response.answer
+    assert "does not select or approve a specific model" in response.answer
+    assert {
+        citation.original_filename for citation in response.citations
+    } == {
+        "0025_bm-series-100_7acdece303.html",
+        "0027_bm-series-40_e0b4c6a9a3.html",
+    }
 
 
 def test_direct_v4_answers_are_complete_grounded_and_cited(

@@ -269,20 +269,7 @@ class TaskAnalyzer:
         subquestions = tuple(
             Subquestion(
                 subquestion_id=f"field_{index + 1}_{field.field}",
-                text=(
-                    "Search evidence for "
-                    f"{field.label}. Required terms: "
-                    + " ".join(
-                        dict.fromkeys(
-                            (
-                                *field.anchor_terms,
-                                *field.match_terms,
-                            )
-                        )
-                    )
-                    if intent == "general"
-                    else f"{question} Requested field: {field.label}."
-                ),
+                text=self._subquestion_text(question, intent, field),
             )
             for index, field in enumerate(fields)
         )
@@ -296,6 +283,43 @@ class TaskAnalyzer:
             exact_identifiers=identifiers,
             required_qualifiers=tuple(required_qualifiers),
         )
+
+    @staticmethod
+    def _subquestion_text(
+        question: str,
+        intent: str,
+        field: RequiredField,
+    ) -> str:
+        if field.field == "bm_40_bar_evidence":
+            return (
+                "Air-cooled medium-pressure compressors for air up to "
+                "40 bar, complete l/min range and complete kW range."
+            )
+        if field.field == "bm_100_bar_evidence":
+            return (
+                "Air-cooled medium-pressure compressors for air up to "
+                "100 bar, complete l/min range and complete kW range."
+            )
+        if field.field == "bm_90_bar_800_l_min_fit":
+            return (
+                "Retrieve both BM 40 bar and BM 100 bar family overview "
+                "ranges needed to compare an air requirement at 90 bar and "
+                "approximately 800 l/min."
+            )
+        if intent == "general":
+            return (
+                "Search evidence for "
+                f"{field.label}. Required terms: "
+                + " ".join(
+                    dict.fromkeys(
+                        (
+                            *field.anchor_terms,
+                            *field.match_terms,
+                        )
+                    )
+                )
+            )
+        return f"{question} Requested field: {field.label}."
 
     @staticmethod
     def _general_fields(
@@ -429,6 +453,12 @@ class TaskAnalyzer:
                     label="BM series 100 bar evidence",
                     anchor_terms=("BM", "100 bar"),
                     match_terms=("air", "free air delivery", "motor power"),
+                ),
+                RequiredField(
+                    field="bm_90_bar_800_l_min_fit",
+                    label="90 bar / approximately 800 l/min comparison",
+                    anchor_terms=("BM",),
+                    match_terms=("40 bar", "100 bar", "l/min"),
                 ),
             )
         if "test archive" in normalized and "eplan" in normalized:

@@ -103,6 +103,12 @@ class CoverageEngine:
         field,
         evidence: tuple[EvidenceContext, ...],
     ) -> FieldCoverage:
+        if field.field == "bm_40_bar_evidence":
+            return self._bm_family_field(field, evidence, pressure_bar=40)
+        if field.field == "bm_100_bar_evidence":
+            return self._bm_family_field(field, evidence, pressure_bar=100)
+        if field.field == "bm_90_bar_800_l_min_fit":
+            return self._bm_requirement_fit(field, evidence)
         candidates: list[
             tuple[int, int, int, int, str, str | None, str]
         ] = []
@@ -215,6 +221,142 @@ class CoverageEngine:
                 evidence_id for _, _, evidence_id in support
             ),
             detail=None,
+        )
+
+    @classmethod
+    def _bm_family_field(
+        cls,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+        *,
+        pressure_bar: int,
+    ) -> FieldCoverage:
+        matches = [
+            (specification, context)
+            for context in evidence
+            for specification in (
+                cls._bm_family_specification(
+                    context.unit.search_text,
+                    pressure_bar=pressure_bar,
+                ),
+            )
+            if specification is not None
+        ]
+        if not matches:
+            return FieldCoverage(
+                field=field,
+                state="absent",
+                values=(),
+                evidence_ids=(),
+                detail=(
+                    f"{field.label} is not established in the authorized "
+                    "Bauer evidence."
+                ),
+            )
+        specification, context = min(
+            matches,
+            key=lambda item: item[1].ranked.rank,
+        )
+        return FieldCoverage(
+            field=field,
+            state="supported",
+            values=((specification, context.citation.original_filename),),
+            evidence_ids=(context.unit.evidence_id,),
+            detail=None,
+        )
+
+    @classmethod
+    def _bm_requirement_fit(
+        cls,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        support = {}
+        for pressure_bar in (40, 100):
+            matches = [
+                (specification, context)
+                for context in evidence
+                for specification in (
+                    cls._bm_family_specification(
+                        context.unit.search_text,
+                        pressure_bar=pressure_bar,
+                    ),
+                )
+                if specification is not None
+            ]
+            if matches:
+                support[pressure_bar] = min(
+                    matches,
+                    key=lambda item: item[1].ranked.rank,
+                )
+        if set(support) != {40, 100}:
+            return FieldCoverage(
+                field=field,
+                state="absent",
+                values=(),
+                evidence_ids=(),
+                detail=(
+                    "Both BM family overview ranges are required for the "
+                    "90 bar comparison."
+                ),
+            )
+        forty = support[40][1]
+        hundred = support[100][1]
+        return FieldCoverage(
+            field=field,
+            state="supported",
+            values=(
+                (
+                    "BM series 100 bar is technically closer: its 100 bar "
+                    "family limit covers a 90 bar requirement, whereas the "
+                    "BM series 40 bar limit does not. Approximately 800 l/min "
+                    "falls within both documented family delivery ranges; "
+                    "this comparison does not select or approve a specific "
+                    "model.",
+                    None,
+                ),
+            ),
+            evidence_ids=(
+                forty.unit.evidence_id,
+                hundred.unit.evidence_id,
+            ),
+            detail=None,
+        )
+
+    @staticmethod
+    def _bm_family_specification(
+        text: str,
+        *,
+        pressure_bar: int,
+    ) -> str | None:
+        compact = re.sub(r"\s+", " ", text).strip()
+        normalized = _normalize(compact)
+        if (
+            f"bm series ({pressure_bar} bar)" not in normalized
+            or "air-cooled" not in normalized
+            or "for air" not in normalized
+        ):
+            return None
+        delivery = re.search(
+            r"\b(\d{3,5})\s*[\u2013-]\s*(\d{3,5})\s*l/min\b",
+            compact,
+            flags=re.IGNORECASE,
+        )
+        power = re.search(
+            r"\b(\d+(?:[.,]\d+)?)\s*[\u2013-]\s*"
+            r"(\d+(?:[.,]\d+)?)\s*kW\b",
+            compact,
+            flags=re.IGNORECASE,
+        )
+        if delivery is None or power is None:
+            return None
+        return (
+            "Medium: air; "
+            f"maximum family pressure: {pressure_bar} bar; "
+            "free-air-delivery range: "
+            f"{delivery.group(1)}\u2013{delivery.group(2)} l/min; "
+            "motor-power range: "
+            f"{power.group(1)}\u2013{power.group(2)} kW"
         )
 
     @classmethod
