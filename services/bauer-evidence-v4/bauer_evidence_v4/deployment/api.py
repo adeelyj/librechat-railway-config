@@ -65,14 +65,9 @@ def load_release(settings: V4Settings) -> LoadedRelease:
         )
         source_rows = connection.execute(
             """
-            SELECT source.source_id, source.external_source_id
-            FROM bauer_rag_v4.release_sources AS member
-            JOIN bauer_rag_v4.source_documents AS source
-              ON source.source_id = member.source_id
-            WHERE member.release_id = %s
-            ORDER BY member.ordinal
-            """,
-            (settings.candidate_release_id,),
+            SELECT source_id, external_source_id
+            FROM bauer_rag_v4.resolve_pinned_release_sources()
+            """
         ).fetchall()
         source_uuid_by_external_id = {
             str(external): str(source_id)

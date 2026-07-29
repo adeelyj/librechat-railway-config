@@ -19,6 +19,7 @@ def test_numbered_migrations_have_reverse_rollbacks() -> None:
         "004",
         "005",
         "006",
+        "007",
     ]
     assert [path.name[:3] for path in down] == [
         "001",
@@ -27,6 +28,7 @@ def test_numbered_migrations_have_reverse_rollbacks() -> None:
         "004",
         "005",
         "006",
+        "007",
     ]
     assert all(path.read_text(encoding="utf-8").strip() for path in up + down)
 
@@ -43,9 +45,21 @@ def test_database_contract_is_v4_isolated_and_host_neutral() -> None:
     assert "ENABLE ROW LEVEL SECURITY" in sql
     assert "readable_source_ids" in sql
     assert "resolve_pinned_release" in sql
+    assert "resolve_pinned_release_sources" in sql
     assert "FOR UPDATE SKIP LOCKED" in sql
     assert "embedding_identity_sha256" in sql
     assert "canonical_evidence_ids text[]" in sql
+
+
+def test_pinned_release_source_resolver_is_grant_bounded() -> None:
+    sql = (MIGRATIONS / "007_pinned_release_sources.sql").read_text(
+        encoding="utf-8"
+    )
+    assert "SECURITY DEFINER" in sql
+    assert "principal_source_grants" in sql
+    assert "current_principal_id()" in sql
+    assert "current_release_id()" in sql
+    assert "release.status = 'ready'" in sql
 
 
 def test_runtime_roles_are_exact_non_privileged_groups() -> None:
