@@ -343,6 +343,21 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         "BOOSTER WATER COOLED: 25–520 bar; "
         "GIB Series | BK 23 – BK 52: 90–520 bar"
     )
+    assert CoverageEngine._concise_value(
+        (
+            "VERTICUS AND K 22 – K 28 SERIES. An intelligent air-cooling "
+            "system provides reliable cooling for each compressor stage."
+        ),
+        b06_plan.fields[0],
+    ) == ""
+    assert CoverageEngine._concise_value(
+        "A booster increases an existing inlet pressure.",
+        b06_plan.fields[1],
+    ) == ""
+    assert CoverageEngine._concise_value(
+        "The compressor shuts down automatically.",
+        b06_plan.fields[2],
+    ) == ""
     assert CoverageEngine._value_priority(
         "booster_pressure_evidence",
         booster_value,
@@ -743,11 +758,14 @@ def test_search_hint_cannot_displace_b06_requirements(
         locale="en",
         scope=scope,
     )
-    assert response.status == "complete"
+    assert response.status == "partial"
     assert response.validation["passed"] is True
     assert "525 bar" in response.answer
     assert "350 bar" not in response.answer
-    assert "shutdown pressure" in response.answer
+    assert set(response.not_found) == {
+        "booster_pressure_evidence",
+        "pressure_definition_evidence",
+    }
 
 
 def test_authorization_negative_returns_no_evidence(

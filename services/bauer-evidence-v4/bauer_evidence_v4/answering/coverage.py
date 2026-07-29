@@ -785,6 +785,21 @@ class CoverageEngine:
                         match.group(3),
                     )
                 )
+            for match in re.finditer(
+                r"\bHigh-pressure compressor\s+"
+                r"(MINI-VERTICUS|VERTICUS|K\s*22\s*[\u2013-]\s*K\s*28)"
+                r"[^.;]{0,100}?,\s*(\d+)\s*[\u2013-]\s*(\d+)\s*bar\b",
+                content,
+                flags=re.IGNORECASE,
+            ):
+                family_ranges.append(
+                    (
+                        int(match.group(3)),
+                        re.sub(r"\s+", " ", match.group(1)).strip(),
+                        match.group(2),
+                        match.group(3),
+                    )
+                )
             if family_ranges:
                 maximum = max(item[0] for item in family_ranges)
                 highest = [
@@ -797,6 +812,7 @@ class CoverageEngine:
                     f"{maximum} bar; "
                     + "; ".join(dict.fromkeys(highest))
                 )
+            return ""
 
         if field.field == "booster_pressure_evidence":
             category_ranges = [
@@ -840,11 +856,13 @@ class CoverageEngine:
                     if int(maximum) == highest
                 )
                 return "; ".join(dict.fromkeys(rendered))
+            return ""
 
         if field.field == "pressure_definition_evidence":
             definition = re.search(
                 r"\b(?:Maximum allowable working pressure|"
-                r"Max\.?\s+operating pressure)\s*=\s*"
+                r"Max\.?\s+operating pressure|"
+                r"operating pressure)\s*=\s*"
                 r"max(?:imum)?\.?\s+set(?:ting)?\s+(?:of\s+the\s+)?"
                 r"safety valve\s*;\s*"
                 r"(?:final|shutdown) pressure"
@@ -854,6 +872,7 @@ class CoverageEngine:
             )
             if definition:
                 return re.sub(r"\s+", " ", definition.group(0)).strip()
+            return ""
 
         if field.field.endswith("_pressure"):
             values = []
