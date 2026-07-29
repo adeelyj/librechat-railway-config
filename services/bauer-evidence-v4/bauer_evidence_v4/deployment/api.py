@@ -258,6 +258,20 @@ def create_router(
         trace_id = request.headers.get("x-request-id", "").strip()
         if not trace_id:
             trace_id = f"v4-{uuid.uuid4()}"
+        LOGGER.info(
+            (
+                "v4_answer_request request_id=%s question_sha256=%s "
+                "question_chars=%d search_hint_sha256=%s"
+            ),
+            body.request_id,
+            hashlib.sha256(body.question.encode("utf-8")).hexdigest(),
+            len(body.question),
+            (
+                hashlib.sha256(body.search_hint.encode("utf-8")).hexdigest()
+                if body.search_hint
+                else "none"
+            ),
+        )
         result = await run_in_threadpool(
             loaded.service.answer,
             request_id=body.request_id,
