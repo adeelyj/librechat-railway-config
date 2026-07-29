@@ -119,6 +119,7 @@ class CoverageEngine:
             snippet = self._bounded_snippet(
                 text,
                 field.match_terms or field.anchor_terms,
+                anchor_terms=field.anchor_terms,
             )
             snippet_key = _normalize(snippet)
             if not snippet or snippet_key in seen:
@@ -161,20 +162,45 @@ class CoverageEngine:
         text: str,
         terms: tuple[str, ...],
         *,
-        limit: int = 700,
+        anchor_terms: tuple[str, ...] = (),
+        limit: int = 900,
     ) -> str:
         compact = re.sub(r"\s+", " ", text).strip()
-        if len(compact) <= limit:
-            return compact
         normalized = _normalize(compact)
         positions = [
             position
             for term in terms
-            for position in (normalized.find(_normalize(term)),)
-            if position >= 0
+            for position in CoverageEngine._positions(
+                normalized,
+                _normalize(term),
+            )
         ]
-        center = min(positions) if positions else 0
-        start = max(0, center - 180)
+        anchor_positions = [
+            position
+            for term in anchor_terms
+            for position in CoverageEngine._positions(
+                normalized,
+                _normalize(term),
+            )
+        ]
+        if anchor_positions and terms:
+            pairs = [
+                (abs(anchor - position), anchor, position)
+                for anchor in anchor_positions
+                for position in positions
+                if abs(anchor - position) <= limit - 80
+            ]
+            if not pairs:
+                return ""
+            _, anchor, position = min(pairs)
+            span_start = min(anchor, position)
+            span_end = max(anchor, position)
+            padding = max(0, limit - (span_end - span_start))
+            start = max(0, span_start - min(180, padding // 2))
+        else:
+            start = max(0, (min(positions) if positions else 0) - 180)
+        if len(compact) <= limit:
+            return compact
         end = min(len(compact), start + limit)
         if end - start < limit:
             start = max(0, end - limit)
@@ -187,6 +213,19 @@ class CoverageEngine:
         prefix = "… " if start else ""
         suffix = " …" if end < len(compact) else ""
         return f"{prefix}{compact[start:end].strip()}{suffix}"
+
+    @staticmethod
+    def _positions(value: str, needle: str) -> tuple[int, ...]:
+        if not needle:
+            return ()
+        positions: list[int] = []
+        start = 0
+        while True:
+            position = value.find(needle, start)
+            if position < 0:
+                return tuple(positions)
+            positions.append(position)
+            start = position + max(len(needle), 1)
 
     @staticmethod
     def _relevant(plan: TaskPlan, context: EvidenceContext) -> bool:

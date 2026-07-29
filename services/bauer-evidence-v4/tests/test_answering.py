@@ -13,6 +13,7 @@ from bauer_evidence_v4.answering import (
 )
 from bauer_evidence_v4.answering.models import AnswerDraft, Claim
 from bauer_evidence_v4.answering.coverage import _normalize as normalize_coverage
+from bauer_evidence_v4.answering.coverage import CoverageEngine
 from bauer_evidence_v4.answering.render import GroundedAnswerBuilder
 from bauer_evidence_v4.answering.validation import (
     AnswerValidator,
@@ -205,6 +206,18 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         field.field for field in two_rows.fields
     }
     assert normalize_coverage("B\u2011SELECT") == normalize_coverage("B-SELECT")
+    assert CoverageEngine._bounded_snippet(
+        "B-SELECT " + ("unrelated " * 120) + "operating pressure 420 bar",
+        ("operating pressure",),
+        anchor_terms=("B-SELECT",),
+    ) == ""
+    nearby = CoverageEngine._bounded_snippet(
+        "B-SELECT automatic selector. Operating pressure: 420 bar.",
+        ("operating pressure",),
+        anchor_terms=("B-SELECT",),
+    )
+    assert "B-SELECT" in nearby
+    assert "420 bar" in nearby
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(
