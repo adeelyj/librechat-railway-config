@@ -41,6 +41,8 @@ class GroundedAnswerBuilder:
                 "general": "Supported result:",
             }[plan.intent]
         ]
+        if plan.intent == "general" and not supported:
+            lines[0] = "No supported result from authorized evidence:"
         used_citation_ids: list[str] = []
         for item in supported:
             rendered_values = []
@@ -72,6 +74,12 @@ class GroundedAnswerBuilder:
                 )
             )
         if missing:
+            if not supported:
+                lines.append(
+                    "Not established in the authorized Bauer evidence: "
+                    + ", ".join(item.field.label for item in missing)
+                    + "."
+                )
             lines.append(
                 "Missing or unresolved fields: "
                 + ", ".join(item.field.label for item in missing)

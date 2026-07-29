@@ -155,6 +155,74 @@ def test_task_analyzer_derives_all_requested_fields(
         assert len(plan.subquestions) == len(plan.fields)
 
 
+def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
+    analyzer = TaskAnalyzer()
+    product_plan = analyzer.analyze(
+        "Find B-SELECT and report its operating pressure and functions."
+    )
+    assert product_plan.intent == "general"
+    assert [field.field for field in product_plan.fields] == ["topic_1"]
+    assert product_plan.fields[0].anchor_terms == ("B-SELECT",)
+    assert product_plan.fields[0].match_terms
+    assert all(field.field != "source" for field in product_plan.fields)
+
+    absence_plan = analyzer.analyze(
+        "Find Bauer order number N99999999 and report the exact component."
+    )
+    assert absence_plan.fields[0].anchor_terms == ("N99999999",)
+
+    isolation_plan = analyzer.analyze(
+        "Search for EPLAN public test documents from the Test Archive."
+    )
+    assert isolation_plan.fields[0].anchor_terms == (
+        "Test Archive",
+        "EPLAN",
+    )
+    synthetic_plan = analyzer.analyze(
+        "Find the closest previous synthetic nitrogen booster project."
+    )
+    assert synthetic_plan.fields[0].anchor_terms == ("SYN-",)
+    assert synthetic_plan.fields[0].required is True
+
+    part_plan = analyzer.analyze(
+        "Find the best compatible synthetic part; do not claim it is real."
+    )
+    assert part_plan.intent == "general"
+    assert part_plan.fields[0].field == "synthetic_record_evidence"
+
+    two_rows = analyzer.analyze(
+        "The model I 15.11-11-V appears twice. Return both rows and footnotes."
+    )
+    assert two_rows.intent == "table_row"
+    assert "effective_free_air_delivery" in {
+        field.field for field in two_rows.fields
+    }
+
+
+def test_general_absence_is_explicit_and_has_no_source_only_success(
+    answer_fixture: tuple,
+) -> None:
+    service, scope, _ = answer_fixture
+    response = service.answer(
+        request_id="request-absent-standard",
+        trace_id="trace-absent-standard",
+        question=(
+            "Find an ISO 27001 certificate for BAUER KOMPRESSOREN GmbH. "
+            "Do not substitute ISO 9001, ISO 14001, or EN ISO 3834-2."
+        ),
+        search_hint=None,
+        locale="en",
+        scope=scope,
+    )
+    assert response.status == "not_found"
+    assert response.citations == []
+    assert "not established in the authorized bauer evidence" in (
+        response.answer.casefold()
+    )
+    assert response.coverage[0].field == "topic_1"
+    assert response.coverage[0].state == "absent"
+
+
 def test_direct_v4_answers_are_complete_grounded_and_cited(
     answer_fixture: tuple,
 ) -> None:

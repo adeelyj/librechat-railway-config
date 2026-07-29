@@ -13,6 +13,8 @@ class RequiredField:
     field: str
     label: str
     required: bool = True
+    anchor_terms: tuple[str, ...] = ()
+    match_terms: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)

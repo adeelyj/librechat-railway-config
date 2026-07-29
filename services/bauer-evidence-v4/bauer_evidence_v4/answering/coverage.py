@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import unicodedata
 from dataclasses import dataclass
 
@@ -36,6 +37,8 @@ class CoverageEngine:
         field,
         evidence: tuple[EvidenceContext, ...],
     ) -> FieldCoverage:
+        if plan.intent == "general":
+            return self._general_field(field, evidence)
         support: list[tuple[str, str | None, str]] = []
         for context in evidence:
             for name, value, qualifier in context.values:
@@ -83,6 +86,96 @@ class CoverageEngine:
             ),
             detail=None,
         )
+
+    def _general_field(
+        self,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        support: list[tuple[str, str | None, str]] = []
+        seen: set[str] = set()
+        for context in evidence:
+            text = context.unit.search_text.strip()
+            normalized = _normalize(text)
+            if field.anchor_terms and not all(
+                _normalize(term) in normalized for term in field.anchor_terms
+            ):
+                continue
+            if field.match_terms and not any(
+                _normalize(term) in normalized for term in field.match_terms
+            ):
+                continue
+            snippet = self._bounded_snippet(
+                text,
+                field.anchor_terms + field.match_terms,
+            )
+            snippet_key = _normalize(snippet)
+            if not snippet or snippet_key in seen:
+                continue
+            seen.add(snippet_key)
+            support.append(
+                (
+                    snippet,
+                    context.citation.original_filename,
+                    context.unit.evidence_id,
+                )
+            )
+            if len(support) >= 3:
+                break
+        if not support:
+            return FieldCoverage(
+                field=field,
+                state="absent",
+                values=(),
+                evidence_ids=(),
+                detail=(
+                    f"{field.label} is not established in the authorized "
+                    "Bauer evidence."
+                ),
+            )
+        return FieldCoverage(
+            field=field,
+            state="supported",
+            values=tuple(
+                (value, qualifier) for value, qualifier, _ in support
+            ),
+            evidence_ids=tuple(
+                evidence_id for _, _, evidence_id in support
+            ),
+            detail=None,
+        )
+
+    @staticmethod
+    def _bounded_snippet(
+        text: str,
+        terms: tuple[str, ...],
+        *,
+        limit: int = 700,
+    ) -> str:
+        compact = re.sub(r"\s+", " ", text).strip()
+        if len(compact) <= limit:
+            return compact
+        normalized = _normalize(compact)
+        positions = [
+            position
+            for term in terms
+            for position in (normalized.find(_normalize(term)),)
+            if position >= 0
+        ]
+        center = min(positions) if positions else 0
+        start = max(0, center - 180)
+        end = min(len(compact), start + limit)
+        if end - start < limit:
+            start = max(0, end - limit)
+        if start:
+            boundary = compact.find(" ", start)
+            start = boundary + 1 if boundary >= 0 else start
+        if end < len(compact):
+            boundary = compact.rfind(" ", start, end)
+            end = boundary if boundary > start else end
+        prefix = "… " if start else ""
+        suffix = " …" if end < len(compact) else ""
+        return f"{prefix}{compact[start:end].strip()}{suffix}"
 
     @staticmethod
     def _relevant(plan: TaskPlan, context: EvidenceContext) -> bool:
