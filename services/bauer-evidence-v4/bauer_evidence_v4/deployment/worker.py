@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import re
 import threading
 import time
 from dataclasses import dataclass, field
@@ -26,6 +27,26 @@ def _fingerprint(error: BaseException) -> str:
             "utf-8", errors="replace"
         )
     ).hexdigest()
+
+
+def _failure_code(error: BaseException) -> str:
+    error_type = re.sub(
+        r"[^A-Za-z0-9_.:-]+",
+        "_",
+        type(error).__name__,
+    ).strip("_")
+    diagnostic = getattr(error, "diag", None)
+    constraint = getattr(diagnostic, "constraint_name", None)
+    if isinstance(constraint, str) and constraint:
+        safe_constraint = re.sub(
+            r"[^A-Za-z0-9_.:-]+",
+            "_",
+            constraint,
+        ).strip("_")
+        value = f"{error_type}.{safe_constraint}"
+    else:
+        value = error_type or "compiler_error"
+    return value[:128]
 
 
 def _s3_client(settings: V4Settings):
@@ -122,7 +143,7 @@ class V4CompilerWorker:
                     (
                         job_id,
                         self.settings.worker_id,
-                        "compiler_error",
+                        _failure_code(error),
                         _fingerprint(error),
                     ),
                 )

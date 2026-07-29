@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param(
-    [ValidateSet('Setup', 'Status', 'MarkReady')]
+    [ValidateSet('Setup', 'Status', 'RetryDead', 'MarkReady')]
     [string]$Phase = 'Status',
     [string]$IdentifiersPath = (
         'D:\02_Code\LibreChat_Setup-rag-v4\tmp\v4-deploy\' +
@@ -238,7 +238,9 @@ try {
     $tunnel = Start-PrivateTunnel -Port $port
     $ownerPassword = Convert-SecureString -Value $secrets.postgres_password
     $request = [ordered]@{
-        operation = $Phase.ToLowerInvariant().Replace('markready', 'mark-ready')
+        operation = $Phase.ToLowerInvariant().
+            Replace('markready', 'mark-ready').
+            Replace('retrydead', 'retry-dead')
         database = 'bauer_v3'
         port = $port
         owner_user = 'postgres'

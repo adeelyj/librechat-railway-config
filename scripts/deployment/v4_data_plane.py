@@ -52,7 +52,12 @@ def _load_request() -> dict[str, Any]:
     if not isinstance(value, dict):
         raise DataPlaneError("stdin must contain an object")
     operation = _required(value.get("operation"), "operation")
-    if operation not in {"setup", "status", "mark-ready"}:
+    if operation not in {
+        "setup",
+        "status",
+        "retry-dead",
+        "mark-ready",
+    }:
         raise DataPlaneError("unsupported operation")
     normalized = {
         "operation": operation,
@@ -344,6 +349,89 @@ def _status(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
             (request["release_id"],),
         ).fetchall()
     }
+    failures = [
+        {
+            "error_code": str(error_code),
+            "error_fingerprint": str(error_fingerprint),
+            "count": int(count),
+        }
+        for error_code, error_fingerprint, count in connection.execute(
+            """
+            SELECT error_code, error_fingerprint, count(*)
+            FROM bauer_rag_v4.compilation_jobs
+            WHERE release_id = %s
+              AND status = 'dead'
+            GROUP BY error_code, error_fingerprint
+            ORDER BY error_code, error_fingerprint
+            """,
+            (request["release_id"],),
+        ).fetchall()
+    ]
+    duplicate_metrics = connection.execute(
+        """
+        WITH content_groups AS (
+            SELECT version.content_sha256,
+                   count(*) AS source_count
+            FROM bauer_rag_v4.release_sources AS member
+            JOIN bauer_rag_v4.source_versions AS version
+              ON version.source_version_id = member.source_version_id
+            WHERE member.release_id = %s
+            GROUP BY version.content_sha256
+            HAVING count(*) > 1
+        ),
+        path_groups AS (
+            SELECT version.content_sha256,
+                   document.original_filename,
+                   count(*) AS source_count
+            FROM bauer_rag_v4.release_sources AS member
+            JOIN bauer_rag_v4.source_versions AS version
+              ON version.source_version_id = member.source_version_id
+            JOIN bauer_rag_v4.source_documents AS document
+              ON document.source_id = member.source_id
+            WHERE member.release_id = %s
+            GROUP BY version.content_sha256, document.original_filename
+            HAVING count(*) > 1
+        ),
+        dead AS (
+            SELECT job.source_id
+            FROM bauer_rag_v4.compilation_jobs AS job
+            WHERE job.release_id = %s
+              AND job.status = 'dead'
+        )
+        SELECT
+            (SELECT count(*) FROM content_groups),
+            (SELECT coalesce(sum(source_count), 0) FROM content_groups),
+            (SELECT count(*) FROM path_groups),
+            (SELECT coalesce(sum(source_count), 0) FROM path_groups),
+            (
+                SELECT count(*)
+                FROM dead
+                JOIN bauer_rag_v4.source_versions AS version
+                  ON version.source_id = dead.source_id
+                JOIN content_groups
+                  ON content_groups.content_sha256 =
+                     version.content_sha256
+            ),
+            (
+                SELECT count(*)
+                FROM dead
+                JOIN bauer_rag_v4.source_versions AS version
+                  ON version.source_id = dead.source_id
+                JOIN bauer_rag_v4.source_documents AS document
+                  ON document.source_id = dead.source_id
+                JOIN path_groups
+                  ON path_groups.content_sha256 =
+                     version.content_sha256
+                 AND path_groups.original_filename =
+                     document.original_filename
+            )
+        """,
+        (
+            request["release_id"],
+            request["release_id"],
+            request["release_id"],
+        ),
+    ).fetchone()
     release = connection.execute(
         """
         SELECT status, ready_at IS NOT NULL
@@ -361,6 +449,17 @@ def _status(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
         "release_ready_at_present": bool(release[1]) if release else False,
         "counts": counts,
         "jobs": jobs,
+        "dead_job_failures": failures,
+        "duplicate_source_metrics": {
+            "content_groups": int(duplicate_metrics[0]),
+            "content_sources": int(duplicate_metrics[1]),
+            "content_and_filename_groups": int(duplicate_metrics[2]),
+            "content_and_filename_sources": int(duplicate_metrics[3]),
+            "dead_jobs_in_content_groups": int(duplicate_metrics[4]),
+            "dead_jobs_in_content_and_filename_groups": int(
+                duplicate_metrics[5]
+            ),
+        },
         "source_accounting_complete": (
             counts["release_sources"] == EXPECTED_SOURCE_COUNT
         ),
@@ -432,20 +531,53 @@ def _mark_ready(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
     return _status(connection, request)
 
 
+def _retry_dead(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
+    release = connection.execute(
+        """
+        SELECT status
+        FROM bauer_rag_v4.knowledge_releases
+        WHERE release_id = %s
+        """,
+        (request["release_id"],),
+    ).fetchone()
+    if release is None or str(release[0]) != "building":
+        raise DataPlaneError("only a building release can retry dead jobs")
+    with connection.transaction():
+        cursor = connection.execute(
+            """
+            UPDATE bauer_rag_v4.compilation_jobs
+            SET status = 'queued',
+                attempts = 0,
+                available_at = clock_timestamp(),
+                leased_by = NULL,
+                lease_expires_at = NULL,
+                error_code = NULL,
+                error_fingerprint = NULL,
+                updated_at = clock_timestamp()
+            WHERE release_id = %s
+              AND status = 'dead'
+            """,
+            (request["release_id"],),
+        )
+    result = _status(connection, request)
+    result["retried_dead_jobs"] = int(cursor.rowcount)
+    return result
+
+
 def main() -> int:
     try:
         parser = argparse.ArgumentParser()
         parser.add_argument(
             "--operation",
-            choices=("Setup", "Status", "MarkReady"),
+            choices=("Setup", "Status", "RetryDead", "MarkReady"),
         )
         arguments = parser.parse_args()
         request = _load_request()
         if (
             arguments.operation is not None
-            and arguments.operation.lower().replace(
-                "markready", "mark-ready"
-            )
+            and arguments.operation.lower()
+            .replace("markready", "mark-ready")
+            .replace("retrydead", "retry-dead")
             != request["operation"]
         ):
             raise DataPlaneError("operation argument does not match stdin")
@@ -456,6 +588,8 @@ def main() -> int:
                 result = _setup(connection, request)
             elif request["operation"] == "mark-ready":
                 result = _mark_ready(connection, request)
+            elif request["operation"] == "retry-dead":
+                result = _retry_dead(connection, request)
             else:
                 result = _status(connection, request)
         print(json.dumps(result, sort_keys=True, separators=(",", ":")))
