@@ -244,6 +244,18 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         "50 bar: 2750 l/min; 200 bar: 3500 l/min; "
         "300 bar: 3700 l/min"
     )
+    concise_pressure = CoverageEngine._concise_value(
+        (
+            "B-SELECT Operating pressure: 414/420 bar "
+            "Adjustment range: Pressure relief valve: 100–414/420 bar "
+            "Flow rate at P = 50 bar 2750 l/min"
+        ),
+        product_plan.fields[0],
+    )
+    assert concise_pressure == (
+        "Operating pressure: 414/420 bar; "
+        "Adjustment range: Pressure relief valve: 100–414/420 bar"
+    )
     concise_functions = CoverageEngine._concise_value(
         (
             "B-SELECT performs 3 important functions: "

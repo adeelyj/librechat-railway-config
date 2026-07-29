@@ -152,6 +152,11 @@ class CoverageEngine:
         support: list[tuple[str, str | None, str]] = []
         seen: set[str] = set()
         best_match_count = candidates[0][0] if candidates else 0
+        allowed_match_gap = (
+            0
+            if field.field.endswith(("_pressure", "_flow", "_functions"))
+            else 1
+        )
         for (
             match_count,
             _,
@@ -163,7 +168,8 @@ class CoverageEngine:
             if (
                 support
                 and field.match_terms
-                and match_count < max(1, best_match_count - 1)
+                and match_count
+                < max(1, best_match_count - allowed_match_gap)
             ):
                 continue
             snippet_key = _normalize(concise)
@@ -205,6 +211,30 @@ class CoverageEngine:
         compact = re.sub(r"\s+", " ", text).strip(" \t\r\n\u2026")
         content = compact.split("Content:", 1)[-1].strip()
         normalized = _normalize(content)
+
+        if field.field.endswith("_pressure"):
+            values = []
+            for match in re.finditer(
+                r"\b("
+                r"(?:maximum\s+)?operating pressure|"
+                r"adjustment range|"
+                r"inlet pressure|"
+                r"shutdown pressure|"
+                r"pressure range|"
+                r"final pressure"
+                r")\b\s*:?\s*([^.;›•]{0,150}?\bbar)\b",
+                content,
+                flags=re.IGNORECASE,
+            ):
+                label = re.sub(r"\s+", " ", match.group(1)).strip()
+                value = re.sub(r"\s+", " ", match.group(2)).strip()
+                rendered = f"{label}: {value}"
+                if _normalize(rendered) not in {
+                    _normalize(item) for item in values
+                }:
+                    values.append(rendered)
+            if values:
+                return "; ".join(values[:6])
 
         if field.field.endswith("_flow"):
             pairs = []
