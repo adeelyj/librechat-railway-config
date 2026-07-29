@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "kind": "bauer-rag-v4-pre-railway-evidence-package",
+  "generated_at_utc": "2026-07-29T10:26:44.7387703Z",
+  "status": "local_and_fedora_development_gates_passed",
+  "production_readiness_claimed": false,
+  "implementation": {
+    "repository": "D:\\02_Code\\LibreChat_Setup-rag-v4",
+    "branch": "codex/bauer-rag-v4",
+    "implementation_commit": "402b739185fd233473c3b4f8e9175bebe59cf157",
+    "v3_ancestor_commit": "11ea00066300ed3ca5bf4ec75fd9d76a6d43dc59",
+    "v4_commit_count": 9,
+    "test_result": {
+      "passed": 43,
+      "failed": 0,
+      "duration_seconds": 181.53
+    }
+  },
+  "bound_inputs": {
+    "source_contract_sha256": "40049a12aacb198018a633905d793c8ef9011403f3fdbcd34ed7fe0792ab2580",
+    "source_count": 373,
+    "pdf_count": 166,
+    "html_count": 207,
+    "accounted_original_count": 550,
+    "prior_duplicate_alias_count": 177,
+    "selected_original_bytes": 503391181,
+    "difficult_fixture_sha256": "94c02963aa89819465989c03f695ebd9ee3972d4cd49ea59063d375ea6c23dbd",
+    "development_suite_sha256": "614b51a0efad8aad54ca17ec4af9fb0b79ebc44315c78d84b128ccb6cb4065cd",
+    "development_gate_manifest_sha256": "4b4581cca4971744a4875fa4226bf24644fa38c460a3d4c6068b2b6cf0916170"
+  },
+  "work_packages": {
+    "wp0": {
+      "passed": true,
+      "evidence_path": "D:\\02_Code\\LibreChat_Setup\\tmp\\v4-development\\wp0-factual-baseline-20260729.json",
+      "evidence_sha256": "1e1eb4dd9b30646d2f23f89aeabe2fe6ce4dd366e6d108a2048936a739d16566",
+      "railway_capture_mode": "read_only",
+      "railway_mutated": false,
+      "librechat_mutated": false
+    },
+    "wp3_compiler": {
+      "passed": true,
+      "evidence_path": "D:\\02_Code\\LibreChat_Setup-rag-v4\\tmp\\v4-development\\wp3-compiler-fixtures.json",
+      "evidence_sha256": "9c3b41b05e4324922b582625df78ec6aecdb868727dd9a90dc70ff3f43f40b3e",
+      "fixture_documents_passed": 6,
+      "fixture_documents_failed": 0,
+      "tables": 62,
+      "typed_cells": 386,
+      "facts": 454,
+      "metrics": {
+        "golden_document_metadata_fields": 1.0,
+        "golden_exact_identifiers_retained": 1.0,
+        "golden_table_header_unit_association": 1.0,
+        "golden_caption_section_footnote_association": 1.0,
+        "numeric_looking_golden_cells_typed": 1.0,
+        "exact_metadata_retrieval": 1.0,
+        "table_integrity": 1.0
+      }
+    },
+    "wp4_indexing": {
+      "passed": true,
+      "evidence_path": "D:\\02_Code\\LibreChat_Setup-rag-v4\\tmp\\v4-development\\wp4-indexing.json",
+      "evidence_sha256": "43299c21879a1b920a302330fbf54facd047ca3a022fd8ffabf63e529186f534",
+      "projection_count": 858,
+      "unique_projection_ids": 858,
+      "unique_search_text_identities": 846,
+      "exact_retry_embedding_count": 0,
+      "changed_identity_embedding_count": 846,
+      "projection_counts": {
+        "metadata": 55,
+        "passage": 261,
+        "table_row": 88,
+        "fact": 454
+      }
+    },
+    "wp5_candidate_retrieval": {
+      "passed": true,
+      "evidence_path": "D:\\02_Code\\LibreChat_Setup-rag-v4\\tmp\\v4-development\\wp5-candidate-retrieval.json",
+      "evidence_sha256": "138f0c59ddf3525928d0b97ffcfe546144d90c5d08ce339e74774c0ead4ffe89",
+      "candidate_families": [
+        "exact_structured",
+        "lexical_trigram",
+        "dense"
+      ],
+      "candidate_family_count": 3,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "unauthorized_evidence_returned": 0,
+      "best_v2_public_baseline_recall_at_5": 0.6167
+    },
+    "wp6_reranking": {
+      "passed": true,
+      "evidence_path": "D:\\02_Code\\LibreChat_Setup-rag-v4\\tmp\\v4-development\\wp6-reranking.json",
+      "evidence_sha256": "6d066d726ce90453dbe88200dced9b569b4b926a5cdc8fefbfa05da3c399852b",
+      "selected_model": "transparent-linear-v1",
+      "selected_model_identity": "785ed839232a066f3b6107e24fe4d0988ac12e8c5f7a1b7a2d493d7e17bd4088",
+      "recall_at_5": 1.0,
+      "mean_reciprocal_rank": 1.0,
+      "latency_p50_ms": 119.7186999488622,
+      "latency_p95_ms": 139.90919990465045,
+      "peak_memory_bytes": 207032
+    },
+    "wp7_answering": {
+      "passed": true,
+      "evidence_path": "D:\\02_Code\\LibreChat_Setup-rag-v4\\tmp\\v4-development\\wp7-answering.json",
+      "evidence_sha256": "7bbfa4048e794007ead5ca585d09fc9679aa2bfabc07c50d1ff82a714276da8d",
+      "claim_correctness": 1.0,
+      "multi_part_requested_field_coverage": 1.0,
+      "constraint_compliance": 1.0,
+      "high_severity_citation_correctness": 1.0,
+      "safe_refusal_accuracy": 1.0,
+      "question_preservation": 1.0,
+      "evidence_dump_count": 0,
+      "unhandled_request_failures": 0,
+      "end_to_end_p50_seconds": 3.8337302000727504,
+      "end_to_end_p95_seconds": 4.695056200027466
+    },
+    "wp8_representative_compilation": {
+      "passed": true,
+      "evidence_path": "D:\\02_Code\\LibreChat_Setup-rag-v4\\tmp\\v4-development\\wp8-representative-compilation.json",
+      "evidence_sha256": "63cac8bb949ec18b2c9691b24a050e8048ef884ad9a77734e5e0767420d47e0c",
+      "case_ids": [
+        "B16",
+        "B17",
+        "B29"
+      ],
+      "document_count": 3,
+      "blocks": 1515,
+      "tables": 48,
+      "cells": 559,
+      "facts": 338,
+      "projections": 587
+    },
+    "wp8_fedora_postgresql": {
+      "passed": true,
+      "evidence_path": "D:\\02_Code\\LibreChat_Setup-rag-v4\\tmp\\v4-development\\wp8-fedora-postgresql.json",
+      "evidence_sha256": "2647da38498a094506aad122ba05655013575de224e42c08dc74ed7e9c807e0a",
+      "postgresql_version": "18.3",
+      "migration_count": 5,
+      "forward_migration_cycles": 2,
+      "rollback_cycles": 2,
+      "failed_migration_atomicity": true,
+      "runtime_role_count": 5,
+      "privileged_runtime_role_count": 0,
+      "rls_table_count": 20,
+      "policy_count": 34,
+      "authorized_projection_count": 1,
+      "unauthorized_projection_count": 0,
+      "nonready_projection_count": 0,
+      "active_release_pointer_count": 0,
+      "bounded_retry_status": "dead",
+      "expired_lease_requeued": true,
+      "audit_forbidden_column_count": 0,
+      "cleanup_verified": true
+    }
+  },
+  "safety_boundaries": {
+    "locked_holdout_opened": false,
+    "railway_mutated": false,
+    "librechat_mutated": false,
+    "production_promotion_performed": false,
+    "active_release_pointer_changed": false,
+    "v1_v2_v3_data_or_agents_changed": false,
+    "unrelated_dirty_artifacts_preserved": true
+  },
+  "remaining_external_gates": [
+    "Bauer owner review and sign-off of the engineering-reviewed difficult-document fixture",
+    "private Railway V4 logical shadow and full 373-source candidate compilation",
+    "authenticated identical-suite V1/V2/V3/V4 development regression through LibreChat",
+    "wiki update after measured private-shadow results",
+    "locked holdout opening and production promotion as separate later decisions"
+  ]
+}
