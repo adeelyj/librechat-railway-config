@@ -34,3 +34,27 @@ python services\bauer-evidence-v4\scripts\verify_compiler_fixtures.py `
   --fixture evals\bauer-rag-v4\fixtures\difficult-documents.json `
   --source-root 'D:\02_Code\Bauer Kompressoren Demo'
 ```
+
+Search projections retain canonical evidence identifiers and exact coordinates.
+Embedding reuse is keyed by the complete provider/model/revision/dimensions/
+normalization/search-text identity. Candidate generation has exactly three
+authorization-filtered families: exact/structured, lexical/trigram, and dense.
+The selected `transparent-linear-v1` reranker exposes every feature and uses
+deterministic tie-breaking.
+
+Answering is coverage-first: the service analyzes requested fields without
+rewriting the original question, retrieves per subquestion, materializes exact
+evidence envelopes, checks field coverage, renders only supported requested
+fields, validates support/citations/constraints, and permits one targeted
+repair. It never falls back to an evidence dump.
+
+Verify the public development answer gates:
+
+```powershell
+$env:PYTHONPATH=(Resolve-Path 'services\bauer-evidence-v4').Path
+python services\bauer-evidence-v4\scripts\verify_answering.py `
+  --fixture evals\bauer-rag-v4\fixtures\difficult-documents.json `
+  --cases evals\bauer-rag-v4\cases\development-retrieval.json `
+  --gates evals\bauer-rag-v4\gates\development-gates.json `
+  --source-root 'D:\02_Code\Bauer Kompressoren Demo'
+```

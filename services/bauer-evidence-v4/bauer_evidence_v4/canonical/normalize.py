@@ -36,6 +36,9 @@ _SUPERSCRIPT_TRANSLATION = str.maketrans("⁰¹²³⁴⁵⁶⁷⁸⁹", "0123456
 
 def clean_text(value: str) -> str:
     normalized = unicodedata.normalize("NFC", value)
+    # PDF extractors can encode a visible heading hyphen as U+00AD. Keep the
+    # semantic boundary so downstream section attribution is deterministic.
+    normalized = normalized.replace("\u00ad", "-")
     normalized = normalized.replace("\r\n", "\n").replace("\r", "\n")
     return " ".join(normalized.split())
 

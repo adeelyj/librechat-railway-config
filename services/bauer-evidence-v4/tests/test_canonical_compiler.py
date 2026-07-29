@@ -173,7 +173,14 @@ def test_pdf_metadata_and_family_scope_are_preserved(
         ("charging_rate", 600, 6800, "l/min"),
         ("motor_power", 22, 110, "kW"),
     }
-    assert all(fact.subject != "PE-VE INDUSTRY" for fact in k_facts)
+    assert not any(
+        fact.minimum_value in {3, 25, 85}
+        for fact in k_facts
+    )
+    pe_ve_facts = [
+        fact for fact in b29.facts if fact.subject == "PE-VE INDUSTRY"
+    ]
+    assert {fact.minimum_value for fact in pe_ve_facts} >= {3, 25, 85}
 
 
 def test_regeneration_is_byte_deterministic(

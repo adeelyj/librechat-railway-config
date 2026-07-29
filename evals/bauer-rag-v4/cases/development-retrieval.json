@@ -19,6 +19,14 @@
         "number_of_stages",
         "motor_power",
         "footnotes"
+      ],
+      "expected_answer_contains": [
+        "420 l/min",
+        "VERTICUS I 350 - 420 bar: 420 bar",
+        "VERTICUS I 420 - 525 bar: 525 bar",
+        "4",
+        "11 kW",
+        "ISO 1217"
       ]
     },
     {
@@ -41,6 +49,18 @@
         "ISO 9001",
         "ISO 14001",
         "file 215"
+      ],
+      "expected_answer_contains": [
+        "EN ISO 3834-2 Certificate",
+        "BAUER KOMPRESSOREN GmbH",
+        "Stäblistr. 8, 81477 Munich",
+        "en",
+        "bauer_amfile_216.pdf"
+      ],
+      "expected_answer_not_contains": [
+        "ISO 9001",
+        "ISO 14001",
+        "bauer_amfile_215.pdf"
       ]
     },
     {
@@ -59,6 +79,14 @@
         "rotational_speed_approx",
         "motor_power",
         "net_weight_approx"
+      ],
+      "expected_answer_contains": [
+        "660 l/min",
+        "40 bar",
+        "3",
+        "1470 rpm",
+        "11 kW",
+        "425 kg"
       ]
     },
     {
@@ -78,6 +106,18 @@
         "rotational_speed_approx",
         "motor_power",
         "net_weight_approx"
+      ],
+      "expected_answer_contains": [
+        "630 l/min",
+        "100 bar",
+        "3",
+        "1470 rpm",
+        "15 kW",
+        "425 kg"
+      ],
+      "expected_answer_not_contains": [
+        "760 l/min",
+        "435 kg"
       ]
     },
     {
@@ -94,6 +134,12 @@
         "language",
         "subject",
         "source_filename"
+      ],
+      "expected_answer_contains": [
+        "BAUER B-DETECTION - THE NEXT GENERATION - SENSOR CALIBRATION",
+        "en",
+        "Sensor calibration for BAUER B-DETECTION",
+        "2024-01_B-DETECTION_Sensor_calibration_EN_N47183_sc.pdf"
       ]
     },
     {
@@ -113,6 +159,16 @@
       "negative_constraints": [
         "PE-VE INDUSTRY",
         "individual model rows"
+      ],
+      "expected_answer_contains": [
+        "600–6800 l/min",
+        "22–110 kW",
+        "30–525 bar"
+      ],
+      "expected_answer_not_contains": [
+        "PE-VE INDUSTRY",
+        "85–1470 l/min",
+        "3–15 kW"
       ]
     },
     {
@@ -130,6 +186,13 @@
         "number_of_stages",
         "motor_power",
         "source"
+      ],
+      "expected_answer_contains": [
+        "660 l/min",
+        "40 bar",
+        "3",
+        "11 kW",
+        "0027_bm-series-40_e0b4c6a9a3.html"
       ]
     }
   ]
