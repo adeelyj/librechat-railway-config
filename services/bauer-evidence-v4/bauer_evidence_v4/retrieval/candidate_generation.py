@@ -349,8 +349,9 @@ class CandidateGenerator:
         *,
         limit: int = 50,
     ) -> CandidateSet:
-        subquestions = request.subquestions or (
+        subquestions = (
             Subquestion("whole_question", request.question),
+            *request.subquestions,
         )
         all_hits: list[ChannelHit] = []
         channels: tuple[CandidateChannel, ...] = (
@@ -396,7 +397,14 @@ class CandidateGenerator:
         }
         protected_keys: list[tuple[str, ...]] = []
         protected_seen: set[tuple[str, ...]] = set()
-        quota = max(1, min(3, limit // max(len(channels), 1)))
+        quota = max(
+            1,
+            min(
+                3,
+                limit
+                // max(len(channels) * len(subquestions), 1),
+            ),
+        )
         for subquestion in subquestions:
             for channel in channels:
                 for hit in requirement_hits:
@@ -465,11 +473,20 @@ class CandidateGenerator:
                     "channels": set(),
                     "subquestions": set(),
                     "scores": defaultdict(float),
+                    "has_requirement_hit": False,
                 },
             )
-            hint_weight = (
-                0.25 if hit.subquestion_id == "search_hint" else 1.0
-            )
+            is_hint = hit.subquestion_id == "search_hint"
+            if is_hint and state["has_requirement_hit"]:
+                continue
+            if not is_hint and not state["has_requirement_hit"]:
+                state["item"] = hit.item
+                state["rrf"] = 0.0
+                state["channels"] = set()
+                state["subquestions"] = set()
+                state["scores"] = defaultdict(float)
+                state["has_requirement_hit"] = True
+            hint_weight = 0.25 if is_hint else 1.0
             state["rrf"] = float(state["rrf"]) + (
                 hint_weight * channel_weights[hit.channel] / (60 + hit.rank)
             )
