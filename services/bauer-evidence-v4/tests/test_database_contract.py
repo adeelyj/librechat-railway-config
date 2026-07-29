@@ -18,6 +18,7 @@ def test_numbered_migrations_have_reverse_rollbacks() -> None:
         "003",
         "004",
         "005",
+        "006",
     ]
     assert [path.name[:3] for path in down] == [
         "001",
@@ -25,6 +26,7 @@ def test_numbered_migrations_have_reverse_rollbacks() -> None:
         "003",
         "004",
         "005",
+        "006",
     ]
     assert all(path.read_text(encoding="utf-8").strip() for path in up + down)
 

@@ -1,0 +1,31 @@
+FROM python:3.11.15-slim-bookworm@sha256:b18992999dbe963a45a8a4da40ac2b1975be1a776d939d098c647482bcad5cba
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PIP_NO_CACHE_DIR=1 \
+    HOME=/home/appuser \
+    TZ=UTC \
+    BAUER_V3_SERVICE_ROLE=api
+
+RUN groupadd --gid 10001 appuser \
+    && useradd --uid 10001 --gid 10001 --create-home \
+      --home-dir /home/appuser --shell /usr/sbin/nologin \
+      --no-log-init appuser
+
+WORKDIR /app
+
+COPY services/bauer-evidence-v3/requirements-api.lock.txt ./
+RUN python -m pip install --no-compile --only-binary=:all: \
+      --require-hashes --requirement requirements-api.lock.txt \
+    && python -m pip check
+
+COPY --chown=0:0 services/bauer-evidence-v3/bauer_evidence_v3 ./bauer_evidence_v3
+COPY --chown=0:0 services/bauer-evidence-v3/migrations ./migrations
+COPY --chown=0:0 services/bauer-evidence-v4/bauer_evidence_v4 ./bauer_evidence_v4
+COPY --chown=0:0 services/bauer-evidence-v4/migrations ./migrations_v4
+
+USER 10001:10001
+EXPOSE 8000
+STOPSIGNAL SIGTERM
+CMD ["python", "-m", "bauer_evidence_v4.deployment.entrypoint", "api"]
