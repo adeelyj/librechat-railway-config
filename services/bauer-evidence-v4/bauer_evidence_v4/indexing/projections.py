@@ -8,6 +8,7 @@ from pathlib import PurePosixPath
 from typing import Iterable
 
 from ..canonical.models import (
+    CanonicalBlock,
     CanonicalCell,
     CanonicalDocument,
     CanonicalFact,
@@ -17,7 +18,8 @@ from ..canonical.normalize import clean_text, stable_id
 from .models import SearchProjection
 
 
-_PROJECTION_SCHEMA = "bauer-search-projection-v4.1"
+_PROJECTION_SCHEMA = "bauer-search-projection-v4.2"
+_MAX_EXACT_VALUE_CHARACTERS = 256
 _EXACT_IDENTIFIER_RE = re.compile(
     r"\b(?:"
     r"N\d{4,}|"
@@ -38,12 +40,28 @@ def _exact_terms(*values: str | None) -> tuple[str, ...]:
         if not value:
             continue
         compact = clean_text(value)
-        if compact:
+        if compact and len(compact) <= _MAX_EXACT_VALUE_CHARACTERS:
             terms.setdefault(compact.casefold(), compact)
         for match in _EXACT_IDENTIFIER_RE.finditer(value):
             term = clean_text(match.group(0))
             terms.setdefault(term.casefold(), term)
     return tuple(terms[key] for key in sorted(terms))
+
+
+def _bounded_segments(value: str, maximum: int) -> tuple[str, ...]:
+    remaining = clean_text(value)
+    segments: list[str] = []
+    while len(remaining) > maximum:
+        boundary = remaining.rfind(" ", 0, maximum + 1)
+        if boundary < maximum // 2:
+            boundary = maximum
+        segment = remaining[:boundary].strip()
+        if segment:
+            segments.append(segment)
+        remaining = remaining[boundary:].strip()
+    if remaining:
+        segments.append(remaining)
+    return tuple(segments)
 
 
 def _title(document: CanonicalDocument) -> str:
@@ -206,7 +224,7 @@ class ProjectionBuilder:
         document: CanonicalDocument,
     ) -> list[SearchProjection]:
         projections: list[SearchProjection] = []
-        buffer = []
+        buffer: list[tuple[CanonicalBlock, int, str]] = []
         buffer_length = 0
         buffer_key: tuple[int | None, tuple[str, ...]] | None = None
 
@@ -215,17 +233,20 @@ class ProjectionBuilder:
             if not buffer or buffer_key is None:
                 return
             physical_page, section_path = buffer_key
-            content = " ".join(block.text for block in buffer)
+            content = " ".join(segment for _, _, segment in buffer)
             prefix = _context_prefix(document, section_path=section_path)
             search_text = f"{prefix} Content: {content}"
             projections.append(
                 _projection(
                     document,
                     projection_type="passage",
-                    identity_parts=tuple(block.block_id for block in buffer),
+                    identity_parts=tuple(
+                        f"{block.block_id}:{segment_index}"
+                        for block, segment_index, _ in buffer
+                    ),
                     search_text=search_text,
                     canonical_evidence_ids=tuple(
-                        block.block_id for block in buffer
+                        dict.fromkeys(block.block_id for block, _, _ in buffer)
                     ),
                     exact_terms=_exact_terms(
                         document.source_filename,
@@ -233,7 +254,7 @@ class ProjectionBuilder:
                         content,
                     ),
                     physical_page=physical_page,
-                    printed_page=buffer[0].provenance.printed_page,
+                    printed_page=buffer[0][0].provenance.printed_page,
                     section_path=section_path,
                 )
             )
@@ -243,15 +264,22 @@ class ProjectionBuilder:
 
         for block in document.blocks:
             key = (block.provenance.physical_page, block.section_path)
-            if buffer_key is not None and (
-                key != buffer_key
-                or buffer_length + len(block.text) > self.max_passage_characters
+            for segment_index, segment in enumerate(
+                _bounded_segments(
+                    block.text,
+                    self.max_passage_characters,
+                )
             ):
-                flush()
-            if buffer_key is None:
-                buffer_key = key
-            buffer.append(block)
-            buffer_length += len(block.text) + 1
+                if buffer_key is not None and (
+                    key != buffer_key
+                    or buffer_length + len(segment)
+                    > self.max_passage_characters
+                ):
+                    flush()
+                if buffer_key is None:
+                    buffer_key = key
+                buffer.append((block, segment_index, segment))
+                buffer_length += len(segment) + 1
         flush()
         return projections
 

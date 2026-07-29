@@ -8,6 +8,11 @@ from typing import Sequence
 import pytest
 
 from bauer_evidence_v4.compilation import CanonicalCompiler
+from bauer_evidence_v4.canonical.models import (
+    CanonicalBlock,
+    CanonicalDocument,
+    Provenance,
+)
 from bauer_evidence_v4.indexing import (
     EmbeddingCache,
     EmbeddingSpec,
@@ -224,3 +229,62 @@ def test_projection_regeneration_is_identical(
     items = projections["verticus-i-technical-data"]
     serialized = tuple(item.to_json() for item in items)
     assert serialized == tuple(item.to_json() for item in items)
+
+
+def test_oversized_canonical_block_becomes_bounded_traceable_passages() -> None:
+    source_sha256 = "ab" * 32
+    provenance = Provenance(
+        source_sha256=source_sha256,
+        source_path="oversized.html",
+        parser_id="html_dom_grid",
+        parser_version="1",
+        locator="body/p[1]",
+        physical_page=1,
+        printed_page="1",
+    )
+    block = CanonicalBlock(
+        block_id="block_" + ("1" * 32),
+        kind="paragraph",
+        text=("bounded passage content " * 1000).strip(),
+        section_path=("Technical data",),
+        provenance=provenance,
+    )
+    document = CanonicalDocument(
+        document_id="document_" + ("2" * 32),
+        source_sha256=source_sha256,
+        source_path="oversized.html",
+        media_type="text/html",
+        parser_id="html_dom_grid",
+        parser_version="1",
+        title="Oversized projection fixture",
+        language="en",
+        document_number=None,
+        subject=None,
+        source_filename="oversized.html",
+        page_count=1,
+        blocks=(block,),
+        tables=(),
+        records=(),
+        facts=(),
+    )
+    builder = ProjectionBuilder(max_passage_characters=1800)
+    passages = tuple(
+        item
+        for item in builder.build(document)
+        if item.projection_type == "passage"
+    )
+    assert len(passages) > 1
+    assert all(
+        len(item.search_text) <= 2200
+        for item in passages
+    )
+    assert all(
+        item.canonical_evidence_ids == (block.block_id,)
+        for item in passages
+    )
+    assert all(
+        len(term) <= 256
+        for item in passages
+        for term in item.exact_terms
+    )
+    assert len({item.projection_id for item in passages}) == len(passages)

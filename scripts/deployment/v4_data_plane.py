@@ -663,7 +663,8 @@ def _reset_build(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
         connection.execute(
             """
             UPDATE bauer_rag_v4.knowledge_releases
-            SET compiler_identity_sha256 = %s
+            SET compiler_identity_sha256 = %s,
+                projection_identity_sha256 = %s
             WHERE release_id = %s
               AND status = 'building'
             """,
@@ -671,6 +672,7 @@ def _reset_build(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
                 _digest(
                     "canonical-compiler-v4.2-cell-provenance-ocr-fallback"
                 ),
+                _digest("search-projection-v4.2-bounded-passages"),
                 request["release_id"],
             ),
         )

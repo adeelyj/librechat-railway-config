@@ -160,6 +160,16 @@ class ExactStructuredChannel:
             terms = {_normalize(term) for term in projection.exact_terms}
             matched = query_identifiers & terms
             score = 20.0 * len(matched)
+            document_number = _normalize(
+                projection.document_number or ""
+            )
+            if (
+                document_number
+                and document_number in query_identifiers
+            ):
+                score += 40.0
+                if projection.projection_type == "metadata":
+                    score += 15.0
             for term in terms:
                 if len(term) >= 4 and term in query_normalized:
                     score += 3.0
