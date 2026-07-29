@@ -387,6 +387,19 @@ def _status(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
             (request["release_id"],),
         ).fetchall()
     }
+    artifacts_by_parser_identity = {
+        str(parser_identity): int(count)
+        for parser_identity, count in connection.execute(
+            """
+            SELECT parser_identity, count(*)
+            FROM bauer_rag_v4.compiled_artifacts
+            WHERE release_id = %s
+            GROUP BY parser_identity
+            ORDER BY parser_identity
+            """,
+            (request["release_id"],),
+        ).fetchall()
+    }
     duplicate_metrics = connection.execute(
         """
         WITH content_groups AS (
@@ -471,6 +484,7 @@ def _status(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
         "jobs": jobs,
         "dead_job_failures": failures,
         "dead_jobs_by_media_type": dead_by_media_type,
+        "artifacts_by_parser_identity": artifacts_by_parser_identity,
         "duplicate_source_metrics": {
             "content_groups": int(duplicate_metrics[0]),
             "content_sources": int(duplicate_metrics[1]),
