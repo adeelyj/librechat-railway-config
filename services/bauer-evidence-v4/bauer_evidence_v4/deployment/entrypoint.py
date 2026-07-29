@@ -5,7 +5,6 @@ import signal
 import sys
 
 from bauer_evidence_v3.config import Settings as V3Settings
-from bauer_evidence_v3.migrations import run_migrations as run_v3_migrations
 from bauer_evidence_v3.runtime import build_api_app
 from bauer_evidence_v3.telemetry import configure_logging
 
@@ -30,14 +29,26 @@ def main() -> int:
     v3 = V3Settings.from_environment(service_role_override=command)
     v4 = V4Settings.from_environment(service_role=command)
     if command == "migrate":
-        v3_report = run_v3_migrations(v3.database_url)
+        import psycopg
+
+        with psycopg.connect(v3.database_url, autocommit=True) as connection:
+            v3_version = connection.execute(
+                """
+                SELECT coalesce(max(version), 0)
+                FROM bauer_rag_v3.schema_migrations
+                """
+            ).fetchone()[0]
+        if int(v3_version) != v3.expected_migration_version:
+            raise RuntimeError(
+                "frozen V3 schema is not at its expected version"
+            )
         v4_report = run_v4_migrations(v4.database_url)
         LOGGER.info(
             "combined migrations complete",
             extra={
                 "stage": "migrate",
                 "outcome": (
-                    f"v3={v3_report.current_version},"
+                    f"v3={v3_version},"
                     f"v4={v4_report.current_version}"
                 ),
             },
