@@ -25,7 +25,8 @@ NUMBER_UNIT_RE = re.compile(
     re.I,
 )
 CITATION_RE = re.compile(
-    r"\bV2-\d+\b|\\ue202turn\d+file\d+|\ue202turn\d+file\d+",
+    r"\bV2-\d+\b|\bcitation_[0-9a-f]{32}\b|"
+    r"\\ue202turn\d+file\d+|\ue202turn\d+file\d+",
     re.I,
 )
 REFUSAL_RE = re.compile(

@@ -255,6 +255,12 @@ class EvaluationHarnessTests(unittest.TestCase):
             )
         )
 
+    def test_v4_citation_identity_is_counted_by_answer_scorer(self):
+        citation_id = "citation_" + ("b" * 32)
+        match = score.CITATION_RE.search(f"420 bar [{citation_id}]")
+        self.assertIsNotNone(match)
+        self.assertEqual(match.group(0), citation_id)
+
     def test_uncited_public_answer_fails_citation_and_exactness(self):
         observations = [
             {

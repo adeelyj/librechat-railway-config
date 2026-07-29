@@ -7,7 +7,10 @@ from typing import Any, Iterable
 from .extraction import normalize_for_search
 
 
-CITATION_RE = re.compile(r"\[(V2-\d+)\]", re.IGNORECASE)
+CITATION_RE = re.compile(
+    r"\[((?:V2-\d+)|(?:citation_[0-9a-f]{32}))\]",
+    re.IGNORECASE,
+)
 QUOTATION_RE = re.compile(r'["“„](.{8,500}?)["”]', re.DOTALL)
 HIGH_RISK_NUMBER_RE = re.compile(
     r"\b\d+(?:[.,]\d+)?(?:\s*[–-]\s*\d+(?:[.,]\d+)?)?\s*"
@@ -157,7 +160,7 @@ def validate_answer(
             Violation(
                 "important_claim_without_citation",
                 "medium",
-                "An important numerical or identifier claim has no V2 evidence citation.",
+                "An important numerical or identifier claim has no evidence citation.",
             )
         )
 

@@ -56,6 +56,20 @@ class V2ValidatorTests(unittest.TestCase):
         )
         self.assertIn("citation_not_retrieved", self.codes(result))
 
+    def test_v4_citation_identity_is_validated_against_evidence(self):
+        citation_id = "citation_" + ("a" * 32)
+        result = validate_answer(
+            answer=f"Maximum pressure is 420 bar [{citation_id}].",
+            evidence=[
+                {
+                    "citation_id": citation_id,
+                    "content": "Maximum pressure is 420 bar.",
+                }
+            ],
+        )
+        self.assertNotIn("citation_not_retrieved", self.codes(result))
+        self.assertNotIn("important_claim_without_citation", self.codes(result))
+
     def test_quotation_must_exist_verbatim_after_normalization(self):
         result = validate_answer(
             answer='The source says "maximum compressor pressure is 600 bar" [V2-1].',
