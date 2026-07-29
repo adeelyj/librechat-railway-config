@@ -1,0 +1,471 @@
+{
+  "$defs": {
+    "AnswerStatus": {
+      "enum": [
+        "complete",
+        "partial",
+        "not_found",
+        "refused"
+      ],
+      "title": "AnswerStatus",
+      "type": "string"
+    },
+    "CitationContract": {
+      "additionalProperties": false,
+      "properties": {
+        "citation_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Citation Id",
+          "type": "string"
+        },
+        "coordinate": {
+          "$ref": "#/$defs/SourceCoordinate"
+        },
+        "document_number": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Document Number"
+        },
+        "evidence_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "excerpt": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "title": "Excerpt",
+          "type": "string"
+        },
+        "footnotes": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Footnotes",
+          "type": "array"
+        },
+        "header_path": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Header Path",
+          "type": "array"
+        },
+        "normalized_unit": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Unit"
+        },
+        "normalized_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Value"
+        },
+        "original_filename": {
+          "maxLength": 1024,
+          "minLength": 1,
+          "title": "Original Filename",
+          "type": "string"
+        },
+        "qualifier": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qualifier"
+        },
+        "raw_unit": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Unit"
+        },
+        "raw_value": {
+          "anyOf": [
+            {
+              "maxLength": 2048,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Value"
+        },
+        "source_title": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "title": "Source Title",
+          "type": "string"
+        },
+        "table_title": {
+          "anyOf": [
+            {
+              "maxLength": 2048,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Table Title"
+        }
+      },
+      "required": [
+        "citation_id",
+        "evidence_id",
+        "source_title",
+        "original_filename",
+        "coordinate",
+        "excerpt"
+      ],
+      "title": "CitationContract",
+      "type": "object"
+    },
+    "CoverageItem": {
+      "additionalProperties": false,
+      "properties": {
+        "citation_ids": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Citation Ids",
+          "type": "array"
+        },
+        "detail": {
+          "anyOf": [
+            {
+              "maxLength": 1000,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Detail"
+        },
+        "field": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Field",
+          "type": "string"
+        },
+        "required": {
+          "default": true,
+          "title": "Required",
+          "type": "boolean"
+        },
+        "state": {
+          "$ref": "#/$defs/CoverageState"
+        }
+      },
+      "required": [
+        "field",
+        "state"
+      ],
+      "title": "CoverageItem",
+      "type": "object"
+    },
+    "CoverageState": {
+      "enum": [
+        "supported",
+        "ambiguous",
+        "contradicted",
+        "absent",
+        "refused"
+      ],
+      "title": "CoverageState",
+      "type": "string"
+    },
+    "ReleaseContract": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical_schema_version": {
+          "maxLength": 64,
+          "minLength": 1,
+          "title": "Canonical Schema Version",
+          "type": "string"
+        },
+        "compiler_identity": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Compiler Identity",
+          "type": "string"
+        },
+        "embedding_identity": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Embedding Identity",
+          "type": "string"
+        },
+        "gate_manifest_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Gate Manifest Sha256",
+          "type": "string"
+        },
+        "projection_identity": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Projection Identity",
+          "type": "string"
+        },
+        "public_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Public Id",
+          "type": "string"
+        },
+        "reranker_identity": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Reranker Identity",
+          "type": "string"
+        },
+        "source_contract_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Source Contract Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "public_id",
+        "source_contract_sha256",
+        "canonical_schema_version",
+        "compiler_identity",
+        "projection_identity",
+        "embedding_identity",
+        "reranker_identity",
+        "gate_manifest_sha256"
+      ],
+      "title": "ReleaseContract",
+      "type": "object"
+    },
+    "SourceCoordinate": {
+      "additionalProperties": false,
+      "properties": {
+        "column_index": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Column Index"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "printed_page": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Printed Page"
+        },
+        "row_index": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Row Index"
+        },
+        "section_path": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Section Path",
+          "type": "array"
+        },
+        "source_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "source_span": {
+          "anyOf": [
+            {
+              "maxLength": 512,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Span"
+        },
+        "source_version_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Source Version Id",
+          "type": "string"
+        },
+        "table_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Table Id"
+        }
+      },
+      "required": [
+        "source_id",
+        "source_version_id"
+      ],
+      "title": "SourceCoordinate",
+      "type": "object"
+    }
+  },
+  "$id": "https://bauer.example/contracts/v4/response.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "answer": {
+      "maxLength": 32000,
+      "minLength": 1,
+      "title": "Answer",
+      "type": "string"
+    },
+    "citations": {
+      "items": {
+        "$ref": "#/$defs/CitationContract"
+      },
+      "maxItems": 128,
+      "title": "Citations",
+      "type": "array"
+    },
+    "coverage": {
+      "items": {
+        "$ref": "#/$defs/CoverageItem"
+      },
+      "maxItems": 128,
+      "title": "Coverage",
+      "type": "array"
+    },
+    "not_found": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 128,
+      "title": "Not Found",
+      "type": "array"
+    },
+    "release": {
+      "$ref": "#/$defs/ReleaseContract"
+    },
+    "request_id": {
+      "maxLength": 128,
+      "minLength": 8,
+      "pattern": "^[A-Za-z0-9._:-]+$",
+      "title": "Request Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "4.0",
+      "default": "4.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/AnswerStatus"
+    },
+    "trace_id": {
+      "maxLength": 128,
+      "minLength": 8,
+      "pattern": "^[A-Za-z0-9._:-]+$",
+      "title": "Trace Id",
+      "type": "string"
+    },
+    "validation": {
+      "additionalProperties": true,
+      "title": "Validation",
+      "type": "object"
+    }
+  },
+  "required": [
+    "request_id",
+    "status",
+    "answer",
+    "release",
+    "trace_id"
+  ],
+  "title": "V4AnswerResponse",
+  "type": "object"
+}

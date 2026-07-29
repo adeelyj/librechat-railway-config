@@ -1,0 +1,481 @@
+{
+  "$defs": {
+    "CitationContract": {
+      "additionalProperties": false,
+      "properties": {
+        "citation_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Citation Id",
+          "type": "string"
+        },
+        "coordinate": {
+          "$ref": "#/$defs/SourceCoordinate"
+        },
+        "document_number": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Document Number"
+        },
+        "evidence_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "excerpt": {
+          "maxLength": 8000,
+          "minLength": 1,
+          "title": "Excerpt",
+          "type": "string"
+        },
+        "footnotes": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Footnotes",
+          "type": "array"
+        },
+        "header_path": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Header Path",
+          "type": "array"
+        },
+        "normalized_unit": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Unit"
+        },
+        "normalized_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Value"
+        },
+        "original_filename": {
+          "maxLength": 1024,
+          "minLength": 1,
+          "title": "Original Filename",
+          "type": "string"
+        },
+        "qualifier": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qualifier"
+        },
+        "raw_unit": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Unit"
+        },
+        "raw_value": {
+          "anyOf": [
+            {
+              "maxLength": 2048,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Value"
+        },
+        "source_title": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "title": "Source Title",
+          "type": "string"
+        },
+        "table_title": {
+          "anyOf": [
+            {
+              "maxLength": 2048,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Table Title"
+        }
+      },
+      "required": [
+        "citation_id",
+        "evidence_id",
+        "source_title",
+        "original_filename",
+        "coordinate",
+        "excerpt"
+      ],
+      "title": "CitationContract",
+      "type": "object"
+    },
+    "DocumentMetadataContract": {
+      "additionalProperties": false,
+      "properties": {
+        "authority": {
+          "enum": [
+            "original",
+            "derived_verified"
+          ],
+          "title": "Authority",
+          "type": "string"
+        },
+        "document_number": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Document Number"
+        },
+        "external_file_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "External File Id"
+        },
+        "language": {
+          "anyOf": [
+            {
+              "maxLength": 32,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Language"
+        },
+        "original_filename": {
+          "maxLength": 1024,
+          "minLength": 1,
+          "title": "Original Filename",
+          "type": "string"
+        },
+        "page_count": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page Count"
+        },
+        "publication_date": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Publication Date"
+        },
+        "revision": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Revision"
+        },
+        "source_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Source Sha256",
+          "type": "string"
+        },
+        "source_type": {
+          "enum": [
+            "pdf",
+            "html",
+            "text",
+            "markdown",
+            "other"
+          ],
+          "title": "Source Type",
+          "type": "string"
+        },
+        "subject": {
+          "anyOf": [
+            {
+              "maxLength": 1024,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Subject"
+        },
+        "title": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "original_filename",
+        "title",
+        "source_type",
+        "source_sha256",
+        "authority"
+      ],
+      "title": "DocumentMetadataContract",
+      "type": "object"
+    },
+    "SourceCoordinate": {
+      "additionalProperties": false,
+      "properties": {
+        "column_index": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Column Index"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "printed_page": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Printed Page"
+        },
+        "row_index": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Row Index"
+        },
+        "section_path": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Section Path",
+          "type": "array"
+        },
+        "source_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "source_span": {
+          "anyOf": [
+            {
+              "maxLength": 512,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Span"
+        },
+        "source_version_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Source Version Id",
+          "type": "string"
+        },
+        "table_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Table Id"
+        }
+      },
+      "required": [
+        "source_id",
+        "source_version_id"
+      ],
+      "title": "SourceCoordinate",
+      "type": "object"
+    }
+  },
+  "$id": "https://bauer.example/contracts/v4/evidence-unit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorization_source_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Authorization Source Id",
+      "type": "string"
+    },
+    "canonical_record_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 128,
+      "minItems": 1,
+      "title": "Canonical Record Ids",
+      "type": "array"
+    },
+    "citation": {
+      "$ref": "#/$defs/CitationContract"
+    },
+    "coordinate": {
+      "$ref": "#/$defs/SourceCoordinate"
+    },
+    "evidence_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Evidence Id",
+      "type": "string"
+    },
+    "evidence_type": {
+      "enum": [
+        "document_metadata",
+        "passage",
+        "table_row",
+        "typed_fact"
+      ],
+      "title": "Evidence Type",
+      "type": "string"
+    },
+    "metadata": {
+      "$ref": "#/$defs/DocumentMetadataContract"
+    },
+    "release_public_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Release Public Id",
+      "type": "string"
+    },
+    "search_text": {
+      "maxLength": 16000,
+      "minLength": 1,
+      "title": "Search Text",
+      "type": "string"
+    }
+  },
+  "required": [
+    "evidence_id",
+    "evidence_type",
+    "release_public_id",
+    "coordinate",
+    "search_text",
+    "metadata",
+    "citation",
+    "canonical_record_ids",
+    "authorization_source_id"
+  ],
+  "title": "EvidenceUnitContract",
+  "type": "object"
+}

@@ -1,0 +1,61 @@
+{
+  "$id": "https://bauer.example/contracts/v4/release.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "canonical_schema_version": {
+      "maxLength": 64,
+      "minLength": 1,
+      "title": "Canonical Schema Version",
+      "type": "string"
+    },
+    "compiler_identity": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Compiler Identity",
+      "type": "string"
+    },
+    "embedding_identity": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Embedding Identity",
+      "type": "string"
+    },
+    "gate_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Gate Manifest Sha256",
+      "type": "string"
+    },
+    "projection_identity": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Projection Identity",
+      "type": "string"
+    },
+    "public_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Public Id",
+      "type": "string"
+    },
+    "reranker_identity": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Reranker Identity",
+      "type": "string"
+    },
+    "source_contract_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Source Contract Sha256",
+      "type": "string"
+    }
+  },
+  "required": [
+    "public_id",
+    "source_contract_sha256",
+    "canonical_schema_version",
+    "compiler_identity",
+    "projection_identity",
+    "embedding_identity",
+    "reranker_identity",
+    "gate_manifest_sha256"
+  ],
+  "title": "ReleaseContract",
+  "type": "object"
+}

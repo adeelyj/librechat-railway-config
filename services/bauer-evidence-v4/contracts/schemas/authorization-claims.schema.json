@@ -1,0 +1,114 @@
+{
+  "$defs": {
+    "ClientContext": {
+      "additionalProperties": false,
+      "properties": {
+        "instance": {
+          "maxLength": 128,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9._:-]+$",
+          "title": "Instance",
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "librechat",
+            "onix",
+            "reference"
+          ],
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "instance"
+      ],
+      "title": "ClientContext",
+      "type": "object"
+    }
+  },
+  "$id": "https://bauer.example/contracts/v4/authorization-claims.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "audience": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Audience",
+      "type": "string"
+    },
+    "authorized_external_source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 1000,
+      "minItems": 1,
+      "title": "Authorized External Source Ids",
+      "type": "array"
+    },
+    "client": {
+      "$ref": "#/$defs/ClientContext"
+    },
+    "expires_at": {
+      "format": "date-time",
+      "title": "Expires At",
+      "type": "string"
+    },
+    "issued_at": {
+      "format": "date-time",
+      "title": "Issued At",
+      "type": "string"
+    },
+    "issuer": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Issuer",
+      "type": "string"
+    },
+    "knowledge_base_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Knowledge Base Id",
+      "type": "string"
+    },
+    "nonce": {
+      "maxLength": 256,
+      "minLength": 16,
+      "title": "Nonce",
+      "type": "string"
+    },
+    "principal_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Principal Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "4.0",
+      "default": "4.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "tenant_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Tenant Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "issuer",
+    "audience",
+    "client",
+    "principal_id",
+    "tenant_id",
+    "knowledge_base_id",
+    "authorized_external_source_ids",
+    "issued_at",
+    "expires_at",
+    "nonce"
+  ],
+  "title": "AuthorizationClaims",
+  "type": "object"
+}

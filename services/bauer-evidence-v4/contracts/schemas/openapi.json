@@ -1,0 +1,1030 @@
+{
+  "components": {
+    "schemas": {
+      "AnswerStatus": {
+        "enum": [
+          "complete",
+          "partial",
+          "not_found",
+          "refused"
+        ],
+        "title": "AnswerStatus",
+        "type": "string"
+      },
+      "AuthorizationClaims": {
+        "additionalProperties": false,
+        "properties": {
+          "audience": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Audience",
+            "type": "string"
+          },
+          "authorized_external_source_ids": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 1000,
+            "minItems": 1,
+            "title": "Authorized External Source Ids",
+            "type": "array"
+          },
+          "client": {
+            "$ref": "#/components/schemas/ClientContext"
+          },
+          "expires_at": {
+            "format": "date-time",
+            "title": "Expires At",
+            "type": "string"
+          },
+          "issued_at": {
+            "format": "date-time",
+            "title": "Issued At",
+            "type": "string"
+          },
+          "issuer": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Issuer",
+            "type": "string"
+          },
+          "knowledge_base_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Knowledge Base Id",
+            "type": "string"
+          },
+          "nonce": {
+            "maxLength": 256,
+            "minLength": 16,
+            "title": "Nonce",
+            "type": "string"
+          },
+          "principal_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Principal Id",
+            "type": "string"
+          },
+          "schema_version": {
+            "const": "4.0",
+            "default": "4.0",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "tenant_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Tenant Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "issuer",
+          "audience",
+          "client",
+          "principal_id",
+          "tenant_id",
+          "knowledge_base_id",
+          "authorized_external_source_ids",
+          "issued_at",
+          "expires_at",
+          "nonce"
+        ],
+        "title": "AuthorizationClaims",
+        "type": "object"
+      },
+      "AuthorizationEnvelope": {
+        "additionalProperties": false,
+        "properties": {
+          "signed_scope": {
+            "maxLength": 16384,
+            "minLength": 32,
+            "title": "Signed Scope",
+            "type": "string"
+          }
+        },
+        "required": [
+          "signed_scope"
+        ],
+        "title": "AuthorizationEnvelope",
+        "type": "object"
+      },
+      "CitationContract": {
+        "additionalProperties": false,
+        "properties": {
+          "citation_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Citation Id",
+            "type": "string"
+          },
+          "coordinate": {
+            "$ref": "#/components/schemas/SourceCoordinate"
+          },
+          "document_number": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Document Number"
+          },
+          "evidence_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Evidence Id",
+            "type": "string"
+          },
+          "excerpt": {
+            "maxLength": 8000,
+            "minLength": 1,
+            "title": "Excerpt",
+            "type": "string"
+          },
+          "footnotes": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 32,
+            "title": "Footnotes",
+            "type": "array"
+          },
+          "header_path": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 32,
+            "title": "Header Path",
+            "type": "array"
+          },
+          "normalized_unit": {
+            "anyOf": [
+              {
+                "maxLength": 128,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Normalized Unit"
+          },
+          "normalized_value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Normalized Value"
+          },
+          "original_filename": {
+            "maxLength": 1024,
+            "minLength": 1,
+            "title": "Original Filename",
+            "type": "string"
+          },
+          "qualifier": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Qualifier"
+          },
+          "raw_unit": {
+            "anyOf": [
+              {
+                "maxLength": 128,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Raw Unit"
+          },
+          "raw_value": {
+            "anyOf": [
+              {
+                "maxLength": 2048,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Raw Value"
+          },
+          "source_title": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "title": "Source Title",
+            "type": "string"
+          },
+          "table_title": {
+            "anyOf": [
+              {
+                "maxLength": 2048,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Table Title"
+          }
+        },
+        "required": [
+          "citation_id",
+          "evidence_id",
+          "source_title",
+          "original_filename",
+          "coordinate",
+          "excerpt"
+        ],
+        "title": "CitationContract",
+        "type": "object"
+      },
+      "ClientContext": {
+        "additionalProperties": false,
+        "properties": {
+          "instance": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9._:-]+$",
+            "title": "Instance",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "librechat",
+              "onix",
+              "reference"
+            ],
+            "title": "Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "instance"
+        ],
+        "title": "ClientContext",
+        "type": "object"
+      },
+      "ConversationTurn": {
+        "additionalProperties": false,
+        "properties": {
+          "content": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "title": "Content",
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "user",
+              "assistant"
+            ],
+            "title": "Role",
+            "type": "string"
+          }
+        },
+        "required": [
+          "role",
+          "content"
+        ],
+        "title": "ConversationTurn",
+        "type": "object"
+      },
+      "CoverageItem": {
+        "additionalProperties": false,
+        "properties": {
+          "citation_ids": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 64,
+            "title": "Citation Ids",
+            "type": "array"
+          },
+          "detail": {
+            "anyOf": [
+              {
+                "maxLength": 1000,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Detail"
+          },
+          "field": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Field",
+            "type": "string"
+          },
+          "required": {
+            "default": true,
+            "title": "Required",
+            "type": "boolean"
+          },
+          "state": {
+            "$ref": "#/components/schemas/CoverageState"
+          }
+        },
+        "required": [
+          "field",
+          "state"
+        ],
+        "title": "CoverageItem",
+        "type": "object"
+      },
+      "CoverageState": {
+        "enum": [
+          "supported",
+          "ambiguous",
+          "contradicted",
+          "absent",
+          "refused"
+        ],
+        "title": "CoverageState",
+        "type": "string"
+      },
+      "DocumentMetadataContract": {
+        "additionalProperties": false,
+        "properties": {
+          "authority": {
+            "enum": [
+              "original",
+              "derived_verified"
+            ],
+            "title": "Authority",
+            "type": "string"
+          },
+          "document_number": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Document Number"
+          },
+          "external_file_id": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "External File Id"
+          },
+          "language": {
+            "anyOf": [
+              {
+                "maxLength": 32,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Language"
+          },
+          "original_filename": {
+            "maxLength": 1024,
+            "minLength": 1,
+            "title": "Original Filename",
+            "type": "string"
+          },
+          "page_count": {
+            "anyOf": [
+              {
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Page Count"
+          },
+          "publication_date": {
+            "anyOf": [
+              {
+                "maxLength": 64,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Publication Date"
+          },
+          "revision": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Revision"
+          },
+          "source_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Source Sha256",
+            "type": "string"
+          },
+          "source_type": {
+            "enum": [
+              "pdf",
+              "html",
+              "text",
+              "markdown",
+              "other"
+            ],
+            "title": "Source Type",
+            "type": "string"
+          },
+          "subject": {
+            "anyOf": [
+              {
+                "maxLength": 1024,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Subject"
+          },
+          "title": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "title": "Title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "original_filename",
+          "title",
+          "source_type",
+          "source_sha256",
+          "authority"
+        ],
+        "title": "DocumentMetadataContract",
+        "type": "object"
+      },
+      "EvidenceUnitContract": {
+        "additionalProperties": false,
+        "properties": {
+          "authorization_source_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Authorization Source Id",
+            "type": "string"
+          },
+          "canonical_record_ids": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 128,
+            "minItems": 1,
+            "title": "Canonical Record Ids",
+            "type": "array"
+          },
+          "citation": {
+            "$ref": "#/components/schemas/CitationContract"
+          },
+          "coordinate": {
+            "$ref": "#/components/schemas/SourceCoordinate"
+          },
+          "evidence_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Evidence Id",
+            "type": "string"
+          },
+          "evidence_type": {
+            "enum": [
+              "document_metadata",
+              "passage",
+              "table_row",
+              "typed_fact"
+            ],
+            "title": "Evidence Type",
+            "type": "string"
+          },
+          "metadata": {
+            "$ref": "#/components/schemas/DocumentMetadataContract"
+          },
+          "release_public_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Release Public Id",
+            "type": "string"
+          },
+          "search_text": {
+            "maxLength": 16000,
+            "minLength": 1,
+            "title": "Search Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "evidence_id",
+          "evidence_type",
+          "release_public_id",
+          "coordinate",
+          "search_text",
+          "metadata",
+          "citation",
+          "canonical_record_ids",
+          "authorization_source_id"
+        ],
+        "title": "EvidenceUnitContract",
+        "type": "object"
+      },
+      "ReleaseContract": {
+        "additionalProperties": false,
+        "properties": {
+          "canonical_schema_version": {
+            "maxLength": 64,
+            "minLength": 1,
+            "title": "Canonical Schema Version",
+            "type": "string"
+          },
+          "compiler_identity": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Compiler Identity",
+            "type": "string"
+          },
+          "embedding_identity": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Embedding Identity",
+            "type": "string"
+          },
+          "gate_manifest_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Gate Manifest Sha256",
+            "type": "string"
+          },
+          "projection_identity": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Projection Identity",
+            "type": "string"
+          },
+          "public_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Public Id",
+            "type": "string"
+          },
+          "reranker_identity": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Reranker Identity",
+            "type": "string"
+          },
+          "source_contract_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Source Contract Sha256",
+            "type": "string"
+          }
+        },
+        "required": [
+          "public_id",
+          "source_contract_sha256",
+          "canonical_schema_version",
+          "compiler_identity",
+          "projection_identity",
+          "embedding_identity",
+          "reranker_identity",
+          "gate_manifest_sha256"
+        ],
+        "title": "ReleaseContract",
+        "type": "object"
+      },
+      "SourceCoordinate": {
+        "additionalProperties": false,
+        "properties": {
+          "column_index": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Column Index"
+          },
+          "page": {
+            "anyOf": [
+              {
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Page"
+          },
+          "printed_page": {
+            "anyOf": [
+              {
+                "maxLength": 64,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Printed Page"
+          },
+          "row_index": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Row Index"
+          },
+          "section_path": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 32,
+            "title": "Section Path",
+            "type": "array"
+          },
+          "source_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Source Id",
+            "type": "string"
+          },
+          "source_span": {
+            "anyOf": [
+              {
+                "maxLength": 512,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Source Span"
+          },
+          "source_version_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "title": "Source Version Id",
+            "type": "string"
+          },
+          "table_id": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Table Id"
+          }
+        },
+        "required": [
+          "source_id",
+          "source_version_id"
+        ],
+        "title": "SourceCoordinate",
+        "type": "object"
+      },
+      "TypedConstraint": {
+        "additionalProperties": false,
+        "properties": {
+          "field": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_]*$",
+            "title": "Field",
+            "type": "string"
+          },
+          "mandatory": {
+            "default": true,
+            "title": "Mandatory",
+            "type": "boolean"
+          },
+          "operator": {
+            "enum": [
+              "eq",
+              "neq",
+              "in",
+              "not_in",
+              "gte",
+              "lte"
+            ],
+            "title": "Operator",
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "boolean"
+                    }
+                  ]
+                },
+                "type": "array"
+              }
+            ],
+            "title": "Value"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "title": "TypedConstraint",
+        "type": "object"
+      },
+      "V4AnswerRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "authorization": {
+            "$ref": "#/components/schemas/AuthorizationEnvelope"
+          },
+          "client": {
+            "$ref": "#/components/schemas/ClientContext"
+          },
+          "conversation_context": {
+            "items": {
+              "$ref": "#/components/schemas/ConversationTurn"
+            },
+            "maxItems": 12,
+            "title": "Conversation Context",
+            "type": "array"
+          },
+          "locale": {
+            "default": "de-DE",
+            "pattern": "^[A-Za-z]{2}(?:-[A-Za-z0-9]{2,8})?$",
+            "title": "Locale",
+            "type": "string"
+          },
+          "question": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "title": "Question",
+            "type": "string"
+          },
+          "request_id": {
+            "maxLength": 128,
+            "minLength": 8,
+            "pattern": "^[A-Za-z0-9._:-]+$",
+            "title": "Request Id",
+            "type": "string"
+          },
+          "schema_version": {
+            "const": "4.0",
+            "default": "4.0",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "search_hint": {
+            "anyOf": [
+              {
+                "maxLength": 2000,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Search Hint"
+          },
+          "typed_constraints": {
+            "items": {
+              "$ref": "#/components/schemas/TypedConstraint"
+            },
+            "maxItems": 32,
+            "title": "Typed Constraints",
+            "type": "array"
+          }
+        },
+        "required": [
+          "request_id",
+          "question",
+          "client",
+          "authorization"
+        ],
+        "title": "V4AnswerRequest",
+        "type": "object"
+      },
+      "V4AnswerResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "maxLength": 32000,
+            "minLength": 1,
+            "title": "Answer",
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "$ref": "#/components/schemas/CitationContract"
+            },
+            "maxItems": 128,
+            "title": "Citations",
+            "type": "array"
+          },
+          "coverage": {
+            "items": {
+              "$ref": "#/components/schemas/CoverageItem"
+            },
+            "maxItems": 128,
+            "title": "Coverage",
+            "type": "array"
+          },
+          "not_found": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 128,
+            "title": "Not Found",
+            "type": "array"
+          },
+          "release": {
+            "$ref": "#/components/schemas/ReleaseContract"
+          },
+          "request_id": {
+            "maxLength": 128,
+            "minLength": 8,
+            "pattern": "^[A-Za-z0-9._:-]+$",
+            "title": "Request Id",
+            "type": "string"
+          },
+          "schema_version": {
+            "const": "4.0",
+            "default": "4.0",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/AnswerStatus"
+          },
+          "trace_id": {
+            "maxLength": 128,
+            "minLength": 8,
+            "pattern": "^[A-Za-z0-9._:-]+$",
+            "title": "Trace Id",
+            "type": "string"
+          },
+          "validation": {
+            "additionalProperties": true,
+            "title": "Validation",
+            "type": "object"
+          }
+        },
+        "required": [
+          "request_id",
+          "status",
+          "answer",
+          "release",
+          "trace_id"
+        ],
+        "title": "V4AnswerResponse",
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "description": "Host-neutral evidence and answer contract. The original question is authoritative; search_hint is optional derived retrieval input.",
+    "title": "Bauer Evidence V4",
+    "version": "4.0.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/v4/answer": {
+      "post": {
+        "operationId": "answerBauerEvidenceV4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/V4AnswerRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/V4AnswerResponse"
+                }
+              }
+            },
+            "description": "Validated complete, partial, not-found, or refused response"
+          },
+          "400": {
+            "description": "Invalid host-neutral request"
+          },
+          "401": {
+            "description": "Invalid or expired signed scope"
+          },
+          "403": {
+            "description": "Scope does not authorize this knowledge base"
+          },
+          "409": {
+            "description": "Pinned candidate release is unavailable"
+          },
+          "503": {
+            "description": "Required local dependency is unavailable"
+          }
+        }
+      }
+    }
+  }
+}
