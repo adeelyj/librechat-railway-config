@@ -78,3 +78,15 @@ endpoints:
       summarize: false
       summaryModel: "local/qwen-coder"
       modelDisplayLabel: "RapidDraft Local AI"
+    - name: "Deepseek"
+      apiKey: "${DEEPSEEK_API_KEY}"
+      baseURL: "https://api.deepseek.com/v1"
+      models:
+        default:
+          - "deepseek-v4-flash"
+          - "deepseek-v4-pro"
+        fetch: false
+      titleConvo: true
+      titleMethod: "completion"
+      titleModel: "deepseek-v4-flash"
+      modelDisplayLabel: "DeepSeek"

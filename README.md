@@ -6,7 +6,8 @@ This repository contains the non-secret configuration and repeatable provisionin
 - Railway project: <https://railway.com/project/45bb0e8d-9eca-4973-8026-a3eddbd092b6?environmentId=6c80a4d1-c8e3-4410-b712-a27f89012046>
 - Administrator: `adeel@rapiddraft.ai`
 - Local AI provider: `RapidDraft Local AI`
-- Chat model: `local/qwen-coder`
+- Selectable chat providers: `RapidDraft Local AI`, `DeepSeek`
+- DeepSeek models: `deepseek-v4-flash`, `deepseek-v4-pro`
 
 ## Architecture
 
@@ -15,6 +16,7 @@ flowchart LR
     User["LibreChat user"] --> CF["Cloudflare: chat.rapiddraft.ai"]
     CF --> LC["LibreChat"]
     LC --> AI["RapidDraft Local AI / LiteLLM"]
+    LC --> DeepSeek["DeepSeek API"]
     LC --> RAG["LibreChat RAG API"]
     RAG --> PG["PostgreSQL + pgvector"]
     LC --> Twin["Bauer Twin MCP API"]
@@ -25,7 +27,7 @@ flowchart LR
     LC --> S3["Railway S3 bucket"]
 ```
 
-MongoDB, Meilisearch, PostgreSQL/RAG, and object storage are separate Railway services with persistent storage. LibreChat is configured with `ENDPOINTS=agents,custom`; both values are required for Agents and the RapidDraft endpoint to appear together.
+MongoDB, Meilisearch, PostgreSQL/RAG, and object storage are separate Railway services with persistent storage. LibreChat is configured with `ENDPOINTS=agents,custom`; both values are required for Agents and the selectable RapidDraft/DeepSeek custom endpoints to appear together.
 
 ## Isolated knowledge bases
 
@@ -64,7 +66,7 @@ This is logical isolation inside one LibreChat installation. If contractual or r
 
 ## Secrets and administrator credential
 
-Runtime secrets are injected through Railway and are never committed. These include the scoped Local AI chat/embedding keys and all MongoDB, Meilisearch, PostgreSQL, and object-storage credentials.
+Runtime secrets are injected through Railway and are never committed. These include the scoped Local AI chat/embedding keys, the DeepSeek API key, and all MongoDB, Meilisearch, PostgreSQL, and object-storage credentials.
 
 The administrator password is stored as a Windows DPAPI-encrypted PowerShell credential at:
 
