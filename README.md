@@ -8,6 +8,7 @@ This repository contains the non-secret configuration and repeatable provisionin
 - Local AI provider: `RapidDraft Local AI`
 - Selectable chat providers: `RapidDraft Local AI`, `DeepSeek`
 - DeepSeek models: `deepseek-v4-flash`, `deepseek-v4-pro`
+- Agent-builder providers: `RapidDraft Local AI`, `Deepseek`
 
 ## Architecture
 
@@ -51,6 +52,11 @@ In LibreChat, start a new chat and select the required Agent:
 3. Start a new conversation when changing knowledge bases so the conversation history also stays company/project-specific.
 
 The selected Agent searches only its attached files. It is deliberately instructed to say when an answer is absent instead of filling gaps from another knowledge base or general model knowledge.
+
+Existing Agents keep their saved provider and model when another provider is
+added to the Agent Builder. To test DeepSeek without changing a benchmarked
+Bauer Agent, duplicate the Agent first, then select provider **Deepseek** and
+either `deepseek-v4-flash` or `deepseek-v4-pro`.
 
 ### Adding another company or project
 

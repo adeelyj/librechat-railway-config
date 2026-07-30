@@ -59,6 +59,7 @@ endpoints:
     disableBuilder: false
     allowedProviders:
       - "RapidDraft Local AI"
+      - "Deepseek"
     capabilities:
       - "file_search"
       - "tools"
