@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "suite_id": "bauer-rag-v4-company-facts-regression-20260731",
+  "split": "public-development-regression",
+  "locked_holdout_opened": false,
+  "cases": [
+    {
+      "case_id": "V4-R04",
+      "question": "where is bauer based",
+      "search_hint": "Bauer Kompressoren headquarters company address",
+      "expected_status": "complete",
+      "required_fields": ["company_location"],
+      "required_answer_terms": [
+        "BAUER KOMPRESSOREN GmbH",
+        "Stäblistr. 8",
+        "81477 Munich, Germany"
+      ],
+      "forbidden_answer_terms": [
+        "Requested-topic evidence",
+        "supplier shall apply",
+        "place of performance"
+      ]
+    },
+    {
+      "case_id": "V4-R05",
+      "question": "Where is Bauer Kompressoren headquartered?",
+      "search_hint": "Bauer Kompressoren Munich headquarters",
+      "expected_status": "complete",
+      "required_fields": ["company_location"],
+      "required_answer_terms": [
+        "Stäblistr. 8",
+        "81477 Munich, Germany"
+      ],
+      "forbidden_answer_terms": ["Requested-topic evidence"]
+    },
+    {
+      "case_id": "V4-R06",
+      "question": "What is Bauer Kompressoren GmbH's address?",
+      "search_hint": "Bauer Kompressoren address Germany",
+      "expected_status": "complete",
+      "required_fields": ["company_location"],
+      "required_answer_terms": [
+        "Stäblistr. 8",
+        "81477 Munich, Germany"
+      ],
+      "forbidden_answer_terms": ["Requested-topic evidence"]
+    },
+    {
+      "case_id": "V4-R07",
+      "question": "Wo hat Bauer Kompressoren seinen Hauptsitz?",
+      "search_hint": "Bauer Kompressoren Hauptsitz München",
+      "expected_status": "complete",
+      "required_fields": ["company_location"],
+      "required_answer_terms": [
+        "Stäblistr. 8",
+        "81477 Munich, Germany"
+      ],
+      "forbidden_answer_terms": ["Requested-topic evidence"]
+    },
+    {
+      "case_id": "V4-R08",
+      "question": "Who founded Bauer?",
+      "search_hint": "Bauer founder company history",
+      "expected_status": "not_found",
+      "required_fields": ["requested_topic_evidence"],
+      "required_answer_terms": [
+        "Not established in the authorized Bauer evidence"
+      ],
+      "forbidden_answer_terms": [
+        "Supported result:",
+        "Requested-topic evidence:",
+        "supplier shall apply"
+      ]
+    }
+  ]
+}

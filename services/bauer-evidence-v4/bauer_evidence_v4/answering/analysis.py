@@ -173,6 +173,58 @@ _GENERAL_MATCH_GROUPS = (
 )
 
 
+def _has_specific_product_or_numeric_constraint(normalized: str) -> bool:
+    if any(
+        _normalize(product) in normalized
+        for product in _GENERAL_PRODUCT_NAMES
+    ):
+        return True
+    return bool(
+        re.search(
+            r"\b(?:n\d{4,}|\d+(?:[.,]\d+)?\s*(?:bar|kw|l/min))\b",
+            normalized,
+        )
+    )
+
+
+def _has_company_reference(normalized: str) -> bool:
+    tokens = set(re.findall(r"[a-z0-9-]+", normalized))
+    return "bauer" in tokens or any(
+        value in normalized
+        for value in (
+            "bauer kompressoren",
+            "bauer compressors",
+            "bayuer",
+        )
+    )
+
+
+def _is_company_location_question(normalized: str) -> bool:
+    """Recognize company-address questions without hijacking products."""
+
+    if _has_specific_product_or_numeric_constraint(normalized):
+        return False
+    if not _has_company_reference(normalized):
+        return False
+    tokens = set(re.findall(r"[a-z0-9-]+", normalized))
+    english = bool(
+        tokens
+        & {
+            "address",
+            "based",
+            "headquartered",
+            "headquarters",
+            "located",
+            "location",
+        }
+    ) and bool(tokens & {"where", "what", "which", "based", "located"})
+    german = bool(tokens & {"adresse", "hauptsitz", "sitz"}) or (
+        "wo" in tokens
+        and bool(tokens & {"ansassig", "befindet", "sitzt"})
+    )
+    return english or german
+
+
 def _is_company_overview_question(normalized: str) -> bool:
     """Recognize broad Bauer company/portfolio questions.
 
@@ -182,15 +234,7 @@ def _is_company_overview_question(normalized: str) -> bool:
     without turning this into a general fuzzy retrieval channel.
     """
 
-    if any(
-        _normalize(product) in normalized
-        for product in _GENERAL_PRODUCT_NAMES
-    ):
-        return False
-    if re.search(
-        r"\b(?:n\d{4,}|\d+(?:[.,]\d+)?\s*(?:bar|kw|l/min))\b",
-        normalized,
-    ):
+    if _has_specific_product_or_numeric_constraint(normalized):
         return False
     overview_phrases = (
         "what does",
@@ -366,6 +410,10 @@ class TaskAnalyzer:
         field: RequiredField,
     ) -> str:
         special = {
+            "company_location": (
+                "BAUER KOMPRESSOREN GmbH company address Stablistr. 8 "
+                "81477 Munich Germany headquarters location."
+            ),
             "company_core_business": (
                 "BAUER global leader manufacture medium high pressure air "
                 "and gas compression systems breathing air."
@@ -468,6 +516,19 @@ class TaskAnalyzer:
         question: str,
         normalized: str,
     ) -> tuple[RequiredField, ...]:
+        if _is_company_location_question(normalized):
+            return (
+                RequiredField(
+                    field="company_location",
+                    label="Company location",
+                    anchor_terms=("BAUER KOMPRESSOREN GmbH",),
+                    match_terms=(
+                        "Stablistr. 8",
+                        "81477 Munich",
+                        "Germany",
+                    ),
+                ),
+            )
         if _is_company_overview_question(normalized):
             return (
                 RequiredField(

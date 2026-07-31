@@ -53,6 +53,13 @@ COMPANY_REGRESSION_PATH = (
     / "cases"
     / "company-overview-regression.json"
 )
+COMPANY_FACTS_REGRESSION_PATH = (
+    REPOSITORY_ROOT
+    / "evals"
+    / "bauer-rag-v4"
+    / "cases"
+    / "company-facts-regression.json"
+)
 SOURCE_ROOT = Path(r"D:\02_Code\Bauer Kompressoren Demo")
 
 
@@ -584,6 +591,99 @@ def test_company_overview_is_concise_grounded_and_cited() -> None:
         for term in case["forbidden_answer_terms"]:
             assert term.casefold() not in draft.answer.casefold()
         assert len(draft.citations) == 3
+
+
+def test_company_location_is_explicit_grounded_and_fail_closed() -> None:
+    regression = json.loads(
+        COMPANY_FACTS_REGRESSION_PATH.read_text(encoding="utf-8")
+    )
+    assert regression["locked_holdout_opened"] is False
+    assert [case["case_id"] for case in regression["cases"]] == [
+        "V4-R04",
+        "V4-R05",
+        "V4-R06",
+        "V4-R07",
+        "V4-R08",
+    ]
+
+    analyzer = TaskAnalyzer()
+    location_context = SimpleNamespace(
+        ranked=SimpleNamespace(rank=1),
+        citation=SimpleNamespace(
+            citation_id="citation-location",
+            original_filename="2021-09_GIT_EN_N33363_sc.pdf",
+        ),
+        unit=SimpleNamespace(
+            evidence_id="location",
+            search_text=(
+                "ONE OF OUR PRODUCTS? PLEASE GET IN TOUCH. "
+                "BAUER KOMPRESSOREN GmbH Stäblistr. 8 "
+                "81477 Munich, Germany."
+            ),
+        ),
+    )
+    citations = {"location": location_context.citation}
+    for case in regression["cases"][:4]:
+        plan = analyzer.analyze(case["question"])
+        assert [field.field for field in plan.fields] == case[
+            "required_fields"
+        ]
+        coverage = tuple(
+            CoverageEngine()._general_field(field, (location_context,))
+            for field in plan.fields
+        )
+        assert [item.state for item in coverage] == ["supported"]
+        draft = GroundedAnswerBuilder().build(plan, coverage, citations)
+        assert draft.status == case["expected_status"]
+        for term in case["required_answer_terms"]:
+            assert term in draft.answer
+        for term in case["forbidden_answer_terms"]:
+            assert term.casefold() not in draft.answer.casefold()
+        assert len(draft.citations) == 1
+
+    product_location = analyzer.analyze(
+        "Where is Bauer B-CLOUD data located?"
+    )
+    assert all(
+        field.field != "company_location"
+        for field in product_location.fields
+    )
+
+    unknown_case = regression["cases"][4]
+    unknown_plan = analyzer.analyze(unknown_case["question"])
+    assert [field.field for field in unknown_plan.fields] == unknown_case[
+        "required_fields"
+    ]
+    irrelevant = SimpleNamespace(
+        ranked=SimpleNamespace(rank=1),
+        citation=SimpleNamespace(
+            citation_id="citation-contract",
+            original_filename="irrelevant-contract.pdf",
+        ),
+        unit=SimpleNamespace(
+            evidence_id="contract",
+            search_text=(
+                "The supplier shall apply and the place of performance "
+                "is governed by the customer contract."
+            ),
+        ),
+    )
+    unknown_coverage = tuple(
+        CoverageEngine()._general_field(field, (irrelevant,))
+        for field in unknown_plan.fields
+    )
+    assert [item.state for item in unknown_coverage] == ["absent"]
+    unknown_draft = GroundedAnswerBuilder().build(
+        unknown_plan,
+        unknown_coverage,
+        {"contract": irrelevant.citation},
+    )
+    assert unknown_draft.status == unknown_case["expected_status"]
+    assert unknown_draft.citations == ()
+    for term in unknown_case["required_answer_terms"]:
+        assert term in unknown_draft.answer
+    for term in unknown_case["forbidden_answer_terms"]:
+        assert term.casefold() not in unknown_draft.answer.casefold()
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(

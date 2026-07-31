@@ -177,8 +177,8 @@ class GroundedAnswerBuilder:
             )
         if not lines:
             lines.append(
-                "I could not establish what BAUER Kompressoren does from "
-                "the authorized evidence."
+                "I could not establish the requested BAUER Kompressoren "
+                "company information from the authorized evidence."
             )
         return AnswerDraft(
             status=status,  # type: ignore[arg-type]

@@ -103,6 +103,11 @@ class CoverageEngine:
         field,
         evidence: tuple[EvidenceContext, ...],
     ) -> FieldCoverage:
+        # The catch-all planner must never turn weak lexical overlap into a
+        # raw evidence dump. Unknown intents fail closed until they receive
+        # an explicit, tested coverage contract.
+        if field.field == "requested_topic_evidence":
+            return self._absent(field)
         if field.field.startswith("company_"):
             return self._company_overview_field(field, evidence)
         if field.field.startswith("bdetection_"):
@@ -242,6 +247,28 @@ class CoverageEngine:
         evidence: tuple[EvidenceContext, ...],
     ) -> FieldCoverage:
         """Extract a concise company answer from explicit portfolio sources."""
+
+        if field.field == "company_location":
+            location = cls._first_context(
+                evidence,
+                required=(
+                    "bauer kompressoren gmbh",
+                    "stablistr. 8",
+                    "81477 munich",
+                    "germany",
+                ),
+                any_terms=("contact", "get in touch", "published by"),
+            )
+            if location is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "BAUER KOMPRESSOREN GmbH is based at Stäblistr. 8, "
+                    "81477 Munich, Germany."
+                ),
+                (location,),
+            )
 
         core = cls._first_context(
             evidence,
