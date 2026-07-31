@@ -17,6 +17,21 @@ class GroundedAnswerBuilder:
         repair_count: int = 0,
     ) -> AnswerDraft:
         if plan.intent == "general" and plan.fields and all(
+            field.field == "requested_topic_evidence"
+            for field in plan.fields
+        ):
+            return AnswerDraft(
+                status="not_found",
+                answer=(
+                    "I could not establish this from the authorized Bauer "
+                    "evidence."
+                ),
+                coverage=coverage,
+                claims=(),
+                citations=(),
+                repair_count=repair_count,
+            )
+        if plan.intent == "general" and plan.fields and all(
             field.field.startswith("company_") for field in plan.fields
         ):
             return self._build_company_overview(
