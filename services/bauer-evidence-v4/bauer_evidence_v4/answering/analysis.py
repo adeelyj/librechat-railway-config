@@ -173,6 +173,58 @@ _GENERAL_MATCH_GROUPS = (
 )
 
 
+def _is_company_overview_question(normalized: str) -> bool:
+    """Recognize broad Bauer company/portfolio questions.
+
+    The V4 route is already scoped to the Bauer knowledge base, but detailed
+    product questions must continue through their product-specific planners.
+    A small, explicit typo allowance covers the observed company-name typo
+    without turning this into a general fuzzy retrieval channel.
+    """
+
+    if any(
+        _normalize(product) in normalized
+        for product in _GENERAL_PRODUCT_NAMES
+    ):
+        return False
+    if re.search(
+        r"\b(?:n\d{4,}|\d+(?:[.,]\d+)?\s*(?:bar|kw|l/min))\b",
+        normalized,
+    ):
+        return False
+    company_reference = any(
+        value in normalized
+        for value in (
+            "bauer kompressoren",
+            "bauer compressors",
+            "bayuer",
+        )
+    )
+    overview_phrases = (
+        "what does",
+        "what is",
+        "tell me about",
+        "company overview",
+        "product portfolio",
+        "product range",
+        "was macht",
+        "was ist",
+    )
+    tokens = set(re.findall(r"[a-z0-9-]+", normalized))
+    broad_product_request = (
+        "products" in tokens
+        and bool(
+            tokens
+            & {"list", "offer", "offers", "make", "makes", "portfolio"}
+        )
+        and len(tokens) <= 12
+    )
+    return company_reference and (
+        any(phrase in normalized for phrase in overview_phrases)
+        or broad_product_request
+    )
+
+
 @dataclass(frozen=True, slots=True)
 class TaskAnalyzer:
     def analyze(self, question: str, *, locale: str = "en") -> TaskPlan:
@@ -291,6 +343,18 @@ class TaskAnalyzer:
         field: RequiredField,
     ) -> str:
         special = {
+            "company_core_business": (
+                "BAUER global leader manufacture medium high pressure air "
+                "and gas compression systems breathing air."
+            ),
+            "company_product_portfolio": (
+                "BAUER product overview compressor systems air and gas "
+                "purification control storage gas measurement accessories."
+            ),
+            "company_application_scope": (
+                "BAUER breathing air divers firefighters industrial "
+                "applications CNG biogas hydrogen fuel gas systems."
+            ),
             "bdetection_stationary_evidence": (
                 "B-DETECTION PLUS i and s stationary continuous online gas "
                 "measurement B-CLOUD ready."
@@ -381,6 +445,42 @@ class TaskAnalyzer:
         question: str,
         normalized: str,
     ) -> tuple[RequiredField, ...]:
+        if _is_company_overview_question(normalized):
+            return (
+                RequiredField(
+                    field="company_core_business",
+                    label="Core business",
+                    match_terms=(
+                        "medium pressure",
+                        "high pressure",
+                        "air and gas compression systems",
+                        "breathing air",
+                    ),
+                ),
+                RequiredField(
+                    field="company_product_portfolio",
+                    label="Product and system portfolio",
+                    match_terms=(
+                        "compressor systems",
+                        "air and gas purification",
+                        "control",
+                        "storage",
+                        "gas measurement",
+                    ),
+                ),
+                RequiredField(
+                    field="company_application_scope",
+                    label="Application scope",
+                    match_terms=(
+                        "breathing air",
+                        "divers",
+                        "firefighters",
+                        "bio-CNG",
+                        "biogas",
+                        "hydrogen",
+                    ),
+                ),
+            )
         if "synthetic" in normalized or "synthetisch" in normalized:
             identifiers = tuple(
                 dict.fromkeys(

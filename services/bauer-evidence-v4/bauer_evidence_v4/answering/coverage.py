@@ -103,6 +103,8 @@ class CoverageEngine:
         field,
         evidence: tuple[EvidenceContext, ...],
     ) -> FieldCoverage:
+        if field.field.startswith("company_"):
+            return self._company_overview_field(field, evidence)
         if field.field.startswith("bdetection_"):
             return self._bdetection_field(field, evidence)
         if field.field == "n7698_compressor_block_applications":
@@ -232,6 +234,83 @@ class CoverageEngine:
             ),
             detail=None,
         )
+
+    @classmethod
+    def _company_overview_field(
+        cls,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        """Extract a concise company answer from explicit portfolio sources."""
+
+        core = cls._first_context(
+            evidence,
+            required=(
+                "air and gas compression systems",
+                "systems for generating breathing air",
+            ),
+            any_terms=("global leader", "market leader"),
+        )
+        if field.field == "company_core_business":
+            if core is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "BAUER Kompressoren manufactures medium- and "
+                    "high-pressure air and gas compression systems, "
+                    "including systems for generating breathing air."
+                ),
+                (core,),
+            )
+
+        if field.field == "company_product_portfolio":
+            portfolio = cls._first_context(
+                evidence,
+                required=(
+                    "supplies an extensive range of accessories",
+                    "air and gas purification",
+                    "storage",
+                    "gas measurement",
+                ),
+                any_terms=("control",),
+            )
+            if portfolio is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "Beyond its compressor systems, BAUER supplies air and "
+                    "gas purification, controls, storage, gas-measurement "
+                    "equipment, and related accessories."
+                ),
+                (portfolio,),
+            )
+
+        if field.field == "company_application_scope":
+            fuel_gas = cls._first_context(
+                evidence,
+                required=(
+                    "bio-cng",
+                    "biogas",
+                    "hydrogen",
+                    "lng",
+                    "compressor systems",
+                ),
+                any_terms=("fuel gas",),
+            )
+            if core is None or fuel_gas is None:
+                return cls._absent(field)
+            return cls._special_supported(
+                field,
+                (
+                    "Documented applications include breathing-air supply "
+                    "for divers and firefighters, plus fuel-gas systems for "
+                    "bio-CNG, biogas, hydrogen, and LNG."
+                ),
+                (core, fuel_gas),
+            )
+        return cls._absent(field)
 
     @classmethod
     def _bm_family_field(

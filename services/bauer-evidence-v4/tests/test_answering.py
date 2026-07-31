@@ -160,6 +160,30 @@ def test_task_analyzer_derives_all_requested_fields(
 
 def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
     analyzer = TaskAnalyzer()
+    company_plan = analyzer.analyze("what does bauer kompressoren do")
+    assert company_plan.intent == "general"
+    assert [field.field for field in company_plan.fields] == [
+        "company_core_business",
+        "company_product_portfolio",
+        "company_application_scope",
+    ]
+    assert all(
+        company_plan.original_question not in subquestion.text
+        for subquestion in company_plan.subquestions
+    )
+    typo_plan = analyzer.analyze("list hte products from bayuer")
+    assert [field.field for field in typo_plan.fields] == [
+        "company_core_business",
+        "company_product_portfolio",
+        "company_application_scope",
+    ]
+    specific_plan = analyzer.analyze(
+        "What does B-CLOUD do for Bauer Kompressoren?"
+    )
+    assert all(
+        not field.field.startswith("company_")
+        for field in specific_plan.fields
+    )
     product_plan = analyzer.analyze(
         "Find B-SELECT and report its operating pressure and functions."
     )
@@ -467,6 +491,76 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
     assert [field.field for field in b21_plan.fields] == [
         "bsafe_wording_reconciliation"
     ]
+
+
+def test_company_overview_is_concise_grounded_and_cited() -> None:
+    plan = TaskAnalyzer().analyze("what does bauer kompressoren do")
+
+    def context(rank: int, evidence_id: str, filename: str, text: str):
+        return SimpleNamespace(
+            ranked=SimpleNamespace(rank=rank),
+            citation=SimpleNamespace(
+                citation_id=f"citation-{evidence_id}",
+                original_filename=filename,
+            ),
+            unit=SimpleNamespace(
+                evidence_id=evidence_id,
+                search_text=text,
+            ),
+        )
+
+    core = context(
+        4,
+        "core",
+        "2025-06_Product_overview_EN_N37488_sc.pdf",
+        (
+            "BAUER KOMPRESSOREN is a global leader in the manufacture of "
+            "medium and high pressure air and gas compression systems. "
+            "BAUER develops systems for generating breathing air for divers "
+            "and firefighters."
+        ),
+    )
+    portfolio = context(
+        6,
+        "portfolio",
+        "2026-04_Compressors_for_Industry_EN_N39771_sc.pdf",
+        (
+            "BAUER KOMPRESSOREN supplies an extensive range of accessories "
+            "for its compressor systems, from air and gas purification to "
+            "control, storage and gas measurement."
+        ),
+    )
+    fuel_gas = context(
+        14,
+        "fuel-gas",
+        "0153_fuel-gas-systems_9645f76747.html",
+        (
+            "Biogas and Fuel Gas Systems. Whether bio-CNG, biogas, hydrogen, "
+            "or LNG, our compressor systems support vehicles, industrial "
+            "plants and feed-in systems."
+        ),
+    )
+    evidence = (core, portfolio, fuel_gas)
+    coverage = tuple(
+        CoverageEngine._company_overview_field(field, evidence)
+        for field in plan.fields
+    )
+    assert all(item.state == "supported" for item in coverage)
+    citations = {
+        item.unit.evidence_id: item.citation for item in evidence
+    }
+    draft = GroundedAnswerBuilder().build(plan, coverage, citations)
+    assert draft.status == "complete"
+    assert "Supported result" not in draft.answer
+    assert "Requested-topic evidence" not in draft.answer
+    assert "supplier" not in draft.answer.casefold()
+    assert "medium- and high-pressure air and gas compression systems" in (
+        draft.answer
+    )
+    assert "air and gas purification" in draft.answer
+    assert "divers and firefighters" in draft.answer
+    assert "bio-CNG, biogas, hydrogen, and LNG" in draft.answer
+    assert len(draft.citations) == 3
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(
