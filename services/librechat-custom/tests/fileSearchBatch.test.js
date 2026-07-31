@@ -12,6 +12,7 @@ const {
   createV2QueryBody,
   createV3AnswerBody,
   createV4AnswerBody,
+  createV4AuthorizedFiles,
   normalizeBatchResults,
   normalizeV3Answer,
   normalizeV4Answer,
@@ -21,6 +22,44 @@ const {
   sanitizeVisibleFilename,
   selectFileSearchRoute,
 } = require('../fileSearchBatch');
+
+test('V4 supplemental release sources are server-pinned and fail closed', () => {
+  const files = [{ file_id: 'uploaded', filename: 'uploaded.pdf', fromAgent: true }];
+  const configured = JSON.stringify([
+    {
+      file_id: 'synthetic-demo-v1',
+      filename: 'bauer-synthetic-demo-v1.html',
+    },
+  ]);
+  const authorized = createV4AuthorizedFiles(files, configured);
+
+  assert.deepEqual(
+    authorized.map((item) => item.file_id),
+    ['uploaded', 'synthetic-demo-v1'],
+  );
+  assert.equal(authorized[1].fromAgent, true);
+  assert.equal(authorized[1].v4Supplemental, true);
+  assert.throws(
+    () => createV4AuthorizedFiles(files, '{invalid'),
+    /must be valid JSON/,
+  );
+  assert.throws(
+    () =>
+      createV4AuthorizedFiles(
+        files,
+        JSON.stringify([{ file_id: 'uploaded', filename: 'collision.html' }]),
+      ),
+    /collides with an Agent file/,
+  );
+  assert.throws(
+    () =>
+      createV4AuthorizedFiles(
+        files,
+        JSON.stringify([{ file_id: '', filename: 'missing-id.html' }]),
+      ),
+    /contains an invalid source/,
+  );
+});
 
 test('knowledge-base filenames stay out of the model-visible context', () => {
   const files = Array.from({ length: 373 }, (_, index) => ({

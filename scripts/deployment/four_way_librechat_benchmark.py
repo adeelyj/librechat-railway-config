@@ -17,7 +17,12 @@ from typing import Any
 from urllib.parse import urlsplit, urlunsplit
 
 
-V4_ROOT = Path(r"D:\02_Code\LibreChat_Setup-rag-v4")
+V4_ROOT = Path(
+    os.getenv(
+        "BAUER_V4_BENCHMARK_ROOT",
+        r"D:\02_Code\LibreChat_Setup-rag-v4",
+    )
+)
 V2_RUNNERS = V4_ROOT / "evals" / "bauer-rag-v2" / "runners"
 sys.path.insert(0, str(V2_RUNNERS))
 
@@ -150,7 +155,42 @@ def _sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
-def _load_cases(path: Path) -> list[dict[str, Any]]:
+def _parse_case_ids(value: str) -> tuple[str, ...]:
+    identifiers = tuple(item.strip() for item in value.split(",") if item.strip())
+    if (
+        not identifiers
+        or len(set(identifiers)) != len(identifiers)
+        or any(item not in EXPECTED_CASE_IDS for item in identifiers)
+    ):
+        raise BenchmarkError("--case-ids must be unique public B01-B30 identifiers")
+    return identifiers
+
+
+def _parse_systems(value: str) -> tuple[str, ...]:
+    identifiers = tuple(item.strip().lower() for item in value.split(",") if item.strip())
+    allowed = ("v1", "v2", "v3", "v4")
+    if (
+        not identifiers
+        or len(set(identifiers)) != len(identifiers)
+        or any(item not in allowed for item in identifiers)
+    ):
+        raise BenchmarkError("--systems must be unique values from v1,v2,v3,v4")
+    return identifiers
+
+
+def _parse_supplemental_source_ids(value: str) -> frozenset[str]:
+    identifiers = tuple(item.strip() for item in value.split(",") if item.strip())
+    if len(set(identifiers)) != len(identifiers) or any(
+        len(item) > 256 for item in identifiers
+    ):
+        raise BenchmarkError("--v4-supplemental-source-ids is invalid")
+    return frozenset(identifiers)
+
+
+def _load_cases(
+    path: Path,
+    selected_case_ids: tuple[str, ...],
+) -> list[dict[str, Any]]:
     payload = json.loads(path.read_text(encoding="utf-8-sig"))
     cases = payload.get("cases")
     if not isinstance(cases, list):
@@ -163,7 +203,8 @@ def _load_cases(path: Path) -> list[dict[str, Any]]:
             raise BenchmarkError("locked holdout case detected")
         if not str(item.get("prompt_en") or item.get("prompt_de") or "").strip():
             raise BenchmarkError(f"{item.get('id')} has no development prompt")
-    return cases
+    by_id = {str(item["id"]): item for item in cases}
+    return [by_id[item] for item in selected_case_ids]
 
 
 def _bauer_file_ids(path: Path) -> set[str]:
@@ -297,7 +338,7 @@ def _progress_payload(
     return {
         "schema_version": 1,
         "kind": "end_to_end",
-        "run_id": "v1-v2-v3-v4-librechat-development-20260729",
+        "run_id": "selected-librechat-development-answer-quality-20260731",
         "recorded_at_utc": datetime.now(UTC).isoformat(),
         "base_origin": base_origin,
         "systems": systems,
@@ -308,8 +349,15 @@ def _progress_payload(
         "v4_candidate_backend_commit": args.v4_candidate_backend_commit,
         "development_cases_sha256": cases_sha256,
         "split": "development",
-        "expected_case_count": 30,
-        "expected_observation_count": 120,
+        "selected_case_ids": list(args.selected_case_ids),
+        "selected_systems": list(args.selected_systems),
+        "v4_supplemental_source_ids": sorted(
+            args.v4_supplemental_source_ids
+        ),
+        "expected_case_count": len(args.selected_case_ids),
+        "expected_observation_count": (
+            len(args.selected_case_ids) * len(args.selected_systems)
+        ),
         "attempted_observation_count": len(observations),
         "completed_observation_count": completed,
         "error_observation_count": len(observations) - completed,
@@ -318,10 +366,8 @@ def _progress_payload(
             "serial": True,
             "rotating_system_order": True,
             "system_order_cycle": [
-                ["v1", "v2", "v3", "v4"],
-                ["v2", "v3", "v4", "v1"],
-                ["v3", "v4", "v1", "v2"],
-                ["v4", "v1", "v2", "v3"],
+                list(args.selected_systems[index:] + args.selected_systems[:index])
+                for index in range(len(args.selected_systems))
             ],
         },
         "browser_shaped_http_api_client": True,
@@ -342,9 +388,8 @@ def _progress_payload(
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
-            "Run the same 30 development prompts through the live V1, V2, "
-            "private V3, and private V4 LibreChat Agents and retain all "
-            "exact answers."
+            "Run a selected public-development case set through selected live "
+            "LibreChat Agents and retain every exact answer."
         )
     )
     parser.add_argument("--base-url", required=True)
@@ -359,6 +404,12 @@ def main() -> None:
     parser.add_argument("--v4-candidate-backend-commit", required=True)
     parser.add_argument("--unit-test-count", required=True, type=int)
     parser.add_argument("--unit-test-evidence-sha256", required=True)
+    parser.add_argument(
+        "--case-ids",
+        default=",".join(EXPECTED_CASE_IDS),
+    )
+    parser.add_argument("--systems", default="v1,v2,v3,v4")
+    parser.add_argument("--v4-supplemental-source-ids", default="")
     parser.add_argument("--timeout", type=float, default=600)
     parser.add_argument(
         "--development-cases",
@@ -371,6 +422,11 @@ def main() -> None:
         default=PROVISION_STATE,
     )
     args = parser.parse_args()
+    args.selected_case_ids = _parse_case_ids(args.case_ids)
+    args.selected_systems = _parse_systems(args.systems)
+    args.v4_supplemental_source_ids = _parse_supplemental_source_ids(
+        args.v4_supplemental_source_ids
+    )
 
     if re.fullmatch(r"agent_[A-Za-z0-9_-]+", args.v3_agent_id) is None:
         parser.error("--v3-agent-id is invalid")
@@ -413,7 +469,7 @@ def main() -> None:
         raise BenchmarkError(f"refusing to overwrite benchmark evidence: {args.output}")
 
     base_origin = _https_origin(args.base_url)
-    cases = _load_cases(args.development_cases)
+    cases = _load_cases(args.development_cases, args.selected_case_ids)
     allowed_file_ids = _bauer_file_ids(args.provision_state)
     cases_sha256 = _sha256_file(args.development_cases)
     token = require_secret("LIBRECHAT_TOKEN")
@@ -429,17 +485,25 @@ def main() -> None:
     refresh_token_cookie = ""
 
     progress_path = args.output.with_suffix(args.output.suffix + ".progress.json")
-    systems = (
+    all_systems = (
         ("v1", V1_AGENT_ID),
         ("v2", V2_AGENT_ID),
         ("v3", args.v3_agent_id),
         ("v4", args.v4_agent_id),
     )
+    systems = tuple(
+        item for item in all_systems if item[0] in args.selected_systems
+    )
+    systems = tuple(
+        next(item for item in systems if item[0] == system)
+        for system in args.selected_systems
+    )
     observations: list[dict[str, Any]] = []
     for case_index, case in enumerate(cases):
         case_id = str(case["id"])
         prompt = str(case.get("prompt_en") or case.get("prompt_de") or "").strip()
-        order = systems[case_index % 4 :] + systems[: case_index % 4]
+        rotation = case_index % len(systems)
+        order = systems[rotation:] + systems[:rotation]
         for order_position, (system, agent_id) in enumerate(order, start=1):
             try:
                 live = _run_agent_case_with_verified_cleanup(
@@ -455,9 +519,14 @@ def main() -> None:
                     raise BenchmarkError(
                         "completed assistant message had no visible answer text"
                     )
+                system_allowed_file_ids = allowed_file_ids
+                if system == "v4":
+                    system_allowed_file_ids = (
+                        allowed_file_ids | args.v4_supplemental_source_ids
+                    )
                 evidence, unauthorized = _sanitize_evidence(
                     live.get("evidence"),
-                    allowed_file_ids,
+                    system_allowed_file_ids,
                 )
                 observation = {
                     "case_id": case_id,
@@ -539,7 +608,9 @@ def main() -> None:
         session_refresh_count=token_session.refresh_count,
     )
     payload["completed_at_utc"] = datetime.now(UTC).isoformat()
-    payload["all_observations_attempted"] = len(observations) == 120
+    payload["all_observations_attempted"] = len(observations) == (
+        len(args.selected_case_ids) * len(args.selected_systems)
+    )
     payload["all_answers_captured"] = all(
         bool(item.get("answer")) and not item.get("error_type")
         for item in observations

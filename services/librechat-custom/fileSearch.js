@@ -15,6 +15,7 @@ const {
   createV2QueryBody,
   createV3AnswerBody,
   createV4AnswerBody,
+  createV4AuthorizedFiles,
   normalizeBatchResults,
   normalizeV3Answer,
   normalizeV4Answer,
@@ -140,11 +141,13 @@ const createFileSearchTool = async ({
           let token;
           let baseUrl;
           let body;
+          let authorizedFiles = group.files;
           if (route === 'v4') {
+            authorizedFiles = createV4AuthorizedFiles(group.files);
             token = createV4AuthorizationContext({
               userId,
               agentId: group.entity_id,
-              sourceIds: group.files.map((file) => file.file_id),
+              sourceIds: authorizedFiles.map((file) => file.file_id),
             });
             baseUrl = process.env.BAUER_V4_API_URL;
             if (!baseUrl) {
@@ -190,7 +193,7 @@ const createFileSearchTool = async ({
               'Content-Type': 'application/json',
             },
           });
-          return { route, response, authorizedFiles: group.files };
+          return { route, response, authorizedFiles };
         } catch (error) {
           if (error?.response?.status === 404) {
             return { route, response: { data: [] } };

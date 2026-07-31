@@ -8,6 +8,8 @@ param(
     [string]$LibreChatOverlayCommit,
     [Parameter(Mandatory = $true)]
     [string]$V4BackendCommit,
+    [Parameter(Mandatory = $true)]
+    [string]$V4ApiBuildCommit,
     [string]$BaseUrl = 'https://chat.rapiddraft.ai',
     [string]$CredentialPath = (
         'D:\02_Code\auth\auth\librechat\testing-admin.credential.xml'
@@ -15,10 +17,13 @@ param(
     [string]$PythonExe = (
         'D:\02_Code\LibreChat_Setup\tmp\v3-deploy\venv-api\Scripts\python.exe'
     ),
-    [string]$V4Root = 'D:\02_Code\LibreChat_Setup-rag-v4',
+    [string[]]$CaseIds = @('B06', 'B17', 'B10', 'B19', 'B03'),
+    [string[]]$Systems = @('v4'),
+    [string[]]$V4SupplementalSourceIds = @('synthetic-demo-v1'),
+    [string]$V4Root = 'D:\02_Code\LibreChat_Setup-rag-v4-answer-quality',
     [string]$OutputPath = (
-        'D:\02_Code\LibreChat_Setup-rag-v4\tmp\v4-deploy\evidence\' +
-        'librechat-four-way-development-benchmark-20260729.json'
+        'D:\02_Code\LibreChat_Setup-rag-v4-answer-quality\tmp\v4-deploy\evidence\' +
+        'librechat-five-case-v4-answer-quality-20260731.json'
     )
 )
 
@@ -146,9 +151,32 @@ if (
 }
 if (
     $LibreChatOverlayCommit -cnotmatch '\A[0-9a-f]{40}\z' -or
-    $V4BackendCommit -cnotmatch '\A[0-9a-f]{40}\z'
+    $V4BackendCommit -cnotmatch '\A[0-9a-f]{40}\z' -or
+    $V4ApiBuildCommit -cnotmatch '\A[0-9a-f]{40}\z'
 ) {
-    throw 'LibreChat and V4 backend commits must be exact Git commits.'
+    throw 'LibreChat, source, and V4 API commits must be exact Git commits.'
+}
+if (
+    $CaseIds.Count -lt 1 -or
+    @($CaseIds | Select-Object -Unique).Count -ne $CaseIds.Count -or
+    @(
+        $CaseIds | Where-Object {
+            $_ -cnotmatch '\AB(?:0[1-9]|[12][0-9]|30)\z'
+        }
+    ).Count -gt 0
+) {
+    throw 'CaseIds must contain unique public-development B01-B30 identifiers.'
+}
+if (
+    $Systems.Count -lt 1 -or
+    @($Systems | Select-Object -Unique).Count -ne $Systems.Count -or
+    @(
+        $Systems | Where-Object {
+            $_ -cnotin @('v1', 'v2', 'v3', 'v4')
+        }
+    ).Count -gt 0
+) {
+    throw 'Systems must contain unique values from v1, v2, v3, and v4.'
 }
 $baseUri = [Uri]::new($BaseUrl.TrimEnd('/'))
 if (
@@ -193,7 +221,7 @@ try {
         $commitResult.exit_code -ne 0 -or
         $commitResult.stdout.Trim() -cne $V4BackendCommit
     ) {
-        throw 'Regression worktree is not at the exact V4 backend commit.'
+        throw 'Regression worktree is not at the exact V4 source commit.'
     }
     $commitResult = $null
     $overlayAncestor = Invoke-CapturedNative `
@@ -211,6 +239,21 @@ try {
         throw 'The V4 backend commit does not descend from the LibreChat overlay.'
     }
     $overlayAncestor = $null
+    $apiAncestor = Invoke-CapturedNative `
+        -FileName $gitCommand.Source `
+        -Arguments @(
+            '-C',
+            $V4Root,
+            'merge-base',
+            '--is-ancestor',
+            $V4ApiBuildCommit,
+            $V4BackendCommit
+        ) `
+        -WorkingDirectory $V4Root
+    if ($apiAncestor.exit_code -ne 0) {
+        throw 'The V4 source commit does not descend from the deployed API commit.'
+    }
+    $apiAncestor = $null
     $backendAncestor = Invoke-CapturedNative `
         -FileName $gitCommand.Source `
         -Arguments @(
@@ -311,21 +354,22 @@ try {
     $unitOutput = [string]$unitResult.stdout
     if (
         $unitResult.exit_code -ne 0 -or
-        $unitOutput -notmatch '(?m)^# tests 41\s*$' -or
-        $unitOutput -notmatch '(?m)^# pass 41\s*$' -or
+        $unitOutput -notmatch '(?m)^# tests 43\s*$' -or
+        $unitOutput -notmatch '(?m)^# pass 43\s*$' -or
         $unitOutput -notmatch '(?m)^# fail 0\s*$'
     ) {
         $unitOutput = $null
         $unitResult = $null
         throw (
-            'The exact 41 LibreChat fail-closed unit tests did not all pass; ' +
+            'The exact 43 LibreChat fail-closed unit tests did not all pass; ' +
             'no login was attempted.'
         )
     }
     $unitHashLines = @(
         "backend_commit`t$BackendExactCommit"
         "overlay_commit`t$LibreChatOverlayCommit"
-        "v4_backend_commit`t$V4BackendCommit"
+        "v4_source_commit`t$V4BackendCommit"
+        "v4_api_build_commit`t$V4ApiBuildCommit"
         "node`t$nodeVersion"
         foreach ($relativePath in @($UnitTestFiles | Sort-Object)) {
             $sha = (
@@ -335,8 +379,8 @@ try {
             ).Hash.ToLowerInvariant()
             "$relativePath`t$sha"
         }
-        'tests`t41'
-        'pass`t41'
+        'tests`t43'
+        'pass`t43'
         'fail`t0'
     )
     $unitEvidenceSha256 = Get-StringSha256 -Value ($unitHashLines -join "`n")
@@ -440,9 +484,14 @@ try {
         '--output', $OutputPath,
         '--librechat-overlay-commit', $LibreChatOverlayCommit,
         '--v3-candidate-backend-commit', $BackendExactCommit,
-        '--v4-candidate-backend-commit', $V4BackendCommit,
-        '--unit-test-count', '41',
+        '--v4-candidate-backend-commit', $V4ApiBuildCommit,
+        '--unit-test-count', '43',
         '--unit-test-evidence-sha256', $unitEvidenceSha256,
+        '--case-ids', ($CaseIds -join ','),
+        '--systems', ($Systems -join ','),
+        '--v4-supplemental-source-ids', (
+            $V4SupplementalSourceIds -join ','
+        ),
         '--timeout', $AgentCaseTimeoutSeconds
     )
     $start.Arguments = Join-NativeArguments -Values $runnerArguments
@@ -455,6 +504,7 @@ try {
     $start.EnvironmentVariables['LIBRECHAT_REFRESH_TOKEN_COOKIE'] = (
         $refreshTokenCookie
     )
+    $start.EnvironmentVariables['BAUER_V4_BENCHMARK_ROOT'] = $V4Root
     $process = [Diagnostics.Process]::new()
     $process.StartInfo = $start
     if (-not $process.Start()) {
@@ -464,6 +514,7 @@ try {
     [void]$start.EnvironmentVariables.Remove(
         'LIBRECHAT_REFRESH_TOKEN_COOKIE'
     )
+    [void]$start.EnvironmentVariables.Remove('BAUER_V4_BENCHMARK_ROOT')
     $token = $null
     $refreshTokenCookie = $null
     $stdoutTask = $process.StandardOutput.ReadToEndAsync()
@@ -486,6 +537,9 @@ finally {
         [void]$start.EnvironmentVariables.Remove('LIBRECHAT_TOKEN')
         [void]$start.EnvironmentVariables.Remove(
             'LIBRECHAT_REFRESH_TOKEN_COOKIE'
+        )
+        [void]$start.EnvironmentVariables.Remove(
+            'BAUER_V4_BENCHMARK_ROOT'
         )
     }
     if ($null -ne $process) {

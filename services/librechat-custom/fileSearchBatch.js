@@ -4,6 +4,7 @@ const MAX_VISIBLE_USER_FILES = 10;
 const MAX_VISIBLE_FILENAME_CHARS = 160;
 const MAX_V3_QUERY_CHARS = 4000;
 const MAX_V4_QUESTION_CHARS = 4000;
+const MAX_V4_SUPPLEMENTAL_SOURCES = 16;
 const V3_ANSWERED_STATUSES = new Set(['answered', 'answered_after_repair']);
 const V3_REFUSAL_STATUSES = new Set(['refused_no_evidence', 'refused_after_validation']);
 const V4_STATUSES = new Set(['complete', 'partial', 'not_found', 'refused']);
@@ -38,6 +39,61 @@ const uniqueFiles = (files) => {
     byId.set(file.file_id, file);
   }
   return [...byId.values()];
+};
+
+const parseV4SupplementalSources = (
+  value = process.env.BAUER_V4_SUPPLEMENTAL_SOURCES_JSON,
+) => {
+  if (value == null || String(value).trim() === '') {
+    return [];
+  }
+
+  let parsed;
+  try {
+    parsed = JSON.parse(String(value));
+  } catch {
+    throw new Error('BAUER_V4_SUPPLEMENTAL_SOURCES_JSON must be valid JSON');
+  }
+  if (!Array.isArray(parsed) || parsed.length > MAX_V4_SUPPLEMENTAL_SOURCES) {
+    throw new Error(
+      `BAUER_V4_SUPPLEMENTAL_SOURCES_JSON must contain at most ${MAX_V4_SUPPLEMENTAL_SOURCES} sources`,
+    );
+  }
+
+  const identifiers = new Set();
+  return parsed.map((item) => {
+    const fileId = typeof item?.file_id === 'string' ? item.file_id.trim() : '';
+    const filename =
+      typeof item?.filename === 'string' ? sanitizeVisibleFilename(item.filename) : '';
+    if (
+      !fileId ||
+      fileId.length > 256 ||
+      !filename ||
+      identifiers.has(fileId)
+    ) {
+      throw new Error('BAUER_V4_SUPPLEMENTAL_SOURCES_JSON contains an invalid source');
+    }
+    identifiers.add(fileId);
+    return {
+      file_id: fileId,
+      filename,
+      fromAgent: true,
+      v4Supplemental: true,
+    };
+  });
+};
+
+const createV4AuthorizedFiles = (
+  files,
+  value = process.env.BAUER_V4_SUPPLEMENTAL_SOURCES_JSON,
+) => {
+  const base = uniqueFiles(files);
+  const baseIds = new Set(base.map((file) => file.file_id));
+  const supplemental = parseV4SupplementalSources(value);
+  if (supplemental.some((file) => baseIds.has(file.file_id))) {
+    throw new Error('A V4 supplemental source collides with an Agent file');
+  }
+  return [...base, ...supplemental];
 };
 
 const partitionFiles = (files) => {
@@ -472,6 +528,7 @@ const normalizeBatchResults = (responses, files, maxResults = DEFAULT_BATCH_K) =
 module.exports = {
   DEFAULT_BATCH_K,
   MAX_BATCH_FILES,
+  MAX_V4_SUPPLEMENTAL_SOURCES,
   MAX_VISIBLE_USER_FILES,
   MAX_V3_QUERY_CHARS,
   MAX_V4_QUESTION_CHARS,
@@ -481,10 +538,12 @@ module.exports = {
   createV2QueryBody,
   createV3AnswerBody,
   createV4AnswerBody,
+  createV4AuthorizedFiles,
   normalizeBatchResults,
   normalizeV3Answer,
   normalizeV4Answer,
   parseIdAllowlist,
+  parseV4SupplementalSources,
   partitionFiles,
   resolveOriginalQuestion,
   resolveV3RequestQuery,
