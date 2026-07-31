@@ -45,6 +45,27 @@
         "Requested-topic evidence",
         "supplier shall apply"
       ]
+    },
+    {
+      "case_id": "V4-R03",
+      "question": "list the products of bauer",
+      "search_hint": "Bauer products product range portfolio",
+      "expected_status": "complete",
+      "required_fields": [
+        "company_core_business",
+        "company_product_portfolio",
+        "company_application_scope"
+      ],
+      "required_answer_terms": [
+        "medium- and high-pressure air and gas compression systems",
+        "air and gas purification",
+        "divers and firefighters",
+        "bio-CNG, biogas, hydrogen, and LNG"
+      ],
+      "forbidden_answer_terms": [
+        "Requested-topic evidence",
+        "supplier shall apply"
+      ]
     }
   ]
 }

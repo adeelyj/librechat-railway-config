@@ -192,14 +192,6 @@ def _is_company_overview_question(normalized: str) -> bool:
         normalized,
     ):
         return False
-    company_reference = any(
-        value in normalized
-        for value in (
-            "bauer kompressoren",
-            "bauer compressors",
-            "bayuer",
-        )
-    )
     overview_phrases = (
         "what does",
         "what is",
@@ -212,13 +204,44 @@ def _is_company_overview_question(normalized: str) -> bool:
     )
     tokens = set(re.findall(r"[a-z0-9-]+", normalized))
     broad_product_request = (
-        "products" in tokens
+        bool(tokens & {"product", "products", "portfolio"})
         and bool(
             tokens
-            & {"list", "offer", "offers", "make", "makes", "portfolio"}
+            & {
+                "list",
+                "name",
+                "offer",
+                "offers",
+                "make",
+                "makes",
+                "portfolio",
+                "show",
+            }
         )
         and len(tokens) <= 12
     )
+    explicit_company_reference = any(
+        value in normalized
+        for value in (
+            "bauer kompressoren",
+            "bauer compressors",
+            "bayuer",
+        )
+    )
+    bare_bauer_overview = "bauer" in tokens and (
+        broad_product_request
+        or any(
+            phrase in normalized
+            for phrase in (
+                "what does bauer",
+                "what is bauer",
+                "tell me about bauer",
+                "was macht bauer",
+                "was ist bauer",
+            )
+        )
+    )
+    company_reference = explicit_company_reference or bare_bauer_overview
     return company_reference and (
         any(phrase in normalized for phrase in overview_phrases)
         or broad_product_request

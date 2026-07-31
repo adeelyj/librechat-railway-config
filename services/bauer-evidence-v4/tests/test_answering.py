@@ -184,6 +184,12 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
         "company_product_portfolio",
         "company_application_scope",
     ]
+    bare_company_plan = analyzer.analyze("list the products of bauer")
+    assert [field.field for field in bare_company_plan.fields] == [
+        "company_core_business",
+        "company_product_portfolio",
+        "company_application_scope",
+    ]
     specific_plan = analyzer.analyze(
         "What does B-CLOUD do for Bauer Kompressoren?"
     )
@@ -508,6 +514,7 @@ def test_company_overview_is_concise_grounded_and_cited() -> None:
     assert [case["case_id"] for case in regression["cases"]] == [
         "V4-R01",
         "V4-R02",
+        "V4-R03",
     ]
 
     analyzer = TaskAnalyzer()
