@@ -207,17 +207,23 @@ def _is_company_location_question(normalized: str) -> bool:
     if not _has_company_reference(normalized):
         return False
     tokens = set(re.findall(r"[a-z0-9-]+", normalized))
+    based_location = (
+        "based" in tokens
+        and "where" in tokens
+        and "based only" not in normalized
+        and "based on" not in normalized
+    )
     english = bool(
         tokens
         & {
             "address",
-            "based",
             "headquartered",
             "headquarters",
             "located",
             "location",
         }
-    ) and bool(tokens & {"where", "what", "which", "based", "located"})
+    ) and bool(tokens & {"where", "what", "which", "located"})
+    english = english or based_location
     german = bool(tokens & {"adresse", "hauptsitz", "sitz"}) or (
         "wo" in tokens
         and bool(tokens & {"ansassig", "befindet", "sitzt"})
@@ -292,22 +298,58 @@ def _is_company_overview_question(normalized: str) -> bool:
     )
 
 
+def _is_company_product_list_question(normalized: str) -> bool:
+    if "highest documented maximum operating pressure" in normalized:
+        return False
+    if _has_specific_product_or_numeric_constraint(normalized):
+        return False
+    if not _has_company_reference(normalized):
+        return False
+    tokens = set(re.findall(r"[a-z0-9-]+", normalized))
+    return bool(tokens & {"list", "name", "show"}) and bool(
+        tokens & {"product", "products", "portfolio"}
+    )
+
+
 @dataclass(frozen=True, slots=True)
 class TaskAnalyzer:
-    def analyze(self, question: str, *, locale: str = "en") -> TaskPlan:
+    def analyze(
+        self,
+        question: str,
+        *,
+        locale: str = "en",
+        search_hints: tuple[str, ...] = (),
+    ) -> TaskPlan:
         if not question.strip():
             raise ValueError("question must be non-empty")
         normalized = _normalize(question)
+        synthetic_identifiers = tuple(
+            value.upper()
+            for value in re.findall(
+                r"\bSYN-[A-Z0-9-]+\b",
+                question,
+                flags=re.IGNORECASE,
+            )
+        )
         identifiers = tuple(
             dict.fromkeys(
-                value
-                for match in _EXACT_RE.finditer(question)
-                for value in (match.group(0).strip(),)
-                if (
-                    value.upper().startswith("N")
-                    or "/" in value
-                    or "-" in value
-                    or re.search(r"\d\.\d", value)
+                (
+                    *synthetic_identifiers,
+                    *(
+                        value
+                        for match in _EXACT_RE.finditer(question)
+                        for value in (match.group(0).strip(),)
+                        if (
+                            value.upper().startswith("N")
+                            or "/" in value
+                            or "-" in value
+                            or re.search(r"\d\.\d", value)
+                        )
+                        and not any(
+                            value.casefold() in synthetic.casefold()
+                            for synthetic in synthetic_identifiers
+                        )
+                    ),
                 )
             )
         )
@@ -392,6 +434,16 @@ class TaskAnalyzer:
             )
             for index, field in enumerate(fields)
         )
+        deliverable, output_structure = self._deliverable(
+            normalized,
+            intent,
+            fields,
+        )
+        authority_boundary = (
+            "synthetic_demo"
+            if "synthetic" in normalized or "synthetisch" in normalized
+            else "public_bauer"
+        )
         return TaskPlan(
             original_question=question,
             locale=locale,
@@ -401,7 +453,39 @@ class TaskAnalyzer:
             exclusions=tuple(exclusions),
             exact_identifiers=identifiers,
             required_qualifiers=tuple(required_qualifiers),
+            deliverable=deliverable,
+            output_structure=output_structure,
+            search_hints=tuple(
+                hint.strip()
+                for hint in search_hints
+                if isinstance(hint, str) and hint.strip()
+            ),
+            comparison_axes=tuple(field.label for field in fields),
+            authority_boundary=authority_boundary,
         )
+
+    @staticmethod
+    def _deliverable(
+        normalized: str,
+        intent: str,
+        fields: tuple[RequiredField, ...],
+    ) -> tuple[str, str]:
+        if intent == "table_row":
+            return "exact_row", "table"
+        field_names = {field.field for field in fields}
+        if "compressor_pressure_evidence" in field_names:
+            return "comparison", "sections"
+        tokens = set(re.findall(r"[a-z0-9-]+", normalized))
+        if "compare" in tokens or "reconcile" in tokens:
+            return "comparison", "sections"
+        if (
+            bool(tokens & {"list", "name", "show"})
+            and bool(tokens & {"product", "products", "portfolio"})
+        ):
+            return "list", "bullets"
+        if "explain" in tokens or "why" in tokens:
+            return "explanation", "sections"
+        return "direct_answer", "prose"
 
     @staticmethod
     def _subquestion_text(
@@ -411,8 +495,8 @@ class TaskAnalyzer:
     ) -> str:
         special = {
             "company_location": (
-                "BAUER KOMPRESSOREN GmbH company address Stablistr. 8 "
-                "81477 Munich Germany headquarters location."
+                "BAUER KOMPRESSOREN GmbH official contact address "
+                "headquarters location."
             ),
             "company_core_business": (
                 "BAUER global leader manufacture medium high pressure air "
@@ -421,6 +505,11 @@ class TaskAnalyzer:
             "company_product_portfolio": (
                 "BAUER product overview compressor systems air and gas "
                 "purification control storage gas measurement accessories."
+            ),
+            "company_product_categories": (
+                "BAUER product portfolio compressor systems breathing air "
+                "industrial gas purification control storage filling gas "
+                "measurement fuel gas accessories."
             ),
             "company_application_scope": (
                 "BAUER breathing air divers firefighters industrial "
@@ -443,9 +532,8 @@ class TaskAnalyzer:
                 "B-DETECTION PLUS m integrated data logger SD card B-CLOUD."
             ),
             "bdetection_pressure_reconciliation": (
-                "B-DETECTION PLUS m maximum system pressure 420 bar and "
-                "2025-03 B-DETECTION PLUS next generation options up to "
-                "450 bar final pressure purge valve i and s."
+                "B-DETECTION PLUS m and next-generation i/s pressure "
+                "technical data source dates purge valve."
             ),
             "n7698_compressor_block_applications": (
                 "High-pressure accessories catalogue exact order number "
@@ -461,12 +549,11 @@ class TaskAnalyzer:
             ),
             "bkool_iii_pressure": (
                 "B-KOOL III complete current technical data row maximum "
-                "operating pressure 350 bar 550 bar."
+                "operating pressure."
             ),
             "bkool_iii_flow": (
                 "B-KOOL III complete current technical data row maximum "
-                "flow 200 700 l/min 200 650 l/min ISO 1217 and 200 420 "
-                "l/min helium argon."
+                "flow rate air ISO 1217 helium argon."
             ),
             "bsafe_nitrox_300_decision": (
                 "B-SAFE headline breathing air applications up to 300 bar "
@@ -474,8 +561,8 @@ class TaskAnalyzer:
             ),
             "bsafe_wording_reconciliation": (
                 "B-SAFE page headline breathing air 300 bar Nitrox 200 bar "
-                "and B-SAFE 300 technical data medium air Nitrox maximum "
-                "operating pressure 410 bar filling pressures 225 330 bar."
+                "and B-SAFE 300 technical data medium maximum operating "
+                "pressure filling pressures."
             ),
         }
         if field.field in special:
@@ -529,6 +616,23 @@ class TaskAnalyzer:
                     ),
                 ),
             )
+        if _is_company_product_list_question(normalized):
+            return (
+                RequiredField(
+                    field="company_product_categories",
+                    label="Documented product and system categories",
+                    match_terms=(
+                        "compressor systems",
+                        "breathing air",
+                        "air and gas purification",
+                        "control",
+                        "storage",
+                        "gas measurement",
+                        "fuel gas",
+                        "accessories",
+                    ),
+                ),
+            )
         if _is_company_overview_question(normalized):
             return (
                 RequiredField(
@@ -576,6 +680,42 @@ class TaskAnalyzer:
                     )
                 )
             )
+            if len(identifiers) >= 2 and (
+                "compare" in normalized or "vergleich" in normalized
+            ):
+                anchors = identifiers[:2]
+                return (
+                    RequiredField(
+                        field="synthetic_comparison_matching",
+                        label="Matching stored attributes",
+                        anchor_terms=anchors,
+                        match_terms=("medium", "capacity", "cooling"),
+                    ),
+                    RequiredField(
+                        field="synthetic_comparison_changed",
+                        label="Changed stored attributes",
+                        anchor_terms=anchors,
+                        match_terms=("pressure", "compressor model"),
+                    ),
+                    RequiredField(
+                        field="synthetic_comparison_linked_records",
+                        label="Differing linked component records",
+                        anchor_terms=anchors,
+                        match_terms=("linked part ids",),
+                    ),
+                    RequiredField(
+                        field="synthetic_comparison_documents",
+                        label="Documents recorded for review",
+                        anchor_terms=anchors,
+                        match_terms=("document ids",),
+                    ),
+                    RequiredField(
+                        field="synthetic_comparison_assumptions",
+                        label="Recorded assumptions requiring approval",
+                        anchor_terms=anchors,
+                        match_terms=("standards", "demo assumption"),
+                    ),
+                )
             fields = [
                 RequiredField(
                     field=f"synthetic_record_{index + 1}",
@@ -585,11 +725,36 @@ class TaskAnalyzer:
                 for index, identifier in enumerate(identifiers)
             ]
             if not fields:
+                match_terms = tuple(
+                    dict.fromkeys(
+                        token
+                        for token in re.findall(
+                            r"[a-z0-9][a-z0-9/-]{2,}",
+                            normalized,
+                        )
+                        if token
+                        not in {
+                            "attributes",
+                            "best",
+                            "closest",
+                            "compatible",
+                            "demo",
+                            "find",
+                            "previous",
+                            "project",
+                            "record",
+                            "show",
+                            "synthetic",
+                            "the",
+                        }
+                    )
+                )[:8]
                 fields.append(
                     RequiredField(
                         field="synthetic_record_evidence",
                         label="Synthetic project or part evidence",
                         anchor_terms=("SYN-",),
+                        match_terms=match_terms,
                     )
                 )
             if "public bauer document" in normalized:
@@ -725,7 +890,7 @@ class TaskAnalyzer:
                 ),
                 RequiredField(
                     field="bdetection_pressure_reconciliation",
-                    label="420/450 bar source reconciliation",
+                    label="Dated pressure-source reconciliation",
                 ),
             )
         if (

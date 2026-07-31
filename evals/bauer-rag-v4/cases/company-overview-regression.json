@@ -31,15 +31,14 @@
       "search_hint": "Bauer products portfolio",
       "expected_status": "complete",
       "required_fields": [
-        "company_core_business",
-        "company_product_portfolio",
-        "company_application_scope"
+        "company_product_categories"
       ],
       "required_answer_terms": [
-        "medium- and high-pressure air and gas compression systems",
+        "breathing-air compressor and filling systems",
         "air and gas purification",
-        "divers and firefighters",
-        "bio-CNG, biogas, hydrogen, and LNG"
+        "compressor controls",
+        "gas-measurement and monitoring equipment",
+        "fuel-gas systems for bio-CNG, biogas, hydrogen, and LNG"
       ],
       "forbidden_answer_terms": [
         "Requested-topic evidence",
@@ -52,15 +51,14 @@
       "search_hint": "Bauer products product range portfolio",
       "expected_status": "complete",
       "required_fields": [
-        "company_core_business",
-        "company_product_portfolio",
-        "company_application_scope"
+        "company_product_categories"
       ],
       "required_answer_terms": [
-        "medium- and high-pressure air and gas compression systems",
+        "breathing-air compressor and filling systems",
         "air and gas purification",
-        "divers and firefighters",
-        "bio-CNG, biogas, hydrogen, and LNG"
+        "compressor controls",
+        "gas-measurement and monitoring equipment",
+        "fuel-gas systems for bio-CNG, biogas, hydrogen, and LNG"
       ],
       "forbidden_answer_terms": [
         "Requested-topic evidence",

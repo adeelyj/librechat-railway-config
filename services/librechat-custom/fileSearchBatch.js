@@ -263,11 +263,22 @@ const normalizeV4Answer = (response, files) => {
   const releaseId =
     typeof body?.release?.public_id === 'string' ? body.release.public_id.trim() : '';
   const validated = body?.validation?.passed === true;
+  const answerMode =
+    typeof body?.validation?.answer_mode === 'string'
+      ? body.validation.answer_mode.trim()
+      : '';
+  const validationFingerprint =
+    typeof body?.validation?.validation_fingerprint === 'string'
+      ? body.validation.validation_fingerprint.trim()
+      : '';
   if (
     !V4_STATUSES.has(status) ||
     !answer ||
     !releaseId ||
-    (status !== 'refused' && !validated)
+    (status !== 'refused' &&
+      (!validated ||
+        !['lossless_deterministic', 'grounded_structured'].includes(answerMode) ||
+        !/^[0-9a-f]{64}$/i.test(validationFingerprint)))
   ) {
     return {
       accepted: false,
@@ -342,6 +353,8 @@ const normalizeV4Answer = (response, files) => {
     coverage: Array.isArray(body.coverage) ? body.coverage : [],
     not_found: Array.isArray(body.not_found) ? body.not_found : [],
     validation: body.validation ?? null,
+    answer_mode: answerMode || null,
+    validation_fingerprint: validationFingerprint || null,
     citations,
   };
 };

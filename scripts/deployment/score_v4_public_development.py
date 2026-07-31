@@ -442,6 +442,8 @@ def score(benchmark: dict[str, Any], *, source_path: Path) -> dict[str, Any]:
                 "system": observation["system"],
                 "repetition": int(observation.get("repetition") or 1),
                 "exact_answer_passed": exact_passed,
+                "token_group_coverage": exact_passed,
+                "admissible_for_answer_quality_gate": False,
                 "claim_results": claim_results,
                 "forbidden_claims_found": forbidden,
                 "incompatible_engineering_claims_found": [],
@@ -572,6 +574,14 @@ def score(benchmark: dict[str, Any], *, source_path: Path) -> dict[str, Any]:
             "public-development B01-B30 rubric only; locked holdout and "
             "combined gold were not read"
         ),
+        "metric_authority": {
+            "token_group_coverage": "diagnostic_only",
+            "admissible_for_answer_quality_gate": False,
+            "reason": (
+                "Substring token groups do not establish task fulfillment, "
+                "factual correctness, requested structure, or presentation hygiene."
+            ),
+        },
         "rubric_sha256": hashlib.sha256(rubric_bytes).hexdigest(),
         "retrieval": {},
         "answers": {
@@ -582,6 +592,11 @@ def score(benchmark: dict[str, Any], *, source_path: Path) -> dict[str, Any]:
             "private_shadow_only": True,
             "production_promotion": False,
             "locked_holdout_opened": False,
+            "answer_quality_gate_passed": False,
+            "answer_quality_gate_reason": (
+                "Requires the separate five-case hard-stop review even when "
+                "exact_answer_passed is true."
+            ),
         },
     }
 

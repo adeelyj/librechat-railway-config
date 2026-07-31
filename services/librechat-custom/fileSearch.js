@@ -277,6 +277,8 @@ const createFileSearchTool = async ({
                 status: final.status,
                 releaseId: final.release_id,
                 validationPassed: final.validation?.passed === true,
+                answerMode: final.answer_mode,
+                validationFingerprint: final.validation_fingerprint,
                 coverage: final.coverage,
                 notFound: final.not_found,
                 directFinal: true,

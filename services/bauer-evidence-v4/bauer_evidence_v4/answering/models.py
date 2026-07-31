@@ -33,6 +33,27 @@ class TaskPlan:
     exclusions: tuple[str, ...]
     exact_identifiers: tuple[str, ...]
     required_qualifiers: tuple[tuple[str, str], ...]
+    deliverable: Literal[
+        "direct_answer",
+        "list",
+        "exact_row",
+        "comparison",
+        "explanation",
+        "refusal",
+    ] = "direct_answer"
+    output_structure: Literal[
+        "prose",
+        "bullets",
+        "table",
+        "sections",
+    ] = "prose"
+    search_hints: tuple[str, ...] = ()
+    comparison_axes: tuple[str, ...] = ()
+    authority_boundary: Literal[
+        "public_bauer",
+        "synthetic_demo",
+        "mixed",
+    ] = "public_bauer"
 
 
 @dataclass(frozen=True, slots=True)
@@ -41,6 +62,23 @@ class EvidenceContext:
     unit: EvidenceUnitContract
     citation: CitationContract
     values: tuple[tuple[str, str, str | None], ...]
+
+
+@dataclass(frozen=True, slots=True)
+class EvidenceFact:
+    fact_id: str
+    field: str
+    display_value: str
+    normalized_value: str | None
+    unit: str | None
+    qualifier: str | None
+    subject: str | None
+    source_document: str
+    source_date: str | None
+    authority: Literal["public_bauer", "synthetic_demo"]
+    evidence_id: str
+    conflict_group: str | None = None
+    uncertainty: str | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -56,6 +94,7 @@ class FieldCoverage:
     values: tuple[tuple[str, str | None], ...]
     evidence_ids: tuple[str, ...]
     detail: str | None = None
+    facts: tuple[EvidenceFact, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)
@@ -64,6 +103,7 @@ class Claim:
     text: str
     values: tuple[str, ...]
     evidence_ids: tuple[str, ...]
+    fact_ids: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)

@@ -37,6 +37,7 @@ const validV4Output = ({
   status = 'complete',
   answer = 'BM 40 supports 350 bar [citation-one].',
   supportedCoverage = 1,
+  fingerprint = 'a'.repeat(64),
 } = {}) => ({
   artifact: {
     file_search: {
@@ -46,6 +47,8 @@ const validV4Output = ({
         releaseId: 'bauer-rag-v4-private-20260729-r1',
         status,
         validationPassed: status !== 'refused',
+        answerMode: status === 'refused' ? null : 'grounded_structured',
+        validationFingerprint: status === 'refused' ? null : fingerprint,
         coverage: Array.from({ length: supportedCoverage }, (_, index) => ({
           field: `field-${index}`,
           state: 'supported',
@@ -247,6 +250,37 @@ test('V4 direct-final envelopes reject unvalidated claims but allow deterministi
     supportedCoverage: 0,
   });
   assert.equal(extractV4DirectFinal(refusal)?.status, 'refused');
+});
+
+test('parallel V4 outputs must be identical or the boundary fails closed', async () => {
+  const contentParts = [];
+  const boundary = createBauerV3FinalBoundary({
+    contentParts,
+    v4AgentIds: 'agent-v4',
+    baseToolEndCallback: async () => {},
+  });
+  boundary.activate({
+    agentId: 'agent-v4',
+    appConfig: appConfig(),
+    primaryConfig: { tools: ['file_search'], edges: [] },
+    eventHandlers: {},
+  });
+  await boundary.toolEndCallback({ output: validV4Output() }, {});
+  await boundary.toolEndCallback(
+    { output: validV4Output({ answer: 'Different validated answer.', fingerprint: 'b'.repeat(64) }) },
+    {},
+  );
+  const client = {
+    contentParts,
+    options: { req: { config: appConfig() } },
+    async sendCompletion() {
+      return { completion: [] };
+    },
+  };
+  boundary.wrapClient(client);
+  assert.deepEqual((await client.sendCompletion()).completion, [
+    { type: 'text', text: DETERMINISTIC_BOUNDARY_REFUSAL },
+  ]);
 });
 
 test('an Agent cannot occupy both V3 and V4 private namespaces', () => {

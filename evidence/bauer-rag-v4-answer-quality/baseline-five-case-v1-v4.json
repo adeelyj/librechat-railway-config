@@ -1,0 +1,273 @@
+{
+  "schema_version": "bauer-rag-v4-answer-quality-baseline-v1",
+  "kind": "sanitized-five-case-visible-answer-baseline",
+  "split": "public-development",
+  "locked_holdout_opened": false,
+  "source": {
+    "run_id": "v1-v2-v3-v4-librechat-development-20260729",
+    "completed_at_utc": "2026-07-29T22:14:16.449635+00:00",
+    "development_cases_sha256": "3619c40bf56955b1fe7f2d689d7d45ed6d5b8d828b87083c58b3d02d2c106e7b",
+    "librechat_overlay_commit": "6982ac9483e649ab83141104c69331e56a8aaa38",
+    "v4_candidate_backend_commit": "1f37865c8ee00a3b5c5ad139ac5ab2d7b1a4fe3f"
+  },
+  "selection": {
+    "method": "sort B01-B30 by SHA-256(seed_sha256 + '|' + case_id)",
+    "seed_sha256": "f5729c6ed7ce85ffc67191d43e455329bc90f666ffccf79e6827d5b68ef038ad",
+    "case_ids": [
+      "B06",
+      "B17",
+      "B10",
+      "B19",
+      "B03"
+    ]
+  },
+  "systems": [
+    "v1",
+    "v2",
+    "v3",
+    "v4"
+  ],
+  "cases": [
+    {
+      "case_id": "B06",
+      "category": "exact_pressure",
+      "prompt": "Based only on the uploaded public Bauer documents, what is the highest documented maximum operating pressure for a Bauer compressor? Name the applicable product families, distinguish compressors from boosters, and cite the exact source page or section. Also explain the difference between maximum operating pressure and shutdown pressure if the source makes that distinction. Do not assume that the most frequently retrieved pressure is the maximum.",
+      "systems": {
+        "v2": {
+          "answer": "Based on the uploaded public Bauer documents, the highest documented **maximum operating pressure** is **520 bar**, as stated in the **GIB26-SP series** water-cooled compressor family.\n\n### Evidence:\n- **Source**: *GIB26-SP series · Water-cooled compressors*, page section “Technical Data”, entry for **GIB 26.12-SP-520**  \n  [V2-1]  \n  > “GIB 26.12-SP-520 | 520 bar”  \n  > Footnote ²: *“Max. operating pressure = maximum set pressure of the safety valve; shutdown pressure is lower.”*\n\nThis confirms:\n- The **GIB26-SP series** includes models up to **520 bar**.\n- The **maximum operating pressure** is defined as the **maximum set pressure of the safety valve**.\n- **Shutdown pressure** is explicitly stated to be **lower** than the maximum operating pressure.\n\n### Compressors vs. Boosters:\n- The **GIB26-SP series** is described as a **water-cooled compressor** family — not a booster. Bauer distinguishes boosters as units that increase pressure from an existing intermediate pressure (e.g., from a pre-compressor), whereas compressors like the GIB26-SP draw from ambient pressure.\n- Other 420 bar units (e.g., **MINI-VERTICUS**, **PE-VE**) are also compressors (not boosters), and their maximum operating pressure is **420 bar**, as documented in:\n  - *MINI-VERTICUS (420 bar) · PREMIUM LINE*, “MV 200/420”, “MV 260/420” entries  \n    [V2-3, V2-8]\n  - *PE-VE (420 bar) · POSEIDON EDITION*, “PE250/420-VE” entry  \n    [V2-4]\n\n### Shutdown Pressure Distinction:\n- As noted in the GIB26-SP documentation, **shutdown pressure is lower than maximum operating pressure**, and the maximum operating pressure is defined as the **safety valve set pressure**. This implies that shutdown (e.g., automatic compressor stop or safety relief) occurs at a pressure below the safety valve’s opening pressure — likely via control system intervention (e.g., pressure switch or controller), while the safety valve serves as a final overpressure protection.\n\n### Summary:\n- **Highest documented maximum operating pressure**: **520 bar**\n- **Applicable product family**: **GIB26-SP series**, model **GIB 26.12-SP-520**\n- **Compressors vs. boosters**: All documented high-pressure units (GIB26-SP, MINI-VERTICUS, PE-VE) are compressors, not boosters; no booster in the corpus exceeds 520 bar.\n- **Shutdown pressure**: Defined as lower than maximum operating pressure; the latter equals the safety valve set pressure.\n\nNo higher maximum operating pressure is documented in the uploaded public Bauer documents.",
+          "answer_sha256": "1ef895e4e925ae37f4f21bacaa58e4606380962a6c0d15999454d4f6a4c5f602",
+          "answer_character_count": 2490,
+          "evidence_count": 8,
+          "elapsed_ms": 35933.89,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v3": {
+          "answer": "Evidence states: Group: GIB 26-SP series | 420 bar; Model designation: GIB 26.12-SP-420; Effective free air delivery ¹: 10400; Effective free air delivery ¹: 624; Effective free air delivery ¹: 367; Maximum operating pressure ²: 420; Maximum operating pressure ²: 6100; Number of stages: 1+4; Rotational speed approx.: 1485; Motor power: 250; Net weight approx.: 4400; Net weight approx.: 9700 [E-CEC5CB485A24].",
+          "answer_sha256": "3d1b3d34aaca932d3bb6eecc0760bc6968e871b7dadabd720d6e22c5a4f31f4a",
+          "answer_character_count": 411,
+          "evidence_count": 1,
+          "elapsed_ms": 31441.39,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v4": {
+          "answer": "Supported result:\n- Compressor maximum-pressure evidence: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf: Highest compressor maximum operating pressure: 525 bar; I Series | VERTICUS: 90–525 bar; I Series | K 22 - K 28: 90–525 bar [citation_4a2d1c091eccd43ed64956bf1bb4e9c7]\n- Booster pressure evidence: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf: BOOSTER AIR COOLED: 25–420 bar; BOOSTER WATER COOLED: 25–520 bar; GIB Series | BK 23 – BK 52: 90–520 bar [citation_e962131b086fa77b196ba2d534cdd9b9]\n- Operating-pressure versus shutdown-pressure evidence: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf: Maximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower [citation_e0e7757ddf613f7f9603c8aa1c1d74c8]",
+          "answer_sha256": "bc7efb1b9d0b8a3f15041c00c3e6af4385574ca6bbe583d169a2ea929627b451",
+          "answer_character_count": 762,
+          "evidence_count": 8,
+          "elapsed_ms": 91030.25,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v1": {
+          "answer": "From the retrieved documents, the highest **maximum operating pressure** explicitly documented for a Bauer compressor is **420 bar**, stated in the German B-NEWS 2020-02 document:\n\n> “reicht nicht für eine Virenneutralisation aus: Erreicht werden in einem Atemluftkompressor maximal Drücke von **420 bar**.”  \n> — *0029-2020-02_B-NEWS_DE_sc-00ef8bf8e9_0ad664a309b54cc7b2d50e9e4ced7609.md*, section discussing limitations of pressure-based virus inactivation.\n\nThis refers to **breathing air compressors**, and the context clarifies that **420 bar** is the *maximum pressure reached* in such units — implying it is the maximum operating pressure for those compressors.\n\nThe applicable product families mentioned in the same document and surrounding context include:\n- **COMPACT-LINE** (portable breathing air compressors)\n- **UNICUS 4i** (all-in-one breathing air production systems)\n- Systems using **B-VIRUS FREE** filters (integrated with above families)\n\nNo explicit mention of **boosters** reaching higher pressures is found in the uploaded documents. The 420 bar figure appears specifically for **compressors**, not boosters.\n\n### Difference between maximum operating pressure and shutdown pressure\n\nThe documents do **not** define or distinguish *shutdown pressure* versus *maximum operating pressure* in the retrieved excerpts. The only pressure-related safety reference is in the B-DETECTION PLUS system description (e.g., *0020-2018-02_B-NEWS_EN_sc-71a66b8ccd_33831d9da22044869e5f07e109625e9a.md*), where it states:\n\n> “In an emergency, they shut down the system before any contaminated air can be filled into the breathing air cylinders.”\n\nThis implies a **shutdown function** is triggered by gas-quality exceedances, not overpressure. No explicit *shutdown pressure* (e.g., a pressure at which the compressor automatically stops for safety) is defined in the uploaded corpus.\n\n### Summary\n\n- **Highest documented maximum operating pressure**: **420 bar**\n- **Applicable product families**: COMPACT-LINE, UNICUS 4i (breathing air compressors)\n- **Compressors vs. boosters**: Only compressors are referenced at this pressure; no booster pressure data found\n- **Shutdown pressure distinction**: Not defined in the uploaded documents\n\nLet me know if you'd like me to search for technical brochures or data sheets that may contain more detailed pressure specifications.",
+          "answer_sha256": "894214a3b41bad37c7c2279ec5734bba4b94d9243582157da1a478ff39b1c44a",
+          "answer_character_count": 2375,
+          "evidence_count": 22,
+          "elapsed_ms": 22856.33,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        }
+      }
+    },
+    {
+      "case_id": "B17",
+      "category": "exact_table",
+      "prompt": "In the BM series 100 bar 50 Hz technical table, give the complete row for BM 6.1/100-15 and preserve the table units.",
+      "systems": {
+        "v1": {
+          "answer": "The search did not return the specific BM series 100 bar 50 Hz technical table with the row for **BM 6.1/100-15**.\n\nLet me try a more targeted search:\n\n\nThe search still did not retrieve the specific **BM 6.1/100-15** row from the BM series 100 bar 50 Hz technical table.\n\nLet me try one more targeted search focusing on the exact model designation:\n\n\nThe search did not retrieve the specific **BM 6.1/100-15** row from the BM series 100 bar 50 Hz technical table.\n\nI will now try a broader search for the BM series table in general:\n\n\nI have not yet retrieved the specific **BM 6.1/100-15** row from the BM series 100 bar 50 Hz technical table.\n\nLet me try searching for the BM series more directly:\n\n\nI have not yet retrieved the specific **BM 6.1/100-15** row from the BM series 100 bar 50 Hz technical table.\n\nGiven the repeated unsuccessful attempts, I must conclude that the requested information — the complete row for **BM 6.1/100-15** in the BM series 100 bar 50 Hz technical table — is **not present in the uploaded Bauer Kompressoren files**.\n\nIf you have access to the original document or can provide more context (e.g., document title, page number, or a screenshot), I can assist further.",
+          "answer_sha256": "bdc699c5b64eb37e99ab3a07d74a142a8256c3af8ce4b4827080281b3409da4b",
+          "answer_character_count": 1202,
+          "evidence_count": 29,
+          "elapsed_ms": 49137.07,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v2": {
+          "answer": "From the retrieved evidence, the complete row for **BM 6.1/100-15** in the **BM series 100 bar, 50 Hz** technical table is:\n\n| Model designation | Effective free air delivery ¹ | Shutdown pressure ² | Number of stages | Rotational speed approx. | Motor power | Net weight approx. |\n|-------------------|-------------------------------|---------------------|------------------|--------------------------|-------------|--------------------|\n| **BM 6.1/100-15** | 630 | 100 | 3 | 1470 | 11 | 435 |\n| **Units** | **l/min** | **bar** | — | **rpm** | **kW** | **kg** |\n\nFootnotes:\n¹ Free air delivery according to ISO 1217, power consumption at atmospheric inlet pressure and max. final pressure.  \n² Max. shutdown pressure. Set pressure of safety valve 10% higher.\n\nSource: [V2-4] in *0060-2026-04_Compressors_for_Industry_EN_N39771_sc*, Page 21.",
+          "answer_sha256": "0c1ab3f7d8013238de5c30b976b4bfea2014a2caea3f5dfd0182a2bc92342a06",
+          "answer_character_count": 841,
+          "evidence_count": 8,
+          "elapsed_ms": 135196.53,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v3": {
+          "answer": "Evidence states: Group: BM series 100 bar – 50 Hz; Model designation: BM 6.1/100-15; Effective free air delivery ¹: 630; Effective free air delivery ¹: 37.8; Effective free air delivery ¹: 22.2; Shutdown pressure ²: 100; Shutdown pressure ²: 1450; Number of stages: 3; Rotational speed approx.: 1470; Motor power: 15; Net weight approx.: 425; Net weight approx.: 935 [E-F3E79EA92852].",
+          "answer_sha256": "381ffbe7a1c9ec37958497ef6ba600424f3133df0af901e2dac81dae03d073a8",
+          "answer_character_count": 384,
+          "evidence_count": 1,
+          "elapsed_ms": 20339.58,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v4": {
+          "answer": "Requested technical data:\n- Effective free air delivery: BM series 100 bar – 50 Hz: 22.2 cfm; BM series 100 bar – 50 Hz: 37.8 m³/h; BM series 100 bar – 50 Hz: 630 l/min; BM 6.1/100-15: 630 l/min; BM 6.1/100-15: 22.2 cfm; BM 6.1/100-15: 37.8 m³/h [citation_4a9d74759a88c05df0c65ed9ce904ead] [citation_1fcef9fb99c897afc059289c5628190a] [citation_c88360097389186d88b109e741d653ad] [citation_f819100b7aca7c23e33e131587bb0147]\n- Shutdown pressure: BM series 100 bar – 50 Hz: 100 bar; BM series 100 bar – 50 Hz: 1450 psig; BM 6.1/100-15: 100 bar; BM 6.1/100-15: 1450 psig [citation_4a9d74759a88c05df0c65ed9ce904ead] [citation_ef6a371a9d12f1882cb5998af65e1149] [citation_4f46da6fa6268623a65732326b6c8f45]\n- Number of stages: BM series 100 bar – 50 Hz: 3; BM 6.1/100-15: 3 [citation_4a9d74759a88c05df0c65ed9ce904ead] [citation_8b3a77c76ee8f506942627b778c87554]\n- Rotational speed approx.: BM series 100 bar – 50 Hz: 1470 rpm; BM 6.1/100-15: 1470 rpm [citation_4a9d74759a88c05df0c65ed9ce904ead] [citation_ea616fda65a7729dff1bd520e1232b8f]\n- Motor power: BM series 100 bar – 50 Hz: 15 kW; BM 6.1/100-15: 15 kW [citation_4a9d74759a88c05df0c65ed9ce904ead] [citation_48b13224fff3a002639632faae993a61]\n- Net weight approx.: BM series 100 bar – 50 Hz: 425 kg; BM series 100 bar – 50 Hz: 935 lbs; BM 6.1/100-15: 935 lbs; BM 6.1/100-15: 425 kg [citation_4a9d74759a88c05df0c65ed9ce904ead] [citation_a7e5244dee70dfeb2be5b715457d641a] [citation_80bd5f93c6dfa351c5de342b18de269a]",
+          "answer_sha256": "96159a8a40c6070c59bf336a5250c1f83a915b04107f889d5fe5b332ebb03518",
+          "answer_character_count": 1458,
+          "evidence_count": 8,
+          "elapsed_ms": 33517.94,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        }
+      }
+    },
+    {
+      "case_id": "B10",
+      "category": "contradiction",
+      "prompt": "Compare B-DETECTION PLUS i/s with B-DETECTION PLUS m for a stationary fire-brigade filling station. Explain which is stationary and which is mobile, what they measure, their logging capabilities, and their documented pressure range. One public product page mentions 420 bar while a newer brochure describes options up to 450 bar. Explain the difference using source dates and wording instead of silently selecting one value.",
+      "systems": {
+        "v2": {
+          "answer": "The search_bauer_twin tool returned `unknown_constraint` for the `category` field “gas detection”, indicating it could not normalize that term. Let me try without the category filter and search for both part names directly.\n\n\nThe search_bauer_twin tool returned only synthetic demo data and did not return explicit matches for “B-DETECTION PLUS i/s” or “B-DETECTION PLUS m” — only generic sensor types (e.g., dew-point monitor, temperature sensor) with max pressures of 420 bar and 500 bar. Since the tool cannot resolve the exact part names, I will now search the uploaded public corpus for documentation that explicitly mentions these product names.\n\n\nBased on the retrieved documentation, here is a detailed comparison of **B-DETECTION PLUS i/s** and **B-DETECTION PLUS m** for a stationary fire-brigade filling station:\n\n---\n\n### **1. Stationary vs. Mobile**\n- **B-DETECTION PLUS i/s**  \n  - Described as **fixed (stationary) online gas measurement systems** ([V2-1], p. 10; [V2-7], p. 41).  \n  - Intended for permanent installation at filling stations, including fire-brigade applications.\n\n- **B-DETECTION PLUS m**  \n  - Described as the **mobile solution** for “on-the-spot” measurements ([V2-3], p. 4; [V2-7], p. 41).  \n  - Can be used with a rechargeable battery for field deployment, without requiring external mains power ([V2-7], p. 41).\n\n---\n\n### **2. What They Measure**\nBoth systems measure the same core gases, with optional extensions:\n- **O₂, CO, CO₂** — standard measurements for all models ([V2-1], p. 10; [V2-7], p. 41).\n- **Absolute humidity** and **total oil value (VOC)** — optional functions for all models ([V2-1], p. 10; [V2-7], p. 41).\n- **Cylinder measurement** — originally exclusive to the *m* model, but now also available for *i* and *s* models in the “next generation” ([V2-1], p. 10).\n\n---\n\n### **3. Logging Capabilities**\n- **B-DETECTION PLUS i/s**  \n  - Measuring values **can be logged at any time and are saved in Excel format on an SD card** ([V2-1], p. 10; [V2-7], p. 41).  \n  - Compatible with **B-CLOUD**, **B-APP**, and **B-CONTROL MICRO +Net** (for full integration and remote monitoring) ([V2-1], p. 10; [V2-7], p. 41).\n\n- **B-DETECTION PLUS m**  \n  - Designed for **rapid on-the-spot measurement**, implying manual or on-demand logging (no explicit mention of continuous logging or SD card/Excel export in the retrieved sources).  \n  - Also **B-CLOUD compatible** ([V2-1], p. 10).\n\n---\n\n### **4. Documented Pressure Range**\nTwo pressure values appear in the sources, with clear documentation of the evolution:\n\n- **420 bar**  \n  - Mentioned in earlier documents:  \n    > “NEW! Measurement of gases and breathing air up to **420 bar** possible” ([V2-7], p. 41; [V2-8], p. 29).  \n  - This appears in brochures dated **2019–2025 Q2**.\n\n- **450 bar**  \n  - Introduced in the **March 2025 B-DETECTION PLUS brochure** ([V2-1], p. 10):  \n    > “The new generation of B-DETECTION PLUS Gas Measurement Systems enables operation with **options up to 450 bar final pressure**. The newly-available purge valve in the **B-DETECTION PLUS i and B-DETECTION PLUS s versions** has been adapted for the larger pressure range.”  \n  - This coincides with the introduction of the **B-DETECTION AIRBOX with 450 bar purge valve** ([V2-1], p. 10).\n\nThus, the **420 bar** figure reflects the **original specification**, while **450 bar** is the **expanded range** introduced in the **2025 “next generation” update**, specifically for the *i* and *s* (stationary) models.\n\n---\n\n### **Summary Table**\n\n| Feature | **B-DETECTION PLUS i/s** | **B-DETECTION PLUS m** |\n|--------|--------------------------|------------------------|\n| **Form factor** | Stationary (fixed installation) | Mobile (portable, battery optional) |\n| **Core measurements** | O₂, CO, CO₂ (standard); humidity, VOC (optional) | Same as i/s |\n| **Cylinder measurement** | Now supported (since 2025 update) | Originally the only model with this capability |\n| **Logging** | Continuous + on-demand; Excel on SD card; B-CLOUD/B-APP compatible | On-demand; B-CLOUD compatible |\n| **Pressure range** | Up to **450 bar** (2025+), previously 420 bar | Up to **420 bar** (no 450 bar mention in retrieved sources) |\n\nAll evidence cited is from **public Bauer documents** dated between 2017 and 2026, with the **450 bar capability explicitly documented in the March 2025 brochure** ([V2-1], p. 10).",
+          "answer_sha256": "130e9c76d125964ef02586b2ba9992b2f9ea4a4349fc4db5f35561748b5721dd",
+          "answer_character_count": 4377,
+          "evidence_count": 29,
+          "elapsed_ms": 82344.51,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v3": {
+          "answer": "I cannot confirm a supported answer from the authorized evidence. The draft failed deterministic claim validation, so no engineering claim was returned.",
+          "answer_sha256": "ada15490eae719f37f64b1e2568323b0827e574213bbb3cd8ada95c554093b78",
+          "answer_character_count": 152,
+          "evidence_count": 1,
+          "elapsed_ms": 40205.73,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v4": {
+          "answer": "Supported result:\n- Stationary B-DETECTION PLUS i/s evidence: B-DETECTION PLUS i/s is the stationary, continuous online system; the integrated and stand-alone variants continuously monitor breathing-air quality. [citation_f0ae1ac419e7111f9b3194a715153def]\n- Mobile B-DETECTION PLUS m evidence: B-DETECTION PLUS m is the mobile, portable case-based system for measurements at cylinders, compressors, or the intake. [citation_f93f63c403c7651decbe8e116e69e4e6]\n- Measured gases and optional measurements: Both systems measure CO, CO2, and O2; absolute humidity and residual oil/VOC measurement are documented as optional. [citation_f0ae1ac419e7111f9b3194a715153def] [citation_f93f63c403c7651decbe8e116e69e4e6]\n- Logging and remote-access capabilities: The stationary i/s variants are B-CLOUD ready and log measurement values; the mobile m variant has an integrated SD-card data logger and B-CLOUD/B-APP remote access. [citation_0f0b75edb25d78dae1d6635530b2075c] [citation_a13d3e3be3da7f814561e7c0a864f174]\n- 420/450 bar source reconciliation: The B-DETECTION PLUS m product evidence documents a 420 bar maximum. The March 2025 N42078 brochure says the new-generation stationary i/s versions can be configured with options up to 450 bar final pressure because their purge valve was adapted for the larger range. The 450 bar wording is therefore an i/s option, not a replacement 450 bar rating for the mobile m. [citation_71ecc2358f54db9194c75f1220227e3c] [citation_92cc52856fe69750ffe653b28a8a31a7]",
+          "answer_sha256": "ee67e110cc95bbf3bc8455dc329e3bd796ccc9ca9f9405ea2fad6f793c127ef6",
+          "answer_character_count": 1494,
+          "evidence_count": 11,
+          "elapsed_ms": 128653.59,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v1": {
+          "answer": "The search for both **B-DETECTION PLUS i/s** and **B-DETECTION PLUS m** returned `unknown_constraint` due to an unrecognized category (`gas detection`). Let’s try without the category filter and search for the part names directly.\n\n\nThe search for both **B-DETECTION PLUS i/s** and **B-DETECTION PLUS m** returned only generic synthetic matches (e.g., dew-point sensor, temperature sensor), not the exact part names. Since the tool does not recognize the part names directly, let’s search the public corpus for documentation that mentions these models.\n\n\nThe file search did not return any direct mentions of **B-DETECTION PLUS i/s** or **B-DETECTION PLUS m**, nor did the synthetic part search. Let’s try searching for “B-DETECTION” alone, and also look for documentation about fire-brigade filling stations.\n\n\nThe file search still did not yield direct mentions of **B-DETECTION PLUS i/s** or **B-DETECTION PLUS m**, nor did it clarify the pressure range discrepancy (420 bar vs. 450 bar). Let’s try searching for “B-DETECTION” alone and also look for documentation about pressure ranges and logging.\n\n\nFound it! The file `0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994_4d988a9bd785418b92bbf81addb9411b.md` is the **B-DETECTION PLUS** brochure (2025). Let’s retrieve more details from it.\n\n\nLet me retrieve the full content of the B-DETECTION PLUS brochure to answer the question precisely.\n\n\nLet me retrieve the full content of the B-DETECTION PLUS brochure to answer the question precisely.\n\n\nLet me retrieve the full content of the B-DETECTION PLUS brochure to answer the question precisely.\n\n\nLet me search for the specific pressure range and configuration details for B-DETECTION PLUS i/s and m.\n\n\nLet me try a more targeted search for the pressure range and configuration of B-DETECTION PLUS i/s and m.\n\n\nThe search for **B-DETECTION PLUS i/s** and **B-DETECTION PLUS m** has not yielded direct confirmation of their pressure ranges (420 bar vs. 450 bar) or configuration differences (stationary vs. mobile) in the uploaded corpus.\n\nThe only confirmed detail is from the brochure `0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994_4d988a9bd785418b92bbf81addb9411b.md`, which confirms the existence of the **B-DETECTION PLUS** system and highlights features like:\n- Semi-automatic calibration,\n- Automatic bump test,\n- Extended safety concept (CO sensor check every 24 hours),\n- Connection for test gases.\n\nHowever, the brochure does not explicitly mention:\n- The difference between **i/s** and **m** variants,\n- Pressure ranges of 420 bar vs. 450 bar,\n- Stationary vs. mobile configurations.\n\nGiven the absence of this information in the uploaded documents, I must conclude:\n\n**The requested information about the pressure range (420 bar vs. 450 bar) and configuration differences (stationary vs. mobile) for B-DETECTION PLUS i/s and m was not found in the Bauer Kompressoren files.**",
+          "answer_sha256": "d38a836b58bfbd15f0ef50025b98c91cf0114bb8b499cd92f1e83f1553885f8a",
+          "answer_character_count": 2903,
+          "evidence_count": 98,
+          "elapsed_ms": 342869.69,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        }
+      }
+    },
+    {
+      "case_id": "B19",
+      "category": "exact_product_limit",
+      "prompt": "What are the documented maximum operating pressures and maximum flow rates for B-KOOL III? State the separate helium and argon flow range and cite the technical data.",
+      "systems": {
+        "v3": {
+          "answer": "The documented maximum operating pressure for the B-KOOL III is 350 bar or 550 bar [E-67F6F080AFFA]. The maximum flow rate for the B-KOOL III is 200–700 l/min (10 l cylinder filling from 0–200 bar), 200–650 l/min (according to ISO 1217), and 200–420 l/min (helium & argon) [E-061D14371A86]. The flow range for helium and argon is 200–420 l/min [E-061D14371A86].",
+          "answer_sha256": "9fd44c7b304a08a06a4aa9cc781dc4e2ddc599eefc847d5a17395bab8261feb6",
+          "answer_character_count": 361,
+          "evidence_count": 1,
+          "elapsed_ms": 22466.16,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v4": {
+          "answer": "Supported result:\n- B-KOOL III maximum operating pressures: B-KOOL III maximum operating pressure: 350 bar / 550 bar. [citation_e6e0e15049f0fcfc43530211ae6d66d1]\n- B-KOOL III maximum flow rates: B-KOOL III maximum flow rates: 200–700 l/min for 10 l cylinder filling from 0–200 bar; 200–650 l/min according to ISO 1217 for air; and 200–420 l/min for helium and argon. [citation_c70616c2c8bbdbac6171a3fc5fc23288]",
+          "answer_sha256": "f1411526778a4e8e7a2b098d8f4c67351997c35f3e12560ef38e5c08c44ea1e7",
+          "answer_character_count": 410,
+          "evidence_count": 3,
+          "elapsed_ms": 18141.32,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v1": {
+          "answer": "The search did not return specific technical data for **B-KOOL III**, including maximum operating pressures or flow rates for helium and argon. Let me try a more targeted search.\n\n\nThe search still did not yield specific technical data for **B-KOOL III**, including maximum operating pressures or helium/argon flow ranges.\n\nLet me try one more targeted search focusing on cooling systems or cryogenic applications, as B-KOOL III is likely related to gas cooling or liquefaction.\n\n\nAfter three targeted searches, no documented technical specifications for **B-KOOL III**, including maximum operating pressures or helium/argon flow ranges, were found in the attached BAUER files.\n\n**Conclusion**: The requested technical data for B-KOOL III (maximum operating pressures and maximum flow rates, including separate helium and argon flow ranges) was not found in the provided BAUER documentation.\n\nIf you have a specific document reference or part number for B-KOOL III, I can refine the search further.",
+          "answer_sha256": "09458f7fbd7f0c9d43ffc7f13fb92c7d3df05b66f47c91dda26f734a0f3bafa9",
+          "answer_character_count": 998,
+          "evidence_count": 30,
+          "elapsed_ms": 29251.8,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v2": {
+          "answer": "From the documented technical data for **B-KOOL III**, the maximum operating pressures and maximum flow rates are as follows:\n\n### Maximum Operating Pressure:\n- **350 bar / 550 bar**  \n  *(Source: [V2-1], [V2-2], [V2-3])*\n\n### Maximum Flow Rates:\n- **200–700 l/min** (for 10 L cylinder filling from 0–200 bar, breathing air)  \n- **200–650 l/min** (according to ISO 1217, air)  \n- **200–420 l/min (helium & argon)**  \n  *(Source: [V2-1], [V2-2], [V2-3])*\n\nThe **helium and argon flow range** is explicitly stated as **200–420 l/min** in all three technical data tables ([V2-1], [V2-2], [V2-3]).\n\nNote: The B-KOOL III is designed for multiple media, including helium and argon, and the reduced flow range for these gases reflects their different thermodynamic properties compared to air.\n\nLet me know if you need the data in different units or further breakdown by medium.",
+          "answer_sha256": "7a80566afddbe5666386b46f4a3592bb6be220e37aa2c4b3a59f1bd0515b32da",
+          "answer_character_count": 870,
+          "evidence_count": 6,
+          "elapsed_ms": 18113.36,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        }
+      }
+    },
+    {
+      "case_id": "B03",
+      "category": "structured_comparison",
+      "prompt": "Compare synthetic projects SYN-BK-N2-420-500 and SYN-BK-N2-365-500. Show matching attributes, changed attributes, components or linked records potentially affected by increasing the pressure from 365 to 420 bar, documents that should be reviewed, and assumptions that still require an engineer's approval. Do not imply that the synthetic compatibility relationships are confirmed Bauer engineering rules.",
+      "systems": {
+        "v3": {
+          "answer": "No evidence confirms that the synthetic compatibility relationships between the two projects are validated per Bauer engineering rules.",
+          "answer_sha256": "bca7a543243d7386f2f124a6b3484c07fcb674394d281737337e619065cd95b2",
+          "answer_character_count": 135,
+          "evidence_count": 1,
+          "elapsed_ms": 51194.69,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v4": {
+          "answer": "No supported result from authorized evidence:\nNot established in the authorized Bauer evidence: SYN-BK-N2-420-500 synthetic-record evidence, SYN-BK-N2-365-500 synthetic-record evidence.\nMissing or unresolved fields: SYN-BK-N2-420-500 synthetic-record evidence, SYN-BK-N2-365-500 synthetic-record evidence.",
+          "answer_sha256": "27fd2f98de4088c5a04254ca48e182d15d79b30bdfe3657e52524d206a9c37d3",
+          "answer_character_count": 305,
+          "evidence_count": 1,
+          "elapsed_ms": 18039.64,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v1": {
+          "answer": "Based on the synthetic project comparison, here is a structured analysis of the differences between **SYN-BK-N2-420-500** and **SYN-BK-N2-365-500**, with emphasis on the impact of increasing pressure from 365 to 420 bar:\n\n---\n\n### ✅ Matching Attributes (Unchanged)\n| Attribute | Value |\n|---------|-------|\n| Application sector | Industrial gas |\n| Medium | Nitrogen |\n| Capacity | 500 l/min |\n| Compressor family | N2 Booster |\n| Topology | Booster |\n| Cooling | Water-cooled |\n| Control package | B-CONTROL MICRO synthetic configuration |\n| Purification package | Synthetic nitrogen-compatible filtration package |\n| Installation | Indoor skid, service access on three sides |\n| Operating environment | Temperate industrial environment, 5–40 °C |\n| Standards | CE demo assumption, four-eyes engineering review required |\n\n---\n\n### ⚠️ Changed Attributes (Directly Affected by Pressure Increase)\n| Attribute | SYN-BK-N2-365-500 | SYN-BK-N2-420-500 | Implication |\n|---------|------------------|------------------|-------------|\n| **Target pressure** | 365 bar | 420 bar | Requires pressure-rated components (e.g., piping, valves, vessels) |\n| **Compressor model** | SYN-N2B-365 | SYN-N2B-420 | Different compressor stage design or materials to handle higher pressure |\n| **Storage & filling package** | Synthetic 365-bar package | Synthetic 420-bar package | Higher-pressure-rated storage vessels, piping, and filling stations required |\n\n---\n\n### 🔍 Components Potentially Affected by Pressure Increase (365 → 420 bar)\n*(Note: These are inferred from standard pressure-system engineering principles; not confirmed Bauer rules.)*\n\n| Component | Potential Impact |\n|----------|-----------------|\n| Compressor housing & rotors | May require higher-grade alloys or thicker walls |\n| High-pressure piping & fittings | Must be re-qualified for 420 bar (e.g., ISO 15548, ASME B31.3) |\n| Valves (check, isolation, relief) | Must be rated ≥420 bar; relief valve setpoint may need adjustment |\n| Storage vessels | Must be re-certified for 420 bar working pressure |\n| Seals & gaskets | May require metal-seal or high-pressure elastomer alternatives |\n| Instrumentation (pressure transmitters, gauges) | Must support 420 bar range and overpressure tolerance |\n| Control system safety interlocks | May need updated pressure thresholds and shutdown logic |\n\n---\n\n### 📄 Documents That Should Be Reviewed\nBoth projects reference the same document IDs:  \n- **DOC-B-NITROX**  \n- **DOC-INDUSTRY**  \n- **DOC-PRODUCT-OVERVIEW**\n\nThese likely contain:\n- General nitrogen booster design assumptions  \n- Pressure-classification guidelines  \n- Product family specifications (e.g., N2 Booster series limits)\n\nSince the pressure increase crosses a threshold (365 → 420 bar), the following should be reviewed:\n- **Pressure equipment design calculations** (e.g., wall thickness, fatigue, ASME VIII Div. 1/2 compliance)  \n- **Relief device sizing reports** (e.g., API 520/521 for overpressure scenarios)  \n- **Piping stress analysis reports** (if applicable)  \n- **Risk assessment / HAZOP documentation** (especially for overpressure scenarios)\n\n---\n\n### ⚠️ Assumptions Requiring Engineer’s Approval\nThe comparison output explicitly states:  \n> *“CE demo assumption”, “four-eyes engineering review required”*\n\nAdditional assumptions likely requiring formal engineering sign-off:\n- **Material compatibility** at 420 bar with nitrogen (risk of embrittlement or adiabatic compression ignition)  \n- **Seal integrity** under cyclic pressure excursions (e.g., compressor start/stop)  \n- **Support structure integrity** for heavier 420-bar skid (if weight increased)  \n- **Electrical safety** (e.g., motor overload settings, explosion protection for higher power draw)  \n- **Regulatory compliance** (e.g., PED 2014/68/EU Article 3.2 for >25 bar·L vessels — 420 bar likely triggers stricter scrutiny)\n\n---\n\n**Disclaimer**:  \nAll data above is derived from the synthetic demo dataset (`bauer_synthetic_demo_v1`). Project, part, and compatibility records are **not confirmed Bauer Kompressoren master data**. Engineering validation is required before implementation.",
+          "answer_sha256": "48a010fe292314152982f5aa3f5b4374e4e40301fe3f5b8c73fdf5074db6bdfe",
+          "answer_character_count": 4127,
+          "evidence_count": 1,
+          "elapsed_ms": 29959.59,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        },
+        "v2": {
+          "answer": "Based on the synthetic project comparison, here is a structured analysis of **SYN-BK-N2-420-500** (420 bar) vs. **SYN-BK-N2-365-500** (365 bar):\n\n---\n\n### ✅ Matching Attributes (Unchanged)\n\n| Attribute | Value |\n|---------|-------|\n| Application sector | Industrial gas |\n| Medium | Nitrogen |\n| Capacity | 500 l/min |\n| Compressor family | N2 Booster |\n| Topology | Booster |\n| Cooling | Water-cooled |\n| Control package | B-CONTROL MICRO synthetic configuration |\n| Purification package | Synthetic nitrogen-compatible filtration package |\n| Installation | Indoor skid, service access on three sides |\n| Operating environment | Temperate industrial environment, 5–40 °C |\n| Standards | CE demo assumption, four-eyes engineering review required |\n\n---\n\n### 🔁 Changed Attributes (Due to Pressure Increase from 365 → 420 bar)\n\n| Attribute | 365 bar | 420 bar | Notes |\n|---------|---------|---------|-------|\n| **Pressure** | 365 bar | 420 bar | Primary change; affects structural, sealing, and safety design |\n| Compressor model | SYN-N2B-365 | SYN-N2B-420 | Higher-pressure variant required |\n| Storage & filling package | Synthetic 365-bar package | Synthetic 420-bar package | Components rated for ≥420 bar needed |\n\n---\n\n### ⚠️ Components & Linked Records Potentially Affected\n\n| Component / System | Potential Impact of Pressure Increase |\n|-------------------|----------------------------------------|\n| Compressor stage(s) | May require additional compression stages or reinforced housing |\n| Seals & gaskets | Must be re-qualified for 420 bar (e.g., elastomer compatibility, metal seals) |\n| Piping & fittings | Wall thickness, flange ratings, and support structures may need redesign |\n| Storage vessels | Must be rated for ≥420 bar (e.g., ASME BPVC Section VIII Div. 1 or EN 13445) |\n| Safety valves & pressure relief | Set points and sizing must be updated for 420 bar |\n| Control system logic | High-pressure trip points, interlocks, and alarms may need recalibration |\n| Cooling system | May require increased heat removal capacity due to higher compression work |\n\n> 🔍 **Note**: These are *synthetic* project records — no engineering validation is implied.\n\n---\n\n### 📄 Documents That Should Be Reviewed\n\nBoth projects reference the same document IDs:  \n- **DOC-B-NITROX**  \n- **DOC-INDUSTRY**  \n- **DOC-PRODUCT-OVERVIEW**\n\nReview these for:\n- Pressure rating assumptions for components (especially storage/filling package)\n- Material compatibility at 420 bar\n- Safety and emergency shutdown logic\n- CE certification scope and conformity declarations (note: “CE demo assumption” is flagged)\n\n---\n\n### 🧠 Assumptions Requiring Engineer’s Approval\n\n| Assumption | Reason for Review |\n|-----------|-------------------|\n| “CE demo assumption” | CE marking for 420 bar may require full conformity assessment (e.g., Notified Body involvement) |\n| “Four-eyes engineering review required” | Mandatory for pressure boundary changes; must be documented |\n| Synthetic filtration package compatibility | Must be verified for 420 bar operation (e.g., no particle shedding, pressure drop limits) |\n| Water-cooling capacity | Higher discharge temperatures at 420 bar may challenge cooling system limits |\n\n---\n\n> ⚠️ **Disclaimer**: All data above originates from the **synthetic demo dataset** and is not confirmed Bauer Kompressoren master data. Compatibility, part interchangeability, and engineering rules are not validated. Always consult official engineering documentation and involve qualified engineers before implementation.",
+          "answer_sha256": "7b60dc3118398735d13936b3658c041e640a86f7755f8f0aea12e5e77cb89da2",
+          "answer_character_count": 3529,
+          "evidence_count": 1,
+          "elapsed_ms": 26833.15,
+          "http_status": 200,
+          "conversation_deleted": true,
+          "unauthorized_result_count": 0
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "This artifact contains visible answers, not retrieved evidence bodies.",
+    "Five public-development cases do not establish broad accuracy.",
+    "Token-group presence is diagnostic only and cannot pass a case.",
+    "Owner acceptance remains separate."
+  ]
+}

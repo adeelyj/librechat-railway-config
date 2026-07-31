@@ -1,0 +1,55 @@
+{
+  "schema_version": "bauer-rag-v4-answer-quality-fedora-carry-forward-v1",
+  "kind": "exact-migration-operational-rehearsal-evidence",
+  "evaluated_at_utc": "2026-07-31T20:54:40.7517444Z",
+  "passed": true,
+  "basis": {
+    "prior_rehearsal_path": "D:/02_Code/LibreChat_Setup-rag-v4/tmp/v4-development/wp8-fedora-postgresql-7migrations.json",
+    "prior_rehearsal_sha256": "122d75b725cfd06ae849f13d64c7759ddbf34f92a07407926c8324a8778a5555",
+    "prior_run_id": "v4-wp8-007-20260729",
+    "prior_generated_at_utc": "2026-07-29T14:57:29.109567+00:00",
+    "server_version": "18.3",
+    "migration_count": 7,
+    "exact_lf_normalized_migration_checksums_match": true
+  },
+  "verified_controls": {
+    "forward_migration_cycles": 2,
+    "rollback_cycles": 2,
+    "failed_migration_atomicity": true,
+    "exact_runtime_roles": 5,
+    "privileged_runtime_roles": 0,
+    "authorized_projection_count": 1,
+    "unauthorized_projection_count": 0,
+    "nonready_projection_count": 0,
+    "ready_release_pin_count": 1,
+    "nonready_release_pin_count": 0,
+    "client_release_mutation": "rejected",
+    "active_release_pointer_count": 0,
+    "expired_worker_lease_requeued": true,
+    "bounded_retry_status": "dead",
+    "api_unauthorized_mutation_failed_closed": true,
+    "audit_body_redaction": true,
+    "cleanup_verified": true
+  },
+  "answer_quality_change_scope": {
+    "migration_files_changed": false,
+    "rollback_files_changed": false,
+    "role_or_rls_sql_changed": false,
+    "release_source_accounting_changed": "new V4 candidate extends the preserved 373-member V3 source set with one separately hashed V4-only synthetic source",
+    "release_source_accounting_local_tests_passed": 7,
+    "expected_v3_source_count": 373,
+    "expected_v4_source_count": 374,
+    "v4_source_contract_sha256": "ad10b44f9dbac8ba6ee7ec62f558fa28518465044b31b7bdad02f8dcfa908c80"
+  },
+  "fresh_rehearsal_attempt": {
+    "attempted": true,
+    "run_id": "v4aq-20260731-r1",
+    "result": "transport_blocked",
+    "meaning": "the configured Fedora Tailscale node was offline and the stale caemachine address refused SSH; no PostgreSQL command ran",
+    "railway_used_as_substitute": false
+  },
+  "locked_holdout_opened": false,
+  "railway_mutated": false,
+  "librechat_mutated": false,
+  "credentials_or_connection_details_emitted": false
+}

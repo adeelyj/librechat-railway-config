@@ -64,7 +64,7 @@
       "expected_status": "not_found",
       "required_fields": ["requested_topic_evidence"],
       "required_answer_terms": [
-        "I could not establish this from the authorized Bauer evidence"
+        "I could not establish the requested information from the authorized evidence"
       ],
       "forbidden_answer_terms": [
         "Supported result:",

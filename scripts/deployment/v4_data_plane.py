@@ -10,10 +10,24 @@ from typing import Any
 from urllib.parse import quote
 
 
-EXPECTED_SOURCE_COUNT = 373
-EXPECTED_SOURCE_CONTRACT = (
+V3_SOURCE_COUNT = 373
+EXPECTED_SOURCE_COUNT = 374
+V3_SOURCE_CONTRACT = (
     "40049a12aacb198018a633905d793c8ef9011403f3fdbcd34ed7fe0792ab2580"
 )
+SYNTHETIC_EXTERNAL_SOURCE_ID = "synthetic-demo-v1"
+SYNTHETIC_FILENAME = "bauer-synthetic-demo-v1.html"
+SYNTHETIC_SHA256 = (
+    "d1653edcab0b6dc501230f8d2f077880a3066f087fa5ca937394293d9cbde1ea"
+)
+SYNTHETIC_BYTE_SIZE = 12972
+EXPECTED_SOURCE_CONTRACT = hashlib.sha256(
+    (
+        f"{V3_SOURCE_CONTRACT}|{SYNTHETIC_EXTERNAL_SOURCE_ID}|"
+        f"{SYNTHETIC_SHA256}"
+    ).encode("utf-8")
+).hexdigest()
+SYNTHETIC_NAMESPACE = uuid.UUID("4ea7ca18-2b10-4de0-96c3-fda17bc3aa54")
 LOGIN_ROLES = {
     "bauer_v3_shadow_reader_login": "bauer_rag_v4_reader",
     "bauer_v3_shadow_ingester_login": "bauer_rag_v4_worker",
@@ -42,6 +56,47 @@ def _uuid(value: Any, name: str) -> str:
 
 def _digest(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+def _synthetic_source(value: Any) -> dict[str, Any]:
+    if not isinstance(value, dict):
+        raise DataPlaneError("setup requires a staged synthetic source manifest")
+    digest = _required(value.get("content_sha256"), "content_sha256")
+    if digest != SYNTHETIC_SHA256:
+        raise DataPlaneError("synthetic source digest is not the reviewed fixture")
+    byte_size = int(value.get("byte_size", 0))
+    if byte_size != SYNTHETIC_BYTE_SIZE:
+        raise DataPlaneError("synthetic source byte size is not the reviewed fixture")
+    object_key = _required(value.get("object_key"), "object_key")
+    expected_suffix = (
+        f"sha256/{digest[:2]}/{digest[2:4]}/{digest}.html"
+    )
+    if (
+        "\\" in object_key
+        or object_key.startswith("/")
+        or ".." in object_key.split("/")
+        or not object_key.endswith(expected_suffix)
+    ):
+        raise DataPlaneError("synthetic source object key is invalid")
+    if value.get("read_after_write_verified") is not True:
+        raise DataPlaneError("synthetic source was not read-after-write verified")
+    return {
+        "external_source_id": SYNTHETIC_EXTERNAL_SOURCE_ID,
+        "original_filename": SYNTHETIC_FILENAME,
+        "content_sha256": digest,
+        "byte_size": byte_size,
+        "media_type": "text/html",
+        "object_key": object_key,
+        "source_id": str(
+            uuid.uuid5(
+                SYNTHETIC_NAMESPACE,
+                f"source:{SYNTHETIC_EXTERNAL_SOURCE_ID}",
+            )
+        ),
+        "source_version_id": str(
+            uuid.uuid5(SYNTHETIC_NAMESPACE, f"version:{digest}")
+        ),
+    }
 
 
 def _load_request() -> dict[str, Any]:
@@ -89,6 +144,11 @@ def _load_request() -> dict[str, Any]:
     ):
         raise DataPlaneError("database transport contract mismatch")
     normalized["evaluation"] = value.get("evaluation")
+    normalized["synthetic_source"] = (
+        _synthetic_source(value.get("synthetic_source"))
+        if operation == "setup"
+        else None
+    )
     return normalized
 
 
@@ -106,8 +166,8 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
     version = connection.execute(
         "SELECT max(version) FROM bauer_rag_v4.schema_migrations"
     ).fetchone()[0]
-    if int(version or 0) != 6:
-        raise DataPlaneError("V4 schema is not at migration 006")
+    if int(version or 0) != 7:
+        raise DataPlaneError("V4 schema is not at migration 007")
     v3 = connection.execute(
         """
         SELECT status, expected_source_count
@@ -116,7 +176,11 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
         """,
         (request["v3_source_release_id"],),
     ).fetchone()
-    if v3 is None or str(v3[0]) != "ready" or int(v3[1]) != 373:
+    if (
+        v3 is None
+        or str(v3[0]) != "ready"
+        or int(v3[1]) != V3_SOURCE_COUNT
+    ):
         raise DataPlaneError("V3 source release is not the fixed ready release")
     member_count = connection.execute(
         """
@@ -126,8 +190,11 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
         """,
         (request["v3_source_release_id"],),
     ).fetchone()[0]
-    if int(member_count) != EXPECTED_SOURCE_COUNT:
+    if int(member_count) != V3_SOURCE_COUNT:
         raise DataPlaneError("V3 source membership is not 373")
+    synthetic = request["synthetic_source"]
+    if not isinstance(synthetic, dict):
+        raise DataPlaneError("synthetic source manifest is absent")
     for login, group in LOGIN_ROLES.items():
         exists = connection.execute(
             "SELECT 1 FROM pg_roles WHERE rolname = %s",
@@ -141,6 +208,7 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
             """
             INSERT INTO bauer_rag_v4.tenants (tenant_id, slug)
             VALUES (%s, 'bauer-v4-shadow')
+            ON CONFLICT (tenant_id) DO NOTHING
             """,
             (request["tenant_id"],),
         )
@@ -150,6 +218,7 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
                 knowledge_base_id, tenant_id, slug
             )
             VALUES (%s, %s, 'bauer-corpus-v4')
+            ON CONFLICT (knowledge_base_id) DO NOTHING
             """,
             (request["knowledge_base_id"], request["tenant_id"]),
         )
@@ -159,6 +228,7 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
                 principal_id, tenant_id, external_subject_sha256
             )
             VALUES (%s, %s, %s)
+            ON CONFLICT (principal_id) DO NOTHING
             """,
             (
                 request["principal_id"],
@@ -208,6 +278,7 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
               ON version.source_version_id = member.source_version_id
             WHERE member.release_id = %s
             ORDER BY member.ordinal
+            ON CONFLICT (source_id) DO NOTHING
             """,
             (
                 request["tenant_id"],
@@ -234,6 +305,7 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
               ON object.sha256 = version.sha256
             WHERE member.release_id = %s
             ORDER BY member.ordinal
+            ON CONFLICT (source_version_id) DO NOTHING
             """,
             (
                 request["tenant_id"],
@@ -268,6 +340,8 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
             SELECT %s, %s, %s, member.source_id
             FROM bauer_rag_v3.release_sources AS member
             WHERE member.release_id = %s
+            ON CONFLICT (tenant_id, knowledge_base_id, principal_id, source_id)
+            DO NOTHING
             """,
             (
                 request["tenant_id"],
@@ -291,6 +365,93 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
                 request["knowledge_base_id"],
                 request["release_id"],
                 request["v3_source_release_id"],
+            ),
+        )
+        connection.execute(
+            """
+            INSERT INTO bauer_rag_v4.source_documents (
+                source_id, tenant_id, knowledge_base_id,
+                external_source_id, original_filename, authority
+            )
+            VALUES (%s, %s, %s, %s, %s, 'derived_verified')
+            ON CONFLICT (source_id) DO NOTHING
+            """,
+            (
+                synthetic["source_id"],
+                request["tenant_id"],
+                request["knowledge_base_id"],
+                synthetic["external_source_id"],
+                synthetic["original_filename"],
+            ),
+        )
+        connection.execute(
+            """
+            INSERT INTO bauer_rag_v4.source_versions (
+                source_version_id, tenant_id, knowledge_base_id,
+                source_id, content_sha256, byte_size, media_type,
+                object_key
+            )
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+            ON CONFLICT (source_version_id) DO NOTHING
+            """,
+            (
+                synthetic["source_version_id"],
+                request["tenant_id"],
+                request["knowledge_base_id"],
+                synthetic["source_id"],
+                synthetic["content_sha256"],
+                synthetic["byte_size"],
+                synthetic["media_type"],
+                synthetic["object_key"],
+            ),
+        )
+        connection.execute(
+            """
+            INSERT INTO bauer_rag_v4.release_sources (
+                tenant_id, knowledge_base_id, release_id, source_id,
+                source_version_id, ordinal
+            )
+            SELECT %s, %s, %s, %s, %s, coalesce(max(ordinal), -1) + 1
+            FROM bauer_rag_v4.release_sources
+            WHERE release_id = %s
+            """,
+            (
+                request["tenant_id"],
+                request["knowledge_base_id"],
+                request["release_id"],
+                synthetic["source_id"],
+                synthetic["source_version_id"],
+                request["release_id"],
+            ),
+        )
+        connection.execute(
+            """
+            INSERT INTO bauer_rag_v4.principal_source_grants (
+                tenant_id, knowledge_base_id, principal_id, source_id
+            )
+            VALUES (%s, %s, %s, %s)
+            ON CONFLICT (tenant_id, knowledge_base_id, principal_id, source_id)
+            DO NOTHING
+            """,
+            (
+                request["tenant_id"],
+                request["knowledge_base_id"],
+                request["principal_id"],
+                synthetic["source_id"],
+            ),
+        )
+        connection.execute(
+            """
+            INSERT INTO bauer_rag_v4.compilation_jobs (
+                tenant_id, knowledge_base_id, release_id, source_id
+            )
+            VALUES (%s, %s, %s, %s)
+            """,
+            (
+                request["tenant_id"],
+                request["knowledge_base_id"],
+                request["release_id"],
+                synthetic["source_id"],
             ),
         )
     return _status(connection, request)

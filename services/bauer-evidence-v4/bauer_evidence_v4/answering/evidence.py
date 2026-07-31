@@ -142,7 +142,11 @@ class EvidenceMaterializer:
             ),
             page_count=document.page_count,
             source_sha256=document.source_sha256,
-            authority="original",
+            authority=(
+                "derived_verified"
+                if "bauer-synthetic-demo" in document.source_filename.casefold()
+                else "original"
+            ),
         )
         unit = EvidenceUnitContract(
             evidence_id=projection.projection_id,

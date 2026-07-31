@@ -1,0 +1,654 @@
+{
+  "schema_version": "bauer-rag-v4-answer-quality-local-v1",
+  "generated_at": "2026-07-31T21:26:04.790073+00:00",
+  "kind": "local-five-case-repaired-v4",
+  "split": "public-development",
+  "locked_holdout_opened": false,
+  "selection": {
+    "method": "sort B01-B30 by SHA-256(seed_sha256 + '|' + case_id)",
+    "seed_sha256": "f5729c6ed7ce85ffc67191d43e455329bc90f666ffccf79e6827d5b68ef038ad",
+    "case_ids": [
+      "B06",
+      "B17",
+      "B10",
+      "B19",
+      "B03"
+    ]
+  },
+  "historical_baseline_sha256": "4dcea9b410d9aa250a42ed26d5e94d79e0389ea46f37622b103e5104c3f20091",
+  "source_manifest": [
+    {
+      "logical_path": "bauer_index/raw_docs/2026-04_Compressors_for_Industry_EN_N39771_sc.pdf",
+      "media_type": "application/pdf",
+      "source_sha256": "8569e17f55434bb9bfd15e79984444e6d28e17b5a12bfdba6f098ee74ecacff9",
+      "parser_id": "pdfplumber_layout",
+      "projection_count": 2625,
+      "authority": "public_bauer"
+    },
+    {
+      "logical_path": "bauer_index/raw_html/0025_bm-series-100_7acdece303.html",
+      "media_type": "text/html",
+      "source_sha256": "2f5ad06e14fdadb86b650aa887627e32c1c79e6663179267c70792f65e819a6e",
+      "parser_id": "html_dom_grid",
+      "projection_count": 181,
+      "authority": "public_bauer"
+    },
+    {
+      "logical_path": "bauer_index/raw_docs/2025-03_B-DETECTION_PLUS_EN_N42078_sc.pdf",
+      "media_type": "application/pdf",
+      "source_sha256": "c84c36a9943fe871e0d7c3a8a9ab844308c032c5691a27484ef8f0944ac9f2c5",
+      "parser_id": "pdfplumber_layout",
+      "projection_count": 85,
+      "authority": "public_bauer"
+    },
+    {
+      "logical_path": "bauer_index/raw_html/0015_b-detection-plus-i-und-s_7c1fd56ba6.html",
+      "media_type": "text/html",
+      "source_sha256": "f837abe7a0b9ede32703f8be0346798527aba93a437700cf6a6655c39f55ec2b",
+      "parser_id": "html_dom_grid",
+      "projection_count": 43,
+      "authority": "public_bauer"
+    },
+    {
+      "logical_path": "bauer_index/raw_html/0016_b-detection-plus-m_b749dac8cd.html",
+      "media_type": "text/html",
+      "source_sha256": "85146b9d04567c0bbadd9d0f29ebdc5605021ed1883be7434ccb9091f555c1c4",
+      "parser_id": "html_dom_grid",
+      "projection_count": 42,
+      "authority": "public_bauer"
+    },
+    {
+      "logical_path": "bauer_index/raw_html/0021_b-kool_c5e62182b0.html",
+      "media_type": "text/html",
+      "source_sha256": "d01c99958a3c729ed5a095b74022d5e72f54cd26220e0d398f37d58a3f73b511",
+      "parser_id": "html_dom_grid",
+      "projection_count": 18,
+      "authority": "public_bauer"
+    },
+    {
+      "logical_path": "resources/bauer-synthetic-demo-v1.html",
+      "media_type": "text/html",
+      "source_sha256": "d1653edcab0b6dc501230f8d2f077880a3066f087fa5ca937394293d9cbde1ea",
+      "parser_id": "html_dom_grid",
+      "projection_count": 38,
+      "authority": "synthetic_demo"
+    }
+  ],
+  "observations": [
+    {
+      "case_id": "B06",
+      "category": "exact_pressure",
+      "prompt": "Based only on the uploaded public Bauer documents, what is the highest documented maximum operating pressure for a Bauer compressor? Name the applicable product families, distinguish compressors from boosters, and cite the exact source page or section. Also explain the difference between maximum operating pressure and shutdown pressure if the source makes that distinction. Do not assume that the most frequently retrieved pressure is the maximum.",
+      "status": "complete",
+      "answer": "The highest documented maximum operating pressure for a BAUER compressor in the authorized evidence is **525 bar**.\n\n## Compressors\nHighest compressor maximum operating pressure: 525 bar; I Series | VERTICUS: 90–525 bar; I Series | K 22 - K 28: 90–525 bar. [citation_4a2d1c091eccd43ed64956bf1bb4e9c7]\nSource: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf, PDF page 6, section 6 | PERFORMANCE OVERVIEW | COMPRESSORS FOR INDUSTRY BAUER KOMPRESSOREN > PERFORMANCE OVERVIEW > EXCELLENT COMPRESSOR SOLUTIONS FOR YOUR REQUIREMENTS, [citation_4a2d1c091eccd43ed64956bf1bb4e9c7]\n\n## Boosters\nBOOSTER AIR COOLED: 25–420 bar; BOOSTER WATER COOLED: 25–520 bar; GIB Series | BK 23 – BK 52: 90–520 bar. [citation_e962131b086fa77b196ba2d534cdd9b9]\nSource: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf, printed page 7, section BAUER KOMPRESSOREN COMPRESSORS FOR INDUSTRY | PERFORMANCE OVERVIEW | 7, [citation_e962131b086fa77b196ba2d534cdd9b9]\n\n## Pressure terminology\nMaximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. [citation_e0e7757ddf613f7f9603c8aa1c1d74c8]\nSource: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf, printed page 23, section BAUER KOMPRESSOREN COMPRESSORS FOR INDUSTRY | AIR-COOLED COMPRESSOR UNITS & BOOSTER | 23, [citation_e0e7757ddf613f7f9603c8aa1c1d74c8]",
+      "answer_sha256": "be49fd3f0b6d7fd5dccf2cca61e75d5700b9a8bad41b053711d676d1de5b310e",
+      "coverage": [
+        {
+          "field": "compressor_pressure_evidence",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_4a2d1c091eccd43ed64956bf1bb4e9c7"
+          ],
+          "detail": null
+        },
+        {
+          "field": "booster_pressure_evidence",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_e962131b086fa77b196ba2d534cdd9b9"
+          ],
+          "detail": null
+        },
+        {
+          "field": "pressure_definition_evidence",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_e0e7757ddf613f7f9603c8aa1c1d74c8"
+          ],
+          "detail": null
+        }
+      ],
+      "not_found": [],
+      "citation_count": 3,
+      "citation_documents": [
+        "2026-04_Compressors_for_Industry_EN_N39771_sc.pdf"
+      ],
+      "citations": [
+        {
+          "citation_id": "citation_4a2d1c091eccd43ed64956bf1bb4e9c7",
+          "original_filename": "2026-04_Compressors_for_Industry_EN_N39771_sc.pdf",
+          "page": 6,
+          "printed_page": null,
+          "section_path": [
+            "6 | PERFORMANCE OVERVIEW | COMPRESSORS FOR INDUSTRY BAUER KOMPRESSOREN",
+            "PERFORMANCE OVERVIEW",
+            "EXCELLENT COMPRESSOR SOLUTIONS FOR YOUR REQUIREMENTS"
+          ],
+          "table_title": null,
+          "header_path": []
+        },
+        {
+          "citation_id": "citation_e0e7757ddf613f7f9603c8aa1c1d74c8",
+          "original_filename": "2026-04_Compressors_for_Industry_EN_N39771_sc.pdf",
+          "page": 23,
+          "printed_page": "23",
+          "section_path": [
+            "BAUER KOMPRESSOREN COMPRESSORS FOR INDUSTRY | AIR-COOLED COMPRESSOR UNITS & BOOSTER | 23"
+          ],
+          "table_title": null,
+          "header_path": []
+        },
+        {
+          "citation_id": "citation_e962131b086fa77b196ba2d534cdd9b9",
+          "original_filename": "2026-04_Compressors_for_Industry_EN_N39771_sc.pdf",
+          "page": 7,
+          "printed_page": "7",
+          "section_path": [
+            "BAUER KOMPRESSOREN COMPRESSORS FOR INDUSTRY | PERFORMANCE OVERVIEW | 7"
+          ],
+          "table_title": null,
+          "header_path": []
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "repair_attempted": false,
+        "repair_count": 0,
+        "defect_codes": [],
+        "candidate_count": 80,
+        "evidence_window_count": 60,
+        "reranker_model_id": "transparent-linear-v1",
+        "reranker_identity": "e1e8c2d737d551cd1fa6c8b74de1a9b0e89dd227ccafd28fdbe3876646fafa53",
+        "answer_mode": "grounded_structured",
+        "validation_fingerprint": "39a90cbc65dd52767048ff4b7f747cb65c6472e8031de98b88570538eae0230b"
+      }
+    },
+    {
+      "case_id": "B17",
+      "category": "exact_table",
+      "prompt": "In the BM series 100 bar 50 Hz technical table, give the complete row for BM 6.1/100-15 and preserve the table units.",
+      "status": "complete",
+      "answer": "| Model | Effective free air delivery | Shutdown pressure | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | Source |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| BM series 100 bar – 50 Hz: BM 6.1/100-15 | 22.2 cfm<br>37.8 m³/h<br>630 l/min | 100 bar<br>1450 psig | 3 | 1470 rpm | 15 kW | 425 kg<br>935 lbs | [citation_4a9d74759a88c05df0c65ed9ce904ead] |",
+      "answer_sha256": "af5eb97be287c8798ad5eed1294b506319af50bd0a461210d8f688aa35ceffb1",
+      "coverage": [
+        {
+          "field": "effective_free_air_delivery",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_4a9d74759a88c05df0c65ed9ce904ead"
+          ],
+          "detail": null
+        },
+        {
+          "field": "shutdown_pressure",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_4a9d74759a88c05df0c65ed9ce904ead"
+          ],
+          "detail": null
+        },
+        {
+          "field": "number_of_stages",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_4a9d74759a88c05df0c65ed9ce904ead"
+          ],
+          "detail": null
+        },
+        {
+          "field": "rotational_speed_approx",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_4a9d74759a88c05df0c65ed9ce904ead"
+          ],
+          "detail": null
+        },
+        {
+          "field": "motor_power",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_4a9d74759a88c05df0c65ed9ce904ead"
+          ],
+          "detail": null
+        },
+        {
+          "field": "net_weight_approx",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_4a9d74759a88c05df0c65ed9ce904ead"
+          ],
+          "detail": null
+        }
+      ],
+      "not_found": [],
+      "citation_count": 1,
+      "citation_documents": [
+        "0025_bm-series-100_7acdece303.html"
+      ],
+      "citations": [
+        {
+          "citation_id": "citation_4a9d74759a88c05df0c65ed9ce904ead",
+          "original_filename": "0025_bm-series-100_7acdece303.html",
+          "page": 1,
+          "printed_page": "1",
+          "section_path": [
+            "BM series (100 bar)",
+            "Technical Data",
+            "Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar"
+          ],
+          "table_title": "Medium-pressure compressor BM series, 630 - 7300 l/min, 100 bar",
+          "header_path": [
+            "Model designation",
+            "Effective free air delivery",
+            "Shutdown pressure",
+            "Number of stages",
+            "Rotational speed approx.",
+            "Motor power",
+            "Net weight approx."
+          ]
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "repair_attempted": false,
+        "repair_count": 0,
+        "defect_codes": [],
+        "candidate_count": 80,
+        "evidence_window_count": 60,
+        "reranker_model_id": "transparent-linear-v1",
+        "reranker_identity": "e1e8c2d737d551cd1fa6c8b74de1a9b0e89dd227ccafd28fdbe3876646fafa53",
+        "answer_mode": "lossless_deterministic",
+        "validation_fingerprint": "e99d6bbd32cd226c5e7a481e2324d439548f6a6276b55e89f79108b9219c5964"
+      }
+    },
+    {
+      "case_id": "B10",
+      "category": "contradiction",
+      "prompt": "Compare B-DETECTION PLUS i/s with B-DETECTION PLUS m for a stationary fire-brigade filling station. Explain which is stationary and which is mobile, what they measure, their logging capabilities, and their documented pressure range. One public product page mentions 420 bar while a newer brochure describes options up to 450 bar. Explain the difference using source dates and wording instead of silently selecting one value.",
+      "status": "complete",
+      "answer": "For a stationary fire-brigade filling station, **B-DETECTION PLUS i/s is the stationary system**; **B-DETECTION PLUS m is the mobile system**.\n\n| Aspect | B-DETECTION PLUS i/s | B-DETECTION PLUS m |\n| --- | --- | --- |\n| Form | stationary continuous online system [citation_279068e0e618b410e96031434fc2c92c] | mobile portable system; case-based configuration; measurement at cylinders; measurement at intake [citation_f93f63c403c7651decbe8e116e69e4e6] |\n| Measurements | CO; CO2; O2; optional absolute humidity; optional residual oil/VOC [citation_f0ae1ac419e7111f9b3194a715153def] [citation_f93f63c403c7651decbe8e116e69e4e6] | CO; CO2; O2; optional absolute humidity; optional residual oil/VOC [citation_f0ae1ac419e7111f9b3194a715153def] [citation_f93f63c403c7651decbe8e116e69e4e6] |\n| Logging / access | measurement-value logging [citation_0f0b75edb25d78dae1d6635530b2075c] [citation_f93f63c403c7651decbe8e116e69e4e6] | integrated data logger; SD-card storage; B-CLOUD remote access; B-APP remote access [citation_0f0b75edb25d78dae1d6635530b2075c] [citation_f93f63c403c7651decbe8e116e69e4e6] |\n| Documented pressure wording | options up to 450 bar final pressure [citation_71ecc2358f54db9194c75f1220227e3c] [citation_92cc52856fe69750ffe653b28a8a31a7] | maximum documented pressure: 420 bar [citation_71ecc2358f54db9194c75f1220227e3c] [citation_92cc52856fe69750ffe653b28a8a31a7] |\n\n## Why the two documented pressure values differ\nThe 2025-03 brochure uses the scoped wording “options up to 450 bar final pressure” for the new-generation i/s configuration. The public product evidence gives “maximum documented pressure: 420 bar” for B-DETECTION PLUS m. They differ by product scope and wording, so the i/s option must not be silently applied to the mobile system.",
+      "answer_sha256": "f67920f032629abe9ae94077c87e1672a964c283140df0dd8718c0125defe668",
+      "coverage": [
+        {
+          "field": "bdetection_stationary_evidence",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_279068e0e618b410e96031434fc2c92c"
+          ],
+          "detail": null
+        },
+        {
+          "field": "bdetection_mobile_evidence",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_f93f63c403c7651decbe8e116e69e4e6"
+          ],
+          "detail": null
+        },
+        {
+          "field": "bdetection_measurements",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_f0ae1ac419e7111f9b3194a715153def",
+            "citation_f93f63c403c7651decbe8e116e69e4e6"
+          ],
+          "detail": null
+        },
+        {
+          "field": "bdetection_logging",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_0f0b75edb25d78dae1d6635530b2075c",
+            "citation_f93f63c403c7651decbe8e116e69e4e6"
+          ],
+          "detail": null
+        },
+        {
+          "field": "bdetection_pressure_reconciliation",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_71ecc2358f54db9194c75f1220227e3c",
+            "citation_92cc52856fe69750ffe653b28a8a31a7"
+          ],
+          "detail": null
+        }
+      ],
+      "not_found": [],
+      "citation_count": 6,
+      "citation_documents": [
+        "0015_b-detection-plus-i-und-s_7c1fd56ba6.html",
+        "0016_b-detection-plus-m_b749dac8cd.html",
+        "2025-03_B-DETECTION_PLUS_EN_N42078_sc.pdf"
+      ],
+      "citations": [
+        {
+          "citation_id": "citation_0f0b75edb25d78dae1d6635530b2075c",
+          "original_filename": "2025-03_B-DETECTION_PLUS_EN_N42078_sc.pdf",
+          "page": 7,
+          "printed_page": "7",
+          "section_path": [
+            "BAUER KOMPRESSOREN B-DETECTION PLUS | 7"
+          ],
+          "table_title": null,
+          "header_path": []
+        },
+        {
+          "citation_id": "citation_279068e0e618b410e96031434fc2c92c",
+          "original_filename": "2025-03_B-DETECTION_PLUS_EN_N42078_sc.pdf",
+          "page": 10,
+          "printed_page": null,
+          "section_path": [
+            "B-DETECTION PLUS – THE NEXT GENERATION",
+            "EXPANDED APPLICATIONS",
+            "FLEXIBLE MEASUREMENTS"
+          ],
+          "table_title": null,
+          "header_path": []
+        },
+        {
+          "citation_id": "citation_71ecc2358f54db9194c75f1220227e3c",
+          "original_filename": "0016_b-detection-plus-m_b749dac8cd.html",
+          "page": 1,
+          "printed_page": "1",
+          "section_path": [
+            "B-DETECTION PLUS m",
+            "Technical data",
+            "B-DETECTION PLUS m online breathing air and gas measurement system"
+          ],
+          "table_title": "B-DETECTION PLUS m online breathing air and gas measurement system",
+          "header_path": [
+            "MEASURED VALUES"
+          ]
+        },
+        {
+          "citation_id": "citation_92cc52856fe69750ffe653b28a8a31a7",
+          "original_filename": "2025-03_B-DETECTION_PLUS_EN_N42078_sc.pdf",
+          "page": 10,
+          "printed_page": null,
+          "section_path": [
+            "!",
+            "B-DETECTION PLUS – THE NEXT GENERATION",
+            "EXPANDED APPLICATIONS"
+          ],
+          "table_title": null,
+          "header_path": []
+        },
+        {
+          "citation_id": "citation_f0ae1ac419e7111f9b3194a715153def",
+          "original_filename": "0015_b-detection-plus-i-und-s_7c1fd56ba6.html",
+          "page": 1,
+          "printed_page": "1",
+          "section_path": [
+            "B-DETECTION PLUS i and s",
+            "Technical data",
+            "B-DETECTION PLUS i and s: Online breathing air and gas measurement system"
+          ],
+          "table_title": null,
+          "header_path": []
+        },
+        {
+          "citation_id": "citation_f93f63c403c7651decbe8e116e69e4e6",
+          "original_filename": "0016_b-detection-plus-m_b749dac8cd.html",
+          "page": 1,
+          "printed_page": "1",
+          "section_path": [
+            "B-DETECTION PLUS m",
+            "Technical data",
+            "B-DETECTION PLUS m online breathing air and gas measurement system"
+          ],
+          "table_title": null,
+          "header_path": []
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "repair_attempted": false,
+        "repair_count": 0,
+        "defect_codes": [],
+        "candidate_count": 80,
+        "evidence_window_count": 60,
+        "reranker_model_id": "transparent-linear-v1",
+        "reranker_identity": "e1e8c2d737d551cd1fa6c8b74de1a9b0e89dd227ccafd28fdbe3876646fafa53",
+        "answer_mode": "grounded_structured",
+        "validation_fingerprint": "7ae5672d0da19479d6fd8de269e7b22f679265e15d3159c5bb6c7f7bb9470009"
+      }
+    },
+    {
+      "case_id": "B19",
+      "category": "exact_product_limit",
+      "prompt": "What are the documented maximum operating pressures and maximum flow rates for B-KOOL III? State the separate helium and argon flow range and cite the technical data.",
+      "status": "complete",
+      "answer": "- **Maximum operating pressures:** maximum operating pressure: 350 bar / 550 bar. [citation_036b8a9713bbc318b53e54c046a354fe]\n- **Maximum flow rates:**\n  - 10 l cylinder filling from 0–200 bar: 200–700 l/min [citation_f73ca6c3c7d79d332cd23e6b54540bee]\n  - air according to ISO 1217: 200–650 l/min [citation_f73ca6c3c7d79d332cd23e6b54540bee]\n  - helium and argon: 200–420 l/min [citation_f73ca6c3c7d79d332cd23e6b54540bee]",
+      "answer_sha256": "d22a3d910397f27b1a5aa542693edccf9712cd81a124eb993f22674affc83495",
+      "coverage": [
+        {
+          "field": "bkool_iii_pressure",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_036b8a9713bbc318b53e54c046a354fe"
+          ],
+          "detail": null
+        },
+        {
+          "field": "bkool_iii_flow",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_f73ca6c3c7d79d332cd23e6b54540bee"
+          ],
+          "detail": null
+        }
+      ],
+      "not_found": [],
+      "citation_count": 2,
+      "citation_documents": [
+        "0021_b-kool_c5e62182b0.html"
+      ],
+      "citations": [
+        {
+          "citation_id": "citation_036b8a9713bbc318b53e54c046a354fe",
+          "original_filename": "0021_b-kool_c5e62182b0.html",
+          "page": 1,
+          "printed_page": "1",
+          "section_path": [
+            "B-KOOL",
+            "Technical Data",
+            "B-KOOL Refrigeration dryer"
+          ],
+          "table_title": "B-KOOL Refrigeration dryer",
+          "header_path": [
+            "Model designation",
+            "B-KOOL III"
+          ]
+        },
+        {
+          "citation_id": "citation_f73ca6c3c7d79d332cd23e6b54540bee",
+          "original_filename": "0021_b-kool_c5e62182b0.html",
+          "page": 1,
+          "printed_page": "1",
+          "section_path": [
+            "B-KOOL",
+            "Technical Data",
+            "B-KOOL Refrigeration dryer"
+          ],
+          "table_title": "B-KOOL Refrigeration dryer",
+          "header_path": [
+            "Model designation",
+            "B-KOOL III"
+          ]
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "repair_attempted": false,
+        "repair_count": 0,
+        "defect_codes": [],
+        "candidate_count": 80,
+        "evidence_window_count": 60,
+        "reranker_model_id": "transparent-linear-v1",
+        "reranker_identity": "e1e8c2d737d551cd1fa6c8b74de1a9b0e89dd227ccafd28fdbe3876646fafa53",
+        "answer_mode": "grounded_structured",
+        "validation_fingerprint": "b235cf5ed6b5319b8576a5bedd7c616c8704f12314b6bb8bdb813275bf2ab315"
+      }
+    },
+    {
+      "case_id": "B03",
+      "category": "structured_comparison",
+      "prompt": "Compare synthetic projects SYN-BK-N2-420-500 and SYN-BK-N2-365-500. Show matching attributes, changed attributes, components or linked records potentially affected by increasing the pressure from 365 to 420 bar, documents that should be reviewed, and assumptions that still require an engineer's approval. Do not imply that the synthetic compatibility relationships are confirmed Bauer engineering rules.",
+      "status": "complete",
+      "answer": "## SYN-BK-N2-420-500 compared with SYN-BK-N2-365-500\nThese are **synthetic demo records**, not confirmed Bauer master data or engineering rules.\n\n## Matching stored attributes\n- **cluster:** nitrogen booster package [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **application sector:** industrial gas [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **medium:** nitrogen [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **capacity l min:** 500 [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **compressor family:** N2 Booster [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **topology:** booster [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **cooling:** water-cooled [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **control package:** B-CONTROL MICRO synthetic configuration [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **purification package:** synthetic nitrogen-compatible filtration package [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **installation:** indoor skid, service access on three sides [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **environment:** temperate industrial environment, 5-40 C [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **status:** reference [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n\n## Changed stored attributes\n- **pressure bar:** SYN-BK-N2-420-500: 420 | SYN-BK-N2-365-500: 365 [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **compressor model:** SYN-BK-N2-420-500: SYN-N2B-420 | SYN-BK-N2-365-500: SYN-N2B-365 [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **storage filling package:** SYN-BK-N2-420-500: Synthetic 420-bar storage and filling package | SYN-BK-N2-365-500: Synthetic 365-bar storage and filling package [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n\n## Linked records potentially affected\n- **shared linked records:** SYN-P-SNS-PRESSURE-500; SYN-P-SNS-TEMP-IND [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **only SYN-BK-N2-420-500:** SYN-P-CLG-N2-420-500; SYN-P-CMP-N2-420-500; SYN-P-CTL-N2-420-500; SYN-P-PUR-N2-420-500; SYN-P-STG-N2-420-500; SYN-P-VLV-N2-420-500 [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **only SYN-BK-N2-365-500:** SYN-P-CLG-N2-365-500; SYN-P-CMP-N2-365-500; SYN-P-CTL-N2-365-500; SYN-P-PUR-N2-365-500; SYN-P-STG-N2-365-500; SYN-P-VLV-N2-365-500 [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n\n## Documents recorded for review\n- **both projects:** DOC-B-NITROX; DOC-INDUSTRY; DOC-PRODUCT-OVERVIEW [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n\n## Assumptions requiring engineer approval\n- **stored review assumptions:** CE demo assumption; four-eyes engineering review required [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **authority boundary:** DEMO DATA: project, part, and compatibility records are synthetic and are not confirmed Bauer Kompressoren master data. Linked documents are public evidence sources. [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n\nThe linked-record differences identify records to review only. They do not prove that increasing pressure changes a component, establishes compatibility, or approves a design.",
+      "answer_sha256": "07317381ceaeb019dffc42204f2fdabc67de812ec73c415e139fa3b726fd1b72",
+      "coverage": [
+        {
+          "field": "synthetic_comparison_matching",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_137ee11aa4574d33cfbeb3bb9910ecdb",
+            "citation_94ea144869c6688c62298bfc56ac3b0d"
+          ],
+          "detail": null
+        },
+        {
+          "field": "synthetic_comparison_changed",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_137ee11aa4574d33cfbeb3bb9910ecdb",
+            "citation_94ea144869c6688c62298bfc56ac3b0d"
+          ],
+          "detail": null
+        },
+        {
+          "field": "synthetic_comparison_linked_records",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_137ee11aa4574d33cfbeb3bb9910ecdb",
+            "citation_94ea144869c6688c62298bfc56ac3b0d"
+          ],
+          "detail": null
+        },
+        {
+          "field": "synthetic_comparison_documents",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_137ee11aa4574d33cfbeb3bb9910ecdb",
+            "citation_94ea144869c6688c62298bfc56ac3b0d"
+          ],
+          "detail": null
+        },
+        {
+          "field": "synthetic_comparison_assumptions",
+          "state": "supported",
+          "required": true,
+          "citation_ids": [
+            "citation_137ee11aa4574d33cfbeb3bb9910ecdb",
+            "citation_94ea144869c6688c62298bfc56ac3b0d"
+          ],
+          "detail": null
+        }
+      ],
+      "not_found": [],
+      "citation_count": 2,
+      "citation_documents": [
+        "bauer-synthetic-demo-v1.html"
+      ],
+      "citations": [
+        {
+          "citation_id": "citation_137ee11aa4574d33cfbeb3bb9910ecdb",
+          "original_filename": "bauer-synthetic-demo-v1.html",
+          "page": 1,
+          "printed_page": "1",
+          "section_path": [
+            "Bauer synthetic demo evidence v1"
+          ],
+          "table_title": "Bauer synthetic demo evidence v1",
+          "header_path": [
+            "project_id",
+            "cluster",
+            "application_sector",
+            "medium",
+            "pressure_bar",
+            "capacity_l_min",
+            "compressor_family",
+            "compressor_model",
+            "topology",
+            "cooling",
+            "control_package",
+            "purification_package",
+            "storage_filling_package",
+            "installation",
+            "environment",
+            "standards",
+            "status",
+            "document_ids",
+            "linked_part_ids",
+            "authority_notice"
+          ]
+        },
+        {
+          "citation_id": "citation_94ea144869c6688c62298bfc56ac3b0d",
+          "original_filename": "bauer-synthetic-demo-v1.html",
+          "page": 1,
+          "printed_page": "1",
+          "section_path": [
+            "Bauer synthetic demo evidence v1"
+          ],
+          "table_title": "Bauer synthetic demo evidence v1",
+          "header_path": [
+            "project_id",
+            "cluster",
+            "application_sector",
+            "medium",
+            "pressure_bar",
+            "capacity_l_min",
+            "compressor_family",
+            "compressor_model",
+            "topology",
+            "cooling",
+            "control_package",
+            "purification_package",
+            "storage_filling_package",
+            "installation",
+            "environment",
+            "standards",
+            "status",
+            "document_ids",
+            "linked_part_ids",
+            "authority_notice"
+          ]
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "repair_attempted": false,
+        "repair_count": 0,
+        "defect_codes": [],
+        "candidate_count": 80,
+        "evidence_window_count": 60,
+        "reranker_model_id": "transparent-linear-v1",
+        "reranker_identity": "e1e8c2d737d551cd1fa6c8b74de1a9b0e89dd227ccafd28fdbe3876646fafa53",
+        "answer_mode": "grounded_structured",
+        "validation_fingerprint": "5da62fe5f44094b7dfd62d6e8c5b30998e2fb5d722b292adc9f08f6fdd1dd841"
+      }
+    }
+  ],
+  "secrets_emitted": false
+}

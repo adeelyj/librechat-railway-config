@@ -1,12 +1,8 @@
 const V3_ANSWERED_STATUSES = new Set(['answered', 'answered_after_repair']);
 const V3_REFUSAL_STATUSES = new Set(['refused_no_evidence', 'refused_after_validation']);
 const V4_STATUSES = new Set(['complete', 'partial', 'not_found', 'refused']);
-const V4_STATUS_RANK = new Map([
-  ['refused', 0],
-  ['not_found', 1],
-  ['partial', 2],
-  ['complete', 3],
-]);
+const V4_ANSWER_MODES = new Set(['lossless_deterministic', 'grounded_structured']);
+const SHA256_PATTERN = /^[0-9a-f]{64}$/i;
 const DETERMINISTIC_BOUNDARY_REFUSAL =
   'I could not produce a validated Bauer answer for this request.';
 const UUID_PATTERN =
@@ -51,20 +47,32 @@ const extractV4DirectFinal = (output) => {
   const status = typeof envelope.status === 'string' ? envelope.status : '';
   const answer = typeof envelope.finalAnswer === 'string' ? envelope.finalAnswer.trim() : '';
   const releaseId = typeof envelope.releaseId === 'string' ? envelope.releaseId.trim() : '';
+  const answerMode = typeof envelope.answerMode === 'string' ? envelope.answerMode.trim() : '';
+  const validationFingerprint =
+    typeof envelope.validationFingerprint === 'string'
+      ? envelope.validationFingerprint.trim()
+      : '';
+  const answered = status !== 'refused';
   if (
     !V4_STATUSES.has(status) ||
     !answer ||
     !releaseId ||
     releaseId.length > 256 ||
     /[\u0000-\u001f\u007f]/.test(releaseId) ||
-    (status !== 'refused' && envelope.validationPassed !== true)
+    (answered &&
+      (envelope.validationPassed !== true ||
+        !V4_ANSWER_MODES.has(answerMode) ||
+        !SHA256_PATTERN.test(validationFingerprint)))
   ) {
     return null;
   }
-  const supportedCoverage = Array.isArray(envelope.coverage)
-    ? envelope.coverage.filter((item) => item?.state === 'supported').length
-    : 0;
-  return { answer, releaseId, status, supportedCoverage };
+  return {
+    answer,
+    releaseId,
+    status,
+    answerMode: answered ? answerMode : null,
+    validationFingerprint: answered ? validationFingerprint : null,
+  };
 };
 
 const selectV4Final = (current, candidate) => {
@@ -74,17 +82,16 @@ const selectV4Final = (current, candidate) => {
   if (!current) {
     return candidate;
   }
-  const currentRank = V4_STATUS_RANK.get(current.status) ?? -1;
-  const candidateRank = V4_STATUS_RANK.get(candidate.status) ?? -1;
-  if (candidateRank !== currentRank) {
-    return candidateRank > currentRank ? candidate : current;
+  if (current.conflict === true) {
+    return current;
   }
-  if (candidate.supportedCoverage !== current.supportedCoverage) {
-    return candidate.supportedCoverage > current.supportedCoverage ? candidate : current;
-  }
-  // Equal-quality later calls may carry a better search hint while the full
-  // immutable question remains unchanged, so retain the later validated answer.
-  return candidate;
+  const identical =
+    current.answer === candidate.answer &&
+    current.releaseId === candidate.releaseId &&
+    current.status === candidate.status &&
+    current.answerMode === candidate.answerMode &&
+    current.validationFingerprint === candidate.validationFingerprint;
+  return identical ? current : { conflict: true };
 };
 
 const configuredToolNames = (primaryConfig) => {
@@ -250,7 +257,7 @@ const createBauerV3FinalBoundary = ({
       const toolParts = target.filter((part) => part?.type === 'tool_call');
       const validFinal =
         state.mode === 'v4'
-          ? state.validV4Count >= 1 && state.final?.answer
+          ? state.validV4Count >= 1 && state.final?.conflict !== true && state.final?.answer
           : state.toolEndCount === 1 && state.final?.answer;
       const finalText = validFinal ? state.final.answer : DETERMINISTIC_BOUNDARY_REFUSAL;
       target.splice(

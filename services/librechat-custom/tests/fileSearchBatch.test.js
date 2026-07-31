@@ -405,7 +405,11 @@ test('V4 answers preserve coverage and require authorized citation coordinates',
       status: 'complete',
       answer: 'Requested technical data:\n- maximum pressure: 350 bar [citation-one]',
       release: { public_id: 'bauer-rag-v4-private-20260729-r1' },
-      validation: { passed: true },
+      validation: {
+        passed: true,
+        answer_mode: 'grounded_structured',
+        validation_fingerprint: 'a'.repeat(64),
+      },
       coverage: [
         {
           field: 'maximum_pressure',
@@ -460,7 +464,16 @@ test('V4 non-refusal answers fail closed without passing validation', () => {
   assert.equal(normalizeV4Answer({ data: base }, files).accepted, false);
   assert.equal(
     normalizeV4Answer(
-      { data: { ...base, validation: { passed: true } } },
+      {
+        data: {
+          ...base,
+          validation: {
+            passed: true,
+            answer_mode: 'grounded_structured',
+            validation_fingerprint: 'a'.repeat(64),
+          },
+        },
+      },
       files,
     ).accepted,
     true,

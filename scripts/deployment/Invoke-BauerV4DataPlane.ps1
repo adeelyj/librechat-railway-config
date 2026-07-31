@@ -3,7 +3,7 @@ param(
     [ValidateSet('Setup', 'Status', 'RetryDead', 'ResetBuild', 'MarkReady')]
     [string]$Phase = 'Status',
     [string]$IdentifiersPath = (
-        'D:\02_Code\LibreChat_Setup-rag-v4\tmp\v4-deploy\' +
+        'D:\02_Code\LibreChat_Setup-rag-v4-answer-quality\tmp\v4-deploy\' +
         'deployment-identifiers.json'
     ),
     [string]$SecretBundlePath = (
@@ -11,10 +11,14 @@ param(
         'bauer-v3-shadow-secrets.clixml'
     ),
     [string]$OutputPath = (
-        'D:\02_Code\LibreChat_Setup-rag-v4\tmp\v4-deploy\evidence\' +
+        'D:\02_Code\LibreChat_Setup-rag-v4-answer-quality\tmp\v4-deploy\evidence\' +
         'v4-data-plane-status.json'
     ),
-    [string]$EvaluationPath
+    [string]$EvaluationPath,
+    [string]$SyntheticSourceManifestPath = (
+        'D:\02_Code\LibreChat_Setup-rag-v4-answer-quality\tmp\v4-deploy\' +
+        'synthetic-source-stage.json'
+    )
 )
 
 Set-StrictMode -Version Latest
@@ -223,12 +227,30 @@ function Invoke-Child {
 $ids = Get-Content -Raw -LiteralPath $IdentifiersPath | ConvertFrom-Json
 $secrets = Import-Clixml -LiteralPath $SecretBundlePath
 $evaluation = $null
+$syntheticSource = $null
 if ($Phase -eq 'MarkReady') {
     if (-not (Test-Path -LiteralPath $EvaluationPath -PathType Leaf)) {
         throw 'MarkReady requires an exact development evaluation file.'
     }
     $evaluation = Get-Content -Raw -LiteralPath $EvaluationPath |
         ConvertFrom-Json
+}
+if ($Phase -eq 'Setup') {
+    if (
+        -not (
+            Test-Path -LiteralPath $SyntheticSourceManifestPath -PathType Leaf
+        )
+    ) {
+        throw 'Setup requires the verified synthetic source manifest.'
+    }
+    $syntheticSource = Get-Content -Raw `
+        -LiteralPath $SyntheticSourceManifestPath | ConvertFrom-Json
+    if (
+        -not $syntheticSource.read_after_write_verified -or
+        $syntheticSource.credentials_or_connection_details_emitted
+    ) {
+        throw 'Synthetic source manifest is not safe and verified.'
+    }
 }
 $port = Get-FreePort
 $tunnel = $null
@@ -253,6 +275,7 @@ try {
         v3_source_release_id = [string]$ids.v3_source_release_id
         release_public_id = [string]$ids.release_public_id
         evaluation = $evaluation
+        synthetic_source = $syntheticSource
     }
     $requestJson = $request | ConvertTo-Json -Depth 20 -Compress
     $result = Invoke-Child -InputJson $requestJson -Operation $Phase
@@ -283,6 +306,8 @@ finally {
     $requestJson = $null
     $request = $null
     $ownerPassword = $null
+    $syntheticSource = $null
+    $evaluation = $null
     $secrets = $null
     [GC]::Collect()
 }

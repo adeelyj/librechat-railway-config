@@ -4,7 +4,8 @@ import re
 import unicodedata
 from dataclasses import dataclass
 
-from .models import EvidenceContext, FieldCoverage, TaskPlan
+from ..canonical.normalize import stable_id
+from .models import EvidenceContext, EvidenceFact, FieldCoverage, TaskPlan
 
 
 _DASH_TRANSLATION = str.maketrans(
@@ -50,13 +51,39 @@ class CoverageEngine:
     ) -> FieldCoverage:
         if plan.intent == "general":
             return self._general_field(field, evidence)
-        support: list[tuple[str, str | None, str]] = []
-        for context in evidence:
+        contexts = evidence
+        if plan.intent == "table_row":
+            exact_rows = tuple(
+                context
+                for context in evidence
+                if context.ranked.candidate.item.projection.projection_type
+                == "table_row"
+                and all(
+                    _normalize(identifier)
+                    in _normalize(context.unit.search_text)
+                    for identifier in plan.exact_identifiers
+                    if not identifier.upper().startswith("N")
+                )
+            )
+            if exact_rows:
+                if plan.required_qualifiers:
+                    contexts = (min(exact_rows, key=lambda item: item.ranked.rank),)
+                else:
+                    by_group: dict[str, EvidenceContext] = {}
+                    for context in sorted(
+                        exact_rows,
+                        key=lambda item: item.ranked.rank,
+                    ):
+                        group = dict(
+                            context.ranked.candidate.item.projection.qualifiers
+                        ).get("group", "")
+                        by_group.setdefault(group, context)
+                    contexts = tuple(by_group.values())
+        support: list[tuple[str, str | None, EvidenceContext]] = []
+        for context in contexts:
             for name, value, qualifier in context.values:
                 if name == field.field:
-                    support.append(
-                        (value, qualifier, context.unit.evidence_id)
-                    )
+                    support.append((value, qualifier, context))
         if (
             plan.intent == "certificate"
             and field.field == "source_document"
@@ -67,12 +94,12 @@ class CoverageEngine:
             ]
         deduplicated: dict[
             tuple[str, str | None],
-            tuple[str, str | None, str],
+            tuple[str, str | None, EvidenceContext],
         ] = {}
-        for value, qualifier, evidence_id in support:
+        for value, qualifier, context in support:
             deduplicated.setdefault(
                 (value, qualifier),
-                (value, qualifier, evidence_id),
+                (value, qualifier, context),
             )
         support = list(deduplicated.values())
         if not support:
@@ -83,19 +110,9 @@ class CoverageEngine:
                 evidence_ids=(),
                 detail=f"No authorized evidence supports {field.label}.",
             )
-        return FieldCoverage(
-            field=field,
-            state="supported",
-            values=tuple(
-                dict.fromkeys(
-                    (value, qualifier)
-                    for value, qualifier, _ in support
-                )
-            ),
-            evidence_ids=tuple(
-                dict.fromkeys(evidence_id for _, _, evidence_id in support)
-            ),
-            detail=None,
+        return self._supported_values(
+            field,
+            tuple(support),
         )
 
     def _general_field(
@@ -120,6 +137,10 @@ class CoverageEngine:
             return self._bkool_iii_field(field, evidence)
         if field.field.startswith("bsafe_"):
             return self._bsafe_field(field, evidence)
+        if field.field.startswith("synthetic_comparison_"):
+            return self._synthetic_comparison_field(field, evidence)
+        if field.field.startswith("synthetic_record_"):
+            return self._synthetic_record_field(field, evidence)
         if field.field == "bm_40_bar_evidence":
             return self._bm_family_field(field, evidence, pressure_bar=40)
         if field.field == "bm_100_bar_evidence":
@@ -127,7 +148,7 @@ class CoverageEngine:
         if field.field == "bm_90_bar_800_l_min_fit":
             return self._bm_requirement_fit(field, evidence)
         candidates: list[
-            tuple[int, int, int, int, str, str | None, str]
+            tuple[int, int, int, int, str, str | None, EvidenceContext]
         ] = []
         for context in evidence:
             text = context.unit.search_text.strip()
@@ -172,11 +193,11 @@ class CoverageEngine:
                     -context.ranked.rank,
                     concise,
                     context.citation.original_filename,
-                    context.unit.evidence_id,
+                    context,
                 )
             )
         candidates.sort(reverse=True)
-        support: list[tuple[str, str | None, str]] = []
+        support: list[tuple[str, str | None, EvidenceContext]] = []
         seen: set[str] = set()
         best_match_count = candidates[0][0] if candidates else 0
         allowed_match_gap = (
@@ -191,7 +212,7 @@ class CoverageEngine:
             _,
             concise,
             filename,
-            evidence_id,
+            context,
         ) in candidates:
             if (
                 support
@@ -204,7 +225,7 @@ class CoverageEngine:
             if snippet_key in seen:
                 continue
             seen.add(snippet_key)
-            support.append((concise, filename, evidence_id))
+            support.append((concise, filename, context))
             support_limit = (
                 1
                 if field.field
@@ -228,16 +249,9 @@ class CoverageEngine:
                     "Bauer evidence."
                 ),
             )
-        return FieldCoverage(
-            field=field,
-            state="supported",
-            values=tuple(
-                (value, qualifier) for value, qualifier, _ in support
-            ),
-            evidence_ids=tuple(
-                evidence_id for _, _, evidence_id in support
-            ),
-            detail=None,
+        return self._supported_values(
+            field,
+            tuple(support),
         )
 
     @classmethod
@@ -246,7 +260,7 @@ class CoverageEngine:
         field,
         evidence: tuple[EvidenceContext, ...],
     ) -> FieldCoverage:
-        """Extract a concise company answer from explicit portfolio sources."""
+        """Extract company facts from explicit portfolio source language."""
 
         if field.field == "company_location":
             location = cls._first_context(
@@ -261,13 +275,23 @@ class CoverageEngine:
             )
             if location is None:
                 return cls._absent(field)
-            return cls._special_supported(
+            match = re.search(
+                r"(BAUER\s+KOMPRESSOREN\s+GmbH)\s+"
+                r"(St\S{0,4}blistr\.\s*8)\s+"
+                r"(81477\s+Munich,?\s+Germany)",
+                re.sub(r"\s+", " ", location.unit.search_text),
+                flags=re.IGNORECASE,
+            )
+            if match is None:
+                return cls._absent(field)
+            return cls._supported_values(
                 field,
-                (
-                    "BAUER KOMPRESSOREN GmbH is based at Stäblistr. 8, "
-                    "81477 Munich, Germany."
-                ),
-                (location,),
+                ((
+                    f"{match.group(1).strip()} is based at "
+                    f"{match.group(2).strip()}, {match.group(3).strip()}.",
+                    None,
+                    location,
+                ),),
             )
 
         core = cls._first_context(
@@ -281,63 +305,351 @@ class CoverageEngine:
         if field.field == "company_core_business":
             if core is None:
                 return cls._absent(field)
-            return cls._special_supported(
+            source = _normalize(core.unit.search_text)
+            values = []
+            if all(
+                term in source
+                for term in ("medium", "high", "air and gas compression systems")
+            ):
+                values.append(
+                    "medium- and high-pressure air and gas compression systems"
+                )
+            if "systems for generating breathing air" in source:
+                values.append("systems for generating breathing air")
+            if not values:
+                return cls._absent(field)
+            return cls._supported_values(
                 field,
-                (
-                    "BAUER Kompressoren manufactures medium- and "
-                    "high-pressure air and gas compression systems, "
-                    "including systems for generating breathing air."
-                ),
-                (core,),
+                tuple((value, None, core) for value in values),
             )
 
+        portfolio = cls._first_context(
+            evidence,
+            required=(
+                "supplies an extensive range of accessories",
+                "air and gas purification",
+                "storage",
+                "gas measurement",
+            ),
+            any_terms=("control",),
+        )
         if field.field == "company_product_portfolio":
-            portfolio = cls._first_context(
-                evidence,
-                required=(
-                    "supplies an extensive range of accessories",
-                    "air and gas purification",
-                    "storage",
-                    "gas measurement",
-                ),
-                any_terms=("control",),
-            )
             if portfolio is None:
                 return cls._absent(field)
-            return cls._special_supported(
+            source = _normalize(portfolio.unit.search_text)
+            categories = [
+                label
+                for term, label in (
+                    ("air and gas purification", "air and gas purification systems"),
+                    ("control", "compressor controls"),
+                    ("storage", "storage and filling systems"),
+                    ("gas measurement", "gas-measurement equipment"),
+                    ("accessories", "compressor accessories"),
+                )
+                if term in source
+            ]
+            if not categories:
+                return cls._absent(field)
+            return cls._supported_values(
                 field,
-                (
-                    "Beyond its compressor systems, BAUER supplies air and "
-                    "gas purification, controls, storage, gas-measurement "
-                    "equipment, and related accessories."
-                ),
-                (portfolio,),
+                tuple((value, None, portfolio) for value in categories),
             )
 
+        fuel_gas = cls._first_context(
+            evidence,
+            required=(
+                "bio-cng",
+                "biogas",
+                "hydrogen",
+                "lng",
+                "compressor systems",
+            ),
+            any_terms=("fuel gas",),
+        )
         if field.field == "company_application_scope":
-            fuel_gas = cls._first_context(
-                evidence,
-                required=(
-                    "bio-cng",
-                    "biogas",
-                    "hydrogen",
-                    "lng",
-                    "compressor systems",
-                ),
-                any_terms=("fuel gas",),
-            )
             if core is None or fuel_gas is None:
                 return cls._absent(field)
-            return cls._special_supported(
-                field,
+            applications = []
+            core_source = _normalize(core.unit.search_text)
+            fuel_source = _normalize(fuel_gas.unit.search_text)
+            if all(term in core_source for term in ("divers", "firefighters")):
+                applications.append("breathing-air supply for divers and firefighters")
+            fuels = [
+                name
+                for name in ("bio-CNG", "biogas", "hydrogen", "LNG")
+                if _normalize(name) in fuel_source
+            ]
+            if fuels:
+                rendered_fuels = (
+                    fuels[0]
+                    if len(fuels) == 1
+                    else ", ".join(fuels[:-1]) + ", and " + fuels[-1]
+                )
+                applications.append("fuel-gas systems for " + rendered_fuels)
+            if not applications:
+                return cls._absent(field)
+            support = tuple(
                 (
-                    "Documented applications include breathing-air supply "
-                    "for divers and firefighters, plus fuel-gas systems for "
-                    "bio-CNG, biogas, hydrogen, and LNG."
-                ),
-                (core, fuel_gas),
+                    value,
+                    None,
+                    core if value.startswith("breathing-air") else fuel_gas,
+                )
+                for value in applications
             )
+            return cls._supported_values(field, support)
+
+        if field.field == "company_product_categories":
+            contexts = tuple(
+                context
+                for context in (core, portfolio, fuel_gas)
+                if context is not None
+            )
+            if len(contexts) < 2:
+                return cls._absent(field)
+            values: list[tuple[str, str | None, EvidenceContext]] = []
+            if core is not None:
+                values.extend(
+                    (
+                        ("breathing-air compressor and filling systems", None, core),
+                        ("medium- and high-pressure air and gas compressors", None, core),
+                    )
+                )
+            if portfolio is not None:
+                source = _normalize(portfolio.unit.search_text)
+                values.extend(
+                    (label, None, portfolio)
+                    for term, label in (
+                        ("air and gas purification", "air and gas purification systems"),
+                        ("control", "compressor controls"),
+                        ("storage", "storage and filling systems"),
+                        ("gas measurement", "gas-measurement and monitoring equipment"),
+                        ("accessories", "compressor accessories"),
+                    )
+                    if term in source
+                )
+            if fuel_gas is not None:
+                values.append(
+                    (
+                        "fuel-gas systems for bio-CNG, biogas, hydrogen, and LNG",
+                        None,
+                        fuel_gas,
+                    )
+                )
+            return cls._supported_values(field, tuple(values))
         return cls._absent(field)
+
+    @classmethod
+    def _synthetic_comparison_field(
+        cls,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        identifiers = tuple(field.anchor_terms[:2])
+        if len(identifiers) != 2:
+            return cls._absent(field)
+        rows: dict[str, EvidenceContext] = {}
+        values_by_id: dict[str, dict[str, str]] = {}
+        for identifier in identifiers:
+            matches = [
+                context
+                for context in evidence
+                if identifier.casefold() in context.unit.search_text.casefold()
+                and "demo data:" in context.unit.search_text.casefold()
+                and getattr(
+                    context.ranked.candidate.item.projection,
+                    "projection_type",
+                    None,
+                )
+                == "table_row"
+            ]
+            if not matches:
+                return cls._absent(field)
+            context = min(matches, key=lambda item: item.ranked.rank)
+            row_values = {
+                name: value
+                for name, value, _ in context.values
+                if name != "source"
+            }
+            subject = getattr(
+                context.ranked.candidate.item.projection,
+                "subject",
+                None,
+            )
+            if not subject or subject.casefold() != identifier.casefold():
+                return cls._absent(field)
+            row_values["project_id"] = subject
+            rows[identifier] = context
+            values_by_id[identifier] = row_values
+
+        first, second = identifiers
+        left = values_by_id[first]
+        right = values_by_id[second]
+        supports: list[tuple[str, str | None, EvidenceContext]] = []
+
+        if field.field == "synthetic_comparison_matching":
+            for key in (
+                "cluster",
+                "application_sector",
+                "medium",
+                "capacity_l_min",
+                "compressor_family",
+                "topology",
+                "cooling",
+                "control_package",
+                "purification_package",
+                "installation",
+                "environment",
+                "status",
+            ):
+                if left.get(key) and left.get(key) == right.get(key):
+                    supports.append((left[key], key.replace("_", " "), rows[first]))
+                    supports.append((left[key], key.replace("_", " "), rows[second]))
+        elif field.field == "synthetic_comparison_changed":
+            for key in (
+                "pressure_bar",
+                "compressor_model",
+                "storage_filling_package",
+            ):
+                if left.get(key) and right.get(key) and left[key] != right[key]:
+                    supports.append(
+                        (
+                            f"{first}: {left[key]} | {second}: {right[key]}",
+                            key.replace("_", " "),
+                            rows[first],
+                        )
+                    )
+                    supports.append(
+                        (
+                            f"{first}: {left[key]} | {second}: {right[key]}",
+                            key.replace("_", " "),
+                            rows[second],
+                        )
+                    )
+        elif field.field == "synthetic_comparison_linked_records":
+            left_ids = set(filter(None, left.get("linked_part_ids", "").split("; ")))
+            right_ids = set(filter(None, right.get("linked_part_ids", "").split("; ")))
+            common = sorted(left_ids & right_ids)
+            left_only = sorted(left_ids - right_ids)
+            right_only = sorted(right_ids - left_ids)
+            if common:
+                rendered = "; ".join(common)
+                supports.extend(
+                    (
+                        (rendered, "shared linked records", rows[first]),
+                        (rendered, "shared linked records", rows[second]),
+                    )
+                )
+            if left_only:
+                supports.append(("; ".join(left_only), f"only {first}", rows[first]))
+            if right_only:
+                supports.append(("; ".join(right_only), f"only {second}", rows[second]))
+        elif field.field == "synthetic_comparison_documents":
+            if left.get("document_ids") == right.get("document_ids"):
+                documents = left.get("document_ids")
+                if documents:
+                    supports.extend(
+                        (
+                            (documents, "both projects", rows[first]),
+                            (documents, "both projects", rows[second]),
+                        )
+                    )
+            else:
+                for identifier, row in ((first, left), (second, right)):
+                    documents = row.get("document_ids")
+                    if documents:
+                        supports.append((documents, identifier, rows[identifier]))
+        elif field.field == "synthetic_comparison_assumptions":
+            standards = left.get("standards")
+            disclaimer = left.get("authority_notice")
+            if standards:
+                supports.append((standards, "stored review assumptions", rows[first]))
+                supports.append((standards, "stored review assumptions", rows[second]))
+            if disclaimer:
+                supports.append((disclaimer, "authority boundary", rows[first]))
+                supports.append((disclaimer, "authority boundary", rows[second]))
+
+        if not supports:
+            return cls._absent(field)
+        return cls._supported_values(field, tuple(supports))
+
+    @classmethod
+    def _synthetic_record_field(
+        cls,
+        field,
+        evidence: tuple[EvidenceContext, ...],
+    ) -> FieldCoverage:
+        requested = next(
+            (
+                term
+                for term in field.anchor_terms
+                if term.upper().startswith("SYN-") and term != "SYN-"
+            ),
+            None,
+        )
+        matches: list[EvidenceContext] = []
+        for context in evidence:
+            projection = context.ranked.candidate.item.projection
+            subject = getattr(projection, "subject", None)
+            if getattr(projection, "projection_type", None) != "table_row":
+                continue
+            if "demo data:" not in context.unit.search_text.casefold():
+                continue
+            if requested and (
+                not subject or subject.casefold() != requested.casefold()
+            ):
+                continue
+            if field.match_terms and not all(
+                cls._positions(
+                    _normalize(context.unit.search_text),
+                    _normalize(term),
+                )
+                for term in field.match_terms
+            ):
+                continue
+            matches.append(context)
+        if not matches:
+            return cls._absent(field)
+        context = min(matches, key=lambda item: item.ranked.rank)
+        subject = getattr(
+            context.ranked.candidate.item.projection,
+            "subject",
+            None,
+        )
+        if not subject or not subject.upper().startswith("SYN-"):
+            return cls._absent(field)
+        row_values = {
+            name: value
+            for name, value, _ in context.values
+            if name != "source" and value.strip()
+        }
+        supports: list[tuple[str, str | None, EvidenceContext]] = [
+            (subject, "project id", context)
+        ]
+        for key in (
+            "cluster",
+            "application_sector",
+            "medium",
+            "pressure_bar",
+            "capacity_l_min",
+            "compressor_family",
+            "compressor_model",
+            "topology",
+            "cooling",
+            "control_package",
+            "purification_package",
+            "storage_filling_package",
+            "installation",
+            "environment",
+            "standards",
+            "status",
+            "document_ids",
+            "linked_part_ids",
+            "authority_notice",
+        ):
+            value = row_values.get(key)
+            if value:
+                supports.append((value, key.replace("_", " "), context))
+        return cls._supported_values(field, tuple(supports))
 
     @classmethod
     def _bm_family_field(
@@ -494,26 +806,37 @@ class CoverageEngine:
         if field.field == "bdetection_stationary_evidence":
             if stationary is None:
                 return cls._absent(field)
-            return cls._special_supported(
+            source = _normalize(stationary.unit.search_text)
+            values = []
+            if "stationary" in source or "continuously monitor" in source:
+                values.append("stationary continuous online system")
+            if "integrated" in source:
+                values.append("integrated variant")
+            if "stand-alone" in source or "stand alone" in source:
+                values.append("stand-alone variant")
+            if not values:
+                return cls._absent(field)
+            return cls._supported_values(
                 field,
-                (
-                    "B-DETECTION PLUS i/s is the stationary, continuous "
-                    "online system; the integrated and stand-alone variants "
-                    "continuously monitor breathing-air quality."
-                ),
-                (stationary,),
+                tuple((value, "B-DETECTION PLUS i/s", stationary) for value in values),
             )
         if field.field == "bdetection_mobile_evidence":
             if mobile is None:
                 return cls._absent(field)
-            return cls._special_supported(
+            source = _normalize(mobile.unit.search_text)
+            values = []
+            if "mobile" in source or "portable" in source:
+                values.append("mobile portable system")
+            if "case-based" in source or "case based" in source:
+                values.append("case-based configuration")
+            for location in ("cylinders", "compressors", "intake"):
+                if location in source:
+                    values.append(f"measurement at {location}")
+            if not values:
+                return cls._absent(field)
+            return cls._supported_values(
                 field,
-                (
-                    "B-DETECTION PLUS m is the mobile, portable case-based "
-                    "system for measurements at cylinders, compressors, or "
-                    "the intake."
-                ),
-                (mobile,),
+                tuple((value, "B-DETECTION PLUS m", mobile) for value in values),
             )
         if field.field == "bdetection_measurements":
             measured_stationary = cls._first_context(
@@ -528,15 +851,24 @@ class CoverageEngine:
             )
             if measured_stationary is None or measured_mobile is None:
                 return cls._absent(field)
-            return cls._special_supported(
-                field,
-                (
-                    "Both systems measure CO, CO2, and O2; absolute humidity "
-                    "and residual oil/VOC measurement are documented as "
-                    "optional."
-                ),
-                (measured_stationary, measured_mobile),
+            combined = _normalize(
+                measured_stationary.unit.search_text
+                + " "
+                + measured_mobile.unit.search_text
             )
+            values = [
+                (gas, "both systems", measured_stationary)
+                for gas in ("CO", "CO2", "O2")
+                if _normalize(gas) in combined
+            ]
+            for term, label in (
+                ("absolute humidity", "optional absolute humidity"),
+                ("residual oil", "optional residual oil/VOC"),
+                ("voc", "optional residual oil/VOC"),
+            ):
+                if term in combined and not any(item[0] == label for item in values):
+                    values.append((label, "both systems", measured_mobile))
+            return cls._supported_values(field, tuple(values))
         if field.field == "bdetection_logging":
             stationary_logging = cls._first_context(
                 evidence,
@@ -554,42 +886,73 @@ class CoverageEngine:
             )
             if stationary_logging is None or mobile_logging is None:
                 return cls._absent(field)
-            return cls._special_supported(
-                field,
-                (
-                    "The stationary i/s variants are B-CLOUD ready and log "
-                    "measurement values; the mobile m variant has an "
-                    "integrated SD-card data logger and B-CLOUD/B-APP remote "
-                    "access."
-                ),
-                (stationary_logging, mobile_logging),
-            )
+            values = []
+            stationary_source = _normalize(stationary_logging.unit.search_text)
+            mobile_source = _normalize(mobile_logging.unit.search_text)
+            for term, label in (
+                ("measurement values are logged", "measurement-value logging"),
+                ("b-cloud", "B-CLOUD ready"),
+            ):
+                if term in stationary_source:
+                    values.append((label, "B-DETECTION PLUS i/s", stationary_logging))
+            for term, label in (
+                ("integrated data logger", "integrated data logger"),
+                ("sd card", "SD-card storage"),
+                ("b-cloud", "B-CLOUD remote access"),
+                ("b-app", "B-APP remote access"),
+            ):
+                if term in mobile_source:
+                    values.append((label, "B-DETECTION PLUS m", mobile_logging))
+            if not values:
+                return cls._absent(field)
+            return cls._supported_values(field, tuple(values))
         if field.field == "bdetection_pressure_reconciliation":
             mobile_pressure = cls._first_context(
                 evidence,
-                required=("b-detection plus m", "420 bar"),
-                any_terms=("maximum system pressure", "up to 420 bar"),
+                required=("b-detection plus m",),
+                any_terms=("maximum system pressure", "up to"),
+                filename_terms=("0016_b-detection-plus-m",),
             )
             option_pressure = cls._first_context(
                 evidence,
-                required=("options up to 450 bar final pressure",),
+                required=("options up to", "final pressure"),
                 any_terms=("purge valve", "larger pressure range"),
                 filename_terms=("2025-03_b-detection_plus",),
             )
             if mobile_pressure is None or option_pressure is None:
                 return cls._absent(field)
-            return cls._special_supported(
+            mobile_match = re.search(
+                r"(?:maximum system pressure.{0,120}?|up to\s+)"
+                r"(\d{2,3}\s*bar)",
+                mobile_pressure.unit.search_text,
+                flags=re.IGNORECASE,
+            )
+            option_match = re.search(
+                r"options\s+up\s+to\s+(\d{2,3}\s*bar)\s+final pressure",
+                option_pressure.unit.search_text,
+                flags=re.IGNORECASE,
+            )
+            if mobile_match is None or option_match is None:
+                return cls._absent(field)
+            return cls._supported_values(
                 field,
                 (
-                    "The B-DETECTION PLUS m product evidence documents a "
-                    "420 bar maximum. The March 2025 N42078 brochure says "
-                    "the new-generation stationary i/s versions can be "
-                    "configured with options up to 450 bar final pressure "
-                    "because their purge valve was adapted for the larger "
-                    "range. The 450 bar wording is therefore an i/s option, "
-                    "not a replacement 450 bar rating for the mobile m."
+                    (
+                        f"maximum documented pressure: {mobile_match.group(1)}",
+                        "B-DETECTION PLUS m",
+                        mobile_pressure,
+                    ),
+                    (
+                        f"options up to {option_match.group(1)} final pressure",
+                        "new-generation B-DETECTION PLUS i/s",
+                        option_pressure,
+                    ),
                 ),
-                (mobile_pressure, option_pressure),
+                conflict_group="bdetection-pressure-source-scope",
+                uncertainty=(
+                    "The values have different product scope and source wording; "
+                    "they are not interchangeable ratings."
+                ),
             )
         return cls._absent(field)
 
@@ -619,15 +982,14 @@ class CoverageEngine:
                 value.strip()
                 for value in applications.group(1).split(",")
             ]
-            rendered = ", ".join(values[:-1]) + f", and {values[-1]}"
-            return cls._special_supported(
+            return cls._supported_values(
                 field,
                 (
-                    "Order number N7698 is the intake-filter-insert entry "
-                    "for large blocks / medium pressure, with applications "
-                    f"{rendered}."
+                    ("N7698", "order number", context),
+                    ("intake-filter insert", "component", context),
+                    ("large blocks / medium pressure", "catalogue group", context),
+                    *tuple((value, "compressor-block application", context) for value in values),
                 ),
-                (context,),
             )
         return cls._absent(field)
 
@@ -654,16 +1016,23 @@ class CoverageEngine:
             )
             if browser is None or app is None:
                 return cls._absent(field)
-            return cls._special_supported(
-                field,
-                (
-                    "B-CLOUD provides browser access to compressor status "
-                    "and fault notifications with plain-text diagnostics; "
-                    "B-APP provides the B-CLOUD functions on smartphones "
-                    "and tablets."
-                ),
-                (browser, app),
-            )
+            values = []
+            browser_source = _normalize(browser.unit.search_text)
+            app_source = _normalize(app.unit.search_text)
+            for term, label in (
+                ("browser application", "browser access"),
+                ("fault notifications", "fault notifications"),
+                ("plain-text diagnostics", "plain-text diagnostics"),
+            ):
+                if term in browser_source:
+                    values.append((label, "B-CLOUD", browser))
+            for term, label in (
+                ("smartphone", "smartphone access"),
+                ("tablet", "tablet access"),
+            ):
+                if term in app_source:
+                    values.append((label, "B-APP", app))
+            return cls._supported_values(field, tuple(values))
         if field.field == "bcloud_software_requirement":
             requirement = cls._first_context(
                 evidence,
@@ -675,15 +1044,35 @@ class CoverageEngine:
             )
             if requirement is None:
                 return cls._absent(field)
-            return cls._special_supported(
-                field,
-                (
-                    "Compatible systems require B-CONTROL MICRO +Net with "
-                    "software version 3.73 or later; older systems from "
-                    "version 3.0 can be updated to become B-CLOUD compatible."
-                ),
-                (requirement,),
+            text = re.sub(r"\s+", " ", requirement.unit.search_text)
+            current = re.search(
+                r"software version\s+(3\.73\s+or\s+later)",
+                text,
+                flags=re.IGNORECASE,
             )
+            older = re.search(
+                r"older systems[^.;]{0,120}?version\s+(3\.0)",
+                text,
+                flags=re.IGNORECASE,
+            )
+            if current is None:
+                return cls._absent(field)
+            values = [
+                (
+                    f"software version {current.group(1)}",
+                    "B-CONTROL MICRO +Net",
+                    requirement,
+                )
+            ]
+            if older is not None:
+                values.append(
+                    (
+                        f"update path from version {older.group(1)}",
+                        "older systems",
+                        requirement,
+                    )
+                )
+            return cls._supported_values(field, tuple(values))
         return cls._absent(field)
 
     @classmethod
@@ -695,49 +1084,62 @@ class CoverageEngine:
         if field.field == "bkool_iii_pressure":
             context = cls._first_context(
                 evidence,
-                required=(
-                    "b-kool iii",
-                    "maximum operating pressure",
-                    "350 bar",
-                    "550 bar",
-                ),
+                required=("b-kool iii", "maximum operating pressure"),
                 any_terms=("technical data", "model designation"),
                 filename_terms=("0021_b-kool", "0022_b-kool1"),
             )
             if context is None:
                 return cls._absent(field)
-            return cls._special_supported(
+            match = re.search(
+                r"maximum operating pressure\s*:?\s*"
+                r".{0,100}?"
+                r"(\d+\s*bar\s*/\s*\d+\s*bar)",
+                context.unit.search_text,
+                flags=re.IGNORECASE,
+            )
+            if match is None:
+                return cls._absent(field)
+            return cls._supported_values(
                 field,
-                "B-KOOL III maximum operating pressure: 350 bar / 550 bar.",
-                (context,),
+                ((match.group(1), "maximum operating pressure", context),),
             )
         if field.field == "bkool_iii_flow":
             context = cls._first_context(
                 evidence,
-                required=(
-                    "b-kool iii",
-                    "200",
-                    "700 l/min",
-                    "650 l/min",
-                    "420 l/min",
-                    "helium",
-                    "argon",
-                ),
+                required=("b-kool iii", "helium", "argon"),
                 any_terms=("iso 1217", "maximum flow rate"),
                 filename_terms=("0021_b-kool", "0022_b-kool1"),
             )
             if context is None:
                 return cls._absent(field)
-            return cls._special_supported(
-                field,
+            text = re.sub(r"\s+", " ", context.unit.search_text)
+            patterns = (
                 (
-                    "B-KOOL III maximum flow rates: 200–700 l/min for "
-                    "10 l cylinder filling from 0–200 bar; 200–650 l/min "
-                    "according to ISO 1217 for air; and 200–420 l/min for "
-                    "helium and argon."
+                    r"(\d+\s*[–-]\s*\d+\s*l/min)"
+                    r"\s*(?:\(|for\s+)10\s*l\s*cylinder[^.;]{0,90}?"
+                    r"0\s*[–-]\s*200\s*bar",
+                    "10 l cylinder filling from 0–200 bar",
                 ),
-                (context,),
+                (
+                    r"(\d+\s*[–-]\s*\d+\s*l/min)"
+                    r"\s*(?:\(|according\s+to\s+)?"
+                    r"(?:according\s+to\s+)?ISO\s*1217",
+                    "air according to ISO 1217",
+                ),
+                (
+                    r"(\d+\s*[–-]\s*\d+\s*l/min)"
+                    r"\s*(?:\(|for\s+)?helium\s*(?:and|&)\s*argon",
+                    "helium and argon",
+                ),
             )
+            values = []
+            for pattern, qualifier in patterns:
+                match = re.search(pattern, text, flags=re.IGNORECASE)
+                if match is not None:
+                    values.append((match.group(1), qualifier, context))
+            if len(values) != 3:
+                return cls._absent(field)
+            return cls._supported_values(field, tuple(values))
         return cls._absent(field)
 
     @classmethod
@@ -759,17 +1161,25 @@ class CoverageEngine:
         if field.field == "bsafe_nitrox_300_decision":
             if headline is None:
                 return cls._absent(field)
-            return cls._special_supported(
+            text = re.sub(r"\s+", " ", headline.unit.search_text)
+            breathing = re.search(
+                r"breathing air applications up to\s+(\d+\s*bar)",
+                text,
+                flags=re.IGNORECASE,
+            )
+            nitrox = re.search(
+                r"nitrox applications up to\s+(\d+\s*bar)",
+                text,
+                flags=re.IGNORECASE,
+            )
+            if breathing is None or nitrox is None:
+                return cls._absent(field)
+            return cls._supported_values(
                 field,
                 (
-                    "No. The uploaded Bauer evidence does not establish "
-                    "B-SAFE approval for filling Nitrox cylinders at "
-                    "300 bar. The product-page headline states breathing-air "
-                    "applications up to 300 bar and Nitrox applications up "
-                    "to 200 bar; compatibility must not be inferred beyond "
-                    "those stated application limits."
+                    (breathing.group(1), "breathing-air application limit", headline),
+                    (nitrox.group(1), "Nitrox application limit", headline),
                 ),
-                (headline,),
             )
         if field.field == "bsafe_wording_reconciliation":
             technical = cls._first_context(
@@ -786,19 +1196,45 @@ class CoverageEngine:
             )
             if headline is None or technical is None:
                 return cls._absent(field)
-            return cls._special_supported(
-                field,
+            headline_text = re.sub(r"\s+", " ", headline.unit.search_text)
+            technical_text = re.sub(r"\s+", " ", technical.unit.search_text)
+            extracted = []
+            for pattern, qualifier, context in (
                 (
-                    "The page headline gives application limits of 300 bar "
-                    "for breathing air and 200 bar for Nitrox. The later "
-                    "B-SAFE 300 technical-data block lists medium "
-                    "“Air, Nitrox,” maximum operating pressure 410 bar, "
-                    "and filling pressures 225/330 bar, but it does not "
-                    "explicitly assign a 300 bar Nitrox application limit. "
-                    "The wording conflict is unresolved and is not a "
-                    "compatibility approval for Nitrox at 300 bar."
+                    r"breathing air applications up to\s+(\d+\s*bar)",
+                    "headline breathing-air application limit",
+                    headline,
                 ),
-                (headline, technical),
+                (
+                    r"nitrox applications up to\s+(\d+\s*bar)",
+                    "headline Nitrox application limit",
+                    headline,
+                ),
+                (
+                    r"maximum operating pressure\s*:?\s*(\d+\s*bar)",
+                    "B-SAFE 300 technical-data maximum operating pressure",
+                    technical,
+                ),
+                (
+                    r"filling pressures\s*:?\s*(\d+\s*/\s*\d+\s*bar)",
+                    "B-SAFE 300 technical-data filling pressures",
+                    technical,
+                ),
+            ):
+                source = headline_text if context is headline else technical_text
+                match = re.search(pattern, source, flags=re.IGNORECASE)
+                if match is not None:
+                    extracted.append((match.group(1), qualifier, context))
+            if len(extracted) != 4:
+                return cls._absent(field)
+            return cls._supported_values(
+                field,
+                tuple(extracted),
+                conflict_group="bsafe-application-versus-technical-data",
+                uncertainty=(
+                    "The technical-data values do not explicitly replace the "
+                    "medium-specific application limits."
+                ),
             )
         return cls._absent(field)
 
@@ -831,22 +1267,111 @@ class CoverageEngine:
             else None
         )
 
-    @staticmethod
+    @classmethod
+    def _supported_values(
+        cls,
+        field,
+        support: tuple[
+            tuple[str, str | None, EvidenceContext],
+            ...,
+        ],
+        *,
+        conflict_group: str | None = None,
+        uncertainty: str | None = None,
+    ) -> FieldCoverage:
+        facts = tuple(
+            cls._fact(
+                field.field,
+                value,
+                qualifier,
+                context,
+                conflict_group=conflict_group,
+                uncertainty=uncertainty,
+            )
+            for value, qualifier, context in support
+        )
+        return FieldCoverage(
+            field=field,
+            state="supported",
+            values=tuple(
+                dict.fromkeys(
+                    (fact.display_value, fact.qualifier) for fact in facts
+                )
+            ),
+            evidence_ids=tuple(
+                dict.fromkeys(
+                    fact.evidence_id for fact in facts
+                )
+            ),
+            detail=None,
+            facts=facts,
+        )
+
+    @classmethod
     def _special_supported(
+        cls,
         field,
         value: str,
         contexts: tuple[EvidenceContext, ...],
     ) -> FieldCoverage:
-        return FieldCoverage(
+        return cls._supported_values(
+            field,
+            tuple((value, None, context) for context in contexts[:1]),
+        )
+
+    @staticmethod
+    def _fact(
+        field: str,
+        value: str,
+        qualifier: str | None,
+        context: EvidenceContext,
+        *,
+        conflict_group: str | None,
+        uncertainty: str | None,
+    ) -> EvidenceFact:
+        candidate = getattr(context.ranked, "candidate", None)
+        item = getattr(candidate, "item", None)
+        projection = getattr(item, "projection", None)
+        filename = context.citation.original_filename
+        date_match = re.search(r"(?<!\d)(20\d{2})[-_](\d{2})(?!\d)", filename)
+        source_date = (
+            f"{date_match.group(1)}-{date_match.group(2)}"
+            if date_match
+            else None
+        )
+        normalized_value = getattr(context.citation, "normalized_value", None)
+        unit = getattr(context.citation, "normalized_unit", None) or getattr(
+            context.citation,
+            "raw_unit",
+            None,
+        )
+        authority = (
+            "synthetic_demo"
+            if "bauer-synthetic-demo" in filename.casefold()
+            or "demo data:" in context.unit.search_text.casefold()
+            else "public_bauer"
+        )
+        fact_id = stable_id(
+            "answer_fact",
+            field,
+            value,
+            qualifier,
+            context.unit.evidence_id,
+        )
+        return EvidenceFact(
+            fact_id=fact_id,
             field=field,
-            state="supported",
-            values=((value, None),),
-            evidence_ids=tuple(
-                dict.fromkeys(
-                    context.unit.evidence_id for context in contexts
-                )
-            ),
-            detail=None,
+            display_value=value,
+            normalized_value=normalized_value,
+            unit=unit,
+            qualifier=qualifier,
+            subject=getattr(projection, "subject", None),
+            source_document=filename,
+            source_date=source_date,
+            authority=authority,
+            evidence_id=context.unit.evidence_id,
+            conflict_group=conflict_group,
+            uncertainty=uncertainty,
         )
 
     @staticmethod

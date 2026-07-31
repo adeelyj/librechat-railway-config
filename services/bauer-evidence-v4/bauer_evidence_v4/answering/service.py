@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field, replace
+import hashlib
+import json
 
 from ..contracts.models import (
     CoverageItem,
@@ -16,7 +18,7 @@ from ..retrieval import (
 from .analysis import TaskAnalyzer
 from .coverage import CoverageEngine
 from .evidence import EvidenceMaterializer, SourceRegistry
-from .models import AnswerDraft, FieldCoverage
+from .models import AnswerDraft, FieldCoverage, TaskPlan
 from .render import GroundedAnswerBuilder
 from .validation import AnswerValidator, TargetedRepair
 
@@ -46,7 +48,11 @@ class AnswerService:
         locale: str,
         scope: AuthorizedScope,
     ) -> V4AnswerResponse:
-        plan = self.analyzer.analyze(question, locale=locale)
+        plan = self.analyzer.analyze(
+            question,
+            locale=locale,
+            search_hints=(search_hint,) if search_hint else (),
+        )
         candidate_set = self.candidate_generator.retrieve(
             RetrievalRequest(
                 question=question,
@@ -55,7 +61,7 @@ class AnswerService:
                 constraints=(),
                 scope=scope,
             ),
-            limit=50,
+            limit=80,
         )
         if candidate_set.original_question != question:
             raise AssertionError("candidate generation changed the original question")
@@ -63,7 +69,7 @@ class AnswerService:
         # Coverage remains bounded to at most two claim-sized supports per
         # field, so this wider rerank window cannot become answer material by
         # itself.
-        reranked = self._rerank_requirements_first(candidate_set, limit=40)
+        reranked = self._rerank_requirements_first(candidate_set, limit=60)
         if reranked.original_question != question:
             raise AssertionError("reranking changed the original question")
         evidence = EvidenceMaterializer(self.source_registry).materialize(
@@ -136,8 +142,46 @@ class AnswerService:
                 "evidence_window_count": len(evidence),
                 "reranker_model_id": reranked.model_id,
                 "reranker_identity": reranked.model_identity,
+                "answer_mode": (
+                    "lossless_deterministic"
+                    if plan.deliverable == "exact_row"
+                    else "grounded_structured"
+                ),
+                "validation_fingerprint": self._validation_fingerprint(
+                    plan,
+                    draft,
+                ),
             },
         )
+
+    @staticmethod
+    def _validation_fingerprint(
+        plan: TaskPlan,
+        draft: AnswerDraft,
+    ) -> str:
+        payload = {
+            "question": plan.original_question,
+            "deliverable": plan.deliverable,
+            "fields": [field.field for field in plan.fields],
+            "status": draft.status,
+            "claims": [
+                {
+                    "field": claim.field,
+                    "values": list(claim.values),
+                    "evidence_ids": list(claim.evidence_ids),
+                    "fact_ids": list(claim.fact_ids),
+                }
+                for claim in draft.claims
+            ],
+            "answer": draft.answer,
+        }
+        encoded = json.dumps(
+            payload,
+            ensure_ascii=False,
+            sort_keys=True,
+            separators=(",", ":"),
+        ).encode("utf-8")
+        return hashlib.sha256(encoded).hexdigest()
 
     def _rerank_requirements_first(
         self,
