@@ -44,13 +44,14 @@ const uniqueFiles = (files) => {
 const parseV4SupplementalSources = (
   value = process.env.BAUER_V4_SUPPLEMENTAL_SOURCES_JSON,
 ) => {
-  if (value == null || String(value).trim() === '') {
+  const normalized = value == null ? '' : String(value).trim();
+  if (normalized === '') {
     return [];
   }
 
   let parsed;
   try {
-    parsed = JSON.parse(String(value));
+    parsed = JSON.parse(normalized);
   } catch {
     throw new Error('BAUER_V4_SUPPLEMENTAL_SOURCES_JSON must be valid JSON');
   }

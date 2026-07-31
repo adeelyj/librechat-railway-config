@@ -39,6 +39,7 @@ test('V4 supplemental release sources are server-pinned and fail closed', () => 
   );
   assert.equal(authorized[1].fromAgent, true);
   assert.equal(authorized[1].v4Supplemental, true);
+  assert.equal(createV4AuthorizedFiles(files, `\uFEFF${configured}`).length, 2);
   assert.throws(
     () => createV4AuthorizedFiles(files, '{invalid'),
     /must be valid JSON/,
