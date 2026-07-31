@@ -745,6 +745,73 @@ def test_search_hints_cannot_define_tasks_or_embed_b10_b19_answers() -> None:
         assert hidden_value not in b19_hints
 
 
+def test_bdetection_logging_unions_capabilities_across_supported_sources() -> None:
+    field = next(
+        field
+        for field in TaskAnalyzer().analyze(
+            "Compare B-DETECTION PLUS i/s with B-DETECTION PLUS m for a "
+            "stationary fire-brigade filling station. Explain which is "
+            "stationary and which is mobile, what they measure, their "
+            "logging capabilities, and reconcile 420 bar with 450 bar."
+        ).fields
+        if field.field == "bdetection_logging"
+    )
+
+    def context(rank: int, evidence_id: str, filename: str, text: str):
+        projection = SimpleNamespace(subject=None)
+        return SimpleNamespace(
+            ranked=SimpleNamespace(
+                rank=rank,
+                candidate=SimpleNamespace(
+                    item=SimpleNamespace(projection=projection)
+                ),
+            ),
+            citation=SimpleNamespace(
+                original_filename=filename,
+                normalized_value=None,
+                normalized_unit=None,
+                raw_unit=None,
+            ),
+            unit=SimpleNamespace(
+                evidence_id=evidence_id,
+                search_text=text,
+            ),
+        )
+
+    coverage = CoverageEngine._bdetection_field(
+        field,
+        (
+            context(
+                1,
+                "stationary",
+                "2025-03_B-DETECTION_PLUS_EN_N42078_sc.pdf",
+                "B-DETECTION PLUS: all measurement values are logged; "
+                "a data logger function exports values using an SD card.",
+            ),
+            context(
+                2,
+                "generic-mobile",
+                "bauer_amfile_5.pdf",
+                "B-DETECTION PLUS m has SD card, B-CLOUD and B-APP access.",
+            ),
+            context(
+                3,
+                "product-mobile",
+                "0016_b-detection-plus-m.html",
+                "B-DETECTION PLUS m has an integrated data logger, SD card, "
+                "B-CLOUD and B-APP access.",
+            ),
+        ),
+    )
+    values = {fact.display_value for fact in coverage.facts}
+    assert coverage.state == "supported"
+    assert "integrated data logger" in values
+    assert "SD-card storage" in values
+    assert "B-CLOUD remote access" in values
+    assert "B-APP remote access" in values
+    assert "product-mobile" in coverage.evidence_ids
+
+
 def test_bm_family_comparison_uses_complete_overview_ranges(
     answer_fixture: tuple,
 ) -> None:

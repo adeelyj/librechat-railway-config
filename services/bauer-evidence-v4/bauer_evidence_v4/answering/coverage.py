@@ -870,7 +870,7 @@ class CoverageEngine:
                     values.append((label, "both systems", measured_mobile))
             return cls._supported_values(field, tuple(values))
         if field.field == "bdetection_logging":
-            stationary_logging = cls._first_context(
+            stationary_logging = cls._matching_contexts(
                 evidence,
                 required=("b-detection plus",),
                 any_terms=(
@@ -879,30 +879,32 @@ class CoverageEngine:
                 ),
                 filename_terms=("2025-03_b-detection_plus",),
             )
-            mobile_logging = cls._first_context(
+            mobile_logging = cls._matching_contexts(
                 evidence,
                 required=("b-detection plus m",),
                 any_terms=("integrated data logger", "sd card"),
             )
-            if stationary_logging is None or mobile_logging is None:
+            if not stationary_logging or not mobile_logging:
                 return cls._absent(field)
-            values = []
-            stationary_source = _normalize(stationary_logging.unit.search_text)
-            mobile_source = _normalize(mobile_logging.unit.search_text)
+            values: list[tuple[str, str, EvidenceContext]] = []
             for term, label in (
                 ("measurement values are logged", "measurement-value logging"),
                 ("b-cloud", "B-CLOUD ready"),
             ):
-                if term in stationary_source:
-                    values.append((label, "B-DETECTION PLUS i/s", stationary_logging))
+                for context in stationary_logging:
+                    if term in _normalize(context.unit.search_text):
+                        values.append((label, "B-DETECTION PLUS i/s", context))
+                        break
             for term, label in (
                 ("integrated data logger", "integrated data logger"),
                 ("sd card", "SD-card storage"),
                 ("b-cloud", "B-CLOUD remote access"),
                 ("b-app", "B-APP remote access"),
             ):
-                if term in mobile_source:
-                    values.append((label, "B-DETECTION PLUS m", mobile_logging))
+                for context in mobile_logging:
+                    if term in _normalize(context.unit.search_text):
+                        values.append((label, "B-DETECTION PLUS m", context))
+                        break
             if not values:
                 return cls._absent(field)
             return cls._supported_values(field, tuple(values))
@@ -1246,6 +1248,22 @@ class CoverageEngine:
         any_terms: tuple[str, ...],
         filename_terms: tuple[str, ...] = (),
     ) -> EvidenceContext | None:
+        matches = CoverageEngine._matching_contexts(
+            evidence,
+            required=required,
+            any_terms=any_terms,
+            filename_terms=filename_terms,
+        )
+        return matches[0] if matches else None
+
+    @staticmethod
+    def _matching_contexts(
+        evidence: tuple[EvidenceContext, ...],
+        *,
+        required: tuple[str, ...],
+        any_terms: tuple[str, ...],
+        filename_terms: tuple[str, ...] = (),
+    ) -> tuple[EvidenceContext, ...]:
         matches = []
         for context in evidence:
             text = _normalize(context.unit.search_text)
@@ -1261,10 +1279,8 @@ class CoverageEngine:
             ):
                 continue
             matches.append(context)
-        return (
-            min(matches, key=lambda context: context.ranked.rank)
-            if matches
-            else None
+        return tuple(
+            sorted(matches, key=lambda context: context.ranked.rank)
         )
 
     @classmethod
