@@ -188,7 +188,7 @@ test('multiple V3 tool completions fail closed instead of choosing by race order
   ]);
 });
 
-test('V4 materializes the validated result through the one-tool direct-final marker', async () => {
+test('V4 materializes the validated result through the one-round direct-final marker', async () => {
   const contentParts = [
     { type: 'text', text: 'Untrusted model text' },
     { type: 'tool_call', tool_call: { id: 'call-1', name: 'file_search' } },

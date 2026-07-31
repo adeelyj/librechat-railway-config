@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "evidence_id": "bauer-rag-v4-bare-bauer-deepseek-regression-20260731",
+  "classification": "public-development-regression",
+  "locked_holdout_opened": false,
+  "prompt": "list the products of bauer",
+  "root_causes": [
+    "The company-overview analyzer recognized explicit Bauer Kompressoren aliases and one observed typo, but not bare Bauer in an explicit portfolio request.",
+    "The allow-listed V4 Agent permitted additional model tool rounds after it already had a validated complete backend answer."
+  ],
+  "backend_correction": {
+    "commit": "9e48fddabc2e5bbc0053eae7d4bf75b8543a8671",
+    "deployment": "5a6a8c88-6df5-4689-873b-4e7dc1ca063c",
+    "status": "SUCCESS",
+    "service_tests": "58 passed",
+    "regression_case": "V4-R03",
+    "requested_fields": [
+      "company_core_business",
+      "company_product_portfolio",
+      "company_application_scope"
+    ]
+  },
+  "librechat_boundary_correction": {
+    "commit": "1008ac53741a7e6888005651180dafd1abfd7d46",
+    "deployment": "d67e914e-b769-471d-8093-94389382823b",
+    "status": "SUCCESS",
+    "adapter_and_authorization_tests": "41 passed",
+    "behavior": "End the allow-listed V4 graph after its first file-search tool round and materialize the validated backend answer."
+  },
+  "release_boundary": {
+    "candidate_release": "45abb96f-c555-4a65-92a4-b6ee3be09da9",
+    "artifact_count": 373,
+    "projection_count": 25093,
+    "active_release_pointer_used": false,
+    "v1_v2_v3_changed": false
+  },
+  "authenticated_deepseek_before_boundary": {
+    "http_status": 200,
+    "elapsed_ms": 408821.71,
+    "file_search_calls": 8,
+    "evidence_count": 11,
+    "conversation_deleted": true,
+    "backend_answer_was_correct": true
+  },
+  "authenticated_deepseek_after_boundary": {
+    "http_status": 200,
+    "elapsed_ms": 95614.89,
+    "file_search_calls": 2,
+    "tool_rounds": 1,
+    "calls_were_parallel_in_first_round": true,
+    "evidence_count": 5,
+    "conversation_deleted": true,
+    "stderr_bytes": 0,
+    "required_answer_terms_present": [
+      "medium- and high-pressure air and gas compression systems",
+      "air and gas purification",
+      "divers and firefighters",
+      "bio-CNG, biogas, hydrogen, and LNG"
+    ],
+    "forbidden_answer_terms_absent": [
+      "Requested-topic evidence",
+      "supplier shall apply"
+    ]
+  },
+  "expected_source_files": [
+    "2025-06_Product_overview_EN_N37488_sc.pdf",
+    "2026-04_Compressors_for_Industry_EN_N39771_sc.pdf",
+    "0153_fuel-gas-systems_9645f76747.html"
+  ]
+}

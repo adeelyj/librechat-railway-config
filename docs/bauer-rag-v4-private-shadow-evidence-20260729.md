@@ -22,10 +22,10 @@ promotion is not authorized.
 | --- | --- |
 | V3 ancestor | `11ea00066300ed3ca5bf4ec75fd9d76a6d43dc59` |
 | V4 branch | `codex/bauer-rag-v4` |
-| V4 backend commit | `68f8ca2530ff59d9655cd0ea534f16340e24c0d6` |
-| V4 backend deployment | `a216621d-729e-48ce-9617-7f3d8557ae17` (`SUCCESS`) |
-| LibreChat overlay commit | `6982ac9483e649ab83141104c69331e56a8aaa38` |
-| LibreChat deployment | `34c6ab45-1a12-4d34-9552-0240e7022487` (`SUCCESS`) |
+| V4 backend commit | `9e48fddabc2e5bbc0053eae7d4bf75b8543a8671` |
+| V4 backend deployment | `5a6a8c88-6df5-4689-873b-4e7dc1ca063c` (`SUCCESS`) |
+| LibreChat overlay commit | `1008ac53741a7e6888005651180dafd1abfd7d46` |
+| LibreChat deployment | `d67e914e-b769-471d-8093-94389382823b` (`SUCCESS`) |
 | Candidate public label | `bauer-rag-v4-private-20260729-r1` |
 
 The deployed `/ready/v4` response reports the exact backend commit, 373
@@ -113,6 +113,27 @@ The source-controlled regression is
 `evidence/bauer-rag-v4-company-overview-regression-20260731.json`. The existing
 B01-B30 analyzer routes are unchanged. The historical 120-observation
 benchmark below was not relabeled or rerun for this targeted correction.
+
+### Bare-company prompt and DeepSeek tool-loop follow-up
+
+The later prompt `list the products of bauer` exposed two independent gaps. The analyzer required
+an explicit `Bauer Kompressoren` alias, so the bare company reference fell back to generic terms
+and again selected supplier-contract evidence. After correcting that representation boundary,
+the backend returned the concise validated company answer, but DeepSeek continued issuing
+redundant file searches because V4 was allowed multiple Agent tool rounds.
+
+Backend commit `9e48fddabc2e5bbc0053eae7d4bf75b8543a8671` adds the literal prompt as public regression
+`V4-R03` and restricts bare `Bauer` routing to broad overview/portfolio requests; named-product
+and numerical requests remain on their specific planners. LibreChat overlay commit
+`1008ac53741a7e6888005651180dafd1abfd7d46` ends the allow-listed V4 graph after its first tool
+round and materializes the validated backend answer.
+
+The authenticated DeepSeek probe improved from eight file-search calls and 408.8 seconds before
+the boundary correction to two parallel calls in one tool round and 95.6 seconds after it. The
+post-correction result contains all four required company/portfolio statements, contains neither
+the internal requested-topic label nor the supplier clause, and deletes its temporary
+conversation. Exact evidence is in
+`evidence/bauer-rag-v4-bare-bauer-deepseek-regression-20260731.json`.
 
 ## Evidence inventory
 

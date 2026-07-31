@@ -179,7 +179,8 @@ const createBauerV3FinalBoundary = ({
     // option. The legacy marker name is retained for the checksum-bound
     // overlay, but both allow-listed Bauer direct-final modes use it. V4
     // already plans all requested fields from the immutable full question;
-    // repeated model-generated search hints must not create a tool loop.
+    // repeated model-generated search hints must not create another tool
+    // round. A provider may still emit parallel calls in the first round.
     primaryConfig.bauerV3DirectFinal = true;
     eventHandlers.on_message_delta = { handle: async () => {} };
     eventHandlers.on_reasoning_delta = { handle: async () => {} };

@@ -18,10 +18,10 @@ contaminated. Promotion requires a freshly resealed holdout and an independent e
 | Public release ID | `bauer-rag-v4-private-20260729-r1` |
 | Private LibreChat Agent | `agent_TEEBDBmMxnQwL10UjILhw` |
 | Agent name | `Bauer Kompressoren - RAG V4 Private Shadow` |
-| Backend commit | `68f8ca2530ff59d9655cd0ea534f16340e24c0d6` |
-| Backend deployment | `a216621d-729e-48ce-9617-7f3d8557ae17` |
-| LibreChat overlay commit | `6982ac9483e649ab83141104c69331e56a8aaa38` |
-| LibreChat deployment | `34c6ab45-1a12-4d34-9552-0240e7022487` |
+| Backend commit | `9e48fddabc2e5bbc0053eae7d4bf75b8543a8671` |
+| Backend deployment | `5a6a8c88-6df5-4689-873b-4e7dc1ca063c` |
+| LibreChat overlay commit | `1008ac53741a7e6888005651180dafd1abfd7d46` |
+| LibreChat deployment | `d67e914e-b769-471d-8093-94389382823b` |
 | Source membership | 373 exact protected Bauer file IDs |
 | Object prefix | isolated `v4/` prefix in the reused private bucket |
 
@@ -97,15 +97,19 @@ blocks, tables, typed facts, and exact page/cell provenance; it does not bypass 
 
 Rollback does not require deleting V4 data:
 
-1. To undo only the 2026-07-31 company-overview correction, restore private API deployment
+1. To undo only the one-round V4 Agent boundary, restore LibreChat deployment
+   `9e867008-6cc6-4fa3-9c37-cdab82892195`.
+2. To undo only the bare-`Bauer` portfolio routing correction, restore private API deployment
+   `a216621d-729e-48ce-9617-7f3d8557ae17`.
+3. To undo the earlier 2026-07-31 company-overview correction, restore private API deployment
    `c2bf14c8-3e71-4d21-b85a-67f122a03ffc`. The fixed V4 release and LibreChat adapter are unchanged.
-2. Restore LibreChat deployment `ae7a03a5-3d5d-4b1f-85f4-ce65e2d54382` to remove the V4 adapter
+4. Restore LibreChat deployment `ae7a03a5-3d5d-4b1f-85f4-ce65e2d54382` to remove the V4 adapter
    while retaining V1/V2/V3 behavior.
-3. Restore private API deployment `13e2235d-a8c4-4103-bdb8-1f624a716026` to return to the frozen
+5. Restore private API deployment `13e2235d-a8c4-4103-bdb8-1f624a716026` to return to the frozen
    V3-only API image.
-4. If needed, restore worker deployment `250827d4-dcfc-4e39-a149-53bc0a290223`; a ready V4 release
+6. If needed, restore worker deployment `250827d4-dcfc-4e39-a149-53bc0a290223`; a ready V4 release
    has no claimable compilation jobs.
-5. Leave the V4 schema and objects in place for evidence preservation. The active pointer remains
+7. Leave the V4 schema and objects in place for evidence preservation. The active pointer remains
    empty, so retained V4 data cannot become production-active.
 
 Database rollback scripts exist for all seven V4 migrations and are for an explicitly scheduled
@@ -123,8 +127,8 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
   -File scripts\deployment\Invoke-BauerV4ShadowRegression.ps1 `
   -V3AgentId agent_DzeT_ugU3tuZC_VCKB8Bh `
   -V4AgentId agent_TEEBDBmMxnQwL10UjILhw `
-  -LibreChatOverlayCommit 6982ac9483e649ab83141104c69331e56a8aaa38 `
-  -V4BackendCommit 68f8ca2530ff59d9655cd0ea534f16340e24c0d6 `
+  -LibreChatOverlayCommit 1008ac53741a7e6888005651180dafd1abfd7d46 `
+  -V4BackendCommit 9e48fddabc2e5bbc0053eae7d4bf75b8543a8671 `
   -OutputPath <development-benchmark-output>
 ```
 
@@ -143,8 +147,15 @@ reranking, then coverage/answering.
 
 The public company-overview regression is
 `evals/bauer-rag-v4/cases/company-overview-regression.json`. It covers the exact prompt
-`what does bauer kompressoren do` and the observed typo prompt `list hte products from bayuer`.
+`what does bauer kompressoren do`, the observed typo prompt `list hte products from bayuer`, and
+the bare-company prompt `list the products of bauer`.
 Both must route to the three company coverage fields, produce a concise cited answer, and reject
 the former internal evidence label and supplier-contract contamination. The corresponding live
 correction evidence is
 `evidence/bauer-rag-v4-company-overview-regression-20260731.json`.
+
+For the allow-listed V4 Agent, LibreChat ends the graph after the first file-search tool round and
+materializes the validated V4 answer. Providers may emit parallel searches inside that first
+round, but cannot continue into additional search rounds. The exact bare-company DeepSeek probe
+and before/after tool counts are recorded in
+`evidence/bauer-rag-v4-bare-bauer-deepseek-regression-20260731.json`.
