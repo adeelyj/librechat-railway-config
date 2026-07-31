@@ -4,13 +4,17 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-
-from bauer_evidence_v3.object_store import S3ObjectStore
-from bauer_evidence_v4.deployment.config import V4Settings
-from bauer_evidence_v4.deployment.worker import _s3_client
-
+import sys
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPOSITORY_ROOT / "services" / "bauer-evidence-v3"))
+sys.path.insert(0, str(REPOSITORY_ROOT / "services" / "bauer-evidence-v4"))
+
+from bauer_evidence_v3.object_store import S3ObjectStore  # noqa: E402
+from bauer_evidence_v4.deployment.config import V4Settings  # noqa: E402
+from bauer_evidence_v4.deployment.worker import _s3_client  # noqa: E402
+
+
 DEFAULT_SOURCE = (
     REPOSITORY_ROOT
     / "services"
@@ -58,30 +62,48 @@ def stage(source: Path) -> dict[str, object]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
-    parser.add_argument("--output", type=Path, required=True)
-    args = parser.parse_args()
-    result = stage(args.source.resolve())
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(
-        json.dumps(result, sort_keys=True, indent=2) + "\n",
-        encoding="utf-8",
-        newline="\n",
-    )
-    print(
-        json.dumps(
-            {
-                "output_path": str(args.output),
-                "content_sha256": result["content_sha256"],
-                "read_after_write_verified": True,
-                "credentials_or_connection_details_emitted": False,
-            },
-            sort_keys=True,
-            separators=(",", ":"),
+    try:
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
+        parser.add_argument("--output", type=Path, required=True)
+        args = parser.parse_args()
+        result = stage(args.source.resolve())
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(
+            json.dumps(result, sort_keys=True, indent=2) + "\n",
+            encoding="utf-8",
+            newline="\n",
         )
-    )
-    return 0
+        print(
+            json.dumps(
+                {
+                    "output_path": str(args.output),
+                    "content_sha256": result["content_sha256"],
+                    "read_after_write_verified": True,
+                    "credentials_or_connection_details_emitted": False,
+                },
+                sort_keys=True,
+                separators=(",", ":"),
+            )
+        )
+        return 0
+    except Exception as error:
+        print(
+            json.dumps(
+                {
+                    "error_type": type(error).__name__,
+                    "error_fingerprint": hashlib.sha256(
+                        f"{type(error).__name__}:{error}".encode(
+                            "utf-8", errors="replace"
+                        )
+                    ).hexdigest(),
+                    "credentials_or_connection_details_emitted": False,
+                },
+                sort_keys=True,
+                separators=(",", ":"),
+            )
+        )
+        return 2
 
 
 if __name__ == "__main__":

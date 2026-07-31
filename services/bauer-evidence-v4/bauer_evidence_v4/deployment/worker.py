@@ -12,6 +12,7 @@ from typing import Any
 from bauer_evidence_v3.object_store import S3ObjectStore
 
 from ..canonical.models import canonical_data
+from ..canonical.normalize import stable_id
 from ..compilation import CanonicalCompiler
 from ..compilation.quality import evaluate_document
 from ..indexing import ProjectionBuilder
@@ -21,6 +22,22 @@ from .ocr_fallback import compile_ocr_fallback
 
 
 LOGGER = logging.getLogger(__name__)
+_CANONICAL_ID_KINDS = {
+    "document",
+    "block",
+    "table",
+    "cell",
+    "fact",
+    "record",
+    "projection",
+}
+
+
+def _release_scoped_id(release_id: str, canonical_id: str) -> str:
+    kind, separator, _digest = canonical_id.partition("_")
+    if not separator or kind not in _CANONICAL_ID_KINDS:
+        raise ValueError("unsupported canonical identifier")
+    return stable_id(kind, release_id, canonical_id)
 
 
 def _fingerprint(error: BaseException) -> str:
@@ -337,10 +354,12 @@ class V4CompilerWorker:
         document: Any,
         projections: Any,
     ) -> None:
+        release_id = self.settings.candidate_release_id
+        document_id = _release_scoped_id(release_id, document.document_id)
         scope = (
             self.settings.tenant_id,
             self.settings.knowledge_base_id,
-            self.settings.candidate_release_id,
+            release_id,
             source_id,
         )
         connection.execute(
@@ -358,7 +377,7 @@ class V4CompilerWorker:
             )
             """,
             (
-                document.document_id,
+                document_id,
                 *scope,
                 source_version_id,
                 hashlib.sha256(document.to_json().encode("utf-8")).hexdigest(),
@@ -371,6 +390,7 @@ class V4CompilerWorker:
             ),
         )
         for block in document.blocks:
+            block_id = _release_scoped_id(release_id, block.block_id)
             connection.execute(
                 """
                 INSERT INTO bauer_rag_v4.canonical_blocks (
@@ -386,8 +406,8 @@ class V4CompilerWorker:
                 )
                 """,
                 (
-                    block.block_id,
-                    document.document_id,
+                    block_id,
+                    document_id,
                     *scope,
                     block.kind,
                     block.provenance.physical_page,
@@ -399,6 +419,7 @@ class V4CompilerWorker:
                 ),
             )
         for table in document.tables:
+            table_id = _release_scoped_id(release_id, table.table_id)
             connection.execute(
                 """
                 INSERT INTO bauer_rag_v4.canonical_tables (
@@ -414,8 +435,8 @@ class V4CompilerWorker:
                 )
                 """,
                 (
-                    table.table_id,
-                    document.document_id,
+                    table_id,
+                    document_id,
                     *scope,
                     table.caption,
                     list(table.section_path),
@@ -427,6 +448,7 @@ class V4CompilerWorker:
                 ),
             )
             for cell in table.cells:
+                cell_id = _release_scoped_id(release_id, cell.cell_id)
                 qualifiers = {
                     "row_span": cell.row_span,
                     "column_span": cell.column_span,
@@ -450,9 +472,9 @@ class V4CompilerWorker:
                     )
                     """,
                     (
-                        cell.cell_id,
-                        table.table_id,
-                        document.document_id,
+                        cell_id,
+                        table_id,
+                        document_id,
                         *scope,
                         cell.row,
                         cell.column,
@@ -471,6 +493,7 @@ class V4CompilerWorker:
                     ),
                 )
         for fact in document.facts:
+            fact_id = _release_scoped_id(release_id, fact.fact_id)
             connection.execute(
                 """
                 INSERT INTO bauer_rag_v4.canonical_facts (
@@ -487,8 +510,8 @@ class V4CompilerWorker:
                 )
                 """,
                 (
-                    fact.fact_id,
-                    document.document_id,
+                    fact_id,
+                    document_id,
                     *scope,
                     fact.subject,
                     fact.predicate,
@@ -499,12 +522,19 @@ class V4CompilerWorker:
                     fact.unit_raw,
                     fact.unit_ucum,
                     json.dumps(dict(fact.qualifiers)),
-                    list(fact.provenance_ids),
+                    [
+                        _release_scoped_id(release_id, provenance_id)
+                        for provenance_id in fact.provenance_ids
+                    ],
                     fact.confidence,
                     fact.review_status,
                 ),
             )
         for projection in projections:
+            projection_id = _release_scoped_id(
+                release_id,
+                projection.projection_id,
+            )
             vector = self.encoder.encode(projection.search_text)
             vector_text = "[" + ",".join(f"{item:.9g}" for item in vector) + "]"
             embedding_identity = hashlib.sha256(
@@ -555,15 +585,18 @@ class V4CompilerWorker:
                 )
                 """,
                 (
-                    projection.projection_id,
-                    document.document_id,
+                    projection_id,
+                    document_id,
                     *scope,
                     projection.projection_type,
                     projection.projection_schema,
                     projection.search_text,
                     projection.search_text_sha256,
                     list(projection.exact_terms),
-                    list(projection.canonical_evidence_ids),
+                    [
+                        _release_scoped_id(release_id, evidence_id)
+                        for evidence_id in projection.canonical_evidence_ids
+                    ],
                     projection.subject,
                     projection.predicate,
                     json.dumps(dict(projection.qualifiers)),

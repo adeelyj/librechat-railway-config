@@ -18,6 +18,7 @@ from bauer_evidence_v4.indexing import (
     EmbeddingSpec,
     ProjectionBuilder,
 )
+from bauer_evidence_v4.deployment.worker import _release_scoped_id
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
@@ -76,6 +77,24 @@ def test_projection_families_are_deterministic_and_traceable(
         assert all(item.search_text for item in items)
         assert len({item.projection_id for item in items}) == len(items)
         assert tuple(sorted(items, key=lambda item: item.projection_id)) == items
+
+
+def test_all_fixture_projection_evidence_ids_are_release_scopeable(
+    projections: dict[str, tuple],
+) -> None:
+    mapped = [
+        _release_scoped_id("release-fixture", evidence_id)
+        for items in projections.values()
+        for projection in items
+        for evidence_id in projection.canonical_evidence_ids
+    ]
+    assert mapped
+    certificate = projections["english-en-iso-3834-2-certificate"]
+    assert any(
+        evidence_id.startswith("record_")
+        for projection in certificate
+        for evidence_id in projection.canonical_evidence_ids
+    )
 
 
 def test_exact_table_projection_contains_missing_context(

@@ -68,6 +68,10 @@ def test_data_plane_targets_complete_migration_and_v4_only_source() -> None:
     assert "'derived_verified'" in source
     assert "V3_SOURCE_COUNT" in source
     assert "active_release_pointer_count\"] != 0" in source
+    assert "'infinity'::timestamptz" in source
+    assert "pause-build" in source
+    assert "activate-build" in source
+    assert "shared_embedding_cache_cleared" in source
 
 
 def test_carried_forward_fedora_rehearsal_matches_exact_migration_set() -> None:

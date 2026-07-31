@@ -110,6 +110,8 @@ def _load_request() -> dict[str, Any]:
     if operation not in {
         "setup",
         "status",
+        "pause-build",
+        "activate-build",
         "retry-dead",
         "reset-build",
         "mark-ready",
@@ -353,9 +355,10 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
         connection.execute(
             """
             INSERT INTO bauer_rag_v4.compilation_jobs (
-                tenant_id, knowledge_base_id, release_id, source_id
+                tenant_id, knowledge_base_id, release_id, source_id,
+                available_at
             )
-            SELECT %s, %s, %s, member.source_id
+            SELECT %s, %s, %s, member.source_id, 'infinity'::timestamptz
             FROM bauer_rag_v3.release_sources AS member
             WHERE member.release_id = %s
             ORDER BY member.ordinal
@@ -443,9 +446,10 @@ def _setup(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
         connection.execute(
             """
             INSERT INTO bauer_rag_v4.compilation_jobs (
-                tenant_id, knowledge_base_id, release_id, source_id
+                tenant_id, knowledge_base_id, release_id, source_id,
+                available_at
             )
-            VALUES (%s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, 'infinity'::timestamptz)
             """,
             (
                 request["tenant_id"],
@@ -511,6 +515,18 @@ def _status(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
             (request["release_id"],),
         ).fetchall()
     }
+    paused_job_count = int(
+        connection.execute(
+            """
+            SELECT count(*)
+            FROM bauer_rag_v4.compilation_jobs
+            WHERE release_id = %s
+              AND status = 'queued'
+              AND available_at = 'infinity'::timestamptz
+            """,
+            (request["release_id"],),
+        ).fetchone()[0]
+    )
     failures = [
         {
             "error_code": str(error_code),
@@ -643,6 +659,12 @@ def _status(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
         "release_ready_at_present": bool(release[1]) if release else False,
         "counts": counts,
         "jobs": jobs,
+        "paused_job_count": paused_job_count,
+        "build_activation_state": (
+            "paused"
+            if paused_job_count == EXPECTED_SOURCE_COUNT
+            else "active"
+        ),
         "dead_job_failures": failures,
         "dead_jobs_by_media_type": dead_by_media_type,
         "artifacts_by_parser_identity": artifacts_by_parser_identity,
@@ -760,6 +782,93 @@ def _retry_dead(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
     return result
 
 
+def _pause_build(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
+    release = connection.execute(
+        """
+        SELECT status
+        FROM bauer_rag_v4.knowledge_releases
+        WHERE release_id = %s
+        """,
+        (request["release_id"],),
+    ).fetchone()
+    if release is None or str(release[0]) != "building":
+        raise DataPlaneError("only a building release can be paused")
+    pointer_count = connection.execute(
+        """
+        SELECT count(*)
+        FROM bauer_rag_v4.active_release_pointers
+        WHERE release_id = %s
+        """,
+        (request["release_id"],),
+    ).fetchone()[0]
+    if int(pointer_count) != 0:
+        raise DataPlaneError("a pointed release cannot be paused")
+    with connection.transaction():
+        for table in (
+            "compiled_artifacts",
+            "search_projections",
+            "canonical_facts",
+            "canonical_cells",
+            "canonical_tables",
+            "canonical_blocks",
+            "canonical_documents",
+        ):
+            connection.execute(
+                f"DELETE FROM bauer_rag_v4.{table} WHERE release_id = %s",
+                (request["release_id"],),
+            )
+        cursor = connection.execute(
+            """
+            UPDATE bauer_rag_v4.compilation_jobs
+            SET status = 'queued',
+                attempts = 0,
+                available_at = 'infinity'::timestamptz,
+                leased_by = NULL,
+                lease_expires_at = NULL,
+                error_code = NULL,
+                error_fingerprint = NULL,
+                updated_at = clock_timestamp()
+            WHERE release_id = %s
+            """,
+            (request["release_id"],),
+        )
+    result = _status(connection, request)
+    result["paused_jobs"] = int(cursor.rowcount)
+    result["candidate_artifacts_cleared"] = True
+    result["shared_embedding_cache_cleared"] = False
+    return result
+
+
+def _activate_build(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
+    status = _status(connection, request)
+    if status["release_status"] != "building":
+        raise DataPlaneError("only a building release can be activated")
+    if (
+        status["counts"]["release_sources"] != EXPECTED_SOURCE_COUNT
+        or status["jobs"].get("queued") != EXPECTED_SOURCE_COUNT
+        or status["paused_job_count"] != EXPECTED_SOURCE_COUNT
+        or status["counts"]["compiled_artifacts"] != 0
+        or status["counts"]["canonical_documents"] != 0
+        or status["active_release_pointer_count"] != 0
+    ):
+        raise DataPlaneError("paused release accounting is not activatable")
+    with connection.transaction():
+        cursor = connection.execute(
+            """
+            UPDATE bauer_rag_v4.compilation_jobs
+            SET available_at = clock_timestamp(),
+                updated_at = clock_timestamp()
+            WHERE release_id = %s
+              AND status = 'queued'
+              AND available_at = 'infinity'::timestamptz
+            """,
+            (request["release_id"],),
+        )
+    result = _status(connection, request)
+    result["activated_jobs"] = int(cursor.rowcount)
+    return result
+
+
 def _reset_build(connection: Any, request: dict[str, Any]) -> dict[str, Any]:
     release = connection.execute(
         """
@@ -851,6 +960,8 @@ def main() -> int:
             choices=(
                 "Setup",
                 "Status",
+                "PauseBuild",
+                "ActivateBuild",
                 "RetryDead",
                 "ResetBuild",
                 "MarkReady",
@@ -862,6 +973,8 @@ def main() -> int:
             arguments.operation is not None
             and arguments.operation.lower()
             .replace("markready", "mark-ready")
+            .replace("pausebuild", "pause-build")
+            .replace("activatebuild", "activate-build")
             .replace("retrydead", "retry-dead")
             .replace("resetbuild", "reset-build")
             != request["operation"]
@@ -872,6 +985,10 @@ def main() -> int:
         with psycopg.connect(_dsn(request), autocommit=True) as connection:
             if request["operation"] == "setup":
                 result = _setup(connection, request)
+            elif request["operation"] == "pause-build":
+                result = _pause_build(connection, request)
+            elif request["operation"] == "activate-build":
+                result = _activate_build(connection, request)
             elif request["operation"] == "mark-ready":
                 result = _mark_ready(connection, request)
             elif request["operation"] == "retry-dead":

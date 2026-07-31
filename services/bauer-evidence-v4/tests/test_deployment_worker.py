@@ -11,7 +11,10 @@ from bauer_evidence_v3.ingest.canonical import (
 )
 
 from bauer_evidence_v4.deployment.ocr_fallback import compile_ocr_fallback
-from bauer_evidence_v4.deployment.worker import _failure_code
+from bauer_evidence_v4.deployment.worker import (
+    _failure_code,
+    _release_scoped_id,
+)
 
 
 def test_failure_code_preserves_only_safe_constraint_identity() -> None:
@@ -31,6 +34,39 @@ def test_failure_code_sanitizes_and_bounds_unknown_exception_types() -> None:
     assert len(value) <= 128
     assert value
     assert all(character.isalnum() or character in "_.:-" for character in value)
+
+
+def test_database_canonical_ids_are_deterministically_release_scoped() -> None:
+    for kind in (
+        "document",
+        "block",
+        "table",
+        "cell",
+        "fact",
+        "record",
+        "projection",
+    ):
+        canonical = f"{kind}_" + "a" * 32
+        first = _release_scoped_id("release-one", canonical)
+        assert first == _release_scoped_id("release-one", canonical)
+        assert first.startswith(f"{kind}_")
+        assert len(first) == len(canonical)
+        assert first != canonical
+        assert first != _release_scoped_id("release-two", canonical)
+
+
+def test_record_evidence_ids_remain_mappable_for_html_metadata() -> None:
+    evidence_ids = (
+        "record_" + "1" * 32,
+        "block_" + "2" * 32,
+    )
+    mapped = tuple(
+        _release_scoped_id("release-html", evidence_id)
+        for evidence_id in evidence_ids
+    )
+    assert mapped[0].startswith("record_")
+    assert mapped[1].startswith("block_")
+    assert len(set(mapped)) == len(evidence_ids)
 
 
 def test_ocr_fallback_translates_page_table_and_typed_fact_provenance() -> None:

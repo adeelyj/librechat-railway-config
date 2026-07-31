@@ -1,6 +1,14 @@
 [CmdletBinding()]
 param(
-    [ValidateSet('Setup', 'Status', 'RetryDead', 'ResetBuild', 'MarkReady')]
+    [ValidateSet(
+        'Setup',
+        'Status',
+        'PauseBuild',
+        'ActivateBuild',
+        'RetryDead',
+        'ResetBuild',
+        'MarkReady'
+    )]
     [string]$Phase = 'Status',
     [string]$IdentifiersPath = (
         'D:\02_Code\LibreChat_Setup-rag-v4-answer-quality\tmp\v4-deploy\' +
@@ -262,6 +270,8 @@ try {
     $request = [ordered]@{
         operation = $Phase.ToLowerInvariant().
             Replace('markready', 'mark-ready').
+            Replace('pausebuild', 'pause-build').
+            Replace('activatebuild', 'activate-build').
             Replace('retrydead', 'retry-dead').
             Replace('resetbuild', 'reset-build')
         database = 'bauer_v3'

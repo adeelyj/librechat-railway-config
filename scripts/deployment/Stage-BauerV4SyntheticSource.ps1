@@ -35,21 +35,21 @@ $null = New-Item -ItemType Directory -Force -Path $parent
 $start = [Diagnostics.ProcessStartInfo]::new()
 $start.FileName = $Railway
 $start.WorkingDirectory = 'D:\02_Code\LibreChat_Setup-rag-v4-answer-quality'
-$start.ArgumentList.Add('run')
-$start.ArgumentList.Add('--no-local')
-$start.ArgumentList.Add('--project')
-$start.ArgumentList.Add($ProjectId)
-$start.ArgumentList.Add('--environment')
-$start.ArgumentList.Add($Environment)
-$start.ArgumentList.Add('--service')
-$start.ArgumentList.Add($WorkerServiceId)
-$start.ArgumentList.Add('--')
-$start.ArgumentList.Add($Python)
-$start.ArgumentList.Add($Child)
-$start.ArgumentList.Add('--source')
-$start.ArgumentList.Add($SourcePath)
-$start.ArgumentList.Add('--output')
-$start.ArgumentList.Add($OutputPath)
+$arguments = @(
+    'run',
+    '--no-local',
+    '--project', $ProjectId,
+    '--environment', $Environment,
+    '--service', $WorkerServiceId,
+    '--',
+    $Python,
+    $Child,
+    '--source', $SourcePath,
+    '--output', $OutputPath
+)
+$start.Arguments = ($arguments | ForEach-Object {
+    '"' + ([string]$_).Replace('"', '\"') + '"'
+}) -join ' '
 $start.UseShellExecute = $false
 $start.CreateNoWindow = $true
 $start.RedirectStandardOutput = $true
@@ -63,7 +63,20 @@ try {
     $process.WaitForExit()
     $null = $stderr.Result
     if ($process.ExitCode -ne 0) {
-        throw 'Synthetic source staging failed; child output was suppressed.'
+        $errorType = 'suppressed'
+        $errorFingerprint = 'absent'
+        try {
+            $failure = @($stdout.Result -split "`r?`n")[-1] |
+                ConvertFrom-Json
+            $errorType = [string]$failure.error_type
+            $errorFingerprint = [string]$failure.error_fingerprint
+        }
+        catch {}
+        throw (
+            'Synthetic source staging failed: {0} ({1})' -f
+            $errorType,
+            $errorFingerprint
+        )
     }
     $result = $stdout.Result | ConvertFrom-Json
     if (
