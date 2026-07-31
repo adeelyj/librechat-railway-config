@@ -133,7 +133,11 @@ def _case_checks(case_id: str, answer: str) -> dict[str, bool]:
     return checks
 
 
-def evaluate(baseline_path: Path, run_path: Path) -> dict[str, object]:
+def evaluate(
+    baseline_path: Path,
+    run_path: Path,
+    independent_review_paths: tuple[Path, ...] = (),
+) -> dict[str, object]:
     baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
     run = json.loads(run_path.read_text(encoding="utf-8"))
     if baseline.get("locked_holdout_opened") is not False:
@@ -203,6 +207,22 @@ def evaluate(baseline_path: Path, run_path: Path) -> dict[str, object]:
     ).hexdigest()
     passed_count = sum(1 for item in results if item["passed"])
     passed = passed_count == len(CASE_IDS)
+    independent_reviews = []
+    for path in independent_review_paths:
+        text = path.read_text(encoding="utf-8-sig")
+        holdout_lines = [
+            line.casefold()
+            for line in text.splitlines()
+            if "holdout" in line.casefold()
+        ]
+        if not any("no" in line for line in holdout_lines):
+            raise RuntimeError(f"independent review lacks a holdout boundary: {path}")
+        independent_reviews.append(
+            {
+                "path": path.name,
+                "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+            }
+        )
     return {
         "schema_version": "bauer-rag-v4-answer-quality-evaluation-v1",
         "kind": "five-case-comparative-hard-stop",
@@ -232,7 +252,8 @@ def evaluate(baseline_path: Path, run_path: Path) -> dict[str, object]:
         "candidate_run_sha256": hashlib.sha256(run_path.read_bytes()).hexdigest(),
         "results": results,
         "locked_holdout_opened": False,
-        "independent_final_review_complete": False,
+        "independent_final_review_complete": bool(independent_reviews),
+        "independent_reviews": independent_reviews,
         "owner_acceptance": False,
         "credentials_or_connection_details_emitted": False,
     }
@@ -262,7 +283,8 @@ def markdown_report(result: dict[str, object]) -> str:
             f"- Engineering gate: **{'PASS' if result['passed'] else 'FAIL'}**",
             "- Selected cases: B06, B17, B10, B19, B03",
             "- Holdout opened: no",
-            "- Independent final review complete: no",
+            "- Independent final review complete: "
+            + ("yes" if result["independent_final_review_complete"] else "no"),
             "- Owner acceptance: no; this remains a separate decision",
             "",
             "| Case | V1 | V2 | V3 | historical V4 | repaired local V4 | Verdict |",
@@ -289,8 +311,18 @@ def main() -> int:
     parser.add_argument("--run", type=Path, default=DEFAULT_RUN)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--markdown", type=Path, default=DEFAULT_MARKDOWN)
+    parser.add_argument(
+        "--independent-review",
+        action="append",
+        default=[],
+        type=Path,
+    )
     args = parser.parse_args()
-    result = evaluate(args.baseline, args.run)
+    result = evaluate(
+        args.baseline,
+        args.run,
+        tuple(args.independent_review),
+    )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n",

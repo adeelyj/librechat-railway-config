@@ -4,6 +4,11 @@ Status: authorized private-shadow batch complete. The authenticated four-way
 development benchmark and public-development scoring are complete. Production
 promotion is not authorized.
 
+Current-state note: this document preserves the original 2026-07-29 release and benchmark. The
+later answer-quality repair, 374-source candidate, exact five live outputs, and current deployment
+identity are documented in `docs/bauer-rag-v4-answer-quality-evidence-20260731.md`. The original
+four-way outputs below remain historical evidence and were not silently relabeled as repaired V4.
+
 ## Decision boundary
 
 - V4 is available through the private LibreChat Agent

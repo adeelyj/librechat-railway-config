@@ -1,7 +1,8 @@
 # Bauer RAG V4 private-shadow runbook
 
-Status: implemented authorized private shadow. V4 is available through its private LibreChat
-Agent, but it is not the active production release.
+Status: implemented, independently reviewed, deployed, and live-verified as an authorized private
+shadow. V4 is available through its private LibreChat Agent with DeepSeek, but it is not the active
+production release and has not been owner-accepted.
 
 Holdout warning: the development benchmark harness reads only B01-B30 and reports
 `locked_holdout_opened: false`, but the wider implementation task's holdout process boundary was
@@ -14,15 +15,16 @@ contaminated. Promotion requires a freshly resealed holdout and an independent e
 | Railway project / environment | `bk-RAG-test` / `testing` |
 | V4 tenant | `33738ad5-567c-4844-97bf-0941f1f6d36c` |
 | V4 knowledge base | `fbd5c3ab-950e-4878-9d4b-41b0abfca1c7` |
-| V4 candidate release | `45abb96f-c555-4a65-92a4-b6ee3be09da9` |
-| Public release ID | `bauer-rag-v4-private-20260729-r1` |
+| V4 candidate release | `ccb9e8ea-5894-405f-aac4-c4eae5b0d661` |
+| Public release ID | `bauer-rag-v4-private-20260731-aq-r2` |
 | Private LibreChat Agent | `agent_TEEBDBmMxnQwL10UjILhw` |
 | Agent name | `Bauer Kompressoren - RAG V4 Private Shadow` |
-| Backend commit | `9e48fddabc2e5bbc0053eae7d4bf75b8543a8671` |
-| Backend deployment | `5a6a8c88-6df5-4689-873b-4e7dc1ca063c` |
-| LibreChat overlay commit | `1008ac53741a7e6888005651180dafd1abfd7d46` |
-| LibreChat deployment | `d67e914e-b769-471d-8093-94389382823b` |
-| Source membership | 373 exact protected Bauer file IDs |
+| Backend commit | `84e63d76d7a91aa73fe963ad8a054761c5bde432` |
+| Backend deployment | `4a8ce7b7-968e-480f-a879-09606af9c70e` |
+| Worker deployment | `7f9806e1-32b8-4cb2-bfcb-ca9d2e9c8cf1` |
+| LibreChat overlay commit | `e9c9f0916773059faf9d0c184e5c93540057c742` |
+| LibreChat deployment | `301bef74-9f25-4428-bfc6-46d48123245c` |
+| Source membership | 373 protected Bauer file IDs plus one reviewed synthetic demo source |
 | Object prefix | isolated `v4/` prefix in the reused private bucket |
 
 V4 deliberately does not use or mutate `active_release_pointers`. The API loads the fixed candidate
@@ -55,8 +57,9 @@ server-authorized source list.
    inferred to be zero, false, or approved.
 5. Use the returned file/page/table citations for review.
 
-Only the allow-listed V4 Agent selects `/v4/answer`. V1, V2, V3, conversation uploads, and other
-Agents retain their existing routes.
+Only the allow-listed V4 Agent selects `/v4/answer`. Its Agent model is DeepSeek; the backend now
+returns the validated task-shaped answer rather than asking DeepSeek to turn raw evidence into an
+answer. V1, V2, V3, conversation uploads, and other Agents retain their existing routes.
 
 ## Compilation and release checks
 
@@ -71,10 +74,14 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
 
 A release is eligible for `MarkReady` only when all of these are true:
 
-- 373 release members, compiled artifacts, canonical documents, and succeeded jobs;
+- 374 release members, compiled artifacts, canonical documents, and succeeded jobs;
 - zero queued, running, failed, or dead jobs;
 - zero active-release pointers;
 - one passing named public-development evaluation with its exact suite digest and metrics.
+
+The current release has 25,131 search projections, 53,486 blocks, 68,545 cells, 11,578 typed
+facts, and 1,933 tables. Its embedding cache contains 22,878 identities: all 22,840 V3-compatible
+identities were reused and only 38 identities were added for the new synthetic source.
 
 The compiler tries the two native V4 PDF representations first. Only a PDF for which both are
 empty may use the pinned V3 OCR engine through the V4 adapter. OCR output is translated into V4
@@ -87,7 +94,7 @@ blocks, tables, typed facts, and exact page/cell provenance; it does not bypass 
   credentials, and connection strings are not persisted in status evidence.
 - `RetryDead` is allowed only while the release is `building`.
 - `ResetBuild` deletes only disposable artifacts for the unpointed V4 candidate, clears its
-  embedding cache, reseals the compiler identity, and requeues the same 373 immutable sources.
+  embedding cache, reseals the compiler identity, and requeues the same 374 immutable sources.
 - API startup fails closed unless the exact configured release is `ready` and artifact accounting
   equals release membership.
 - LibreChat rejects a V4 answer if validation did not pass or a citation lies outside its
@@ -97,25 +104,73 @@ blocks, tables, typed facts, and exact page/cell provenance; it does not bypass 
 
 Rollback does not require deleting V4 data:
 
-1. To undo only the one-round V4 Agent boundary, restore LibreChat deployment
+1. To undo the answer-quality overlay and validation attestation, restore LibreChat deployment
    `9e867008-6cc6-4fa3-9c37-cdab82892195`.
-2. To undo the company-location and fail-closed correction, restore private API deployment
+2. To undo the answer-quality API repair, restore private API deployment
+   `4297cb41-ee95-48fe-b549-d4c627f67c73`.
+3. To undo the 374-source r2 compiler worker, restore worker deployment
+   `250827d4-dcfc-4e39-a149-53bc0a290223`.
+4. The following older restore points remain available for the pre-answer-quality incident fixes.
+5. To undo the company-location and fail-closed correction, restore private API deployment
    `5a6a8c88-6df5-4689-873b-4e7dc1ca063c`.
-3. To undo only the bare-`Bauer` portfolio routing correction, restore private API deployment
+6. To undo only the bare-`Bauer` portfolio routing correction, restore private API deployment
    `a216621d-729e-48ce-9617-7f3d8557ae17`.
-4. To undo the earlier 2026-07-31 company-overview correction, restore private API deployment
+7. To undo the earlier 2026-07-31 company-overview correction, restore private API deployment
    `c2bf14c8-3e71-4d21-b85a-67f122a03ffc`. The fixed V4 release and LibreChat adapter are unchanged.
-5. Restore LibreChat deployment `ae7a03a5-3d5d-4b1f-85f4-ce65e2d54382` to remove the V4 adapter
+8. Restore LibreChat deployment `ae7a03a5-3d5d-4b1f-85f4-ce65e2d54382` to remove the V4 adapter
    while retaining V1/V2/V3 behavior.
-6. Restore private API deployment `13e2235d-a8c4-4103-bdb8-1f624a716026` to return to the frozen
+9. Restore private API deployment `13e2235d-a8c4-4103-bdb8-1f624a716026` to return to the frozen
    V3-only API image.
-7. If needed, restore worker deployment `250827d4-dcfc-4e39-a149-53bc0a290223`; a ready V4 release
-   has no claimable compilation jobs.
-8. Leave the V4 schema and objects in place for evidence preservation. The active pointer remains
+10. Leave the V4 schema and objects in place for evidence preservation. The active pointer remains
    empty, so retained V4 data cannot become production-active.
 
 Database rollback scripts exist for all seven V4 migrations and are for an explicitly scheduled
 destructive teardown only. They are not the normal application rollback.
+
+The 2026-07-31 Fedora host was unreachable for a fresh rehearsal. No migration or schema file
+changed in the answer-quality repair. The exact LF-normalized checksums of all seven migrations
+match the previous PostgreSQL 18.3 rehearsal that passed two forward/rollback cycles, roles, RLS,
+release pinning, rollback, failure recovery, and cleanup. The checksum-bound carry-forward record
+is `evidence/bauer-rag-v4-answer-quality/fedora-operational-rehearsal-carry-forward.json`.
+
+## Current five-case answer-quality gate
+
+The current bounded gate uses the fixed seeded random public-development selection B06, B17, B10,
+B19, and B03. It runs the actual DeepSeek-backed private V4 Agent through LibreChat and compares
+the exact visible answers with preserved V1, V2, V3, and historical V4 outputs. It does not rerun
+all 30 cases and does not read the locked holdout.
+
+Publish the exact attested run and rerun the source-controlled comparative hard stop:
+
+```powershell
+python scripts\deployment\publish_v4_live_five.py `
+  --run tmp\v4-deploy\evidence\librechat-five-case-v4-answer-quality-20260731-attested.json `
+  --evaluation tmp\v4-deploy\evidence\live-five-case-comparative-evaluation.json `
+  --status tmp\v4-deploy\evidence\v4-answer-quality-final-status.json `
+  --independent-review evidence\bauer-rag-v4-answer-quality\independent-claude-final-review.md `
+  --independent-review evidence\bauer-rag-v4-answer-quality\independent-claude-release-persistence-review.md `
+  --independent-review evidence\bauer-rag-v4-answer-quality\independent-claude-bdetection-coverage-review.md
+
+python scripts\deployment\evaluate_v4_answer_quality_five.py `
+  --baseline evidence\bauer-rag-v4-answer-quality\baseline-five-case-v1-v4.json `
+  --run evidence\bauer-rag-v4-answer-quality\live-five-case-v4-attested.json `
+  --output evidence\bauer-rag-v4-answer-quality\live-five-case-comparative-evaluation.json `
+  --markdown evidence\bauer-rag-v4-answer-quality\live-five-case-comparative-evaluation.md `
+  --independent-review evidence\bauer-rag-v4-answer-quality\independent-claude-final-review.md `
+  --independent-review evidence\bauer-rag-v4-answer-quality\independent-claude-release-persistence-review.md `
+  --independent-review evidence\bauer-rag-v4-answer-quality\independent-claude-bdetection-coverage-review.md
+```
+
+The live result is 5/5. Every case is complete, validator-passed, zero-repair, citation-backed,
+and 16/16 under its task-specific hard stop. The prior-best scores for the same cases were 12,
+12, 13, 16, and 11. Passing means the repaired V4 met or exceeded each prior best on this bounded
+sample; it does not establish the other 25 cases, a sealed holdout, production promotion, or owner
+acceptance.
+
+The functional verification after the final coverage repair is 77/77 V4 Python tests and 43/43
+LibreChat fail-closed/authorization tests. Three independent read-only Claude reviews found the
+initial synthesis-boundary defect, confirmed its repair, reviewed multi-release persistence, and
+reported no issue with the final B-DETECTION coverage union.
 
 ## Development regression
 

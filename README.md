@@ -189,6 +189,12 @@ deployment/activation approval. See
 [`docs/bauer-rag-v3-architecture.md`](docs/bauer-rag-v3-architecture.md) and
 [`docs/bauer-rag-v3-runbook.md`](docs/bauer-rag-v3-runbook.md).
 
+The Bauer RAG V4 answer-quality repair is deployed only as the authorized private shadow. Its
+current fixed five-case live DeepSeek/LibreChat evaluation passed 5/5 against preserved V1-V4
+outputs; this bounded development result is not production promotion or owner acceptance. See
+[`docs/bauer-rag-v4-runbook.md`](docs/bauer-rag-v4-runbook.md) and
+[`docs/bauer-rag-v4-answer-quality-evidence-20260731.md`](docs/bauer-rag-v4-answer-quality-evidence-20260731.md).
+
 Typical validation after the initial import:
 
 ```powershell

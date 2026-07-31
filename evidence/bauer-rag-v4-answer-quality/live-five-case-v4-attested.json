@@ -1,0 +1,304 @@
+{
+  "schema_version": "bauer-rag-v4-live-five-attestation-v1",
+  "status": "verified_private_shadow",
+  "meaning": "Five selected public-development cases passed a case-level answer-quality hard stop against preserved V1-V4 outputs; this is not evidence for the other 25 cases.",
+  "split": "development",
+  "selection": {
+    "case_ids": [
+      "B06",
+      "B17",
+      "B10",
+      "B19",
+      "B03"
+    ],
+    "method": "fixed seeded random public-development selection"
+  },
+  "selected_case_ids": [
+    "B06",
+    "B17",
+    "B10",
+    "B19",
+    "B03"
+  ],
+  "selected_systems": [
+    "v4"
+  ],
+  "observations": [
+    {
+      "case_id": "B06",
+      "category": "exact_pressure",
+      "prompt": "Based only on the uploaded public Bauer documents, what is the highest documented maximum operating pressure for a Bauer compressor? Name the applicable product families, distinguish compressors from boosters, and cite the exact source page or section. Also explain the difference between maximum operating pressure and shutdown pressure if the source makes that distinction. Do not assume that the most frequently retrieved pressure is the maximum.",
+      "answer": "The highest documented maximum operating pressure for a BAUER compressor in the authorized evidence is **525 bar**.\n\n## Compressors\nHighest compressor maximum operating pressure: 525 bar; I Series | VERTICUS: 90–525 bar; I Series | K 22 - K 28: 90–525 bar. [citation_4a2d1c091eccd43ed64956bf1bb4e9c7]\nSource: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf, PDF page 6, section 6 | PERFORMANCE OVERVIEW | COMPRESSORS FOR INDUSTRY BAUER KOMPRESSOREN > PERFORMANCE OVERVIEW > EXCELLENT COMPRESSOR SOLUTIONS FOR YOUR REQUIREMENTS, [citation_4a2d1c091eccd43ed64956bf1bb4e9c7]\n\n## Boosters\nBOOSTER AIR COOLED: 25–420 bar; BOOSTER WATER COOLED: 25–520 bar; GIB Series | BK 23 – BK 52: 90–520 bar. [citation_e962131b086fa77b196ba2d534cdd9b9]\nSource: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf, printed page 7, section BAUER KOMPRESSOREN COMPRESSORS FOR INDUSTRY | PERFORMANCE OVERVIEW | 7, [citation_e962131b086fa77b196ba2d534cdd9b9]\n\n## Pressure terminology\nMaximum allowable working pressure = max. setting safety valve; final pressure (shut-down pressure) lower. [citation_e0e7757ddf613f7f9603c8aa1c1d74c8]\nSource: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf, printed page 23, section BAUER KOMPRESSOREN COMPRESSORS FOR INDUSTRY | AIR-COOLED COMPRESSOR UNITS & BOOSTER | 23, [citation_e0e7757ddf613f7f9603c8aa1c1d74c8]",
+      "answer_sha256": "be49fd3f0b6d7fd5dccf2cca61e75d5700b9a8bad41b053711d676d1de5b310e",
+      "status": "complete",
+      "release_id": "bauer-rag-v4-private-20260731-aq-r2",
+      "validation": {
+        "answer_mode": "grounded_structured",
+        "passed": true,
+        "repair_count": 0,
+        "validation_fingerprint": "39a90cbc65dd52767048ff4b7f747cb65c6472e8031de98b88570538eae0230b"
+      },
+      "evidence_count": 5,
+      "citations": [
+        {
+          "citation_id": "citation_4a2d1c091eccd43ed64956bf1bb4e9c7",
+          "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md"
+        },
+        {
+          "citation_id": "citation_e0e7757ddf613f7f9603c8aa1c1d74c8",
+          "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md"
+        },
+        {
+          "citation_id": "citation_e962131b086fa77b196ba2d534cdd9b9",
+          "filename": "0060-2026-04_Compressors_for_Industry_EN_N39771_sc-8569e17f55.md"
+        }
+      ],
+      "source_locations_in_answer": [
+        "Source: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf, PDF page 6, section 6 | PERFORMANCE OVERVIEW | COMPRESSORS FOR INDUSTRY BAUER KOMPRESSOREN > PERFORMANCE OVERVIEW > EXCELLENT COMPRESSOR SOLUTIONS FOR YOUR REQUIREMENTS, [citation_4a2d1c091eccd43ed64956bf1bb4e9c7]",
+        "Source: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf, printed page 7, section BAUER KOMPRESSOREN COMPRESSORS FOR INDUSTRY | PERFORMANCE OVERVIEW | 7, [citation_e962131b086fa77b196ba2d534cdd9b9]",
+        "Source: 2026-04_Compressors_for_Industry_EN_N39771_sc.pdf, printed page 23, section BAUER KOMPRESSOREN COMPRESSORS FOR INDUSTRY | AIR-COOLED COMPRESSOR UNITS & BOOSTER | 23, [citation_e0e7757ddf613f7f9603c8aa1c1d74c8]"
+      ],
+      "conversation_deleted": true,
+      "score_out_of_16": 16,
+      "prior_best_score": 12,
+      "historical_scores": {
+        "v1": 10,
+        "v2": 11,
+        "v3": 2,
+        "v4": 12
+      },
+      "meets_or_exceeds_prior_best": true,
+      "comparison_meaning": "historical V4 had the strongest facts but exposed internal labels"
+    },
+    {
+      "case_id": "B17",
+      "category": "exact_table",
+      "prompt": "In the BM series 100 bar 50 Hz technical table, give the complete row for BM 6.1/100-15 and preserve the table units.",
+      "answer": "| Model | Effective free air delivery | Shutdown pressure | Number of stages | Rotational speed approx. | Motor power | Net weight approx. | Source |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| BM series 100 bar – 50 Hz: BM 6.1/100-15 | 22.2 cfm<br>37.8 m³/h<br>630 l/min | 100 bar<br>1450 psig | 3 | 1470 rpm | 15 kW | 425 kg<br>935 lbs | [citation_4a9d74759a88c05df0c65ed9ce904ead] |",
+      "answer_sha256": "af5eb97be287c8798ad5eed1294b506319af50bd0a461210d8f688aa35ceffb1",
+      "status": "complete",
+      "release_id": "bauer-rag-v4-private-20260731-aq-r2",
+      "validation": {
+        "answer_mode": "lossless_deterministic",
+        "passed": true,
+        "repair_count": 0,
+        "validation_fingerprint": "e99d6bbd32cd226c5e7a481e2324d439548f6a6276b55e89f79108b9219c5964"
+      },
+      "evidence_count": 3,
+      "citations": [
+        {
+          "citation_id": "citation_4a9d74759a88c05df0c65ed9ce904ead",
+          "filename": "0191-0025_bm-series-100_7acdece303-2f5ad06e14.md"
+        }
+      ],
+      "source_locations_in_answer": [],
+      "conversation_deleted": true,
+      "score_out_of_16": 16,
+      "prior_best_score": 12,
+      "historical_scores": {
+        "v1": 3,
+        "v2": 12,
+        "v3": 4,
+        "v4": 12
+      },
+      "meets_or_exceeds_prior_best": true,
+      "comparison_meaning": "historical V4 had the strongest facts; V2 had the best table shape but wrong values"
+    },
+    {
+      "case_id": "B10",
+      "category": "contradiction",
+      "prompt": "Compare B-DETECTION PLUS i/s with B-DETECTION PLUS m for a stationary fire-brigade filling station. Explain which is stationary and which is mobile, what they measure, their logging capabilities, and their documented pressure range. One public product page mentions 420 bar while a newer brochure describes options up to 450 bar. Explain the difference using source dates and wording instead of silently selecting one value.",
+      "answer": "For a stationary fire-brigade filling station, **B-DETECTION PLUS i/s is the stationary system**; **B-DETECTION PLUS m is the mobile system**.\n\n| Aspect | B-DETECTION PLUS i/s | B-DETECTION PLUS m |\n| --- | --- | --- |\n| Form | stationary continuous online system [citation_279068e0e618b410e96031434fc2c92c] | mobile portable system; case-based configuration; measurement at cylinders; measurement at intake [citation_f93f63c403c7651decbe8e116e69e4e6] |\n| Measurements | CO; CO2; O2; optional absolute humidity; optional residual oil/VOC [citation_f0ae1ac419e7111f9b3194a715153def] [citation_f93f63c403c7651decbe8e116e69e4e6] | CO; CO2; O2; optional absolute humidity; optional residual oil/VOC [citation_f0ae1ac419e7111f9b3194a715153def] [citation_f93f63c403c7651decbe8e116e69e4e6] |\n| Logging / access | measurement-value logging [citation_0f0b75edb25d78dae1d6635530b2075c] [citation_5a2df238d581a7f58e133008ed18bf3e] [citation_a13d3e3be3da7f814561e7c0a864f174] | integrated data logger; SD-card storage; B-CLOUD remote access; B-APP remote access [citation_0f0b75edb25d78dae1d6635530b2075c] [citation_5a2df238d581a7f58e133008ed18bf3e] [citation_a13d3e3be3da7f814561e7c0a864f174] |\n| Documented pressure wording | options up to 450 bar final pressure [citation_71ecc2358f54db9194c75f1220227e3c] [citation_92cc52856fe69750ffe653b28a8a31a7] | maximum documented pressure: 420 bar [citation_71ecc2358f54db9194c75f1220227e3c] [citation_92cc52856fe69750ffe653b28a8a31a7] |\n\n## Why the two documented pressure values differ\nThe 2025-03 brochure uses the scoped wording “options up to 450 bar final pressure” for the new-generation i/s configuration. The public product evidence gives “maximum documented pressure: 420 bar” for B-DETECTION PLUS m. They differ by product scope and wording, so the i/s option must not be silently applied to the mobile system.",
+      "answer_sha256": "dc2996773c49a3a483bdd51aa2373456001025ae3471cc88bb12ceab5989ce5c",
+      "status": "complete",
+      "release_id": "bauer-rag-v4-private-20260731-aq-r2",
+      "validation": {
+        "answer_mode": "grounded_structured",
+        "passed": true,
+        "repair_count": 0,
+        "validation_fingerprint": "88f380fc56a18d0402bd654a1289ed1ccbb1c37902d71419d931afee73ad7e3d"
+      },
+      "evidence_count": 10,
+      "citations": [
+        {
+          "citation_id": "citation_0f0b75edb25d78dae1d6635530b2075c",
+          "filename": "0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994.md"
+        },
+        {
+          "citation_id": "citation_279068e0e618b410e96031434fc2c92c",
+          "filename": "0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994.md"
+        },
+        {
+          "citation_id": "citation_92cc52856fe69750ffe653b28a8a31a7",
+          "filename": "0055-2025-03_B-DETECTION_PLUS_EN_N42078_sc-c84c36a994.md"
+        },
+        {
+          "citation_id": "citation_5a2df238d581a7f58e133008ed18bf3e",
+          "filename": "0150-High-pressure-accessories-catalogue_EN-8544a5e175.md"
+        },
+        {
+          "citation_id": "citation_71ecc2358f54db9194c75f1220227e3c",
+          "filename": "0182-0016_b-detection-plus-m_b749dac8cd-85146b9d04.md"
+        },
+        {
+          "citation_id": "citation_f93f63c403c7651decbe8e116e69e4e6",
+          "filename": "0182-0016_b-detection-plus-m_b749dac8cd-85146b9d04.md"
+        },
+        {
+          "citation_id": "citation_a13d3e3be3da7f814561e7c0a864f174",
+          "filename": "0122-bauer_amfile_5-01e0b02709.md"
+        },
+        {
+          "citation_id": "citation_f0ae1ac419e7111f9b3194a715153def",
+          "filename": "0181-0015_b-detection-plus-i-und-s_7c1fd56ba6-f837abe7a0.md"
+        }
+      ],
+      "source_locations_in_answer": [],
+      "conversation_deleted": true,
+      "score_out_of_16": 16,
+      "prior_best_score": 13,
+      "historical_scores": {
+        "v1": 4,
+        "v2": 13,
+        "v3": 6,
+        "v4": 12
+      },
+      "meets_or_exceeds_prior_best": true,
+      "comparison_meaning": "V2 had the best presentation; historical V4's canned facts were inadmissible"
+    },
+    {
+      "case_id": "B19",
+      "category": "exact_product_limit",
+      "prompt": "What are the documented maximum operating pressures and maximum flow rates for B-KOOL III? State the separate helium and argon flow range and cite the technical data.",
+      "answer": "- **Maximum operating pressures:** maximum operating pressure: 350 bar / 550 bar. [citation_e6e0e15049f0fcfc43530211ae6d66d1]\n- **Maximum flow rates:**\n  - 10 l cylinder filling from 0–200 bar: 200–700 l/min [citation_c70616c2c8bbdbac6171a3fc5fc23288]\n  - air according to ISO 1217: 200–650 l/min [citation_c70616c2c8bbdbac6171a3fc5fc23288]\n  - helium and argon: 200–420 l/min [citation_c70616c2c8bbdbac6171a3fc5fc23288]",
+      "answer_sha256": "90c20b7cbaaabf1f74ea15f4b5978ee9975d672c969ec4a25ce8fb67584da54b",
+      "status": "complete",
+      "release_id": "bauer-rag-v4-private-20260731-aq-r2",
+      "validation": {
+        "answer_mode": "grounded_structured",
+        "passed": true,
+        "repair_count": 0,
+        "validation_fingerprint": "b85b3e0b6af812f1be7ba81348ee6118ffcc2172599c38c2b46f3de23a2afe82"
+      },
+      "evidence_count": 4,
+      "citations": [
+        {
+          "citation_id": "citation_c70616c2c8bbdbac6171a3fc5fc23288",
+          "filename": "0188-0022_b-kool1_0358ce6a4f-f9f75b95db.md"
+        },
+        {
+          "citation_id": "citation_e6e0e15049f0fcfc43530211ae6d66d1",
+          "filename": "0188-0022_b-kool1_0358ce6a4f-f9f75b95db.md"
+        }
+      ],
+      "source_locations_in_answer": [],
+      "conversation_deleted": true,
+      "score_out_of_16": 16,
+      "prior_best_score": 16,
+      "historical_scores": {
+        "v1": 4,
+        "v2": 13,
+        "v3": 16,
+        "v4": 12
+      },
+      "meets_or_exceeds_prior_best": true,
+      "comparison_meaning": "V3 was the complete, direct, supported reference answer"
+    },
+    {
+      "case_id": "B03",
+      "category": "structured_comparison",
+      "prompt": "Compare synthetic projects SYN-BK-N2-420-500 and SYN-BK-N2-365-500. Show matching attributes, changed attributes, components or linked records potentially affected by increasing the pressure from 365 to 420 bar, documents that should be reviewed, and assumptions that still require an engineer's approval. Do not imply that the synthetic compatibility relationships are confirmed Bauer engineering rules.",
+      "answer": "## SYN-BK-N2-420-500 compared with SYN-BK-N2-365-500\nThese are **synthetic demo records**, not confirmed Bauer master data or engineering rules.\n\n## Matching stored attributes\n- **cluster:** nitrogen booster package [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **application sector:** industrial gas [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **medium:** nitrogen [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **capacity l min:** 500 [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **compressor family:** N2 Booster [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **topology:** booster [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **cooling:** water-cooled [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **control package:** B-CONTROL MICRO synthetic configuration [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **purification package:** synthetic nitrogen-compatible filtration package [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **installation:** indoor skid, service access on three sides [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **environment:** temperate industrial environment, 5-40 C [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **status:** reference [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n\n## Changed stored attributes\n- **pressure bar:** SYN-BK-N2-420-500: 420 | SYN-BK-N2-365-500: 365 [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **compressor model:** SYN-BK-N2-420-500: SYN-N2B-420 | SYN-BK-N2-365-500: SYN-N2B-365 [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **storage filling package:** SYN-BK-N2-420-500: Synthetic 420-bar storage and filling package | SYN-BK-N2-365-500: Synthetic 365-bar storage and filling package [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n\n## Linked records potentially affected\n- **shared linked records:** SYN-P-SNS-PRESSURE-500; SYN-P-SNS-TEMP-IND [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **only SYN-BK-N2-420-500:** SYN-P-CLG-N2-420-500; SYN-P-CMP-N2-420-500; SYN-P-CTL-N2-420-500; SYN-P-PUR-N2-420-500; SYN-P-STG-N2-420-500; SYN-P-VLV-N2-420-500 [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **only SYN-BK-N2-365-500:** SYN-P-CLG-N2-365-500; SYN-P-CMP-N2-365-500; SYN-P-CTL-N2-365-500; SYN-P-PUR-N2-365-500; SYN-P-STG-N2-365-500; SYN-P-VLV-N2-365-500 [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n\n## Documents recorded for review\n- **both projects:** DOC-B-NITROX; DOC-INDUSTRY; DOC-PRODUCT-OVERVIEW [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n\n## Assumptions requiring engineer approval\n- **stored review assumptions:** CE demo assumption; four-eyes engineering review required [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n- **authority boundary:** DEMO DATA: project, part, and compatibility records are synthetic and are not confirmed Bauer Kompressoren master data. Linked documents are public evidence sources. [citation_137ee11aa4574d33cfbeb3bb9910ecdb] [citation_94ea144869c6688c62298bfc56ac3b0d]\n\nThe linked-record differences identify records to review only. They do not prove that increasing pressure changes a component, establishes compatibility, or approves a design.",
+      "answer_sha256": "07317381ceaeb019dffc42204f2fdabc67de812ec73c415e139fa3b726fd1b72",
+      "status": "complete",
+      "release_id": "bauer-rag-v4-private-20260731-aq-r2",
+      "validation": {
+        "answer_mode": "grounded_structured",
+        "passed": true,
+        "repair_count": 0,
+        "validation_fingerprint": "5da62fe5f44094b7dfd62d6e8c5b30998e2fb5d722b292adc9f08f6fdd1dd841"
+      },
+      "evidence_count": 4,
+      "citations": [
+        {
+          "citation_id": "citation_137ee11aa4574d33cfbeb3bb9910ecdb",
+          "filename": "bauer-synthetic-demo-v1.html"
+        },
+        {
+          "citation_id": "citation_94ea144869c6688c62298bfc56ac3b0d",
+          "filename": "bauer-synthetic-demo-v1.html"
+        }
+      ],
+      "source_locations_in_answer": [],
+      "conversation_deleted": true,
+      "score_out_of_16": 16,
+      "prior_best_score": 11,
+      "historical_scores": {
+        "v1": 10,
+        "v2": 11,
+        "v3": 7,
+        "v4": 5
+      },
+      "meets_or_exceeds_prior_best": true,
+      "comparison_meaning": "no prior version was both complete and authority-safe"
+    }
+  ],
+  "evaluation": {
+    "passed": true,
+    "suite_sha256": "b38248a2f5b0dc9b15fc9b0b391153e6e5c369102e5a344727a790e542e1b0ca",
+    "metrics": {
+      "answer_quality_cases_passed": 5,
+      "answer_quality_cases_total": 5,
+      "all_cases_meet_or_exceed_prior_best": true,
+      "validator_passed_cases": 5,
+      "zero_repair_cases": 5,
+      "token_group_coverage_authority": "diagnostic_only",
+      "owner_acceptance": false
+    }
+  },
+  "private_shadow": {
+    "release_uuid": "ccb9e8ea-5894-405f-aac4-c4eae5b0d661",
+    "release_public_id": "bauer-rag-v4-private-20260731-aq-r2",
+    "api_commit": "84e63d76d7a91aa73fe963ad8a054761c5bde432",
+    "librechat_overlay_commit": "e9c9f0916773059faf9d0c184e5c93540057c742",
+    "api_deployment_id": "4a8ce7b7-968e-480f-a879-09606af9c70e",
+    "worker_deployment_id": "7f9806e1-32b8-4cb2-bfcb-ca9d2e9c8cf1",
+    "librechat_deployment_id": "301bef74-9f25-4428-bfc6-46d48123245c",
+    "source_count": 374,
+    "artifact_count": 374,
+    "projection_count": 25131,
+    "active_release_pointer_count": 0,
+    "status_generated_at_utc": "2026-07-31T23:11:45.713878+00:00"
+  },
+  "capture": {
+    "login_attempt_count": 1,
+    "completed_observation_count": 5,
+    "error_observation_count": 0,
+    "authorization_violations": 0,
+    "temporary_conversations_deleted": true,
+    "credentials_or_tokens_emitted": false
+  },
+  "independent_reviews": [
+    {
+      "path": "evidence/bauer-rag-v4-answer-quality/independent-claude-final-review.md",
+      "sha256": "0a230d351e3e7a5c61f6fa9792dc3190e6f39a3a8e985083c6299497641806ae"
+    },
+    {
+      "path": "evidence/bauer-rag-v4-answer-quality/independent-claude-release-persistence-review.md",
+      "sha256": "a9e97da594ae9429edf3bb50a14399f0c0f7af0a127cd1529e2d30d7acfa93e4"
+    },
+    {
+      "path": "evidence/bauer-rag-v4-answer-quality/independent-claude-bdetection-coverage-review.md",
+      "sha256": "50fd2b9965a0bedd1461afad787bfe0e7d79445a43df278d183db0da50cba7ff"
+    }
+  ],
+  "source_attestation": {
+    "live_run_sha256": "5f64254a5c737fcb169afd8c09087e9188a79380188e8fe8e93b11f595a8e9a5",
+    "evaluation_sha256": "a808f8069d1df5ff4a5a4eba4b30b37e56e43e08897a846abc8a60ac0bd56f45",
+    "private_shadow_status_sha256": "04c7e930d4d5752f1b8d90f1fd56b5fe9a9cc5680e3f4897cf22cd6adf6969ef"
+  },
+  "locked_holdout_opened": false,
+  "production_promotion": false,
+  "owner_acceptance": false,
+  "rejected_intermediate_runs": "Earlier r2/r3/r4 development attempts were diagnostic only. The attested run is the first persisted run proving complete, validator-passed, zero-repair outputs after the B-DETECTION coverage correction."
+}
