@@ -135,10 +135,31 @@ the internal requested-topic label nor the supplier clause, and deletes its temp
 conversation. Exact evidence is in
 `evidence/bauer-rag-v4-bare-bauer-deepseek-regression-20260731.json`.
 
+### Company-location incident correction
+
+The later exact prompt `where is bauer based` incorrectly returned supplier and place-of-performance
+contract fragments. The corpus already contained explicit English evidence for BAUER KOMPRESSOREN
+GmbH at Stäblistr. 8, 81477 Munich, Germany; the defect was the generic planner and permissive
+catch-all coverage, not missing source data.
+
+Commit `46e81b5ce1859a20d4824d4262889d84ca64d06d` introduces an entity-specific company-location
+contract and removes raw-evidence success from the unrecognized catch-all. The five-case public
+regression is `evals/bauer-rag-v4/cases/company-facts-regression.json`. All 62 V4 tests pass. The
+final private-shadow API deployment `4297cb41-ee95-48fe-b549-d4c627f67c73` is healthy and remains
+pinned to fixed release `45abb96f-c555-4a65-92a4-b6ee3be09da9`; LibreChat and the release data were
+not changed.
+
+The exact deployed backend prompt returns `complete`, one `company_location` coverage item, and one
+citation to `bauer_amfile_13.pdf`. The authenticated DeepSeek Agent returns the same final answer in
+one tool round and deletes its temporary conversation. An unsupported founder question returns
+`not_found`, a concise explanation, and zero citations. Machine-readable evidence is
+`evidence/bauer-rag-v4-company-facts-regression-20260731.json`.
+
 ## Evidence inventory
 
 | Evidence | SHA-256 |
 | --- | --- |
+| `evidence/bauer-rag-v4-company-facts-regression-20260731.json` | `28fdd494a7453a1b192bbd26215e075f6aa28022bd221eeb1d1a7751d29a44cc` |
 | `tmp/v4-development/wp8-fedora-postgresql-7migrations.json` | `122d75b725cfd06ae849f13d64c7759ddbf34f92a07407926c8324a8778a5555` |
 | `tmp/v4-deploy/evidence/v4-data-plane-ready.json` | `8eb795c11eb2d9f081f0bc2686584bf2145ed505ea84c51b1a9b44575863ea38` |
 | `tmp/v4-deploy/evidence/v4-private-agent.json` | `7ef0eb30a9ec3dac4b36ae605f6b516d843c053edbadc0f721597278ebbed892` |

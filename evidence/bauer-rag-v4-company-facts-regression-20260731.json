@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "evidence_id": "bauer-rag-v4-company-facts-regression-20260731",
+  "observed_at": "2026-07-31T18:38:00+02:00",
+  "split": "public-development-regression",
+  "locked_holdout_opened": false,
+  "git": {
+    "branch": "codex/bauer-rag-v4",
+    "commit": "46e81b5ce1859a20d4824d4262889d84ca64d06d",
+    "remote_pushed": true
+  },
+  "deployment": {
+    "deployment_id": "4297cb41-ee95-48fe-b549-d4c627f67c73",
+    "status": "SUCCESS",
+    "build_commit": "46e81b5ce1859a20d4824d4262889d84ca64d06d",
+    "candidate_release_id": "45abb96f-c555-4a65-92a4-b6ee3be09da9",
+    "release_changed": false,
+    "librechat_deployment_changed": false,
+    "previous_healthy_deployment_id": "75d32570-830f-4957-98b8-ce626477a29b",
+    "pre_incident_rollback_deployment_id": "5a6a8c88-6df5-4689-873b-4e7dc1ca063c"
+  },
+  "source_controlled_regression": {
+    "path": "evals/bauer-rag-v4/cases/company-facts-regression.json",
+    "case_ids": ["V4-R04", "V4-R05", "V4-R06", "V4-R07", "V4-R08"],
+    "positive_location_cases": 4,
+    "fail_closed_cases": 1
+  },
+  "verification": {
+    "command_scope": "services/bauer-evidence-v4/tests and evals/bauer-rag-v4/tests",
+    "passed": 62,
+    "failed": 0,
+    "elapsed_seconds": 160.56
+  },
+  "direct_exact_prompt": {
+    "question": "where is bauer based",
+    "status": "complete",
+    "elapsed_ms": 16692,
+    "answer": "BAUER KOMPRESSOREN GmbH is based at Stäblistr. 8, 81477 Munich, Germany. [citation_7067c669fa4baf7ade5b61c7a15f2205]",
+    "coverage_field": "company_location",
+    "coverage_state": "supported",
+    "citation_files": ["bauer_amfile_13.pdf"],
+    "validation_passed": true,
+    "defect_codes": []
+  },
+  "direct_fail_closed_prompt": {
+    "question": "Who founded Bauer?",
+    "status": "not_found",
+    "elapsed_ms": 12643,
+    "answer": "I could not establish this from the authorized Bauer evidence.",
+    "citation_count": 0,
+    "validation_passed": true,
+    "raw_evidence_dumped": false
+  },
+  "deepseek_agent_exact_prompt": {
+    "agent_id": "agent_TEEBDBmMxnQwL10UjILhw",
+    "provider": "Deepseek",
+    "model": "deepseek-v4-flash",
+    "question": "where is bauer based",
+    "http_status": 200,
+    "elapsed_ms": 33495.28,
+    "final_answer": "BAUER KOMPRESSOREN GmbH is based at Stäblistr. 8, 81477 Munich, Germany. [citation_7067c669fa4baf7ade5b61c7a15f2205]",
+    "first_tool_round_file_search_calls": 2,
+    "additional_tool_rounds": 0,
+    "conversation_deleted": true
+  },
+  "acceptance": {
+    "exact_incident_prompt_correct": true,
+    "entity_specific_address_required": true,
+    "named_product_routing_isolated": true,
+    "weak_catch_all_fails_closed": true,
+    "evidence_dump_fallback_removed": true
+  }
+}

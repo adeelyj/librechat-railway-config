@@ -99,17 +99,19 @@ Rollback does not require deleting V4 data:
 
 1. To undo only the one-round V4 Agent boundary, restore LibreChat deployment
    `9e867008-6cc6-4fa3-9c37-cdab82892195`.
-2. To undo only the bare-`Bauer` portfolio routing correction, restore private API deployment
+2. To undo the company-location and fail-closed correction, restore private API deployment
+   `5a6a8c88-6df5-4689-873b-4e7dc1ca063c`.
+3. To undo only the bare-`Bauer` portfolio routing correction, restore private API deployment
    `a216621d-729e-48ce-9617-7f3d8557ae17`.
-3. To undo the earlier 2026-07-31 company-overview correction, restore private API deployment
+4. To undo the earlier 2026-07-31 company-overview correction, restore private API deployment
    `c2bf14c8-3e71-4d21-b85a-67f122a03ffc`. The fixed V4 release and LibreChat adapter are unchanged.
-4. Restore LibreChat deployment `ae7a03a5-3d5d-4b1f-85f4-ce65e2d54382` to remove the V4 adapter
+5. Restore LibreChat deployment `ae7a03a5-3d5d-4b1f-85f4-ce65e2d54382` to remove the V4 adapter
    while retaining V1/V2/V3 behavior.
-5. Restore private API deployment `13e2235d-a8c4-4103-bdb8-1f624a716026` to return to the frozen
+6. Restore private API deployment `13e2235d-a8c4-4103-bdb8-1f624a716026` to return to the frozen
    V3-only API image.
-6. If needed, restore worker deployment `250827d4-dcfc-4e39-a149-53bc0a290223`; a ready V4 release
+7. If needed, restore worker deployment `250827d4-dcfc-4e39-a149-53bc0a290223`; a ready V4 release
    has no claimable compilation jobs.
-7. Leave the V4 schema and objects in place for evidence preservation. The active pointer remains
+8. Leave the V4 schema and objects in place for evidence preservation. The active pointer remains
    empty, so retained V4 data cannot become production-active.
 
 Database rollback scripts exist for all seven V4 migrations and are for an explicitly scheduled
@@ -159,3 +161,21 @@ materializes the validated V4 answer. Providers may emit parallel searches insid
 round, but cannot continue into additional search rounds. The exact bare-company DeepSeek probe
 and before/after tool counts are recorded in
 `evidence/bauer-rag-v4-bare-bauer-deepseek-regression-20260731.json`.
+
+### Company-location and fail-closed regression
+
+The prompt `where is bauer based` exposed a separate representation defect: the catch-all planner
+discarded both `Bauer` and `based` as low-information terms, then allowed weak lexical overlap to
+be rendered as raw contract evidence. Commit
+`46e81b5ce1859a20d4824d4262889d84ca64d06d` adds an explicit, product-isolated company-location
+field and requires evidence that contains the legal company name, street, postal code, city, and
+country together. It also makes the unrecognized catch-all field fail closed with no citations and
+no evidence-dump fallback.
+
+The public regression suite is
+`evals/bauer-rag-v4/cases/company-facts-regression.json`. It contains the exact incident prompt,
+three English/German location variants, a named-product isolation assertion, and an unsupported
+company-fact case. The final API deployment is `4297cb41-ee95-48fe-b549-d4c627f67c73`, pinned to
+the commit above and the unchanged fixed release `45abb96f-c555-4a65-92a4-b6ee3be09da9`. Exact
+backend and authenticated DeepSeek Agent results are recorded in
+`evidence/bauer-rag-v4-company-facts-regression-20260731.json`.
