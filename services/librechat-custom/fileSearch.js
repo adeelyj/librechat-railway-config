@@ -240,6 +240,10 @@ const createFileSearchTool = async ({
             undefined,
           ];
         }
+        const finalAnswerSha256 = crypto
+          .createHash('sha256')
+          .update(final.answer, 'utf8')
+          .digest('hex');
         const sources = final.citations.map((item) => ({
           type: 'file',
           fileId: item.file_id,
@@ -268,6 +272,14 @@ const createFileSearchTool = async ({
             normalizedUnit: item.normalized_unit,
             qualifier: item.qualifier,
             footnotes: item.footnotes,
+            v4Status: final.status,
+            v4ValidationPassed: final.validation?.passed === true,
+            v4AnswerMode: final.answer_mode,
+            v4ValidationFingerprint: final.validation_fingerprint,
+            v4RepairCount: Number.isInteger(final.validation?.repair_count)
+              ? final.validation.repair_count
+              : null,
+            v4FinalAnswerSha256: finalAnswerSha256,
           },
         }));
         return [

@@ -284,6 +284,21 @@ def _v4_boundary_metadata(value: Any, visible_answer: str) -> dict[str, Any]:
         envelope = node.get("bauerV4")
         if isinstance(envelope, dict) and envelope.get("directFinal") is True:
             envelopes.append(envelope)
+        elif isinstance(node.get("v4ValidationFingerprint"), str):
+            envelopes.append(
+                {
+                    "directFinal": True,
+                    "status": node.get("v4Status"),
+                    "releaseId": node.get("releaseId"),
+                    "validationPassed": node.get("v4ValidationPassed"),
+                    "answerMode": node.get("v4AnswerMode"),
+                    "validationFingerprint": node.get(
+                        "v4ValidationFingerprint"
+                    ),
+                    "repairCount": node.get("v4RepairCount"),
+                    "finalAnswerSha256": node.get("v4FinalAnswerSha256"),
+                }
+            )
         for child in node.values():
             visit(child)
 
@@ -295,6 +310,10 @@ def _v4_boundary_metadata(value: Any, visible_answer: str) -> dict[str, Any]:
         answer = str(envelope.get("finalAnswer") or "").strip()
         fingerprint = str(envelope.get("validationFingerprint") or "").strip()
         repair_count = envelope.get("repairCount")
+        answer_sha256 = hashlib.sha256(answer.encode("utf-8")).hexdigest()
+        final_answer_sha256 = str(
+            envelope.get("finalAnswerSha256") or answer_sha256
+        ).strip()
         item = {
             "status": str(envelope.get("status") or "").strip(),
             "release_id": str(envelope.get("releaseId") or "").strip(),
@@ -302,12 +321,11 @@ def _v4_boundary_metadata(value: Any, visible_answer: str) -> dict[str, Any]:
             "answer_mode": str(envelope.get("answerMode") or "").strip(),
             "validation_fingerprint": fingerprint,
             "repair_count": repair_count,
-            "final_answer_sha256": hashlib.sha256(
-                answer.encode("utf-8")
-            ).hexdigest(),
+            "final_answer_sha256": final_answer_sha256,
         }
         if (
-            answer != visible_answer
+            final_answer_sha256
+            != hashlib.sha256(visible_answer.encode("utf-8")).hexdigest()
             or item["status"] not in {"complete", "partial", "not_found"}
             or item["validation_passed"] is not True
             or item["answer_mode"]
@@ -569,6 +587,7 @@ def main() -> None:
         rotation = case_index % len(systems)
         order = systems[rotation:] + systems[:rotation]
         for order_position, (system, agent_id) in enumerate(order, start=1):
+            live: dict[str, Any] | None = None
             try:
                 live = _run_agent_case_with_verified_cleanup(
                     base_url=base_origin,
@@ -650,6 +669,11 @@ def main() -> None:
             except Exception as error:
                 cleanup_status = int(
                     getattr(error, "conversation_delete_http_status", 0)
+                    or (
+                        live.get("conversation_delete_http_status", 0)
+                        if live is not None
+                        else 0
+                    )
                 )
                 observation = {
                     "case_id": case_id,
@@ -672,6 +696,11 @@ def main() -> None:
                     "conversation_delete_http_status": cleanup_status,
                     "conversation_deleted": bool(
                         getattr(error, "conversation_deleted", False)
+                        or (
+                            live.get("conversation_deleted", False)
+                            if live is not None
+                            else False
+                        )
                     ),
                     "completed_at_utc": datetime.now(UTC).isoformat(),
                 }
