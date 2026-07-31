@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "evidence_id": "bauer-rag-v4-company-overview-regression-20260731",
+  "classification": "public-development-regression",
+  "locked_holdout_opened": false,
+  "incident": {
+    "question": "what does bauer kompressoren do",
+    "agent_id": "agent_TEEBDBmMxnQwL10UjILhw",
+    "provider": "Deepseek",
+    "model": "deepseek-v4-flash",
+    "observed_failure": [
+      "The broad company question was reduced to low-information terms including 'does' and 'kompressoren'.",
+      "A supplier-contract page and a fuel-gas brochure displaced the available company-overview evidence.",
+      "The general renderer exposed an internal requested-topic evidence dump instead of a concise answer."
+    ],
+    "earliest_failed_stage": "task analysis and requested-field coverage"
+  },
+  "correction": {
+    "branch": "codex/bauer-rag-v4",
+    "backend_commit": "68f8ca2530ff59d9655cd0ea534f16340e24c0d6",
+    "backend_deployment": "a216621d-729e-48ce-9617-7f3d8557ae17",
+    "backend_deployment_status": "SUCCESS",
+    "previous_backend_deployment": "c2bf14c8-3e71-4d21-b85a-67f122a03ffc",
+    "change_scope": [
+      "V4 company-overview intent and requested fields",
+      "V4 company-overview evidence coverage",
+      "V4 concise grounded rendering",
+      "public development regression cases V4-R01 and V4-R02"
+    ]
+  },
+  "release_boundary": {
+    "candidate_release": "45abb96f-c555-4a65-92a4-b6ee3be09da9",
+    "public_release_id": "bauer-rag-v4-private-20260729-r1",
+    "artifact_count": 373,
+    "projection_count": 25093,
+    "active_release_pointer_used": false,
+    "v1_v2_v3_changed": false
+  },
+  "verification": {
+    "service_test_result": "58 passed",
+    "deployed_application_error_messages": 0,
+    "railway_error_filter_note": "Four normal Uvicorn startup lines were classified by Railway as stderr/error-filter entries; none contains an application error.",
+    "public_b01_b30_analyzer_routes_changed": 0,
+    "full_public_b01_b30_benchmark_rerun": false,
+    "direct_live_cases": [
+      {
+        "case_id": "V4-R01",
+        "question": "what does bauer kompressoren do",
+        "status": "complete",
+        "validation_passed": true,
+        "coverage_fields": [
+          "company_core_business",
+          "company_product_portfolio",
+          "company_application_scope"
+        ]
+      },
+      {
+        "case_id": "V4-R02",
+        "question": "list hte products from bayuer",
+        "status": "complete",
+        "validation_passed": true,
+        "coverage_fields": [
+          "company_core_business",
+          "company_product_portfolio",
+          "company_application_scope"
+        ]
+      }
+    ],
+    "expected_answer": "BAUER Kompressoren manufactures medium- and high-pressure air and gas compression systems, including systems for generating breathing air. Beyond its compressor systems, BAUER supplies air and gas purification, controls, storage, gas-measurement equipment, and related accessories. Documented applications include breathing-air supply for divers and firefighters, plus fuel-gas systems for bio-CNG, biogas, hydrogen, and LNG.",
+    "expected_source_files": [
+      "2025-06_Product_overview_EN_N37488_sc.pdf",
+      "2026-04_Compressors_for_Industry_EN_N39771_sc.pdf",
+      "0153_fuel-gas-systems_9645f76747.html"
+    ],
+    "authenticated_librechat_deepseek_roundtrip": {
+      "completed": true,
+      "temporary_conversation_deleted": true,
+      "visible_answer_retained": false,
+      "note": "The request completed before the local Windows console failed to encode a CO2 subscript while printing the captured result; authentication was not repeated."
+    }
+  }
+}

@@ -22,8 +22,8 @@ promotion is not authorized.
 | --- | --- |
 | V3 ancestor | `11ea00066300ed3ca5bf4ec75fd9d76a6d43dc59` |
 | V4 branch | `codex/bauer-rag-v4` |
-| V4 backend commit | `1f37865c8ee00a3b5c5ad139ac5ab2d7b1a4fe3f` |
-| V4 backend deployment | `c2bf14c8-3e71-4d21-b85a-67f122a03ffc` (`SUCCESS`) |
+| V4 backend commit | `68f8ca2530ff59d9655cd0ea534f16340e24c0d6` |
+| V4 backend deployment | `a216621d-729e-48ce-9617-7f3d8557ae17` (`SUCCESS`) |
 | LibreChat overlay commit | `6982ac9483e649ab83141104c69331e56a8aaa38` |
 | LibreChat deployment | `34c6ab45-1a12-4d34-9552-0240e7022487` (`SUCCESS`) |
 | Candidate public label | `bauer-rag-v4-private-20260729-r1` |
@@ -49,7 +49,7 @@ artifacts, 25,093 projections, the fixed candidate release, and
   exact/structured, lexical/trigram, and dense.
 - One transparent reranking stage feeds requested-field evidence coverage,
   grounded rendering, and completion/support validation.
-- Final validation passes 57/57 V4 service tests, 3/3 reviewed-fixture
+- Final validation passes 58/58 V4 service tests, 3/3 reviewed-fixture
   integrity tests, and 41/41 LibreChat adapter/authorization boundary tests.
 
 ## PostgreSQL and recovery rehearsal
@@ -92,6 +92,27 @@ Focused live checks additionally verify:
   requirement are returned without unrelated evidence;
 - B30: the original German prompt retains and returns the requested delivery
   value.
+
+## 2026-07-31 company-overview correction
+
+The DeepSeek V4 Agent exposed a development defect for the broad prompt
+`what does bauer kompressoren do`. The failure was localized before answer
+tuning: task analysis reduced the request to low-information terms, which
+allowed a supplier-contract page to displace available company-overview
+evidence. The general renderer then exposed its internal evidence format.
+
+Commit `68f8ca2530ff59d9655cd0ea534f16340e24c0d6` adds a V4-only company/portfolio
+intent, three explicit coverage fields, strict evidence requirements, and a
+concise grounded renderer. The deployed service now returns `complete` with
+validation passing for both the exact incident prompt and
+`list hte products from bayuer`. It cites the product overview, industrial
+portfolio, and fuel-gas sources instead of the supplier contract.
+
+The source-controlled regression is
+`evals/bauer-rag-v4/cases/company-overview-regression.json`; live evidence is
+`evidence/bauer-rag-v4-company-overview-regression-20260731.json`. The existing
+B01-B30 analyzer routes are unchanged. The historical 120-observation
+benchmark below was not relabeled or rerun for this targeted correction.
 
 ## Evidence inventory
 

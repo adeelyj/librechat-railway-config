@@ -46,6 +46,13 @@ CASE_PATH = (
     / "cases"
     / "development-retrieval.json"
 )
+COMPANY_REGRESSION_PATH = (
+    REPOSITORY_ROOT
+    / "evals"
+    / "bauer-rag-v4"
+    / "cases"
+    / "company-overview-regression.json"
+)
 SOURCE_ROOT = Path(r"D:\02_Code\Bauer Kompressoren Demo")
 
 
@@ -494,7 +501,16 @@ def test_general_analysis_requires_topic_evidence_not_filenames() -> None:
 
 
 def test_company_overview_is_concise_grounded_and_cited() -> None:
-    plan = TaskAnalyzer().analyze("what does bauer kompressoren do")
+    regression = json.loads(
+        COMPANY_REGRESSION_PATH.read_text(encoding="utf-8")
+    )
+    assert regression["locked_holdout_opened"] is False
+    assert [case["case_id"] for case in regression["cases"]] == [
+        "V4-R01",
+        "V4-R02",
+    ]
+
+    analyzer = TaskAnalyzer()
 
     def context(rank: int, evidence_id: str, filename: str, text: str):
         return SimpleNamespace(
@@ -541,26 +557,26 @@ def test_company_overview_is_concise_grounded_and_cited() -> None:
         ),
     )
     evidence = (core, portfolio, fuel_gas)
-    coverage = tuple(
-        CoverageEngine._company_overview_field(field, evidence)
-        for field in plan.fields
-    )
-    assert all(item.state == "supported" for item in coverage)
     citations = {
         item.unit.evidence_id: item.citation for item in evidence
     }
-    draft = GroundedAnswerBuilder().build(plan, coverage, citations)
-    assert draft.status == "complete"
-    assert "Supported result" not in draft.answer
-    assert "Requested-topic evidence" not in draft.answer
-    assert "supplier" not in draft.answer.casefold()
-    assert "medium- and high-pressure air and gas compression systems" in (
-        draft.answer
-    )
-    assert "air and gas purification" in draft.answer
-    assert "divers and firefighters" in draft.answer
-    assert "bio-CNG, biogas, hydrogen, and LNG" in draft.answer
-    assert len(draft.citations) == 3
+    for case in regression["cases"]:
+        plan = analyzer.analyze(case["question"])
+        assert [field.field for field in plan.fields] == case[
+            "required_fields"
+        ]
+        coverage = tuple(
+            CoverageEngine._company_overview_field(field, evidence)
+            for field in plan.fields
+        )
+        assert all(item.state == "supported" for item in coverage)
+        draft = GroundedAnswerBuilder().build(plan, coverage, citations)
+        assert draft.status == case["expected_status"]
+        for term in case["required_answer_terms"]:
+            assert term in draft.answer
+        for term in case["forbidden_answer_terms"]:
+            assert term.casefold() not in draft.answer.casefold()
+        assert len(draft.citations) == 3
 
 
 def test_general_absence_is_explicit_and_has_no_source_only_success(

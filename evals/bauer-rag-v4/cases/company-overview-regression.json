@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "suite_id": "bauer-rag-v4-company-overview-regression-20260731",
+  "split": "public-development-regression",
+  "locked_holdout_opened": false,
+  "cases": [
+    {
+      "case_id": "V4-R01",
+      "question": "what does bauer kompressoren do",
+      "search_hint": "Bauer Kompressoren products services compressors",
+      "expected_status": "complete",
+      "required_fields": [
+        "company_core_business",
+        "company_product_portfolio",
+        "company_application_scope"
+      ],
+      "required_answer_terms": [
+        "medium- and high-pressure air and gas compression systems",
+        "air and gas purification",
+        "divers and firefighters",
+        "bio-CNG, biogas, hydrogen, and LNG"
+      ],
+      "forbidden_answer_terms": [
+        "Requested-topic evidence",
+        "supplier shall apply"
+      ]
+    },
+    {
+      "case_id": "V4-R02",
+      "question": "list hte products from bayuer",
+      "search_hint": "Bauer products portfolio",
+      "expected_status": "complete",
+      "required_fields": [
+        "company_core_business",
+        "company_product_portfolio",
+        "company_application_scope"
+      ],
+      "required_answer_terms": [
+        "medium- and high-pressure air and gas compression systems",
+        "air and gas purification",
+        "divers and firefighters",
+        "bio-CNG, biogas, hydrogen, and LNG"
+      ],
+      "forbidden_answer_terms": [
+        "Requested-topic evidence",
+        "supplier shall apply"
+      ]
+    }
+  ]
+}

@@ -18,8 +18,8 @@ contaminated. Promotion requires a freshly resealed holdout and an independent e
 | Public release ID | `bauer-rag-v4-private-20260729-r1` |
 | Private LibreChat Agent | `agent_TEEBDBmMxnQwL10UjILhw` |
 | Agent name | `Bauer Kompressoren - RAG V4 Private Shadow` |
-| Backend commit | `1f37865c8ee00a3b5c5ad139ac5ab2d7b1a4fe3f` |
-| Backend deployment | `c2bf14c8-3e71-4d21-b85a-67f122a03ffc` |
+| Backend commit | `68f8ca2530ff59d9655cd0ea534f16340e24c0d6` |
+| Backend deployment | `a216621d-729e-48ce-9617-7f3d8557ae17` |
 | LibreChat overlay commit | `6982ac9483e649ab83141104c69331e56a8aaa38` |
 | LibreChat deployment | `34c6ab45-1a12-4d34-9552-0240e7022487` |
 | Source membership | 373 exact protected Bauer file IDs |
@@ -97,13 +97,15 @@ blocks, tables, typed facts, and exact page/cell provenance; it does not bypass 
 
 Rollback does not require deleting V4 data:
 
-1. Restore LibreChat deployment `ae7a03a5-3d5d-4b1f-85f4-ce65e2d54382` to remove the V4 adapter
+1. To undo only the 2026-07-31 company-overview correction, restore private API deployment
+   `c2bf14c8-3e71-4d21-b85a-67f122a03ffc`. The fixed V4 release and LibreChat adapter are unchanged.
+2. Restore LibreChat deployment `ae7a03a5-3d5d-4b1f-85f4-ce65e2d54382` to remove the V4 adapter
    while retaining V1/V2/V3 behavior.
-2. Restore private API deployment `13e2235d-a8c4-4103-bdb8-1f624a716026` to return to the frozen
+3. Restore private API deployment `13e2235d-a8c4-4103-bdb8-1f624a716026` to return to the frozen
    V3-only API image.
-3. If needed, restore worker deployment `250827d4-dcfc-4e39-a149-53bc0a290223`; a ready V4 release
+4. If needed, restore worker deployment `250827d4-dcfc-4e39-a149-53bc0a290223`; a ready V4 release
    has no claimable compilation jobs.
-4. Leave the V4 schema and objects in place for evidence preservation. The active pointer remains
+5. Leave the V4 schema and objects in place for evidence preservation. The active pointer remains
    empty, so retained V4 data cannot become production-active.
 
 Database rollback scripts exist for all seven V4 migrations and are for an explicitly scheduled
@@ -122,7 +124,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
   -V3AgentId agent_DzeT_ugU3tuZC_VCKB8Bh `
   -V4AgentId agent_TEEBDBmMxnQwL10UjILhw `
   -LibreChatOverlayCommit 6982ac9483e649ab83141104c69331e56a8aaa38 `
-  -V4BackendCommit 1f37865c8ee00a3b5c5ad139ac5ab2d7b1a4fe3f `
+  -V4BackendCommit 68f8ca2530ff59d9655cd0ea534f16340e24c0d6 `
   -OutputPath <development-benchmark-output>
 ```
 
@@ -138,3 +140,11 @@ The scorer contains only B01-B30 public-development expectations and does not re
 gold or holdout files. The output and score are development evidence, not production promotion.
 Any measured V4 defect is repaired in representation first, then candidate retrieval, then
 reranking, then coverage/answering.
+
+The public company-overview regression is
+`evals/bauer-rag-v4/cases/company-overview-regression.json`. It covers the exact prompt
+`what does bauer kompressoren do` and the observed typo prompt `list hte products from bayuer`.
+Both must route to the three company coverage fields, produce a concise cited answer, and reject
+the former internal evidence label and supplier-contract contamination. The corresponding live
+correction evidence is
+`evidence/bauer-rag-v4-company-overview-regression-20260731.json`.
