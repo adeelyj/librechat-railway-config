@@ -174,13 +174,13 @@ const createBauerV3FinalBoundary = ({
       throw new Error('Bauer V3 final boundary requires an initialized Agent and handlers');
     }
 
-    // `@librechat/api` intentionally propagates this private marker to the
-    // single standard graph AgentInputs object's `toolEnd` option. Keep the
-    // marker V3-specific so no persisted or unrelated Agent field can opt into
-    // the direct-final path.
-    if (state.mode === 'v3') {
-      primaryConfig.bauerV3DirectFinal = true;
-    }
+    // `@librechat/api` intentionally propagates this private, request-local
+    // marker to the single standard graph AgentInputs object's `toolEnd`
+    // option. The legacy marker name is retained for the checksum-bound
+    // overlay, but both allow-listed Bauer direct-final modes use it. V4
+    // already plans all requested fields from the immutable full question;
+    // repeated model-generated search hints must not create a tool loop.
+    primaryConfig.bauerV3DirectFinal = true;
     eventHandlers.on_message_delta = { handle: async () => {} };
     eventHandlers.on_reasoning_delta = { handle: async () => {} };
     return true;

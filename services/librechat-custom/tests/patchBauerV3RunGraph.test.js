@@ -10,7 +10,7 @@ const {
   replaceExactlyOnce,
 } = require('../patchBauerV3RunGraph');
 
-test('run-graph bundle patch is checksum-bound and propagates only the private V3 marker', () => {
+test('run-graph bundle patch is checksum-bound and propagates only the private Bauer marker', () => {
   assert.match(EXPECTED_UPSTREAM_SHA256, /^[0-9a-f]{64}$/);
   const patched = patchSource(`prefix\n${before}\nsuffix`);
   assert.equal(patched.split(after).length - 1, 1);
@@ -33,7 +33,7 @@ const executePatchedProjection = ({ agents, agentInputs }) => {
   return context.result;
 };
 
-test('run-graph bundle patch terminates only a single marked V3 agent after its tool', () => {
+test('run-graph bundle patch terminates only a single marked Bauer agent after its tool', () => {
   const v3Inputs = [{ agentId: 'agent-v3' }];
   const v3 = executePatchedProjection({
     agents: [{ bauerV3DirectFinal: true, edges: [] }],

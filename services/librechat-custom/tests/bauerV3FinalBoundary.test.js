@@ -188,11 +188,10 @@ test('multiple V3 tool completions fail closed instead of choosing by race order
   ]);
 });
 
-test('V4 permits iterative file searches and materializes the strongest validated result', async () => {
+test('V4 materializes the validated result through the one-tool direct-final marker', async () => {
   const contentParts = [
     { type: 'text', text: 'Untrusted model text' },
     { type: 'tool_call', tool_call: { id: 'call-1', name: 'file_search' } },
-    { type: 'tool_call', tool_call: { id: 'call-2', name: 'file_search' } },
   ];
   const boundary = createBauerV3FinalBoundary({
     contentParts,
@@ -215,19 +214,9 @@ test('V4 permits iterative file searches and materializes the strongest validate
     }),
     true,
   );
-  assert.equal(primaryConfig.bauerV3DirectFinal, undefined);
+  assert.equal(primaryConfig.bauerV3DirectFinal, true);
   boundary.sealGraph({ primaryConfig, agentConfigs: new Map() });
 
-  await boundary.toolEndCallback(
-    {
-      output: validV4Output({
-        status: 'partial',
-        answer: 'Partial answer.',
-        supportedCoverage: 2,
-      }),
-    },
-    {},
-  );
   await boundary.toolEndCallback(
     { output: validV4Output({ answer: 'Complete validated answer.' }) },
     {},
@@ -242,7 +231,6 @@ test('V4 permits iterative file searches and materializes the strongest validate
   boundary.wrapClient(client);
   assert.deepEqual((await client.sendCompletion()).completion, [
     { type: 'tool_call', tool_call: { id: 'call-1', name: 'file_search' } },
-    { type: 'tool_call', tool_call: { id: 'call-2', name: 'file_search' } },
     { type: 'text', text: 'Complete validated answer.' },
   ]);
 });
