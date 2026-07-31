@@ -52,6 +52,9 @@ const extractV4DirectFinal = (output) => {
     typeof envelope.validationFingerprint === 'string'
       ? envelope.validationFingerprint.trim()
       : '';
+  const repairCount = Number.isInteger(envelope.repairCount)
+    ? envelope.repairCount
+    : null;
   const answered = status !== 'refused';
   if (
     !V4_STATUSES.has(status) ||
@@ -62,7 +65,10 @@ const extractV4DirectFinal = (output) => {
     (answered &&
       (envelope.validationPassed !== true ||
         !V4_ANSWER_MODES.has(answerMode) ||
-        !SHA256_PATTERN.test(validationFingerprint)))
+        !SHA256_PATTERN.test(validationFingerprint) ||
+        repairCount == null ||
+        repairCount < 0 ||
+        repairCount > 1))
   ) {
     return null;
   }
@@ -72,6 +78,7 @@ const extractV4DirectFinal = (output) => {
     status,
     answerMode: answered ? answerMode : null,
     validationFingerprint: answered ? validationFingerprint : null,
+    repairCount: answered ? repairCount : null,
   };
 };
 
@@ -90,7 +97,8 @@ const selectV4Final = (current, candidate) => {
     current.releaseId === candidate.releaseId &&
     current.status === candidate.status &&
     current.answerMode === candidate.answerMode &&
-    current.validationFingerprint === candidate.validationFingerprint;
+    current.validationFingerprint === candidate.validationFingerprint &&
+    current.repairCount === candidate.repairCount;
   return identical ? current : { conflict: true };
 };
 

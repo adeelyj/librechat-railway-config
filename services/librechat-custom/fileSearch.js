@@ -282,6 +282,9 @@ const createFileSearchTool = async ({
                 validationPassed: final.validation?.passed === true,
                 answerMode: final.answer_mode,
                 validationFingerprint: final.validation_fingerprint,
+                repairCount: Number.isInteger(final.validation?.repair_count)
+                  ? final.validation.repair_count
+                  : null,
                 coverage: final.coverage,
                 notFound: final.not_found,
                 directFinal: true,

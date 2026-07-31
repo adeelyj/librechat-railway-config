@@ -271,6 +271,66 @@ def _visible_assistant_text(message: Any) -> str:
     ).strip()
 
 
+def _v4_boundary_metadata(value: Any, visible_answer: str) -> dict[str, Any]:
+    envelopes: list[dict[str, Any]] = []
+
+    def visit(node: Any) -> None:
+        if isinstance(node, list):
+            for child in node:
+                visit(child)
+            return
+        if not isinstance(node, dict):
+            return
+        envelope = node.get("bauerV4")
+        if isinstance(envelope, dict) and envelope.get("directFinal") is True:
+            envelopes.append(envelope)
+        for child in node.values():
+            visit(child)
+
+    visit(value)
+    if not envelopes:
+        raise BenchmarkError("V4 response has no direct-final validation envelope")
+    normalized = []
+    for envelope in envelopes:
+        answer = str(envelope.get("finalAnswer") or "").strip()
+        fingerprint = str(envelope.get("validationFingerprint") or "").strip()
+        repair_count = envelope.get("repairCount")
+        item = {
+            "status": str(envelope.get("status") or "").strip(),
+            "release_id": str(envelope.get("releaseId") or "").strip(),
+            "validation_passed": envelope.get("validationPassed") is True,
+            "answer_mode": str(envelope.get("answerMode") or "").strip(),
+            "validation_fingerprint": fingerprint,
+            "repair_count": repair_count,
+            "final_answer_sha256": hashlib.sha256(
+                answer.encode("utf-8")
+            ).hexdigest(),
+        }
+        if (
+            answer != visible_answer
+            or item["status"] not in {"complete", "partial", "not_found"}
+            or item["validation_passed"] is not True
+            or item["answer_mode"]
+            not in {"lossless_deterministic", "grounded_structured"}
+            or re.fullmatch(r"[0-9a-f]{64}", fingerprint) is None
+            or not isinstance(repair_count, int)
+            or repair_count < 0
+            or repair_count > 1
+        ):
+            raise BenchmarkError("V4 direct-final validation envelope is invalid")
+        normalized.append(item)
+    signatures = {
+        json.dumps(item, sort_keys=True, separators=(",", ":"))
+        for item in normalized
+    }
+    if len(signatures) != 1:
+        raise BenchmarkError("parallel V4 validation envelopes differ")
+    return {
+        **normalized[0],
+        "envelope_count": len(envelopes),
+    }
+
+
 def _write_replace(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".tmp")
@@ -351,6 +411,10 @@ def _progress_payload(
         "split": "development",
         "selected_case_ids": list(args.selected_case_ids),
         "selected_systems": list(args.selected_systems),
+        "selection": {
+            "method": "fixed seeded random public-development selection",
+            "case_ids": list(args.selected_case_ids),
+        },
         "v4_supplemental_source_ids": sorted(
             args.v4_supplemental_source_ids
         ),
@@ -524,6 +588,11 @@ def main() -> None:
                     system_allowed_file_ids = (
                         allowed_file_ids | args.v4_supplemental_source_ids
                     )
+                boundary = (
+                    _v4_boundary_metadata(live.get("messages"), answer)
+                    if system == "v4"
+                    else None
+                )
                 evidence, unauthorized = _sanitize_evidence(
                     live.get("evidence"),
                     system_allowed_file_ids,
@@ -560,6 +629,24 @@ def main() -> None:
                     ),
                     "completed_at_utc": datetime.now(UTC).isoformat(),
                 }
+                if boundary is not None:
+                    observation.update(
+                        {
+                            "status": boundary["status"],
+                            "release_id": boundary["release_id"],
+                            "validation": {
+                                "passed": boundary["validation_passed"],
+                                "answer_mode": boundary["answer_mode"],
+                                "validation_fingerprint": boundary[
+                                    "validation_fingerprint"
+                                ],
+                                "repair_count": boundary["repair_count"],
+                            },
+                            "direct_final_envelope_count": boundary[
+                                "envelope_count"
+                            ],
+                        }
+                    )
             except Exception as error:
                 cleanup_status = int(
                     getattr(error, "conversation_delete_http_status", 0)

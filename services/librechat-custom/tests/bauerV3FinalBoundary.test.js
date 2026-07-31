@@ -38,6 +38,7 @@ const validV4Output = ({
   answer = 'BM 40 supports 350 bar [citation-one].',
   supportedCoverage = 1,
   fingerprint = 'a'.repeat(64),
+  repairCount = 0,
 } = {}) => ({
   artifact: {
     file_search: {
@@ -49,6 +50,7 @@ const validV4Output = ({
         validationPassed: status !== 'refused',
         answerMode: status === 'refused' ? null : 'grounded_structured',
         validationFingerprint: status === 'refused' ? null : fingerprint,
+        repairCount: status === 'refused' ? null : repairCount,
         coverage: Array.from({ length: supportedCoverage }, (_, index) => ({
           field: `field-${index}`,
           state: 'supported',
@@ -243,6 +245,7 @@ test('V4 direct-final envelopes reject unvalidated claims but allow deterministi
   assert.equal(extractV4DirectFinal(valid)?.status, 'complete');
   valid.artifact.file_search.bauerV4.validationPassed = false;
   assert.equal(extractV4DirectFinal(valid), null);
+  assert.equal(extractV4DirectFinal(validV4Output({ repairCount: 2 })), null);
 
   const refusal = validV4Output({
     status: 'refused',
