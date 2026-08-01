@@ -588,6 +588,13 @@ def test_company_overview_is_concise_grounded_and_cited() -> None:
         for term in case["forbidden_answer_terms"]:
             assert term.casefold() not in draft.answer.casefold()
         assert len(draft.citations) == 3
+        if "company_product_categories" in case["required_fields"]:
+            answer_lines = draft.answer.splitlines()
+            bullets = [line for line in answer_lines if line.startswith("- ")]
+            assert bullets
+            assert all("[" not in line for line in bullets)
+            assert draft.answer.count("[citation-") == len(draft.citations)
+            assert "Sources:" in draft.answer
 
 
 def test_company_product_list_protects_each_source_family() -> None:

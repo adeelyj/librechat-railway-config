@@ -126,18 +126,20 @@ class GroundedAnswerBuilder:
             citation = citations_by_evidence.get(evidence_id)
             if citation is None:
                 continue
-            coordinate = citation.coordinate
+            coordinate = getattr(citation, "coordinate", None)
             parts = [citation.original_filename]
-            if coordinate.printed_page:
-                parts.append(f"printed page {coordinate.printed_page}")
-            elif coordinate.page:
-                parts.append(f"PDF page {coordinate.page}")
-            if citation.table_title:
-                parts.append(f"table {citation.table_title}")
-            elif coordinate.section_path:
-                parts.append("section " + " > ".join(coordinate.section_path))
-            parts.append(f"[{citation.citation_id}]")
-            label = ", ".join(parts)
+            if coordinate is not None:
+                if getattr(coordinate, "printed_page", None):
+                    parts.append(f"printed page {coordinate.printed_page}")
+                elif getattr(coordinate, "page", None):
+                    parts.append(f"PDF page {coordinate.page}")
+                table_title = getattr(citation, "table_title", None)
+                section_path = getattr(coordinate, "section_path", None) or ()
+                if table_title:
+                    parts.append(f"table {table_title}")
+                elif section_path:
+                    parts.append("section " + " > ".join(section_path))
+            label = f"{', '.join(parts)} [{citation.citation_id}]"
             if label not in locations:
                 locations.append(label)
         return "; ".join(locations)
@@ -226,8 +228,14 @@ class GroundedAnswerBuilder:
                 text = values[0]
                 lines.append(f"{text} {refs}".rstrip())
             elif item.field.field == "company_product_categories":
-                lines.append("BAUER's documented product and system categories include:")
-                lines.extend(f"- {value} {refs}".rstrip() for value in values)
+                # Keep the list readable: one citation set in a Sources footer
+                # instead of repeating the same opaque IDs on every bullet.
+                lines.append(
+                    "Bauer offers these documented product and system categories:"
+                )
+                lines.extend(f"- {value}" for value in values)
+                sources = cls._source_locations(item, citations)
+                lines.extend(("", f"Sources: {sources or refs}"))
                 text = "; ".join(values)
             elif item.field.field == "company_core_business":
                 text = "BAUER manufactures " + " and ".join(values) + "."
