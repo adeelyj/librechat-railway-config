@@ -427,13 +427,7 @@ class TaskAnalyzer:
             required_qualifiers.append(
                 ("group", "BM series 100 bar – 50 Hz")
             )
-        subquestions = tuple(
-            Subquestion(
-                subquestion_id=f"field_{index + 1}_{field.field}",
-                text=self._subquestion_text(question, intent, field),
-            )
-            for index, field in enumerate(fields)
-        )
+        subquestions = self._subquestions(question, intent, fields)
         deliverable, output_structure = self._deliverable(
             normalized,
             intent,
@@ -486,6 +480,54 @@ class TaskAnalyzer:
         if "explain" in tokens or "why" in tokens:
             return "explanation", "sections"
         return "direct_answer", "prose"
+
+    @classmethod
+    def _subquestions(
+        cls,
+        question: str,
+        intent: str,
+        fields: tuple[RequiredField, ...],
+    ) -> tuple[Subquestion, ...]:
+        if (
+            len(fields) == 1
+            and fields[0].field == "company_product_categories"
+        ):
+            # A product-list answer is intentionally one user-facing field,
+            # but its evidence lives in three different Bauer source
+            # families. Protect one retrieval head for each family instead of
+            # asking a single blended query to retrieve all three documents.
+            return (
+                Subquestion(
+                    subquestion_id="company_products_compressors",
+                    text=(
+                        "BAUER KOMPRESSOREN medium and high pressure air and "
+                        "gas compression systems systems for generating "
+                        "breathing air divers firefighters."
+                    ),
+                ),
+                Subquestion(
+                    subquestion_id="company_products_accessories",
+                    text=(
+                        "BAUER KOMPRESSOREN supplies an extensive range of "
+                        "accessories air and gas purification control storage "
+                        "gas measurement compressor systems."
+                    ),
+                ),
+                Subquestion(
+                    subquestion_id="company_products_fuel_gas",
+                    text=(
+                        "BAUER fuel gas compressor systems bio-CNG biogas "
+                        "hydrogen LNG."
+                    ),
+                ),
+            )
+        return tuple(
+            Subquestion(
+                subquestion_id=f"field_{index + 1}_{field.field}",
+                text=cls._subquestion_text(question, intent, field),
+            )
+            for index, field in enumerate(fields)
+        )
 
     @staticmethod
     def _subquestion_text(

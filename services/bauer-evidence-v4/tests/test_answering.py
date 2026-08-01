@@ -518,6 +518,7 @@ def test_company_overview_is_concise_grounded_and_cited() -> None:
         "V4-R01",
         "V4-R02",
         "V4-R03",
+        "V4-R09",
     ]
 
     analyzer = TaskAnalyzer()
@@ -587,6 +588,144 @@ def test_company_overview_is_concise_grounded_and_cited() -> None:
         for term in case["forbidden_answer_terms"]:
             assert term.casefold() not in draft.answer.casefold()
         assert len(draft.citations) == 3
+
+
+def test_company_product_list_protects_each_source_family() -> None:
+    plan = TaskAnalyzer().analyze(
+        "list the products offered by Bauer Kompressoren?"
+    )
+
+    assert [field.field for field in plan.fields] == [
+        "company_product_categories"
+    ]
+    assert [item.subquestion_id for item in plan.subquestions] == [
+        "company_products_compressors",
+        "company_products_accessories",
+        "company_products_fuel_gas",
+    ]
+    texts = [item.text.casefold() for item in plan.subquestions]
+    assert "air and gas compression systems" in texts[0]
+    assert "supplies an extensive range of accessories" in texts[1]
+    assert all(
+        fuel in texts[2]
+        for fuel in ("bio-cng", "biogas", "hydrogen", "lng")
+    )
+
+
+def test_company_product_list_retrieves_three_source_families() -> None:
+    """Realistic retrieval gate for the product-list regression.
+
+    The live defect was not field routing; one blended retrieval head failed to
+    surface two of the three phrase-heavy source families. This compiles the
+    three authoritative family sources plus distractors and requires the
+    protected heads to return a complete cited category list.
+    """
+
+    corpus_root = Path(r"D:\02_Code\Bauer Kompressoren Demo")
+    sources = (
+        (
+            "bauer_index/raw_docs/2025-06_Product_overview_EN_N37488_sc.pdf",
+            "application/pdf",
+            "product-overview",
+        ),
+        (
+            "bauer_index/raw_docs/2026-04_Compressors_for_Industry_EN_N39771_sc.pdf",
+            "application/pdf",
+            "compressors-industry",
+        ),
+        (
+            "bauer_index/raw_html/0153_fuel-gas-systems_9645f76747.html",
+            "text/html",
+            "fuel-gas",
+        ),
+        (
+            "bauer_index/raw_html/0025_bm-series-100_7acdece303.html",
+            "text/html",
+            "bm-series-distractor",
+        ),
+        (
+            "bauer_index/raw_docs/2025-03_B-DETECTION_PLUS_EN_N42078_sc.pdf",
+            "application/pdf",
+            "b-detection-distractor",
+        ),
+    )
+    if not all((corpus_root / Path(path)).is_file() for path, _, _ in sources):
+        pytest.skip("authoritative Bauer corpus sources are not mounted")
+
+    compiler = CanonicalCompiler()
+    builder = ProjectionBuilder()
+    documents = {}
+    external_source_ids = {}
+    indexed = []
+    for logical_path, media_type, external_id in sources:
+        compiled = compiler.compile(
+            (corpus_root / Path(logical_path)).read_bytes(),
+            source_path=logical_path,
+            declared_media_type=media_type,
+        )
+        assert compiled.document is not None
+        document = compiled.document
+        documents[document.source_sha256] = document
+        external_source_ids[document.source_sha256] = external_id
+        indexed.extend(
+            IndexedProjection(
+                projection=projection,
+                tenant_id="tenant",
+                knowledge_base_id="kb",
+                release_id="release",
+                authorization_source_id=external_id,
+            )
+            for projection in builder.build(document)
+        )
+
+    service = AnswerService(
+        candidate_generator=CandidateGenerator(tuple(indexed)),
+        source_registry=SourceRegistry(
+            documents_by_sha256=documents,
+            external_source_ids=external_source_ids,
+        ),
+        release=ReleaseContract(
+            public_id="release",
+            source_contract_sha256=_digest("source-contract"),
+            canonical_schema_version="4.1",
+            compiler_identity=_digest("compiler"),
+            projection_identity=_digest("projection"),
+            embedding_identity=_digest("embedding"),
+            reranker_identity=_digest("reranker"),
+            gate_manifest_sha256=_digest("gates"),
+        ),
+    )
+    scope = AuthorizedScope(
+        principal_id="principal",
+        tenant_id="tenant",
+        knowledge_base_id="kb",
+        release_id="release",
+        authorized_external_source_ids=frozenset(external_source_ids.values()),
+    )
+    response = service.answer(
+        request_id="request-V4-R09-retrieval",
+        trace_id="trace-V4-R09-retrieval",
+        question="list the products offered by Bauer Kompressoren?",
+        search_hint="Bauer Kompressoren products offered",
+        locale="en",
+        scope=scope,
+    )
+    assert response.status == "complete"
+    assert response.validation["passed"] is True
+    for term in (
+        "breathing-air compressor and filling systems",
+        "air and gas purification",
+        "compressor controls",
+        "gas-measurement and monitoring equipment",
+        "fuel-gas systems for bio-CNG, biogas, hydrogen, and LNG",
+    ):
+        assert term in response.answer
+    cited = {citation.original_filename for citation in response.citations}
+    assert "2025-06_Product_overview_EN_N37488_sc.pdf" in cited
+    assert "2026-04_Compressors_for_Industry_EN_N39771_sc.pdf" in cited
+    assert "0153_fuel-gas-systems_9645f76747.html" in cited
+    assert "Requested-topic evidence" not in response.answer
+    assert "supplier shall apply" not in response.answer.casefold()
 
 
 def test_company_location_is_explicit_grounded_and_fail_closed() -> None:

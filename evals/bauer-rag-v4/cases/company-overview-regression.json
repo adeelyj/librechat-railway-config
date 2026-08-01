@@ -64,6 +64,26 @@
         "Requested-topic evidence",
         "supplier shall apply"
       ]
+    },
+    {
+      "case_id": "V4-R09",
+      "question": "list the products offered by Bauer Kompressoren?",
+      "search_hint": "Bauer Kompressoren products offered",
+      "expected_status": "complete",
+      "required_fields": [
+        "company_product_categories"
+      ],
+      "required_answer_terms": [
+        "breathing-air compressor and filling systems",
+        "air and gas purification",
+        "compressor controls",
+        "gas-measurement and monitoring equipment",
+        "fuel-gas systems for bio-CNG, biogas, hydrogen, and LNG"
+      ],
+      "forbidden_answer_terms": [
+        "Requested-topic evidence",
+        "supplier shall apply"
+      ]
     }
   ]
 }
